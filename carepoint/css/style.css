@@ -1,0 +1,841 @@
+/* Start Global */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* End Global */
+
+
+/**** Start Hospital Navigation Bar ****/
+.display-none-large {
+    display: none
+}
+/**** End Hospital Navigation Bar ****/
+
+
+
+/* Start Hospital Details And Services */
+
+.hospital-details .about-hospital .hospital-icon {
+    width: 20%;
+    float: left
+}
+
+.hospital-details .about-hospital .hospital-icon i {
+    color: #1a9bdc;
+    padding-top: 15px;
+    display: block
+}
+
+.hospital-details .about-hospital .hospital-name {
+    width: 80%;
+    float: left
+}
+
+.hospital-details .about-hospital .hospital-name h1 {
+    margin-bottom: 0;
+    font-weight: bold
+}
+
+.hospital-details .about-hospital .hospital-name h1 span {
+    color: #1a9bdc;
+}
+
+.hospital-details .about-hospital .hospital-name p {
+    font-weight: bold;
+    letter-spacing: 7px;
+    text-indent: 3px
+}
+
+
+.hospital-details .about-hospital .hospital-services {
+    width: 17%;
+    float: left;
+    margin-right: 4%
+}
+
+.hospital-details .about-hospital .hospital-services i {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #1a9bdc;
+    color: #FFF;
+    border-radius: 50%;;
+    display: block;
+    margin-top: 20px;
+    margin-right: 10px
+}
+
+.hospital-details .about-hospital .hospital-time {
+    width: 79%;
+    float: left;
+}
+
+.hospital-details .about-hospital .hospital-time h4 {
+    margin-top: 29px;
+    margin-bottom: 3px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-size: 15px
+}
+.hospital-details .about-hospital .hospital-time p {
+    font-weight: bold;
+    color: #979797;
+    margin-left: 7px;
+    font-size: 13px
+}
+
+/* End Hospital Details And Services */
+
+
+/* Start First hr */
+
+.first-hr hr {
+    margin: 10px 0
+}
+
+/* End First hr */
+
+
+/* Start Navbar */
+
+nav {
+    padding-top: 7px;
+    padding-bottom: 10px
+}
+
+.navbar {
+    min-height: 0;
+    margin-bottom: 0
+}
+
+nav .navbar ul li {
+    display: inline-block;
+    margin-right: 20px
+}
+
+nav .navbar ul li a {
+    color: #6a6a6a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+nav .navbar ul li a:hover {
+    color: #000
+}
+
+nav .navbar-icons {
+    text-align: right
+}
+
+nav .navbar-icons i {
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+nav .navbar-icons i:hover {
+    color: #1a9bdc
+}
+
+/* End Navbar */
+
+
+/* Start Header */
+
+header {
+    height: 500px;
+    background-image: url("../images/doctor.jpg");
+    background-size: cover;
+}
+
+header .medicare {
+    padding-top: 140px;
+    padding-bottom: 40px
+}
+
+header .medicare h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #474747;
+    margin-bottom: 25px
+}
+
+header .medicare p {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #444;
+    line-height: 1.7
+}
+
+header .medicare button {
+    border: none;
+    color: #FFF;
+    background-color: #1a9bdc;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+header .medicare button:hover {
+    background-color: #1389c5
+}
+
+/* End Header */
+
+
+/* Start Services */
+
+.services {
+    overflow: hidden
+}
+
+.services .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.services .col-lg-3,
+.services .col-md-6,
+.services .col-sm-6,
+.services .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.services .best-services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(20deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.services .best-services i {
+    width: 70px;
+    height: 70px;
+    background-color: #FFF;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%
+}
+
+.services .best-services h2 {
+    color: #FFF
+}
+
+.services .best-services p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 1.7
+}
+
+/* End Services */
+
+
+/* Start Why Choose Us */
+
+.why-choose {
+    padding-top: 50px
+}
+
+.why-choose .text-center h2 {
+    font-weight: bold;
+    color: #494949;
+    font-size: 50px;
+    margin-bottom: 35px
+}
+
+.why-choose .text-center p {
+    color: #7f8081;
+    line-height: 1.7;
+    padding-left: 80px;
+    padding-right: 80px
+}
+
+.why-choose .professional {
+    padding-top: 80px
+}
+
+.why-choose .professional i {
+    width: 70px;
+    height: 70px;
+    color: #FFF;
+    background-color: #1a9bdc;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.why-choose .professional h3 {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #474747
+}
+
+.why-choose .professional p {
+    color: #7f8081;
+    line-height: 1.8
+}
+
+/* End Why Choose Us */
+
+
+/* Start Best Features */
+
+.best-features {
+    height: 450px;
+    background-image: url('../images/hospital.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.best-features .features-overley {
+    height: 450px;
+    background-color: rgba(0, 135, 190, 0.9);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: #FFF
+}
+
+.best-features .features-overley .feat {
+    margin-bottom: 70px
+}
+
+.best-features .features-overley .feat h3 {
+    font-weight: bold;
+    font-size: 40px
+}
+
+.best-features .features-overley .feat hr {
+    width: 23%;
+    height: 5px;
+    border: none;
+    background-color: #FFF
+}
+
+.best-features .features-overley .feat p {
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+/* End Best Features */
+
+
+/* Start How We Works */
+
+.we-works {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.we-works .works h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #494949
+}
+
+.we-works .works p {
+    margin-bottom: 30px;
+    color: #7f8081;
+    font-weight: bold;
+    line-height: 1.7;
+    font-size: 14px
+}
+
+.we-works .works div img {
+    width: 340px
+}
+
+.we-works .works div h4 {
+    padding-top: 10px;
+    font-weight: bold;
+    color: #7f8081;
+    padding-bottom: 0
+}
+
+.we-works .works div span {
+    color: #0087be;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 13px
+}
+
+.we-works .works div p {
+    font-size: 13px
+}
+
+.we-works .works .nurse-left {
+    float: left;
+    width: 50%
+}
+
+.we-works .works .nurse-right {
+    float: right;
+    width: 50%
+}
+
+.we-works .works button {
+    border: none;
+    color: #FFF;
+    background-color: #1a9bdc;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    outline: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+
+.we-works .works button:hover {
+    background-color: #1389c5
+}
+
+.we-works .our-creative h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #494949
+}
+
+.we-works .our-creative p {
+    margin-bottom: 30px;
+    color: #7f8081;
+    font-weight: bold;
+    line-height: 1.7;
+    font-size: 14px
+}
+
+.we-works .our-creative .heart-treatment span {
+    background-color: #0087be;
+    display: block;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.we-works .our-creative .heart-treatment span i {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.we-works .our-creative .heart-treatment span i:hover {
+    color: #0087be
+}
+
+.we-works .our-creative .heart-treatment span h2 {
+    display: inline-block;
+    color: #FFF;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.we-works .our-creative .heart-treatment p {
+    margin-bottom: 30px
+}
+
+.we-works .our-creative .heart-treatment span:nth-of-type(2),
+.we-works .our-creative .heart-treatment span:nth-of-type(3),
+.we-works .our-creative .heart-treatment span:last-of-type {
+    background-color: #e2e2e2;
+    margin-bottom: 10px
+}
+
+.we-works .our-creative .heart-treatment span:nth-of-type(2) i,
+.we-works .our-creative .heart-treatment span:nth-of-type(3) i,
+.we-works .our-creative .heart-treatment span:last-of-type i {
+    color: #0087be;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.we-works .our-creative .heart-treatment span:nth-of-type(2) i:hover,
+.we-works .our-creative .heart-treatment span:nth-of-type(3) i:hover,
+.we-works .our-creative .heart-treatment span:last-of-type i:hover {
+    color: #000
+}
+
+.we-works .our-creative .heart-treatment span:nth-of-type(2) h2,
+.we-works .our-creative .heart-treatment span:nth-of-type(3) h2,
+.we-works .our-creative .heart-treatment span:last-of-type h2 {
+    color: #000
+}
+
+/* End How We Works */
+
+
+/* Start Our Gallery */
+
+.gallery {
+    height: 800px;
+    background-image: url('../images/patients.jpg');
+}
+
+.gallery .gallery-overley {
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: rgba(56, 182, 158, 0.9)
+}
+
+.gallery .gallery-overley h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px
+}
+
+.gallery .gallery-overley p {
+    color: #FFF;
+    line-height: 1.8;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 30px
+}
+
+.gallery .gallery-overley img {
+    width: 360px;
+    height: 234px;
+    margin-bottom: 35px
+}
+
+/* End Our Gallery */
+
+
+/* Start Our Team (Doctors) */
+
+.our-team {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.our-team h2 {
+    color: #494949;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px
+}
+
+.our-team p {
+    color: #7f8081;
+    line-height: 1.8;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 40px
+}
+
+.our-team .doctors {
+    position: relative
+}
+
+.our-team .doctors h3 {
+    color: #494949;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 5px
+}
+
+.our-team .doctors span {
+    color: #7f8081;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block
+}
+
+.our-team .doctors .doctors-social {
+    text-align: center
+}
+
+.our-team .doctors .doctors-social i {
+    margin: 6px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.our-team .doctors .doctors-social i:hover {
+    color: #1a9bdc
+}
+
+/* End Our Team (Doctors) */
+
+
+/* Start Our Patient Special */
+
+.our-patient {
+    background-color: #e2e2e2;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.our-patient h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #494949
+}
+
+.our-patient button {
+    border: none;
+    color: #FFF;
+    background-color: #1a9bdc;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    outline: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.our-patient button:hover {
+    background-color: #1389c5
+}
+
+/* End Our Patient Special */
+
+
+/* Start Footer */
+
+footer {
+    background-color: #171717;
+    color: #FFF;
+    padding-top: 70px;
+    padding-bottom: 70px
+}
+
+footer .touch h3 {
+    font-size: 20px;
+    margin-bottom: 40px
+}
+
+footer .touch .touch-left-icons {
+    width: 17%;
+    float: left;
+    margin-right: 3%;
+    text-align: center
+}
+
+footer .touch .touch-left-icons  i {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 22px
+}
+
+footer .touch .touch-right-details {
+    width: 77%;
+    float: left;
+    margin-left: 3%
+}
+
+footer .touch .touch-right-details p {
+    margin-bottom: 25px
+}
+
+footer .touch .touch-icons > i {
+    color: #FFF;
+    margin-right: 15px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+footer .touch .touch-icons i:hover {
+    color: #1a9bdc
+}
+
+footer .touch ul li {
+    margin-bottom: 15px
+}
+
+footer .touch ul li:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e072";
+    margin-right: 15px;
+    color: #0e4d6a;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+footer .touch ul li:hover:before {
+    color: #1a9bdc
+}
+
+footer .touch ul li a {
+    color: #7f8081;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+footer .touch ul li a:hover {
+    color: #FFF
+}
+
+footer .touch form div input {
+    width: 80%;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #5f5f5f;
+    padding: 5px;
+    outline: none
+}
+
+footer .touch form div textarea {
+    width: 80%;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #5f5f5f;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    height: 110px
+}
+
+footer .touch form div input[type="submit"] {
+    border: none;
+    color: #FFF;
+    background-color: #1a9bdc;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    outline: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+footer .touch form div input[type="submit"]:hover {
+    background-color: #1389c5
+}
+
+/* End Footer */
+
+
+/* Start Copyright */
+
+.copyright {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #1a1a1a;
+    color: #888;
+    bottom: 10px
+}
+
+.copyright p {
+    font-weight: bold
+}
+
+.copyright p a {
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #888
+}
+
+.copyright p a:hover {
+    color: #FFF;
+    
+}
+
+/* End Copyright */
+
+/* Start Nsyan :D */
+
+#color-links a {
+    color: #000
+}
+
+/* End Nsyan :D */
+
+
+
+/* Start Scroll To Top */
+
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    background-color: #2d2d2d;
+    padding: 14px 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #999;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: none
+}
+
+.scroll-top:hover {
+    background-color: #212121;
+    color: #FFF
+}
+
+/* End Scroll To Top */

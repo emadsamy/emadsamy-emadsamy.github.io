@@ -1,0 +1,729 @@
+/* Start Mobile And Tablet Screen (Extra Small) Start From 0 Pixels Width To 767 Pixels */
+
+@media (max-width: 767px) {
+    
+    /* Start Global */
+    body {
+        padding-top: 50px
+    }
+    /* End Global */
+    
+    /**** Start Hospital Navigation Bar ****/
+    
+    .height-nav {
+        height: 50px
+    }
+    
+    .navbar-pos-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999
+    }
+    
+    .display-none-large {
+        display: block
+    }
+    
+    .display-none-small {
+        display: none
+    }
+    
+    nav .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0
+    }
+    
+    nav .navbar {
+        background-color: #222;
+        color: #FFF;
+        overflow: hidden
+    }
+    
+    nav .navbar .name-of-hospital h2 {
+        font-size: 16px;
+        margin: 0;
+        line-height: 1.7;
+    }
+    
+    nav .navbar .name-of-hospital h2 a {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold
+    }
+    
+    nav .navbar .navbar-links ul {
+        display: block;
+        float: left;
+        width: 100%
+    }
+    
+    nav .navbar .navbar-links ul li {
+        display: block;
+        color: #9d9d9d;
+        padding: 5px 2px 5px 13px;
+        text-align: left;
+        margin: 0;
+        transition: all 0.4s ease-in-out
+    }
+    
+    nav .navbar .navbar-links ul li:hover {
+        background-color: #3e3c3c;
+        color: #fff
+    }
+    
+    nav .navbar .navbar-links ul li a {
+        color: #9d9d9d
+    }
+    
+    nav .navbar .navbar-links ul li:hover a {
+        color: #fff
+    }
+    
+    nav .navbar .name-of-hospital {
+        width: 70%;
+        float: left;
+        padding: 10px
+    }
+    
+    nav .navbar .navbar-icon-list {
+        width: 30%;
+        float: left;
+        padding: 10px
+    }
+    
+    nav .navbar .navbar-icon-list i {
+        cursor: pointer
+    }
+    
+    #color-links {
+        background-color: #3e3c3c;
+    }
+    
+    #color-links a {
+        color: #FFF
+    }
+    /**** End Hospital Navigation Bar ****/
+    
+    
+    
+    
+    
+    /* Start Hospital Details And Services */
+    
+    .hospital-details .about-hospital {
+        text-align: center
+    }
+    
+    .hospital-details .about-hospital .hospital-icon i {
+        display: none
+    }
+    
+    .hospital-details .about-hospital .hospital-name {
+        width: 100%
+    }
+
+
+    .hospital-details .about-hospital .hospital-name h1 {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .hospital-details .about-hospital .hospital-name h1 span {
+        color: #1a9bdc
+    }
+
+    .hospital-details .about-hospital .hospital-name p {
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-indent: 3px;
+        font-size: 12px;
+        margin-left: 8px
+    }
+    
+    .hospital-details .about-hospital .hospital-services i {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #1a9bdc;
+        color: #FFF;
+        border-radius: 50%;
+        display: block;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-size: 27px
+    }
+    
+    .hospital-details .about-hospital .hospital-time {
+        width: 100%
+    }
+    
+    .hospital-details .about-hospital .hospital-time h4 {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px
+    }
+    
+    .hospital-details .about-hospital .hospital-time p {
+        font-size: 11px;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px
+        
+    }
+    
+    .hospital-details .about-hospital .hospital-services {
+        width: 100%;
+        text-align: center
+    }
+    
+    .hospital-details .about-hospital .hospital-services i {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 45px;
+    }
+    
+    /* End Hospital Details And Services */
+    
+    /* Start Hr */
+    .display-hr {
+        display: none
+    }
+    /* End Hr */
+    
+    /* Start Navbar */
+    nav .navbar ul li {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 10px
+    }
+    
+    nav .navbar ul {
+        margin-bottom: 30px
+    }
+    
+    nav .navbar-icons {
+        text-align: center;
+        margin-bottom: 15px
+    }
+    /* End Navbar */
+    
+    
+    /* Start Header */
+    header {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    header .medicare {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    
+    header .medicare h2 {
+        font-size: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 1.4;
+        color: #000;
+    }
+    
+    header .medicare p {
+        padding-left: 0;
+        padding-right: 0
+    }
+    /* End Header */
+    
+    
+    /* Start Why Choose */
+    .why-choose .text-center h2 {
+        font-size: 35px
+    }
+    
+    .why-choose .text-center p {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    
+    .why-choose .professional i {
+        margin: 0 auto;
+        display: block
+    }
+    
+    .why-choose .professional h3 {
+        display: block;
+        text-align: center
+    }
+    
+    .why-choose .professional p {
+        text-align: center;
+        margin-bottom: 40px
+    }
+    
+    .why-choose .choosed img {
+        margin: 20px auto
+    }
+    /* End Why Choose */
+    
+    
+    /* Start Best Features */
+    .best-features {
+        height: 1400px
+    }
+    
+    .best-features .features-overley {
+        height: 1400px
+    }
+    /* End Best Features */
+    
+    
+    /* Start How We Works */
+    .we-works .works {
+        margin-bottom: 40px
+    }
+    
+    .we-works .works h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px
+    }
+    
+    .we-works .works p {
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 40px
+    }
+    
+    .we-works .works div h4 {
+        font-size: 16px
+    }
+    
+    .we-works .works div p {
+        text-align: center;
+    }
+    
+    .we-works .works .nurse-left {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center
+    }
+    
+    .we-works .works .nurse-right {
+        width: 100%;
+        text-align: center
+    }
+    
+    .we-works .works div img {
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .we-works .works button {
+        margin-bottom: 60px
+    }
+    
+    .we-works .our-creative h3 {
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 15px
+    }
+    
+    .we-works .our-creative p {
+        text-align: center;
+        margin-bottom: 60px
+    }
+    /* End We Works */
+    
+    
+    /* Start Gallery */
+    .gallery {
+        height: 1500px
+    }
+    
+    .gallery .gallery-overley {
+        height: 1500px
+    }
+    
+    .gallery .gallery-overley p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 50px
+    }
+    
+    .gallery .gallery-overley img {
+        height: 150px;
+        margin: 10px auto
+    }
+    
+    /* End Gallery */
+    
+    
+    /* Start Our Team */
+    
+    .our-team p {
+        line-height: 1.6
+    }
+    
+    .our-team .doctors {
+        margin-bottom: 80px
+    }
+    
+    .our-team .doctors img {
+        margin: 20px auto;
+        width: 170px;
+        height: 170px
+    }
+    
+    /* End Our Team */
+    
+    /* Start Our Patient */
+    .our-patient h2 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.4
+    }
+
+    /* End Our Patient */
+    
+    
+    /* Start Footer */
+    footer .touch h3 {
+        text-align: center
+    }
+    
+    footer .touch {
+        margin-bottom: 70px
+    }
+    
+    footer .touch-icons {
+        text-align: center
+    }
+    
+    footer .touch ul {
+        display: block;
+        text-align: center
+    }
+    
+    footer .touch-icons i {
+        font-size: 20px;
+        text-align: center;
+        display: inline-block
+    }
+    
+    footer .touch .touch-icons i:nth-of-type(3) {
+        padding-left: 0
+    }
+    
+    footer .touch form div {
+        text-align: center
+    }
+    
+    footer .touch ul li:before {
+        content: none
+    }
+    
+    /* End Footer */
+    
+    
+    /* Start Copyright */
+    
+    .copyright {
+        padding-top: 30px;
+        padding-bottom: 20px
+    }
+    
+    .copyright p {
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    /* End Copyright */
+    
+    
+    /* Start Scroll To Top */
+    .scroll-top {
+        right: 17px;
+        bottom: 20px;
+        padding: 10px 13px;
+        background-color: #2d2d2d6e;
+        color: #6f6c6c;
+    }
+    /* End Scroll To Top */
+}
+/* End Mobile And Tablet Screen (Extra Small) Start From 0 Pixels Width To 767 Pixels */
+
+
+
+
+
+
+
+
+/* Start Small Screens Start From 768 Pixels Width To 991 Pixels */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /* Start Clear Fix */
+    
+    .clearsmall {
+        clear: both
+    }
+    
+    /* End Clear Fix */
+    
+
+    /* Start Hospital Details And Services */
+    .hospital-details .about-hospital .hospital-icon {
+        width: 17%
+    }
+    
+    .hospital-details .about-hospital .hospital-services {
+        width: 13%
+    }
+    /* End Hospital Details And Services */
+    
+    
+    
+    /* Start Name Of Website */
+    .table-care {
+        text-align: center
+    }
+    /* End Name Of Website */
+    
+    
+    /* Start Why Choose Us */
+    
+    .why-choose .professional i {
+        margin: 0 auto;
+        display: block
+    }
+    
+    .why-choose .professional h3 {
+        display: block;
+        text-align: center
+    }
+    
+    .why-choose .professional p {
+        text-align: center;
+        margin-bottom: 40px
+    }
+    
+    .why-choose .choosed img {
+        margin: 20px auto
+    }
+    
+    /* End Why Choose Us */
+    
+    
+    /* Start Features */
+    .best-features {
+        height: 750px
+    }
+    
+    .best-features .features-overley {
+        height: 750px
+    }
+    /* End Features */
+    
+    
+    /* Start We Works */
+    .we-works .works {
+        margin-bottom: 60px
+    }
+    
+    .we-works .our-creative h3 {
+        margin-bottom: 10px
+    }
+    
+    /* End We Works */
+    
+    
+    /* Start Gallery */
+    .gallery {
+        height: 1100px
+    }
+    
+    .gallery .gallery-overley {
+        height: 1100px
+    }
+    
+    /* End Gallery */
+    
+    
+    /* Start Our Team (Doctors) */
+    .our-team p {
+        margin-bottom: 70px
+    }
+    
+    .our-team .doctors {
+        margin-bottom: 80px;
+    }
+    
+    .our-team .doctors img {
+        margin: 0 auto
+    }
+    /* End Our Team (Doctors) */
+    
+    
+    /* Start Footer */
+    
+    footer .touch .touch-icons {
+        text-align: center
+    }
+    
+    footer .touch {
+        margin-bottom: 40px
+    }
+    
+    /* End Footer */
+    
+}
+/* End Small Screens Start From 768 Pixels Width To 991 Pixels */
+
+
+
+/* Start Medium Screens From 768 Pixels Width To 991 Pixels */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    /* Start Hospital Details And Services */
+    .hospital-details .about-hospital .hospital-icon {
+        width: 14%
+    }
+    
+    .hospital-details .about-hospital .hospital-services {
+        width: 9%
+    }
+    /* End Hospital Details And Services */
+    
+    
+    /* Start Header */
+    header .medicare h2 {
+        padding-left: 0;
+        padding-right: 0
+    }
+    /* End Header */
+    
+    
+    /* Start Why Choose Us */
+    
+    .why-choose .professional {
+        padding-top: 0
+    }
+    
+    .why-choose .text-center p {
+        margin-bottom: 60px
+    }
+    
+    .why-choose .professional p {
+        margin-bottom: 40px
+    }
+    
+    /* End Why Choose Us */
+    
+    
+    /* Start Best Features */
+    
+    .best-features {
+        height: 730px
+    }
+    
+    .best-features .features-overley {
+        height: 730px
+    }
+    
+    /* End Best Features */
+    
+    
+    /* Start How We Works */
+    
+    .we-works .works .nurse-left {
+        width: 48%
+    }
+    
+    .we-works .works .nurse-right {
+        width: 48%
+    }
+    
+    /* End How We Works */
+    
+    
+    /* Start Gallery */
+    
+    .gallery {
+        height: 1150px
+    }
+    
+    .gallery .gallery-overley {
+        height: 1150px
+    }
+    
+    .gallery .gallery-overley img {
+        margin: 0 auto 50px auto;
+    }
+    
+    /* End Gallery */
+    
+    
+    /* Start Our Team (Doctors) */
+    
+    .clearmedium {
+        clear: both
+    }
+    
+    .our-team p {
+        margin-bottom: 70px
+    }
+    
+    .our-team .doctors {
+        margin-bottom: 80px;
+    }
+    
+    .our-team .doctors img {
+        margin: 0 auto
+    }
+    
+    /* End Our Team (Doctors) */
+    
+    
+    /* Start Our Patient */
+    .our-patient h2 {
+        font-size: 26px
+    }
+    
+    /* End Our Patient */
+    
+    
+    /* Start Footer */
+    
+    footer .touch .touch-icons {
+        text-align: center
+    }
+    
+    footer .touch .touch-icons i {
+        font-size: 20px
+    }
+    
+    /* End Footer */
+    
+}
+/* End Medium Screens From 768 Pixels Width To 991 Pixels */
+
+
+
+/* Start Large Screen Start From 1200 px For etc. */
+@media (min-width: 1200px) {
+    
+}
+/* End Large Screen Start From 1200 px For etc. */

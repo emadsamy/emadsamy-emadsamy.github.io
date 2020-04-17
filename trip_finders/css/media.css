@@ -1,0 +1,673 @@
+/*** Start Media Queries Screen Width ***/
+
+/* Start Extra Small Screen From 0 To 767px */
+
+@media (max-width: 767px) {
+    
+    /* Start Global */
+    body {
+        padding-top: 45px
+    }
+    /* End Global */
+    
+    /* Start Header */
+    header {
+        background-image: url('../images/tour-xs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    
+    header h1 {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 25px
+    }
+    
+    header p.para-journey {
+        font-size: 15px
+    }
+    
+    header .para-details p {
+        padding-right: 0;
+        text-align: center;
+        font-size: 12px
+    }
+    
+    header nav .address {
+        display: block;
+        float: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 19px
+    }
+    
+    .resize-address {
+        text-align: center
+    }
+    
+    header nav .icons-adrs {
+        margin-left: 0;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+    
+    header nav .icons-adrs i {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16px
+    }
+    
+    header nav .logo-name {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    header nav .logo-name .logo-icon {
+        width: 20%
+    }
+    
+    header nav .logo-name .logo-icon i {
+        font-size: 35px
+    }
+    
+    header nav .logo-name .logo-heading h3 {
+        font-size: 25px;
+        margin-top: 3px
+    }
+    
+    header nav .logo-name .logo-heading span {
+        letter-spacing: 5px;
+        text-indent: 4px
+    }
+    
+    header nav .navigation {
+        background-color: #000;
+        height: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        overflow: hidden
+    }
+    
+    header nav .navigation .logo-xs {
+        padding: 10px
+    }
+    
+    header nav .navigation .logo-xs h2 {
+        margin: 0;
+        font-size: 24px;
+        display: inline-block
+    }
+    
+    header nav .navigation .logo-xs #icon-navigation {
+        cursor: pointer
+    }
+    
+    header nav .navigation .logo-xs i {
+        float: right;
+        font-size: 28px;
+    }
+    
+    header nav .navigation .nav-links ul {
+        margin-top: 3px
+    }
+    
+    header nav .navigation .nav-links ul li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 5px 13px;
+        margin-left: 0;
+        margin-right: 0;
+        color: #999
+    }
+    
+    header nav .navigation .nav-links ul li:hover {
+        background-color: #484747a6;
+        color: #FFF
+    }
+    /* End Header */
+    
+    /* Start Find A Tour By Tour Type */
+    .tour .tour-overlay {
+        padding-bottom: 50px
+    }
+    .tour .tour-overlay h2 {
+        font-size: 30px
+    }
+    
+    .tour .tour-overlay p {
+        padding: 0
+    }
+    
+    .tour .tour-overlay .tour-imgs {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px
+    }
+    
+    .tour .tour-overlay .tour-imgs img {
+        width: 100%;
+        height: 100%
+    }
+    
+    .tour .tour-overlay .tour-imgs-overlay h3 {
+        line-height: 115px;
+        font-size: 16px
+    }
+    /* End Find A Tour By Tour Type */
+    
+    /* Start Deals And Discounts */
+    .deals .deals-overlay h2 {
+        font-size: 30px
+    }
+    
+    .deals .deals-overlay .surfing {
+        width: 210px;
+        margin-bottom: 50px
+    }
+    
+    .deals .deals-overlay .surfing img {
+        width: 100%;
+        height: 130px
+    }
+    
+    .deals .deals-overlay .surfing .deals-price {
+        top: 110px;
+        left: 55px;
+        padding: 6px 11px;
+    }
+    
+    .deals .deals-overlay .surfing .deals-price big {
+        font-size: 15px
+    }
+    
+    .deals .deals-overlay .surfing h3 {
+        font-size: 23px
+    }
+    
+    .deals .deals-overlay .surfing p {
+        font-size: 11px
+    }
+    
+    .deals .deals-overlay .surfing button {
+        padding: 5px 20px
+    }
+    /* End Deals And Discounts */
+    
+    /* Start Find By Tour */
+    .beautiful h2 {
+        font-size: 20px
+    }
+    /* End Find By Tour */
+    
+    
+    /* Start Promotional */
+    .promotional .promotion {
+        width: 48%;
+        height: 110px;
+        overflow: hidden
+    }
+    
+    .promotional .promotion img {
+        height: 100%
+    }
+    
+    .promotional .promotion .prom-overlay h4 {
+        font-size: 12px;
+        margin-top: 25px
+    }
+    
+    .promotional .promotion .prom-overlay p {
+        font-size: 12px
+    }
+    
+    .promotional .promotion .prom-overlay button {
+        font-size: 9px;
+        padding: 5px 15px
+    }
+    /* End Promotional */
+    
+    
+    /* Start Events */
+    .events {
+        padding-bottom: 0
+    }
+    .events h2 {
+        font-size: 25px
+    }
+    
+    .events p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .events .lifestyle {
+        margin-bottom: 80px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px
+    }
+    
+    .events .lifestyle img {
+        height: 120px
+    }
+    
+    .events .lifestyle h4 {
+        font-size: 13px;
+        margin-top: 11px;
+        padding-left: 5px
+    }
+    
+    .events .lifestyle span {
+        font-size: 12px;
+        margin-right: 25px
+    }
+    
+    .events .lifestyle p {
+        font-size: 12px;
+        margin-bottom: 15px
+    }
+    /* End Events */
+    
+    
+    /* Start Luxurey */
+    .luxurey .luxurey-overlay h2 {
+        font-size: 40px
+    }
+    
+    .luxurey .luxurey-overlay p {
+        font-size: 15px
+    }
+    /* End Luxurey */
+    
+    
+    /* Start Footer */
+    footer .col-xs-12 {
+        margin-bottom: 40px
+    }
+    footer h2 {
+        text-align: center
+    }
+    
+    footer p {
+        text-align: center
+    }
+    
+    footer ul li {
+        text-align: center  
+    }
+    
+    footer .footer-icons {
+        text-align: center
+    }
+    
+    footer i {
+        text-align: center
+    }
+    
+    footer form {
+        text-align: center
+    }
+    /* End Footer */
+    
+    
+    /* Start Footer Bottom */
+    .footer-bottom p {
+        font-size: 11px
+    }
+    /* End Footer Bottom */
+    
+}
+
+/* End Extra Small Screen From 0 To 767px */
+
+
+
+/* Start Small Screen From 768px To 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /* Start Header */
+    header h1 {
+        text-align: center
+    }
+    
+    header .para-details p {
+        padding-right: 0
+    }
+    
+    header p.para-journey {
+        font-size: 18px
+    }
+    
+    .tour .tour-overlay p {
+        padding-left: 90px;
+        padding-right: 90px
+    }
+    
+    header nav .icons-adrs {
+        margin-left: 0
+    }
+    
+    header nav .logo-name .logo-icon {
+        width: 23%
+    }
+    
+    header nav .logo-name .logo-heading {
+        width: 77%
+    }
+    
+    header nav .logo-name .logo-icon i {
+        padding-top: 10px;
+        font-size: 40px
+    }
+    
+    header nav .logo-name .logo-heading h3 {
+        font-size: 25px;
+        margin-top: 7px
+    }
+    
+    header nav .logo-name .logo-heading span {
+        letter-spacing: 5px;
+        text-indent: 4px;
+    }
+    
+    header nav .navigation .nav-links ul {
+        margin-top: 20px
+    }
+    /* End Header */
+    
+    
+    /* Start Find A Tour By Tour Type */
+    .tour .tour-overlay {
+        padding-bottom: 50px
+    }
+    .tour .tour-overlay .tour-imgs {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        width: 210px;
+        height: 210px
+    }
+    
+    .tour .tour-overlay .tour-imgs img {
+        width: 100%;
+        height: 100%
+    }
+    
+    .tour .tour-overlay .tour-imgs-overlay h3 {
+        line-height: 170px;
+        font-size: 22px
+    }
+    /* End Find A Tour By Tour Type */
+    
+    
+    /* Start Deals And Discounts */
+    .deals .deals-overlay .surfing {
+        width: 220px
+    }
+    
+    .deals .deals-overlay .surfing img {
+        width: 100%
+    }
+    
+    .deals .deals-overlay .surfing img {
+        height: 140px
+    }
+    
+    .deals .deals-overlay .surfing .deals-price {
+        padding: 5px 13px;
+        top: 120px;
+        left: 62px
+    }
+    
+    .deals .deals-overlay .surfing .deals-price small {
+        font-size: 79%
+    }
+    
+    .deals .deals-overlay .surfing .deals-price big {
+        font-size: 16px
+    }
+    /* End Deals And Discounts */
+    
+    
+    /* Start Promotional */
+    .promotional .promotion {
+        overflow: hidden;
+        width: 49%;
+        height: 240px
+    }
+    
+    .promotional .promotion .prom-overlay h4 {
+        margin-top: 80px
+    }
+    
+    .promotional .promotion img {
+        height: 100%
+    }
+    /* End Promotional */
+    
+    
+    /* Start Events */
+    .events .lifestyle {
+        padding: 5px
+    }
+    .events .lifestyle img {
+        height: 140px
+    }
+    
+    .events .lifestyle h4 {
+        font-size: 14px;
+        margin-top: 15px
+    }
+    
+    .events .lifestyle span {
+        font-size: 12px;
+        margin-right: 25px
+    }
+    
+    .events .lifestyle p {
+        font-size: 13px;
+        margin-bottom: 10px
+    }
+    /* End Events */
+    
+    /* Start Luxurey */
+    .luxurey .luxurey-overlay h2 {
+        font-size: 60px
+    }
+    /* End Luxurey */
+    
+    /* Start Footer */
+    footer h2 {
+        font-size: 25px
+    }
+    
+    footer i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px !important
+    }
+    
+    footer form .sub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        display: block;
+        font-size: 11px;
+        padding: 7px 9px
+    }
+    /* End Footer */
+    
+}
+
+/* End Small Screen From 768px To 991px */
+
+
+
+/* Start Medium Screen From 992px To 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    /* Start Header */
+    header h1 {
+        text-align: center
+    }
+    
+    header .para-details p {
+        padding-right: 0
+    }
+    /* End Header */
+    
+    /* Start Find A Tour By Tour Type */
+    .tour .tour-overlay .tour-imgs {
+        width: 180px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .tour .tour-overlay .tour-imgs img {
+        width: 100%;
+        height: 100%
+    }
+    
+    .tour .tour-overlay .tour-imgs-overlay h3 {
+        line-height: 150px;
+        font-size: 20px
+    }
+    /* End Find A Tour By Tour Type */
+    
+    /* Start Promotional Trip */
+    .promotional .promotion {
+        width: 49%
+    }
+    /* End Promotional Trip */
+    
+    /* Start Events */
+    .events .lifestyle {
+        padding: 5px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .events .lifestyle img {
+        height: 150px
+    }
+    
+    .events .lifestyle span {
+        font-size: 12px;
+        margin-right: 50px
+    }
+    
+    .events .lifestyle p {
+        font-size: 13px;
+        margin-bottom: 15px
+    }
+    /* End Events */
+    
+    /* Start Footer */
+    footer form .sub {
+        margin-top: 15px;
+        display: block;
+        font-size: 11px;
+        padding: 7px 9px
+    }
+    /* End Footer */
+    
+}
+
+/* End Medium Screen From 992px To 1199px */
+
+
+
+/* Start Large Screen From 1200px etc.. */
+
+@media (min-width: 1200px) {
+    
+    /* Start Promotional Trip */
+
+    .promotional .promotion {
+        width: 33%;
+        float: left;
+        height: 320px;
+        position: relative;
+        margin-bottom: 7px
+    }
+
+    .promotional .promotion img {
+        width: 100%;
+        height: 320px
+    }
+
+    .promotional .promotion.prom-1,
+    .promotional .promotion.prom-4 {
+        float: left
+    }
+
+    .promotional .promotion.prom-2,
+    .promotional .promotion.prom-5 {
+        margin-left: 7px;
+        margin-right: 7px
+    }
+
+    .promotional .promotion.prom-3,
+    .promotional .promotion.prom-6 {
+        float: right
+    }
+
+    .promotional .promotion .prom-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .promotional .promotion:hover .prom-overlay button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .promotional .promotion:hover .prom-overlay {
+        background-color: rgba(0, 0, 0, 0.8)
+    }
+
+    .promotional .promotion .prom-overlay h4 {
+        margin-top: 130px;
+        margin-bottom: 5px;
+        font-size: 30px
+    }
+
+    .promotional .promotion .prom-overlay button {
+        background-color: #006fe6;
+        color: #FFF;
+        border: none;
+        padding: 8px 25px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-bottom: 25px;
+        outline: none;
+        display: none
+    }
+
+    /* End Promotional Trip */
+
+}
+
+/* End Large Screen From 1200px etc.. */

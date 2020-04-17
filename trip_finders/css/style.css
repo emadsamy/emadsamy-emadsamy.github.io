@@ -1,0 +1,482 @@
+/* Start Global */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    overflow-x: hidden
+}
+
+/* End Global */
+
+
+/* Start Header */
+header {
+    background-image: url('../images/Tour.jpg');
+    color: #FFF;
+    background-size: 100% 100%
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+header nav .address {
+    float: left;
+    width: 33%
+}
+
+header nav .icons-adrs {
+    margin-left: 200px;
+    text-align: right
+}
+
+header nav .icons-adrs i {
+    margin-left: 3%;
+    margin-right: 3%;
+    cursor: pointer
+}
+
+header nav hr {
+    background-color: #000;
+    border: none;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+header nav .logo-name .logo-icon {
+    width: 15%;
+    float: left
+}
+
+header nav .logo-name .logo-icon  i {
+    padding-top: 8px
+}
+
+header nav .logo-name .logo-heading {
+    width: 80%;
+    float: left
+}
+
+header nav .logo-name .logo-heading h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #006fe6
+}
+
+header nav .logo-name .logo-heading span {
+    letter-spacing: 7px;
+    text-indent: 6px;
+    display: inline-block
+}
+
+header nav .navigation .nav-links ul {
+    margin-top: 25px;
+    text-align: right
+}
+
+header nav .navigation .nav-links ul li {
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 3%;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+header nav .navigation .nav-links ul li:hover {
+    color: #888
+}
+
+header h1 {
+    padding-top: 160px;
+    text-transform: uppercase
+}
+
+header p.para-journey {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-bottom: 180px
+}
+
+header .para-details {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 100, 230, 0.8);
+}
+
+header .para-details  p {
+    padding-right: 500px
+}
+/* End Header */
+
+
+/* Start Find A Tour By Tour Type */
+.tour {
+    background-image: url('../images/iceeeee.jpeg');
+}
+
+.tour .tour-overlay {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.tour .tour-overlay h2 {
+    text-transform: uppercase
+}
+
+.tour .tour-overlay p {
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-bottom: 80px
+}
+
+.tour .tour-overlay .tour-imgs {
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    position: relative;
+    border-radius: 50%
+}
+
+.tour .tour-overlay .tour-imgs img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%
+}
+
+.tour .tour-overlay .tour-imgs-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%
+}
+
+.tour .tour-overlay .tour-imgs-overlay h3 {
+    line-height: 200px
+}
+
+/* End Find A Tour By Tour Type */
+
+
+/* Start Deals And Discounts */
+.deals {
+    background-image: url('../images/trees.jpeg');
+    background-size: cover
+}
+
+.deals .deals-overlay {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(0, 111, 230, 0.5)
+}
+
+.deals .deals-overlay h2 {
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+
+.deals .deals-overlay .surfing {
+    background-color: #FFF;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.deals .deals-overlay .surfing img {
+    width: 270px;
+    height: 190px
+}
+
+.deals .deals-overlay .surfing h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+    padding-top: 20px
+}
+
+.deals .deals-overlay .surfing p {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #888;
+    margin-bottom: 20px
+}
+
+.deals .deals-overlay .surfing button {
+    background-color: #006fe6;
+    color: #FFF;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 25px
+}
+
+.deals .deals-overlay .surfing .deals-price {
+    background-color: #47a0ff;
+    display: inline-block;
+    position: absolute;
+    top: 170px;
+    left: 85px;
+    color: #FFF;
+    padding: 6px 15px;
+    border-radius: 5px
+}
+
+.deals .deals-overlay .surfing .deals-price small span {
+    text-decoration: line-through
+}
+
+.deals .deals-overlay .surfing .deals-price big {
+    font-size: 18px
+}
+/* End Deals And Discounts */
+
+
+/* Start Find A Tour By Beautiful Trips */
+.beautiful {
+    background-color: #ebebeb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase
+}
+/* End Find A Tour By Beautiful Trips */
+
+
+/* Start Promotional Trip */
+
+.promotional .promotion {
+    width: 33%;
+    float: left;
+    height: 320px;
+    position: relative;
+    margin-bottom: 7px
+}
+
+.promotional .promotion img {
+    width: 100%;
+    height: 320px
+}
+
+.promotional .promotion .prom-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.promotional .promotion:hover .prom-overlay button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.promotional .promotion:hover .prom-overlay {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.promotional .promotion .prom-overlay h4 {
+    margin-top: 130px;
+    margin-bottom: 5px;
+    font-size: 30px
+}
+
+.promotional .promotion .prom-overlay button {
+    background-color: #006fe6;
+    color: #FFF;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    outline: none;
+    display: none
+}
+
+/* End Promotional Trip */
+
+
+/* Start News & Events */
+.events {
+    background-color: #ebebeb;
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.events h2 {
+    text-transform: uppercase;
+    text-align: center
+}
+
+.events p {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 40px;
+    text-align: center
+}
+
+.events .lifestyle {
+    padding: 8px;
+    background-color: #FFF
+}
+
+.events .lifestyle img {
+    width: 100%;
+    height: 200px
+}
+
+.events .lifestyle h4 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: #006fe6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 7px
+}
+
+.events .lifestyle i {
+    color: #555;
+    padding-left: 7px
+}
+
+.events .lifestyle span {
+    font-size: 13px;
+    margin-right: 90px;
+    margin-bottom: 20px;
+    display: inline-block
+}
+
+.events .lifestyle p {
+    padding-left: 7px;
+    padding-right: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #666
+}
+/* End News & Events */
+
+
+/* Start Luxurey Travel */
+.luxurey {
+    background-image: url('../images/Luxurey.jpeg');
+    background-size: cover
+}
+
+.luxurey .luxurey-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    padding-top: 90px;
+    padding-bottom: 120px
+}
+
+.luxurey .luxurey-overlay h2 {
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 0
+}
+
+.luxurey .luxurey-overlay p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px
+}
+
+.luxurey .luxurey-overlay .find-tours {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #47a0ff;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.luxurey .luxurey-overlay .find-tours h4 {
+    font-size: 13px;
+    line-height: 100px;
+    text-transform: uppercase
+}
+/* End Luxurey Travel */
+
+
+/* Start Footer */
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+footer h2 {
+    margin-bottom: 20px
+}
+
+footer p {
+    margin: 2px 0;
+    font-size: 13px;
+    color: #777
+}
+
+footer a {
+    color: #777;
+    text-decoration: none
+}
+
+footer i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #FFF;
+    background-color: #47a0ff;
+    border-radius: 50%;
+    line-height: 35px !important;
+    margin-right: 5px
+}
+
+footer form input {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 13px
+    
+}
+
+footer form .sub {
+    background-color: #006fe6;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px
+}
+/* End Footer */
+
+
+/* Start Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #777
+}
+/* End Footer Bottom */

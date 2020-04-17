@@ -1,0 +1,67 @@
+/* Start Media For Another Pages HTML */
+
+
+/* Start Mobile And Tablet In Another Pages HTML */
+@media (max-width: 767px) {
+    
+    /* Start Gallery */
+    
+    .gallery-pages {
+        height: 400px
+    }
+    
+    .gallery-pages .gallery-pages-overley {
+        height: 400px
+    }
+    
+    .gallery-pages .gallery-pages-overley .gallery-ul ul li {
+        padding: 5px 7px;
+        margin-right: 0;
+        font-size: 7px;
+        font-weight: bold
+    }
+    
+    /* End Gallery */
+    
+    
+    /* Start Contact Page */
+    
+    .contact-pages .contact-form form textarea {
+        width: 90%;
+        height: 120px;
+    }
+    
+    /* End Contact Page */
+    
+    
+}
+/* End Mobile And Tablet In Another Pages HTML */
+
+
+
+/* Start Small In Another Pages HTML */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    
+    
+}
+/* End Small In Another Pages HTML */
+
+
+
+/* Start Medium In Another Pages HTML */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    
+    
+}
+/* End Medium In Another Pages HTML */
+
+
+/* Start Medium In Another Pages HTML */
+@media (min-width: 1200px) {
+    
+    
+    
+}
+/* End Medium In Another Pages HTML */

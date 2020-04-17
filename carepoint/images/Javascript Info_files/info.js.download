@@ -1,0 +1,26 @@
+/*global console, alert, prompt*/
+
+let myPrompt = prompt('Whats Your Name');
+
+switch (myPrompt) {
+    case "Emad":
+        alert("Its Your Name Is Emad");
+        break;
+        
+    case "Fady":
+        alert('Its Your Name Is Fady');
+        break;
+        
+    case "Rizk":
+        alert('Its Your Name Is Rizk');
+        break;
+        
+    case 'Poles':
+        alert("Its Your Name Is Poles");
+        break;
+        
+    default:
+        alert('Lol Go To Hello');
+        break;
+
+}
