@@ -27,61 +27,102 @@
         <!-- Main Styles -->
 		<link rel="stylesheet" href="css/theme.css">
         <!-- Links -->
-        <style>
-            // Medium devices (tablets, 768px and up)*/
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                
-            }
-
-/*            // Large devices (desktops, 992px and up)*/
-            @media (min-width: 992px) and (max-width: 1199.98px) {
-                
-            }
-
-/*            // Extra large devices (large desktops, 1200px and up)*/
-            @media (min-width: 1200px) {
-                
-            }
-        </style>
 	</head>
 	<body>
-        
-        <div id="dropdownNavbar" class="navbar-dropdown" style="display: block">
-            <nav class="dropdown-nav">
+
+        <div class="home-container">
+             <!-- Navbar-->
+            <nav class="home-navbar">
                 <div class="container-fluid">
                     <div class="navbar d-flex justify-content-between">
-                        <div class="nav-logo"><a href="index.html"><img src="img/logo.svg" class="img-fluid" /></a></div>
+                        <div class="nav-logo"><a href="index.html"><img src="img/logo_wh.svg" class="img-fluid" /></a></div>
                         <div class="nav-icon-links d-flex">
-                            <div id="closeDropdownBar" class="nav-icon"><a class="nav-icon-link" href="#"><img src="img/icons/close.svg" class="img-fluid" /></a></div>
+                            <div class="nav-icon"><a class="nav-icon-link" href="cart.html"><img src="img/icons/cart_wh.svg" class="img-fluid" /></a></div>
+                            <div class="nav-icon nav-user"><a class="nav-icon-link" href="login.html"><img src="img/icons/user_wh.svg" class="img-fluid" /></a></div>
+                            <div class="nav-icon"><a class="nav-icon-link" href="#"><img src="img/icons/globe_wh.svg" class="img-fluid" /></a></div>
+                            <div id="openDropdownBar" class="nav-icon"><a class="nav-icon-link" href="#"><img src="img/icons/menu_wh.svg" class="img-fluid" /></a></div>
                         </div>
                     </div>
                 </div>
             </nav>
-            
-            <div class="navbar-dropdown-content">
-                <ul class="list-unstyled navbar-dropdown-links">
-                    <li class="navbar-dropdown-link"><a href="products.html">المنتجات</a></li>
-                    <li class="navbar-dropdown-link"><a href="videos.html">إرشادات الطباعة | فيديو</a></li>
-                    <li class="navbar-dropdown-link"><a href="complaint.html">لديك شكوى</a></li>
-                    <li class="navbar-dropdown-link"><a href="pricing_order.html">طلب تسعير</a></li>
-                    <li class="navbar-dropdown-link"><a href="contact.html">تواصل معنا</a></li>
-                    <li class="navbar-dropdown-link"><a href="about.html">من نحن</a></li>
-                    <li class="navbar-dropdown-footer">
-                        <div class="privacy-policy"><a href="privacy_policy.html">سياسة الأستخدام</a></div>
-                        <div class="socialmedia">
-                            <div class="follow-us">تابعنا علي </div>
-                            <div class="socialmedia-icons">
-                                <a class="socialmedia-ic" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="socialmedia-ic" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="socialmedia-ic" href="#"><i class="fab fa-youtube"></i></a>
-                                <a class="socialmedia-ic" href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Navbar-->
+
+            <!-- Navbar Dropdown -->
+            <div id="dropdownNavbar" class="navbar-dropdown">
+                <nav class="dropdown-nav">
+                    <div class="container-fluid">
+                        <div class="navbar d-flex justify-content-between">
+                            <div class="nav-logo"><a href="index.html"><img src="img/logo.svg" class="img-fluid" /></a></div>
+                            <div class="nav-icon-links d-flex">
+                                <div id="closeDropdownBar" class="nav-icon"><a class="nav-icon-link" href="#"><img src="img/icons/close.svg" class="img-fluid" /></a></div>
                             </div>
                         </div>
-                        <div class="copyright">كل الحقوق محفوظة &copy; KAIZEN 2020</div>
-                    </li>
-                </ul>
+                    </div>
+                </nav>
+
+                <div class="navbar-dropdown-content">
+                    <ul class="list-unstyled navbar-dropdown-links">
+                        <li class="navbar-dropdown-link"><a href="products.html">المنتجات</a></li>
+                        <li class="navbar-dropdown-link"><a href="videos.html">إرشادات الطباعة | فيديو</a></li>
+                        <li class="navbar-dropdown-link"><a href="complaint.html">لديك شكوى</a></li>
+                        <li class="navbar-dropdown-link"><a href="pricing_order.html">طلب تسعير</a></li>
+                        <li class="navbar-dropdown-link"><a href="contact.html">تواصل معنا</a></li>
+                        <li class="navbar-dropdown-link"><a href="about.html">من نحن</a></li>
+                        <li class="navbar-dropdown-footer">
+                            <div class="privacy-policy"><a href="privacy_policy.html">سياسة الأستخدام</a></div>
+                            <div class="socialmedia">
+                                <div class="follow-us">تابعنا علي </div>
+                                <div class="socialmedia-icons">
+                                    <a class="socialmedia-ic" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="socialmedia-ic" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="socialmedia-ic" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a class="socialmedia-ic" href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                            <div class="copyright">كل الحقوق محفوظة &copy; KAIZEN 2020</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- Navbar Dropdown -->
+            
+            <!-- Header -->
+            <header>
+                <div class="container-fluid">
+                    <div class="header-text">
+                        <h1 class="title mb-3">الطباعة<br /> أونلاين أسـهـل.</h1>
+                        <a class="goto-products" href="products.html"><img src="img/icons/apps.svg" class="apps-icon img-fluid" /> المنتجات</a>
+                    </div>
+                </div>
+            </header>
+            <!--<ul id="slides">
+                <li id="firstSlide" class="slide showing">
+                    <div class="container-fluid">
+                        <div class="header-text">
+                            <h1 class="title mb-3">الطباعة<br /> أونلاين أسـهـل.</h1>
+                            <a class="goto-products" href="products.html"><img src="img/icons/apps.svg" class="apps-icon img-fluid" /> المنتجات</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="container-fluid">
+                        <div class="header-text">
+                            <h1 class="title mb-3">الألوان<br /> وكأنها طبيعية.</h1>
+                            <a class="goto-products" href="products.html"><img src="img/icons/apps.svg" class="apps-icon img-fluid" /> المنتجات</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="container-fluid">
+                        <div class="header-text">
+                            <h1 class="title mb-3">السعر مناسب<br /> للجميع.</h1>
+                            <a class="goto-products" href="products.html"><img src="img/icons/apps.svg" class="apps-icon img-fluid" /> المنتجات</a>
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
         </div>
+
         
 		<!-- Scripts -->
         <!-- Jquery V 3.3.1 -->
@@ -99,5 +140,22 @@
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <!-- Main Functions -->
         <script src="js/functions.js"></script>
+        <script>
+            $("#slides, nav").on('mousewheel', function () {
+                 window.location.href = "products.html";
+            });
+                
+            /*var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2000);
+            $("#firstSlide").addClass('slideshow');
+            function nextSlide(){
+                
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide+1)%slides.length;
+                slides[currentSlide].className = 'slide showing slideshow';
+            }*/
+        </script>
+        <!-- Scripts -->
 	</body>
 </html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="description" content="#">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Meta Tags -->
+        <!-- Title -->
+		<title>كايزن</title>
+
+        <!-- Links -->
+        <!-- Project Icon -->
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+        <link rel="icon" href="img/logo.svg" type="image/x-icon">
+        <!-- Bootstrap V 4.1.3 -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- FontAwesome 5 -->
+		<link rel="stylesheet" href="css/fontawesome.css">
+        <!-- Icon Moon Library --> <!-- Convert Img Svg To Icon -->
+		<link rel="stylesheet" href="css/iconmoon.css">
+        <!-- Glider Style -->
+		<link rel="stylesheet" href="css/glider.min.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <!-- Main Styles -->
+		<link rel="stylesheet" href="css/theme.css">
+        <style>
+            
+            * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .pic-wrapper {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        figure {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          /*animation*/
+
+          animation: slideShow 24s linear infinite 0s;
+          -o-animation: slideShow 24s linear infinite 0s;
+          -moz-animation: slideShow 24s linear infinite 0s;
+          -webkit-animation: slideShow 24s linear infinite 0s;
+        }
+
+        figurecaption {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: #fff;
+        }
+
+        .pic-1 {
+          opacity: 1;
+          background: url(http://cdn.morguefile.com/imageData/public/files/g/GaborfromHungary/06/p/74fea178af5c36b5303625ffeacd8454.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+
+        .pic-2 {
+          animation-delay: 6s;
+          -o-animation-delay: 6s;
+          -moz--animation-delay: 6s;
+          -webkit-animation-delay: 6s;
+          background: url(http://cdn.morguefile.com/imageData/public/files/k/Koan/06/p/ea989990a29bb73aa78db9f8322b5631.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+
+        .pic-3 {
+          animation-delay: 12s;
+          -o-animation-delay: 12s;
+          -moz--animation-delay: 12s;
+          -webkit-animation-delay: 12s;
+          background: url(http://cdn.morguefile.com/imageData/public/files/t/TSmythe/06/p/74820906fce25071550b74b6773a0e19.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+
+        .pic-4 {
+          animation-delay: 18s;
+          -o-animation-delay: 18s;
+          -moz--animation-delay: 18s;
+          -webkit-animation-delay: 18s;
+          background: url(http://cdn.morguefile.com/imageData/public/files/i/Isbiliani/05/p/8787b7ac34a8de4c4aad6fe8a5d7e925.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        /* keyframes*/
+
+        @keyframes 
+        slideShow {  0% {
+         opacity: 0;
+         transform:scale(1);
+         -ms-transform:scale(1);
+        }
+         5% {
+         opacity: 1
+        }
+         25% {
+         opacity: 1;
+        }
+         30% {
+         opacity: 0;
+         transform:scale(1.1);
+         -ms-transform:scale(1.1);
+        }
+         100% {
+         opacity: 0;
+         transform:scale(1);
+         -ms-transformm:scale(1);
+        }
+        }
+         @-o-keyframes 
+        slideShow {  0% {
+         opacity: 0;
+         -o-transform:scale(1);
+        }
+         5% {
+         opacity: 1
+        }
+         25% {
+         opacity: 1;
+        }
+         30% {
+         opacity: 0;
+         -o-transform:scale(1.1);
+        }
+         100% {
+         opacity: 0;
+         -o-transformm:scale(1);
+        }
+        }
+         @-moz-keyframes 
+        slideShow {  0% {
+         opacity: 0;
+         -moz-transform:scale(1);
+        }
+         5% {
+         opacity: 1
+        }
+         25% {
+         opacity: 1;
+        }
+         30% {
+         opacity: 0;
+         -moz-transform:scale(1.1);
+        }
+         100% {
+         opacity: 0;
+         -moz-transformm:scale(1);
+        }
+        }
+         @-webkit-keyframes 
+        slideShow {  0% {
+         opacity: 0;
+         -webkit-transform:scale(1);
+        }
+         5% {
+         opacity: 1
+        }
+         25% {
+         opacity: 1;
+        }
+         30% {
+         opacity: 0;
+         -webkit-transform:scale(1.1);
+        }
+         100% {
+         opacity: 0;
+         -webkit-transformm:scale(1);
+        }
+        }
+            
+        </style>
+        <!-- Links -->
+	</head>
+	<body>
+
+        <div class="pic-wrapper">
+          <figure class="pic-1"></figure>
+          <figure class="pic-2"></figure>
+          <figure class="pic-3"></figure>
+          <figure class="pic-4"></figure>
+        </div>
+
+        
+		<!-- Scripts -->
+        <!-- Jquery V 3.3.1 -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+                crossorigin="anonymous"></script>
+        <!-- Bootstrap V 4.3.1 -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Glider Slider -->
+        <!-- Official Site To Glider https://nickpiscitelli.github.io/Glider.js/index.html#demos -->
+		<script src="js/glider.js"></script>
+        <!-- Swiper -->
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <!-- Main Functions -->
+        <script src="js/functions.js"></script>
+        <script>
+            
+        </script>
+        <!-- Scripts -->
+	</body>
+</html>
