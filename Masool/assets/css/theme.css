@@ -2,7 +2,7 @@
 /* Variables */
 /* Global Styles */
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Almarai', sans-serif;
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -14,33 +14,6 @@ html {
   height: 100%;
   width: 100%; }
 
-@font-face {
-  font-family: "SwissraCondensed";
-  src: url("../fonts/Swissra-Condensed-Normal.otf") format("otf");
-  src: url("../fonts/swissracondensed-normal.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "SwissraCondensed";
-  src: url("../fonts/Swissra-Condensed-Medium.otf") format("otf");
-  font-weight: 500;
-  font-style: medium; }
-@font-face {
-  font-family: "SwissraCondensed";
-  src: url("../fonts/Swissra-Condensed-Bold.otf") format("otf");
-  font-weight: 600;
-  font-style: bold; }
-.fas, .fal, .far {
-  font-family: "Font Awesome 5 Free" !important; }
-
-input, button {
-  outline: none !important;
-  border: none;
-  background: none; }
-
-button {
-  cursor: pointer; }
-
 a, a:hover, a:focus, a:active {
   text-decoration: none !important;
   cursor: pointer; }
@@ -48,9 +21,6 @@ a, a:hover, a:focus, a:active {
 a:hover, a:focus, a:active {
   color: #000;
   text-decoration: none !important; }
-
-ul {
-  margin-bottom: 0; }
 
 /* Global Styles */
 /* Page */
@@ -69,7 +39,8 @@ ul {
 
 .title {
   margin-bottom: 20px;
-  font-size: 26px; }
+  font-size: 26px;
+  font-weight: 600; }
 
 .description {
   font-size: 21px;
@@ -149,7 +120,10 @@ ul {
   .downloads a,
   .sponsored a {
     margin-left: 5px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+
+  .downloads a:last-of-type {
+    margin-right: -3px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .homepage:before {
     display: inline;

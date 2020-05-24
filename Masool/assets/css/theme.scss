@@ -6,8 +6,7 @@ $blackColor: #30313B;
 
 /* Global Styles */
 * {
-//    font-family: 'SwissraCondensed', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Almarai', sans-serif;
     font-weight: 500;
     padding: 0;
     margin: 0;
@@ -20,37 +19,6 @@ html {
     height: 100%;
     width: 100%;
 }
-@font-face {
-    font-family: "SwissraCondensed";
-    src: url("../fonts/Swissra-Condensed-Normal.otf") format("otf");
-    src: url("../fonts/swissracondensed-normal.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "SwissraCondensed";
-    src: url("../fonts/Swissra-Condensed-Medium.otf") format("otf");
-    font-weight: 500;
-    font-style: medium;
-}
-
-@font-face {
-    font-family: "SwissraCondensed";
-    src: url("../fonts/Swissra-Condensed-Bold.otf") format("otf");
-    font-weight: 600;
-    font-style: bold;
-}
-
-.fas, .fal, .far {
-    font-family: 'Font Awesome 5 Free' !important
-}
-
-input, button {outline: none !important; border: none; background: none}
-
-button {
-    cursor: pointer;
-}
 
 a, a:hover, a:focus, a:active {
 	text-decoration: none !important;
@@ -61,59 +29,6 @@ a:hover, a:focus, a:active {
 	color: #000;
     text-decoration: none !important
 }
-
-ul {
-    margin-bottom: 0
-}
-
-%position_relative {
-    position: relative !important;
-}
-
-%position_absolute {
-    position: absolute !important;
-}
-
-%display_none {
-    display: none !important;
-}
-
-%display_block {
-    display: block !important
-}
-
-%display_flex {
-    display: flex !important;
-}
-
-%justify_content_between {
-    justify-content: space-between !important;
-}
-
-%full_hw {
-    height: 100% !important;
-    width: 100% !important;
-}
-
-%full_width {
-    width: 100% !important;
-}
-
-%full_height {
-    height: 100% !important;
-}
-
-%shadow_none {
-    box-shadow: none !important;
-}
-
-%transition {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 /* Global Styles */
 
 /* Page */
@@ -133,6 +48,7 @@ ul {
 .title {
     margin-bottom: 20px;
     font-size: 26px;
+    font-weight: 600
 }
 .description {
     font-size: 21px;
@@ -218,6 +134,9 @@ ul {
     .sponsored a {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .downloads a:last-of-type {
+        margin-right: -3px;
     }
 }
 
