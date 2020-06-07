@@ -110,213 +110,331 @@
                     <div class="page-header-text">تتبع عملية الطباعة والتسليم</div>
                 </div>
                 
-                <div class="tracking-tabs">
-                    <div class="tracking-tab completed"> <!-- class="loading" Icon Loading Will Appear --> <!-- class="completed" Icon Completed Will Appear -->
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/file.svg" class="ott-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">تم إستلام الملف</div>
-                    </div>
-                    
-                    <div class="tracking-tab loading">
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/progress.svg" class="ott-ic progress-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">جاري الطباعة</div>
-                    </div>
-                    
-                    <div class="tracking-tab">
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/print_completed.svg" class="ott-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">تمت الطباعة</div>
-                    </div>
-                    
-                    <div class="tracking-tab">
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/charging.svg" class="ott-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">جاري الشحن</div>
-                    </div>
-                    
-                    <div class="tracking-tab">
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/shipping_completed.svg" class="ott-ic shipping-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">تم الشحن</div>
-                    </div>
-                    
-                    <div class="tracking-tab">
-                        <div class="tracking-tab-ic">
-                            <img src="img/icons/client_recevied.svg" class="ott-ic client-ic img-fluid" />
-                            <div class="loading-ic">
-                                <img src="img/icons/loading.svg" class="img-fluid" />
-                            </div>
-                            <div class="completed-ic">
-                                <img src="img/icons/completed.svg" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="tracking-tab-title">تم تسليم العميل</div>
-                    </div>
-                </div>
-                
-                <div class="ppc-container">
+                <div class="ppc-container container">
                     <div class="row">
                         
                         <!-- Orders -->
                         <div class="col-lg-9">
                             <div class="row">
-                                
-                                <div class="col-lg-6 col-sm-6">
+                                <div class="col-lg-12 col-sm-12">
                                     <div class="pub-box">
-                                        <div class="pub-header">كتاب</div>
-                                        <div class="pub-body">
-                                            <div class="pub-details">
-                                                <div class="print-cmd">رقم أمر الطباعة <span>2354</span></div>
-                                                <div class="pub-details-list">
-                                                    <div class="details-col">
-                                                        <div class="details-key">المقاس</div>
-                                                        <div class="details-value">29,7cm X 21cm</div>
+                                        <div class="pub-header"><div>كتاب</div> <div class="print-number">أمر طباعة رقم <span> 2354</span></div></div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="pub-details">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">المقاس</div>
+                                                                <div class="details-value">29,7cm X 21cm</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">وزن الورق</div>
+                                                                <div class="details-value">80 عادي</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">عدد الصفحات</div>
+                                                                <div class="details-value">80 صفحة</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">نوع التجليد</div>
+                                                                <div class="details-value">هارد جفر</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">شكل الطباعة</div>
+                                                                <div class="details-value">وجهين</div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">ألوان الطباعة</div>
+                                                                <div class="details-value">4 لون</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">عدد النسخ</div>
+                                                                <div class="details-value">10 نسخ</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">سعر النسخة</div>
+                                                                <div class="details-value">18.00 جنيه</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row row-payment-recievd">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <div class="delivery-date-content">
+                                                            <div class="date-text">طريقة الدفع</div>
+                                                            <div class="date-clock"><img src="img/icons/paypal.svg" class="paypal-ic img-fluid"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <div class="delivery-date-content tracking-date">
+                                                            <div class="date-text">ميعاد التسليم</div>
+                                                            <div class="date d-flex"><span><span class="mr-1">09:21</span>PM</span> <span class="line-space">|</span> <span>21/2/2020</span></div>
+                                                            <div class="date-clock"><img src="img/icons/clock.svg" class="img-fluid"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="tracking-tabs">
+                                                    <div class="tracking-tab completed"> <!-- class="loading" Icon Loading Will Appear --> <!-- class="completed" Icon Completed Will Appear -->
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/file.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم إستلام الملف</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">وزن الورق</div>
-                                                        <div class="details-value">80 عادي</div>
+                                                    <div class="tracking-tab loading">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/progress.svg" class="ott-ic progress-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">جاري الطباعة</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">شكل الطباعة</div>
-                                                        <div class="details-value">وجهين</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/print_completed.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تمت الطباعة</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">ألوان الطباعة</div>
-                                                        <div class="details-value">4 لون</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/shipping_progress.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">جاري الشحن</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">عدد الصفحات</div>
-                                                        <div class="details-value">80 صفحة</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/shipping_completed.svg" class="ott-ic shipping-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم الشحن</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">نوع التجليد</div>
-                                                        <div class="details-value">هارد جفر</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/delivered.svg" class="ott-ic client-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم تسليم العميل</div>
                                                     </div>
-
-                                                    <div class="details-col">
-                                                        <div class="details-key">عدد النسخ</div>
-                                                        <div class="details-value">10 نسخ</div>
-                                                    </div>
-
-                                                    <div class="details-col">
-                                                        <div class="details-key">سعر النسخة</div>
-                                                        <div class="details-value">18.00 جنيه</div>
-                                                    </div>
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                
                                 </div>
-                                <div class="col-lg-6 col-sm-6">
                                 
+                                <div class="col-lg-12 col-sm-12">
                                     <div class="pub-box">
-                                        <div class="pub-header">مجلة</div>
-                                        <div class="pub-body">
-                                            <div class="pub-details">
-                                                <div class="print-cmd">رقم أمر الطباعة <span>2354</span></div>
-                                                <div class="pub-details-list">
-                                                    <div class="details-col">
-                                                        <div class="details-key">المقاس</div>
-                                                        <div class="details-value">29,7cm X 21cm</div>
+                                        <div class="pub-header"><div>كتاب</div> <div class="print-number">أمر طباعة رقم <span> 2354</span></div></div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="pub-details">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">المقاس</div>
+                                                                <div class="details-value">29,7cm X 21cm</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">وزن الورق</div>
+                                                                <div class="details-value">80 عادي</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">عدد الصفحات</div>
+                                                                <div class="details-value">80 صفحة</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">نوع التجليد</div>
+                                                                <div class="details-value">هارد جفر</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">شكل الطباعة</div>
+                                                                <div class="details-value">وجهين</div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">ألوان الطباعة</div>
+                                                                <div class="details-value">4 لون</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">عدد النسخ</div>
+                                                                <div class="details-value">10 نسخ</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-sm-6">
+                                                            <div class="details-col">
+                                                                <div class="details-key">سعر النسخة</div>
+                                                                <div class="details-value">18.00 جنيه</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row row-payment-recievd">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <div class="delivery-date-content">
+                                                            <div class="date-text">طريقة الدفع</div>
+                                                            <div class="date-clock"><img src="img/icons/paypal.svg" class="paypal-ic img-fluid"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <div class="delivery-date-content tracking-date">
+                                                            <div class="date-text">ميعاد التسليم</div>
+                                                            <div class="date d-flex"><span><span class="mr-1">09:21</span>PM</span> <span class="line-space">|</span> <span>21/2/2020</span></div>
+                                                            <div class="date-clock"><img src="img/icons/clock.svg" class="img-fluid"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="tracking-tabs">
+                                                    <div class="tracking-tab completed"> <!-- class="loading" Icon Loading Will Appear --> <!-- class="completed" Icon Completed Will Appear -->
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/file.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم إستلام الملف</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">وزن الورق</div>
-                                                        <div class="details-value">80 عادي</div>
+                                                    <div class="tracking-tab loading">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/progress.svg" class="ott-ic progress-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">جاري الطباعة</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">شكل الطباعة</div>
-                                                        <div class="details-value">وجهين</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/print_completed.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تمت الطباعة</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">ألوان الطباعة</div>
-                                                        <div class="details-value">4 لون</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/shipping_progress.svg" class="ott-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">جاري الشحن</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">عدد الصفحات</div>
-                                                        <div class="details-value">80 صفحة</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/shipping_completed.svg" class="ott-ic shipping-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم الشحن</div>
                                                     </div>
 
-                                                    <div class="details-col">
-                                                        <div class="details-key">نوع التجليد</div>
-                                                        <div class="details-value">هارد جفر</div>
+                                                    <div class="tracking-tab">
+                                                        <div class="tracking-tab-ic">
+                                                            <img src="img/icons/delivered.svg" class="ott-ic client-ic img-fluid" />
+                                                            <div class="loading-ic">
+                                                                <img src="img/icons/loading.svg" class="img-fluid" />
+                                                            </div>
+                                                            <div class="completed-ic">
+                                                                <img src="img/icons/completed.svg" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="tracking-tab-title">تم تسليم العميل</div>
                                                     </div>
-
-                                                    <div class="details-col">
-                                                        <div class="details-key">عدد النسخ</div>
-                                                        <div class="details-value">10 نسخ</div>
-                                                    </div>
-
-                                                    <div class="details-col">
-                                                        <div class="details-key">سعر النسخة</div>
-                                                        <div class="details-value">18.00 جنيه</div>
-                                                    </div>
-
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="delivery-date-content">
-                                        <div class="date-text">طريقة الدفع</div>
-                                        <div class="date-clock"><img src="img/icons/paypal.svg" class="paypal-ic img-fluid"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="delivery-date-content tracking-date">
-                                        <div class="date-text">ميعاد التسليم</div>
-                                        <div class="date d-flex"><span><span class="mr-1">09:21</span>PM</span> <span class="line-space">|</span> <span>21/2/2020</span></div>
-                                        <div class="date-clock"><img src="img/icons/clock.svg" class="img-fluid"></div>
                                     </div>
                                 </div>
                             </div>

@@ -156,6 +156,24 @@ ul {
     transform: translateY(-50%);
 }
 
+.center-vertically {
+    display: inline-block; 
+    vertical-align: middle;
+    text-align: center;
+    overflow-y: auto;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+    > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
 .center-box {
     @extend %position_absolute;
     @extend %position_relative;
@@ -617,6 +635,9 @@ input[type="file"] {
     margin-bottom: 15px;
     transform: scale(1.1);
 }
+.sh-ic-scale {
+    transform: scale(1.5);
+}
 .sh-correct {
     @extend %position_absolute;
     top: 15px;
@@ -1073,12 +1094,16 @@ header {
     background-size: cover;
 }
 .header-text {
-    padding: 150px 0;
+    padding: 0 0;
     line-height: 1.8;
+    position: absolute;
+//    top: 53%;
+//    transform: translateY(-50%);
+    top: 35%;
     .title {
-        font-size: 65px;
+        font-size: calc(600% + 1vw);
         color: #FFF;
-        font-weight: bold;
+        font-weight: 600;
     }
     .apps-icon {
         margin-left: 10px;
@@ -1329,11 +1354,11 @@ header {
     border: 1px solid #66666661;
     padding: 25px 50px;
     text-align: center;
-    margin-bottom: 10px
+    margin-bottom: 13px
 }
 .draggable-img {
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 0;
 }
 .draggable-text {
@@ -1345,7 +1370,7 @@ header {
     @extend %d_flex;
     @extend %justify_between;
     border: 1px solid #66666661;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     .form-control,
     .input-group-prepend,
     .input-group-text {
@@ -1404,7 +1429,7 @@ header {
 }
 .order {
     .selectbox {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1419,7 +1444,8 @@ select {
     padding: 0 15px;
     border: none;
     outline: none;
-    background: none
+    background: none;
+    color: #666
 }
 .selectbox:after {
     @extend %position_absolute;
@@ -1490,6 +1516,9 @@ select {
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    > div:first-of-type {
+        color: #4C4C4C
+    }
 }
 .order-price-currency {
     font-weight: normal;
@@ -1600,6 +1629,15 @@ select {
     .ppc-container {
         padding-bottom: 0
     }
+    .btn {
+        border-radius: 0
+    }
+    .contactus-box {
+        padding-right: 10px
+    }
+}
+.contact-send {
+    border-radius: 0
 }
 .page-delivery,
 .page-requests {
@@ -2030,7 +2068,7 @@ select {
     }
     .pub-btn-text {
         @extend %position_relative;
-        font-size: 13px;
+        font-size: 11px;
     }
     .btn-text-np {
         top: -3px;
@@ -2120,7 +2158,7 @@ select {
     padding: 4px 25px;
     margin-bottom: 20px;
     .truck-ic {
-        width: 28px;
+        width: 37px;
         height: 28px;
     }
     .shipping-text {
@@ -2286,7 +2324,7 @@ select {
         width: 45%;
         height: 4px;
         top: 37px;
-        left: -41%;
+        left: -42%;
         transform: translateY(-50%);
     }
     &:last-of-type {
@@ -2301,7 +2339,7 @@ select {
     }
     &:nth-of-type(2) {
         &:after {
-            left: -48% !important;
+            left: -52% !important;
         }
     }
     &:nth-of-type(4) {
@@ -2342,7 +2380,7 @@ select {
     }
 }
 .progress-ic {
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 .shipping-ic,
 .client-ic {
@@ -2421,7 +2459,7 @@ select {
     @extend %d_flex;
 }
 .table-cell {
-    padding: 10px 5px;
+    padding: 18px 5px;
 }
 .table-header {
     background: #EFEFEF;
@@ -2459,7 +2497,7 @@ select {
         }
 
         &:nth-of-type(6) {
-            width: 4%;
+            width: 4.5%;
         }
 
         &:nth-of-type(7) {
@@ -2473,7 +2511,7 @@ select {
             width: 7%;
         }
         &:nth-of-type(10) {
-            width: 9%;
+            width: 8.5%;
         }
         &:last-of-type {
             width: 18%;
@@ -2605,23 +2643,43 @@ select {
     height: 30px !important;
 }
 .order-tracking-box {
-    height: 100%;
-    padding: 20px 10px;
+//    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     > div {
-        width: 48%;
-        height: 31%;
-        line-height: 55px;
+        width: 43px;
+        height: 43px;
+        line-height: 43px;
         text-align: center;
         background: #E4E4E4;
         color: #979797;
+        float: right;
+        margin-bottom: 13px;
+        &:nth-of-type(odd) {
+            float: left
+        }
+        &:nth-of-type(5),
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 .order-tracking-data {
     text-transform: uppercase;
     font-size: 13px;
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        background: #3FA6F2;
+        color: #FFF
+    }
+    &:active {
+        background: #2f99e7;
+        color: #FFF
+    }
     span {
         font-size: 18px;
         font-weight: 600;
@@ -2636,7 +2694,7 @@ select {
             width: 30%;
         }
         &:last-of-type {
-            width: 65%;
+            width: 68%;
         }
     }
 }
@@ -2661,9 +2719,20 @@ select {
         @extend %position_relative;
         font-weight: 600;
         font-size: 14px;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+            background: #EEE
+        }
+        &:active {
+            background: #dadada;
+        }
         span {
             @extend %position_relative;
-            top: 4px;
+            top: 3px;
             width: 14px;
             height: 14px;
             border-radius: 100%;
@@ -2786,6 +2855,17 @@ select {
         bottom: 14px;
         top: auto;
         right: 3px;
+    }
+}
+.bill-btn {
+    text-align: center;
+    padding: 10px;
+    @extend %transition;
+    &:hover {
+        background: #EEE;
+    }
+    &:active {
+        background: #dadada;
     }
 }
 /* Requests */
@@ -3716,6 +3796,7 @@ select {
             height: 55px;
             transform: scale(1);
         }
+        
         .multiple-select-box {
             display: block !important;
             .selectbox {
@@ -4332,7 +4413,7 @@ select {
         margin: auto;
     }
     .product-view-links {
-        bottom: 37px !important
+        bottom: 50px !important
     }
     .product-options { 
         display: inline-block; 
@@ -4360,8 +4441,8 @@ select {
         vertical-align: middle;
         text-align: center;
         background: #FFF;
-//        border: 1px solid #000;
-        width: 480px
+        width: 480px;
+        margin-bottom: 15px
     }
     /* Order */
     
@@ -4372,10 +4453,15 @@ select {
         }
         .pub-action {
             width: 21%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
         }
         .pub-btn {
             padding-left: 10px;
             padding-right: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
     }
     .sidebar-padding {
