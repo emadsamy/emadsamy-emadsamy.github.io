@@ -47,6 +47,21 @@ $(document).ready(function () {
           }
       });
     });
+
+    // Menu Navbar
+    $('.navbar-menu').on('click', function () {
+      if ($(this).hasClass('active')) {
+        console.log("has Class");
+        $(this).removeClass('active');
+        // $("nav").animate({marginTop: "-38px"}, 300);
+        $("nav").removeClass('active');
+      } else {
+        console.log("Dont Have Class");
+        $(this).addClass('active');
+        // $("nav").animate({marginTop: "0"}, 300);
+        $("nav").addClass('active');
+      }
+    });
 });
 
 // Hideen Preloader After Page Loadded
