@@ -632,12 +632,14 @@ html {
     font-size: 16px;
     color: #666666;
     font-weight: 600;
-    padding-left: 25px;
-    border-left: 1px solid $mainColor;
-    margin-left: 25px;
     line-height: 1;
-    &:last-of-type {
-      border: none;
+    &:nth-of-type(2) {
+      border-left: 1px solid $mainColor;
+      border-right: 1px solid $mainColor;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
     &:hover {
       color: $mainColor;
@@ -1123,6 +1125,9 @@ nav.active {
     display: flex !important;
     z-index: -20
 }
+.owl-dots {
+  display: none !important
+}
 .carousel-arrow {
     width: 13px;
 }
@@ -1130,9 +1135,8 @@ nav.active {
   @extend %position_relative;
 }
 .all-products-btn {
-  @extend %position_absolute;
-  left: 50%;
-  transform: translateX(-84%);
+  @extend %position_relative;
+  left: -4%;
   &:hover {
     span {
       color: $mainColor;
@@ -2242,14 +2246,40 @@ nav.active {
       }
     }
 
+    // Navbar Toggle
+    .navbar-toggle {
+      .container-fluid {
+        > div.d-flex {
+            display: block !important;
+        }
+      }
+    }
+    .navbar-toggle-links {
+      text-align: center;
+    }
+    .navbar-toggle-socialmedia {
+      justify-content: center;
+      margin: 5px;
+      a {
+        margin: 0 10px;
+      }
+    }
+
     // Navbar
+    nav {
+      margin-top: -72px
+    }
     .navbar-links {
       &:last-of-type .navbar-link {
-        margin-right: 5px;
+        margin-right: 0;
       }
       .navbar-logo {
         width: 90px;
-        top: -2px
+        margin-top: -2px;
+      }
+      > a, > div {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
       }
     }
     .toolbar-links {
@@ -2273,13 +2303,18 @@ nav.active {
 
     // Dropdown Menu
     .dropdown-toggle-menu {
-      margin-right: 6px;
+      margin-right: 0;
       .user-name {
         display: none;
       }
     }
     .dropdown-menu.show {
       left: -35px !important
+    }
+    .user-dropdown {
+      .icon-arrow_down {
+        display: none;
+      }
     }
 
     // Footer
@@ -2588,10 +2623,6 @@ nav.active {
     /* Products */
 
     /* View Products */
-    .product-view-row {
-      width: 535px;
-      margin: auto;
-    }
     .product-description {
       display: flex;
       flex-wrap: wrap;
@@ -2732,6 +2763,12 @@ nav.active {
     }
     /* Global Components */
 
+    /* Products */
+    .owl-nav {
+      top: 46%
+    }
+    /* Products */
+
     /* View Products */
     .product-view-row {
       width: 720px;
@@ -2862,6 +2899,12 @@ nav.active {
     }
 
     /* Global Components */
+
+    /* Products */
+    .owl-nav {
+      top: 46%
+    }
+    /* Products */
 
     /* View Product */
     .view-product {
