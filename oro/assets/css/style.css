@@ -82,16 +82,16 @@ a:active {
 ul {
   margin-bottom: 0; }
 
-.page-header-title span, .divider, .half-background, .tooltip-link, .page-container, .navbar-links .icon, .navbar-links .navbar-logo, .icon-arrow_down, .toolbar-links a:nth-of-type(2), .social-icon, .user-dropdown, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .selectbox, .home, .product-card, .all-products .text, .copies-numbers, .upload-file, .upload-cover, .product-view, .price-body, .price-currency, .cart-follow-btns > a img, .status-completed .status-logo, .instructions-list li, .instructions-list li span, .table-col-multiple > div, .about-widget, .contact-details .title span[class*="icon-"], .contact-details .direction .icon-back, .contact-form .icon-back {
+.page-header-title span, .divider, .half-background, .tooltip-link, .page-container, .navbar-links .icon, .navbar-links .navbar-logo, .icon-arrow_down, .toolbar-links a:nth-of-type(2), .social-icon, .user-dropdown, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .selectbox, .home, .product-card, .all-products, .all-products-btn .text, .copies-numbers, .upload-file, .upload-cover, .product-view, .price-body, .price-currency, .cart-follow-btns > a img, .status-completed .status-logo, .instructions-list li, .instructions-list li span, .table-col-multiple > div, .about-widget, .contact-details .title span[class*="icon-"], .contact-details .direction .icon-back, .contact-form .icon-back {
   position: relative; }
 
-input[type="file"], .divider .divider-text, .overlay, .gradient-easing, .tooltip-link .tooltip-content, .tooltip-link .tooltip-content:after, .preloader .preloader-icon, .toolbar-links a:nth-of-type(2):after, .toolbar-links a:nth-of-type(2):before, .selectbox:after, .home .logo, .arrow-bottom, .owl-nav, .copies-numbers button, .product-toolbar, .price-body > div, .status-correct-ic, .table-col-multiple > div:last-of-type:before, .about-header .title, .about-widget:before, .contact-widget {
+input[type="file"], .divider .divider-text, .overlay, .gradient-easing, .tooltip-link .tooltip-content, .tooltip-link .tooltip-content:after, .preloader .preloader-icon, .toolbar-links a:nth-of-type(2):after, .toolbar-links a:nth-of-type(2):before, .selectbox:after, .home .logo, .arrow-bottom, .owl-nav, .all-products-btn, .copies-numbers button, .product-toolbar, .price-body > div, .status-correct-ic, .table-col-multiple > div:last-of-type:before, .about-header .title, .about-widget:before, .contact-widget {
   position: absolute; }
 
 .btn, .product-card, .toolbar-item, .price, .price-currency {
   display: block; }
 
-.center-vertically, .center-vertically:before, .center-vertically > div, .divider .divider-text, .followus-text, .navbar-toggle-links a, .navbar-links .navbar-link, .toolbar-links a, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .home .logo a, .nav-links, .all-products span, .price-body, .connections-apis a, .forgot-reg-login a, .instructions-list li, .instructions-list li span, .contact-details .title span[class*="icon-"] {
+.center-vertically, .center-vertically:before, .center-vertically > div, .divider .divider-text, .followus-text, .navbar-toggle-links a, .navbar-links .navbar-link, .toolbar-links a, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .home .logo a, .nav-links, .all-products-btn span, .price-body, .connections-apis a, .forgot-reg-login a, .instructions-list li, .instructions-list li span, .contact-details .title span[class*="icon-"] {
   display: inline-block; }
 
 .page-container, .footer, .product-list-description, .product-list-description > div, .table-header,
@@ -117,7 +117,7 @@ input[type="file"], .divider .divider-text, .overlay, .gradient-easing, .tooltip
 .form-control:hover, .form-control:active, .form-control:focus {
   box-shadow: none; }
 
-.tooltip-link .tooltip-content, .btn, .navbar-toggle, .navbar-toggle-links a, nav, .navbar-links .navbar-link, .toolbar-links a, .social-icon i, .dropdown-item, .nav-links a, .arrow-bottom, .product-card, .product-title, .product-price, .all-products span, .toolbar-item-icon, .toolbar-item-text, .order-tracking-data, .instructions-list li, .bill-btn, .cancel-order .icon {
+.tooltip-link .tooltip-content, .btn, .navbar-toggle, .navbar-toggle-links a, nav, .navbar-links .navbar-link, .toolbar-links a, .social-icon i, .dropdown-item, .nav-links a, .arrow-bottom, .product-card, .product-title, .product-price, .all-products-btn span, .toolbar-item-icon, .toolbar-item-text, .order-tracking-data, .instructions-list li, .bill-btn, .cancel-order .icon {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -834,24 +834,27 @@ nav.active {
 .carousel-arrow {
   width: 13px; }
 
-.all-products:hover span {
-  color: #FFCF0E; }
-.all-products:hover .icon {
-  border: 2px solid #FFCF0E !important; }
-.all-products span {
-  color: #666;
-  font-weight: 600; }
-.all-products .icon {
-  width: 40px;
-  height: 40px;
-  line-height: 34px;
-  border-radius: 50%;
-  border: 2px solid #666;
-  text-align: center; }
-.all-products .text {
-  top: 6px;
-  margin-right: 5px;
-  font-size: 17px; }
+.all-products-btn {
+  left: 50%;
+  transform: translateX(-84%); }
+  .all-products-btn:hover span {
+    color: #FFCF0E; }
+  .all-products-btn:hover .icon {
+    border: 2px solid #FFCF0E !important; }
+  .all-products-btn span {
+    color: #666;
+    font-weight: 600; }
+  .all-products-btn .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 50%;
+    border: 2px solid #666;
+    text-align: center; }
+  .all-products-btn .text {
+    top: 6px;
+    margin-right: 5px;
+    font-size: 17px; }
 
 /* >>>>>> Products <<<<<< */
 /* >>>>>> View Product <<<<<< */
