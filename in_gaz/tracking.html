@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="description" content="#">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Title -->
+		<title>Tracking</title>
+
+        <!-- Links -->
+        <!-- Project Shortcut Icon -->
+        <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+        <link rel="icon" href="assets/img/logo.svg" type="image/x-icon">
+
+        <!-- Bootstrap V 4.1.3 -->
+       <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- FontAwesome 5 -->
+		<link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!-- Icomoon Library --> <!-- Convert Images Svg To Icons -->
+		<link rel="stylesheet" href="assets/css/icomoon.css">
+        <!-- Owl Carousel Slider --> <!-- (Refrence) https://owlcarousel2.github.io/OwlCarousel2 -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Main Styles -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+				<!-- PreLoader -->
+				<div id="preloader" class="preloader">
+						<div class="overlay">
+								<img src="assets/img/loader.svg" class="preloader-icon img-fluid" />
+						</div>
+				</div>
+				<!-- PreLoader -->
+
+        <!-- Tracking -->
+        <div id="page" class="page-container tracking">
+            <!-- Navbar -->
+						<nav>
+							<!-- Main Navbar -->
+							<div class="navbar">
+								<div class="container-fluid">
+										<div class="navbar-content d-flex justify-content-between">
+												<div class="navbar-links d-flex">
+														<a href="index.html" class="navbar-link navbar-logo"><img src="assets/img/logo.svg" alt="Logo" class="img-fluid" /></a>
+												</div>
+												<div class="toolbar-links">
+													<a href="javascript:void(0)">رصيدك 260.00</a>
+													<a href="previous-requests.html">طلباتك السابقة</a>
+													<a href="tracking.html">تتبع طلبك</a>
+												</div>
+												<div class="navbar-links d-flex">
+														<a href="#" class="navbar-link"><span class="icon-phone icon"></span></a>
+														<a href="cart.html" class="navbar-link">
+															<span class="icon-cart icon"></span>
+															<span class="notifications circle text-center">4</span>
+														</a>
+														<div class="user-dropdown">
+																<div
+																		class="dropdown-toggle dropdown-toggle-menu"
+																		data-toggle="dropdown"
+																		aria-haspopup="true"
+																		aria-expanded="false">
+																		<span class="icon-user"></span>
+																		<span class="user-name">Mohamed Nasser</span>
+																		<span class="icon-arrow_down"></span>
+																</div>
+																<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+																		<a class="dropdown-item" href="#">Action</a>
+																		<a class="dropdown-item" href="#">Another action</a>
+																		<a class="dropdown-item" href="#">Something else here</a>
+																</div>
+														</div>
+														<a id="menuBar" href="javascript:void(0)" class="navbar-link navbar-link-menu">
+															<div class="menu-bar">
+																	<div class="child-bar-1"></div>
+																	<div class="child-bar-2"></div>
+																	<div class="child-bar-3"></div>
+															</div>
+														</a>
+												</div>
+										</div>
+								</div>
+							</div>
+						</nav>
+
+						<!-- Toggle Navbar (Dropdown) -->
+						<div class="backdrop"></div>
+						<div class="navbar-toggle">
+							<div class="container-fluid">
+									<div class="d-flex justify-content-between pt-3 pb-3">
+											<div class="navbar-toggle-links">
+													<a href="index.html" class="mr-0">الرئيسية</a>
+													<a href="index.html">من نحن</a>
+													<a href="index.html">إتصل بنا</a>
+													<a href="index.html">خدمات الشركات <sup>قريباً</sup></a>
+											</div>
+											<div class="navbar-toggle-socialmedia d-flex">
+													<div><span class="followus-text ml-4">تابعنا</span></div>
+													<a class="facebook-icon social-icon" href="#"><i class="fab fa-twitter"></i></a>
+													<a class="linkedin-icon social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+													<a class="youtube-icon social-icon" href="#"><i class="fab fa-youtube"></i></a>
+													<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+											</div>
+									</div>
+							</div>
+						</div>
+
+            <!-- Page Content -->
+            <div class="page-content">
+								<div class="page-header mb-5">
+									<div class="container-fluid text-center">
+										<img src="assets/img/icons/location.svg" class="header-icon mr-2 img-fluid" /> تتبع عملية الطباعة والتسليم
+									</div>
+								</div>
+                <div class="container">
+
+									<!-- Table Tracking Container -->
+									<div class="table-list mb-5">
+
+										<div class="tracking-row"> <!-- ***Start Full Row*** -->
+											<!-- Tracking Table -->
+											<div class="table mb-4">
+												<!-- Table Header -->
+												<div class="table-header">
+														<div>رقم الطلب</div>
+														<div>الوصف</div>
+														<div>الملاحظات</div>
+														<div>الوقت المتبقي</div>
+														<div>إلغاء الطلب</div>
+												</div>
+
+												<!-- Table Row -->
+												<div class="table-row">
+														<!-- Table Data -->
+														<div class="table-row-data">
+																<div class="table-cell">
+																		<div class="order-number">2312145</div>
+																</div>
+																<div class="table-cell">
+																		<div class="product-list-description pr-4 pl-4">
+																				<div class="description-row">
+																						<div class="description-key">المقاس</div>
+																						<div class="description-value">29,7cm X 21cm</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">وزن الورق</div>
+																						<div class="description-value">80 عادي</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">شكل الطباعة</div>
+																						<div class="description-value">وجهين</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">ألوان الطباعة</div>
+																						<div class="description-value">4 لون</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">عدد الصفحات</div>
+																						<div class="description-value">80 صفحة</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">نوع التجليد</div>
+																						<div class="description-value">هارد جفر</div>
+																				</div>
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="text-left">
+																			الهارد جفر في التجليد يكون اسود و الكلام بالذهبي
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="received-date">
+																				<div class="received-date-content">05-03-2020</div>
+																				<div class="received-time">03:58<span class="pr-1">PM</span></div>
+																		</div>
+																</div>
+																<div class="table-cell center-vertically">
+																	<div class="cancel-order">
+																			<span class="icon-trash icon"></span>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+											<!-- Tracking Progress -->
+											<div class="tracking-progres d-flex justify-content-between">
+													<!-- IF Item Completed Add Class (active) -->
+													<div class="tracking-progres-item text-center active">تم إستلام الملف</div>
+													<div class="tracking-progres-item text-center active">جاري الطباعة</div>
+													<div class="tracking-progres-item text-center active">تمت الطباعة</div>
+													<div class="tracking-progres-item text-center active">تم الشحن</div>
+											</div>
+										</div> <!-- ***End Full Row*** -->
+
+										<div class="tracking-row"> <!-- ***Start Full Row*** -->
+											<!-- Tracking Table -->
+											<div class="table mb-4">
+												<!-- Table Header -->
+												<div class="table-header">
+														<div>رقم الطلب</div>
+														<div>الوصف</div>
+														<div>الملاحظات</div>
+														<div>الوقت المتبقي</div>
+														<div>إلغاء الطلب</div>
+												</div>
+
+												<!-- Table Row -->
+												<div class="table-row">
+														<!-- Table Data -->
+														<div class="table-row-data">
+																<div class="table-cell">
+																		<div class="order-number">2312145</div>
+																</div>
+																<div class="table-cell">
+																		<div class="product-list-description pr-4 pl-4">
+																				<div class="description-row">
+																						<div class="description-key">المقاس</div>
+																						<div class="description-value">29,7cm X 21cm</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">وزن الورق</div>
+																						<div class="description-value">80 عادي</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">شكل الطباعة</div>
+																						<div class="description-value">وجهين</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">ألوان الطباعة</div>
+																						<div class="description-value">4 لون</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">عدد الصفحات</div>
+																						<div class="description-value">80 صفحة</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">نوع التجليد</div>
+																						<div class="description-value">هارد جفر</div>
+																				</div>
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="text-left">
+																			الهارد جفر في التجليد يكون اسود و الكلام بالذهبي
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="received-date">
+																				<div class="received-date-content">05-03-2020</div>
+																				<div class="received-time">03:58<span class="pr-1">PM</span></div>
+																		</div>
+																</div>
+																<div class="table-cell center-vertically">
+																	<div class="cancel-order">
+																			<span class="icon-trash icon"></span>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+											<!-- Tracking Progress -->
+											<div class="tracking-progres d-flex justify-content-between">
+													<!-- IF Item Completed Add Class (active) -->
+													<div class="tracking-progres-item text-center">تم إستلام الملف</div>
+													<div class="tracking-progres-item text-center">جاري الطباعة</div>
+													<div class="tracking-progres-item text-center">تمت الطباعة</div>
+													<div class="tracking-progres-item text-center">تم الشحن</div>
+											</div>
+										</div> <!-- ***End Full Row*** -->
+
+										<div class="tracking-row"> <!-- ***Start Full Row*** -->
+											<!-- Tracking Table -->
+											<div class="table mb-4">
+												<!-- Table Header -->
+												<div class="table-header">
+														<div>رقم الطلب</div>
+														<div>الوصف</div>
+														<div>الملاحظات</div>
+														<div>الوقت المتبقي</div>
+														<div>إلغاء الطلب</div>
+												</div>
+												<!-- Table Row -->
+												<div class="table-row">
+														<!-- Table Data -->
+														<div class="table-row-data">
+																<div class="table-cell">
+																		<div class="order-number">2312145</div>
+																</div>
+																<div class="table-cell">
+																		<div class="product-list-description pr-4 pl-4">
+																				<div class="description-row">
+																						<div class="description-key">المقاس</div>
+																						<div class="description-value">29,7cm X 21cm</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">وزن الورق</div>
+																						<div class="description-value">80 عادي</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">شكل الطباعة</div>
+																						<div class="description-value">وجهين</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">ألوان الطباعة</div>
+																						<div class="description-value">4 لون</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">عدد الصفحات</div>
+																						<div class="description-value">80 صفحة</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">نوع التجليد</div>
+																						<div class="description-value">هارد جفر</div>
+																				</div>
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="text-left">
+																			الهارد جفر في التجليد يكون اسود و الكلام بالذهبي
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="received-date">
+																				<div class="received-date-content">05-03-2020</div>
+																				<div class="received-time">03:58<span class="pr-1">PM</span></div>
+																		</div>
+																</div>
+																<div class="table-cell center-vertically">
+																	<div class="cancel-order">
+																			<span class="icon-trash icon"></span>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+											<!-- Tracking Progress -->
+											<div class="tracking-progres d-flex justify-content-between">
+													<!-- IF Item Completed Add Class (active) -->
+													<div class="tracking-progres-item text-center active">تم إستلام الملف</div>
+													<div class="tracking-progres-item text-center active">جاري الطباعة</div>
+													<div class="tracking-progres-item text-center">تمت الطباعة</div>
+													<div class="tracking-progres-item text-center">تم الشحن</div>
+											</div>
+										</div> <!-- ***End Full Row*** -->
+
+										<div class="tracking-row"> <!-- ***Start Full Row*** -->
+											<!-- Tracking Table -->
+											<div class="table mb-4">
+												<!-- Table Header -->
+												<div class="table-header">
+														<div>رقم الطلب</div>
+														<div>الوصف</div>
+														<div>الملاحظات</div>
+														<div>الوقت المتبقي</div>
+														<div>إلغاء الطلب</div>
+												</div>
+												<!-- Table Row -->
+												<div class="table-row">
+														<!-- Table Data -->
+														<div class="table-row-data">
+																<div class="table-cell">
+																		<div class="order-number">2312145</div>
+																</div>
+																<div class="table-cell">
+																		<div class="product-list-description pr-4 pl-4">
+																				<div class="description-row">
+																						<div class="description-key">المقاس</div>
+																						<div class="description-value">29,7cm X 21cm</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">وزن الورق</div>
+																						<div class="description-value">80 عادي</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">شكل الطباعة</div>
+																						<div class="description-value">وجهين</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">ألوان الطباعة</div>
+																						<div class="description-value">4 لون</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">عدد الصفحات</div>
+																						<div class="description-value">80 صفحة</div>
+																				</div>
+
+																				<div class="description-row">
+																						<div class="description-key">نوع التجليد</div>
+																						<div class="description-value">هارد جفر</div>
+																				</div>
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="text-left">
+																			الهارد جفر في التجليد يكون اسود و الكلام بالذهبي
+																		</div>
+																</div>
+																<div class="table-cell">
+																		<div class="received-date">
+																				<div class="received-date-content">05-03-2020</div>
+																				<div class="received-time">03:58<span class="pr-1">PM</span></div>
+																		</div>
+																</div>
+																<div class="table-cell center-vertically">
+																	<div class="cancel-order">
+																			<span class="icon-trash icon"></span>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+											<!-- Tracking Progress -->
+											<div class="tracking-progres d-flex justify-content-between">
+													<!-- IF Item Completed Add Class (active) -->
+													<div class="tracking-progres-item text-center active">تم إستلام الملف</div>
+													<div class="tracking-progres-item text-center">جاري الطباعة</div>
+													<div class="tracking-progres-item text-center">تمت الطباعة</div>
+													<div class="tracking-progres-item text-center">تم الشحن</div>
+											</div>
+										</div> <!-- ***End Full Row*** -->
+									</div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+						<div class="footer">
+                <div class="container-fluid">
+                    <div class="footer-content">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-md-6">
+                                <div class="footer-socialmedia text-left">
+																		<a class="facebook-icon social-icon" href="#"><i class="fab fa-twitter"></i></a>
+																		<a class="linkedin-icon social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+																		<a class="youtube-icon social-icon" href="#"><i class="fab fa-youtube"></i></a>
+																		<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6">
+                                <div class="footer-copyright text-right">كل الحقوق محفوظة &copy; Ingaz4Print 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tracking -->
+
+				<!-- Scripts -->
+        <!-- Jquery V 3.3.1 -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Popper Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <!-- Bootstrap V 4.3.1 -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel Slider --> <!-- (Refrence) https://owlcarousel2.github.io/OwlCarousel2 -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Main Functions -->
+        <script src="assets/js/functions.js"></script>
+	</body>
+</html>
