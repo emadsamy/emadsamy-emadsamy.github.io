@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="description" content="#">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Title -->
+		<title>View Product</title>
+
+        <!-- Links -->
+        <!-- Project Shortcut Icon -->
+        <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+        <link rel="icon" href="assets/img/logo.svg" type="image/x-icon">
+
+        <!-- Bootstrap V 4.1.3 -->
+       <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- FontAwesome 5 -->
+		<link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!-- Icomoon Library --> <!-- Convert Images Svg To Icons -->
+		<link rel="stylesheet" href="assets/css/icomoon.css">
+        <!-- Owl Carousel Slider --> <!-- (Refrence) https://owlcarousel2.github.io/OwlCarousel2 -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Main Styles -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+				<!-- PreLoader -->
+				<div id="preloader" class="preloader">
+						<div class="overlay">
+								<img src="assets/img/loader.svg" class="preloader-icon img-fluid" />
+						</div>
+				</div>
+				<!-- PreLoader -->
+
+        <!-- View Product -->
+        <div id="page" class="page-container view-product">
+            <!-- Navbar -->
+						<nav>
+								<div class="container-fluid">
+										<div class="navbar d-flex justify-content-between">
+												<div class="navbar-logo">
+														<a href="index.html"><img src="assets/img/logo.svg" alt="Logo" width="160" class="img-fluid" /></a>
+												</div>
+												<div class="toolbar-links">
+													<a href="javascript:void(0)">رصيدك <span class="ne_font">260.00</span></a>
+													<a href="previous-requests.html">طلباتك السابقة</a>
+													<a href="tracking.html">تتبع طلباتك</a>
+												</div>
+												<div class="navbar-links d-flex flex-row-reverse">
+														<div class="nav-link">
+																<div class="user-dropdown">
+																		<div
+																				class="dropdown-toggle dropdown-toggle-menu"
+																				data-toggle="dropdown"
+																				aria-haspopup="true"
+																				aria-expanded="false">
+																				<span class="icon-user"></span>
+																				<span class="user-name">Mohamed Nasser</span>
+																				<span class="icon-arrow_down"></span>
+																		</div>
+																		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+																				<a class="dropdown-item" href="#">Action</a>
+																				<a class="dropdown-item" href="#">Another action</a>
+																				<a class="dropdown-item" href="#">Something else here</a>
+																		</div>
+																</div>
+														</div>
+														<div class="nav-link">
+																<a href="cart.html" class="border-right">
+																		<span class="icon-cart nav-link-icon"></span>
+																		<span class="notifications text-center circle">5</span>
+																</a>
+														</div>
+												</div>
+										</div>
+								</div>
+						</nav>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="container">
+										<div class="title mt-5">كتاب مشروع التخرج</div>
+										<form class="row product-view-row">
+												<div class="col-lg-7 view-product-col-1">
+														<div class="row">
+															<!-- Product Select Box -->
+															<div class="col-lg-6 col-md-6">
+																	<div class="product-description">
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">المقاس</option>
+																				</select>
+																			</div>
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">وزن الورق</option>
+																				</select>
+																			</div>
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">شكل الطباعة</option>
+																				</select>
+																			</div>
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">ألوان الطباعة</option>
+																				</select>
+																			</div>
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">عدد صفحات الملف</option>
+																				</select>
+																			</div>
+																			<div class="copies main-border d-flex justify-content-between">
+																					<div class="copies-text"> عدد النسخ  </div>
+																					<div class="copies-numbers d-flex justify-content-between">
+																							<button id="increment" type="button">+</button>
+																							<div id="counter" class="text-center">1</div>
+																							<button id="decrement" type="button">-</button>
+																					</div>
+																			</div>
+																			<div class="selectbox main-border">
+																				<select>
+																						<option value="0">نوع التجليد</option>
+																				</select>
+																			</div>
+																			<div class="form-group main-border">
+																				<input class="form-control" type="text" placeholder="ملاحظاتك على طلب الطباعة" />
+																			</div>
+																	</div>
+															</div>
+
+															<!-- Product Upload Files And Add Url & Prices -->
+															<div class="col-lg-6 col-md-6">
+																<div class="product-file">
+																		<!-- Upload File -->
+																		<div class="upload-file main-border text-center">
+																			<input type="file" />
+																			<img src="assets/img/icons/drag.svg" alt="Upload File" class="img-fluid" />
+																			<div class="upload-text text-center">حمل الملف</div>
+																		</div>
+
+																		<!-- Add Url -->
+																		<div class="add-url d-flex justify-content-start main-border">
+																			<div class="url-icon text-right">
+																					<img src="assets/img/icons/url.svg" alt="Upload File" class="pr-2 img-fluid" />
+																			</div>
+																			<input type="text" placeholder="ضع رابط الملف " />
+																		</div>
+
+																		<!-- Upload Cover -->
+																		<div class="upload-cover main-border d-flex justify-content-start">
+																			<input type="file" />
+																			<div class="url-icon text-right">
+																					<img src="assets/img/icons/upload.svg" alt="Upload File" class="pr-2 img-fluid" />
+																			</div>
+																			<div class="upload-text pr-2">حمل الغلاف</div>
+																		</div>
+
+																		<!-- Product Prices & Buttons -->
+																		<div class="product-prices d-flex justify-content-between">
+																				<div class="product-item-price">
+																						<div class="price-header text-center">سعر الصفحة</div>
+																						<div class="price-body main-border">
+																								<div>
+																									<div class="price ne_font mb-1">00.00</div>
+																									<div class="price-currency">جنيه</div>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="product-item-price">
+																						<div class="price-header text-center">سعر النسخة</div>
+																						<div class="price-body main-border text-center">
+																								<div>
+																									<div class="price ne_font mb-1">00.00</div>
+																									<div class="price-currency">جنيه</div>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="product-item-price">
+																						<div class="price-header text-center">إجمالي السعر</div>
+																						<div class="price-body main-border text-center">
+																								<div>
+																									<div class="price ne_font mb-1">00.00</div>
+																									<div class="price-currency">جنيه</div>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																		<!-- Confirm & Cancel Buttons -->
+																		<div class="confirm-cancel-btns d-flex justify-content-between">
+																				<button type="button" class="btn cancel-btn main-border">إلغاء الطلب</button>
+																				<button type="button" class="btn confirm-btn main-border">تأكيد الطلب</button>
+																		</div>
+																		<!-- Cart & Follow Buttons -->
+																		<div class="cart-follow-btns d-flex justify-content-between">
+																				<a href="cart.html" class="btn cart-btn main-btn"> أضف إلي السلة <span class="icon-cart icon"></span></a>
+																				<a href="#" class="btn follow-btn main-btn"> تابع أمر الطباعة <span class="icon-chevron_left icon"></span></a>
+																		</div>
+																</div>
+															</div>
+														</div>
+												</div>
+
+												<!-- Product View -->
+												<div class="col-lg-5 col-md-12 view-product-col-2">
+													<div class="product-view">
+															<div class="product-view-img"></div>
+															<div class="product-toolbar d-flex">
+																	<a href="#" class="toolbar-item d-flex justify-content-between">
+																			<div class="toolbar-item-text">ارشادات توضيحية</div>
+																			<span class="icon-instructions toolbar-item-icon"></span>
+																	</a>
+																	<a href="#" class="toolbar-item d-flex justify-content-between">
+																			<div class="toolbar-item-text">كل المنتجات</div>
+																			<span class="icon-app toolbar-item-icon"></span>
+																	</a>
+																	<a href="#" class="toolbar-item d-flex justify-content-between">
+																			<div class="toolbar-item-text">المساعدة</div>
+																			<span class="icon-help toolbar-item-icon"></span>
+																	</a>
+															</div>
+													</div>
+												</div>
+										</form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+						<div class="footer">
+							<div class="container-fluid">
+									<div class="footer-content">
+											<div class="row">
+													<div class="col-lg-6 col-sm-12 col-md-6">
+															<div class="footer-links">
+																	<a href="index.html">الرئيسية</a>
+																	<a href="contact.html">تواصل معنا</a>
+																	<a href="about.html">من نحن</a>
+															</div>
+													</div>
+													<div class="col-lg-6 col-sm-12 col-md-6">
+															<div class="footer-block d-flex justify-content-end">
+																<div class="footer-socialmedia text-left">
+																		<a class="facebook-icon social-icon" href="#"><i class="fab fa-twitter"></i></a>
+																		<a class="linkedin-icon social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+																		<a class="youtube-icon social-icon" href="#"><i class="fab fa-youtube"></i></a>
+																		<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+																</div>
+																<div class="footer-copyright text-right">كل الحقوق محفوظة &copy; AZZAZY 2020</div>
+															</div>
+													</div>
+											</div>
+									</div>
+							</div>
+						</div>
+        </div>
+        <!-- View Product -->
+
+		<!-- Scripts -->
+        <!-- Jquery V 3.3.1 -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Popper Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <!-- Bootstrap V 4.3.1 -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel Slider --> <!-- (Refrence) https://owlcarousel2.github.io/OwlCarousel2 -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Main Functions -->
+        <script src="assets/js/functions.js"></script>
+	</body>
+</html>
