@@ -615,7 +615,8 @@ footer {
   -webkit-flex-flow: column-reverse;
   -ms-flex-flow: column-reverse;
   flex-flow: column-reverse;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  background-color: #FFF; }
 
 .footer-content {
   padding: 8px 0;
@@ -811,7 +812,8 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  display: none; }
 
 .products-table {
   width: calc(100% - 140px);
@@ -2069,12 +2071,16 @@ div.owl-nav {
 
   /* View Product */
   /* Auth */
+  .auth footer {
+    flex-grow: unset; }
   .auth .center-vertically {
     padding-top: 30px;
     padding-bottom: 30px;
     all: unset; }
     .auth .center-vertically > div {
-      width: 100%; }
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px; }
       .auth .center-vertically > div:after {
         top: 51%;
         transform: translate(-50%, -50%);
