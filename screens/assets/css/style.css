@@ -2080,7 +2080,7 @@ div.owl-nav {
     .auth .center-vertically > div {
       width: 100%;
       padding-top: 30px;
-      padding-bottom: 30px; }
+      padding-bottom: 80px; }
       .auth .center-vertically > div:after {
         top: 51%;
         transform: translate(-50%, -50%);
