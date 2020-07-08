@@ -2080,7 +2080,7 @@ div.owl-nav {
     .auth .center-vertically > div {
       width: 100%;
       padding-top: 30px;
-      padding-bottom: 80px; }
+      padding-bottom: 30px; }
       .auth .center-vertically > div:after {
         top: 51%;
         transform: translate(-50%, -50%);
@@ -2096,7 +2096,10 @@ div.owl-nav {
     text-align: center !important; }
 
   .auth .overlay {
-    all: unset; }
+    display: block;
+    min-height: auto;
+    height: auto;
+    position: static; }
 
   .auth-content {
     width: 100% !important;

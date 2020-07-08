@@ -2663,7 +2663,7 @@ div.owl-nav {
         > div {
           width: 100%;
           padding-top: 30px;
-          padding-bottom: 80px;
+          padding-bottom: 30px;
           &:after {
             top: 51%;
             transform: translate(-50%, -50%);
@@ -2686,7 +2686,10 @@ div.owl-nav {
       }
     }
     .auth .overlay {
-      all: unset ;
+      display: block;
+      min-height: auto;
+      height: auto;
+      position: static;
     }
     .auth-content {
       width: 100% !important;
