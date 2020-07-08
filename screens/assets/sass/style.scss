@@ -2685,6 +2685,9 @@ div.owl-nav {
         text-align: center !important;
       }
     }
+    .auth .overlay {
+      all: unset ;
+    }
     .auth-content {
       width: 100% !important;
       max-width: 400px;
