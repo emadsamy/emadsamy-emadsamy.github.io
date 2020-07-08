@@ -2071,7 +2071,8 @@ div.owl-nav {
   /* Auth */
   .auth .center-vertically {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    all: unset; }
     .auth .center-vertically > div {
       width: 100%; }
       .auth .center-vertically > div:after {

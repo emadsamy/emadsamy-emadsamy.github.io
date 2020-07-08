@@ -2650,6 +2650,10 @@ div.owl-nav {
       .center-vertically {
         padding-top: 30px;
         padding-bottom: 30px;
+        // vertical-align: inherit;
+        // overflow-y: hidden;
+        // height: auto;
+        all: unset;
         > div {
           width: 100%;
           &:after {
