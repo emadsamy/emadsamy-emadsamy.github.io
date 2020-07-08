@@ -434,7 +434,8 @@ small {
     color: #FFF !important; }
   .main-btn:active {
     background-color: #046d6d;
-    border: 1px solid #046d6d; }
+    border: 1px solid #046d6d;
+    color: #FFF !important; }
 
 .main-btn-transparent:hover {
   background-color: #009999;
@@ -2146,6 +2147,9 @@ div.owl-nav {
   /* Tracking */
   .tracking .table, .tracking .tracking-progres, .tracking .tracking-row {
     width: 1110px; }
+
+  .tracking-step-line {
+    width: 192px; }
 
   /* Tracking */
   /* Previous Requests */
