@@ -805,10 +805,13 @@ footer {
 /* >>>>>> Products <<<<<< */
 .products nav {
   border-bottom: none; }
-.products .footer {
-  display: none;
-  background-color: #FFF;
-  z-index: 20; }
+.products footer {
+  z-index: 20;
+  background: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
 
 .products-table {
   width: calc(100% - 140px);
@@ -1960,13 +1963,14 @@ div.owl-nav {
     .products .title-bg {
       margin-bottom: 15px;
       font-size: 27px; }
-    .products .footer {
-      display: block; }
+    .products footer {
+      display: flex !important; }
 
   .products-table {
     width: calc(100% - 20px);
     bottom: 10px;
-    right: 10px; }
+    right: 10px;
+    position: absolute; }
 
   .products-table.active {
     bottom: 168px; }
@@ -2355,7 +2359,6 @@ div.owl-nav {
       font-size: 27px; }
     .products .footer {
       display: block;
-      position: absolute;
       bottom: 0;
       width: 100%; }
 

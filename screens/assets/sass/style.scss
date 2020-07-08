@@ -1035,10 +1035,13 @@ footer {
   nav {
     border-bottom: none
   }
-  .footer {
-    display: none;
-    background-color: #FFF;
-    z-index: 20
+  footer {
+    z-index: 20;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 .products-table {
@@ -2536,14 +2539,15 @@ div.owl-nav {
         margin-bottom: 15px;
         font-size: 27px;
       }
-      .footer {
-        display: block;
+      footer {
+        display: flex !important;
       }
     }
     .products-table {
       width: calc(100% - 20px);
       bottom: 10px;
       right: 10px;
+      position: absolute;
     }
     .products-table.active {
       bottom: 168px;
@@ -2996,7 +3000,6 @@ div.owl-nav {
       }
       .footer {
         display: block;
-        position: absolute;
         bottom: 0;
         width: 100%;
       }
