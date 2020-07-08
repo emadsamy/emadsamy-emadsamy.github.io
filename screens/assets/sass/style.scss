@@ -531,14 +531,16 @@ small {
 }
 .main-btn {
   background-color: $mainColor;
-  color: #FFF;
+  color: #FFF !important;
   &:hover {
     background-color: $actionMainColor;
     border: 1px solid $actionMainColor;
+    color: #FFF !important;
   }
   &:active {
     background-color: $activeMainColor;
     border: 1px solid $activeMainColor;
+    color: #FFF !important;
   }
 }
 .main-btn-transparent {
@@ -2652,14 +2654,16 @@ div.owl-nav {
       footer {
         flex-grow: unset
       }
+      .overlay {
+        display: block;
+        min-height: auto;
+        height: auto;
+        position: static;
+      }
       .center-vertically {
         padding-top: 30px;
         padding-bottom: 30px;
         all: unset;
-        // vertical-align: inherit;
-        // overflow-y: inherit;
-        // height: auto;
-
         > div {
           width: 100%;
           padding-top: 30px;
@@ -2684,12 +2688,6 @@ div.owl-nav {
       .privacy-policy-footer {
         text-align: center !important;
       }
-    }
-    .auth .overlay {
-      display: block;
-      min-height: auto;
-      height: auto;
-      position: static;
     }
     .auth-content {
       width: 100% !important;
@@ -3002,6 +3000,9 @@ div.owl-nav {
     .products {
       background-size: 444px 296px;
       background-position: top right;
+      footer {
+        display: flex !important;
+      }
       .page-content {
         left: 0;
         bottom: 0;
@@ -3122,16 +3123,28 @@ div.owl-nav {
 
     /* Auth */
     .auth {
+      footer {
+        flex-grow: unset
+      }
+      .overlay {
+        display: block;
+        min-height: auto;
+        height: auto;
+        position: static;
+      }
       .center-vertically {
         padding-top: 30px;
         padding-bottom: 30px;
+        all: unset;
         > div {
           width: 100%;
+          padding-top: 30px;
+          padding-bottom: 30px;
           &:after {
             top: 51%;
             transform: translate(-50%, -50%);
             height: 0.5px;
-            width: 400px;
+            width: 100%;
           }
           > div {
             display: block !important;
