@@ -2355,14 +2355,12 @@ div.auth-items {
 
     // Navabr
     .toggle-navbar {
-      display: block !important;
-      padding: 8px;
+      padding: 8px 0;
     }
     .toggle-link {
       display: block;
-      border: none;
       text-align: center;
-      padding: 10px;
+      padding: 2px 10px;
       margin: 0;
       &:hover {
         background: #eee
@@ -2388,6 +2386,46 @@ div.auth-items {
       left: 0;
       right: auto;
     }
+
+    // Footer
+    .footer {
+      position: relative;
+    }
+    .footer-block {
+      display: block !important;
+      width: 100%;
+    }
+    .footer-content {
+        display: block !important;
+    }
+    .footer-socialmedia {
+      margin-left: 0;
+      text-align: left !important;
+      margin-bottom: 4px;
+    }
+    .footer-copyright {
+      text-align: center !important;
+      border-top: 1px solid #999999;
+      padding-top: 8px;
+    }
+    .social-icon {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+    .arrow-back {
+      position: absolute;
+      right: 18px;
+      display: inline-block !important;
+      width: auto;
+    }
+
+    /* Products */
+    .product-card {
+      width: calc(50% - 3px);
+      height: 159px;
+      margin-bottom: 6px
+    }
+    /* Products */
 
     /* View Product */
     .view-product-header {
@@ -2505,6 +2543,14 @@ div.auth-items {
     }
     /* Global */
 
+    /* Products */
+    .product-card {
+      width: calc(33.33% - 3px);
+      height: 190px;
+      margin-bottom: 4px
+    }
+    /* Products */
+
     /* View Product */
     .product-toolbar {
       justify-content: center;
@@ -2564,6 +2610,17 @@ div.auth-items {
         height: 200px;
       }
     }
+
+    /* Products */
+    .product-card {
+      width: calc(33.33% - 3.5px);
+      height: 240px;
+      margin-bottom: 6px;
+      .main-btn {
+        padding: 6px 12px;
+      }
+    }
+    /* Products */
 
     /* View Product */
     .view-product {
@@ -2649,6 +2706,39 @@ div.auth-items {
       }
     }
 
+    /* Products */
+    .product-card {
+      height: 48%;
+    }
+    .product-img {
+      height: 53%;
+    }
+    .product-footer {
+      display: block !important;
+      padding: 13px 10px;
+      div {
+        text-align: center;
+      }
+      .main-btn {
+        display: inline-block;
+        position: static;
+        transform: none;
+        margin: auto;
+        font-size: 10px;
+        padding: 5px 17px;
+      }
+    }
+    .product-name {
+      font-size: 12px;
+    }
+    .product-price {
+      margin-bottom: 8px;
+    }
+    .product-card:hover .product-body {
+        height: calc(100% - 90.8px);
+    }
+    /* Products */
+
     /* Auth */
     div.auth-items {
       width: calc(100% - 80px);
@@ -2688,6 +2778,36 @@ div.auth-items {
     display: none;
   }
   /* Global */
+
+  /* Products */
+  .product-footer {
+    display: block !important;
+    padding: 13px 10px;
+    div {
+      text-align: center;
+    }
+    .main-btn {
+      display: inline-block;
+      position: static;
+      transform: none;
+      margin: auto;
+      font-size: 10px;
+      padding: 5px 17px;
+    }
+  }
+  .product-img {
+    height: 63%;
+  }
+  .product-name {
+    font-size: 12px;
+  }
+  .product-price {
+    margin-bottom: 8px;
+  }
+  .product-card:hover .product-body {
+      height: calc(100% - 90.8px);
+  }
+  /* Products */
 
   /* Auth */
   .page-content-auth {
@@ -2765,6 +2885,46 @@ div.auth-items {
       margin-right: 9px;
     }
   }
+
+  /* Products */
+  .products {
+    .page-content {
+      height: auto;
+    }
+  }
+  /* Products */
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* Products */
+  .product-footer {
+    display: block !important;
+    padding: 13px 10px;
+    div {
+      text-align: center;
+    }
+    .main-btn {
+      display: inline-block;
+      position: static;
+      transform: none;
+      margin: auto;
+      font-size: 10px;
+      padding: 5px 17px;
+    }
+  }
+  .product-img {
+    height: 63%;
+  }
+  .product-name {
+    font-size: 12px;
+  }
+  .product-price {
+    margin-bottom: 8px;
+  }
+  .product-card:hover .product-body {
+      height: calc(100% - 90.8px);
+  }
+  /* Products */
 }
 
 /** Media Queries **/
