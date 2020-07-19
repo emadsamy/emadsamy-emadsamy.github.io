@@ -354,7 +354,10 @@ small {
 .order-item-img {
   background: #F1F1F1;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .order-item-img img {
     width: 92%; }
 
@@ -1662,6 +1665,8 @@ div.auth-items {
 /*>>>>>> Offers <<<<<< */
 .offers .page-head-content {
   border: none; }
+.offers .icon-overlay {
+  background-image: url("../img/icons/percent_overlay.svg"); }
 
 .container-offers {
   padding: 80px 100px;
@@ -1726,9 +1731,6 @@ div.auth-items {
   min-height: calc(100vh - 57.6px);
   margin-bottom: 0; }
 
-.partners-header {
-  background-color: #080; }
-
 .partners-description {
   width: 45%; }
 
@@ -1745,7 +1747,8 @@ div.auth-items {
 
 .premier-partner {
   height: 35%;
-  background: #F1F1F1; }
+  background: #F1F1F1;
+  padding: 30px; }
   .premier-partner img {
     width: 170px; }
   .premier-partner .text {
@@ -1767,7 +1770,7 @@ div.auth-items {
 
 .partners-logo,
 .our-logos {
-  min-height: 100vh; }
+  height: 100vh; }
 
 .our-logos {
   background-color: #FFF;
@@ -1775,7 +1778,8 @@ div.auth-items {
   padding: 40px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid #F1F1F1; }
   .our-logos > img {
     width: 30%;
     height: 20%; }
@@ -1928,6 +1932,34 @@ div.auth-items {
     padding-bottom: 0 !important; }
 
   /* View Product */
+  /* Payments */
+  .switch-payment-method > div {
+    width: 48%; }
+
+  /* Payments */
+  /* Partners */
+  .our-logos {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: auto; }
+    .our-logos > img {
+      width: 50%;
+      height: auto; }
+
+  /* Partners */
+  /* Offers */
+  .container-offers {
+    padding: 70px 25px; }
+
+  .carousel-icon {
+    font-size: 20px; }
+
+  .owl-nav {
+    right: -30px;
+    width: calc(100% + 60px); }
+
+  /* Offers */
   /* Contact */
   .container-contact .title {
     font-size: 19px; }
@@ -1981,6 +2013,22 @@ div.auth-items {
     padding-top: 0; }
 
   /* View Product */
+  /* Payments */
+  .switch-payment-method > div {
+    width: 31%; }
+
+  /* Payments */
+  /* Partners */
+  .our-logos {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: auto; }
+    .our-logos > img {
+      width: 33%;
+      height: auto; }
+
+  /* Partners */
   /* Contact */
   .branche-details {
     width: 48%; }
@@ -2043,6 +2091,26 @@ div.auth-items {
     width: 49%; }
 
   /* View Product */
+  /* Requests */
+  .page-head-requests .input-group-text {
+    width: 35px; }
+  .page-head-requests .icon-search {
+    font-size: 21px; }
+  .page-head-requests input {
+    width: calc(100% - 35px); }
+  .page-head-requests .page-head-content {
+    flex-wrap: wrap; }
+  .page-head-requests .title {
+    width: 200px; }
+  .page-head-requests .search {
+    width: calc(100% - 231px);
+    max-width: 500px; }
+  .page-head-requests .requests-counter {
+    margin: 15px auto 0 0;
+    width: auto;
+    max-width: 500px; }
+
+  /* Requests */
   /* Auth */
   div.auth-items {
     width: calc(100% - 50px);
@@ -2059,6 +2127,17 @@ div.auth-items {
       height: 32px; }
 
   /* Auth */
+  /* Partners */
+  .comapines {
+    padding: 40px; }
+
+  .premier-partner {
+    flex-wrap: wrap;
+    padding: 30px; }
+    .premier-partner .text {
+      text-align: center; }
+
+  /* Partners */
   /* Contact */
   .contact-form {
     width: 450px;
@@ -2119,12 +2198,43 @@ div.auth-items {
     height: calc(100% - 90.8px); }
 
   /* Products */
+  /* Payments */
+  .receving-date .icon-clock {
+    margin-right: 8px; }
+
+  .break-line {
+    padding-left: 2px !important;
+    padding-right: 2px !important; }
+
+  .payment-switch-multi:first-of-type {
+    padding-left: 13px; }
+
+  .payment-switch-multi:last-of-type {
+    padding-right: 13px; }
+
+  /* Payments */
   /* Auth */
   div.auth-items {
     width: calc(100% - 80px);
     max-width: 400px; }
 
   /* Auth */
+  /* Partners */
+  .comapines {
+    padding: 40px; }
+
+  .premier-partner {
+    flex-wrap: wrap; }
+    .premier-partner .text {
+      text-align: center; }
+
+  /* Partners */
+  /* Requests */
+  .page-head-requests .search {
+    width: calc(100% - 500px);
+    max-width: 450px; }
+
+  /* Requests */
   /* Contact */
   .branche-details {
     width: 48%; }
@@ -2142,9 +2252,47 @@ div.auth-items {
     background-position: center center; }
 
   .icon-overlay {
-    display: none; }
+    display: none !important; }
 
   /* Global */
+  /* Requests */
+  .requests .page-head-content {
+    display: block !important;
+    padding: 0 13px; }
+    .requests .page-head-content > div {
+      margin-bottom: 15px; }
+  .requests .title {
+    justify-content: center; }
+  .requests .search {
+    width: 100%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .page-head-requests .input-group-text {
+    width: 37px; }
+  .page-head-requests .icon-search {
+    font-size: 20px; }
+  .page-head-requests input {
+    width: calc(100% - 37px); }
+  .page-head-requests .input-group {
+    height: 40px; }
+
+  .requests-counter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 330px;
+    width: auto; }
+
+  .requests-counter .text {
+    padding-right: 9px;
+    padding-left: 10px; }
+
+  .counter-num {
+    width: 30px;
+    line-height: 28px; }
+
+  /* Requests */
   /* Products */
   .product-footer {
     display: block !important;
@@ -2201,6 +2349,81 @@ div.auth-items {
       margin-bottom: 0; }
 
   /* Auth */
+  /* Payments */
+  .payments-container .card-body {
+    display: block !important; }
+
+  .payment-switch-multi {
+    width: 100%;
+    padding: 0 !important; }
+
+  .payment-switch-multi > .payment-switch {
+    margin-bottom: 15px !important; }
+
+  .payment-switch-multi:last-of-type:after {
+    content: none; }
+
+  .payments-container .title {
+    font-size: 18px; }
+
+  .receving-date .text {
+    font-size: 13px;
+    display: flex;
+    align-items: center; }
+  .receving-date .icon-clock {
+    margin-right: 9px; }
+
+  .break-line {
+    padding-left: 3px !important;
+    padding-right: 3px !important; }
+
+  /* Payments */
+  /* Tracking */
+  .tracking-items {
+    overflow-x: auto; }
+
+  .order-item {
+    width: 1100px; }
+
+  /* Tracking */
+  /* Partners */
+  .partners-backdrop {
+    display: none; }
+
+  .comapines,
+  .premier-partner {
+    height: auto; }
+
+  .premier-partner {
+    display: block !important;
+    padding: 36px;
+    text-align: center; }
+    .premier-partner img {
+      margin-bottom: 15px; }
+    .premier-partner .text {
+      text-align: center; }
+
+  .comapines,
+  .partners-description {
+    width: 100%; }
+
+  .partners .partners-description {
+    height: auto;
+    min-height: auto !important; }
+
+  .comapines {
+    padding: 50px 30px; }
+    .comapines .title {
+      font-size: 33px;
+      padding-bottom: 16px;
+      margin-bottom: 16px; }
+    .comapines .description {
+      font-size: 18px; }
+
+  .partners-logo {
+    display: block !important; }
+
+  /* Partners */
   /* About */
   .container-about .title {
     margin-bottom: 15px; }
@@ -2228,7 +2451,7 @@ div.auth-items {
     text-align: center;
     width: 100%; }
     .toolbar-links a {
-      font-size: 13px; }
+      font-size: 14px; }
     .toolbar-links a:nth-of-type(2) {
       padding-left: 9px;
       padding-right: 9px;

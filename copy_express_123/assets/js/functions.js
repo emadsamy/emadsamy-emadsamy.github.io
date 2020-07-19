@@ -24,11 +24,13 @@ $(document).ready(function () {
               items: 1
           },
           // breakpoint from 800 up
-          790: {
-              items: 3
+          768: {
+              items: 2,
+              margin: 30
           },
           990: {
-            items: 3
+            items: 3,
+            margin: 30
           },
           // breakpoint from 768 up
           1110: {
