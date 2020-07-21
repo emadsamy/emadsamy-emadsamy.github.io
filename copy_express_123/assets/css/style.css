@@ -1707,8 +1707,8 @@ div.auth-items {
 
 .owl-nav {
   position: absolute;
-  right: -60px;
-  width: calc(100% + 120px);
+  right: -70px;
+  width: calc(100% + 140px);
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -1816,8 +1816,6 @@ div.auth-items {
     text-align: center;
     padding: 2px 10px;
     margin: 0; }
-    .toggle-link:hover {
-      background: #eee; }
 
   .navbar-logo img {
     width: 130px; }
@@ -1942,7 +1940,8 @@ div.auth-items {
     width: 100%;
     margin-bottom: 15px;
     padding: 15px;
-    height: auto; }
+    height: auto;
+    flex-direction: row; }
     .our-logos > img {
       width: 50%;
       height: auto; }
@@ -2406,6 +2405,10 @@ div.auth-items {
   .comapines,
   .partners-description {
     width: 100%; }
+
+  .partners-header {
+    min-height: inherit !important;
+    margin-bottom: 15px !important; }
 
   .partners .partners-description {
     height: auto;
