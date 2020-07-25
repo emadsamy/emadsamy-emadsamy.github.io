@@ -40,7 +40,7 @@
 				<!-- PreLoader -->
 
         <!-- Profile -->
-        <div id="page" class="page-full-height">
+        <div id="page" class="page-full-height profile-page">
 						<!-- Navbar -->
 						<nav>
 								<div class="container-fluid">
@@ -188,17 +188,17 @@
 													<div class="wrap-link">
 															<a href="design.html" class="toggle-link">التصميم</a>
 													</div>
-													<div class="bar-search">
+													<div id="openSearchBar" class="bar-search">
 															<span class="icon-search icon"></span>
 													</div>
-													<div class="full-search">
-															<div class="input-group">
-																	<input type="text" name="" value="" placeholder="ماذا تريد أن تطبع" />
-																	<div class="input-group-prepend">
-																		<div class="input-group-text">
-																				<span class="icon-search"></span>
-																		</div>
-																	</div>
+											</div>
+											<div id="searchBar" class="full-search">
+													<div class="input-group">
+															<input type="text" name="" value="" placeholder="ماذا تريد أن تطبع" />
+															<div class="input-group-prepend">
+																<div class="input-group-text">
+																		<span id="closeSearch" class="icon-search"></span>
+																</div>
 															</div>
 													</div>
 											</div>
@@ -235,7 +235,7 @@
 								<div class="container-fluid">
 										<div class="profile">
 												<div class="row mb-4">
-														<div class="col-lg-3 pl-2">
+														<div class="col-lg-3 col-sm-6 pl-2">
 																<div class="profile-header">
 																		<div class="user-head d-flex align-items-center">
 																				<div class="avatar">
@@ -251,50 +251,89 @@
 																								Mohamed Nasser
 																						</div>
 																						<button class="edit d-flex align-items-center">
-																								<span class="icon-edit"></span>
+																								<!-- <span class="icon-edit"></span> -->
 																								<span class="edit-text">تعديل</span>
 																						</button>
 																				</div>
 																		</div>
 																</div>
 														</div>
-														<div class="col-lg-9 pr-2">
-
+														<div class="col-lg-9 col-sm-6 pr-2">
+																<div class="profile-welcome-msg d-flex align-items-center">
+																		<div class="hello">
+																				اهلاً
+																		</div>
+																		<div class="user-name">
+																				Mohamed Nasser
+																		</div>
+																</div>
 														</div>
 												</div>
 
 												<div class="row">
-														<div class="col-lg-3">
+														<div class="col-lg-3 col-md-4">
 																<div class="profile-links">
 																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">حسابي</span>
 																			<span class="icon-edit icon"></span>
 																		</a>
 																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
-																			<span class="profile-link-text">حسابي</span>
+																			<span class="profile-link-text">رصيدي</span>
+																			<span class="profile-link-text profile-balance"><span class="ne_font">00.00</span> رصيدي</span>
+																		</a>
+																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																			<span class="profile-link-text">المطبوعات السابقة </span>
 																			<span class="icon-edit icon"></span>
 																		</a>
 																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
-																			<span class="profile-link-text">حسابي</span>
+																			<span class="profile-link-text">تتبع المطبوعات الحالية </span>
 																			<span class="icon-edit icon"></span>
 																		</a>
 																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
-																			<span class="profile-link-text">حسابي</span>
+																			<span class="profile-link-text">الفواتير</span>
 																			<span class="icon-edit icon"></span>
 																		</a>
 																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
-																			<span class="profile-link-text">حسابي</span>
-																			<span class="icon-edit icon"></span>
-																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
-																			<span class="profile-link-text">حسابي</span>
+																			<span class="profile-link-text">تسجيل خروج </span>
 																			<span class="icon-edit icon"></span>
 																		</a>
 																</div>
 														</div>
-														<div class="col-lg-9">
+														<div class="col-lg-9  col-md-8">
 																<div class="profile-info">
-
+																		<div class="profile-edit-head d-flex justify-content-between align-items-center">
+																				<div class="title">
+																						حسابي
+																				</div>
+																				<button class="profile-edit-action d-flex justify-content-between align-items-center">
+																						<span class="edit-text">تعديل</span>
+																						<span class="icon-edit icon"></span>
+																				</button>
+																		</div>
+																		<div class="profile-form">
+																				<form class="" action="index.html" method="post">
+																						<div class="form-group d-flex align-items-center">
+																								<label for="name" class="d-flex justify-content-between">الإسم<span>:</span></label>
+																								<input type="text" id="name" />
+																						</div>
+																						<div class="form-group d-flex align-items-center">
+																								<label for="phone" class="d-flex justify-content-between">التليفون<span>:</span></label>
+																								<input type="text" id="phone" />
+																						</div>
+																						<div class="form-group d-flex align-items-center">
+																								<label for="company" class="d-flex justify-content-between">الشركة <span>:</span></label>
+																								<input type="text" id="company" />
+																						</div>
+																						<div class="form-group d-flex align-items-center">
+																								<label for="job" class="d-flex justify-content-between">المسمى الوظيفي<span>:</span></label>
+																								<input type="text" id="job" />
+																						</div>
+																						<div class="form-group d-flex align-items-center">
+																								<label for="website" class="d-flex justify-content-between">الموقع الإلكتروني<span>:</span></label>
+																								<input type="text" id="website" />
+																						</div>
+																				</form>
+																		</div>
 																</div>
 														</div>
 												</div>
@@ -306,18 +345,8 @@
 							<div class="footer">
 								<div class="container-fluid">
 										<div class="footer-content d-flex justify-content-end">
-												<!-- <div class="footer-block arrow-back d-flex justify-content-end">
-													<a href="javascript:void(0)" class="footer-back"><span class="icon-back"></span></a>
-												</div> -->
-												<div class="footer-block d-flex justify-content-end">
-													<div class="footer-socialmedia text-left">
-															<span class="our-follow">تابعنا</span>
-															<a class="facebook-icon social-icon" href="#"><i class="fab fa-twitter"></i></a>
-															<a class="linkedin-icon social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-															<a class="youtube-icon social-icon" href="#"><i class="fab fa-youtube"></i></a>
-															<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-													</div>
-													<div class="footer-copyright text-right">كل الحقوق محفوظة &copy; <span class="ne_font">24Print 2020</span></div>
+												<div class="privacy-policy-footer text-right">
+													<a href="#">سياسية الإستخدام</a>
 												</div>
 										</div>
 								</div>

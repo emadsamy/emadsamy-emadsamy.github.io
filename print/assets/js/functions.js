@@ -114,6 +114,7 @@ $(document).ready(function () {
       if ($(this).hasClass('active')) {
         $("#toggleNavbar").removeClass('active');
         $(this).removeClass('active');
+        $("#searchBar").fadeOut(200);
       } else {
         $(this).addClass('active');
         $("#toggleNavbar").addClass('active');
@@ -161,6 +162,18 @@ $(document).ready(function () {
     });
     $(".closeSearch").on('click', function () {
       $("#search-slider-content").fadeOut(30);
+    });
+
+    // Resize Bar Search
+    $("#searchBar").width($("#toggleNavbar").width());
+
+    // Click To Open Search Bar
+    $("#openSearchBar").on('click', function () {
+      $("#searchBar").fadeIn(200);
+    });
+
+    $("#closeSearch").on('click', function () {
+      $("#searchBar").fadeOut(200);
     });
 });
 

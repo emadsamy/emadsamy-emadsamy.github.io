@@ -112,7 +112,7 @@ ul {
   width: 100%; }
 
 .center-vertically:before, .dropdown-toggle-menu, .products .page-content .container-fluid,
-.auth .page-content .container-fluid, .auth div.page-content .container-fluid,
+.auth .page-content .container-fluid, .auth .page-content-auth, .auth div.page-content .container-fluid,
 .auth div.page-content .page-content-auth, .page-content-auth > div, .table-cell.table-col-multiple:last-of-type .center-vertically, .payments .icon-overlay-2:after,
 .payments .icon-overlay-2:before, .page-head-requests input {
   height: 100%; }
@@ -125,7 +125,7 @@ ul {
 .form-control:hover, .form-control:active, .form-control:focus {
   box-shadow: none; }
 
-.btn, .toolbar-links a, .menu-bar > div, .toggle-navbar, .dropdown-products-list > div a, .social-icon i, .dropdown-item, .product-card, .product-body, .product-img, .product-toolbar .text, .product-toolbar .icon, .order-tracking-data, .instructions-list li, .bill-btn, .payments-container .down, .switch, .switch span {
+.btn, .toolbar-links a, .menu-bar > div, .toggle-navbar, .dropdown-products-list > div a, .social-icon i, .dropdown-item, .product-card, .product-body, .product-img, .product-toolbar .text, .product-toolbar .icon, .order-tracking-data, .instructions-list li, .bill-btn, .payments-container .down, .switch, .switch span, .profile-link-content .profile-link-text {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -509,6 +509,11 @@ small {
     transform: translate(-50%, -50%);
     display: none; }
 
+#searchBar {
+  left: auto;
+  right: 50%;
+  transform: translate(50%, -50%); }
+
 #slider-title {
   font-weight: 600;
   font-size: 16px; }
@@ -727,10 +732,12 @@ nav {
 .bar-search {
   height: 16px;
   font-size: 22px;
-  margin-top: -2px;
-  margin-left: 25px;
+  margin-top: -10px;
+  margin-left: 24px;
   margin-right: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+  left: -17px;
+  position: relative; }
 
 .slider-search {
   display: none; }
@@ -769,7 +776,7 @@ nav {
       background: none;
       border: none; }
     .full-search .input-group .icon-search {
-      font-size: 21px;
+      font-size: 22px;
       color: #4D4D4D; }
 
 footer {
@@ -819,7 +826,7 @@ footer {
   font-weight: 600;
   margin-top: -1px;
   top: -2px;
-  color: #333333; }
+  color: #808080; }
 
 .product-list-description {
   flex-direction: row;
@@ -1269,6 +1276,10 @@ div.product-price {
 /* >>>>>> Auth (Register & Login) <<<<<< */
 .auth .navbar {
   border: none; }
+.auth small {
+  color: #FFF;
+  font-weight: normal;
+  font-size: 71%; }
 
 .auth div.page-content {
   height: calc(100% - 100px); }
@@ -2038,25 +2049,115 @@ div.auth-items {
 .profile-info {
   border: 1px solid #E6E6E6;
   border-radius: 8px;
-  padding: 20px; }
+  padding: 25px 20px;
+  height: 100%; }
+
+.profile-info {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.profile-edit-head {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #00000016; }
+  .profile-edit-head .title {
+    color: #CC2631; }
+  .profile-edit-head .edit-text {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #666666; }
+  .profile-edit-head .icon {
+    color: #666666;
+    font-size: 20px; }
 
 .profile-link-content {
   border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   margin-bottom: 15px; }
+  .profile-link-content:hover .profile-link-text {
+    color: #CC2631; }
   .profile-link-content:last-of-type {
     border: none;
     padding: 0;
     margin: 0; }
   .profile-link-content .profile-link-text {
-    font-size: 19px;
+    font-size: 17px;
     color: #4D4D4D; }
   .profile-link-content .icon {
-    font-size: 22px;
+    font-size: 20px;
     color: #666666;
     display: inline-block; }
 
+.profile-edit-action:hover span {
+  color: #CC2631; }
+
+.profile-form .form-group {
+  border: none;
+  margin-bottom: 13px; }
+  .profile-form .form-group:last-of-type {
+    margin-bottom: 0; }
+  .profile-form .form-group label {
+    color: #1A1A1A;
+    font-size: 18px;
+    width: 130px;
+    margin-left: 20px; }
+  .profile-form .form-group input {
+    width: 330px;
+    border: 1px solid #00000016;
+    border-radius: 8px;
+    padding: 9px 12px; }
+
+.profile-page .navbar {
+  border: none; }
+
+.profile-welcome-msg {
+  height: 100%; }
+  .profile-welcome-msg > div {
+    font-size: 23px; }
+  .profile-welcome-msg .hello {
+    margin-left: 13px;
+    margin-right: 15px; }
+
+.user-data {
+  font-size: 19px;
+  color: #1A1A1A; }
+
+.user-data-number {
+  direction: ltr; }
+
+.user-head {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 /* Profile */
+/* Compaines */
+.page-full-height.compaines-page .product-card {
+  width: calc(33.33% - 5px);
+  height: calc(50% - 4px); }
+.page-full-height.compaines-page .company-card {
+  width: calc(40% - 10px);
+  height: 100%;
+  background-image: url("../img/compaines.png");
+  background-size: cover; }
+.page-full-height.compaines-page .company-other-cards {
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  display: flex; }
+.page-full-height.compaines-page .comapines {
+  width: 60%;
+  padding: 36px 22px;
+  height: 50%; }
+  .page-full-height.compaines-page .comapines .title {
+    font-size: 36px;
+    padding-bottom: 20px;
+    margin-bottom: 15px; }
+  .page-full-height.compaines-page .comapines .description {
+    font-size: 17px; }
+
+/* Compaines */
 /** Media Queries **/
 @media (max-width: 575.98px) {
   /* Global */
@@ -2074,6 +2175,14 @@ div.auth-items {
     width: 730px; }
 
   /* Global */
+  /* Full Height */
+  .page-full-height footer {
+    height: auto; }
+
+  .page-full-height .owl-item > div {
+    height: auto; }
+
+  /* Full Height */
   /* Global Components */
   .preloader {
     background-size: 85%; }
@@ -2141,7 +2250,8 @@ div.auth-items {
   /* Products */
   .page-full-height .product-card {
     width: calc(50% - 1.2px);
-    height: 159px; }
+    height: 159px;
+    margin-bottom: 2.2px; }
 
   /* Products */
   /* View Product */
@@ -2246,7 +2356,71 @@ div.auth-items {
     .branche-details:last-of-type .branche-title {
       display: none; }
 
-  /* Contact */ }
+  /* Contact */
+  /* Profile */
+  .profile {
+    padding-left: 27px;
+    padding-right: 27px; }
+
+  .profile-welcome-msg {
+    margin-top: 15px; }
+
+  .profile-links {
+    margin-bottom: 20px; }
+
+  .profile-links, .profile-info {
+    height: auto; }
+
+  .profile .row div[class*="col-"] {
+    padding: 0 !important; }
+
+  .user-head {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .avatar {
+    margin-bottom: 20px; }
+
+  .profile .username {
+    margin: 0;
+    width: 100%; }
+    .profile .username > div,
+    .profile .username button {
+      text-align: center; }
+    .profile .username .edit {
+      display: block !important;
+      text-align: center;
+      width: 100%; }
+
+  .profile-info {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .profile-edit-head .title {
+    font-size: 18px; }
+
+  .profile-form .form-group {
+    display: block !important; }
+    .profile-form .form-group label {
+      width: 100%;
+      margin-bottom: 4px;
+      font-size: 17px;
+      color: #666; }
+      .profile-form .form-group label span {
+        display: none; }
+    .profile-form .form-group input {
+      width: 100%;
+      padding: 6px 12px; }
+
+  .profile-welcome-msg {
+    justify-content: center; }
+
+  .profile-links, .profile-info {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /* Profile */ }
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Global */
   .container-fluid,
@@ -2263,7 +2437,11 @@ div.auth-items {
   /* Products */
   .page-full-height .product-card {
     width: calc(33.33% - 2.5px);
-    height: 190px; }
+    height: 190px;
+    margin-bottom: 4px; }
+
+  .page-full-height .owl-item > div {
+    height: auto; }
 
   /* Products */
   /* View Product */
@@ -2310,7 +2488,35 @@ div.auth-items {
       .branche-details .connections span.line {
         display: none; }
 
-  /* Contact */ }
+  /* Contact */
+  /* Profile */
+  .profile-welcome-msg > div {
+    font-size: 20px; }
+
+  .profile-welcome-msg {
+    justify-content: flex-end; }
+
+  .profile-links {
+    margin-bottom: 20px; }
+
+  .profile-links, .profile-info {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 25px 25px; }
+
+  .profile-form .form-group {
+    display: block !important; }
+    .profile-form .form-group label {
+      width: 100%;
+      margin-bottom: 4px;
+      font-size: 17px;
+      color: #666; }
+      .profile-form .form-group label span {
+        display: none; }
+
+  /* Profile */ }
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Global */
   .container-fluid,
@@ -2415,7 +2621,28 @@ div.auth-items {
     width: 450px;
     margin: auto; }
 
-  /* Contact */ }
+  /* Contact */
+  /* Profile */
+  .profile {
+    padding: 50px 25px; }
+
+  .profile-link-content .profile-link-text {
+    font-size: 14px;
+    font-weight: 600; }
+  .profile-link-content .icon {
+    font-size: 16px; }
+
+  .profile-info {
+    padding-left: 25px;
+    padding-right: 25px; }
+
+  .profile-form .form-group label {
+    font-size: 15px;
+    font-weight: 600; }
+  .profile-form .user-data {
+    font-size: 18px; }
+
+  /* Profile */ }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Global */
   .container-fluid,
@@ -2519,7 +2746,22 @@ div.auth-items {
       .branche-details .connections span.line {
         display: none; }
 
-  /* Contact */ }
+  /* Contact */
+  /* Profile */
+  .profile {
+    padding: 50px 20px; }
+
+  .profile-link-content .profile-link-text {
+    font-size: 14px;
+    font-weight: 600; }
+  .profile-link-content .icon {
+    font-size: 16px; }
+
+  .avatar {
+    width: 60px;
+    height: 60px; }
+
+  /* Profile */ }
 @media (max-width: 767.98px) {
   /* Global */
   .half-background {
@@ -2597,7 +2839,8 @@ div.auth-items {
   /* Auth */
   .page-content-auth {
     display: block !important;
-    width: 100%; }
+    width: 100%;
+    height: auto !important; }
     .page-content-auth > div {
       width: 100%; }
 

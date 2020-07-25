@@ -632,6 +632,11 @@ small {
     display: none
   }
 }
+#searchBar {
+  left: auto;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
 #slider-title {
   font-weight: 600;
   font-size: 16px;
@@ -932,10 +937,12 @@ nav {
 .bar-search {
   height: 16px;
   font-size: 22px;
-  margin-top: -2px;
-  margin-left: 25px;
+  margin-top: -10px;
+  margin-left: 24px;
   margin-right: 25px;
   cursor: pointer;
+  left: -17px;
+  position: relative;
 }
 .slider-search {
   display: none;
@@ -981,7 +988,7 @@ nav {
       border: none;
     }
     .icon-search {
-      font-size: 21px;
+      font-size: 22px;
       color: #4D4D4D;
     }
   }
@@ -1048,7 +1055,7 @@ footer {
     font-weight: 600;
     margin-top: -1px;
     top: -2px;
-    color: $darkColor
+    color: #808080
   }
 }
 
@@ -1648,6 +1655,14 @@ div.product-price {
 .auth {
   .navbar {
     border: none;
+  }
+  .page-content-auth {
+    @extend %full_height;
+  }
+  small {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 71%;
   }
 }
 .auth div.page-content {
@@ -2656,28 +2671,147 @@ div.auth-items {
 .profile-info {
   border: 1px solid #E6E6E6;
   border-radius: 8px;
-  padding: 20px;
+  padding: 25px 20px;
+  height: 100%;
+}
+.profile-info {
+  padding-left: 50px;
+  padding-right: 50px
+}
+.profile-edit-head {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #00000016;
+  .title {
+    color: $mainColor;
+  }
+  .edit-text {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #666666;
+  }
+  .icon {
+    color: #666666;
+    font-size: 20px;
+  }
 }
 .profile-link-content {
   border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   margin-bottom: 15px;
+  &:hover {
+      .profile-link-text {
+        color: $mainColor;
+      }
+  }
   &:last-of-type {
     border: none;
     padding: 0;
     margin: 0;
   }
   .profile-link-text {
-    font-size: 19px;
+    @extend %transition;
+    font-size: 17px;
     color: #4D4D4D;
   }
   .icon {
-    font-size: 22px;
+    font-size: 20px;
     color: #666666;
     display: inline-block;
   }
 }
+.profile-edit-action {
+  &:hover {
+    span {
+      color: $mainColor;
+    }
+  }
+}
+.profile-form {
+  .form-group {
+    border: none;
+    margin-bottom: 13px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    label {
+      color: #1A1A1A;
+      font-size: 18px;
+      width: 130px;
+      margin-left: 20px;
+    }
+    input {
+      width: 330px;
+      border: 1px solid #00000016;
+      border-radius: 8px;
+      padding: 9px 12px;
+    }
+  }
+}
+.profile-page {
+  .navbar {
+    border: none
+  }
+}
+.profile-welcome-msg {
+  height: 100%;
+  > div {
+    font-size: 23px
+  }
+  .hello {
+    margin-left: 13px;
+    margin-right: 15px;
+  }
+}
+.user-data {
+  font-size: 19px;
+  color: #1A1A1A;
+}
+.user-data-number {
+  direction: ltr;
+}
+.user-head {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* Profile */
+
+/* Compaines */
+
+.page-full-height.compaines-page {
+  .product-card {
+    width: calc(33.33% - 5px);
+    height: calc(50% - 4px);
+  }
+  .company-card {
+    width: calc(40% - 10px);
+    height: 100%;
+    background-image: url("../img/compaines.png");
+    background-size: cover;
+  }
+  .company-other-cards {
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    display: flex;
+  }
+  .comapines {
+    width: 60%;
+    padding: 36px 22px;
+    height: 50%;
+    .title {
+      font-size: 36px;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+    }
+    .description {
+      font-size: 17px
+    }
+  }
+}
+/* Compaines */
 
 /** Media Queries **/
 // Extra small devices (portrait phones, less than 576px)
@@ -2697,6 +2831,15 @@ div.auth-items {
       width: 730px;
     }
     /* Global */
+
+    /* Full Height */
+    .page-full-height footer {
+      height: auto;
+    }
+    .page-full-height .owl-item > div {
+      height: auto
+    }
+    /* Full Height */
 
     /* Global Components */
     // Preloader
@@ -2775,6 +2918,7 @@ div.auth-items {
     .page-full-height .product-card {
       width: calc(50% - 1.2px);
       height: 159px;
+      margin-bottom: 2.2px;
     }
     /* Products */
 
@@ -2911,6 +3055,80 @@ div.auth-items {
       }
     }
     /* Contact */
+
+    /* Profile */
+    .profile {
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+    .profile-welcome-msg {
+      margin-top: 15px;
+    }
+    .profile-links {
+      margin-bottom: 20px;
+    }
+    .profile-links, .profile-info {
+      height: auto;
+    }
+    .profile .row {
+      div[class*="col-"] {
+        padding: 0 !important
+      }
+    }
+    .user-head {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .avatar {
+      margin-bottom: 20px;
+    }
+    .profile .username {
+      margin: 0;
+      width: 100%;
+      > div,
+      button {
+        text-align: center;
+      }
+      .edit {
+        display: block !important;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .profile-info {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .profile-edit-head {
+      .title {
+        font-size: 18px;
+      }
+    }
+    .profile-form .form-group {
+      display: block !important;
+      label {
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 17px;
+        color: #666;
+        span {
+          display: none;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 6px 12px;
+      }
+    }
+    .profile-welcome-msg {
+      justify-content: center;
+    }
+    .profile-links, .profile-info {
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Profile */
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -2932,6 +3150,10 @@ div.auth-items {
     .page-full-height .product-card {
       width: calc(33.33% - 2.5px);
       height: 190px;
+      margin-bottom: 4px;
+    }
+    .page-full-height .owl-item > div {
+      height: auto
     }
     /* Products */
 
@@ -2989,6 +3211,37 @@ div.auth-items {
 
     }
     /* Contact */
+
+    /* Profile */
+    .profile-welcome-msg > div {
+      font-size: 20px;
+    }
+    .profile-welcome-msg {
+      justify-content: flex-end;
+    }
+    .profile-links {
+      margin-bottom: 20px;
+    }
+    .profile-links, .profile-info {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      padding: 25px 25px;
+    }
+    .profile-form .form-group {
+      display: block !important;
+      label {
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 17px;
+        color: #666;
+        span {
+          display: none;
+        }
+      }
+    }
+    /* Profile */
 }
 
 // Medium devices (tablets, 768px and up)
@@ -3121,6 +3374,34 @@ div.auth-items {
       margin: auto;
     }
     /* Contact */
+
+    /* Profile */
+    .profile {
+      padding: 50px 25px;
+    }
+    .profile-link-content {
+      .profile-link-text {
+        font-size: 14px;
+        font-weight: 600
+      }
+      .icon {
+        font-size: 16px;
+      }
+    }
+    .profile-info {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .profile-form {
+      .form-group label {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .user-data {
+        font-size: 18px;
+      }
+    }
+    /* Profile */
 }
 
 // Large devices (desktops, 992px and up)
@@ -3247,6 +3528,25 @@ div.auth-items {
     }
     /* Contact */
 
+    /* Profile */
+    .profile {
+      padding: 50px 20px;
+    }
+    .profile-link-content {
+      .profile-link-text {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .icon {
+        font-size: 16px;
+      }
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+    }
+    /* Profile */
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -3347,6 +3647,7 @@ div.auth-items {
   .page-content-auth {
     display: block !important;
     width: 100%;
+    height: auto !important;
     > div {
       width: 100%;
     }

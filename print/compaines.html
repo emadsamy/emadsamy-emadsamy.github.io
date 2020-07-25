@@ -6,7 +6,7 @@
 			<meta name="description" content="#">
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Title -->
-			<title>Compaines</title>
+			<title>Products</title>
 
 			<!-- Links -->
 			<!-- Project Shortcut Icon -->
@@ -25,6 +25,10 @@
 			<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 			<!-- Main Style -->
 			<link rel="stylesheet" href="assets/css/style.css">
+			<style>
+
+
+			</style>
 	</head>
 	<body>
 				<!-- PreLoader -->
@@ -35,8 +39,8 @@
 				</div>
 				<!-- PreLoader -->
 
-        <!-- Compaines -->
-        <div id="page" class="page-container products compaines-page">
+        <!-- Products -->
+        <div id="page" class="page-full-height compaines-page">
 						<!-- Navbar -->
 						<nav>
 								<div class="container-fluid">
@@ -184,17 +188,17 @@
 													<div class="wrap-link">
 															<a href="design.html" class="toggle-link">التصميم</a>
 													</div>
-													<div class="bar-search">
+													<div id="openSearchBar" class="bar-search">
 															<span class="icon-search icon"></span>
 													</div>
-													<div class="full-search">
-															<div class="input-group">
-																	<input type="text" name="" value="" placeholder="ماذا تريد أن تطبع" />
-																	<div class="input-group-prepend">
-																		<div class="input-group-text">
-																				<span class="icon-search"></span>
-																		</div>
-																	</div>
+											</div>
+											<div id="searchBar" class="full-search">
+													<div class="input-group">
+															<input type="text" name="" value="" placeholder="ماذا تريد أن تطبع" />
+															<div class="input-group-prepend">
+																<div class="input-group-text">
+																		<span id="closeSearch" class="icon-search"></span>
+																</div>
 															</div>
 													</div>
 											</div>
@@ -221,125 +225,248 @@
 													</div>
 											</div>
 									</div>
-									<div class="navbar-bottom">
-											<div class="page-title-text">
-												<span class="icon-chevron_right"></span> الشركات <span class="icon-chevron_left"></span>
-											</div>
-									</div>
+
 								</div>
 						</nav>
 
-            <!-- Page Content -->
-            <div class="page-content">
-								<div class="container-fluid">
-										<div class="products-cards">
+						<div class="content">
+								<div class="full-carousel">
+										<div class="carousel-arrows">
+												<div class="navbar-bottom d-flex justify-content-between align-items-center">
+														<div class="page-title-text">
+																<span role="presentation" id="nextContainer" class="icon-chevron_right owl-next"></span>
+															 	<span id="slider-title">الشركات</span>
+																<span id="prevContainer" role="presentation" class="icon-chevron_left owl-prev"></span>
+														</div>
+														<div class="slider-search">
+																<button class="openSearch" type="button" name="button">
+																		<span class="icon-search"></span>
+																</button>
+														</div>
+														<div id="search-slider-content" class="full-search">
+																<div class="input-group">
+																		<input type="text" name="" value="" placeholder="ماذا تريد أن تطبع" />
+																		<div class="input-group-prepend">
+																			<div class="input-group-text">
+																					<span class="icon-search closeSearch"></span>
+																			</div>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div id="products" class="carousel">
+												<div>
+														<div class="company-card d-flex align-items-end">
+															<div class="comapines">
+																	<div class="comapines-head">
+																		<div class="title">
+																				الشركات
+																		</div>
+																		<div class="description">
+																				<span class="ne_font">24 Print</span>    شريكك الرئيسي الذي     تعتمد عليه
+																		</div>
+																	</div>
+															</div>
+														</div>
+														<div class="company-other-cards">
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/roll_up.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
+															</div>
 
-											<div class="product-card">
-													<div class="compaines-big-card">
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/flag.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
+															</div>
 
-													</div>
-											</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/premier.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
+															</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/premier.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/notebook.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
-															</div>
-													</div>
-											</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/roll_up.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/paper.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
-															</div>
-													</div>
-											</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/flag.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/envolpe.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
-															</div>
-													</div>
-											</div>
+														</div>
+												</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/premier.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+												<div>
+														<div class="company-card"></div>
+														<div class="company-other-cards">
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/roll_up.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
-															</div>
-													</div>
-											</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/notebook.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/flag.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
-															</div>
-													</div>
-											</div>
 
-											<div class="product-card">
-													<div class="product-body">
-															<img src="assets/img/products/paper.svg" class="product-img fluid-img" />
-													</div>
-													<div class="product-footer d-flex justify-content-between">
-															<div class="product-details">
-																	<div class="product-name">كتاب مشروع التخرج</div>
-																	<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/premier.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-															<div class="">
-																	<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/notebook.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
 															</div>
-													</div>
-											</div>
+
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/paper.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
+															</div>
+
+															<div class="product-card">
+																	<div class="product-body">
+																			<img src="assets/img/products/envolpe.svg" class="product-img fluid-img" />
+																	</div>
+																	<div class="product-footer d-flex justify-content-between">
+																			<div class="product-details">
+																					<div class="product-name">كتاب مشروع التخرج</div>
+																					<div class="product-price">20.00 ج.م - 35.00 ج.م</div>
+																			</div>
+																			<div class="">
+																					<a href="view-product.html" class="btn main-btn center-v-h">إطبع الان</a>
+																			</div>
+																	</div>
+															</div>
+														</div>
+												</div>
 										</div>
 								</div>
-            </div>
+						</div>
 
 						<footer>
 							<div class="footer">
 								<div class="container-fluid">
-										<div class="footer-content d-flex justify-content-between">
-												<div class="footer-block arrow-back d-flex justify-content-end">
+										<div class="footer-content d-flex justify-content-end">
+												<!-- <div class="footer-block arrow-back d-flex justify-content-end">
 													<a href="javascript:void(0)" class="footer-back"><span class="icon-back"></span></a>
-												</div>
+												</div> -->
 												<div class="footer-block d-flex justify-content-end">
 													<div class="footer-socialmedia text-left">
 															<span class="our-follow">تابعنا</span>
@@ -355,7 +482,7 @@
 							</div>
 						</footer>
         </div>
-        <!-- Compaines -->
+        <!-- Products -->
 
 				<!-- Scripts -->
         <!-- Jquery V 3.3.1 -->
