@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="477" height="477" viewBox="0 0 477 477">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.117" y1="0.821" x2="0.883" y2="0.179" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset="0.999" stop-color="#f2f2f2"/>
+    </linearGradient>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="477" height="477"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <circle id="Ellipse_26" data-name="Ellipse 26" cx="233.25" cy="233.25" r="233.25" transform="translate(5.499 3.592)" opacity="0.75" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="211.606" cy="211.606" r="211.606" transform="translate(27.071 24.479)" fill="none" stroke="#e6e6e6" stroke-miterlimit="10" stroke-width="12"/>
+  </g>
+</svg>

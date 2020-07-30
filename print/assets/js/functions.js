@@ -94,17 +94,20 @@ $(document).ready(function () {
 
     // Counter View Product
     $(function () {
-      var counter = 1;
-      $("#increment").click(function () {
-          counter++;
-          $("#counter").text(counter);
+      $(".incrementBtn").click(function () {
+          var counterElement = $(this).parents('.product-counter').find(".counter-product").text();
+          var counterParse = parseInt(counterElement);
+          counterParse++;
+          $(this).parents('.product-counter').find(".counter-product").text(counterParse);
       });
-      $("#decrement").click(function (e) {
-          if (counter === 1) {
+      $(".decrementBtn").click(function (e) {
+          var counterElement = $(this).parents('.product-counter').find(".counter-product").text();
+          var counterParse = parseInt(counterElement);
+          if (counterParse === 1) {
             e.preventDefault();
           } else {
-            counter--;
-            $("#counter").text(counter);
+            counterParse--;
+            $(this).parents('.product-counter').find(".counter-product").text(counterParse);
           }
       });
     });
@@ -142,10 +145,21 @@ $(document).ready(function () {
       }
     });
 
+    // Choose Payment Method
     $(".switch-payment-method > div").on("click", function () {
       $(this).addClass('active').siblings(this).removeClass('active');
       var paymentType = $(this).data('payment-type');
-      console.log(paymentType);
+      var paymentText = $(this).text();
+      $("#payUpdated").show();
+      $("#paymentAddress").addClass("active");
+      $("#choosePaymentMethodText").text(paymentText);
+      $("#publishBtn").attr("disabled", false);
+    });
+
+    // Choose Payment Method
+    $("#editPaymentMethod").on("click", function () {
+      $("#payUpdated").hide();
+      $("#paymentAddress").removeClass("active");
     });
 
     $(".btn-link").on("click", function () {
@@ -172,9 +186,23 @@ $(document).ready(function () {
       $("#searchBar").fadeIn(200);
     });
 
+    // Close Search
     $("#closeSearch").on('click', function () {
       $("#searchBar").fadeOut(200);
     });
+
+    // SavePayment
+    $("#savePayment").on('click', function () {
+      $("#paymentAddress").addClass("active");
+      $("#paymentAddressUpdated").show();
+    });
+
+    // SavePayment
+    $("#editPaymentAddress").on('click', function () {
+      $("#paymentAddress").removeClass("active");
+      $("#paymentAddressUpdated").hide();
+    });
+
 });
 
 // Hideen Preloader After Page Loadded
