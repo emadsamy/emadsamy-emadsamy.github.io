@@ -505,7 +505,7 @@ small {
 .excl-shipping {
   font-size: 13px;
 }
-.sidebar-follow button {
+.sidebar-follow a {
   border-radius: 0;
   @extend %full_width;
   color: #FFF !important;
@@ -532,6 +532,7 @@ small {
   font-size: 13px;
   color: #666;
   padding-top: 11px;
+  display: block;
 }
 .payment-box-data {
   select {
@@ -545,6 +546,8 @@ small {
     background-color: #F4F4F4 !important;
     border-radius: 0;
     padding: 23px;
+    font-size: 24px;
+    font-weight: normal;
     &:hover {
       background: #e7e7e7 !important;
     }
@@ -555,6 +558,10 @@ small {
   .icon {
     margin-left: 10px;
     font-weight: 600;
+    font-size: 18px;
+  }
+  .text {
+    font-size: 20px;
   }
 }
 
@@ -2135,6 +2142,9 @@ div.auth-items {
 .cart-container {
   padding-top: 60px
 }
+.print-number {
+  margin-bottom: 1.3rem;
+}
 /* >>>>>> Cart <<<<<< */
 
 /* Payemnts */
@@ -2166,7 +2176,7 @@ div.auth-items {
     content: "";
     border-right: 3px;
     background-color: #C94D4C;
-    width: 3px;
+    width: 2px;
     transform: rotateZ(20deg);
   }
   .icon-overlay-2:before {
@@ -2177,6 +2187,7 @@ div.auth-items {
   }
   .icon-overlay-3 {
     background-image: url("../img/icons/shipping_overlay.svg");
+    width: 92px !important;
   }
 }
 .payments-container {
@@ -2734,6 +2745,9 @@ div.auth-items {
 }
 .offer-card-body {
   padding: 50px 42px 20px;
+  height: 330px;
+  display: flex;
+  align-items: center;
 }
 .offer-card-body {
   img {

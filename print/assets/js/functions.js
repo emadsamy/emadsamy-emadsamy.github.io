@@ -151,7 +151,7 @@ $(document).ready(function () {
       $("#payUpdated").show();
       $("#choosePaymentMethod").addClass("active");
       $("#choosePaymentMethodText").text(paymentText);
-      $("#publishBtn").attr("disabled", false);
+      // $(".isDisabled").attr("disabled", false);
     });
 
     // Choose Payment Method
