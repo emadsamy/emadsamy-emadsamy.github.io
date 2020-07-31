@@ -122,8 +122,6 @@ $(document).ready(function () {
         $(this).addClass('active');
         $("#toggleNavbar").addClass('active');
       }
-
-
     });
     $("#menuBar.active").on('click', function () {
       $(this).removeClass('active');
@@ -151,7 +149,7 @@ $(document).ready(function () {
       var paymentType = $(this).data('payment-type');
       var paymentText = $(this).text();
       $("#payUpdated").show();
-      $("#paymentAddress").addClass("active");
+      $("#choosePaymentMethod").addClass("active");
       $("#choosePaymentMethodText").text(paymentText);
       $("#publishBtn").attr("disabled", false);
     });
@@ -159,7 +157,7 @@ $(document).ready(function () {
     // Choose Payment Method
     $("#editPaymentMethod").on("click", function () {
       $("#payUpdated").hide();
-      $("#paymentAddress").removeClass("active");
+      $("#choosePaymentMethod").removeClass("active");
     });
 
     $(".btn-link").on("click", function () {

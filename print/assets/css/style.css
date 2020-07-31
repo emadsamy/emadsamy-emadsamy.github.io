@@ -495,8 +495,8 @@ small {
     flex-wrap: wrap;
     align-content: space-between; }
   .page-full-height .product-card {
-    width: calc(20% - 15px);
-    height: calc(50% - 10px);
+    width: calc(20% - 8px);
+    height: calc(50% - 5px);
     overflow: hidden; }
   .page-full-height footer {
     height: 41px; }
@@ -508,8 +508,8 @@ small {
   .page-full-height .link-dropdown {
     top: 78px;
     left: auto;
-    right: 20%;
-    width: calc(60% - 4px); }
+    right: 20.1%;
+    width: calc(60% - 3px); }
   .page-full-height .full-search {
     display: block;
     width: 618px;
@@ -701,17 +701,16 @@ nav {
   font-size: 16px; }
 
 .dropdown-actions {
-  width: 63%;
+  width: 67.5%;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px; }
 
 .dropdown-view {
-  width: 37%;
+  width: 32.5%;
   background-image: url("../img/compaines.png");
   height: auto;
   background-size: cover;
-  margin-right: 20px;
   background-position: center; }
 
 .toggle-link {
@@ -734,8 +733,8 @@ nav {
   background-image: url("../img/icons/percent.svg");
   background-size: 120px 120px;
   background-position: bottom left;
-  background-position-x: 20%;
-  background-position-y: 80%; }
+  background-position-x: 14%;
+  background-position-y: 74%; }
 
 .bar-search {
   height: 16px;
@@ -1070,10 +1069,10 @@ div.product-price {
 
 /* >>>>>> Products <<<<<< */
 /* >>>>>> Compaines <<<<<< */
-.compaines-page .product-card:first-of-type {
+.cards-formation .product-card:first-of-type {
   height: 100%;
   width: calc(40% - 5px); }
-.compaines-page .compaines-big-card {
+.cards-formation .compaines-big-card {
   height: 100%;
   background-image: url("../img/compaines.png");
   background-size: cover; }
@@ -1158,6 +1157,10 @@ div.product-price {
   background: #ED2929;
   color: #FFF;
   border: 1px solid #ED2929; }
+  .choose-description-product input[type="radio"]:checked + label .corner-shape {
+    border: 1.5px solid #FFF;
+    border-right: none;
+    border-bottom: none; }
 .choose-description-product .product-border {
   border: 1px solid #4D4D4D; }
 .choose-description-product > div {
@@ -1167,12 +1170,14 @@ div.product-price {
   font-weight: normal; }
 
 .product-size > div,
-.inner-paper > div {
+.inner-paper > div,
+.product-directions > div {
   width: 31.5%; }
 
 .product-colors > div,
 .print-format > div,
-.product-binding > div {
+.product-binding > div,
+.product-flexion > div {
   width: 48.5%; }
 
 .product-numbers > div {
@@ -1358,6 +1363,21 @@ div.product-price {
   width: 100%;
   height: 100%; }
 
+.corner-shape {
+  width: 21px;
+  height: 21px;
+  border: 1.5px solid #4D4D4D;
+  margin-right: 10px;
+  border-right: none;
+  border-bottom: none; }
+
+.corner-radius {
+  border-radius: 11px 0 0 0; }
+
+.dir-shape {
+  font-size: 21px;
+  margin-right: 10px; }
+
 /* >>>>>> View Product <<<<<< */
 /* >>>>>> Auth (Register & Login) <<<<<< */
 .auth .navbar {
@@ -1368,7 +1388,7 @@ div.product-price {
   font-size: 71%; }
 
 .auth div.page-content {
-  height: calc(100% - 100px); }
+  height: calc(100% - 102px); }
   .auth div.page-content .title {
     font-weight: 500; }
   .auth div.page-content small {
@@ -1377,7 +1397,9 @@ div.product-price {
     font-size: 71%; }
 
 .page-content-auth > div {
-  width: 50%; }
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .auth-content.login {
   background-color: #C1272D; }
@@ -1945,7 +1967,7 @@ div.auth-items {
 
 .about-title {
   background: #C1272D;
-  padding: 20px 30px;
+  padding: 20px 60px;
   margin-bottom: -30px; }
   .about-title:after {
     content: "";
@@ -2299,32 +2321,93 @@ div.auth-items {
 
 /* Profile */
 /* Compaines */
-.page-full-height.compaines-page .product-card {
+.page-full-height.cards-formation .product-card {
   width: calc(33.33% - 5px);
   height: calc(50% - 4px); }
-.page-full-height.compaines-page .company-card {
+.page-full-height.cards-formation .company-card {
   width: calc(40% - 10px);
   height: 100%;
   background-image: url("../img/compaines.png");
   background-size: cover; }
-.page-full-height.compaines-page .company-other-cards {
+.page-full-height.cards-formation .company-other-cards {
   width: 60%;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: space-between;
   display: flex; }
-.page-full-height.compaines-page .comapines {
-  width: 60%;
+.page-full-height.cards-formation .comapines {
+  width: 50%;
   padding: 36px 22px;
   height: 50%; }
-  .page-full-height.compaines-page .comapines .title {
+  .page-full-height.cards-formation .comapines .title {
     font-size: 36px;
     padding-bottom: 20px;
     margin-bottom: 15px; }
-  .page-full-height.compaines-page .comapines .description {
+  .page-full-height.cards-formation .comapines .description {
     font-size: 17px; }
 
 /* Compaines */
+/* Design */
+.full-carousel-design {
+  width: 100%; }
+  .full-carousel-design .design-header {
+    width: 35%; }
+  .full-carousel-design .design-backdrop {
+    width: 65%; }
+  .full-carousel-design .design-backdrop,
+  .full-carousel-design .design-header {
+    height: 100%; }
+  .full-carousel-design .design-text {
+    height: 70%;
+    padding: 70px 60px;
+    background-color: #C1272D; }
+    .full-carousel-design .design-text div {
+      color: #fff; }
+  .full-carousel-design .design-action {
+    height: 30%;
+    background: #EFEFEF;
+    width: 100%;
+    padding: 50px 40px; }
+  .full-carousel-design .title {
+    font-size: 45px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 25px; }
+  .full-carousel-design .text {
+    font-size: 17px; }
+  .full-carousel-design .main-btn {
+    padding: 10px 30px;
+    font-size: 17px;
+    background: #ED2929;
+    color: #FFF !important; }
+    .full-carousel-design .main-btn:hover {
+      background: #C1272D; }
+  .full-carousel-design .design-backdrop {
+    height: 100%;
+    background-image: url("../img/design.png");
+    background-size: cover; }
+
+/* Design */
+/* Conferences */
+.conferences .company-card {
+  background-image: url("../img/conferences.png") !important; }
+
+.product-card.full-grid {
+  width: 100% !important; }
+  .product-card.full-grid .full-grid-backdrop {
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF; }
+  .product-card.full-grid .conf-backdrop {
+    background-image: url("../img/annual_conference.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain; }
+
+/* Conferences */
 /** Media Queries **/
 @media (max-width: 575.98px) {
   /* Global */
@@ -2417,9 +2500,10 @@ div.auth-items {
 
   /* Products */
   .page-full-height .product-card {
-    width: calc(50% - 1.2px);
-    height: 192px;
-    margin-bottom: 2.2px; }
+    width: calc(50% - 1.2px) !important;
+    height: 192px !important;
+    margin-bottom: 2.2px !important;
+    display: block; }
 
   /* Products */
   /* View Product */
@@ -2531,9 +2615,6 @@ div.auth-items {
     padding-left: 27px;
     padding-right: 27px; }
 
-  .profile-welcome-msg {
-    margin-top: 15px; }
-
   .profile-links {
     margin-bottom: 20px; }
 
@@ -2542,24 +2623,6 @@ div.auth-items {
 
   .profile .row div[class*="col-"] {
     padding: 0 !important; }
-
-  .user-head {
-    flex-wrap: wrap;
-    justify-content: center; }
-
-  .avatar {
-    margin-bottom: 20px; }
-
-  .profile .username {
-    margin: 0;
-    width: 100%; }
-    .profile .username > div,
-    .profile .username button {
-      text-align: center; }
-    .profile .username .edit {
-      display: block !important;
-      text-align: center;
-      width: 100%; }
 
   .profile-info {
     padding-left: 20px;
@@ -2637,9 +2700,9 @@ div.auth-items {
   /* Global */
   /* Products */
   .page-full-height .product-card {
-    width: calc(33.33% - 2.5px);
-    height: 190px;
-    margin-bottom: 4px; }
+    width: calc(33.33% - 2.5px) !important;
+    height: 190px !important;
+    margin-bottom: 4px !important; }
 
   .page-full-height .owl-item > div {
     height: auto; }
@@ -2709,12 +2772,6 @@ div.auth-items {
 
   /* Contact */
   /* Profile */
-  .profile-welcome-msg > div {
-    font-size: 20px; }
-
-  .profile-welcome-msg {
-    justify-content: flex-end; }
-
   .profile-links {
     margin-bottom: 20px; }
 
@@ -2877,7 +2934,27 @@ div.auth-items {
   .profile-form .user-data {
     font-size: 18px; }
 
-  /* Profile */ }
+  /* Profile */
+  /* Design */
+  .full-carousel-design .design-text {
+    padding: 70px 25px; }
+  .full-carousel-design .design-header {
+    width: 40%; }
+  .full-carousel-design .design-backdrop {
+    width: 60%; }
+
+  /* Design */
+  /* Confreneces */
+  .page-full-height.cards-formation .company-card {
+    background-position: center; }
+
+  .page-full-height.cards-formation .comapines {
+    width: 100%; }
+
+  .product-card.full-grid .conf-backdrop {
+    background-size: contain; }
+
+  /* Confreneces */ }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Global */
   .container-fluid,
@@ -2912,26 +2989,23 @@ div.auth-items {
     height: 53%; }
 
   .product-footer {
-    display: block !important;
     padding: 13px 10px; }
-    .product-footer div {
-      text-align: center; }
     .product-footer .main-btn {
       display: inline-block;
       position: static;
       transform: none;
       margin: auto;
       font-size: 10px;
-      padding: 5px 17px; }
+      padding: 5px 11px; }
 
   .product-name {
-    font-size: 12px; }
+    font-size: 12px !important; }
 
   .product-price {
     margin-bottom: 8px; }
 
   .product-card:hover .product-body {
-    height: calc(100% - 90.8px); }
+    height: calc(100% - 65.4px); }
 
   /* Products */
   /* View Product */
@@ -3043,7 +3117,18 @@ div.auth-items {
     width: 60px;
     height: 60px; }
 
-  /* Profile */ }
+  /* Profile */
+  /* Confreneces */
+  .page-full-height.cards-formation .company-card {
+    background-position: center; }
+
+  .page-full-height.cards-formation .comapines {
+    width: 60%; }
+
+  .product-card.full-grid .conf-backdrop {
+    background-size: contain; }
+
+  /* Confreneces */ }
 @media (min-width: 1200px) {
   .title-products-small {
     display: none; } }
@@ -3132,7 +3217,10 @@ div.auth-items {
     width: 100%;
     height: auto !important; }
     .page-content-auth > div {
-      width: 100%; }
+      width: 100%;
+      padding: 80px 0; }
+    .page-content-auth .auth-form {
+      margin-bottom: 0 !important; }
 
   .auth div.page-content {
     height: auto; }
@@ -3297,7 +3385,76 @@ div.auth-items {
   .branches-wrapper {
     padding-top: 80px; }
 
-  /* Contact */ }
+  /* Contact */
+  /* Design */
+  .full-carousel-design .design-header {
+    width: 100%;
+    height: auto; }
+  .full-carousel-design .design-backdrop {
+    display: none; }
+  .full-carousel-design .design-text,
+  .full-carousel-design .design-action {
+    height: auto; }
+  .full-carousel-design .design-text {
+    padding: 100px 40px; }
+
+  /* Design */
+  /* Conferences */
+  .conferences .owl-item > div {
+    display: block !important; }
+
+  .cards-formation .company-card {
+    width: 100% !important; }
+
+  .cards-formation .company-card {
+    width: auto;
+    height: auto;
+    background: none;
+    background-size: cover;
+    margin-bottom: 15px; }
+    .cards-formation .company-card .comapines {
+      width: 100%; }
+
+  .cards-formation .company-other-cards {
+    width: 100% !important; }
+
+  .product-card.full-grid {
+    width: 100% !important;
+    height: 280px !important;
+    display: block; }
+
+  .full-grid-backdrop {
+    height: 280px !important; }
+
+  .product-card.full-grid .conf-backdrop {
+    background-size: contain;
+    margin-bottom: 5px; }
+
+  /* Conferences */
+  /* Profile */
+  .profile-welcome-msg {
+    margin-top: 15px;
+    justify-content: center; }
+
+  .user-head {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .avatar {
+    margin-bottom: 20px; }
+
+  .profile .username {
+    margin: 0;
+    width: 100%; }
+    .profile .username > div,
+    .profile .username button {
+      text-align: center; }
+    .profile .username .edit {
+      display: block !important;
+      text-align: center;
+      width: 100%; }
+
+  /* Profile */ }
 @media (max-width: 991.98px) {
   /* Global */
   .sidebar {
@@ -3384,7 +3541,7 @@ div.auth-items {
   /* Products */ }
 @media (max-width: 1199.98px) {
   /* View Product */
-  .page-title-text {
+  .view-product-page .page-title-text {
     display: none; }
 
   .product-view,
@@ -3427,29 +3584,22 @@ div.auth-items {
 @media (min-width: 1200px) and (max-width: 1400px) {
   /* Products */
   .product-footer {
-    display: block !important;
-    padding: 13px 10px; }
-    .product-footer div {
-      text-align: center; }
+    padding: 13px 13px; }
     .product-footer .main-btn {
-      display: inline-block;
-      position: static;
-      transform: none;
-      margin: auto;
-      font-size: 10px;
-      padding: 5px 17px; }
+      font-size: 13px;
+      padding: 5px 13px; }
 
   .product-img {
     height: 63%; }
 
   .product-name {
-    font-size: 12px; }
+    font-size: 13px !important; }
 
   .product-price {
     margin-bottom: 8px; }
 
   .product-card:hover .product-body {
-    height: calc(100% - 90.8px); }
+    height: calc(100% - 66.2px); }
 
   /* Products */ }
 /** Media Queries **/
