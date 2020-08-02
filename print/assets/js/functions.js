@@ -151,7 +151,7 @@ $(document).ready(function () {
       $("#payUpdated").show();
       $("#choosePaymentMethod").addClass("active");
       $("#choosePaymentMethodText").text(paymentText);
-      // $(".isDisabled").attr("disabled", false);
+      $("#publishBtn").attr("disabled", false);
     });
 
     // Choose Payment Method
@@ -199,6 +199,13 @@ $(document).ready(function () {
     $("#editPaymentAddress").on('click', function () {
       $("#paymentAddress").removeClass("active");
       $("#paymentAddressUpdated").hide();
+    });
+
+    // Payment Accordion
+    $('.toggle-accordion-btn').on('click', function () {
+      var target = $(this).data('target-card');
+      $('' + target + '').slideToggle();
+      $(this).next('.down').toggleClass('active');
     });
 
 });
