@@ -250,7 +250,7 @@ small {
 .notifications {
   top: 0;
   right: -7px;
-  background-color: #ED2929;
+  background-color: #C1272D;
   color: #FFF;
   width: 17px;
   height: 17px;
@@ -273,8 +273,7 @@ small {
   .page-head-content .title {
     color: #FFF;
     font-size: 30px;
-    font-weight: 500;
-    padding-top: 8px; }
+    font-weight: 500; }
 
 .icon-overlay {
   width: 150px;
@@ -1209,8 +1208,6 @@ div.product-price {
   .product-counter > button {
     font-size: 23px;
     display: inline-block; }
-  .product-counter .incrementBtn {
-    visibility: hidden; }
 
 .counter-product {
   padding-top: 4px; }
@@ -1642,6 +1639,9 @@ div.auth-items {
 
 /* >>>>>> Requests <<<<<< */
 /* >>>>>> Cart <<<<<< */
+.cart .navbar {
+  border: none; }
+
 .cart-container {
   padding-top: 60px; }
 
@@ -1649,7 +1649,9 @@ div.auth-items {
   margin-bottom: 1.3rem; }
 
 /* >>>>>> Cart <<<<<< */
-/* Payemnts */
+/* >>>>>> Payemnts <<<<<< */
+.payments .navbar {
+  border: none; }
 .payments .icon-overlay {
   background: none;
   width: auto; }
@@ -1889,7 +1891,7 @@ div.auth-items {
 .cards-collapse {
   display: none; }
 
-/* Payemnts */
+/* >>>>>> Payemnts <<<<<< */
 /* >>>>>> Tracking <<<<<< */
 .tracking-container {
   padding-top: 70px;
@@ -2087,7 +2089,6 @@ div.auth-items {
     line-height: 1.7; }
 
 .branche-details {
-  width: 46%;
   margin-bottom: 40px; }
   .branche-details .number-phone {
     direction: ltr; }
@@ -2496,6 +2497,24 @@ div.auth-items {
   .order-item {
     width: 730px; }
 
+  .page-head-content {
+    padding: 20px 15px; }
+    .page-head-content .title {
+      font-size: 24px;
+      padding-top: 0; }
+    .page-head-content .icon-overlay {
+      width: 60px;
+      height: 52px;
+      background-position: left; }
+
+  .payments .icon-overlay > div {
+    display: none; }
+  .payments .icon-overlay .icon-overlay-1 {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    margin: 0; }
+
   /* Global */
   /* Full Height */
   .page-full-height footer {
@@ -2529,7 +2548,7 @@ div.auth-items {
     margin-left: 5px; }
 
   .nav-link a {
-    margin-left: 10px;
+    margin-left: 19px;
     padding-left: 0; }
 
   .user-dropdown .user-name {
@@ -2611,7 +2630,7 @@ div.auth-items {
     .product-toolbar a {
       margin: 0 6px; }
     .product-toolbar .text {
-      font-size: 13px;
+      font-size: 15px;
       padding-top: 3px; }
     .product-toolbar .icon {
       font-size: 19px;
@@ -2977,12 +2996,6 @@ div.auth-items {
       text-align: center; }
 
   /* Partners */
-  /* Contact */
-  .contact-form {
-    width: 450px;
-    margin: auto; }
-
-  /* Contact */
   /* Profile */
   .profile {
     padding: 50px 25px; }
@@ -3023,7 +3036,16 @@ div.auth-items {
   .product-card.full-grid .conf-backdrop {
     background-size: contain; }
 
-  /* Confreneces */ }
+  /* Confreneces */
+  /* Contact */
+  .connections {
+    display: block !important; }
+    .connections span {
+      display: block !important; }
+    .connections .line {
+      display: none !important; }
+
+  /* Contact */ }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Global */
   .container-fluid,
@@ -3211,8 +3233,8 @@ div.auth-items {
     width: calc(100% + 30px) !important;
     margin: 0 -15px; }
 
-  .icon-overlay {
-    display: none !important; }
+  .page-head-content .icon-overlay {
+    background-position: left; }
 
   /* Global */
   /* To Fixed Navbar */
@@ -3283,6 +3305,24 @@ div.auth-items {
 
   .product-img {
     height: 65%; }
+
+  .product-book {
+    height: 82%;
+    top: 55%; }
+
+  .product-rollup {
+    height: 80%; }
+
+  .product-flag {
+    height: 78%; }
+
+  .product-premier {
+    left: 57%;
+    height: 75%;
+    top: 54%; }
+
+  .product-medal {
+    height: 80%; }
 
   .product-name {
     font-size: 12px; }
@@ -3541,7 +3581,12 @@ div.auth-items {
       text-align: center;
       width: 100%; }
 
-  /* Profile */ }
+  /* Profile */
+  /* Cart */
+  .cart-items {
+    overflow-x: auto; }
+
+  /* Cart */ }
 @media (max-width: 991.98px) {
   /* Global */
   .sidebar {
@@ -3564,8 +3609,8 @@ div.auth-items {
     position: fixed !important;
     display: block !important;
     width: 100%;
-    height: calc(100% - 59px);
-    top: 59px !important;
+    height: calc(100% - 58px);
+    top: 58px !important;
     padding: 0 !important;
     right: 0; }
     .toggle-navbar .wrap-link {

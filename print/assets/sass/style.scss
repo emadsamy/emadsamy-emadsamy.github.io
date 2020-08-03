@@ -305,7 +305,7 @@ small {
   @extend %position_absolute;
   top: 0;
   right: -7px;
-  background-color: $mainColor;
+  background-color: $paleMainColor;
   color: #FFF;
   width: 17px;
   height: 17px;
@@ -336,8 +336,7 @@ small {
     color: #FFF;
     font-size: 30px;
     font-weight: 500;
-    padding-top: 8px;
-  }
+    }
 }
 .icon-overlay {
   width: 150px;
@@ -1573,9 +1572,6 @@ div.product-price {
     font-size: 23px;
     display: inline-block;
   }
-  .incrementBtn {
-    visibility: hidden;
-  }
 }
 .counter-product {
   padding-top: 4px;
@@ -2142,6 +2138,11 @@ div.auth-items {
 /* >>>>>> Requests <<<<<< */
 
 /* >>>>>> Cart <<<<<< */
+.cart {
+  .navbar {
+    border: none;
+  }
+}
 .cart-container {
   padding-top: 60px
 }
@@ -2150,8 +2151,11 @@ div.auth-items {
 }
 /* >>>>>> Cart <<<<<< */
 
-/* Payemnts */
+/* >>>>>> Payemnts <<<<<< */
 .payments {
+  .navbar {
+    border: none;
+  }
   .icon-overlay {
     background: none;
     width: auto;
@@ -2270,8 +2274,6 @@ div.auth-items {
 }
 .payment-box-data {
   @extend %full_width;
-  // height: 0;
-  // overflow: hidden;
   display: none;
   margin-bottom: 30px;
 }
@@ -2283,11 +2285,6 @@ div.auth-items {
       right: 5px;
       background-color: $mainColor;
     }
-  }
-  .payment-box-data {
-    // height: auto !important;
-    // @extend %transition;
-    // overflow: visible !important;
   }
 }
 .h5-pos {
@@ -2461,7 +2458,7 @@ div.auth-items {
 .cards-collapse {
   display: none
 }
-/* Payemnts */
+/* >>>>>> Payemnts <<<<<< */
 
 /* >>>>>> Tracking <<<<<< */
 .tracking-container {
@@ -2704,7 +2701,6 @@ div.auth-items {
   }
 }
 .branche-details {
-  width: 46%;
   margin-bottom: 40px;
   .number-phone {
     direction: ltr;
@@ -3212,6 +3208,29 @@ div.auth-items {
     .order-item {
       width: 730px;
     }
+    .page-head-content {
+      padding: 20px 15px;
+      .title {
+        font-size: 24px;
+        padding-top: 0
+      }
+      .icon-overlay {
+        width: 60px;
+        height: 52px;
+        background-position: left;
+      }
+    }
+    .payments .icon-overlay {
+      > div {
+        display: none;
+      }
+      .icon-overlay-1 {
+        width: 100%;
+        height: 100%;
+        display: block !important;
+        margin: 0
+      }
+    }
     /* Global */
 
     /* Full Height */
@@ -3253,7 +3272,7 @@ div.auth-items {
       margin-left: 5px;
     }
     .nav-link a {
-      margin-left: 10px;
+      margin-left: 19px;
       padding-left: 0;
     }
     .user-dropdown .user-name {
@@ -3343,7 +3362,7 @@ div.auth-items {
         margin: 0 6px;
       }
       .text {
-          font-size: 13px;
+          font-size: 15px;
           padding-top: 3px;
       }
       .icon {
@@ -3782,13 +3801,6 @@ div.auth-items {
     }
     /* Partners */
 
-    /* Contact */
-    .contact-form {
-      width: 450px;
-      margin: auto;
-    }
-    /* Contact */
-
     /* Profile */
     .profile {
       padding: 50px 25px;
@@ -3842,6 +3854,18 @@ div.auth-items {
       background-size: contain;
     }
     /* Confreneces */
+
+    /* Contact */
+    .connections {
+      display: block !important;
+      span {
+        display: block !important;
+      }
+      .line {
+        display: none !important
+      }
+    }
+    /* Contact */
 }
 
 // Large devices (desktops, 992px and up)
@@ -4064,8 +4088,10 @@ div.auth-items {
       width: calc(100% + 30px) !important;
       margin: 0 -15px;
   }
-  .icon-overlay {
-    display: none !important;
+  .page-head-content {
+    .icon-overlay {
+      background-position: left;
+    }
   }
   /* Global */
 
@@ -4150,6 +4176,24 @@ div.auth-items {
   }
   .product-img {
     height: 65%
+  }
+  .product-book {
+    height: 82%;
+    top: 55%;
+  }
+  .product-rollup {
+    height: 80%;
+  }
+  .product-flag {
+    height: 78%;
+  }
+  .product-premier {
+    left: 57%;
+    height: 75%;
+    top: 54%;
+  }
+  .product-medal {
+    height: 80%;
   }
   .product-name {
     font-size: 12px;
@@ -4448,6 +4492,12 @@ div.auth-items {
     }
   }
   /* Profile */
+
+  /* Cart */
+  .cart-items {
+    overflow-x: auto;
+  }
+  /* Cart */
 }
 
 @media (max-width: 991.98px) {
@@ -4474,8 +4524,8 @@ div.auth-items {
     position: fixed !important;
     display: block !important;
     width: 100%;
-    height: calc(100% - 59px);
-    top: 59px !important;
+    height: calc(100% - 58px);
+    top: 58px !important;
     padding: 0 !important;
     right: 0;
     .wrap-link {
