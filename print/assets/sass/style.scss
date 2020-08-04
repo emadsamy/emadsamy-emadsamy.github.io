@@ -375,6 +375,19 @@ small {
     box-shadow: none;
   }
 }
+.main-btn-backdrop {
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
+  color: #FFF !important;
+  &:hover {
+    background-color: $paleMainColor;
+    color: #FFF !important;
+  }
+  &:active {
+    background-color: $activeMainColor;
+    color: #FFF !important;
+  }
+}
 /** Buttons **/
 /* Global */
 
@@ -4673,8 +4686,8 @@ div.auth-items {
   .slider-search {
     display: block;
     button {
-      margin-left: 12px;
-      margin-top: 6px;
+      padding-left: 12px;
+      padding-top: 6px;
       position: relative;
       z-index: 20
     }

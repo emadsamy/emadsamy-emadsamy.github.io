@@ -211,9 +211,8 @@ $(document).ready(function () {
 });
 
 // Hideen Preloader After Page Loadded
-$('#preloader').css('display', 'none');
 $(window).on('load', function() {
   $('body, html').css('overflow', 'visible');
-  // $('#preloader').fadeOut(1000);
-  $('#preloader').css('display', 'none');
+  $('#preloader').fadeOut(1000);
+  // $('#preloader').css('display', 'none');
 });

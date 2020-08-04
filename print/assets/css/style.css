@@ -308,6 +308,17 @@ small {
     -ms-box-shadow: none;
     box-shadow: none; }
 
+.main-btn-backdrop {
+  background-color: #ED2929;
+  border: 1px solid #ED2929;
+  color: #FFF !important; }
+  .main-btn-backdrop:hover {
+    background-color: #C1272D;
+    color: #FFF !important; }
+  .main-btn-backdrop:active {
+    background-color: #d7131b;
+    color: #FFF !important; }
+
 /** Buttons **/
 /* Global */
 /* Global Components */
@@ -3743,8 +3754,8 @@ div.auth-items {
   .slider-search {
     display: block; }
     .slider-search button {
-      margin-left: 12px;
-      margin-top: 6px;
+      padding-left: 12px;
+      padding-top: 6px;
       position: relative;
       z-index: 20; }
     .slider-search .icon-search {

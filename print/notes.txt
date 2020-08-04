@@ -1,4 +1,4 @@
 Hello..
 1- all options to all products in (products-all-options.html) file
 2- and i have some products i change width and center x, y example class (product-book, product-premier, product-flag, product-medal etc...)
-3- 
+3- loading in project because big images size
