@@ -376,6 +376,19 @@ small {
 .order-item-title-sm-device {
   display: none; }
 
+.order-item-img-flex {
+  width: 16%; }
+
+.order-item-img-flex > .order-item-img {
+  width: 100%; }
+
+.order-item-data {
+  width: 84% !important;
+  display: flex; }
+
+.order-item-data > div {
+  width: 25%; }
+
 .sidebar-header {
   padding: 17px 20px;
   background: #EFEFEF;
@@ -3317,6 +3330,11 @@ div.auth-items {
     margin-bottom: 30px;
     border-bottom: 1px solid #CBCBCB; }
 
+  .tracking-container .order-item {
+    width: 1000px !important;
+    max-width: 1000px;
+    padding: 5px 0; }
+
   /* Global */
   /* To Fixed Navbar */
   nav {
@@ -3419,7 +3437,8 @@ div.auth-items {
   .page-content-auth {
     display: block !important;
     width: 100%;
-    height: auto !important; }
+    height: auto !important;
+    margin-top: 59px; }
     .page-content-auth > div {
       width: 100%;
       padding: 80px 0; }
@@ -3489,6 +3508,9 @@ div.auth-items {
 
   .order-item {
     width: 1100px; }
+
+  .tracking .navbar {
+    border-bottom: none; }
 
   /* Tracking */
   /* Partners */
@@ -3722,7 +3744,9 @@ div.auth-items {
     display: block; }
     .slider-search button {
       margin-left: 12px;
-      margin-top: 6px; }
+      margin-top: 6px;
+      position: relative;
+      z-index: 20; }
     .slider-search .icon-search {
       font-size: 23px; }
 
