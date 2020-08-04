@@ -2853,6 +2853,15 @@ div.auth-items {
   .switch-payment-method > div {
     width: 31%; }
 
+  .payments .icon-overlay > div {
+    width: 49px;
+    height: 100%; }
+  .payments .page-head-content .icon-overlay {
+    width: auto;
+    height: 52px; }
+  .payments .icon-overlay-3 {
+    width: 65px !important; }
+
   /* Payments */
   /* Partners */
   .our-logos {

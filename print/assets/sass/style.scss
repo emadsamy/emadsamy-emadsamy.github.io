@@ -3623,6 +3623,19 @@ div.auth-items {
     .switch-payment-method > div {
       width: 31%;
     }
+    .payments {
+      .icon-overlay > div {
+        width: 49px;
+        height: 100%;
+      }
+      .page-head-content .icon-overlay {
+        width: auto;
+        height: 52px
+      }
+      .icon-overlay-3 {
+        width: 65px !important;
+      }
+    }
     /* Payments */
 
     /* Partners */
@@ -4689,7 +4702,7 @@ div.auth-items {
       padding-left: 12px;
       padding-top: 6px;
       position: relative;
-      z-index: 20
+      z-index: 20;
     }
     .icon-search {
       font-size: 23px;
