@@ -798,7 +798,7 @@ nav {
       background: none;
       border: none; }
     .full-search .input-group .icon-search {
-      font-size: 22px;
+      font-size: 23px;
       color: #4D4D4D; }
 
 footer {
@@ -3721,10 +3721,10 @@ div.auth-items {
   .slider-search {
     display: block; }
     .slider-search button {
-      margin-left: 14px;
+      margin-left: 12px;
       margin-top: 6px; }
     .slider-search .icon-search {
-      font-size: 21px; }
+      font-size: 23px; }
 
   /* Page Full Height */
   .navbar-links {
