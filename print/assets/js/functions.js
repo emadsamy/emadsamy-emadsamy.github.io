@@ -115,17 +115,17 @@ $(document).ready(function () {
     // Open Produts
     $("#menuBar").on('click', function () {
       if ($(this).hasClass('active')) {
-        $("#toggleNavbar").removeClass('active');
+        $("#dropdownNavbar").fadeOut();
         $(this).removeClass('active');
         $("#searchBar").fadeOut(200);
+        $("#toggleNavbar").removeClass('active');
+        $("html, body").prop("style", "overflow: visible !important");
       } else {
         $(this).addClass('active');
+        $("#dropdownNavbar").fadeIn();
         $("#toggleNavbar").addClass('active');
+        $("html, body").prop("style", "overflow: hidden !important");
       }
-    });
-    $("#menuBar.active").on('click', function () {
-      $(this).removeClass('active');
-      $("#toggleNavbar").removeClass('active');
     });
 
     // Payment Switch
@@ -158,14 +158,6 @@ $(document).ready(function () {
     $("#editPaymentMethod").on("click", function () {
       $("#payUpdated").hide();
       $("#choosePaymentMethod").removeClass("active");
-    });
-
-    $(".btn-link").on("click", function () {
-      $(this).next(".down").toggleClass("active");
-    });
-
-    $('#collapseOne').collapse({
-      toggle: false
     });
 
     // Toggle Slider Search
@@ -202,10 +194,39 @@ $(document).ready(function () {
     });
 
     // Payment Accordion
-    $('.toggle-accordion-btn').on('click', function () {
+    $('.toggle-accordion').on('click', function () {
       var target = $(this).data('target-card');
       $('' + target + '').slideToggle();
       $(this).next('.down').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+
+    // Switch Options
+    $('.switch-product-option').on('click', function () {
+      if ($(this).parents('.description-row').hasClass("paddingTop")) {
+        $(this).parents('.description-row').css('paddingTop', '30px');
+      }
+      var switchText = $(this).find('.switch-product-option-val').text();
+      var title = $(this).parents('.description-row').find('.description-title');
+      var showSelectedBox = $(this).parents('.choose-description-product').find('.product-option-value');
+      var selectedValue = $(this).parents('.choose-description-product').find('.product-option-selected');
+      var intrested = $(this).parents('.choose-description-product').find('.interested-text');
+      showSelectedBox.addClass('active');
+      intrested.addClass('active');
+      selectedValue.text(switchText);
+      title.prop("style", "display: none !important");
+    });
+
+    // Edit Value
+    $(".product-option-edit").on('click', function () {
+      if ($(this).parents('.description-row').hasClass("paddingTop")) {
+        $(this).parents('.description-row').css('paddingTop', '0');
+      }
+      $(this).parents('.product-option-value').removeClass('active');
+      var title = $(this).parents('.description-row').find('.description-title');
+      var intrested = $(this).parents('.choose-description-product').find('.interested-text');
+      intrested.removeClass('active');
+      title.prop("style", "display: flex !important");
     });
 
 });
