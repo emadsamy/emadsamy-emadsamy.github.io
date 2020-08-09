@@ -42,17 +42,13 @@ $(document).ready(function () {
 
     $("#prevContainer").click(function() {
         carouselEl.trigger('next.owl.carousel');
-        // Change Slider Title
-        if ($(".owl-item:nth-of-type(2)").hasClass("active")) {
-          $("#slider-title").html("المعارض");
-        }
+        var sliderTitle = $(this).data('slider-title');
+        $("#slider-title").text(sliderTitle);
     });
     $("#nextContainer").click(function() {
         carouselEl.trigger('prev.owl.carousel');
-        // Change Slider Title
-        if ($(".owl-item:nth-of-type(1)").hasClass("active")) {
-          $("#slider-title").html("الشركات");
-        }
+        var sliderTitle = $(this).data('slider-title');
+        $("#slider-title").text(sliderTitle);
     });
 
     $('#offers').owlCarousel({
@@ -227,6 +223,13 @@ $(document).ready(function () {
       var intrested = $(this).parents('.choose-description-product').find('.interested-text');
       intrested.removeClass('active');
       title.prop("style", "display: flex !important");
+    });
+
+    // View Product Big Size
+    $('.dotBtn').on('click', function () {
+      var slider = $(this).data('product-slider');
+      $(slider).fadeIn(0).siblings('.product-slider-view-item').fadeOut(0);
+      $(this).addClass('active').siblings().removeClass('active');
     });
 
 });
