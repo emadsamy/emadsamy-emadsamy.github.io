@@ -130,7 +130,7 @@ ul {
 .form-control:hover, .form-control:active, .form-control:focus {
   box-shadow: none; }
 
-.btn, .toolbar-links a, .menu-bar > div, .toggle-navbar, .dropdown-products-list > div a, .navbar-dropdown-link a, .socialmedia, .socialmedia .socialmedia-ic i, .social-icon i, .dropdown-item, .product-card, .product-body, .product-img, .product-toolbar a, .product-toolbar .text, .product-toolbar .icon, .product-toolbar .icon:before, .product-slider-view-dots .dotBtn, .order-tracking-data, .instructions-list li, .bill-btn, .payments-container .down, .switch, .switch span, .profile-link-content .profile-link-text {
+.btn, .fast-links > a, .toolbar-links a, .menu-bar > div, .toggle-navbar, .dropdown-products-list > div a, .navbar-dropdown-link a, .socialmedia, .socialmedia .socialmedia-ic i, .social-icon i, .dropdown-item, .product-card, .product-body, .product-img, .product-toolbar a, .product-toolbar .text, .product-toolbar .icon, .product-toolbar .icon:before, .product-slider-view-dots .dotBtn, .order-tracking-data, .instructions-list li, .bill-btn, .payments-container .down, .switch, .switch span, .profile-link-content .profile-link-text {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -576,6 +576,10 @@ small {
     transform: translate(-50%, -50%);
     display: none; }
 
+.carousel-arrows {
+  width: 100%;
+  height: 47.5px; }
+
 #searchBar {
   left: auto;
   right: 50%;
@@ -583,7 +587,25 @@ small {
 
 #slider-title {
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 18px; }
+
+.fast-links {
+  display: flex;
+  align-items: center;
+  line-height: 1; }
+  .fast-links > a {
+    color: #2c2c2c90;
+    font-size: 14px;
+    font-weight: 600; }
+    .fast-links > a:hover {
+      color: #000; }
+    .fast-links > a:nth-of-type(2) {
+      margin-left: 14px;
+      padding-left: 14px;
+      border-left: 1px solid #2c2c2c90;
+      border-right: 1px solid #2c2c2c90;
+      margin-right: 14px;
+      padding-right: 14px; }
 
 .search-group {
   border: 1px solid #FFF;
@@ -969,20 +991,21 @@ footer {
 .footer-copyright {
   font-size: 13px;
   color: #333333;
-  padding-top: 2px; }
-
-.footer-socialmedia {
-  margin-left: 30px; }
+  padding-top: 2px;
+  font-weight: 600; }
+  .footer-copyright .company-name-footer {
+    font-weight: 600; }
 
 .social-icon {
   top: 1px;
   color: #333333;
-  margin-left: 13px;
-  margin-right: 13px; }
+  margin-left: 6px;
+  margin-right: 6px; }
   .social-icon:hover i {
     color: #ED2929; }
   .social-icon i {
-    font-size: 15px; }
+    font-size: 13px;
+    color: #666; }
 
 .our-follow {
   line-height: 1;
@@ -1000,6 +1023,9 @@ footer {
   margin-top: -1px;
   top: -2px;
   color: #808080; }
+
+.footer-block {
+  width: 100%; }
 
 .product-list-description {
   flex-direction: row;
@@ -1221,21 +1247,6 @@ footer {
   z-index: 5;
   align-items: center; }
 
-.product-card-big-size {
-  width: calc(50% - 10px) !important;
-  height: calc(50% - 10px) !important; }
-  .product-card-big-size .product-big-size-img {
-    height: 100%; }
-  .product-card-big-size:hover .product-body {
-    height: calc(100% - 72.4px) !important;
-    background: #F0F0F0; }
-    .product-card-big-size:hover .product-body .product-big-size-img {
-      height: 100% !important; }
-  .product-card-big-size .product-body {
-    height: calc(100% - 72.4px); }
-  .product-card-big-size .product-footer {
-    margin-top: 7px; }
-
 .product-details > div {
   line-height: 1;
   font-size: 15px;
@@ -1260,6 +1271,119 @@ div.product-price {
   background-size: cover; }
 
 /* >>>>>> Compaines <<<<<< */
+/* >>>>>> New Compaines Design <<<<<< */
+.wrapper-compaines-products,
+.wrapper-confrences-products {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .wrapper-compaines-products .product-card,
+  .wrapper-confrences-products .product-card {
+    width: calc(20% - 10px);
+    height: calc(50vh - 10px);
+    margin-bottom: 10px;
+    flex: 0 0 auto;
+    display: inline-block; }
+
+.compaines-widget {
+  min-height: calc(50vh - 10px);
+  width: 100%;
+  margin-bottom: 10px; }
+
+.compaines-widget-details {
+  width: 35%;
+  background-color: #C1272D;
+  padding: 50px; }
+  .compaines-widget-details .title,
+  .compaines-widget-details .description {
+    color: #FFF;
+    width: 100%; }
+  .compaines-widget-details .title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 17px; }
+  .compaines-widget-details .description {
+    font-size: 20px;
+    line-height: 1.8; }
+
+.compaines-widget-img {
+  width: 65%;
+  background-image: url("../img/compaines.png");
+  background-size: cover;
+  background-position: center; }
+
+/* >>>>>> New Compaines Design <<<<<< */
+/* >>>>>> New Confrences Design <<<<<< */
+.wrapper-confrences-products .big-size-title {
+  width: 100%;
+  color: #CCC;
+  font-size: 40px;
+  margin-top: 30px; }
+
+.confrences-widget {
+  background-color: #C1272D;
+  height: 46vh;
+  width: 100%;
+  padding: 0 50px;
+  margin-bottom: 16px; }
+
+.confrences-widget-details {
+  width: 50%; }
+  .confrences-widget-details .title,
+  .confrences-widget-details .description {
+    color: #FFF;
+    width: 100%; }
+  .confrences-widget-details .title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 17px; }
+  .confrences-widget-details .description {
+    font-size: 20px;
+    line-height: 1.8; }
+
+.confrences-widget-img {
+  width: 50%;
+  background-image: url("../img/products/large_popup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.half-product-card {
+  width: calc(50% - 8px) !important;
+  margin-bottom: 16px !important; }
+
+.product-card-4 {
+  width: calc(25% - 12px) !important; }
+
+.product-card-big-size {
+  width: calc(50% - 8px) !important;
+  height: 73vh !important;
+  margin-bottom: 16px !important; }
+  .product-card-big-size .product-name {
+    font-size: 17px;
+    font-weight: bold; }
+  .product-card-big-size div.product-price {
+    font-size: 14px; }
+  .product-card-big-size .product-big-size-img {
+    height: 100%; }
+  .product-card-big-size:hover .product-body {
+    height: calc(100% - 87px) !important;
+    background: #F0F0F0; }
+    .product-card-big-size:hover .product-body .product-big-size-img {
+      height: 100% !important; }
+  .product-card-big-size .product-body {
+    height: calc(100% - 87px); }
+  .product-card-big-size .product-footer {
+    margin-top: 7px; }
+  .product-card-big-size .main-btn {
+    background-color: #C1272D;
+    color: #fff !important;
+    font-size: 13px;
+    padding: 8px 27px; }
+
+/* >>>>>> New Confrences Design <<<<<< */
 /* >>>>>> View Product <<<<<< */
 .view-product-page .footer-content {
   border-top: 1px solid #ced4da !important; }
@@ -3175,6 +3299,41 @@ div.auth-items {
     display: block !important; }
 
   /* View Product */
+  /* Confrences */
+  #slider-title {
+    font-size: 12px;
+    font-weight: bold; }
+
+  .fast-links > a {
+    font-size: 13px; }
+  .fast-links > a:nth-of-type(2) {
+    margin-left: 8px;
+    padding-left: 8px;
+    margin-right: 8px;
+    padding-right: 8px; }
+
+  .confrences-widget {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 40px 20px; }
+
+  .confrences-widget-details > div {
+    width: 100%; }
+    .confrences-widget-details > div > div {
+      text-align: center; }
+  .confrences-widget-details .title {
+    font-size: 27px;
+    margin-bottom: 10px; }
+
+  .confrences-widget-details,
+  .confrences-widget-img {
+    width: 100%; }
+
+  .confrences-widget-img {
+    order: -1;
+    height: 37vh; }
+
+  /* Confrences */
   /* Cart */
   .cart-container {
     padding-top: 40px; }
@@ -3684,6 +3843,12 @@ div.auth-items {
         display: none; }
 
   /* Contact */
+  /* Confrences */
+  .half-product-card,
+  .product-card-4 {
+    height: calc(50vh - 10px) !important; }
+
+  /* Confrences */
   /* Profile */
   .profile {
     padding: 50px 20px; }
