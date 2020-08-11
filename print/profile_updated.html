@@ -27,7 +27,12 @@
 			<link rel="stylesheet" href="assets/css/style.css">
 			<style>
 
-
+			/* .profile-tab {
+				display: none;
+			}
+			.profile-tab.active {
+				display: block;
+			} */
 			</style>
 	</head>
 	<body>
@@ -281,37 +286,38 @@
 
 												<div class="row">
 														<div class="col-lg-3 col-md-4">
-																<div class="profile-links">
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																<div id="profileTabs" class="profile-links nav nav-tabs">
+																		<a href="#myInfo" data-hash-link="#myInfo" data-toggle="tab" class="d-flex justify-content-between align-items-center profile-link-content active">
 																			<span class="profile-link-text">حسابي</span>
 																			<span class="icon-edit icon"></span>
 																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																		<a href="#myBalance" data-hash-link="#myBalance" data-toggle="tab" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">رصيدي</span>
-																			<span class="profile-link-text profile-balance"><span class="ne_font">00.00</span> رصيدي</span>
+																			<span class="profile-link-balance profile-balance"><span class="ne_font">00.00</span> د.أ</span>
 																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																		<a href="#previousOrders" data-hash-link="#previousOrders" data-toggle="tab" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">المطبوعات السابقة </span>
 																			<span class="icon-prints icon"></span>
 																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																		<a href="#tracking" data-hash-link="#tracking" data-toggle="tab" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">تتبع المطبوعات الحالية </span>
 																			<span class="icon-settings icon"></span>
 																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																		<a href="#bills" data-hash-link="#bills" data-toggle="tab" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">الفواتير</span>
 																			<span class="icon-bills icon"></span>
 																		</a>
-																		<a href="#" class="d-flex justify-content-between align-items-center profile-link-content">
+																		<a href="auth.html" class="d-flex justify-content-between align-items-center profile-link-content">
 																			<span class="profile-link-text">تسجيل خروج </span>
 																			<span class="icon-logout icon"></span>
 																		</a>
 																</div>
 														</div>
 														<div class="col-lg-9 col-md-8">
+
 																<div class="profile-info">
 																		<div class="profile-edit-head d-flex justify-content-between align-items-center">
-																				<div class="title">
+																				<div id="tabTitle" class="title">
 																						حسابي
 																				</div>
 																				<button class="profile-edit-action d-flex justify-content-between align-items-center">
@@ -319,41 +325,65 @@
 																						<span class="icon-edit icon"></span>
 																				</button>
 																		</div>
-																		<div class="profile-form">
-																				<form class="" action="index.html" method="post">
-																						<div class="form-group d-flex align-items-center">
-																								<label for="name" class="d-flex justify-content-between">الإسم<span>:</span></label>
-																								<div class="user-data">
-																										Mohamed Salah
+																		<div class="profile-form tab-content">
+																				<!-- Profile Data -->
+																				<div id="myInfo" class="profile-data tab-pane active">
+																						<form class="" action="index.html" method="post">
+																								<div class="form-group d-flex align-items-center">
+																										<label for="name" class="d-flex justify-content-between">الإسم<span>:</span></label>
+																										<div class="user-data">
+																												Mohamed Salah
+																										</div>
 																								</div>
-																						</div>
-																						<div class="form-group d-flex align-items-center">
-																								<label for="phone" class="d-flex justify-content-between">التليفون<span>:</span></label>
-																								<div class="user-data user-data-number">
-																										+96 66 55 44 11 22
+																								<div class="form-group d-flex align-items-center">
+																										<label for="phone" class="d-flex justify-content-between">التليفون<span>:</span></label>
+																										<div class="user-data user-data-number">
+																												+96 66 55 44 11 22
+																										</div>
 																								</div>
-																						</div>
-																						<div class="form-group d-flex align-items-center">
-																								<label for="company" class="d-flex justify-content-between">الشركة <span>:</span></label>
-																								<div class="user-data">
-																										24 Print
+																								<div class="form-group d-flex align-items-center">
+																										<label for="company" class="d-flex justify-content-between">الشركة <span>:</span></label>
+																										<div class="user-data">
+																												24 Print
+																										</div>
 																								</div>
-																						</div>
-																						<div class="form-group d-flex align-items-center">
-																								<label for="job" class="d-flex justify-content-between">المسمى الوظيفي<span>:</span></label>
-																								<div class="user-data">
-																										Art Director
+																								<div class="form-group d-flex align-items-center">
+																										<label for="job" class="d-flex justify-content-between">المسمى الوظيفي<span>:</span></label>
+																										<div class="user-data">
+																												Art Director
+																										</div>
 																								</div>
-																						</div>
-																						<div class="form-group d-flex align-items-center">
-																								<label for="website" class="d-flex justify-content-between">الموقع الإلكتروني<span>:</span></label>
-																								<div class="user-data">
-																										24prints.com
+																								<div class="form-group d-flex align-items-center">
+																										<label for="website" class="d-flex justify-content-between">الموقع الإلكتروني<span>:</span></label>
+																										<div class="user-data">
+																												24prints.com
+																										</div>
 																								</div>
-																						</div>
-																				</form>
+																						</form>
+																				</div>
+
+																				<!-- Profile Balance -->
+																				<div id="myBalance" class="profile-balance tab-pane">
+																						myBalance
+																				</div>
+
+																				<!-- Profile Previous -->
+																				<div id="previousOrders" class="profile-previous tab-pane">
+																						previousOrders
+																				</div>
+
+																				<!-- Profile Tracking -->
+																				<div id="tracking" class="profile-tracking tab-pane">
+																						tracking
+																				</div>
+
+																				<!-- Profile Bills -->
+																				<div id="bills" class="profile-bills tab-pane">
+																						bills
+																				</div>
 																		</div>
 																</div>
+
 														</div>
 												</div>
 										</div>
@@ -387,5 +417,22 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <!-- Main Functions -->
         <script src="assets/js/functions.js"></script>
+				<script type="text/javascript">
+				$(function(){
+						var hash = window.location.hash;
+						hash && $('.profile-links a[href="' + hash + '"]').tab('show');
+						// var titleHash = $('div[data-hash-link="' + hash + '"]').find('.profile-link-text').text();
+						// $("#tabTitle").text(titleHash);
+
+						$('.nav-tabs a').click(function (e) {
+								var title = $(this).find('.profile-link-text').text();
+								$(this).tab('show');
+								$("#tabTitle").text(title);
+								var scrollmem = $('body').scrollTop();
+								window.location.hash = this.hash;
+								$('html,body').scrollTop(scrollmem);
+						});
+				});
+				</script>
 	</body>
 </html>

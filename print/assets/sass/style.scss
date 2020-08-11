@@ -1846,6 +1846,11 @@ div.product-price {
 .description-row {
   margin-bottom: 20px;
 }
+.notes-input {
+  .form-group {
+    border: 1px solid #D6D6D6
+  }
+}
 .choose-description-product {
   @extend %position_relative;
   // label {
@@ -1880,7 +1885,7 @@ div.product-price {
   //     }
   // }
   .product-border {
-    border: 1px solid #4D4D4D;
+    border: 1px solid #D6D6D6;
   }
   > div {
     @extend %position_relative;
@@ -1890,7 +1895,7 @@ div.product-price {
     width: 100%;
     padding: 5px 7px;
     text-align: center;
-    border: 1px solid #4D4D4D;
+    border: 1px solid #D6D6D6;
   }
   .switch-product-option {
     &:hover {
@@ -2016,7 +2021,7 @@ div.product-price {
 }
 .product-drag {
   @extend %position_relative;
-  border: 1px solid #4D4D4D;
+  border: 1px solid #D6D6D6;
   padding: 17px 15px;
   align-items: center;
   .text {
@@ -2041,7 +2046,7 @@ div.product-price {
   color: #4D4D4D;
 }
 .view-product-uploaded {
-  border: 1px solid #33333330;
+  border: 1px solid #D6D6D6;
   background-color: #F1F1F1;
   padding: 20px;
 }
@@ -2083,7 +2088,7 @@ div.product-price {
 }
 .product-upload-url {
   @extend %position_relative;
-  border: 1px solid #4D4D4D;
+  border: 1px solid #D6D6D6;
   > div {
     @extend %position_relative;
     width: 100%;
@@ -2127,7 +2132,7 @@ div.product-price {
   width: 100%;
 }
 .product-total-price {
-  border: 1px solid #4D4D4D;
+  border: 1px solid #D6D6D6;
   padding: 0;
   // .description-title {
   //   font-size: 22px;
@@ -2150,11 +2155,11 @@ div.product-price {
   }
   .total-price-wrap {
     width: calc(100% - 80px);
-    border-right: 1px solid #4D4D4D;
+    border-right: 1px solid #D6D6D6;
   }
   .total-price-content {
     padding: 17px 20px;
-    border-bottom: 1px solid #4D4D4D;
+    border-bottom: 1px solid #D6D6D6;
   }
   .without-shipping-price {
     padding: 15px;
@@ -2361,7 +2366,7 @@ div.product-price {
 }
 .product-big-size-slider {
   position: relative;
-  height: calc(100% - 74px);
+  height: calc(100% - 71px);
 }
 .product-slider-view-item {
   height: 100%;
@@ -2941,7 +2946,7 @@ div.auth-items {
 }
 .receving-date {
   @extend %full_width;
-  border: 1px solid #333;
+  border: 1px solid #D6D6D6;
   padding: 5px 10px;
   .icon-clock {
     font-size: 19px;
@@ -3590,6 +3595,16 @@ div.auth-items {
   padding: 25px 20px;
   height: 100%;
 }
+.profile-links.nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: auto !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+    list-style: none !important;
+    height: auto !important;
+    padding-right: 20px !important
+}
 .profile-info {
   padding-left: 50px;
   padding-right: 50px
@@ -3636,6 +3651,13 @@ div.auth-items {
     color: #666666;
     display: inline-block;
   }
+}
+.profile-link-content.active {
+  color: $mainColor !important
+}
+.profile-link-balance {
+  font-weight: 600;
+  color: #4D4D4D
 }
 .profile-edit-action {
   &:hover {
