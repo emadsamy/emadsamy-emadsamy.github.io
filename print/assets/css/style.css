@@ -84,7 +84,7 @@ ul {
   margin-bottom: 0; }
 
 .divider, .half-background, .center-v-h, .sidebar-follow a .icon,
-#publishBtn .icon, .page-container, nav, .navbar, .nav-link a, .navbar-bottom, .toggle-navbar, .wrap-link, .toggle-link, .navbar-dropdown-content, .social-icon, .footer-back span, .privacy-policy-footer a, .user-dropdown, .user-dropdown .down, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .selectbox, .product-card, .product-body, .view-product-header .title, .choose-description-product, .choose-description-product > div, .product-drag, .product-action-btns .icon, .status-completed .status-logo, .instructions-list li, .instructions-list li span, .table-col-multiple > div, .payments .icon-overlay > div, .payment-switch-multi, .h5-pos, .about-title, .avatar {
+#publishBtn .icon, .page-container, nav, .navbar, .nav-link a, .navbar-bottom, .toggle-navbar, .wrap-link, .toggle-link, .navbar-dropdown-content, .social-icon, .footer-back span, .privacy-policy-footer a, .user-dropdown, .user-dropdown .down, .dropdown-toggle-menu .icon-user, .dropdown-toggle-menu .user-name, .selectbox, .product-card, .product-body, .view-product-header .title, .choose-description-product, .choose-description-product > div, .product-drag, .product-action-btns .icon, .status-completed .status-logo, .instructions-list li, .instructions-list li span, .table-col-multiple > div, .payments .icon-overlay > div, .payment-switch-multi, .h5-pos, .about-title, .avatar, .pc-header-box, .upload-file-contact {
   position: relative; }
 
 .cen-ver-position, input[type="file"], .divider .divider-text, .overlay, .gradient-easing, .notifications, .preloader .preloader-icon, .link-dropdown, .link-dropdown:after, .full-search, .selectbox .down, .product-img, .interested-text, .status-correct-ic, .table-col-multiple > div:last-of-type:before, .payments .icon-overlay-2:after,
@@ -102,13 +102,13 @@ ul {
 
 .order-item-row,
 .order-item-header, .page-container, .nav-link a, .navbar-dropdown-footer, .socialmedia, footer, .product-list-description, .product-list-description > div, .table-header,
-.table-row-data, .products-cards, .order-tracking-box, .instructions-box, .table-col-multiple, .partners-header {
+.table-row-data, .products-cards, .order-tracking-box, .instructions-box, .table-col-multiple, .partners-header, .pc-header-box, .upload-text-img, .upload-file-contact {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.product-list-description, .product-list-description > div, .products-cards {
+.product-list-description, .product-list-description > div, .products-cards, .pc-header-box, .upload-file-contact {
   justify-content: space-between; }
 
 .center-vertically, input[type="file"], .overlay, .preloader, .selectbox select, .products-cards, .product-body, .choose-description-product div.product-option-value {
@@ -124,7 +124,7 @@ ul {
 .center-vertically > div, .gradient-easing, .order-item-row,
 .order-item-header, .order-copies-counter, .sidebar-follow a,
 #publishBtn, .add-new-produt .btn, nav, .link-dropdown:after, .full-search, .navbar-dropdown, .selectbox, .product-footer, .product-counter-box > div, .auth-form .main-btn, .payment-box-data, .multi-selectbox .form-group,
-.multi-selectbox input, .receving-date, .contact-form .main-btn, .comapines-head {
+.multi-selectbox input, .receving-date, .contact-form .main-btn, .comapines-head, .pricing-complaint {
   width: 100%; }
 
 .form-control:hover, .form-control:active, .form-control:focus {
@@ -392,9 +392,10 @@ small {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 114px; }
   .order-item-img img {
-    width: 92%; }
+    height: 100%; }
 
 .order-copies-counter {
   padding: 6px 10px;
@@ -1819,7 +1820,8 @@ div.product-price {
 
 .dir-shape {
   font-size: 21px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-weight: normal !important; }
 
 .product-item-notes {
   font-size: 12px;
@@ -3055,6 +3057,105 @@ div.auth-items {
     background-size: contain; }
 
 /* Conferences */
+/* Pricing Complaint */
+.pricing-complaint {
+  margin-bottom: 30px; }
+  .pricing-complaint .title {
+    padding: 30px 0;
+    font-size: 28px;
+    font-weight: 600; }
+
+.pc-header-box {
+  background: #B30008;
+  padding: 45px; }
+  .pc-header-box:before {
+    position: absolute;
+    content: "";
+    top: 41px;
+    right: 45px;
+    width: 70px;
+    height: 3px;
+    background-color: #FFF; }
+
+.pc-header-details-box {
+  color: #FFF;
+  font-size: 25px; }
+
+.pc-text {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  margin-top: 25px;
+  font-size: 23px; }
+
+.pc-options {
+  opacity: 0.9;
+  display: flex; }
+  .pc-options span {
+    font-size: 18px;
+    display: inline-block; }
+  .pc-options .pc-line {
+    margin-left: 14px;
+    margin-right: 14px; }
+
+.pc-header-img-box {
+  width: auto;
+  height: auto; }
+  .pc-header-img-box img {
+    width: 120px;
+    height: 120px;
+    margin-top: 30px; }
+
+.communication-box {
+  padding: 45px 30px;
+  background: #EFEFEF; }
+
+.communication-text,
+.communication-number {
+  font-size: 25px;
+  color: #4D4D4D; }
+
+.communication-number {
+  direction: ltr;
+  font-size: 30px; }
+
+.contactus-box .form-group {
+  border: 1px solid #666666; }
+.contactus-box .product-drag {
+  border: none; }
+.contactus-box .main-btn-backdrop {
+  width: 100%;
+  border-radius: 0; }
+.contactus-box .form-control {
+  border: none;
+  overflow-y: auto;
+  border-radius: 0;
+  padding: 2px 10px; }
+.contactus-box textarea.form-control {
+  height: 200px;
+  resize: none;
+  line-height: 1.4;
+  padding-top: 10px; }
+.contactus-box .form-control::placeholder {
+  color: #4D4D4D; }
+
+.upload-file-contact {
+  border: 1px solid #66666661;
+  padding: 10px; }
+
+.upload-img {
+  width: 30px;
+  margin-left: 10px; }
+
+.upload-text {
+  color: #4D4D4D;
+  font-size: 15px; }
+
+.upload-file-type img {
+  width: 21px;
+  height: 21px;
+  margin-top: -3px; }
+
+/* Pricing Complaint */
 /** Media Queries **/
 @media (max-width: 575.98px) {
   /* Global */
@@ -3470,7 +3571,47 @@ div.auth-items {
   .cart-container {
     padding-top: 40px; }
 
-  /* Cart */ }
+  /* Cart */
+  /* Complaint & Pricing */
+  .pricing-complaint .title {
+    text-align: center; }
+
+  .pc-keywords {
+    text-align: center; }
+
+  .pc-header-box {
+    flex-direction: column;
+    padding: 30px 17px; }
+    .pc-header-box:before {
+      right: 50%;
+      transform: translateX(50%); }
+
+  .pc-header-details-box {
+    order: 2;
+    flex: 1; }
+    .pc-header-details-box .pc-text {
+      text-align: center; }
+
+  .pc-header-img-box {
+    order: 1;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px; }
+    .pc-header-img-box img {
+      position: static !important;
+      transform: none;
+      margin-top: 50px; }
+
+  .pc-options {
+    justify-content: center; }
+
+  .communication-box {
+    margin-bottom: 20px; }
+
+  .communication-text, .communication-number {
+    text-align: center; }
+
+  /* Complaint & Pricing */ }
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Global */
   .container-fluid,
@@ -4070,7 +4211,8 @@ div.auth-items {
   .wrapper-compaines-products {
     justify-content: flex-start; }
     .wrapper-compaines-products .product-card {
-      margin-left: 12px; }
+      margin-left: 12px;
+      height: 352px !important; }
       .wrapper-compaines-products .product-card:nth-of-type(5), .wrapper-compaines-products .product-card:nth-of-type(10), .wrapper-compaines-products .product-card:nth-of-type(15), .wrapper-compaines-products .product-card:nth-of-type(20), .wrapper-compaines-products .product-card:nth-of-type(25), .wrapper-compaines-products .product-card:nth-of-type(30), .wrapper-compaines-products .product-card:nth-of-type(35) {
         margin-left: 0 !important; } }
 @media (max-width: 767.98px) {
@@ -4163,8 +4305,6 @@ div.auth-items {
   .order-item-img {
     border: 5px solid #F1F1F1;
     outline: 1px solid #333333; }
-    .order-item-img img {
-      width: 83%; }
 
   .order-item-border {
     padding-bottom: 40px;
@@ -4645,7 +4785,12 @@ div.auth-items {
   .product-slider-view-dots {
     bottom: 15px; }
 
-  /* View Product Big Size */ }
+  /* View Product Big Size */
+  /* Complaint & Pricing */
+  .pc-box {
+    margin-bottom: 20px; }
+
+  /* Complaint & Pricing */ }
 @media (max-width: 1199.98px) {
   /* View Product */
   .view-product-page .page-title-text {

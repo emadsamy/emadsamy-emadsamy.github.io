@@ -232,6 +232,24 @@ $(document).ready(function () {
       $(this).addClass('active').siblings().removeClass('active');
     });
 
+    $(function(){
+        var hash = window.location.hash;
+        hash && $('.profile-links a[href="' + hash + '"]').tab('show');
+        if (hash) {
+          var titleHash = $('a[href="' + hash + '"]').find('.profile-link-text').text();
+          $("#tabTitle").text(titleHash);
+        }
+
+        $('.nav-tabs a').click(function (e) {
+            var title = $(this).find('.profile-link-text').text();
+            $(this).tab('show');
+            $("#tabTitle").text(title);
+            var scrollmem = $('body').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+        });
+    });
+
 });
 
 // Hideen Preloader After Page Loadded
