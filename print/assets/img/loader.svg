@@ -1,42 +1,29 @@
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
-<svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
-    <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-        <circle cx="22" cy="22" r="6" stroke-opacity="0">
-            <animate attributeName="r"
-                 begin="1.5s" dur="3s"
-                 values="6;22"
-                 calcMode="linear"
+<svg width="55" height="80" viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill="#FFF">
+    <g transform="matrix(1 0 0 -1 0 80)">
+        <rect width="10" height="20" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="4.3s"
+                 values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20" calcMode="linear"
                  repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity"
-                 begin="1.5s" dur="3s"
-                 values="1;0" calcMode="linear"
+        </rect>
+        <rect x="15" width="10" height="80" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="2s"
+                 values="80;55;33;5;75;23;73;33;12;14;60;80" calcMode="linear"
                  repeatCount="indefinite" />
-            <animate attributeName="stroke-width"
-                 begin="1.5s" dur="3s"
-                 values="2;0" calcMode="linear"
+        </rect>
+        <rect x="30" width="10" height="50" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="1.4s"
+                 values="50;34;78;23;56;23;34;76;80;54;21;50" calcMode="linear"
                  repeatCount="indefinite" />
-        </circle>
-        <circle cx="22" cy="22" r="6" stroke-opacity="0">
-            <animate attributeName="r"
-                 begin="3s" dur="3s"
-                 values="6;22"
-                 calcMode="linear"
+        </rect>
+        <rect x="45" width="10" height="30" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="2s"
+                 values="30;45;13;80;56;72;45;76;34;23;67;30" calcMode="linear"
                  repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity"
-                 begin="3s" dur="3s"
-                 values="1;0" calcMode="linear"
-                 repeatCount="indefinite" />
-            <animate attributeName="stroke-width"
-                 begin="3s" dur="3s"
-                 values="2;0" calcMode="linear"
-                 repeatCount="indefinite" />
-        </circle>
-        <circle cx="22" cy="22" r="8">
-            <animate attributeName="r"
-                 begin="0s" dur="1.5s"
-                 values="6;1;2;3;4;5;6"
-                 calcMode="linear"
-                 repeatCount="indefinite" />
-        </circle>
+        </rect>
     </g>
 </svg>
