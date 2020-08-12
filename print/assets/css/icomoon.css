@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ovd6tq');
-  src:  url('fonts/icomoon.eot?ovd6tq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ovd6tq') format('truetype'),
-    url('fonts/icomoon.woff?ovd6tq') format('woff'),
-    url('fonts/icomoon.svg?ovd6tq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?mf4xje');
+  src:  url('fonts/icomoon.eot?mf4xje#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mf4xje') format('truetype'),
+    url('fonts/icomoon.woff?mf4xje') format('woff'),
+    url('fonts/icomoon.svg?mf4xje#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,49 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shopping-cart .path1:before {
-  content: "\e91c";
-  color: rgb(69, 90, 100);
+.icon-calc:before {
+  content: "\e90b";
+  color: #4d4d4d;
 }
-.icon-shopping-cart .path2:before {
-  content: "\e91d";
-  margin-left: -1em;
-  color: rgb(69, 90, 100);
+.icon-cart:before {
+  content: "\e913";
 }
-.icon-shopping-cart .path3:before {
-  content: "\e91e";
-  margin-left: -1em;
-  color: rgb(255, 193, 7);
-}
-.icon-shopping-cart .path4:before {
-  content: "\e91f";
-  margin-left: -1em;
-  color: rgb(250, 250, 250);
-}
-.icon-shopping-cart .path5:before {
-  content: "\e920";
-  margin-left: -1em;
-  color: rgb(250, 250, 250);
-}
-.icon-shopping-cart .path6:before {
-  content: "\e921";
-  margin-left: -1em;
-  color: rgb(250, 250, 250);
-}
-.icon-shopping-cart .path7:before {
-  content: "\e922";
-  margin-left: -1em;
-  color: rgb(250, 250, 250);
-}
-.icon-shopping-cart .path8:before {
-  content: "\e923";
-  margin-left: -1em;
-  color: rgb(250, 250, 250);
-}
-.icon-shopping-cart .path9:before {
-  content: "\e924";
-  margin-left: -1em;
-  color: rgb(69, 90, 100);
+.icon-drag:before {
+  content: "\e928";
 }
 .icon-correct:before {
   content: "\e925";
@@ -80,13 +46,6 @@
 }
 .icon-camera:before {
   content: "\e917";
-}
-.icon-calc:before {
-  content: "\e91b";
-  color: #4d4d4d;
-}
-.icon-cart:before {
-  content: "\e913";
 }
 .icon-pdf:before {
   content: "\e918";
@@ -138,9 +97,6 @@
 }
 .icon-clock:before {
   content: "\e90a";
-}
-.icon-drag:before {
-  content: "\e90b";
 }
 .icon-edit:before {
   content: "\e90c";
