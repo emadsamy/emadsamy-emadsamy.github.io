@@ -1560,10 +1560,55 @@ footer {
       height: calc(100% - 73.8px);
     }
     .product-img {
-      height: 100%
+      width: 100%
+    }
+    .product-bus-card {
+      width: 87%;
+    }
+    .product-book {
+      width: 67%;
+    }
+    .product-certificate {
+      width: 63%;
+    }
+    .product-flag {
+        width: 33%;
     }
     .product-notebook {
-        height: 94%;
+        width: 45%;
+    }
+    .product-flyer {
+      width: 40%;
+    }
+    .product-letterhead {
+      width: 57%
+    }
+    .product-sticker {
+      width: 75%;
+    }
+    .product-rollup {
+      width: 45%;
+    }
+    .product-poster {
+      width: 50%;
+    }
+    .product-notebook {
+        width: 48%;
+    }
+    .product-bruchure {
+      width: 100%;
+    }
+    .product-catalog {
+      width: 86%;
+    }
+    .product-xbanner {
+      width: 63%;
+    }
+    .annuel-con {
+      width: 83%;
+    }
+    .promotional-table {
+      width: 78%;
     }
   }
 }
@@ -1581,26 +1626,56 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto !important;
-  height: 100%;
+  width: 100%;
+}
+.product-book {
+  width: 76%;
 }
 .product-bus-card {
-  height: 72%;
+  width: 87%;
+}
+.product-certificate {
+  width: 70%;
+}
+.product-flag {
+    width: 45%;
 }
 .product-notebook {
-    height: 83%;
+    width: 60%;
 }
 .product-catalog {
-  height: 80%;
+  width: 86%;
 }
-.product-bruchure {
-  height: 85%;
+.product-flyer {
+  width: 50%;
+}
+.product-letterhead {
+  width: 64%;
+}
+.product-sticker {
+  width: 92%;
+}
+.product-rollup {
+  width: 55%;
 }
 .product-poster {
-  height: 87%;
+  width: 63%;
+}
+.product-bruchure {
+  width: 100%;
+}
+.product-xbanner {
+  width: 73%;
+}
+.product-poster {
+  width: 62%
+}
+.annuel-con {
+  width: 83%;
 }
 .promotional-table {
   top: 62% !important;
+  width: 78%;
 }
 .product-footer {
   @extend %full_width;
@@ -1749,13 +1824,14 @@ div.product-price {
   }
   .product-big-size-img {
     width: 100% !important;
+    height: 100%;
   }
   &:hover {
     .product-body {
       height: calc(100% - 87px) !important;
       background: #F0F0F0;
       .product-big-size-img {
-        height: 100% !important;
+        // height: 100% !important;
         width: 100% !important
       }
     }
@@ -1840,7 +1916,7 @@ div.product-price {
   }
   .icon {
     @extend %transition;
-    font-size: 21px;
+    font-size: 24px;
     margin-right: 10px;
     color: #333333;
     &:before {
@@ -4158,28 +4234,24 @@ div.auth-items {
       display: block
     }
     .product-bruchure {
-      height: 76%;
+      // height: 76%;
     }
     .product-catalog {
-      height: 69%;
+      // height: 69%;
     }
     .product-bus-card {
-      height: 63%;
+      // height: 63%;
     }
-    .product-card:hover  {
-      .promotional-table {
-        height: 74%;
-      }
-      .annuel-con {
-        height: 77% !important;
-      }
-    }
-    .annuel-con {
-      height: 53%
-    }
+    // .product-card:hover  {
+    //   .promotional-table {
+    //     height: 74%;
+    //   }
+    //   .annuel-con {
+    //     height: 77% !important;
+    //   }
+    // }
     .promotional-table {
       top: 56% !important;
-      height: 55%;
     }
     /* Products */
 
@@ -5469,7 +5541,7 @@ div.auth-items {
     // width:
   }
   .product-book {
-    width: 65%
+    width: 76%;
   }
   .product-name {
     font-size: 12px;

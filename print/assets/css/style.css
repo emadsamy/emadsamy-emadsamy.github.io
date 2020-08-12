@@ -1231,9 +1231,39 @@ footer {
     background-color: #C1272D;
     height: calc(100% - 73.8px); }
   .product-card:hover .product-img {
-    height: 100%; }
+    width: 100%; }
+  .product-card:hover .product-bus-card {
+    width: 87%; }
+  .product-card:hover .product-book {
+    width: 67%; }
+  .product-card:hover .product-certificate {
+    width: 63%; }
+  .product-card:hover .product-flag {
+    width: 33%; }
   .product-card:hover .product-notebook {
-    height: 94%; }
+    width: 45%; }
+  .product-card:hover .product-flyer {
+    width: 40%; }
+  .product-card:hover .product-letterhead {
+    width: 57%; }
+  .product-card:hover .product-sticker {
+    width: 75%; }
+  .product-card:hover .product-rollup {
+    width: 45%; }
+  .product-card:hover .product-poster {
+    width: 50%; }
+  .product-card:hover .product-notebook {
+    width: 48%; }
+  .product-card:hover .product-bruchure {
+    width: 100%; }
+  .product-card:hover .product-catalog {
+    width: 86%; }
+  .product-card:hover .product-xbanner {
+    width: 63%; }
+  .product-card:hover .annuel-con {
+    width: 83%; }
+  .product-card:hover .promotional-table {
+    width: 78%; }
 
 .product-body {
   background-color: #F0F0F0;
@@ -1243,26 +1273,56 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto !important;
-  height: 100%; }
+  width: 100%; }
+
+.product-book {
+  width: 76%; }
 
 .product-bus-card {
-  height: 72%; }
+  width: 87%; }
+
+.product-certificate {
+  width: 70%; }
+
+.product-flag {
+  width: 45%; }
 
 .product-notebook {
-  height: 83%; }
+  width: 60%; }
 
 .product-catalog {
-  height: 80%; }
+  width: 86%; }
 
-.product-bruchure {
-  height: 85%; }
+.product-flyer {
+  width: 50%; }
+
+.product-letterhead {
+  width: 64%; }
+
+.product-sticker {
+  width: 92%; }
+
+.product-rollup {
+  width: 55%; }
 
 .product-poster {
-  height: 87%; }
+  width: 63%; }
+
+.product-bruchure {
+  width: 100%; }
+
+.product-xbanner {
+  width: 73%; }
+
+.product-poster {
+  width: 62%; }
+
+.annuel-con {
+  width: 83%; }
 
 .promotional-table {
-  top: 62% !important; }
+  top: 62% !important;
+  width: 78%; }
 
 .product-footer {
   background-color: #F0F0F0;
@@ -1391,12 +1451,12 @@ div.product-price {
   .product-card-big-size div.product-price {
     font-size: 14px; }
   .product-card-big-size .product-big-size-img {
-    width: 100% !important; }
+    width: 100% !important;
+    height: 100%; }
   .product-card-big-size:hover .product-body {
     height: calc(100% - 87px) !important;
     background: #F0F0F0; }
     .product-card-big-size:hover .product-body .product-big-size-img {
-      height: 100% !important;
       width: 100% !important; }
   .product-card-big-size .product-body {
     height: calc(100% - 87px); }
@@ -1456,7 +1516,7 @@ div.product-price {
     font-size: 14px;
     color: #707070; }
   .product-toolbar .icon {
-    font-size: 21px;
+    font-size: 24px;
     margin-right: 10px;
     color: #333333; }
 
@@ -3300,26 +3360,8 @@ div.auth-items {
     margin-bottom: 8px !important;
     display: block; }
 
-  .product-bruchure {
-    height: 76%; }
-
-  .product-catalog {
-    height: 69%; }
-
-  .product-bus-card {
-    height: 63%; }
-
-  .product-card:hover .promotional-table {
-    height: 74%; }
-  .product-card:hover .annuel-con {
-    height: 77% !important; }
-
-  .annuel-con {
-    height: 53%; }
-
   .promotional-table {
-    top: 56% !important;
-    height: 55%; }
+    top: 56% !important; }
 
   /* Products */
   /* View Product */
@@ -4387,7 +4429,7 @@ div.auth-items {
     font-size: 9px; }
 
   .product-book {
-    width: 65%; }
+    width: 76%; }
 
   .product-name {
     font-size: 12px; }
