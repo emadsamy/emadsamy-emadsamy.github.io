@@ -37,7 +37,7 @@
 				<!-- PreLoader -->
 
         <!-- Login -->
-        <div id="page" class="page-container auth">
+        <div id="page" class="page-full-height">
 					<!-- Navbar -->
 					<nav>
 							<div class="container-fluid">
@@ -245,62 +245,64 @@
 					<!-- Navbar Dropdown -->
 
 						<!-- Auth Content -->
-						<div class="page-content">
-								<div class="container-fluid">
-									<div class="page-content-auth d-flex">
-										<div class="auth-content login">
+						<div class="content">
+								<div class="width-fluid">
+									<div class="container-fluid height-fluid">
+										<div class="page-content-auth auth d-flex">
+											<div class="auth-content login">
+													<div class="center-vertically">
+															<div class="auth-items">
+																	<div class="title mb-4">تسجيل الدخول</div>
+																	<div class="connection-tokens d-flex justify-content-between mb-4">
+																			<a href="#" class="connection-tk-item con-fb d-flex justify-content-between">
+																				<span>بحسابك علي فيس بوك</span>
+																				<img src="assets/img/icons/facebook_auth.svg" class="img-fluid"  />
+																			</a>
+																			<a href="#" class="connection-tk-item con-g d-flex justify-content-between">
+																				<span>بحسابك علي جوجل</span>
+																				<img src="assets/img/icons/google_auth.svg" class="img-fluid"  />
+																			</a>
+																	</div>
+																	<form class="auth-form mb-5" action="index.html" method="post">
+																		<div class="form-group mb-4">
+																				<input type="email" class="form-control" placeholder="بريدك الإلكتروني">
+																		</div>
+																		<div class="form-group mb-4">
+																				<input type="password" class="form-control" placeholder="كلمة المرور ">
+																		</div>
+																		<div class="mb-2">
+																				<button type="button" class="btn main-btn d-block">التالي</button>
+																		</div>
+																		<small>بالدخول الى حسابك، فإنك توافق على سياسة الإستخدام</small>
+																	</form>
+															</div>
+													</div>
+											</div>
+											<div class="auth-content register">
 												<div class="center-vertically">
 														<div class="auth-items">
-																<div class="title mb-4">تسجيل الدخول</div>
-																<div class="connection-tokens d-flex justify-content-between mb-4">
-																		<a href="#" class="connection-tk-item con-fb d-flex justify-content-between">
-																			<span>بحسابك علي فيس بوك</span>
-																			<img src="assets/img/icons/facebook_auth.svg" class="img-fluid"  />
-																		</a>
-																		<a href="#" class="connection-tk-item con-g d-flex justify-content-between">
-																			<span>بحسابك علي جوجل</span>
-																			<img src="assets/img/icons/google_auth.svg" class="img-fluid"  />
-																		</a>
-																</div>
-																<form class="auth-form mb-5" action="index.html" method="post">
+																<div class="title mb-4">إنشاء حسابك</div>
+																<form class="auth-form" action="index.html" method="post">
+																	<div class="form-group mb-4">
+																			<input type="text" class="form-control" placeholder="الإسم">
+																	</div>
 																	<div class="form-group mb-4">
 																			<input type="email" class="form-control" placeholder="بريدك الإلكتروني">
 																	</div>
+																	<div class="form-group d-flex mb-4">
+																			<input type="password" class="form-control" placeholder="كلمة المرور">
+																			<small class="text-right">يجب الأ تقل عن ستة حروف أو رموز</small>
+																	</div>
 																	<div class="form-group mb-4">
-			                                <input type="password" class="form-control" placeholder="كلمة المرور ">
-			                            </div>
+																			<input type="password" class="form-control" placeholder="تأكيد كلمة المرور ">
+																	</div>
 																	<div class="mb-2">
-																			<button type="button" class="btn main-btn d-block">التالي</button>
+																			<button type="button" class="btn main-btn d-block">انشئ حسابك</button>
 																	</div>
 																	<small>بالدخول الى حسابك، فإنك توافق على سياسة الإستخدام</small>
 																</form>
 														</div>
 												</div>
-										</div>
-										<div class="auth-content register">
-											<div class="center-vertically">
-													<div class="auth-items">
-															<div class="title mb-4">إنشاء حسابك</div>
-															<form class="auth-form" action="index.html" method="post">
-																<div class="form-group mb-4">
-		                                <input type="text" class="form-control" placeholder="الإسم">
-		                            </div>
-		                            <div class="form-group mb-4">
-		                                <input type="email" class="form-control" placeholder="بريدك الإلكتروني">
-		                            </div>
-		                            <div class="form-group d-flex mb-4">
-		                                <input type="password" class="form-control" placeholder="كلمة المرور">
-		                                <small class="text-right">يجب الأ تقل عن ستة حروف أو رموز</small>
-		                            </div>
-		                            <div class="form-group mb-4">
-		                                <input type="password" class="form-control" placeholder="تأكيد كلمة المرور ">
-		                            </div>
-																<div class="mb-2">
-																		<button type="button" class="btn main-btn d-block">انشئ حسابك</button>
-																</div>
-																<small>بالدخول الى حسابك، فإنك توافق على سياسة الإستخدام</small>
-															</form>
-													</div>
 											</div>
 										</div>
 									</div>
