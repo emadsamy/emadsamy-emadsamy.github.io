@@ -4254,7 +4254,7 @@ div.auth-items {
     justify-content: flex-start; }
     .wrapper-compaines-products .product-card {
       margin-left: 12px;
-      height: 352px !important; }
+      height: 280px !important; }
       .wrapper-compaines-products .product-card:nth-of-type(5), .wrapper-compaines-products .product-card:nth-of-type(10), .wrapper-compaines-products .product-card:nth-of-type(15), .wrapper-compaines-products .product-card:nth-of-type(20), .wrapper-compaines-products .product-card:nth-of-type(25), .wrapper-compaines-products .product-card:nth-of-type(30), .wrapper-compaines-products .product-card:nth-of-type(35) {
         margin-left: 0 !important; } }
 @media (max-width: 767.98px) {
