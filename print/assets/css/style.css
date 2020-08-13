@@ -1239,31 +1239,33 @@ footer {
   .product-card:hover .product-certificate {
     width: 63%; }
   .product-card:hover .product-flag {
-    width: 33%; }
+    width: 37%; }
   .product-card:hover .product-notebook {
     width: 45%; }
   .product-card:hover .product-flyer {
-    width: 40%; }
+    width: 43%; }
   .product-card:hover .product-letterhead {
     width: 57%; }
   .product-card:hover .product-sticker {
     width: 75%; }
   .product-card:hover .product-rollup {
-    width: 45%; }
+    width: 48%; }
   .product-card:hover .product-poster {
-    width: 50%; }
+    width: 55%; }
   .product-card:hover .product-notebook {
     width: 48%; }
   .product-card:hover .product-bruchure {
     width: 100%; }
   .product-card:hover .product-catalog {
-    width: 86%; }
+    width: 91%; }
   .product-card:hover .product-xbanner {
-    width: 63%; }
+    width: 66%; }
   .product-card:hover .annuel-con {
     width: 83%; }
   .product-card:hover .promotional-table {
     width: 78%; }
+  .product-card:hover .product-compaines {
+    width: 85%; }
 
 .product-body {
   background-color: #F0F0F0;
@@ -1276,49 +1278,56 @@ footer {
   width: 100%; }
 
 .product-book {
-  width: 76%; }
+  width: 76%;
+  left: 45%; }
 
 .product-bus-card {
   width: 87%; }
 
 .product-certificate {
-  width: 70%; }
+  width: 73%; }
 
 .product-flag {
-  width: 45%; }
+  width: 48%; }
 
 .product-notebook {
-  width: 60%; }
+  width: 60%;
+  top: 52%; }
 
 .product-catalog {
-  width: 86%; }
+  width: 91%; }
 
 .product-flyer {
-  width: 50%; }
+  width: 56%; }
 
 .product-letterhead {
-  width: 64%; }
+  width: 74%; }
 
 .product-sticker {
   width: 92%; }
 
 .product-rollup {
-  width: 55%; }
+  width: 59%; }
 
 .product-poster {
-  width: 63%; }
+  width: 70%; }
 
 .product-bruchure {
-  width: 100%; }
+  width: 100%;
+  left: 48.5%; }
 
 .product-xbanner {
-  width: 73%; }
+  width: 80%; }
 
 .product-poster {
   width: 62%; }
 
 .annuel-con {
   width: 83%; }
+
+.product-compaines {
+  left: 54%;
+  width: 94%; }
 
 .promotional-table {
   top: 62% !important;
@@ -1438,35 +1447,32 @@ div.product-price {
   margin-bottom: 16px !important; }
 
 .product-card-4 {
-  width: calc(25% - 12px) !important;
-  height: 352px !important; }
+  width: calc(25% - 12px) !important; }
 
 .product-card-big-size {
   width: calc(50% - 8px) !important;
-  height: 528px !important;
-  margin-bottom: 16px !important; }
-  .product-card-big-size .product-name {
-    font-size: 17px;
-    font-weight: bold; }
-  .product-card-big-size div.product-price {
-    font-size: 14px; }
-  .product-card-big-size .product-big-size-img {
-    width: 100% !important;
-    height: 100%; }
-  .product-card-big-size:hover .product-body {
-    height: calc(100% - 87px) !important;
-    background: #F0F0F0; }
-    .product-card-big-size:hover .product-body .product-big-size-img {
-      width: 100% !important; }
-  .product-card-big-size .product-body {
-    height: calc(100% - 87px); }
+  margin-bottom: 12px; }
+  .product-card-big-size img {
+    width: 100%; }
   .product-card-big-size .product-footer {
-    margin-top: 7px; }
+    padding: 15px 25px;
+    margin-top: 9px; }
+  .product-card-big-size .product-name {
+    font-weight: 600;
+    font-size: 23px !important; }
   .product-card-big-size .main-btn {
-    background-color: #C1272D;
-    color: #fff !important;
-    font-size: 13px;
-    padding: 8px 27px; }
+    font-size: 16px !important;
+    padding: 6px 19px !important;
+    background-color: #C1272D !important;
+    color: #FFF !important; }
+
+.product-big-size-vinyel .product-body {
+  height: 362px;
+  background-image: url("../img/products/Vinyl_1.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .product-big-size-vinyel .product-body:hover {
+    height: 362px; }
 
 /* >>>>>> New Confrences Design <<<<<< */
 /* >>>>>> View Product <<<<<< */
@@ -3590,6 +3596,10 @@ div.auth-items {
   .wrapper-confrences-products div.product-card-big-size {
     height: auto !important; }
 
+  .product-card-big-size {
+    width: 100% !important;
+    margin-bottom: 20px; }
+
   /* Confrences */
   /* Compaines */
   .compaines-widget-img {
@@ -4254,7 +4264,7 @@ div.auth-items {
     justify-content: flex-start; }
     .wrapper-compaines-products .product-card {
       margin-left: 12px;
-      height: 280px !important; }
+      height: 40vh !important; }
       .wrapper-compaines-products .product-card:nth-of-type(5), .wrapper-compaines-products .product-card:nth-of-type(10), .wrapper-compaines-products .product-card:nth-of-type(15), .wrapper-compaines-products .product-card:nth-of-type(20), .wrapper-compaines-products .product-card:nth-of-type(25), .wrapper-compaines-products .product-card:nth-of-type(30), .wrapper-compaines-products .product-card:nth-of-type(35) {
         margin-left: 0 !important; } }
 @media (max-width: 767.98px) {
