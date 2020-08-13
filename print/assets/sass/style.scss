@@ -1566,22 +1566,22 @@ footer {
       width: 87%;
     }
     .product-book {
-      width: 67%;
+      width: 69%;
     }
     .product-certificate {
-      width: 63%;
+      width: 65%;
     }
     .product-flag {
-        width: 37%;
+        width: 37.6%;
     }
     .product-notebook {
-        width: 45%;
+        width: 50%;
     }
     .product-flyer {
-      width: 43%;
+      width: 44%;
     }
     .product-letterhead {
-      width: 57%
+      width: 59.5%
     }
     .product-sticker {
       width: 75%;
@@ -1593,7 +1593,7 @@ footer {
       width: 55%;
     }
     .product-notebook {
-        width: 48%;
+        width: 53%;
     }
     .product-bruchure {
       width: 100%;
@@ -1612,6 +1612,9 @@ footer {
     }
     .product-compaines {
       width: 85%;
+    }
+    .product-brochure-mag {
+      width: 110%;
     }
   }
 }
@@ -1645,7 +1648,7 @@ footer {
     width: 48%;
 }
 .product-notebook {
-    width: 60%;
+    width: 68%;
     top: 52%;
 }
 .product-catalog {
@@ -1682,6 +1685,10 @@ footer {
 .product-compaines {
   left: 54%;
   width: 94%;
+}
+.product-brochure-mag {
+  left: 59.5%;
+  width: 115%;
 }
 .promotional-table {
   top: 62% !important;
@@ -1822,7 +1829,7 @@ div.product-price {
 }
 .product-card-big-size {
   width: calc(50% - 8px) !important;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   img {
     width: 100%;
   }
@@ -6009,6 +6016,9 @@ div.auth-items {
     }
     .product-toolbar {
       margin-bottom: 30px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .product-slider-view-item {
