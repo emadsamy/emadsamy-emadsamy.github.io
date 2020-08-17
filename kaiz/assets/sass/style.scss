@@ -1249,7 +1249,7 @@ footer {
 .footer-copyright {
     font-size: 13px;
     color: $darkColor;
-    padding-top: 2px;
+    padding-top: 7px;
     font-weight: 600;
     .company-name-footer {
       font-weight: 600
@@ -3327,7 +3327,7 @@ div.auth-items {
   line-height: 31px;
   color: #FFF;
   margin-right: 7px;
-  background: #CC0100;
+  background: #009ddc75
 }
 /* >>>>>> Requests <<<<<< */
 
@@ -3781,7 +3781,7 @@ div.auth-items {
     color: #2ecc71
   }
   .status-wrong {
-    color: $paleMainColor
+    color: #f00
   }
   .order-copies-counter {
     border: 1px solid #D6D6D6
@@ -4042,7 +4042,7 @@ div.auth-items {
     @extend %d_flex;
     @extend %justify_between;
     @extend %position_relative;
-    background: #B30008;
+    background: $mainColor;
     padding: 45px;
     &:before {
       position: absolute;

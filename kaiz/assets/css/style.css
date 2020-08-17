@@ -1007,7 +1007,7 @@ footer {
 .footer-copyright {
   font-size: 13px;
   color: #333333;
-  padding-top: 2px;
+  padding-top: 7px;
   font-weight: 600; }
   .footer-copyright .company-name-footer {
     font-weight: 600; }
@@ -2646,7 +2646,7 @@ div.auth-items {
   line-height: 31px;
   color: #FFF;
   margin-right: 7px;
-  background: #CC0100; }
+  background: #009ddc75; }
 
 /* >>>>>> Requests <<<<<< */
 /* >>>>>> About <<<<<< */
@@ -3009,7 +3009,7 @@ div.auth-items {
 .profile-orders .status-correct {
   color: #2ecc71; }
 .profile-orders .status-wrong {
-  color: #009DDC; }
+  color: #f00; }
 .profile-orders .order-copies-counter {
   border: 1px solid #D6D6D6; }
 .profile-orders .order-item-border {
@@ -3202,7 +3202,7 @@ div.auth-items {
     font-weight: 600; }
 
 .pc-header-box {
-  background: #B30008;
+  background: #009DDC;
   padding: 45px; }
   .pc-header-box:before {
     position: absolute;
