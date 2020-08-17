@@ -1603,6 +1603,9 @@ footer {
   width: 76%;
   top: 52%;
 }
+.product-folder {
+  width: 85%;
+}
 .product-bus-card {
   width: 87%;
 }
@@ -1764,6 +1767,9 @@ div.product-price {
     }
     .product-brochure-mag {
       width: 110%;
+    }
+    .product-folder {
+      width: 85%;
     }
     .promotional-table {
       top: 50% !important;
@@ -5202,9 +5208,6 @@ div.auth-items {
     .product-price {
       margin-bottom: 8px;
     }
-    .product-card:hover .product-body {
-      height: calc(100% - 65.4px);
-    }
     /* Products */
 
     /* View Product */
@@ -5408,7 +5411,7 @@ div.auth-items {
   .wrapper-compaines-products {
     justify-content: flex-start;
     .product-card {
-      margin-left: 12px;
+      margin-left: 12.5px;
       height: 40vh !important;
       &:nth-of-type(5),
       &:nth-of-type(10),

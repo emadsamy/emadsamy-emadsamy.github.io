@@ -1268,6 +1268,9 @@ footer {
   width: 76%;
   top: 52%; }
 
+.product-folder {
+  width: 85%; }
+
 .product-bus-card {
   width: 87%; }
 
@@ -1404,6 +1407,8 @@ div.product-price {
   width: 85%; }
 .product-card:hover .product-brochure-mag {
   width: 110%; }
+.product-card:hover .product-folder {
+  width: 85%; }
 .product-card:hover .promotional-table {
   top: 50% !important; }
 
@@ -4160,9 +4165,6 @@ div.auth-items {
   .product-price {
     margin-bottom: 8px; }
 
-  .product-card:hover .product-body {
-    height: calc(100% - 65.4px); }
-
   /* Products */
   /* View Product */
   .product-circle {
@@ -4328,7 +4330,7 @@ div.auth-items {
   .wrapper-compaines-products {
     justify-content: flex-start; }
     .wrapper-compaines-products .product-card {
-      margin-left: 12px;
+      margin-left: 12.5px;
       height: 40vh !important; }
       .wrapper-compaines-products .product-card:nth-of-type(5), .wrapper-compaines-products .product-card:nth-of-type(10), .wrapper-compaines-products .product-card:nth-of-type(15), .wrapper-compaines-products .product-card:nth-of-type(20), .wrapper-compaines-products .product-card:nth-of-type(25), .wrapper-compaines-products .product-card:nth-of-type(30), .wrapper-compaines-products .product-card:nth-of-type(35) {
         margin-left: 0 !important; } }
