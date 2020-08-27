@@ -495,14 +495,16 @@ html {
   font-size: 16px;
   color: #666666;
   font-weight: 600;
-  line-height: 1; }
-  .navbar-toggle-links a:nth-of-type(2) {
-    border-left: 1px solid #FFCF0E;
-    border-right: 1px solid #FFCF0E;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px; }
+  line-height: 1;
+  border-left: 1px solid #FFCF0E;
+  padding-left: 20px;
+  margin-left: 20px; }
+  .navbar-toggle-links a:last-of-type {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; }
   .navbar-toggle-links a:hover {
     color: #FFCF0E; }
 
