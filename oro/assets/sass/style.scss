@@ -1071,6 +1071,11 @@ nav.active {
     .footer-content {
         border-top: 1px solid #111;
     }
+    .owl-item > div {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
 }
 .products-slider-container {
   padding-left: 30px;
@@ -1108,9 +1113,6 @@ nav.active {
         .product-price {
             color: $darkColor
         }
-    }
-    &:last-of-type {
-        margin-bottom: 0
     }
 }
 .product-title {
@@ -1163,7 +1165,7 @@ nav.active {
   .icon {
     width: 40px;
     height: 40px;
-    line-height: 34px;
+    line-height: 36px;
     border-radius: 50%;
     border: 2px solid #666;
     text-align: center;
@@ -2404,7 +2406,6 @@ nav.active {
       width: 9px;
     }
     .owl-nav {
-      top: 47%;
       width: calc(100% + 42px);
       margin-left: -21px;
       margin-right: -21px;
@@ -2795,6 +2796,22 @@ nav.active {
     /* Contact */
 }
 
+@media (max-width: 767.98px) {
+  /* Products */
+  .product-card > .product-title {
+    font-size: 13px;
+    font-weight: bold
+  }
+  .products .owl-item > div {
+    justify-content: space-between;
+  }
+  .products .owl-item > div .product-card {
+    width: calc(50% - 5px);
+    margin-left: 0;
+  }
+  /* Products */
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
 
@@ -2831,7 +2848,24 @@ nav.active {
 
     /* Products */
     .owl-nav {
-      top: 46%
+      top: 48%
+    }
+    .product-card > .product-title {
+      font-size: 13px;
+      font-weight: bold
+    }
+    .products .owl-item > div .product-card {
+      width: calc(33.3% - 7px);
+      margin-left: 10px;
+      &:nth-of-type(3),
+      &:nth-of-type(6),
+      &:nth-of-type(9),
+      &:nth-of-type(12),
+      &:nth-of-type(15),
+      &:nth-of-type(18),
+      &:nth-of-type(21) {
+        margin-left: 0
+      }
     }
     /* Products */
 
@@ -2968,7 +3002,18 @@ nav.active {
 
     /* Products */
     .owl-nav {
-      top: 46%
+      top: calc(46% + 10px)
+    }
+    /* Products */
+    .product-card {
+      width: calc(25% - 8px);
+      margin-left: 10px;
+      &:nth-of-type(4),
+      &:nth-of-type(8),
+      &:nth-of-type(12),
+      &:nth-of-type(16) {
+        margin-left: 0
+      }
     }
     /* Products */
 
@@ -3049,7 +3094,18 @@ nav.active {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+  /* Products */
+  .product-card {
+    width: calc(25% - 8px);
+    margin-left: 10px;
+    &:nth-of-type(4),
+    &:nth-of-type(8),
+    &:nth-of-type(12),
+    &:nth-of-type(16) {
+      margin-left: 0;
+    }
+  }
+  /* Products */
 }
 
 /** Media Queries **/

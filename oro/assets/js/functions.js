@@ -18,15 +18,15 @@ $(document).ready(function () {
           },
           // breakpoint from 550 up
           550: {
-              items: 2
+              items: 1
           },
           // breakpoint from 800 up
           790: {
-              items: 3
+              items: 1
           },
           // breakpoint from 768 up
           1110: {
-              items: 4
+              items: 1
           }
       }
     });
