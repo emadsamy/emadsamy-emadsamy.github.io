@@ -838,10 +838,12 @@ footer .bg-title {
   }
   .widget-tc-box {
     flex-wrap: wrap;
+    display: block;
   }
   .widget-tc-box img {
     width: 300px;
     margin: auto;
+    display: block;
   }
   .widget-tc-box .sub-title {
     margin-left: 0;
