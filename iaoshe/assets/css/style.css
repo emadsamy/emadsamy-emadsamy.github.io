@@ -98,12 +98,21 @@ ul {
 .nav-content,
 .header-backdrop .title:after,
 .header-backdrop .title,
-.overlay-title {
+.overlay-title,
+.nav-upper a,
+.nav-bottom a,
+.footer-link {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.gradient-easing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.00709) 10.47%, rgba(0, 0, 0, 0.02755) 19.56%, rgba(0, 0, 0, 0.06016) 27.58%, rgba(0, 0, 0, 0.1037) 34.81%, rgba(0, 0, 0, 0.15697) 41.57%, rgba(0, 0, 0, 0.21875) 48.13%, rgba(0, 0, 0, 0.28782) 54.79%, rgba(0, 0, 0, 0.36296) 61.85%, rgba(0, 0, 0, 0.44297) 69.61%, rgba(0, 0, 0, 0.52662) 78.36%, rgba(0, 0, 0, 0.6127) 88.39%, rgba(0, 0, 0, 0.7));
+  bottom: 0;
+  right: 0;
+  left: 0; 
 }
 .width-fluid {
   width: 100%;
@@ -304,10 +313,10 @@ nav {
   border-bottom: 1px solid #fff;
 }
 .nav-logo {
-  width: 185px;
+  width: 195px;
   padding: 5px 0;
   border-right: 1px solid #1073BE;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 .nav-logo a {
   display: inline-block;
@@ -321,7 +330,8 @@ nav {
   position: relative;
   display: none;
 }
-.menu-btn:hover:after {
+.menu-btn:hover:after,
+.menu-btn.active:after {
   width: 55px;
   height: 55px;
 }
@@ -359,13 +369,13 @@ nav {
   width: 100%;
 }
 .nav-logo img {
-  width: 60px;
+  width: 65px;
 }
 .nav-content {
   /* display: flex; */
   /* align-items: center; */
   /* flex-wrap: wrap; */
-  width: calc(100% - 185px);
+  width: calc(100% - 195px);
   height: 71px;
 }
 .nav-content > div {
@@ -373,7 +383,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 15px
+  padding: 0 25px
 }
 .nav-content > div:first-of-type {
   border-bottom: 1px solid #1073BE;
@@ -404,6 +414,10 @@ nav {
   color: #fff;
   font-size: 17px;
   margin-left: 20px;
+}
+.nav-upper a:hover,
+.nav-bottom a:hover {
+  color: #1073BE;
 }
 #closeNavbar {
   display: none;
@@ -532,6 +546,9 @@ nav {
 .program-details {
   background: #004172;
   padding: 15px 20px;
+}
+.program-details .btn-line {
+  margin-right: 40px;
 }
 .program-details .title {
   line-height: 1.1;
@@ -709,36 +726,43 @@ footer .bg-title {
 @media (max-width: 575.98px) {}
 
 @media (max-width: 767.98px) {
+  body {
+    padding-top: 74.10px
+  }
   /* Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
   .nav-logo {
     border: none
   }
   .nav-content {
-    display: none;
     position: fixed;
-    background: #FFF;
-    width: 270px;
+    background: #004172;
+    width: 100%;
     left: 0;
     z-index: 20;
-    height: 100%;
-    top: 0;
-    padding-top: 100px;
-    display: flex;
+    height: calc(100% - 74.10px);
+    top: 74.10px;
+    padding: 0 20px;
+    display: none;
     flex-wrap: wrap;
-    flex-direction: column;
-    transform: translateX(-100%);
+    overflow-y: auto;
   }
   .nav-content.active {
-    transform: translateX(0);
+    display: flex;
   }
   .nav-bottom a {
     margin-left: 0;
     display: block;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
   #closeNavbar {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 20px;
@@ -751,9 +775,13 @@ footer .bg-title {
   .nav-content > div {
     display: block;
     height: auto;
+    padding: 0
   }
   .nav-content > div a {
-    color: #000 !important;
+    color: #fff !important;
+    border-bottom: 1px solid rgba(208,216,119,.25);
+    font-size: 32px !important;
+    padding: 0.5rem 0;
   }
   .nav-content .nav-upper {
     order: 2;
@@ -762,20 +790,14 @@ footer .bg-title {
     border-left: none;
     padding-left: 0;
     margin-left: 0;
-    font-size: 17px;
     display: block;
-    margin-bottom: 10px;
-    text-align: center;
     line-height: 1.5;
   }
   .navbar-search {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20px;
-  }
-  .navbar-search img {
-    filter: brightness(0);
+    width: 20px;7
   }
   .nav-logo {
     padding: 0
