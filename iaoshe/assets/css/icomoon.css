@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?x2lqg0');
+  src:  url('../fonts/icomoon.eot?x2lqg0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x2lqg0') format('truetype'),
+    url('../fonts/icomoon.woff?x2lqg0') format('woff'),
+    url('../fonts/icomoon.svg?x2lqg0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e91c";
+}
+.icon-support:before {
+  content: "\e91b";
+}
+.icon-instructions:before {
+  content: "\e90e";
+}
+.icon-calc:before {
+  content: "\e90b";
+  color: #4d4d4d;
+}
+.icon-cart:before {
+  content: "\e913";
+}
+.icon-drag:before {
+  content: "\e928";
+}
+.icon-correct:before {
+  content: "\e925";
+}
+.icon-close:before {
+  content: "\e926";
+}
+.icon-alert_warning:before {
+  content: "\e927";
+}
+.icon-camera:before {
+  content: "\e917";
+}
+.icon-pdf:before {
+  content: "\e918";
+}
+.icon-pencil:before {
+  content: "\e919";
+}
+.icon-warning:before {
+  content: "\e91a";
+}
+.icon-download:before {
+  content: "\e900";
+}
+.icon-book_left:before {
+  content: "\e914";
+}
+.icon-book_right:before {
+  content: "\e915";
+}
+.icon-book_upper:before {
+  content: "\e916";
+}
+.icon-bills:before {
+  content: "\e901";
+}
+.icon-logout:before {
+  content: "\e902";
+}
+.icon-prints:before {
+  content: "\e903";
+}
+.icon-settings:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-app:before {
+  content: "\e906";
+}
+.icon-back:before {
+  content: "\e907";
+}
+.icon-chevron_left:before {
+  content: "\e908";
+}
+.icon-chevron_right:before {
+  content: "\e909";
+}
+.icon-clock:before {
+  content: "\e90a";
+}
+.icon-edit:before {
+  content: "\e90c";
+}
+.icon-help:before {
+  content: "\e90d";
+}
+.icon-plus:before {
+  content: "\e90f";
+}
+.icon-requests:before {
+  content: "\e910";
+}
+.icon-trash:before {
+  content: "\e911";
+}
+.icon-user:before {
+  content: "\e912";
+}
