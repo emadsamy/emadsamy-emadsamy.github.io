@@ -95,7 +95,10 @@ ul {
 
 .btn,
 .btn-line:after,
-.nav-content {
+.nav-content,
+.header-backdrop .title:after,
+.header-backdrop .title,
+.overlay-title {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -417,6 +420,7 @@ nav {
   background-size: cover;
   display: inline-block;
   position: relative;
+  overflow: hidden;
 }
 .header-left {
   width: 70%;
@@ -432,7 +436,7 @@ nav {
 .header-left .header-backdrop {
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 .header-right .header-backdrop:nth-of-type(1) {
   height: 50%;
@@ -456,9 +460,24 @@ nav {
   font-size: 24px;
   font-weight: bold;
   color: #004172;
+  z-index: 10;
+  cursor: pointer;
 }
-.header-backdrop .title-overlay {
+.header-backdrop:hover .overlay-title {
+  transform: translateY(0);
+}
+.header-backdrop:hover .title {
+  color: #fff !important;
+}
+.header-backdrop .overlay-title {
   background: rgba(0, 0, 0, 0.61);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: -1;
 }
 .header-widget {
   background: #fff;
