@@ -363,6 +363,9 @@ nav.active {
   font-size: 21px;
   color: #fff;
 }
+.nav-btns .us button span {
+  padding: 3px
+}
 .nav-logo a {
   display: flex;
   align-items: center;
