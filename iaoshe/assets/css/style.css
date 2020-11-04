@@ -190,10 +190,10 @@ input[type="file"] {
 
 .title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 27px;
 }
 .text {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.2;
 }
 .container-fluid {
@@ -220,7 +220,7 @@ small {
   color: #004172;
   font-weight: bold;
   line-height: 1;
-  font-size: 34px;
+  font-size: 37px;
 }
 
 /** Buttons **/
@@ -272,7 +272,7 @@ small {
 .btn-line {
   display: inline-block;
   position: relative;
-  font-size: 15px;
+  font-size: 17px;
 }
 .btn-line:hover:after {
   left: calc(100% + 15px);
@@ -312,7 +312,7 @@ nav {
   padding: 0;
 }
 .nav-logo {
-  width: 225px;
+  width: 260px;
   padding: 5px 0;
   border-right: 1px solid #1073BE;
   padding-left: 25px;
@@ -321,7 +321,7 @@ nav {
   display: inline-block;
   font-weight: bold;
   color: #fff;
-  font-size: 28px;
+  font-size: 33px;
 }
 .menu-btn {
   width: 37px;
@@ -368,7 +368,7 @@ nav {
   width: 100%;
 }
 .nav-logo img {
-  width: 75px;
+  width: 90px;
 }
 .sl-sm-devices {
   margin-left: auto;
@@ -378,8 +378,8 @@ nav {
   /* display: flex; */
   /* align-items: center; */
   /* flex-wrap: wrap; */
-  width: calc(100% - 225px);
-  height: 86px;
+  width: calc(100% - 260px);
+  height: 101.5px;
 }
 .nav-content > div {
   height: 50%;
@@ -407,7 +407,7 @@ nav {
   line-height: 1;
   padding-left: 13px;
   margin-left: 13px;
-  font-size: 15px;
+  font-size: 17px;
 }
 .navbar-search {
   width: 15px;
@@ -415,7 +415,7 @@ nav {
 }
 .nav-bottom a {
   color: #fff;
-  font-size: 18px;
+  font-size: 19px;
   margin-left: 20px;
 }
 .nav-upper a:hover,
@@ -583,7 +583,7 @@ nav {
   width: 100%;
   line-height: 1;
   padding: 12px 17px;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: bold;
   color: #004172;
   z-index: 10;
@@ -636,7 +636,7 @@ nav {
   align-items: center;
 }
 .sc-header .divider {
-  width: calc(100% - 350px);
+  width: calc(100% - 390px);
   background: #437AA3;
 }
 .arrows-slider button {
@@ -665,7 +665,7 @@ nav {
 .program-details .title {
   line-height: 1.1;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 30px;
 }
 /* Programs */
 
@@ -686,7 +686,7 @@ nav {
 
 .small-card .title {
   line-height: 1;
-  font-size: 22px;
+  font-size: 27px;
   font-weight: bold;
   color: #3571B7;
 }
@@ -714,7 +714,7 @@ nav {
 }
 .widget-tc-box .tc-details {
   width: calc(100% - 650px);
-  padding-top: 30px;
+  padding-top: 15px;
 }
 .widget-tc-box .sub-title {
   margin-left: -25px;
@@ -920,6 +920,9 @@ footer .bg-title {
   }
   .nav-logo {
     padding: 0
+  }
+  .nav-logo a {
+    font-size: 29px;
   }
   .nav-logo img {
     width: 60px;
