@@ -488,7 +488,8 @@ nav.active {
   color: #fff !important;
   padding: 10px 14px;
   font-size: 26px;
-  border: 1px solid transparent
+  border: 1px solid transparent;
+  margin-left: -10px;
 }
 .nv-link:active {
   border: 1px solid rgb(76, 199, 244);
@@ -966,19 +967,33 @@ footer .bg-title {
 @media (max-width: 575.98px) {}
 
 @media (max-width: 767.98px) {
-  body {
-    /* padding-top: 73.09px */
-  }
   .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .hidden-sm {
-    display: none !important;
+
+  /* Navbar Links */
+  .navbar-body-content {
+    display: block !important;
   }
-  .sl-sm-devices {
-    display: flex;
+  .nb-border-left {
+    padding-left: 0;
+    border: none;
+    padding-top: 40px;
   }
+  .navbar-header {
+    padding: 30px 50px;
+  }
+  .navbar-body,
+  .navbar-footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .nb-view img {
+    width: auto;
+    height: auto;
+  }
+  /* Navbar Links */
   /* D Cards */
   .d-card {
     margin-bottom: 30px;
