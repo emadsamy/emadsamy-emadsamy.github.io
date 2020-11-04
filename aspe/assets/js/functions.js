@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $("#menuBtn").on('click', function () {
-        $('.nav-content').toggleClass('active');
-        $(this).toggleClass('active');
+        $('.navbar-container').addClass('active');
+        $('.navbar-backdrop').addClass('active');
     });
     $("#closeNavbar").on('click', function () {
-        $('.nav-content').removeClass('active');
-        $("#menuBtn").removeClass('active');
+        $('.navbar-container').removeClass('active');
+        $('.navbar-backdrop').removeClass('active');
     });
 
     if ($(window).scrollTop() > 0) {
