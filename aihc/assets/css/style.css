@@ -1135,16 +1135,22 @@ footer .text {
     padding-top: 40px;
   }
   .navbar-header {
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
   .navbar-body,
   .navbar-footer {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .navbar-body {
+    height: calc(100% - 204px);
+  }
   .nb-view img {
     width: auto;
     height: auto;
+  }
+  .navbar-footer {
+    padding: 20px 40px 
   }
   /* Navbar Links */
   
