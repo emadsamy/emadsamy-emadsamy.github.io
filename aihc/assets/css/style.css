@@ -389,6 +389,7 @@ nav.active {
 }
 .nav-btns .us button {
   font-size: 27px;
+  padding: 3px;
 }
 .nav-btns .us button span:before {
   color: #004172;
@@ -1118,6 +1119,9 @@ footer .text {
   }
   .nav-logo img {
     width: 70px;
+  }
+  .nav-btns .us button {
+    font-size: 23px;
   }
   /* Navbar */
 
