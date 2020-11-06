@@ -126,7 +126,9 @@ ul {
 .btn-corner .ic,
 nav,
 .icon-arrow-right:before,
-.nv-link {
+.nv-link,
+.ic:before,
+.btn-square span {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -251,7 +253,7 @@ small {
   background-color: #989898;
 }
 .bg-title {
-  color: #004172;
+  color: #000F80;
   font-weight: bold;
   line-height: 1;
   font-size: 37px;
@@ -344,9 +346,9 @@ small {
   display: inline-block;
 }
 .btn-square:hover {
-  background: #18ADC7;
+  background: #000F80;
   color: #Fff;
-  border: 1px solid #18ADC7
+  border: 1px solid #000F80
 }
 .btn-square:active {
   opacity: 0.5;
@@ -358,7 +360,7 @@ small {
   display: flex;
   align-items: center;
 }
-.btn-square .ic {
+.btn-square .ic:before {
   font-weight: bold;
   margin-left: 8px;
   font-size: 17px;
@@ -384,15 +386,14 @@ nav {
   width: 100%;
   z-index: 20;
   padding: 13px 0;
-  border-bottom: 1px solid #485B69;
   background: #fff !important;
+  box-shadow: 0px 2px 2px #00000017;
 }
 .vertical-line {
   font-size: 22px;
 }
 nav.active {
-  box-shadow: 0px 2px 2px #00000017;
-  border: none
+  
 }
 .navbar {
   display: flex;
@@ -430,11 +431,12 @@ nav.active {
   line-height: 1;
 }
 .menu-btn {
-  width: 43px;
-  height: 24px;
+  width: 38px;
+  height: 22px;
   position: relative;
   display: none;
   cursor: pointer;
+  margin-left: 11px;
 }
 .menu-btn:hover:after,
 .menu-btn.active:after {
@@ -456,7 +458,7 @@ nav.active {
   background: rgba(39,50,57,.4);
 }
 .menu-btn span {
-  background: #004172;
+  background: #0020A5;
   height: 3px;
   position: absolute;
   right: 0;
@@ -777,15 +779,16 @@ nav.active {
 .badge-quality {
   padding: 30px 0;
   display: flex;
+  border-right: 1px solid #437AA333;
 }
 .q-badge-details {
   padding-left: 23px;
 }
+.q-badge-details .btn-square {
+  font-size: 14px;
+}
 .q-badge-view {
   position: relative;
-}
-.q-badge-view img {
-  width: 86px;
 }
 .badges-row {
   padding: 50px 0;
@@ -810,6 +813,7 @@ nav.active {
   padding: 5px 16px;
   width: calc(100% - 118px);
   border: 1px solid #D8D8D8;
+  border-right: none;
 }
 .badge-news {
   padding: 30px;
@@ -824,19 +828,23 @@ nav.active {
   line-height: 1;
   position: absolute;
 }
-.badge-news .bg-title {
-  color: #004172;
-}
 .subscribe-btn {
   padding: 10px 20px;
   font-size: 14px;
-  color: #888888;
-  border-left: 1px solid #D8D8D8;
+  color: #fff;
+  background: #000F80;
 }
-.subscribe-btn .ic {
+.subscribe-btn:hover {
+  background: #020d5d;
+}
+.subscribe-btn:active {
+  opacity: 0.5;
+}
+.subscribe-btn .ic:before {
   font-weight: bold;
   font-size: 15px;
   margin-left: 7px;
+  color: #fff;
 }
 /* Badges */
 
@@ -847,7 +855,7 @@ footer {
   border-top: 15px solid #CEB163;
 }
 footer .footer-content {
-  border-bottom: 1px solid #C9C9C9;
+  border-bottom: 1px solid #7e7e7e;
   display: flex;
   padding: 30px 0
 }
@@ -895,7 +903,7 @@ footer .text {
   text-decoration: underline !important;
 }
 .fb-text a:hover {
-  color: #18ADC7;
+  color: #fff;
 }
 .follow-text {
   line-height: 1;
@@ -915,7 +923,7 @@ footer .text {
 
 @media (max-width: 767.98px) {
   body {
-    /* padding-top: 73.09px */
+    padding-top: 73.09px
   }
   .container-fluid {
     padding-left: 15px;
@@ -933,108 +941,67 @@ footer .text {
     padding: 12px 0;
   }
   .nav-logo span {
-    font-size: 40px;
+    font-size: 32px;
   }
   .nav-logo img {
-    width: 70px;
+    width: 55px;
   }
   .nav-btns .us button {
-    font-size: 23px;
+    font-size: 19px;
   }
-  /* Navbar */
-
-  /* Navbar Links */
-  .navbar-body-content {
-    display: block !important;
+  .vertical-line {
+    font-size: 20px;
   }
-  .nb-border-left {
-    padding-left: 0;
-    border: none;
-    padding-top: 40px;
-  }
-  .navbar-header {
-    padding: 20px 20px;
-  }
-  .navbar-body,
-  .navbar-footer {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .navbar-body {
-    height: calc(100% - 204px);
-  }
-  .nb-view img {
-    width: auto;
-    height: auto;
-  }
-  .navbar-footer {
-    padding: 20px 40px 
-  }
-  /* Navbar Links */
-  
-  /* Cds */
-  .cds-flex {
+  .menu-btn {
     display: block;
   }
-  .ms-box {
+  .nav-links {
+    background: #000F80;
+    position: fixed;
+    height: calc(100% - 72.25px);
     width: 100%;
-  }
-  .ms-card > div {
-    width: 100%;
-  }
-  .pview {
-    width: 100%;
-  }
-  .eop-card {
-    width: 100%;
-  }
-  .pview-card {
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 72.25px;
+    left: 0;
+    z-index: 100;
+    overflow-y: auto;
     display: none;
   }
-  .eop-card .bg-title {
-    padding-top: 0 !important;
+  .nav-links.active {
+    display: block;
+  }
+  .nav-links .nav-link {
+    font-size: 32px;
     width: 100%;
-  }
-  .swiper-view {
-    margin-bottom: 30px;
-  }
-  /* Cds */
-
-  /* Iam Instructor */
-  .iai-details {
-    width: 100%;
-    padding: 54px 50px;
-  }
-  /* Iam Instructor */
-
-  /* Accreditation */
-  .acd-card:before {
-    content: none
-  }
-  .ct-view {
-    display: none;
-  }
-  .ct-card > div {
-    width: 100%;
-  }
-  /* Accreditation */
-  
-  /* Ihe */
-  .ihe-row {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-  }
-  .ihe-row > div {
-    width: 100%;
-  }
-  .ihe-details {
+    border-bottom: 1px solid rgba(208,216,119,.25);
+    color: #fff;
     padding-left: 0;
+    padding-right: 0;
+    margin: 0;
   }
-  .ihe-view img {
-    transform: scale(1);
+  /* Navbar */
+  
+  /* Header */
+  .header {
+    padding: 30px 0;
+  }
+  .header-view {
+    display: none;
+  }
+  .header-cards > div {
+    width: 100%;
+  }
+  /* Header */
+
+  /* PS Cards */
+  .ps-cards {
+    padding: 0;
+  }
+  .ps-card-view img {
     height: auto;
   }
-  /* Ihe */
+  /* PS Cards */
 
   /* Badges */
   .q-badge-view {
@@ -1059,6 +1026,9 @@ footer .text {
   }
   .badges-row:after {
     content: none
+  }
+  .badge-quality {
+    border: none
   }
   /* Badges */
   
@@ -1086,11 +1056,7 @@ footer .text {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-  /* Iam Instructor */
-  .ihe-details .bg-title:after, .ihe-details .bg-title:before {
-    content: none
-  }
-  /* Iam Instructor */
+  
   
 }
 
@@ -1102,55 +1068,59 @@ footer .text {
     padding: 12px 0;
   }
   .nav-logo span {
-    font-size: 40px;
+    font-size: 32px;
   }
   .nav-logo img {
-    width: 70px;
+    width: 55px;
+  }
+  .nav-btns .us button {
+    font-size: 19px;
+  }
+  .vertical-line {
+    font-size: 20px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    background: #000F80;
+    position: fixed;
+    height: calc(100% - 72.25px);
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 72.25px;
+    left: 0;
+    z-index: 100;
+    overflow-y: auto;
+    display: none;
+  }
+  .nav-links.active {
+    display: block;
+  }
+  .nav-links .nav-link {
+    font-size: 32px;
+    width: 100%;
+    border-bottom: 1px solid rgba(208,216,119,.25);
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
   }
   /* Navbar */
 
-  /* D Cards */
-  .d-card .bg-title {
-    font-size: 25px;
+  /* PS Cards */
+  .ps-cards {
+    padding: 0
   }
-  /* D Cards */
-
-  /* Cw */
-  .cw-row img {
-    width: 330px;
-    height: 200px;
-  }
-  /* Cw */
-
-  /* Cds */
-  .cds-flex > div {
-    width: 48%;
-  }
-  .ms-card div, .eop-card div {
-    width: 100%;
-  }
-  .eop-card {
-    width: 100%;
-  }
-  .pview-card {
-    display: none;
-  }
-  /* Cds */
-
-  /* I Have Experience */
-  .ihe-view img {
-    transform: none;
-    height: auto;
-  }
-  .iai-details {
-    width: 70%;
-    padding: 50px 70px;
-  }
-  /* I Have Experience */
+  /* PS Cards */
   
   /* Badges */
   .badges-row:after {
     content: none
+  }
+  .badge-quality {
+    border: none
   }
   /* Badges */
 
@@ -1173,10 +1143,21 @@ footer .text {
 
   /* Navbar */
   .nav-logo img {
-    width: 70px;
+    width: 62px;
   } 
   .nav-logo span {
-    font-size: 42px;
+    font-size: 36px;
+  }
+  .nav-btns .us button {
+    font-size: 21px;
+  }
+  .vertical-line {
+    font-size: 17px;
+  }
+  .nav-link {
+    margin: 0 0;
+    color: #0020A5;
+    font-size: 18px;
   }
   /* Navbar */
 
