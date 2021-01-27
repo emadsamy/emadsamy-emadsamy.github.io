@@ -1,0 +1,65 @@
+.webkit-animation {
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+.webkit-mt-1 { margin-top: 1rem !important}
+.webkit-mt-2 { margin-top: 2rem !important}
+.webkit-100-50 {
+  width: 100% !important;
+  height: 50px !important
+}
+.webkit-100-95 {
+  width: 100% !important;
+  height: 95px !important
+}
+.webkit-100-100 {
+  width: 100% !important;
+  height: 100px !important
+}
+.webkit-100-150 {
+  width: 100% !important;
+  height: 150px !important
+}
+.webkit-100-200 {
+  width: 100% !important;
+  height: 200px !important
+}
+.webkit-50-50 {
+  width: 50% !important;
+  height: 50px !important
+}
+.webkit-100-250 {
+  width: 100% !important;
+  height: 250px !important
+}
+.webkit-100-440 {
+  width: 100% !important;
+  height: 440px !important
+}
+@keyframes loader {
+  0% {
+    background-color: rgba(165, 165, 165, 0.1)
+  }
+
+  50% {
+    background-color: rgba(165, 165, 165, 0.3)
+  }
+
+  100% {
+    background-color: rgba(165, 165, 165, 0.1)
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background-color: rgba(165, 165, 165, 0.1)
+  }
+
+  50% {
+    background-color: rgba(165, 165, 165, 0.3)
+  }
+
+  100% {
+    background-color: rgba(165, 165, 165, 0.1)
+  }
+}
