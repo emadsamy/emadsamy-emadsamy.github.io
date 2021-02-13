@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.661" height="82.868" viewBox="0 0 80.661 82.868">
+  <g id="Group_633" data-name="Group 633" transform="translate(0 -0.215)">
+    <g id="video-camera" transform="translate(0 0)">
+      <path id="Path_705" data-name="Path 705" d="M383.946,260.36,360,247.6V230.271l23.946-12.758Z" transform="translate(-303.285 -185.987)" fill="#340d66"/>
+      <ellipse id="Ellipse_73" data-name="Ellipse 73" cx="15" cy="15.5" rx="15" ry="15.5" transform="translate(30.567 0.215)" fill="#93b7c0"/>
+      <ellipse id="Ellipse_74" data-name="Ellipse 74" cx="15" cy="15.5" rx="15" ry="15.5" transform="translate(0.567 0.215)" fill="#acd5df"/>
+      <path id="Path_706" data-name="Path 706" d="M124.625,217.5H93.9L75,239.083l18.9,21.268h30.72Z" transform="translate(-63.184 -185.976)" fill="#373e9f"/>
+      <path id="Path_707" data-name="Path 707" d="M0,217.5H30.72v42.851H0Z" transform="translate(0 -185.976)" fill="#3857bc"/>
+      <path id="Path_708" data-name="Path 708" d="M165.72,277.5H144.452L135,289.473l9.452,11.973H165.72Z" transform="translate(-113.732 -236.524)" fill="#4fdbff"/>
+      <path id="Path_709" data-name="Path 709" d="M60,277.5H81.268v23.946H60Z" transform="translate(-50.548 -236.524)" fill="#8ae7ff"/>
+    </g>
+    <rect id="Rectangle_1000" data-name="Rectangle 1000" width="30.721" height="4.577" transform="translate(0.264 78.505)" fill="#ff3cad"/>
+    <rect id="Rectangle_1001" data-name="Rectangle 1001" width="18.504" height="4.577" transform="translate(12.479 78.505)" fill="#fe6192"/>
+  </g>
+</svg>
