@@ -158,7 +158,6 @@ nav,
 .form-group {
   border: 1px solid #000;
 }
-
 .form-control {
   display: block;
   color: #666666;
@@ -213,7 +212,6 @@ input[type="file"] {
   font-size: 14px;
   transform: translate(-50%, -50%);
 }
-
 .title {
   font-weight: 600;
   font-size: 27px;
@@ -226,13 +224,18 @@ input[type="file"] {
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .overlay {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-
+.nml-line {
+  margin: 0;
+  padding: 0;
+  height: 0.5px;
+  background: #c9c9c970;
+  margin: 70px 0;
+}
 small {
   color: #333;
   font-weight: 600;
@@ -243,7 +246,7 @@ small {
   background-color: #989898;
 }
 .bg-title {
-  color: #004172;
+  color: #3d519a;
   font-weight: bold;
   line-height: 1;
   font-size: 40px;
@@ -280,11 +283,13 @@ small {
   border: 1px solid #2d3d76;
   color: #fff !important;
 }
-
 .main-normal-btn {
   color: #4b4b4b;
   font-size: 18px;
   display: inline-block;
+}
+.main-normal-btn:hover {
+  color: #61a2d7;
 }
 .main-normal-btn .icon {
   font-weight: 600;
@@ -310,6 +315,10 @@ small {
   box-shadow: none;
 }
 /** Buttons **/
+.page-header-view {
+  width: 100%;
+  height: 507px;
+}
 /* Global */
 
 /* Navbar */
@@ -517,6 +526,7 @@ nav.active {
   background: #fff;
   /* border: 1px solid #666; */
   border-radius: 40px;
+  box-shadow: 0px 2px 2px #00000017;
 }
 
 /* Training Programs */
@@ -551,11 +561,11 @@ nav.active {
   font-weight: 600;
   color: #4b4b4b;
 }
-.training-programs-container .swiper-slide-next .program-training-view {
+/* .training-programs-container .swiper-slide-next .program-training-view {
   border: 2px solid #a1ccff;
   background: #f0f7ff;
   border-radius: 30px;
-}
+} */
 .more-programs-btn {
   line-height: 1;
   display: inline-block;
@@ -894,6 +904,102 @@ footer {
   font-size: 18px;
 }
 /* Footer */
+
+/* About Page */
+.border-corner {
+  height: 15px;
+  border-radius: 50px;
+}
+.about-dh-container {
+  padding: 50px 0;
+}
+.about-dh-text .body,
+.awre-details .body {
+  font-size: 19px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #626777;
+}
+.awards-recognitions {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin-bottom: 120px;
+}
+.awards-recognitions > div {
+  width: 48.5%;
+}
+.awre-details .title {
+  font-size: 37px;
+  color: #020d88;
+}
+.list-row {
+  display: flex;
+  align-items: center;
+}
+.list-row {
+  margin-bottom: 15px;
+}
+.list-row:last-of-type {
+  margin: 0;
+}
+.list-row .text {
+  color: #212020;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.list-row .icon {
+  color: #847b8d;
+  font-size: 22px;
+  margin-left: 22px;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.about-card {
+  text-align: right;
+  background: #f8f8f8;
+  border: 1px solid #efeded;
+  border-radius: 40px;
+  padding: 90px 50px;
+}
+.about-card img {
+  height: 100px;
+}
+.about-card .title {
+  color: #020d88;
+  font-size: 35px;
+  font-weight: bold;
+}
+.about-c-list .text {
+  color: #01063e80;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* About Page */
+
+/* Programs Trainings Page */
+.tra-pro-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 45px;
+}
+/* Programs Trainings Page */
+
+/* Article Page */
+.body-article {
+  font-size: 22px;
+  line-height: 1.73;
+  font-weight: 600;
+  color: #4882e5;
+}
+/* Article Page */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

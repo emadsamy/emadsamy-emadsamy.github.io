@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.503" height="72.978" viewBox="0 0 85.503 72.978">
+  <g id="camera" transform="translate(0 -37.5)">
+    <path id="Path_777" data-name="Path 777" d="M206.02,324.56h42.751V309.53L196,294.5Z" transform="translate(-163.268 -214.082)" fill="#93b7c0"/>
+    <path id="Path_778" data-name="Path 778" d="M0,309.53v15.03H42.751V294.5Z" transform="translate(0 -214.082)" fill="#acd5df"/>
+    <path id="Path_779" data-name="Path 779" d="M223.781,60.045V50.025H205.237L198.582,37.5H181.03L166,80.084Z" transform="translate(-138.278)" fill="#373e9f"/>
+    <path id="Path_780" data-name="Path 780" d="M42.751,37.5H25.2L18.544,50.025H0v10.02l42.751,20.04Z" fill="#3857bc"/>
+    <path id="Path_781" data-name="Path 781" d="M0,172.5H42.751v35.4H0Z" transform="translate(0 -112.455)" fill="#3b88f5"/>
+    <path id="Path_782" data-name="Path 782" d="M256,172.5h42.751v35.4H256Z" transform="translate(-213.249 -112.455)" fill="#3a6fd8"/>
+    <path id="Path_783" data-name="Path 783" d="M185.018,142.5l-14.23,22.712,14.23,22.712a22.712,22.712,0,1,0,0-45.423Z" transform="translate(-142.267 -87.465)" fill="#c4f3ff"/>
+    <path id="Path_784" data-name="Path 784" d="M120,165.212a22.712,22.712,0,0,0,22.712,22.712V142.5A22.712,22.712,0,0,0,120,165.212Z" transform="translate(-99.96 -87.465)" fill="#fff"/>
+    <path id="Path_785" data-name="Path 785" d="M216.334,202.5l-7.952,12.692,7.952,12.692a12.692,12.692,0,0,0,0-25.384Z" transform="translate(-173.583 -137.445)" fill="#340d66"/>
+    <path id="Path_786" data-name="Path 786" d="M180,215.192a12.692,12.692,0,0,0,12.692,12.692V202.5A12.692,12.692,0,0,0,180,215.192Z" transform="translate(-149.94 -137.445)" fill="#373e9f"/>
+  </g>
+</svg>
