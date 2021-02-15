@@ -1,0 +1,10 @@
+body.en-lang {
+  direction: ltr;
+}
+
+/* Nav */
+body.en-lang .menu-btn {
+  margin-left: 11px;
+  margin-right: 0;
+}
+/* Nav */

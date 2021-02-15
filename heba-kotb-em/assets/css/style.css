@@ -362,7 +362,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 20;
-  padding: 7px 0;
+  padding: 12px 0;
   background: #fff;
   box-shadow: 0px 2px 2px #00000017;
 }
@@ -437,7 +437,20 @@ nav.active {
   position: relative;
   display: none;
   cursor: pointer;
-  margin-left: 11px;
+  margin-right: 11px;
+}
+.menu-btn.active .toggleMenu {
+  display: none;
+}
+.menu-btn .icon-exit-menu {
+  display: none;
+}
+.menu-btn.active .icon-exit-menu {
+  display: block;
+}
+.icon-exit-menu .icon {
+  font-weight: bold;
+  font-size: 24px;
 }
 .menu-btn > div {
   height: 100%;
@@ -445,7 +458,7 @@ nav.active {
   align-content: space-between;
 }
 .menu-btn span {
-  background: #fff;
+  background: #000;
   height: 2px;
   position: absolute;
   right: 0;
@@ -465,9 +478,9 @@ nav.active {
   width: 100%;
 }
 .nav-logo img {
-  width: 170px;
+  width: 137px;
   transform: none;
-  margin-left: -12px;
+  /* margin-left: -12px; */
 }
 .nav-logo {
   margin-top: 0;
@@ -501,23 +514,25 @@ nav.active {
 }
 .slider-card {
   background-image: url("../img/slider-bg.png");
-  height: 640px;
-  background-size: contain;
+  height: 580px;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 70px;
   display: flex;
   align-items: flex-end;
   position: relative;
+  border-radius: 31px;
+  overflow: hidden;
 }
 .slca-img {
   position: absolute;
-  left: 270px;
-  bottom: 30px;
+  left: 220px;
+  bottom: 0;
   width: 460px;
 }
 .line-hori-bg {
   width: 65px;
-  height: 8px;
+  height: 7px;
 }
 .slca-bg-title {
   color: #3d519a;
@@ -534,7 +549,7 @@ nav.active {
 }
 .swiper-pagination {
   width: auto !important;
-  bottom: 60px !important;
+  bottom: 45px !important;
   left: 50px !important;
 }
 .swiper-container-horizontal
@@ -570,6 +585,9 @@ nav.active {
   align-items: center;
   margin-bottom: 40px;
 }
+.tpc-header .tpc-arrow {
+  line-height: 1;
+}
 .tpc-arrow .icon {
   font-size: 38px;
   font-weight: 600;
@@ -588,7 +606,7 @@ nav.active {
 }
 .program-training-view {
   margin-bottom: 30px;
-  height: 226px;
+  width: 100%;
 }
 .program-training-card-title {
   font-size: 18px;
@@ -661,6 +679,9 @@ nav.active {
   border-radius: 40px;
   text-align: right;
   margin-bottom: 30px;
+}
+.avm-card img {
+  width: 72px;
 }
 .avm-card .bg-title {
   color: #888383;
@@ -745,6 +766,9 @@ nav.active {
 .schedule-content > div {
   width: 48.5%;
 }
+.schedule-view {
+  height: 100%;
+}
 .schedule-tabs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -758,13 +782,13 @@ nav.active {
   cursor: pointer;
 }
 .sc-month {
-  font-size: 25px;
+  font-size: 24px;
   margin-top: -6px;
   font-weight: 600;
 }
 .sc-day {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 37px;
   line-height: 1;
 }
 .sc-plus {
@@ -853,6 +877,7 @@ footer {
   display: flex;
   min-width: 500px;
   text-align: right;
+  max-width: 100%;
 }
 .footer-links > div {
   width: 33%;
@@ -1463,28 +1488,610 @@ footer {
 }
 /* What We Do Page */
 
+/* Video Page */
+.video-header-content {
+  background-image: linear-gradient(to top, #1141b8, #001072);
+  height: 650px;
+  border-radius: 46px 46px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.video-char-title {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-size: 250px;
+  font-weight: bold;
+  line-height: 1;
+  color: #07167640;
+}
+.video-char-view {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 620px;
+  max-height: 100%;
+}
+.video-header-details {
+  padding: 70px;
+  text-align: right;
+  margin-top: 80px;
+}
+.video-header-details .bg-title {
+  color: #8ae7ff;
+  font-size: 73px;
+  text-shadow: 0px 3px 6px #00000020;
+}
+.video-header-details .sub-title {
+  color: #ffffff;
+  font-size: 21px;
+}
+.video-icon {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 41px;
+}
+.video-icon .vid-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: #bebebe;
+  line-height: 1;
+  margin: 0 15px;
+}
+.video-container {
+  padding-bottom: 70px;
+}
+.video-content {
+  padding: 80px 50px;
+  border-radius: 0 0 46px 46px;
+  background: #0b1a71;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.video-card {
+  text-align: right;
+}
+.vid-card-body {
+  margin-bottom: 15px;
+  position: relative;
+}
+.play-btn {
+  position: absolute;
+  bottom: 14px;
+  left: 25px;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 50px;
+}
+.video-card .title {
+  font-size: 21px;
+}
+.video-program {
+  margin-bottom: 50px;
+}
+.more-videos-btn:hover {
+  opacity: 0.7;
+}
+.more-videos-btn:active {
+  opacity: 0.5;
+}
+.more-videos-btn .text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+.more-videos-btn .icon {
+  font-weight: bold;
+  font-size: 20px;
+}
+.more-videos-container {
+  margin-bottom: 90px;
+}
+/* Video Page */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 540px;
+  }
+  .nav-links-content {
+    max-width: 540px !important;
+    margin: 0 auto;
+  }
+  .content-fwbg {
+    padding: 25px;
+  }
+
+  /* Footer */
+  .footer-links {
+    min-width: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-links > div {
+    width: 49%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    max-width: 100%;
+    margin-bottom: 25px !important;
+  }
+  .subscribe-btn {
+    padding: 0 19px;
+    font-size: 16px;
+  }
+  .subscribe-btn .icon {
+    font-size: 19px;
+  }
+  .contact-form input {
+    width: calc(100% - 107.08px);
+    min-width: auto;
+  }
+  .footer-upper {
+    padding: 35px 0;
+  }
+  .footer-logo {
+    margin-bottom: 24px;
+  }
+  .footer-contact {
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .footer-bottom-text {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* Footer */
 }
 
 @media (max-width: 767.98px) {
+  /* Home Page */
+
+  /* Slider */
+  .slider-card {
+    background-size: cover;
+  }
+  .slca-img {
+    left: 50%;
+    bottom: 0px;
+    width: 315px;
+    transform: translateX(-50%);
+  }
+
+  /* Trainings Programs */
+  .program-training-view {
+    width: 100%;
+    height: auto;
+  }
+  .tpc-bg-title {
+    font-size: 26px;
+  }
+
+  /* Medical Consulting */
+  .med-cons-banner {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .med-cons-banner > div {
+    width: 100%;
+  }
+  .med-cons-data {
+    margin-bottom: 25px;
+  }
+  .med-cons-view img {
+    height: auto;
+  }
+  .med-cons-data .bg-title {
+    font-size: 32px;
+  }
+  .asterisk-icon {
+    width: 60px;
+  }
+
+  /* AVM */
+  .avm-card {
+    padding: 47px 28px 40px;
+  }
+  .avm-card .text {
+    font-size: 18px;
+    margin-bottom: 2rem !important;
+  }
+  .avm-card img {
+    width: 67px;
+  }
+  .avm-card .bg-title {
+    font-size: 34px;
+  }
+
+  /* Discussions */
+  .discussions-header img {
+    width: 55px;
+  }
+  .disscussions-box {
+    flex-wrap: wrap;
+  }
+  .disscussions-box > div {
+    width: 100%;
+  }
+  .disscussions-view {
+    margin-bottom: 50px;
+  }
+
+  /* Schedule */
+  .schedule-view-box {
+    margin-bottom: 40px;
+  }
+  .schedule-content {
+    flex-wrap: wrap;
+  }
+  .schedule-content > div {
+    width: 100%;
+  }
+  .schedule-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+  .sc-month {
+    font-size: 23px;
+  }
+  .sc-day {
+    font-size: 31px;
+  }
+  .schedule-card {
+    padding: 15px 13px;
+  }
+  /* Home Page */
+}
+
+@media (max-width: 1199.98px) {
+  /* Navbar */
+  .nav-logo img {
+    width: 100px;
+  }
+  .nav-btns .us .ls-btn {
+    font-size: 26px;
+  }
+  .us-btns .icon {
+    margin: 0 5px;
+  }
+  .change-lang-btn .icon {
+    font-size: 26px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 88.06px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 88.06px);
+    background: #fff;
+    padding: 0;
+    border-top: 1px solid #cbcbcb;
+    z-index: 100;
+    overflow-y: auto;
+  }
+  .nav-links-content {
+    padding: 0 15px;
+  }
+  .nav-links.active {
+    display: block !important;
+  }
+  .nav-links-content {
+    display: block;
+    overflow-y: auto;
+    text-align: right;
+  }
+  .nav-link {
+    font-size: 32px;
+    width: 100%;
+    border-bottom: 1px solid #cbcbcb;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+  /* Navbar */
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 540px;
+  }
+  .content-fwbg {
+    padding: 30px;
+  }
+
+  /* Navbar */
+  .nav-links-content {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
+  /* Navbar */
+
+  /* Home Page */
+  /* Trainings Programs */
+  /* .program-training-view {
+    width: 100%;
+    height: auto;
+  } */
+
+  /* Schedule */
+  .schedule-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  /* Home Page */
+
+  /* Footer */
+  .footer-links > div {
+    margin: 0;
+  }
+  .footer-logo,
+  .footer-links {
+    margin-bottom: 24px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .footer-bottom-text {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .footer-bottom-text:last-of-type {
+    width: 100%;
+    text-align: center;
+  }
+  /* Footer */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .container-fluid {
+    max-width: 720px;
+  }
+  .content-fwbg {
+    padding: 45px 30px;
+  }
+
+  /* Navbar */
+  .nav-logo img {
+    width: 137px;
+  }
+  .nav-links {
+    top: 111.78px;
+    height: calc(100% - 111.78px);
+  }
+  .nav-links-content {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+  }
+  /* Navbar */
+
+  /* Home */
+  /* Trainings Programs */
+  .program-training-view {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .program-training-card-data {
+    display: block;
+    text-align: right;
+  }
+  .program-training-card-title {
+    margin-bottom: 12px;
+  }
+
+  /* Medical Consulting */
+  .med-cons-banner {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .med-cons-banner > div {
+    width: 100%;
+  }
+  .med-cons-data {
+    margin-bottom: 35px;
+  }
+  .med-cons-view img {
+    height: auto;
+  }
+  .med-cons-data .bg-title {
+    font-size: 32px;
+  }
+  .asterisk-icon {
+    width: 60px;
+  }
+
+  /* AVM */
+  .avm-card {
+    padding: 45px 25px;
+  }
+
+  /* Schedule */
+  .schedule-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .schedule-card {
+    padding: 15px 15px;
+  }
+  .sc-month {
+    font-size: 20px;
+  }
+  .sc-day {
+    font-size: 31px;
+  }
+  .schedule-view {
+    height: auto;
+  }
+  .schedule-content .sd-bg {
+    padding: 40px 27px;
+  }
+
+  /* Home */
+
+  /* Footer */
+  .footer-logo,
+  .footer-links {
+    margin-bottom: 24px;
+  }
+  /* Footer */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .container-fluid {
+    max-width: 960px;
+  }
+
+  /* Navbar */
+  .nav-logo img {
+    width: 137px;
+  }
+  .us-btns .icon {
+    margin: 0 7px;
+  }
+  .nav-btns .us .ls-btn {
+    font-size: 28px;
+  }
+  .change-lang-btn .icon {
+    font-size: 28px;
+  }
+  .nav-links {
+    top: 111.78px;
+    height: calc(100% - 111.78px);
+  }
+  .nav-links-content {
+    max-width: 960px;
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Navbar */
+
+  /* Home */
+
+  /* Slider */
+  .slider-card {
+    background-size: cover;
+    padding: 76px 45px;
+    height: 548px;
+  }
+  .slca-img {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 382px;
+  }
+  .slca-bg-title {
+    font-size: 48px;
+  }
+  .slca-text {
+    font-size: 20px;
+  }
+
+  /* Schedule */
+  .schedule-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .sc-day {
+    font-size: 26px;
+  }
+  .sc-month {
+    font-size: 19px;
+  }
+  .schedule-card {
+    padding: 15px 13px;
+  }
+
+  /* AVM */
+  .avm-card {
+    padding: 40px 23px;
+  }
+  .avm-card img {
+    height: 72px;
+  }
+
+  /* Home */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
   .container-fluid {
-    max-width: 1400px;
+    max-width: 1140px;
   }
+
+  /* Navbar */
+  .us-btns .icon {
+    margin: 0 5px;
+  }
+  .nav-link {
+    margin: 0 4px;
+    font-size: 23px;
+  }
+  .nav-logo img {
+    width: 110px;
+  }
+  /* Navbar */
+
+  /* Home */
+  /* Slider */
+  .slca-img {
+    left: 90px;
+    width: 410px;
+  }
+
+  /* Schedule */
+  .schedule-tabs {
+    gap: 20px;
+  }
+  .schedule-card {
+    padding: 15px 12px;
+  }
+  .sc-day {
+    font-size: 31px;
+  }
+  .sc-month {
+    font-size: 21px;
+  }
+  /* Home */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+
+  /* Home */
+  /* Slider */
+  .slca-img {
+    left: 220px;
+    width: 450px;
+  }
+  /* Home */
 }

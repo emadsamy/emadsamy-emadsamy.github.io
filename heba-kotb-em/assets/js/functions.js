@@ -23,15 +23,6 @@
 $(document).ready(() => {
   $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 40 + "px");
 
-  var tabs = [
-    {
-      id: 1,
-      month: "ديسمبر",
-      day: 25,
-      bgColor: "#53CEE3",
-    },
-  ];
-
   // Home Tabs
   $(".schedule-card-btn").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
@@ -43,5 +34,16 @@ $(document).ready(() => {
     $(".sd-view-tab").removeClass("active");
     $(".schedule-card-btn").removeClass("active");
     $(".main-sd-view").addClass("active");
+  });
+
+  // Toggle Menu
+  $("#menuBtn").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $("#navLinks").removeClass("active");
+      $(this).removeClass("active");
+    } else {
+      $("#navLinks").addClass("active");
+      $(this).addClass("active");
+    }
   });
 });

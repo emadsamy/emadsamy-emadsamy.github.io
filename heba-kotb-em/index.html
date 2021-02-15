@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="assets/css/icomoon.css" />
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Direction LTR -->
+    <link rel="stylesheet" href="assets/css/en-style.css" />
   </head>
   <body>
 
@@ -43,7 +45,7 @@
                 />
               </a>
             </div>
-            <div class="nav-links">
+            <div id="navLinks" class="nav-links">
               <div class="nav-links-content">
                 <a href="index.html"
                   class="nav-link active"
@@ -91,21 +93,20 @@
                   <span class="icon-user icon"></span>
                 </a>
               </div>
-  
-              <div id="menuBtn" class="menu-btn">
-                <div v-if="!toggleMenu">
-                  <span class="top-bar"></span>
-                  <span class="middle-bar"></span>
-                  <span class="bottom-bar"></span>
-                </div>
-                <!-- <div class="icon-exit-menu">
-                  <div class="icon-cancel icon"></div>
-                </div> -->
-              </div>
               <button class="d-flex align-items-center change-lang-btn">
                 <span class="lang-span">EN</span>
                 <span class="icon-globe icon"></span>
               </button>
+              <div id="menuBtn" class="menu-btn">
+                <div class="toggleMenu">
+                  <span class="top-bar"></span>
+                  <span class="middle-bar"></span>
+                  <span class="bottom-bar"></span>
+                </div>
+                <div class="icon-exit-menu text-center">
+                  <div class="icon-cancel icon"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,7 +310,7 @@
               <!-- AVM Container -->
               <div class="avm-container">
                 <div class="row">
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <div class="avm-card">
                       <img src="assets/img/avm/pen.svg" class="mb-4 img-fluid" alt="" />
                       <div class="bg-title mb-4">مقالات</div>
@@ -323,7 +324,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <div class="avm-card">
                       <img src="assets/img/avm/video.svg" class="mb-4 img-fluid" alt="" />
                       <div class="bg-title mb-4">فيديو</div>
@@ -337,7 +338,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <div class="avm-card">
                       <img src="assets/img/avm/magazine.svg" class="mb-4 img-fluid" alt="" />
                       <div class="bg-title mb-4">المجلة Big Talk</div>
@@ -408,100 +409,104 @@
               <div class="schedule-container">
                 <div class="schedule-content">
 
-                  <div class="schedule-view">
-                    <div class="main-sd-view sd-bg active">
+                  <div class="schedule-view-box">
+                    <div class="schedule-view">
+                      <div class="main-sd-view sd-bg active">
                         <div class="bg-title pt-3 pb-3 pl-3 pr-3 text-right">Main Container</div>
-                    </div>
-                    <div class="sd-view-tab sd-bg">
-                      <div class="sd-bg-header mb-4">
-                        <button id="closeTabBtn" class="close-tab-btn">
-                          <span class="icon-cancel icon"></span>
-                        </button>
-
-                        <div class="sc-top d-flex justify-content-between align-items-center">
-                          <div class="sc-month">ديسمبر </div>
-                          <div class="sc-day mr-3">25</div>
-                        </div>
                       </div>
+                      <div class="sd-view-tab sd-bg">
+                        <div class="sd-bg-header mb-4">
+                          <button id="closeTabBtn" class="close-tab-btn">
+                            <span class="icon-cancel icon"></span>
+                          </button>
 
-                      <div class="sd-bg-content">
-                        <div class="bg-title mb-3">عرض الحلقة الأولى من برنامج “الفرنجه” مع الدكتوره هبه قطب </div>
-                        <div class="text">شاهدوا د. هبة قطب في الحلقة الأولى من برنامج “الفرنجة” في ضيافة فهمي وشيكو وهشام يوم السبت ٢ مايو الساعة ٩ ونصف مساء على قناة النهار</div>
+                          <div class="sc-top d-flex justify-content-between align-items-center">
+                            <div class="sc-month">ديسمبر </div>
+                            <div class="sc-day mr-3">25</div>
+                          </div>
+                        </div>
+
+                        <div class="sd-bg-content">
+                          <div class="bg-title mb-3">عرض الحلقة الأولى من برنامج “الفرنجه” مع الدكتوره هبه قطب </div>
+                          <div class="text">شاهدوا د. هبة قطب في الحلقة الأولى من برنامج “الفرنجة” في ضيافة فهمي وشيكو وهشام يوم السبت ٢ مايو الساعة ٩ ونصف مساء على قناة النهار</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div class="schedule-tabs">
-                    <div class="schedule-card schedule-card-btn" 
-                        data-tab="tab-1"
-                        data-title="عرض الحلقة الأولى من برنامج “الفرنجه” مع الدكتوره هبه قطب" 
-                        data-body="شاهدوا د. هبة قطب في الحلقة الأولى من برنامج “الفرنجة” في ضيافة فهمي وشيكو وهشام يوم السبت ٢ مايو الساعة ٩ ونصف مساء على قناة النهار"
-                        
-                        style="background-color: #53CEE3;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">ديسمبر </div>
-                        <div class="sc-day">25</div>
+                  <div class="schedule-tabs-container">
+                    <div class="schedule-tabs">
+                      <div class="schedule-card schedule-card-btn" 
+                          data-tab="tab-1"
+                          data-title="عرض الحلقة الأولى من برنامج “الفرنجه” مع الدكتوره هبه قطب" 
+                          data-body="شاهدوا د. هبة قطب في الحلقة الأولى من برنامج “الفرنجة” في ضيافة فهمي وشيكو وهشام يوم السبت ٢ مايو الساعة ٩ ونصف مساء على قناة النهار"
+                          
+                          style="background-color: #53CEE3;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">ديسمبر </div>
+                          <div class="sc-day">25</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-2" style="background-color: #E864A5;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">ديسمبر </div>
-                        <div class="sc-day">24</div>
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-2" style="background-color: #E864A5;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">ديسمبر </div>
+                          <div class="sc-day">24</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-3" style="background-color: #4C8CDE;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">ديسمبر </div>
-                        <div class="sc-day">21</div>
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-3" style="background-color: #4C8CDE;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">ديسمبر </div>
+                          <div class="sc-day">21</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-4" style="background-color: #4C8CDE;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">مارس </div>
-                        <div class="sc-day">21</div>
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-4" style="background-color: #4C8CDE;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">مارس </div>
+                          <div class="sc-day">21</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-5" style="background-color: #C7DE64;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">فبراير </div>
-                        <div class="sc-day">07</div>
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-5" style="background-color: #C7DE64;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">فبراير </div>
+                          <div class="sc-day">07</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-6" style="background-color: #53CEE3;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">يناير </div>
-                        <div class="sc-day">27</div>
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-6" style="background-color: #53CEE3;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">يناير </div>
+                          <div class="sc-day">27</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-7" style="background-color: #B0B6D0;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">يوليو </div>
-                        <div class="sc-day">26</div>
+  
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-7" style="background-color: #B0B6D0;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">يوليو </div>
+                          <div class="sc-day">26</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-8" style="background-color: #9965EB;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">مايو </div>
-                        <div class="sc-day">18</div>
+  
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-8" style="background-color: #9965EB;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">مايو </div>
+                          <div class="sc-day">18</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
-                    </div>
-
-                    <div class="schedule-card schedule-card-btn" data-tab="tab-9" style="background-color: #F4AB56;">
-                      <div class="sc-top d-flex justify-content-between align-items-center">
-                        <div class="sc-month">مارس </div>
-                        <div class="sc-day">29</div>
+  
+                      <div class="schedule-card schedule-card-btn" data-tab="tab-9" style="background-color: #F4AB56;">
+                        <div class="sc-top d-flex justify-content-between align-items-center">
+                          <div class="sc-month">مارس </div>
+                          <div class="sc-day">29</div>
+                        </div>
+                        <div class="sc-plus">+</div>
                       </div>
-                      <div class="sc-plus">+</div>
                     </div>
                   </div>
                 </div>
@@ -615,6 +620,27 @@
         speed: 600,
         slidesPerView: 3,
         spaceBetween: 45,
+        breakpoints: {
+          // when window width is >= 320px
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          // when window width is >= 640px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 27
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
         autoplay: {
           delay: 10000,
         },
