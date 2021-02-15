@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="#" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Title -->
+    <title>دكتور. هبه قطب</title>
+
+    <!-- Links -->
+    <!-- Project Shortcut Icon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap V 4.1.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Convert Images Svg To Icons -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <nav id="nav" class="nav">
+        <div class="container-fluid">
+          <div class="navbar">
+            <div class="nav-logo">
+              <a href="index.html">
+                <img
+                  src="assets/img/logo.png"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="nav-links">
+              <div class="nav-links-content">
+                <a href="index.html"
+                  class="nav-link"
+                  >الرئيسية</a
+                >
+  
+                <a href="about.html"
+                  class="nav-link"
+                  >عن د.هبة قطب</a
+                >
+  
+                <a href="what-we-do.html"
+                  class="nav-link"
+                  >ماذا نقدم </a
+                >
+  
+                <a href="trainings-programs.html"
+                  class="nav-link"
+                  >برامج تدريبية</a
+                >
+  
+                <a href="video.html"
+                  class="nav-link"
+                  >فيديو</a
+                >
+  
+                <a href="articles.html"
+                  class="nav-link active"
+                  >مقالات </a
+                >
+
+                <a href="contact.html"
+                  class="nav-link"
+                  >تواصل معنا </a
+                >
+              </div>
+            </div>
+            <div class="nav-btns d-flex align-items-center">
+              <div class="us us-btns d-flex align-items-center">
+                <button class="d-flex align-items-center ls-btn">
+                  <span class="icon-search icon"></span>
+                </button>
+                <!-- <span class="ml-2 mr-2 vertical-line">|</span> -->
+                <a href="login.html" class="d-flex align-items-center login-btn-ic ls-btn">
+                  <span class="icon-user icon"></span>
+                </a>
+              </div>
+  
+              <div id="menuBtn" class="menu-btn">
+                <div v-if="!toggleMenu">
+                  <span class="top-bar"></span>
+                  <span class="middle-bar"></span>
+                  <span class="bottom-bar"></span>
+                </div>
+                <!-- <div class="icon-exit-menu">
+                  <div class="icon-cancel icon"></div>
+                </div> -->
+              </div>
+              <button class="d-flex align-items-center change-lang-btn">
+                <span class="lang-span">EN</span>
+                <span class="icon-globe icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="wrapperContainer" class="wrapper-container">
+
+        <!-- Swiper -->
+        <div class="swiper-header">
+          <div class="container-fluid">
+            <div class="page-header">
+              <img src="assets/img/discussion-header.png" class="page-header-view object-fit-cover img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Swiper -->
+
+        <!-- Container Fwbg -->
+        <div class="container-fwbg">
+          <div class="container-fluid">
+            <div class="content-fwbg">
+              <div class="bg-title d-flex align-items-center justify-content-center dir-ltr pink-color mb-5 text-center">اسأل د. هبة <img src="assets/img/icons/discussion.svg" class="discussion-title-img ml-4 mr-4 img-fluid" alt="" /></div>
+              <div class="border-corner" style="background: #F5F5F5;"></div>
+              
+              <div class="tell-story">
+                <div class="title mb-4 pink-color">احكي لنا قصتك</div>
+                <div class="tell-story-bg" style="background-image: url('assets/img/discussion-bg.png');">
+                  <form class="tell-story-form form-row">
+                    <div class="col-lg-6">
+                      <div class="tell-story-input">
+                        <input type="text" placeholder="الاسم الأول" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="tell-story-input">
+                        <input type="text" placeholder="الاسم الأخير " />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="tell-story-input">
+                        <input type="tel" placeholder="رقم التليفون " />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="tell-story-input">
+                        <input type="text" placeholder="البلد " />
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="tell-story-input">
+                        <input type="email" placeholder="البريد الإلكتروني" />
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="tell-story-input">
+                        <textarea rows="5" placeholder="احكي قصتك"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div>
+                        <button class="tell-stroy-submit">ارسل</button>
+                      </div>
+                    </div>
+                  </form>
+                  <img src="assets/img/dr-heba-discussion.png" class="tell-story-char img-fluid" alt="" />
+                </div>
+              </div>
+              
+              <div class="stories-container">
+                <div class="stories-text text-center">
+                  <img src="assets/img/icons/discussion.svg" class="mb-4 img-fluid" alt="" />
+                  <div class="bg-title mb-5">قصص حقيقية ملهمة</div>
+                  <div class="body">اطلع على أكثر القصص الحقيقة الملهمة من متابعينا و كيف كانت إجابات د.هبة هي العامل <br /> اساسي في التغيير الذي يسعى إليه اصحاب القصص</div>
+                </div>
+
+                <div class="stories-discussions">
+
+                  <div id="story-1" class="qa-row">
+                    <div class="question-title">هل تسبب العلاقة الجنسية إرهاقا ؟</div>
+                    <div class="answer-body">أنا عروسة جديدة وعمري 23 سنة، ولكن كل مشكلتي بعد العلاقة الحميمة بيني وبين زوجي، إنه بيكون مرهق جداً لدرجة أنه حتى لا يكلمني، وينام بعد العلاقة مباشرة حتى وإن كان “لسه صاحي من النوم”..
+
+                      كنت أحاول في أول الأمر أن أعامله بالمثل وأتظاهر بالنوم لأتجنب العلاقة معه، ولكني خفت من ارتكاب الحرام، كما أنني أستمتع فعلاً مع زوجي، ولكن إرهاقه لهذه الدرجة ونومه بعدها يضايقني كثيراً ويشعرني بالإهانة..</div>
+                    <div class="qa-btn-div">
+                      <a href="discussions.html#story-1" class="qa-btn">
+                        <div class="btn-div-df">
+                          <span class="plus-icon">+</span>
+                          المزيد
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div id="story-2" class="qa-row">
+                    <div class="question-title">هل تسبب العلاقة الجنسية إرهاقا ؟</div>
+                    <div class="answer-body">صديقتنا العروس الصغيرة الجميلة… هناك تباين كبير جداً يا عزيزتي بين كل رجل وآخر، وبين قدرة كل رجل فيما يختص بالعلاقة الجنسية، وبين ميله ناحية أداء العلاقة بعدد معين وبشكل معين.. هذا من ناحية.. من ناحية أخرى، هناك قدرات جسمانية متعلقة بالطاقة البدنية، ومراحل الإرهاق، والقدرة على احتمال المجهود البدني، ورد الفعل تجاه كل ذلك.
+
+                      صديقتنا العروس الصغيرة الجميلة… هناك تباين كبير جداً يا عزيزتي بين كل رجل وآخر، وبين قدرة كل رجل فيما يختص بالعلاقة الجنسية، وبين ميله ناحية أداء العلاقة بعدد معين وبشكل معين.. هذا من ناحية.. من ناحية أخرى، هناك قدرات جسمانية متعلقة بالطاقة البدنية، ومراحل الإرهاق، والقدرة على احتمال المجهود البدني، ورد الفعل تجاه كل ذلك.
+                    </div>
+                    <div class="qa-btn-div">
+                      <a href="discussions.html#story-2" class="qa-btn">
+                        <div class="btn-div-df">
+                          <span class="plus-icon">+</span>
+                          المزيد
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div id="story-3" class="qa-row">
+                    <div class="question-title">هل تسبب العلاقة الجنسية إرهاقا ؟</div>
+                    <div class="answer-body">أنا عروسة جديدة وعمري 23 سنة، ولكن كل مشكلتي بعد العلاقة الحميمة بيني وبين زوجي، إنه بيكون مرهق جداً لدرجة أنه حتى لا يكلمني، وينام بعد العلاقة مباشرة حتى وإن كان “لسه صاحي من النوم”..</div>
+                    <div class="qa-btn-div">
+                      <a href="discussions.html#story-3" class="qa-btn">
+                        <div class="btn-div-df">
+                          <span class="plus-icon">+</span>
+                          المزيد
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-4 mb-4">
+                    <button class="qa-btn">
+                      <div class="btn-div-df">
+                        <span class="plus-icon">+</span>
+                        المزيد
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="send-story-banner text-center">
+                  <div class="at2 mb-3">@</div>
+                  <div class="text mb-3">يمكنك إرسال قصتك عبر بريدنا الإلكتروني و سيتم<br />  الرد عليك بسرية كاملة</div>
+                  <div class="text">myear@hebakotb.net</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Container Fwbg -->
+
+      </div>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="footer-upper">
+            <div class="footer-logo">
+              <span>Simply Happy</span> <br /> By Dr. Heba Kotb 
+            </div>
+            <div class="footer-links">
+              <div class="footer-links-1">
+                <a href="#" class="footer-link">الرئيسية</a>
+                <a href="#" class="footer-link">عن د.هبة قطب</a>
+                <a href="#" class="footer-link">ماذا نقدم </a>
+                <a href="#" class="footer-link">الإستشارات الطبية </a>
+              </div>
+              <div class="footer-links-2">
+                <a href="#" class="footer-link">برامج تدريبية</a>
+                <a href="#" class="footer-link">مقالات </a>
+                <a href="#" class="footer-link">المجلة </a>
+                <a href="#" class="footer-link">فيديو</a>
+              </div>
+              <div class="footer-links-3">
+                <a href="#" class="footer-link">الأجندة </a>
+                <a href="#" class="footer-link">تواصل معنا</a>
+              </div>
+            </div>
+            <div class="footer-contact">
+              <div class="title mb-4">الأخبار</div>
+              <div class="contact-form mb-5">
+                <input type="text" placeholder="بريدك الإلكتروني هنا " />
+                <button class="subscribe-btn">
+                  <div class="d-flex align-items-center">
+                    اشترك
+                    <span class="icon-arrow-left icon"></span>
+                  </div>
+                </button>
+              </div>
+              <div class="footer-socialmedia">
+                <div class="social-text">تابعونا</div>
+                <div class="socialmedia">
+                  <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i> </a>
+                  <a href="#" class="footer-social"><i class="fab fa-youtube"></i> </a>
+                  <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-text">كل الحقوق محفوظة2021 </div>
+            <div class="footer-bottom-text">Designed by Director Studio </div>
+            <div class="footer-bottom-text">Simply Happy By Dr. Heba Kotb ©</div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Jquery V 3.3.1 -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap V 4.3.1 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Functions -->
+    <script src="assets/js/functions.js"></script>
+    <script>
+      $(document).ready(() => {
+        if (window.location.hash) {
+          // $(".qa-row").removeClass('active');
+          $(window.location.hash).addClass('active').siblings('.qa-row').removeClass('active');
+        } else {
+          $(".qa-row").removeClass('active');
+        }
+      });
+    </script>
+  </body>
+</html>

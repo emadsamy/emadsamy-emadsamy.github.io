@@ -106,14 +106,18 @@ ul {
 .nav-content,
 nav,
 .icon-arrow-right:before,
-.nv-link {
+.nv-link,
+.qa-row .answer-body,
+.wwd-clickable:after,
+.wwd-clickable .icon {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.navbar-container {
+.navbar-container,
+.wwd-dropdown {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -229,6 +233,12 @@ input[type="file"] {
   font-weight: 600;
   font-size: 20px;
 }
+.sub-title {
+  font-size: 26px;
+  color: #454141;
+  font-weight: 600;
+  line-height: 1.6;
+}
 .text {
   font-size: 15px;
   line-height: 1.2;
@@ -257,6 +267,12 @@ input[type="file"] {
 small {
   color: #333;
   font-weight: 600;
+}
+.body-text {
+  font-weight: 600;
+  font-size: 21px;
+  color: #343434;
+  line-height: 1.6;
 }
 
 .divider {
@@ -616,7 +632,7 @@ nav.active {
   justify-content: space-between;
 }
 .med-cons-banner > div {
-  width: 48%;
+  width: 48.5%;
 }
 .med-cons-data {
   text-align: right;
@@ -628,6 +644,7 @@ nav.active {
 }
 .med-cons-view img {
   height: 345px;
+  border-radius: 55px;
 }
 .asterisk-icon {
   width: 64px;
@@ -1198,6 +1215,7 @@ footer {
   border-radius: 47px;
   border: 1px solid #eaeaea;
   padding: 70px;
+  position: relative;
 }
 .tell-story-form {
   width: 580px;
@@ -1227,7 +1245,223 @@ footer {
   font-size: 18px;
   resize: none;
 }
+.tell-stroy-submit {
+  border: 2px solid #d0086b;
+  border-radius: 8px;
+  color: #d0086b;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 9px;
+}
+.tell-stroy-submit:hover {
+  background: #d0086b;
+  color: #fff;
+}
+.tell-stroy-submit:active {
+  border: 2px solid #b2095c;
+  background: #b2095c;
+  color: #fff;
+}
+.tell-story-char {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: -7px;
+  height: 704px;
+  max-width: 100%;
+}
+.stories-text {
+  padding: 150px 0 90px;
+}
+.stories-text .body {
+  font-size: 19px;
+  font-weight: 600;
+  color: #404040;
+  line-height: 1.6;
+}
+.stories-discussions {
+  border-top: 5px solid #085aae;
+}
+.send-story-banner {
+  padding: 35px;
+  border-radius: 40px;
+  background: #1349cd;
+  color: #fff;
+  margin-top: 70px;
+}
+.at2 {
+  font-size: 55px;
+  line-height: 1;
+}
+.send-story-banner .text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.stories-discussions .qa-row .question-title {
+  color: #04468b;
+}
+.stories-discussions .qa-row .answer-body {
+  height: 49.5px;
+  overflow: hidden;
+}
+.stories-discussions .qa-row.active .answer-body {
+  height: auto;
+  overflow: visible;
+}
 /* Discussions Page */
+
+/* What We Do Page */
+.what-we-do-container {
+  padding: 60px 0 100px;
+}
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.wwd-card {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #b1b1b1;
+  border-radius: 46px;
+  overflow: hidden;
+}
+.wwd-card:nth-of-type(even) {
+  flex-direction: column-reverse;
+}
+.wwd-card:nth-of-type(even) .wwd-clickable {
+  border-bottom: 1px solid #b1b1b1;
+  border-top: none;
+}
+.wwd-content {
+  position: relative;
+  overflow: hidden;
+}
+.wwd-dropdown {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  left: 0;
+  top: 100%;
+  padding: 35px;
+  text-align: right;
+}
+.wwd-card.active .wwd-dropdown {
+  top: 0 !important;
+}
+.wwd-card:nth-of-type(even) .wwd-dropdown {
+  top: auto;
+  bottom: 100%;
+}
+.wwd-card.active:nth-of-type(even) .wwd-dropdown {
+  bottom: 0 !important;
+  top: auto !important;
+}
+.wwd-clickable {
+  border-top: 1px solid #b1b1b1;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 46px 46px;
+}
+.wwd-card:nth-of-type(even) .wwd-clickable {
+  border-radius: 46px 46px 0 0 !important;
+}
+.wwd-clickable:after {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: -1.5px;
+  width: 100%;
+  height: 3px;
+  background: #1e6ca5;
+}
+.wwd-card:nth-of-type(even) .wwd-clickable:after {
+  bottom: -1.5px;
+  top: auto;
+}
+.wwd-clickable:hover:after,
+.wwd-card.active .wwd-clickable:after {
+  left: 0;
+}
+.wwd-clickable .icon {
+  font-weight: 600;
+  font-size: 23px;
+  display: inline-block;
+}
+.wwd-card.active .wwd-clickable .icon {
+  transform: rotateZ(45deg);
+  color: #000 !important;
+}
+.wwd-clickable .bg-title {
+  color: #1e6ca5;
+  font-size: 36px;
+}
+.wwd-medical-consulting .med-cons-banner {
+  padding: 0;
+}
+.wwd-medical-consulting .med-cons-data {
+  padding: 50px;
+}
+.wwd-medical-consulting .med-cons-view {
+  padding: 5px;
+}
+.wwd-medical-consulting .med-cons-view img {
+  border-radius: 45px 0 0 45px;
+  height: 100%;
+  max-height: 400px;
+}
+.our-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.service-card {
+  border: 1px solid #b1b1b1;
+  border-radius: 17px;
+  padding: 55px 17px;
+}
+.service-card .title {
+  color: #0b389c;
+  font-size: 33px;
+  font-weight: bold;
+}
+.nutrition-content {
+  display: flex;
+  justify-content: space-between;
+}
+.nutrition-content > div {
+  width: 48.5%;
+}
+.nutrition-details {
+  text-align: right;
+}
+.nutrition-details .bg-title {
+  color: #07b5de;
+  font-size: 57px;
+}
+.nut-row {
+  display: flex;
+  align-items: center;
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+.nut-row-circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e3e3e3;
+  margin-left: 18px;
+}
+/* What We Do Page */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
