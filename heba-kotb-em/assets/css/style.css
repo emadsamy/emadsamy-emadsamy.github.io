@@ -544,6 +544,10 @@ nav.active {
   font-size: 23px;
   font-weight: 600;
 }
+.page-header-view {
+  border-radius: 31px;
+  border: 1px solid #bfd2fc;
+}
 .swiper-header * {
   text-align: right;
 }
@@ -605,7 +609,7 @@ nav.active {
   justify-content: space-between;
 }
 .program-training-view {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .program-training-card-title {
@@ -1068,9 +1072,13 @@ footer {
   grid-gap: 12.52rem;
   gap: 30px;
 }
+.article-card {
+  border: 1px solid #b1b1b1;
+  border-radius: 25px;
+  overflow: hidden;
+}
 .article-c-view {
   width: 100%;
-  height: 292px;
 }
 .article-card-title {
   font-size: 22px;
@@ -1079,8 +1087,7 @@ footer {
   margin-bottom: 13px;
 }
 .article-card-data {
-  border: 1px solid #b1b1b1;
-  border-top: none;
+  border-top: 1px solid #b1b1b1;
   padding: 24px 35px;
   border-radius: 0 0 25px 25px;
   text-align: right;
@@ -1608,7 +1615,7 @@ footer {
     margin: 0 auto;
   }
   .content-fwbg {
-    padding: 25px;
+    padding: 45px 25px;
   }
 
   /* Footer */
@@ -1657,8 +1664,11 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-  /* Home Page */
+  .page-header-view {
+    height: auto;
+  }
 
+  /* Home Page */
   /* Slider */
   .slider-card {
     background-size: cover;
@@ -1753,6 +1763,24 @@ footer {
     padding: 15px 13px;
   }
   /* Home Page */
+
+  /* Trainings Programs Page */
+  .tra-pro-cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .tra-pro-cards .program-training-view {
+    margin-bottom: 20px;
+  }
+  /* Trainings Programs Page */
+
+  /* Articles Page */
+  .articles-cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .article-c-view {
+    height: auto;
+  }
+  /* Articles Page */
 }
 
 @media (max-width: 1199.98px) {
@@ -1872,6 +1900,9 @@ footer {
   .content-fwbg {
     padding: 45px 30px;
   }
+  .page-header-view {
+    height: auto;
+  }
 
   /* Navbar */
   .nav-logo img {
@@ -1950,8 +1981,24 @@ footer {
   .schedule-content .sd-bg {
     padding: 40px 27px;
   }
-
   /* Home */
+
+  /* Trainings Programs Page */
+  .tra-pro-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  /* Trainings Programs Page */
+
+  /* Articles Page */
+  .articles-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .article-c-view {
+    height: 207px;
+  }
+  /* Articles Page */
 
   /* Footer */
   .footer-logo,
@@ -1965,6 +2012,9 @@ footer {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .container-fluid {
     max-width: 960px;
+  }
+  .page-header-view {
+    height: auto;
   }
 
   /* Navbar */
@@ -2035,8 +2085,23 @@ footer {
   .avm-card img {
     height: 72px;
   }
-
   /* Home */
+
+  /* Trainings Programs Page */
+  .tra-pro-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Trainings Programs Page */
+
+  /* Articles Page */
+  .articles-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .article-c-view {
+    height: 285px;
+  }
+  /* Articles Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -2079,6 +2144,12 @@ footer {
     font-size: 21px;
   }
   /* Home */
+
+  /* Trainings Programs Page */
+  .tra-pro-cards {
+    gap: 35px;
+  }
+  /* Trainings Programs Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
