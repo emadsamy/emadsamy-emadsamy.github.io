@@ -1142,7 +1142,7 @@ footer {
   color: #393939;
 }
 .contact-submit {
-  border: 3px solid #d0086b;
+  border: 2px solid #d0086b;
   color: #d0086b;
   width: 100%;
   font-size: 24px;
@@ -1154,7 +1154,7 @@ footer {
   color: #fff;
 }
 .contact-submit:active {
-  border: 3px solid #b2095c;
+  border: 2px solid #b2095c;
   background: #b2095c;
   color: #fff;
 }
@@ -1781,6 +1781,15 @@ footer {
     height: auto;
   }
   /* Articles Page */
+
+  /* Contact Us Page */
+  .contact-info {
+    margin-bottom: 70px;
+  }
+  .contact-dh-text {
+    margin-bottom: 90px;
+  }
+  /* Contact Us Page */
 }
 
 @media (max-width: 1199.98px) {
@@ -2006,6 +2015,14 @@ footer {
     margin-bottom: 24px;
   }
   /* Footer */
+  /* Contact Us Page */
+  .contact-info {
+    margin-bottom: 70px;
+  }
+  .contact-dh-text {
+    margin-bottom: 90px;
+  }
+  /* Contact Us Page */
 }
 
 /* Large devices (desktops, 992px and up) */
