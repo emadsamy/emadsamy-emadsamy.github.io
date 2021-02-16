@@ -43,15 +43,15 @@
                 />
               </a>
             </div>
-            <div class="nav-links">
+            <div id="navLinks" class="nav-links">
               <div class="nav-links-content">
                 <a href="index.html"
-                  class="nav-link"
+                  class="nav-link active"
                   >الرئيسية</a
                 >
   
                 <a href="about.html"
-                  class="nav-link active"
+                  class="nav-link"
                   >عن د.هبة قطب</a
                 >
   
@@ -91,21 +91,20 @@
                   <span class="icon-user icon"></span>
                 </a>
               </div>
-  
-              <div id="menuBtn" class="menu-btn">
-                <div v-if="!toggleMenu">
-                  <span class="top-bar"></span>
-                  <span class="middle-bar"></span>
-                  <span class="bottom-bar"></span>
-                </div>
-                <!-- <div class="icon-exit-menu">
-                  <div class="icon-cancel icon"></div>
-                </div> -->
-              </div>
               <button class="d-flex align-items-center change-lang-btn">
                 <span class="lang-span">EN</span>
                 <span class="icon-globe icon"></span>
               </button>
+              <div id="menuBtn" class="menu-btn">
+                <div class="toggleMenu">
+                  <span class="top-bar"></span>
+                  <span class="middle-bar"></span>
+                  <span class="bottom-bar"></span>
+                </div>
+                <div class="icon-exit-menu text-center">
+                  <div class="icon-cancel icon"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

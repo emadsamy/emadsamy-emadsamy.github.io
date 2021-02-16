@@ -1209,7 +1209,7 @@ footer {
   margin-left: 27px;
 }
 .prvide-sidebar-header {
-  border-bottom: 1px solid #5f5f5f;
+  border-bottom: 1px solid #a3a3a3;
   padding-bottom: 27px;
 }
 .prvide-sidebar-header .btn-corner {
@@ -1223,7 +1223,7 @@ footer {
 }
 .prvide-sidebar-details {
   padding: 17px 0;
-  border-bottom: 1px solid #5f5f5f;
+  border-bottom: 1px solid #a3a3a3;
 }
 .prvide-sidebar-details .body {
   font-size: 19px;
@@ -1300,7 +1300,7 @@ footer {
   bottom: 0;
   left: 0;
   bottom: -7px;
-  height: 704px;
+  height: 612px;
   max-width: 100%;
 }
 .stories-text {
@@ -1354,6 +1354,9 @@ footer {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 12.52rem;
   gap: 30px;
+}
+.what-we-do-sim-happ img {
+  border-radius: 33px;
 }
 .wwd-card {
   display: flex;
@@ -1458,6 +1461,9 @@ footer {
   border: 1px solid #b1b1b1;
   border-radius: 17px;
   padding: 55px 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .service-card .title {
   color: #0b389c;
@@ -1487,11 +1493,12 @@ footer {
   margin-bottom: 13px;
 }
 .nut-row-circle {
-  width: 9px;
-  height: 9px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: #e3e3e3;
   margin-left: 18px;
+  display: block;
 }
 /* What We Do Page */
 
@@ -1790,6 +1797,84 @@ footer {
     margin-bottom: 90px;
   }
   /* Contact Us Page */
+
+  /* View Programs Page */
+  .row-prvide .prvide-list-col:last-of-type {
+    margin-bottom: 70px;
+  }
+  .prvide-sidebar-details:last-of-type {
+    border: none;
+  }
+  /* View Programs Page */
+
+  /* About Page */
+  .awards-recognitions {
+    flex-wrap: wrap;
+  }
+  .awards-recognitions > div {
+    width: 100%;
+  }
+  .awre-details {
+    margin-bottom: 35px;
+  }
+  .about-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .about-card {
+    padding: 60px 30px;
+  }
+  .about-card img {
+    height: 80px;
+  }
+  /* About Page */
+
+  /* What We Do Page */
+  .what-we-do-sim-happ img {
+    border-radius: 10px;
+  }
+  .what-we-do-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .wwd-clickable .bg-title {
+    font-size: 28px;
+  }
+  .wwd-card:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .wwd-card:nth-of-type(even) .wwd-clickable {
+    border-top: 1px solid #b1b1b1;
+    border-bottom: none;
+    border-radius: 0 0 46px 46px !important;
+  }
+  .wwd-card:nth-of-type(even) .wwd-clickable:after {
+    bottom: auto;
+    top: -1.5px;
+  }
+  .wwd-card.active:nth-of-type(even) .wwd-dropdown {
+    bottom: auto !important;
+    top: 0 !important;
+  }
+  .wwd-card:nth-of-type(even) .wwd-dropdown {
+    top: 100%;
+    bottom: auto;
+  }
+  .our-services-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .wwd-medical-consulting .med-cons-data {
+    padding: 30px;
+  }
+  .wwd-medical-consulting .med-cons-view img {
+    height: auto;
+    border-radius: 45px;
+  }
+  .nutrition-content {
+    flex-wrap: wrap;
+  }
+  .nutrition-content > div {
+    width: 100%;
+  }
+  /* What We Do Page */
 }
 
 @media (max-width: 1199.98px) {
@@ -2023,6 +2108,43 @@ footer {
     margin-bottom: 90px;
   }
   /* Contact Us Page */
+
+  /* View Programs Page */
+  .row-prvide .prvide-list-col:last-of-type {
+    margin-bottom: 70px;
+  }
+  .prvide-sidebar-details:last-of-type {
+    border: none;
+  }
+  /* View Programs Page */
+
+  /* About Page */
+  .about-card {
+    padding: 50px 25px;
+  }
+  .about-card img {
+    height: 70px;
+  }
+  /* About Page */
+
+  /* What We Do Page */
+  .what-we-do-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .wwd-clickable .bg-title {
+    font-size: 28px;
+  }
+  .wwd-medical-consulting .med-cons-view img {
+    border-radius: 45px;
+    height: auto;
+    max-height: auto;
+  }
+  .our-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  /* What We Do Page */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -2119,6 +2241,18 @@ footer {
     height: 285px;
   }
   /* Articles Page */
+
+  /* What We Do Page */
+  .what-we-do-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+  .wwd-medical-consulting .med-cons-view img {
+    height: 441px;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  /* What We Do Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

@@ -43,10 +43,10 @@
                 />
               </a>
             </div>
-            <div class="nav-links">
+            <div id="navLinks" class="nav-links">
               <div class="nav-links-content">
                 <a href="index.html"
-                  class="nav-link"
+                  class="nav-link active"
                   >الرئيسية</a
                 >
   
@@ -61,7 +61,7 @@
                 >
   
                 <a href="trainings-programs.html"
-                  class="nav-link active"
+                  class="nav-link"
                   >برامج تدريبية</a
                 >
   
@@ -91,21 +91,20 @@
                   <span class="icon-user icon"></span>
                 </a>
               </div>
-  
-              <div id="menuBtn" class="menu-btn">
-                <div v-if="!toggleMenu">
-                  <span class="top-bar"></span>
-                  <span class="middle-bar"></span>
-                  <span class="bottom-bar"></span>
-                </div>
-                <!-- <div class="icon-exit-menu">
-                  <div class="icon-cancel icon"></div>
-                </div> -->
-              </div>
               <button class="d-flex align-items-center change-lang-btn">
                 <span class="lang-span">EN</span>
                 <span class="icon-globe icon"></span>
               </button>
+              <div id="menuBtn" class="menu-btn">
+                <div class="toggleMenu">
+                  <span class="top-bar"></span>
+                  <span class="middle-bar"></span>
+                  <span class="bottom-bar"></span>
+                </div>
+                <div class="icon-exit-menu text-center">
+                  <div class="icon-cancel icon"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +116,7 @@
         <div class="swiper-header">
           <div class="container-fluid">
             <div class="page-header">
-              <img src="assets/img/Programs-Training/p-t-3.png" class="page-header-view object-fit-cover img-fluid" alt="" />
+              <img src="assets/img/Programs-Training/program-view.png" class="page-header-view object-fit-cover img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -136,18 +135,18 @@
               <div class="program-view-details">
                 <div class="prvide-bg-title">الخطوط العريضة للبرنامج </div>
                 <div class="row row-prvide">
-                  <div class="col-lg-9">
+                  <div class="col-lg-8">
                     <div class="prvide-list-col mb-5">
                       <div class="prvide-title">ليكي إنتي بس </div>
                       <div class="prvide-body mb-4">مرحلة إعداد العروسة</div>
                       <div class="prvide-list">
-                        <div class="prli-rw"><div class="prli-rw-circle"></div> معلومات العامة عن العلاقة الحميمة</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>كيفية تجهيز العروسة لليلة الزفاف</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>لكي تكوني أحلى عروسة:</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>إزالة الألوان الداكنة من المناطق الحساسة</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>إزالة علامات التمدد</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>تجديد بشرة الوجه وجعلها أكثر نضارة</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>إزالة الشعر غير المرغوب فيه</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div> معلومات العامة عن العلاقة الحميمة</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>كيفية تجهيز العروسة لليلة الزفاف</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>لكي تكوني أحلى عروسة:</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>إزالة الألوان الداكنة من المناطق الحساسة</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>إزالة علامات التمدد</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>تجديد بشرة الوجه وجعلها أكثر نضارة</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>إزالة الشعر غير المرغوب فيه</div>
                       </div>
                     </div>
 
@@ -155,14 +154,14 @@
                       <div class="prvide-title">ليك إنت بس</div>
                       <div class="prvide-body mb-4">مرحلة إعداد العريس</div>
                       <div class="prvide-list">
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>دروس في المعلومات العامة عن العلاقة الحميمة</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>كشف شامل وعام لتقييم الوظيفة الجنسية</div>
-                        <div class="prli-rw"><div class="prli-rw-circle"></div>تجهيز العريس لليلة الزفاف</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>دروس في المعلومات العامة عن العلاقة الحميمة</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>كشف شامل وعام لتقييم الوظيفة الجنسية</div>
+                        <div class="prli-rw"><div><div class="prli-rw-circle"></div></div>تجهيز العريس لليلة الزفاف</div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                     <div class="prvide-sidebar">
                         <div class="prvide-sidebar-header d-flex align-items-center justify-content-between">
                           <div class="sm-title">التسجيل </div>
