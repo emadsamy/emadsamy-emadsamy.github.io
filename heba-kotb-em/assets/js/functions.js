@@ -47,3 +47,17 @@ $(document).ready(() => {
     }
   });
 });
+
+$(document).ready(function () {
+  var minusHeight = $("#footer").innerHeight();
+  $("#wrapperContainer, .auth-container").css(
+    "minHeight",
+    "calc(100vh - " + minusHeight + "px)"
+  );
+  $(window).on("resize", function () {
+    $("#wrapperContainer, .auth-container").css(
+      "minHeight",
+      "calc(100vh - " + minusHeight + "px)"
+    );
+  });
+});

@@ -87,6 +87,9 @@ button {
 button {
   cursor: pointer;
 }
+button:disabled {
+  cursor: not-allowed;
+}
 
 a,
 a:hover,
@@ -200,6 +203,7 @@ nav,
   outline: none;
   background: none;
   border: none;
+  box-shadow: none;
 }
 
 input[type="file"] {
@@ -1650,6 +1654,96 @@ footer {
 }
 /* Video Page */
 
+/* Auth Page */
+.auth-content {
+  width: 480px !important;
+  max-width: 100%;
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0px 2px 2px #00000017;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  text-align: right;
+}
+.auth-content .title {
+  font-size: 37px;
+  font-weight: bold;
+  color: #61a2d7;
+  margin-bottom: 10px;
+}
+.auth-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 18px;
+  padding: 50px 33px;
+}
+.dont-have-text {
+  padding-top: 15px;
+  color: #707070;
+  font-size: 19px;
+  font-weight: 600;
+}
+.dont-have-text a {
+  color: #61a2d7;
+  font-weight: 600;
+  font-size: 19px;
+}
+.select-country {
+  border: none;
+  min-width: 20%;
+  padding-bottom: 0;
+  color: #8d8d8d;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  top: 4px;
+}
+.main-bt-primary {
+  padding: 12px;
+  font-weight: bold;
+  background: #61a2d7;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+  width: 100%;
+  font-size: 21px;
+}
+.main-bt-primary:hover {
+  background: #4890ca;
+}
+.main-bt-primary:active {
+  opacity: 0.6;
+}
+.auth-content .input-group {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a8a8a8;
+  position: relative;
+}
+.auth-content .input-group .cc-label {
+  position: relative;
+  top: 5px;
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+.auth-content .form-control::placeholder {
+  color: #8d8d8d;
+  font-size: 19px;
+}
+.auth-content .form-control {
+  padding: 3px 0;
+  color: #000;
+  font-size: 21px;
+}
+.center-vertically {
+  padding-bottom: 70px;
+}
+.auth-container {
+  display: flex;
+  place-items: center;
+}
+/* Auth Page */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .container-fluid {
@@ -1712,6 +1806,21 @@ footer {
     text-align: center;
   }
   /* Footer */
+
+  /* Auth Page */
+  .auth-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .auth-content {
+    padding: 50px 30px;
+  }
+  .auth-box {
+    border-radius: 18px;
+    padding: 30px 0;
+    border: none;
+  }
+  /* Auth Page */
 }
 
 @media (max-width: 767.98px) {
