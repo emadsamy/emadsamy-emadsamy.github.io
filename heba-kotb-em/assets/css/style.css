@@ -810,10 +810,25 @@ nav.active {
   border-radius: 36px;
   padding: 40px;
   display: none;
+  text-align: right;
 }
 /* .main-sd-view {
   display: none;
 } */
+.main-sd-view .title {
+  font-size: 30px;
+  color: #98999d;
+}
+.main-sd-view .bg-title {
+  color: #3dbae8;
+  font-size: 49px !important;
+}
+.main-sd-view .body {
+  font-size: 21px;
+  color: #5c5c5c;
+  font-weight: 600;
+  line-height: 1.6;
+}
 .sd-bg.active {
   display: block !important;
 }
@@ -1692,6 +1707,10 @@ footer {
     font-size: 15px;
     font-weight: 600;
   }
+  .footer-bottom-text:last-of-type {
+    width: 100%;
+    text-align: center;
+  }
   /* Footer */
 }
 
@@ -1700,16 +1719,45 @@ footer {
     height: auto;
   }
 
+  /* Footer */
+  .footer-bottom {
+    padding: 15px 0;
+  }
+  /* Footer */
+
   /* Home Page */
   /* Slider */
   .slider-card {
     background-size: cover;
+    background-position: left;
+    padding: 0;
+    height: auto;
+    display: block;
   }
   .slca-img {
-    left: 50%;
+    /* left: 50%;
     bottom: 0px;
     width: 315px;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    transform: none;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 370px;
+  }
+  .slca-data {
+    padding: 60px 30px 14px;
+  }
+  .slca-bg-title {
+    line-height: 1.2;
+    font-size: 37px;
+  }
+  .slca-text {
+    font-size: 19px;
+    margin-bottom: 1.5rem !important;
   }
 
   /* Trainings Programs */
@@ -1777,6 +1825,18 @@ footer {
   }
   .schedule-content {
     flex-wrap: wrap;
+  }
+  .schedule-content .sd-bg {
+    padding: 40px 25px;
+  }
+  .main-sd-view .bg-title {
+    font-size: 41px !important;
+  }
+  .main-sd-view .body {
+    margin-bottom: 1.9rem !important;
+  }
+  .main-sd-view .bg-title {
+    margin-bottom: 1rem !important;
   }
   .schedule-content > div {
     width: 100%;
@@ -1935,11 +1995,17 @@ footer {
 
   /* Video Page */
   .video-char-view {
-    display: none;
+    display: block;
+    position: relative;
+    height: 495px;
+    width: auto;
+    left: 0;
+    margin: auto;
+    transform: none;
   }
   .video-header-details {
     margin-top: 0;
-    padding: 70px 42px;
+    padding: 70px 42px 30px;
   }
   .video-header-details .bg-title {
     font-size: 50px;
@@ -2098,6 +2164,38 @@ footer {
   /* Navbar */
 
   /* Home */
+  /* Slider */
+  .slider-card {
+    background-size: cover;
+    background-position: left;
+    padding: 0;
+    height: auto;
+    display: block;
+  }
+  .slca-img {
+    /* left: 50%;
+    bottom: 0px;
+    width: 315px;
+    transform: translateX(-50%); */
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    transform: none;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 380px;
+  }
+  .slca-data {
+    padding: 60px 30px 14px;
+  }
+  .slca-bg-title {
+    line-height: 1;
+  }
+  .slca-text {
+    margin-bottom: 1.5rem !important;
+  }
+
   /* Trainings Programs */
   .program-training-view {
     width: 100%;
