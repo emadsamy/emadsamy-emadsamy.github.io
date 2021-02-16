@@ -1298,10 +1298,9 @@ footer {
 }
 .tell-story-char {
   position: absolute;
+  left: 70px;
   bottom: 0;
-  left: 0;
-  bottom: -7px;
-  height: 612px;
+  height: 640px;
   max-width: 100%;
 }
 .stories-text {
@@ -1876,6 +1875,38 @@ footer {
     width: 100%;
   }
   /* What We Do Page */
+
+  /* Discussions Page */
+  .discussion-title-img {
+    width: 50px;
+  }
+  .discs-page-title {
+    font-size: 25px;
+  }
+  .tell-story-char {
+    display: none;
+  }
+  .tell-story-bg {
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none !important;
+  }
+  .tell-story-bg .form-row {
+    margin: 0;
+  }
+  .tell-story-form {
+    padding: 45px 12px;
+  }
+  .stories-text img {
+    width: 85px;
+  }
+  .stories-text .bg-title {
+    font-size: 31px;
+    margin-bottom: 1.1rem !important;
+  }
+  /* Discussions Page */
 }
 
 @media (max-width: 1199.98px) {
@@ -2146,6 +2177,19 @@ footer {
     gap: 20px;
   }
   /* What We Do Page */
+
+  /* Discussions Page */
+  .tell-story {
+    padding-top: 50px;
+  }
+  .tell-story-char {
+    display: none;
+  }
+  .tell-story-bg {
+    height: auto;
+    padding: 50px;
+  }
+  /* Discussions Page */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -2254,6 +2298,20 @@ footer {
     object-fit: cover;
   }
   /* What We Do Page */
+
+  /* Discussions Page */
+  .tell-story-char {
+    left: 40px;
+    height: 468px;
+  }
+  .tell-story-bg {
+    padding: 70px 35px;
+  }
+  .tell-story-form {
+    width: 420px;
+    padding: 45px 20px;
+  }
+  /* Discussions Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -2302,6 +2360,17 @@ footer {
     gap: 35px;
   }
   /* Trainings Programs Page */
+
+  /* Discussions Page */
+  .tell-story-char {
+    left: 33px;
+    height: 550px;
+  }
+  .tell-story-form {
+    width: 500px;
+    padding: 45px 30px;
+  }
+  /* Discussions Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

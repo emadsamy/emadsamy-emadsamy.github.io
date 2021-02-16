@@ -43,10 +43,10 @@
                 />
               </a>
             </div>
-            <div class="nav-links">
+            <div id="navLinks" class="nav-links">
               <div class="nav-links-content">
                 <a href="index.html"
-                  class="nav-link"
+                  class="nav-link active"
                   >الرئيسية</a
                 >
   
@@ -71,7 +71,7 @@
                 >
   
                 <a href="articles.html"
-                  class="nav-link active"
+                  class="nav-link"
                   >مقالات </a
                 >
 
@@ -91,21 +91,20 @@
                   <span class="icon-user icon"></span>
                 </a>
               </div>
-  
-              <div id="menuBtn" class="menu-btn">
-                <div v-if="!toggleMenu">
-                  <span class="top-bar"></span>
-                  <span class="middle-bar"></span>
-                  <span class="bottom-bar"></span>
-                </div>
-                <!-- <div class="icon-exit-menu">
-                  <div class="icon-cancel icon"></div>
-                </div> -->
-              </div>
               <button class="d-flex align-items-center change-lang-btn">
                 <span class="lang-span">EN</span>
                 <span class="icon-globe icon"></span>
               </button>
+              <div id="menuBtn" class="menu-btn">
+                <div class="toggleMenu">
+                  <span class="top-bar"></span>
+                  <span class="middle-bar"></span>
+                  <span class="bottom-bar"></span>
+                </div>
+                <div class="icon-exit-menu text-center">
+                  <div class="icon-cancel icon"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -127,7 +126,7 @@
         <div class="container-fwbg">
           <div class="container-fluid">
             <div class="content-fwbg">
-              <div class="bg-title d-flex align-items-center justify-content-center dir-ltr pink-color mb-5 text-center">اسأل د. هبة <img src="assets/img/icons/discussion.svg" class="discussion-title-img ml-4 mr-4 img-fluid" alt="" /></div>
+              <div class="bg-title discs-page-title d-flex align-items-center justify-content-center dir-ltr pink-color mb-5 text-center">اسأل د. هبة <img src="assets/img/icons/discussion.svg" class="discussion-title-img ml-4 img-fluid" alt="" /></div>
               <div class="border-corner" style="background: #F5F5F5;"></div>
               
               <div class="tell-story">

@@ -21,7 +21,7 @@
 //     }
 // });
 $(document).ready(() => {
-  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 40 + "px");
+  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 30 + "px");
 
   // Home Tabs
   $(".schedule-card-btn").on("click", function () {
