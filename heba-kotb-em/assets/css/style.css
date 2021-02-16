@@ -742,7 +742,7 @@ nav.active {
   color: #504d4d;
   font-size: 17px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 12px;
 }
 .qa-btn div {
@@ -1339,11 +1339,11 @@ footer {
 .stories-discussions .qa-row .question-title {
   color: #04468b;
 }
-.stories-discussions .qa-row .answer-body {
-  height: 49.5px;
+.stories-discussions .qa-row .answer-accordion {
+  height: 72px;
   overflow: hidden;
 }
-.stories-discussions .qa-row.active .answer-body {
+.stories-discussions .qa-row.active .answer-accordion {
   height: auto;
   overflow: visible !important;
 }
@@ -1655,6 +1655,7 @@ footer {
     min-width: auto;
     max-width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
   .footer-links > div {
     width: 49%;
