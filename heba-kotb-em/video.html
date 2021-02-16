@@ -36,24 +36,48 @@
         <div class="navbar">
           <div class="nav-logo">
             <a href="index.html">
-              <img src="assets/img/logo.png" class="img-fluid" />
+              <img
+                src="assets/img/logo.png"
+                class="img-fluid"
+              />
             </a>
           </div>
-          <div class="nav-links">
+          <div id="navLinks" class="nav-links">
             <div class="nav-links-content">
-              <a href="index.html" class="nav-link">الرئيسية</a>
+              <a href="index.html"
+                class="nav-link active"
+                >الرئيسية</a
+              >
 
-              <a href="about.html" class="nav-link">عن د.هبة قطب</a>
+              <a href="about.html"
+                class="nav-link"
+                >عن د.هبة قطب</a
+              >
 
-              <a href="what-we-do.html" class="nav-link">ماذا نقدم </a>
+              <a href="what-we-do.html"
+                class="nav-link"
+                >ماذا نقدم </a
+              >
 
-              <a href="trainings-programs.html" class="nav-link">برامج تدريبية</a>
+              <a href="trainings-programs.html"
+                class="nav-link"
+                >برامج تدريبية</a
+              >
 
-              <a href="video.html" class="nav-link active">فيديو</a>
+              <a href="video.html"
+                class="nav-link"
+                >فيديو</a
+              >
 
-              <a href="articles.html" class="nav-link">مقالات </a>
+              <a href="articles.html"
+                class="nav-link"
+                >مقالات </a
+              >
 
-              <a href="contact.html" class="nav-link">تواصل معنا </a>
+              <a href="contact.html"
+                class="nav-link"
+                >تواصل معنا </a
+              >
             </div>
           </div>
           <div class="nav-btns d-flex align-items-center">
@@ -66,21 +90,20 @@
                 <span class="icon-user icon"></span>
               </a>
             </div>
-
-            <div id="menuBtn" class="menu-btn">
-              <div v-if="!toggleMenu">
-                <span class="top-bar"></span>
-                <span class="middle-bar"></span>
-                <span class="bottom-bar"></span>
-              </div>
-              <!-- <div class="icon-exit-menu">
-                  <div class="icon-cancel icon"></div>
-                </div> -->
-            </div>
             <button class="d-flex align-items-center change-lang-btn">
               <span class="lang-span">EN</span>
               <span class="icon-globe icon"></span>
             </button>
+            <div id="menuBtn" class="menu-btn">
+              <div class="toggleMenu">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+              </div>
+              <div class="icon-exit-menu text-center">
+                <div class="icon-cancel icon"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -114,70 +137,142 @@
               <div class="bg-title white-color mb-4">لقائات و حلقات تلفزيونية مميزة </div>
               <div class="line-hori-bg mb-2 ml-auto mb-4 mr-auto" style="background-color: #C91B71;"></div>
             </div>
-            <div class="video-program">
-              <div class="title text-right white-color mb-4">برنامج بوضوح </div>
-              <div class="video-grid">
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+
+            <div class="video-programs-container">
+
+              <div class="video-program active">
+                <div class="title text-right white-color mb-4">برنامج بوضوح </div>
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> أسرار العلاقة الزوجية</div>
-                </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> أسرار العلاقة الزوجية</div>
-                </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
                   </div>
-                  <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
-                </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
                   </div>
-                  <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
                 </div>
               </div>
-            </div>
 
-            <div class="video-program">
-              <div class="title text-right white-color mb-4">برنامج بوضوح </div>
-              <div class="video-grid">
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+              <div class="video-program active">
+                <div class="title text-right white-color mb-4">برنامج بوضوح </div>
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> أسرار العلاقة الزوجية</div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
+                  </div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
                 </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+              </div>
+
+              <div class="video-program">
+                <div class="title text-right white-color mb-4">برنامج بوضوح </div>
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> أسرار العلاقة الزوجية</div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
+                  </div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
                 </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+              </div>
+
+              <div class="video-program">
+                <div class="title text-right white-color mb-4">برنامج بوضوح </div>
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
-                </div>
-                <div class="video-card">
-                  <div class="vid-card-body">
-                    <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
-                    <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-3.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> أسرار العلاقة الزوجية</div>
                   </div>
-                  <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-1.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
+                  <div class="video-card">
+                    <div class="vid-card-body">
+                      <img src="assets/img/video/video-2.png" class="img-fluid" alt="" />
+                      <button class="play-btn"><span class="icon-play-button icon"></span></button>
+                    </div>
+                    <div class="title white-color"> حلقة خاصة للإجابة على الأسئلة الجنسية للمشاهدين</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -206,25 +301,19 @@
       <div class="container-fluid">
         <div class="footer-upper">
           <div class="footer-logo">
-            <span>Simply Happy</span> <br /> By Dr. Heba Kotb
+            <span>Simply Happy</span> <br /> By Dr. Heba Kotb 
           </div>
           <div class="footer-links">
-            <div class="footer-links-1">
-              <a href="#" class="footer-link">الرئيسية</a>
-              <a href="#" class="footer-link">عن د.هبة قطب</a>
-              <a href="#" class="footer-link">ماذا نقدم </a>
-              <a href="#" class="footer-link">الإستشارات الطبية </a>
-            </div>
-            <div class="footer-links-2">
-              <a href="#" class="footer-link">برامج تدريبية</a>
-              <a href="#" class="footer-link">مقالات </a>
-              <a href="#" class="footer-link">المجلة </a>
-              <a href="#" class="footer-link">فيديو</a>
-            </div>
-            <div class="footer-links-3">
-              <a href="#" class="footer-link">الأجندة </a>
-              <a href="#" class="footer-link">تواصل معنا</a>
-            </div>
+            <div><a href="#" class="footer-link">الرئيسية</a></div>
+            <div><a href="#" class="footer-link">عن د.هبة قطب</a></div>
+            <div><a href="#" class="footer-link">ماذا نقدم </a></div>
+            <div><a href="#" class="footer-link">الإستشارات الطبية </a></div>
+            <div><a href="#" class="footer-link">برامج تدريبية</a></div>
+            <div><a href="#" class="footer-link">مقالات </a></div>
+            <div><a href="#" class="footer-link">المجلة </a></div>
+            <div><a href="#" class="footer-link">فيديو</a></div>
+            <div><a href="#" class="footer-link">الأجندة </a></div>
+            <div><a href="#" class="footer-link">تواصل معنا</a></div>
           </div>
           <div class="footer-contact">
             <div class="title mb-4">الأخبار</div>
@@ -273,40 +362,13 @@
   <script src="assets/js/functions.js"></script>
 
   <script>
-
-    // Swiper Header
-    const swiper = new Swiper('.swiperHomeHeader', {
-      // Optional parameters
-      direction: 'horizontal',
-      spaceBetween: 20,
-      loop: false,
-      speed: 600,
-      autoplay: {
-        delay: 10000,
-      },
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination-1',
-        clickable: true
-      },
-    });
-
-    // Swiper Training Programs
-    const swiper2 = new Swiper('.swiperTrainingPrograms', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      speed: 600,
-      slidesPerView: 3,
-      spaceBetween: 45,
-      autoplay: {
-        delay: 10000,
-      },
-      navigation: {
-        nextEl: '#arrowNext',
-        prevEl: '#arrowPrev',
-      },
+    var counter = 2;
+    $('.more-videos-btn').on('click', function () {
+      counter = counter + 1;
+      $('.video-program:nth-of-type(' + counter + ')').addClass('active');
+      if ($('.video-program:last-of-type').hasClass("active")) {
+        $(this).attr('style', 'display: none !important');
+      }
     });
   </script>
 </body>

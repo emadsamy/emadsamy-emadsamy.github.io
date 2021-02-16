@@ -188,12 +188,17 @@
 
                       كنت أحاول في أول الأمر أن أعامله بالمثل وأتظاهر بالنوم لأتجنب العلاقة معه، ولكني خفت من ارتكاب الحرام، كما أنني أستمتع فعلاً مع زوجي، ولكن إرهاقه لهذه الدرجة ونومه بعدها يضايقني كثيراً ويشعرني بالإهانة..</div>
                     <div class="qa-btn-div">
-                      <a href="discussions.html#story-1" class="qa-btn">
-                        <div class="btn-div-df">
+                      <button class="qa-btn">
+                        <div class="btn-div-df qa-btn-open">
                           <span class="plus-icon">+</span>
                           المزيد
                         </div>
-                      </a>
+
+                        <div class="btn-div-df qa-btn-close black-color">
+                          <span class="icon-chevron-left icon-chevronUP pink-color"></span>
+                          إغلاق
+                        </div>
+                      </button>
                     </div>
                   </div>
 
@@ -204,12 +209,17 @@
                       صديقتنا العروس الصغيرة الجميلة… هناك تباين كبير جداً يا عزيزتي بين كل رجل وآخر، وبين قدرة كل رجل فيما يختص بالعلاقة الجنسية، وبين ميله ناحية أداء العلاقة بعدد معين وبشكل معين.. هذا من ناحية.. من ناحية أخرى، هناك قدرات جسمانية متعلقة بالطاقة البدنية، ومراحل الإرهاق، والقدرة على احتمال المجهود البدني، ورد الفعل تجاه كل ذلك.
                     </div>
                     <div class="qa-btn-div">
-                      <a href="discussions.html#story-2" class="qa-btn">
-                        <div class="btn-div-df">
+                      <button class="qa-btn">
+                        <div class="btn-div-df qa-btn-open">
                           <span class="plus-icon">+</span>
                           المزيد
                         </div>
-                      </a>
+
+                        <div class="btn-div-df qa-btn-close black-color">
+                          <span class="icon-chevron-left icon-chevronUP pink-color"></span>
+                          إغلاق
+                        </div>
+                      </button>
                     </div>
                   </div>
 
@@ -217,12 +227,17 @@
                     <div class="question-title">هل تسبب العلاقة الجنسية إرهاقا ؟</div>
                     <div class="answer-body">أنا عروسة جديدة وعمري 23 سنة، ولكن كل مشكلتي بعد العلاقة الحميمة بيني وبين زوجي، إنه بيكون مرهق جداً لدرجة أنه حتى لا يكلمني، وينام بعد العلاقة مباشرة حتى وإن كان “لسه صاحي من النوم”..</div>
                     <div class="qa-btn-div">
-                      <a href="discussions.html#story-3" class="qa-btn">
-                        <div class="btn-div-df">
+                      <button class="qa-btn">
+                        <div class="btn-div-df qa-btn-open">
                           <span class="plus-icon">+</span>
                           المزيد
                         </div>
-                      </a>
+
+                        <div class="btn-div-df qa-btn-close black-color">
+                          <span class="icon-chevron-left icon-chevronUP pink-color"></span>
+                          إغلاق
+                        </div>
+                      </button>
                     </div>
                   </div>
 
@@ -256,22 +271,16 @@
               <span>Simply Happy</span> <br /> By Dr. Heba Kotb 
             </div>
             <div class="footer-links">
-              <div class="footer-links-1">
-                <a href="#" class="footer-link">الرئيسية</a>
-                <a href="#" class="footer-link">عن د.هبة قطب</a>
-                <a href="#" class="footer-link">ماذا نقدم </a>
-                <a href="#" class="footer-link">الإستشارات الطبية </a>
-              </div>
-              <div class="footer-links-2">
-                <a href="#" class="footer-link">برامج تدريبية</a>
-                <a href="#" class="footer-link">مقالات </a>
-                <a href="#" class="footer-link">المجلة </a>
-                <a href="#" class="footer-link">فيديو</a>
-              </div>
-              <div class="footer-links-3">
-                <a href="#" class="footer-link">الأجندة </a>
-                <a href="#" class="footer-link">تواصل معنا</a>
-              </div>
+              <div><a href="#" class="footer-link">الرئيسية</a></div>
+              <div><a href="#" class="footer-link">عن د.هبة قطب</a></div>
+              <div><a href="#" class="footer-link">ماذا نقدم </a></div>
+              <div><a href="#" class="footer-link">الإستشارات الطبية </a></div>
+              <div><a href="#" class="footer-link">برامج تدريبية</a></div>
+              <div><a href="#" class="footer-link">مقالات </a></div>
+              <div><a href="#" class="footer-link">المجلة </a></div>
+              <div><a href="#" class="footer-link">فيديو</a></div>
+              <div><a href="#" class="footer-link">الأجندة </a></div>
+              <div><a href="#" class="footer-link">تواصل معنا</a></div>
             </div>
             <div class="footer-contact">
               <div class="title mb-4">الأخبار</div>
@@ -323,11 +332,21 @@
     <script>
       $(document).ready(() => {
         if (window.location.hash) {
-          // $(".qa-row").removeClass('active');
-          $(window.location.hash).addClass('active').siblings('.qa-row').removeClass('active');
+          $(window.location.hash).addClass('active').siblings().removeClass('active');
         } else {
           $(".qa-row").removeClass('active');
         }
+
+        $(".qa-btn").on('click', function () {
+
+          var btnParent = $(this).parents(".qa-row");
+
+          if (!btnParent.hasClass('active')) {
+            btnParent.addClass('active').siblings().removeClass('active');
+          } else {
+            btnParent.removeClass('active');
+          }
+        });
       });
     </script>
   </body>

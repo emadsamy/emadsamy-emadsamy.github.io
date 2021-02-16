@@ -159,6 +159,9 @@ nav,
 .white-color {
   color: #ffffff !important;
 }
+.black-color {
+  color: #000000 !important;
+}
 .main-color {
   color: #3b79a7;
 }
@@ -880,18 +883,19 @@ footer {
 }
 .footer-links {
   display: flex;
-  min-width: 500px;
+  flex-wrap: wrap;
+  width: 528px;
   text-align: right;
-  max-width: 100%;
 }
 .footer-links > div {
   width: 33%;
-  margin: 0 15px;
+  padding-left: 20px;
 }
 .footer-link {
-  display: block;
+  display: inline-block;
   color: #fff;
   font-size: 20px;
+  font-weight: 600;
   margin-bottom: 11px;
 }
 .footer-link:hover {
@@ -1341,7 +1345,24 @@ footer {
 }
 .stories-discussions .qa-row.active .answer-body {
   height: auto;
-  overflow: visible;
+  overflow: visible !important;
+}
+.qa-btn-close {
+  display: none;
+}
+.stories-discussions .qa-row.active .qa-btn-close {
+  display: flex !important;
+  align-items: center;
+}
+.stories-discussions .qa-row.active .qa-btn-open {
+  display: none !important;
+}
+.qa-row .icon-chevronUP {
+  font-size: 17px;
+  display: inline-block;
+  font-weight: bold;
+  transform: rotate(90deg);
+  margin-left: 12px;
 }
 /* Discussions Page */
 
@@ -1588,6 +1609,10 @@ footer {
 }
 .video-program {
   margin-bottom: 50px;
+  display: none;
+}
+.video-program.active {
+  display: block !important;
 }
 .more-videos-btn:hover {
   opacity: 0.7;
@@ -1634,7 +1659,6 @@ footer {
   .footer-links > div {
     width: 49%;
     margin: 0;
-    margin-bottom: 30px;
   }
   .contact-form {
     max-width: 100%;
@@ -1907,6 +1931,32 @@ footer {
     margin-bottom: 1.1rem !important;
   }
   /* Discussions Page */
+
+  /* Video Page */
+  .video-char-view {
+    display: none;
+  }
+  .video-header-details {
+    margin-top: 0;
+    padding: 70px 42px;
+  }
+  .video-header-details .bg-title {
+    font-size: 50px;
+  }
+  .video-header-content {
+    height: auto;
+  }
+  .video-char-title {
+    display: none;
+  }
+  .video-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+  }
+  .video-content {
+    padding: 80px 25px;
+  }
+  /* Video Page */
 }
 
 @media (max-width: 1199.98px) {
@@ -2190,6 +2240,31 @@ footer {
     padding: 50px;
   }
   /* Discussions Page */
+
+  /* Video Page */
+  .video-header-details {
+    padding: 70px 35px;
+  }
+  .video-char-view {
+    left: 160px;
+    height: 480px;
+  }
+  .video-header-details .bg-title {
+    font-size: 57px;
+  }
+  .video-header-content {
+    height: 555px;
+  }
+  .video-header-details {
+    margin-top: 35px;
+  }
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .video-char-title {
+    font-size: 217px;
+  }
+  /* Video Page */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -2312,6 +2387,17 @@ footer {
     padding: 45px 20px;
   }
   /* Discussions Page */
+
+  /* Video Page */
+  .video-char-view {
+    left: 52px;
+    transform: none;
+  }
+  .video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  /* Video Page */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -2371,6 +2457,22 @@ footer {
     padding: 45px 30px;
   }
   /* Discussions Page */
+
+  /* Video Page */
+  .video-char-view {
+    left: 100px;
+    transform: none;
+  }
+  /* Video Page */
+
+  /* Footer */
+  .footer-links {
+    width: 445px;
+  }
+  .contact-form input {
+    min-width: 176px;
+  }
+  /* Footer */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
