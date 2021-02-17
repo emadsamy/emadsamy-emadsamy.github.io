@@ -537,7 +537,6 @@ nav.active {
 }
 .nav-btns .us .ls-btn .icon-cancel {
   font-weight: bold;
-  /* font-size: 26px; */
 }
 .search-main-btn .icon-cancel {
   display: none;
@@ -630,7 +629,6 @@ nav.active {
   display: block;
 }
 .bottom-bar {
-  /* width: 30%; */
   width: 100%;
   bottom: 0;
 }
@@ -645,7 +643,6 @@ nav.active {
 .nav-logo img {
   width: 137px;
   transform: none;
-  /* margin-left: -12px; */
 }
 .nav-logo {
   margin-top: 0;
@@ -742,7 +739,6 @@ nav.active {
 .content-fwbg {
   padding: 50px;
   background: #fff;
-  /* border: 1px solid #666; */
   border-radius: 40px;
   box-shadow: 0px 2px 2px #00000017;
 }
@@ -781,12 +777,11 @@ nav.active {
   font-size: 18px;
   font-weight: 600;
   color: #4b4b4b;
+  text-align: right;
 }
-/* .training-programs-container .swiper-slide-next .program-training-view {
-  border: 2px solid #a1ccff;
-  background: #f0f7ff;
-  border-radius: 30px;
-} */
+.program-training-card-btn .main-normal-btn {
+  margin-right: 10px;
+}
 .more-programs-btn {
   line-height: 1;
   display: inline-block;
@@ -973,9 +968,6 @@ nav.active {
   display: none;
   text-align: right;
 }
-/* .main-sd-view {
-  display: none;
-} */
 .main-sd-view .title {
   font-size: 30px;
   color: #98999d;
@@ -1040,7 +1032,7 @@ footer {
   font-weight: 500;
   font-size: 21px;
 }
-.footer-logo span {
+.footer-logo .fo-lo-ls {
   font-size: 23px;
   letter-spacing: 1.2px;
   font-weight: 600;
@@ -1099,7 +1091,6 @@ footer {
 .contact-form input::placeholder {
   font-size: 17px;
   color: #6c6c6c;
-  /* font-weight: 600; */
 }
 .subscribe-btn {
   padding: 0 27px;
@@ -1598,7 +1589,7 @@ footer {
   border-top: 1px solid #b1b1b1;
   padding: 30px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 0 0 46px 46px;
 }
 .wwd-card:nth-of-type(even) .wwd-clickable {
@@ -2018,8 +2009,31 @@ footer {
   }
 
   /* Footer */
+  .footer-logo {
+    margin-bottom: 24px;
+    width: 100%;
+    display: flex;
+    direction: ltr;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+  .footer-contact {
+    width: 100%;
+  }
+  .footer-bottom-text {
+    line-height: 1.7;
+  }
   .footer-bottom {
-    padding: 15px 0;
+    padding: 12px 0;
+  }
+  .footer-links {
+    display: none;
+  }
+  .footer-contact .title {
+    margin-bottom: 0.6rem !important;
+  }
+  .contact-form {
+    margin-bottom: 20px !important;
   }
   /* Footer */
 
@@ -2033,10 +2047,6 @@ footer {
     display: block;
   }
   .slca-img {
-    /* left: 50%;
-    bottom: 0px;
-    width: 315px;
-    transform: translateX(-50%); */
     left: 0;
     bottom: 0px;
     width: 100%;
@@ -2231,7 +2241,7 @@ footer {
   }
   .wwd-card:nth-of-type(even) .wwd-clickable:after {
     bottom: auto;
-    top: -1.5px;
+    top: -1px;
   }
   .wwd-card.active:nth-of-type(even) .wwd-dropdown {
     bottom: auto !important;
@@ -2403,11 +2413,6 @@ footer {
   /* Navbar */
 
   /* Home Page */
-  /* Trainings Programs */
-  /* .program-training-view {
-    width: 100%;
-    height: auto;
-  } */
 
   /* Schedule */
   .schedule-tabs {
@@ -2429,7 +2434,7 @@ footer {
     flex-wrap: wrap;
   }
   .footer-bottom-text {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
   }
   .footer-bottom-text:last-of-type {
@@ -2477,10 +2482,6 @@ footer {
     display: block;
   }
   .slca-img {
-    /* left: 50%;
-    bottom: 0px;
-    width: 315px;
-    transform: translateX(-50%); */
     left: 0;
     bottom: 0px;
     width: 100%;
