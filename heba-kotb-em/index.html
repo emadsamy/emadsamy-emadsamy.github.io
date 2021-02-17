@@ -32,6 +32,46 @@
   </head>
   <body>
 
+    <!-- Search -->
+    <div id="searchContainer" class="fluid-search">
+      <div class="search-container-content">
+        <div class="search-container">
+          <div class="container-fluid">
+            <div class="search-content">
+              <div class="title">
+                عن ماذا تبحث ؟
+              </div>
+              <div class="search-input d-flex">
+                <input type="search" placeholder="بدء البحث..." />
+                <div class="icon-search icon"></div>
+                <div class="search-output">
+                  <div class="search-output-content">
+                    <div>
+                      <a href="#" class="search-link-dropdown">العنوان</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-links mb-4">
+                <div class="search-link">
+                  <a class="link active">عمليات البحث</a>
+                </div>
+  
+                <div class="search-link">
+                    <a href="#" class="link">
+                      الرابط الأول
+                      <span class="icon-arrow-left icon"></span>
+                    </a>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search -->
+
     <div class="wrapper">
 
       <nav id="nav" class="nav">
@@ -85,8 +125,9 @@
             </div>
             <div class="nav-btns d-flex align-items-center">
               <div class="us us-btns d-flex align-items-center">
-                <button class="d-flex align-items-center ls-btn">
+                <button id="toggleSearchBtn" class="d-flex align-items-center search-main-btn ls-btn">
                   <span class="icon-search icon"></span>
+                  <span class="icon-cancel icon"></span>
                 </button>
                 <!-- <span class="ml-2 mr-2 vertical-line">|</span> -->
                 <a href="login.html" class="d-flex align-items-center login-btn-ic ls-btn">
@@ -414,7 +455,7 @@
                       <div class="main-sd-view sd-bg active">
                         <div class="title mb-3">أجندة </div>
                         <div class="bg-title mb-4">جدول أعمال</div>
-                        <div class="body mb-3">
+                        <div class="body mb-4">
                           مقابلات مميزة وحلقات تلفزيونية مميزة على القنوات الأكثر تميزاً وانتشارا في العالم العربي
                         </div>
                         <a href="video.html" class="btn-corner">
@@ -605,10 +646,9 @@
         spaceBetween: 20,
         loop: false,
         speed: 600,
-        // autoplay: {
-        //   delay: 10000,
-        // },
-        autoplay: false,
+        autoplay: {
+          delay: 5000,
+        },
 
         // If we need pagination
         pagination: {

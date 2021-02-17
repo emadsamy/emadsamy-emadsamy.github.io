@@ -1,28 +1,4 @@
-// $(document).ready(function () {
-//     $("#menuBtn").on('click', function () {
-//         $('.navbar-container').addClass('active');
-//         $('.navbar-backdrop').addClass('active');
-//     });
-//     $("#closeNavbar").on('click', function () {
-//         $('.navbar-container').removeClass('active');
-//         $('.navbar-backdrop').removeClass('active');
-//     });
-
-//     if ($(window).scrollTop() > 0) {
-//         $('#navigationBar').addClass('active');
-//     }
-// });
-
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() > 0) {
-//         $('#navigationBar').addClass('active');
-//     } else {
-//         $('#navigationBar').removeClass('active');
-//     }
-// });
 $(document).ready(() => {
-  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 30 + "px");
-
   // Home Tabs
   $(".schedule-card-btn").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
@@ -44,20 +20,61 @@ $(document).ready(() => {
     } else {
       $("#navLinks").addClass("active");
       $(this).addClass("active");
+      $("#searchContainer").removeClass("active");
+      $("#toggleSearchBtn").removeClass("active");
     }
   });
 });
 
 $(document).ready(function () {
+  // Add Padding To Main Wrapper
+  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 30 + "px");
+
+  // Calc Min Height Main Container
   var minusHeight = $("#footer").innerHeight();
   $("#wrapperContainer, .auth-container").css(
     "minHeight",
     "calc(100vh - " + minusHeight + "px)"
   );
+
   $(window).on("resize", function () {
+    // Add Paadding to Main Wrapper
+    $("#wrapperContainer").css(
+      "paddingTop",
+      $("#nav").innerHeight() + 30 + "px"
+    );
+
+    // Wrapper Container
     $("#wrapperContainer, .auth-container").css(
       "minHeight",
       "calc(100vh - " + minusHeight + "px)"
     );
+
+    // Wrapper Search
+    var minusNavbar = $("#nav").innerHeight();
+    $("#searchContainer").css({
+      top: minusNavbar + "px",
+      minHeight: "calc(100% - " + minusNavbar + "px)",
+    });
+  });
+
+  // Calc Search Size
+  var minusNavbar = $("#nav").innerHeight();
+  $("#searchContainer").css({
+    top: minusNavbar + "px",
+    minHeight: "calc(100% - " + minusNavbar + "px)",
+  });
+
+  // Toggle Search
+  $("#toggleSearchBtn").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $("#searchContainer").removeClass("active");
+      $(this).removeClass("active");
+    } else {
+      $("#searchContainer").addClass("active");
+      $(this).addClass("active");
+      $("#navLinks").removeClass("active");
+      $("#menuBtn").removeClass("active");
+    }
   });
 });

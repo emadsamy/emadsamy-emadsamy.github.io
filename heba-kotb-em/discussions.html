@@ -289,15 +289,15 @@
                       </button>
                     </div>
                   </div>
+                </div>
 
-                  <div class="text-center mt-4 mb-4">
-                    <button class="qa-btn">
-                      <div class="btn-div-df">
-                        <span class="plus-icon">+</span>
-                        المزيد
-                      </div>
-                    </button>
-                  </div>
+                <div class="text-center mt-4 mb-4">
+                  <button id="readMoreDiscussions" class="qa-btn">
+                    <div class="btn-div-df">
+                      <span class="plus-icon">+</span>
+                      المزيد
+                    </div>
+                  </button>
                 </div>
 
                 <div class="send-story-banner text-center">
@@ -395,6 +395,15 @@
             btnParent.addClass('active').siblings().removeClass('active');
           } else {
             btnParent.removeClass('active');
+          }
+        });
+
+        var discusCounter = 3;
+        $('#readMoreDiscussions').on('click', function () {
+          discusCounter = discusCounter + 1;
+          $('.video-program:nth-of-type(' + discusCounter + ')').addClass('active');
+          if ($('.video-program:last-of-type').hasClass("active")) {
+            $(this).attr('style', 'display: none !important');
           }
         });
       });
