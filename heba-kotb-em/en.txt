@@ -1,0 +1,11 @@
+1- Home
+2- Search
+3- Auth (Login, Register)
+4- View Program
+5- Trainings Programs
+6- About
+7- What We Do
+8- Video
+9- Articles
+10- Contact Us
+11- Discussions

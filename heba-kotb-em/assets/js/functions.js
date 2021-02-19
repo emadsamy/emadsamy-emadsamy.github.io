@@ -77,4 +77,19 @@ $(document).ready(function () {
       $("#menuBtn").removeClass("active");
     }
   });
+
+  if (localStorage.getItem("lang") == "en") {
+    $("body").addClass("en-lang");
+  }
+
+  // Change Lang
+  $("#changeLang").on("click", () => {
+    if (localStorage.getItem("lang") == "ar") {
+      localStorage.setItem("lang", "en");
+      $("body").addClass("en-lang");
+    } else {
+      localStorage.setItem("lang", "ar");
+      $("body").removeClass("en-lang");
+    }
+  });
 });

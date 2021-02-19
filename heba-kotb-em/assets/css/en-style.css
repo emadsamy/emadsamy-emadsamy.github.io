@@ -1,10 +1,332 @@
+/* Global Style */
 body.en-lang {
   direction: ltr;
 }
+body.en-lang .icon-search {
+  transform: none;
+}
+body.en-lang .btn-corner-div .icon-arrow-left {
+  margin-right: 0;
+  margin-left: 10px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+body.en-lang .icon-arrow-left,
+body.en-lang .icon-arrow-right,
+body.en-lang .icon-chevron-left {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+/* Global Style */
 
-/* Nav */
+/* Navbar */
 body.en-lang .menu-btn {
   margin-left: 11px;
   margin-right: 0;
 }
-/* Nav */
+/* Navbar */
+
+/* Footer */
+body.en-lang .subscribe-btn {
+  border-right: none;
+  border-left: 1px solid #d0d0d0;
+}
+body.en-lang .subscribe-btn .icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+body.en-lang .footer-links,
+body.en-lang .footer-upper,
+body.en-lang .footer-contact .title {
+  text-align: left;
+}
+body.en-lang .footer-links > div {
+  padding-left: 0;
+  padding-right: 20px;
+}
+body.en-lang .footer-social {
+  margin-right: 0;
+  margin-left: 16px;
+}
+/* Footer */
+
+/* Home */
+body.en-lang .slca-data * {
+  text-align: left;
+}
+body.en-lang .swiper-pagination {
+  left: auto !important;
+  right: 50px !important;
+}
+body.en-lang .program-training-card-btn .icon {
+  margin-right: 0;
+  margin-left: 9px;
+}
+body.en-lang .program-training-card-title {
+  text-align: left;
+}
+body.en-lang .med-cons-data {
+  text-align: left;
+}
+body.en-lang .med-cons-banner {
+  background-image: linear-gradient(to right, #67d3e6, #0454a5);
+}
+body.en-lang .main-normal-btn .icon {
+  margin-right: 0;
+  margin-left: 9px;
+}
+body.en-lang .avm-card {
+  text-align: left;
+}
+body.en-lang .discussions-header .bg-title {
+  margin-right: 0;
+  margin-left: 23px;
+}
+body.en-lang .qa-row {
+  text-align: left;
+}
+body.en-lang .qa-btn .plus-icon {
+  margin-left: 0;
+  margin-right: 7px;
+}
+body.en-lang .qa-read-more {
+  text-align: left;
+}
+body.en-lang .schedule-content .sd-bg {
+  text-align: left;
+}
+body.en-lang .schedule-card {
+  text-align: right;
+}
+body.en-lang .sd-bg .sc-top .sc-day {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+}
+body.en-lang .sd-bg .sd-bg-content {
+  text-align: left;
+}
+body.en-lang .swiper-container {
+  direction: rtl;
+}
+body.en-lang .slider-card {
+  flex-direction: column-reverse;
+}
+body.en-lang .line-hori-bg {
+  margin-right: auto;
+}
+body.en-lang .slca-data {
+  text-align: left;
+}
+body.en-lang .slca-btn .icon {
+  margin-right: 0 !important;
+  margin-left: 10px !important;
+}
+body.en-lang .slca-btn {
+  direction: ltr;
+}
+body.en-lang .program-training-card-btn .main-normal-btn {
+  margin-right: 0;
+  margin-left: 10px;
+}
+body.en-lang .program-training-card-data {
+  direction: ltr;
+}
+/* Home */
+
+/* About */
+body.en-lang .awards-recognitions > div {
+  text-align: left;
+}
+body.en-lang .list-row .icon {
+  margin-left: 0;
+  margin-right: 22px;
+}
+body.en-lang .about-card {
+  text-align: left;
+}
+/* About */
+
+/* What We Do */
+body.en-lang .wwd-dropdown {
+  text-align: left;
+}
+body.en-lang .wwd-medical-consulting .med-cons-view img {
+  border-radius: 0 45px 45px 0;
+}
+body.en-lang .nutrition-details {
+  text-align: left;
+}
+body.en-lang .nut-row-circle {
+  margin-left: 0;
+  margin-right: 18px;
+}
+body.en-lang .wwd-clickable {
+  text-align: left;
+}
+/* What We Do */
+
+/* Video */
+body.en-lang .video-header-details {
+  text-align: left;
+}
+body.en-lang .video-char-title {
+  left: auto;
+  right: 10px;
+}
+body.en-lang .video-program * {
+  text-align: left !important;
+}
+body.en-lang .play-btn {
+  left: auto;
+  right: 25px;
+}
+/* Video */
+
+/* Articles */
+body.en-lang .article-card-data {
+  text-align: left;
+}
+/* Articles */
+
+/* Contact */
+body.en-lang .contact-info,
+body.en-lang .contact-inputs {
+  text-align: left;
+}
+/* Contact */
+
+/* Discussions */
+body.en-lang .discs-page-title {
+  direction: rtl;
+}
+body.en-lang .discussion-title-img {
+  margin-left: 0 !important;
+  margin-right: 1.5rem !important;
+}
+body.en-lang .tell-story-char {
+  left: auto;
+  right: 70px;
+}
+body.en-lang .tell-story {
+  text-align: left;
+}
+body.en-lang .qa-row .icon-chevronUP {
+  transform: rotate(90deg) !important;
+  margin-left: 0;
+  margin-right: 12px;
+}
+/* Discussions */
+
+/* View Program */
+body.en-lang .program-view-details {
+  text-align: left;
+}
+body.en-lang .prli-rw-circle {
+  margin-left: 0;
+  margin-right: 27px;
+}
+body.en-lang .other-programs-container .title {
+  text-align: left !important;
+}
+/* View Program */
+
+/* Search */
+body.en-lang .search-content {
+  text-align: left;
+}
+body.en-lang .search-content .title:after {
+  right: auto;
+  left: 0;
+}
+/* Search */
+
+/* Auth */
+body.en-lang .auth-content .title,
+body.en-lang .dont-have-text {
+  text-align: left;
+}
+/* Auth */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Training Programs */
+  body.en-lang .program-training-card-btn {
+    text-align: left;
+  }
+  body.en-lang .program-training-card-btn .main-normal-btn {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  /* Training Programs */
+
+  /* What We Do */
+  body.en-lang .wwd-medical-consulting .med-cons-view img {
+    border-radius: 45px;
+  }
+  /* What We Do */
+
+  /* Footer */
+  body.en-lang .footer-links > div {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  /* Footer */
+
+  /* Video */
+  body.en-lang .video-char-view {
+    left: auto;
+    right: 160px;
+    transform: translateX(50%);
+  }
+  /* Video */
+}
+
+@media (max-width: 767.98px) {
+  body.en-lang .wwd-medical-consulting .med-cons-view img {
+    height: auto;
+    border-radius: 45px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body.en-lang .slca-img {
+    left: auto;
+    right: 20px;
+  }
+  body.en-lang .video-char-view {
+    left: auto;
+    right: 52px;
+  }
+  body.en-lang .tell-story-char {
+    left: auto;
+    right: 27px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  body.en-lang .nav-link {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  body.en-lang .slca-img {
+    left: auto;
+    right: 90px;
+  }
+  body.en-lang .video-char-view {
+    left: auto;
+    right: 100px;
+  }
+  body.en-lang .tell-story-char {
+    left: auto;
+    right: 33px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body.en-lang .slca-img {
+    left: auto;
+    right: 220px;
+    width: 450px;
+  }
+}
