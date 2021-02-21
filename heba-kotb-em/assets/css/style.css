@@ -2138,6 +2138,9 @@ footer {
   .vid-content-text .bg-title {
     font-size: 23px;
   }
+  .video-program .title {
+    font-size: 22px;
+  }
   /* Video */
 }
 

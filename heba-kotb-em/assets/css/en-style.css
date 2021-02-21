@@ -55,8 +55,8 @@ body.en-lang .slca-data * {
   text-align: left;
 }
 body.en-lang .swiper-pagination {
-  left: auto !important;
-  right: 50px !important;
+  left: 50px !important;
+  right: auto !important;
 }
 body.en-lang .program-training-card-btn .icon {
   margin-right: 0;
@@ -120,6 +120,7 @@ body.en-lang .slca-data {
 body.en-lang .slca-btn .icon {
   margin-right: 0 !important;
   margin-left: 10px !important;
+  display: none !important;
 }
 body.en-lang .slca-btn {
   direction: ltr;
@@ -246,6 +247,21 @@ body.en-lang .dont-have-text {
   text-align: left;
 }
 /* Auth */
+
+@media (max-width: 575.98px) {
+  /* body.en-lang .tpc-header .tpc-arrow.right-arrow {
+    margin-right: auto;
+  } */
+
+  body.en-lang .tpc-header .tpc-arrow.left-arrow {
+    margin-right: 14px;
+    margin-left: auto;
+  }
+
+  body.en-lang .tpc-header .tpc-arrow {
+    transform: rotate(180deg);
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Training Programs */
