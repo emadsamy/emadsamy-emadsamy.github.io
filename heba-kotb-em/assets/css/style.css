@@ -513,7 +513,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 20;
-  padding: 12px 0;
+  padding: 13px 0;
   background: #fff;
   box-shadow: 0px 2px 2px #00000017;
 }
@@ -573,7 +573,7 @@ nav.active {
   margin: 0 10px;
   color: #393838;
   font-size: 23px;
-  padding: 0.5rem 0.4rem;
+  padding: 0.5rem 0.2rem;
   font-weight: 600;
 }
 .nav-link.active,
@@ -672,7 +672,7 @@ nav.active {
 
 /* Home Slider */
 .swiper-header {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .slider-card {
   background-image: url("../img/slider-bg.png");
@@ -683,7 +683,7 @@ nav.active {
   display: flex;
   align-items: flex-end;
   position: relative;
-  border-radius: 31px;
+  border-radius: 33px;
   overflow: hidden;
 }
 .slca-img {
@@ -694,7 +694,7 @@ nav.active {
 }
 .line-hori-bg {
   width: 65px;
-  height: 7px;
+  height: 5px;
 }
 .slca-bg-title {
   color: #3d519a;
@@ -703,12 +703,33 @@ nav.active {
 }
 .slca-text {
   color: #505050;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 600;
+  margin-bottom: 1.2rem !important;
+}
+.slca-btn .btn-corner {
+  padding: 0;
+  border: none;
+}
+.slca-btn .btn-corner:hover {
+  background: none !important;
+  color: #2f4491 !important;
+}
+.slca-btn .btn-corner:active {
+  background: none;
+  opacity: 0.6;
+  color: #2f4491 !important;
+}
+.slca-btn .btn-corner:focus {
+  color: #3d519a !important;
+}
+.slca-btn .btn-corner .icon {
+  display: none;
 }
 .page-header-view {
-  border-radius: 31px;
+  border-radius: 33px;
   border: 1px solid #bfd2fc;
+  object-fit: cover;
 }
 .swiper-header * {
   text-align: right;
@@ -734,12 +755,12 @@ nav.active {
 
 /* Container Fwbg */
 .container-fwbg {
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 .content-fwbg {
   padding: 50px;
   background: #fff;
-  border-radius: 40px;
+  border-radius: 33px;
   box-shadow: 0px 2px 2px #00000017;
 }
 
@@ -748,7 +769,7 @@ nav.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .tpc-header .tpc-arrow {
   line-height: 1;
@@ -785,22 +806,19 @@ nav.active {
 .more-programs-btn {
   line-height: 1;
   display: inline-block;
-  border-radius: 50px;
-  padding: 15px 26px;
-  background: #0051bf;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 0;
+  color: #0051bf;
+  font-size: 18px;
+  font-weight: 500;
 }
 .more-programs-btn:hover {
-  color: #fff;
-  background: #024299;
+  color: #024299;
 }
 .more-programs-btn:active {
   opacity: 0.6;
 }
 .more-programs-btn:focus {
-  color: #fff;
+  color: #0051bf;
 }
 /* Training Programs */
 /* Container Fwbg */
@@ -808,7 +826,7 @@ nav.active {
 /* Medical Consulting */
 .med-cons-banner {
   background-image: linear-gradient(to right, #0454a5, #67d3e6);
-  border-radius: 50px;
+  border-radius: 33px;
   padding: 50px;
   display: flex;
   justify-content: space-between;
@@ -816,6 +834,7 @@ nav.active {
 .med-cons-banner > div {
   width: 48.5%;
 }
+
 .med-cons-data {
   text-align: right;
 }
@@ -826,7 +845,7 @@ nav.active {
 }
 .med-cons-view img {
   height: 345px;
-  border-radius: 55px;
+  border-radius: 33px;
 }
 .asterisk-icon {
   width: 64px;
@@ -837,10 +856,13 @@ nav.active {
 .avm-container {
   padding: 80px 0 50px;
 }
+.avm-container > .row div[class*="col-"]:last-of-type .avm-card .text {
+  margin-bottom: 23px !important;
+}
 .avm-card {
   border: 2px solid #b1b1b1;
   padding: 60px 40px 50px;
-  border-radius: 40px;
+  border-radius: 33px;
   text-align: right;
   margin-bottom: 30px;
 }
@@ -941,7 +963,7 @@ nav.active {
 }
 .schedule-card {
   padding: 15px 21px;
-  border-radius: 24px;
+  border-radius: 33px;
   color: #fff;
   cursor: pointer;
 }
@@ -963,7 +985,7 @@ nav.active {
   border: 1px solid #70707020;
   background: #67d3e620;
   height: 100%;
-  border-radius: 36px;
+  border-radius: 33px;
   padding: 40px;
   display: none;
   text-align: right;
@@ -1041,7 +1063,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 15px 0;
   border-top: 1px solid #fff;
 }
 .footer-bottom-text {
@@ -1074,6 +1096,7 @@ footer {
 }
 .footer-contact .title {
   color: #fff;
+  font-size: 18px;
 }
 .contact-form {
   background: #fff;
@@ -1083,13 +1106,13 @@ footer {
 }
 .contact-form input {
   min-width: 350px;
-  padding: 12px 23px;
+  padding: 8px 23px;
 }
 .contact-form input {
   font-size: 19px;
 }
 .contact-form input::placeholder {
-  font-size: 17px;
+  font-size: 16px;
   color: #6c6c6c;
 }
 .subscribe-btn {
@@ -1108,7 +1131,7 @@ footer {
   border-right: 1px solid #2d3d76;
 }
 .subscribe-btn div {
-  font-weight: 600;
+  font-size: 16px;
 }
 .subscribe-btn .icon {
   font-weight: bold;
@@ -1146,7 +1169,7 @@ footer {
 
 /* About Page */
 .border-corner {
-  height: 15px;
+  height: 8px;
   border-radius: 50px;
 }
 .about-dh-container {
@@ -1203,7 +1226,7 @@ footer {
   text-align: right;
   background: #f8f8f8;
   border: 1px solid #efeded;
-  border-radius: 40px;
+  border-radius: 33px;
   padding: 90px 50px;
 }
 .about-card img {
@@ -1246,7 +1269,7 @@ footer {
 }
 .article-card {
   border: 1px solid #b1b1b1;
-  border-radius: 25px;
+  border-radius: 33px;
   overflow: hidden;
 }
 .article-c-view {
@@ -1261,7 +1284,7 @@ footer {
 .article-card-data {
   border-top: 1px solid #b1b1b1;
   padding: 24px 35px;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 33px 33px;
   text-align: right;
 }
 .article-card-btn .mnd-text {
@@ -1416,7 +1439,7 @@ footer {
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 47px;
+  border-radius: 33px;
   border: 1px solid #eaeaea;
   padding: 70px;
   position: relative;
@@ -1425,7 +1448,7 @@ footer {
   width: 580px;
   max-width: 100%;
   padding: 45px 35px;
-  border-radius: 30px;
+  border-radius: 33px;
   background: #f8f8f8;
   border: 1px solid #c9c9c9;
 }
@@ -1488,7 +1511,7 @@ footer {
 }
 .send-story-banner {
   padding: 35px;
-  border-radius: 40px;
+  border-radius: 33px;
   background: #1349cd;
   color: #fff;
   margin-top: 70px;
@@ -1535,7 +1558,7 @@ footer {
 
 /* What We Do Page */
 .what-we-do-container {
-  padding: 60px 0 100px;
+  padding: 60px 0 50px;
 }
 .what-we-do-grid {
   display: grid;
@@ -1550,7 +1573,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #b1b1b1;
-  border-radius: 46px;
+  border-radius: 33px;
   overflow: hidden;
 }
 .wwd-card:nth-of-type(even) {
@@ -1590,10 +1613,10 @@ footer {
   padding: 30px;
   position: relative;
   /* overflow: hidden; */
-  border-radius: 0 0 46px 46px;
+  border-radius: 0 0 33px 33px;
 }
 .wwd-card:nth-of-type(even) .wwd-clickable {
-  border-radius: 46px 46px 0 0 !important;
+  border-radius: 33px 33px 0 0 !important;
 }
 .wwd-clickable:after {
   position: absolute;
@@ -1628,6 +1651,10 @@ footer {
 .wwd-medical-consulting .med-cons-banner {
   padding: 0;
 }
+.med-cons-data .bg-title {
+  font-size: 30px;
+  margin-bottom: 1rem !important;
+}
 .wwd-medical-consulting .med-cons-data {
   padding: 50px;
 }
@@ -1635,7 +1662,7 @@ footer {
   padding: 5px;
 }
 .wwd-medical-consulting .med-cons-view img {
-  border-radius: 45px 0 0 45px;
+  border-radius: 28px 0 0 28px;
   height: 100%;
   max-height: 400px;
 }
@@ -1647,7 +1674,7 @@ footer {
 }
 .service-card {
   border: 1px solid #b1b1b1;
-  border-radius: 17px;
+  border-radius: 33px;
   padding: 55px 17px;
   display: flex;
   justify-content: center;
@@ -1672,6 +1699,10 @@ footer {
   color: #07b5de;
   font-size: 57px;
 }
+.nutrition-view img {
+  border-radius: 33px;
+  border: 1px solid #b1b1b1;
+}
 .nut-row {
   display: flex;
   align-items: center;
@@ -1694,7 +1725,7 @@ footer {
 .video-header-content {
   background-image: linear-gradient(to top, #1141b8, #001072);
   height: 650px;
-  border-radius: 46px 46px 0 0;
+  border-radius: 33px 33px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -1746,7 +1777,7 @@ footer {
 }
 .video-content {
   padding: 80px 50px;
-  border-radius: 0 0 46px 46px;
+  border-radius: 0 0 33px 33px;
   background: #0b1a71;
 }
 .video-grid {
@@ -1811,30 +1842,30 @@ footer {
   box-shadow: 0px 2px 2px #00000017;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 16px;
+  border-radius: 33px;
   text-align: right;
 }
 .auth-content .title {
-  font-size: 37px;
+  font-size: 28px;
   font-weight: bold;
   color: #61a2d7;
   margin-bottom: 10px;
 }
 .auth-box {
   border: 1px solid #d9d9d9;
-  border-radius: 18px;
+  border-radius: 33px;
   padding: 50px 33px;
 }
 .dont-have-text {
   padding-top: 15px;
   color: #707070;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
 }
 .dont-have-text a {
   color: #61a2d7;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 17px;
 }
 .select-country {
   border: none;
@@ -1852,7 +1883,7 @@ footer {
   background: #61a2d7;
   color: #fff;
   text-align: center;
-  border-radius: 0;
+  border-radius: 8px;
   width: 100%;
   font-size: 21px;
 }
@@ -1863,7 +1894,7 @@ footer {
   opacity: 0.6;
 }
 .auth-content .input-group {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   border-bottom: 1px solid #a8a8a8;
   position: relative;
 }
@@ -1876,7 +1907,7 @@ footer {
 }
 .auth-content .form-control::placeholder {
   color: #8d8d8d;
-  font-size: 19px;
+  font-size: 17px;
 }
 .auth-content .form-control {
   padding: 3px 0;
@@ -1884,7 +1915,7 @@ footer {
   font-size: 21px;
 }
 .center-vertically {
-  padding-bottom: 70px;
+  padding-bottom: 75px;
 }
 .auth-container {
   display: flex;
@@ -1899,13 +1930,82 @@ footer {
     padding-right: 15px;
     max-width: 540px;
   }
+  .body-text {
+    font-size: 17px;
+    line-height: 1.5;
+  }
   .nav-links-content {
     max-width: 540px !important;
     margin: 0 auto;
   }
   .content-fwbg {
-    padding: 45px 25px;
+    padding: 14px ​25px 45px;
   }
+  .content-fwbg > div.bg-title {
+    font-size: 25px;
+    margin-bottom: 1.5rem !important;
+  }
+  .page-header-view {
+    height: 335px !important;
+    object-fit: cover;
+  }
+
+  /* Navbar */
+  .change-lang-btn {
+    margin-right: 7px;
+  }
+  .lang-span {
+    display: none;
+  }
+  /* Navbar */
+
+  /* Home */
+  .tpc-header {
+    margin-bottom: 30px;
+  }
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+  .tpc-header .tpc-arrow {
+    transform: rotate(180deg);
+  }
+  .tpc-header .tpc-arrow.right-arrow {
+    order: 2;
+    margin-right: 14px;
+  }
+  .tpc-header .tpc-arrow.left-arrow {
+    margin-right: auto;
+  }
+  .program-training-card-btn .mnd-text {
+    display: none;
+  }
+  /* Home */
+
+  /* What We Do */
+  .what-we-do-text .title {
+    font-size: 22px;
+  }
+  .what-we-do-text .bg-title {
+    line-height: 1.2;
+    font-size: 30px;
+  }
+  .nutrition-details .bg-title {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+  .nut-row {
+    font-size: 17px;
+  }
+  .service-card {
+    padding: 37px 17px;
+  }
+  .service-card .title {
+    font-size: 26px;
+  }
+  /* What We Do */
 
   /* Footer */
   .footer-links {
@@ -1923,7 +2023,7 @@ footer {
     margin-bottom: 25px !important;
   }
   .subscribe-btn {
-    padding: 0 19px;
+    padding: 0 27px;
     font-size: 16px;
   }
   .subscribe-btn .icon {
@@ -1934,7 +2034,7 @@ footer {
     min-width: auto;
   }
   .footer-upper {
-    padding: 35px 0;
+    padding: 20px 0;
   }
   .footer-logo {
     margin-bottom: 24px;
@@ -1946,12 +2046,17 @@ footer {
     flex-wrap: wrap;
   }
   .footer-bottom-text {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
   }
-  .footer-bottom-text:last-of-type {
+
+  .footer-bottom-text:nth-of-type(2) {
+    order: 3;
     width: 100%;
     text-align: center;
+  }
+  .footer-bottom-text:last-of-type {
+    order: 2;
   }
   /* Footer */
 
@@ -1964,7 +2069,7 @@ footer {
     padding: 50px 30px;
   }
   .auth-box {
-    border-radius: 18px;
+    border-radius: 33px;
     padding: 30px 0;
     border: none;
   }
@@ -2005,17 +2110,20 @@ footer {
 
 @media (max-width: 767.98px) {
   .page-header-view {
-    height: auto;
+    height: 400px;
+    object-fit: cover;
   }
-
   /* Footer */
   .footer-logo {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     width: 100%;
     display: flex;
     direction: ltr;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
+  }
+  .footer-logo > div:last-of-type {
+    margin-left: 7px;
   }
   .footer-contact {
     width: 100%;
@@ -2041,7 +2149,7 @@ footer {
   /* Slider */
   .slider-card {
     background-size: cover;
-    background-position: left;
+    background-position: center;
     padding: 0;
     height: auto;
     display: block;
@@ -2049,7 +2157,7 @@ footer {
   .slca-img {
     left: 0;
     bottom: 0px;
-    width: 100%;
+    width: 85%;
     transform: none;
     position: relative;
     display: block;
@@ -2064,8 +2172,22 @@ footer {
     font-size: 37px;
   }
   .slca-text {
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 1.5rem !important;
+  }
+  .swiper-pagination {
+    width: auto !important;
+    bottom: 30px !important;
+    right: 30px !important;
+  }
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 12px 0;
+    display: block;
+  }
+  .med-cons-btn {
+    margin-bottom: 20px;
   }
 
   /* Trainings Programs */
@@ -2074,7 +2196,15 @@ footer {
     height: auto;
   }
   .tpc-bg-title {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  /* .tpc-header .tpc-arrow.right-arrow {
+    order: 2;
+    margin-right: auto;
+  } */
+  .tpc-arrow .icon {
+    font-size: 30px;
+    color: #8e8e8e;
   }
 
   /* Medical Consulting */
@@ -2086,16 +2216,20 @@ footer {
     width: 100%;
   }
   .med-cons-data {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
   .med-cons-view img {
     height: auto;
   }
   .med-cons-data .bg-title {
-    font-size: 32px;
+    font-size: 30px;
   }
   .asterisk-icon {
-    width: 60px;
+    width: 45px;
+    margin-bottom: 1.9rem !important;
+  }
+  .med-cons-data .text {
+    font-size: 17px;
   }
 
   /* AVM */
@@ -2222,8 +2356,14 @@ footer {
   /* About Page */
 
   /* What We Do Page */
+  .what-we-do-sim-happ {
+    padding-bottom: 0 !important;
+    padding-top: 1rem !important;
+  }
   .what-we-do-sim-happ img {
     border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
   }
   .what-we-do-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2237,7 +2377,7 @@ footer {
   .wwd-card:nth-of-type(even) .wwd-clickable {
     border-top: 1px solid #b1b1b1;
     border-bottom: none;
-    border-radius: 0 0 46px 46px !important;
+    border-radius: 0 0 33px 33px !important;
   }
   .wwd-card:nth-of-type(even) .wwd-clickable:after {
     bottom: auto;
@@ -2255,14 +2395,15 @@ footer {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .wwd-medical-consulting .med-cons-data {
-    padding: 30px;
+    padding: 30px 25px;
   }
   .wwd-medical-consulting .med-cons-view img {
     height: auto;
-    border-radius: 45px;
+    border-radius: 33px;
   }
   .nutrition-content {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   .nutrition-content > div {
     width: 100%;
@@ -2437,9 +2578,14 @@ footer {
     font-size: 18px;
     font-weight: 500;
   }
-  .footer-bottom-text:last-of-type {
+  .footer-bottom-text:nth-of-type(2) {
+    order: 3;
     width: 100%;
     text-align: center;
+  }
+  .footer-bottom-text:last-of-type {
+    order: 2;
+    width: auto;
   }
   /* Footer */
 }
@@ -2453,7 +2599,8 @@ footer {
     padding: 45px 30px;
   }
   .page-header-view {
-    height: auto;
+    height: 400px;
+    object-fit: cover;
   }
 
   /* Navbar */
@@ -2476,7 +2623,7 @@ footer {
   /* Slider */
   .slider-card {
     background-size: cover;
-    background-position: left;
+    background-position: center;
     padding: 0;
     height: auto;
     display: block;
@@ -2622,13 +2769,25 @@ footer {
     font-size: 28px;
   }
   .wwd-medical-consulting .med-cons-view img {
-    border-radius: 45px;
+    border-radius: 33px;
     height: auto;
     max-height: auto;
   }
   .our-services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
+  }
+  .service-card .title {
+    font-size: 27px;
+  }
+  .nutrition-details .bg-title {
+    font-size: 46px;
+  }
+  .nutrition-details .sub-title {
+    font-size: 19px;
+  }
+  .nut-row {
+    font-size: 19px;
   }
   /* What We Do Page */
 
@@ -2683,7 +2842,8 @@ footer {
     max-width: 960px;
   }
   .page-header-view {
-    height: auto;
+    height: 400px;
+    object-fit: cover;
   }
 
   /* Navbar */
@@ -2821,8 +2981,8 @@ footer {
     margin: 0 5px;
   }
   .nav-link {
-    margin: 0 4px;
-    font-size: 23px;
+    margin: 0 10px;
+    font-size: 22px;
   }
   .nav-logo img {
     width: 110px;
