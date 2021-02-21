@@ -963,7 +963,7 @@ nav.active {
 }
 .schedule-card {
   padding: 15px 21px;
-  border-radius: 33px;
+  border-radius: 26px;
   color: #fff;
   cursor: pointer;
 }
@@ -1939,7 +1939,7 @@ footer {
     margin: 0 auto;
   }
   .content-fwbg {
-    padding: 14px ​25px 45px;
+    padding: 26px 20px 45px;
   }
   .content-fwbg > div.bg-title {
     font-size: 25px;
@@ -1979,6 +1979,15 @@ footer {
   }
   .program-training-card-btn .mnd-text {
     display: none;
+  }
+  .main-sd-view .title {
+    font-size: 25px;
+  }
+  .sd-bg-content .bg-title {
+    font-size: 24px;
+  }
+  .sd-bg-content .text {
+    font-size: 18px;
   }
   /* Home */
 
@@ -2106,6 +2115,30 @@ footer {
     width: calc(100% - 30px);
   }
   /* Search */
+
+  /* Video */
+  .video-icon {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .video-header-details .sub-title {
+    text-align: center;
+    font-size: 19px;
+  }
+  .video-header-details .bg-title {
+    font-size: 42px !important;
+    text-align: center;
+  }
+  .video-icon img {
+    width: 48px;
+  }
+  .video-icon .vid-text {
+    font-size: 28px;
+  }
+  .vid-content-text .bg-title {
+    font-size: 23px;
+  }
+  /* Video */
 }
 
 @media (max-width: 767.98px) {
@@ -2189,6 +2222,12 @@ footer {
   .med-cons-btn {
     margin-bottom: 20px;
   }
+  .schedule-container {
+    margin-top: 30px;
+  }
+  .discussions-header {
+    margin-bottom: 2rem !important;
+  }
 
   /* Trainings Programs */
   .program-training-view {
@@ -2249,7 +2288,10 @@ footer {
 
   /* Discussions */
   .discussions-header img {
-    width: 55px;
+    width: 49px;
+  }
+  .discussions-header .bg-title {
+    font-size: 30px;
   }
   .disscussions-box {
     flex-wrap: wrap;
@@ -2272,10 +2314,12 @@ footer {
     padding: 40px 25px;
   }
   .main-sd-view .bg-title {
-    font-size: 41px !important;
+    /* font-size: 33px; */
+    font-size: 33px !important;
   }
   .main-sd-view .body {
     margin-bottom: 1.9rem !important;
+    font-size: 18px;
   }
   .main-sd-view .bg-title {
     margin-bottom: 1rem !important;
@@ -2288,13 +2332,21 @@ footer {
     gap: 15px;
   }
   .sc-month {
-    font-size: 23px;
+    font-size: 17px;
   }
   .sc-day {
-    font-size: 31px;
+    font-size: 24px;
+  }
+  .sc-plus {
+    font-size: 36px;
   }
   .schedule-card {
-    padding: 15px 13px;
+    padding: 15px 16px;
+  }
+  .schedule-card:nth-of-type(7),
+  .schedule-card:nth-of-type(8),
+  .schedule-card:last-of-type {
+    display: none;
   }
   /* Home Page */
 
@@ -2454,7 +2506,7 @@ footer {
   }
   .video-header-details {
     margin-top: 0;
-    padding: 70px 42px 30px;
+    padding: 50px 42px 20px;
   }
   .video-header-details .bg-title {
     font-size: 50px;
@@ -2560,7 +2612,9 @@ footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
   }
-
+  .program-training-view {
+    height: 276px !important;
+  }
   /* Home Page */
 
   /* Footer */
@@ -2651,7 +2705,7 @@ footer {
   /* Trainings Programs */
   .program-training-view {
     width: 100%;
-    height: auto;
+    height: 163px;
     margin-bottom: 20px;
   }
   .program-training-card-data {
@@ -2707,6 +2761,18 @@ footer {
   }
   .schedule-content .sd-bg {
     padding: 40px 27px;
+  }
+  .main-sd-view .title {
+    font-size: 25px;
+  }
+  .main-sd-view .bg-title {
+    font-size: 39px !important;
+  }
+  .main-sd-view .body {
+    font-size: 19px;
+  }
+  .sd-bg-content .bg-title {
+    font-size: 27px;
   }
   /* Home */
 
@@ -2891,6 +2957,13 @@ footer {
   .slca-text {
     font-size: 20px;
   }
+  .med-cons-view img {
+    object-fit: cover;
+  }
+  .program-training-view {
+    height: 225px;
+    object-fit: cover;
+  }
 
   /* Schedule */
   .schedule-tabs {
@@ -2995,6 +3068,12 @@ footer {
     left: 90px;
     width: 410px;
   }
+  .program-training-view {
+    height: 180px;
+  }
+  .avm-card .bg-title {
+    font-size: 33px;
+  }
 
   /* Schedule */
   .schedule-tabs {
@@ -3056,6 +3135,9 @@ footer {
   .slca-img {
     left: 220px;
     width: 450px;
+  }
+  .program-training-view {
+    height: 217px;
   }
   /* Home */
 }
