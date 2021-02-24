@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function () {
   // Toggle Menu
   $("#modelMenuBar").on("click", function () {
     if ($(this).hasClass("active")) {
@@ -25,7 +25,7 @@ $(document).ready(() => {
 
 $(document).ready(function () {
   // Add Padding To Main Wrapper
-  // $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + 30 + "px");
+  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
 
   // Calc Min Height Main Container
   var minusHeight = $("#footer").innerHeight();
@@ -36,10 +36,7 @@ $(document).ready(function () {
 
   $(window).on("resize", function () {
     // Add Paadding to Main Wrapper
-    // $("#wrapperContainer").css(
-    //   "paddingTop",
-    //   $("#nav").innerHeight() + 30 + "px"
-    // );
+    $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
     // Wrapper Container
     // $("#wrapperContainer, .auth-container").css(
     //   "minHeight",

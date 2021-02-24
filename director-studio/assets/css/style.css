@@ -918,6 +918,93 @@ nav.active .model-menu-bar .bar {
 } */
 /* Scroll Top */
 
+/* Contact Page */
+.contact-container {
+  padding-top: 100px;
+}
+.contact-content {
+  display: flex;
+}
+.contact-content > div {
+  width: 50%;
+}
+.contact-form {
+  padding-left: 90px;
+}
+.contact-details-title {
+  font-size: 3.5vw;
+  line-height: 3.9vw;
+  font-weight: 400;
+}
+.contact-form-input * {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+  margin-bottom: 4px;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  resize: none;
+  color: #999;
+  font-size: 16px;
+  appearance: unset;
+}
+.contact-form-input *::placeholder {
+  color: #999;
+}
+.contact-form-input *:focus {
+  border-bottom: 1px solid #ccc;
+}
+.contact-form-input textarea {
+  height: 130px;
+}
+/* Contact Page */
+
+/* Services Page */
+.abse-row {
+  display: flex;
+  padding: 40px 0;
+}
+.abse-counter {
+  width: 25%;
+}
+.h2-counter,
+.abse-specialization {
+  color: #000;
+  opacity: 0.3;
+  font-size: 2.5vw;
+  line-height: 2.6vw;
+  font-weight: 500;
+}
+.abse-specialization {
+  margin-bottom: 20px;
+}
+.abse-title {
+  font-size: 3.3vw;
+  line-height: 3.7vw;
+  margin-bottom: 60px;
+}
+.abse-data {
+  width: 75%;
+}
+.abse-list-row {
+  display: flex;
+}
+.abse-list-row > div {
+  width: 33.33333%;
+}
+.abse-list-item {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+/* Services Page */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .container-fluid {
