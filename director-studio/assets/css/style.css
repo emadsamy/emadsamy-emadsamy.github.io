@@ -269,10 +269,10 @@ small {
   background-color: #989898;
 }
 .bg-title {
-  color: #3d519a;
   font-weight: bold;
   line-height: 1;
   font-size: 40px;
+  color: #000;
 }
 
 /** Buttons **/
@@ -353,14 +353,17 @@ nav {
   z-index: 100;
   padding: 23px 0;
 }
-nav.active {
+nav.active,
+nav.active-impor {
   background-color: #fff;
   box-shadow: 0 1px 1px 0 #f0f0f0;
 }
-nav.active .nav-logo-title {
+nav.active .nav-logo-title,
+nav.active-impor .nav-logo-title {
   color: #000 !important;
 }
-nav.active .model-menu-bar .bar {
+nav.active .model-menu-bar .bar,
+nav.active-impor .model-menu-bar .bar {
   background: #000;
 }
 .nav-logo-title {
