@@ -1,0 +1,120 @@
+.project-description-container {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+.project-description-wrapper {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-title {
+  margin-bottom: 2vh;
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+.project-description-cms {
+  display: block;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+.project-description-extra {
+  display: flex;
+}
+.project-extra-deliverables {
+  margin-right: 5vw;
+}
+.project-deliverables {
+  display: block;
+  margin-bottom: 7px;
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+.project-deliverables-list {
+  display: block;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.more-information {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.more-information,
+.more-information-text {
+  display: block;
+  font-weight: 300;
+  text-align: left;
+  opacity: 0.6;
+}
+.more-information-text {
+  direction: ltr;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+.more-information-text a {
+  font-size: 17px;
+  text-decoration: underline !important;
+}
+.project-image {
+  width: 100%;
+}
+.video-design-embed {
+  margin-bottom: -10px;
+}
+.similar-projects-container {
+  padding-top: 75px;
+  padding-bottom: 110px;
+}
+.similar-projects-content {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.similar-projects-text {
+  display: inline-block;
+  font-weight: 500;
+  color: #131313;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  font-size: 20px;
+}
+.similar-projects-collection {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 16px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
