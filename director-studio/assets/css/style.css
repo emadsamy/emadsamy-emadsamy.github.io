@@ -947,20 +947,20 @@ nav.active-impor .model-menu-bar .bar {
 .contact-form-input * {
   display: block;
   width: 100%;
-  padding: 12px 15px;
-  background-color: #1d1d1d;
-  border-top: 1px solid #1d1d1d;
-  border-bottom: 1px solid #1d1d1d;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 5px;
+  padding: 12px 15px !important;
+  background-color: #1d1d1d !important;
+  border-top: 1px solid #1d1d1d !important;
+  border-bottom: 1px solid #1d1d1d !important;
+  border-left: none !important;
+  border-right: none !important;
+  margin-bottom: 5px !important;
   border-radius: 0 !important;
   outline: none !important;
   box-shadow: none !important;
-  resize: none;
-  color: #999;
-  font-size: 16px;
-  appearance: unset;
+  resize: none !important;
+  color: #999 !important;
+  font-size: 16px !important;
+  appearance: unset !important;
 }
 .contact-form-input *::placeholder {
   color: #999;
