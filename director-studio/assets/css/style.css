@@ -1045,7 +1045,8 @@ nav.active-impor .model-menu-bar .bar {
 /* Services Page */
 .abse-row {
   display: flex;
-  padding: 40px 0;
+  padding: 40px 0 100px;
+  border-bottom: 1px solid #d3d3d3;
 }
 .abse-counter {
   width: 25%;
@@ -1081,6 +1082,7 @@ nav.active-impor .model-menu-bar .bar {
   font-weight: 400;
   margin-bottom: 14px;
   display: inline-block;
+  color: #000;
 }
 /* Services Page */
 
@@ -1123,6 +1125,39 @@ nav.active-impor .model-menu-bar .bar {
     line-height: 9.5vw !important;
   }
   /* Contact */
+
+  /* Services */
+  .abse-row .abse-counter {
+    display: none;
+  }
+  .abse-data {
+    width: 100%;
+  }
+  .abse-specialization {
+    margin-bottom: 10px;
+    padding-right: 0;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .abse-title {
+    padding-right: 0;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .abse-list-item {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 9px;
+  }
+  .abse-list-row {
+    flex-wrap: wrap;
+  }
+  .abse-list-row > div {
+    width: 100%;
+  }
+  /* Services */
 }
 
 @media (max-width: 767.98px) {
@@ -1235,6 +1270,40 @@ nav.active-impor .model-menu-bar .bar {
     padding: 35px 45px 30px;
   }
   /* Nav Links */
+
+  /* Services */
+  .abse-counter .h2-counter {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .abse-data {
+    width: 100%;
+  }
+  .abse-specialization {
+    margin-bottom: 10px;
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .abse-title {
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .abse-list-item {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 9px;
+    color: #000;
+  }
+  .abse-list-row {
+    flex-wrap: wrap;
+  }
+  .abse-list-row > div {
+    width: 100%;
+  }
+  /* Services */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1278,6 +1347,16 @@ nav.active-impor .model-menu-bar .bar {
     font-size: 20px !important;
   }
   /* Nav Links */
+
+  /* Services */
+  .abse-list-row > div {
+    width: 50%;
+  }
+  .abse-list-item {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  /* Services */
 }
 
 @media (max-width: 991.98px) {

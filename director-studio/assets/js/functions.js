@@ -101,4 +101,18 @@ $(document).ready(() => {
         .appendTo("#molSlider");
     }, 4000);
   });
+
+  // Lazy Slider
+  $(function () {
+    $("#lazySlider > div:gt(0)").hide();
+
+    setInterval(function () {
+      $("#lazySlider > div:first")
+        .fadeOut(0)
+        .next()
+        .fadeIn(0)
+        .end()
+        .appendTo("#lazySlider");
+    }, 1200);
+  });
 });
