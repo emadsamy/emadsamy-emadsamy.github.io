@@ -961,7 +961,9 @@ nav.active-impor .model-menu-bar .bar {
   resize: none !important;
   color: #999 !important;
   font-size: 16px !important;
-  appearance: unset !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 .contact-form-input *::placeholder {
   color: #999;
