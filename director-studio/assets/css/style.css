@@ -274,6 +274,37 @@ small {
   font-size: 40px;
   color: #000;
 }
+.header-page-bg-view {
+  min-height: 700px;
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.header-page-bg-view .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.header-page-text {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+}
+.header-page-text .title {
+  font-size: 2.8vw;
+  color: #fff;
+  line-height: 1;
+  word-wrap: break-word;
+}
+.header-page-text .text {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 1.3vw;
+  margin-top: 6px;
+}
 
 /** Buttons **/
 .btn-corner {
@@ -904,6 +935,9 @@ nav.active-impor .model-menu-bar .bar {
 .home-scroll-btn .icon {
   font-weight: bold;
   font-size: 14px;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 /* .home-scroll-btn:hover .icon {
   animation: topUp 0.4s;
@@ -923,10 +957,10 @@ nav.active-impor .model-menu-bar .bar {
 
 /* Contact Page */
 .contact-container {
-  padding-top: 100px;
+  padding-top: 170px;
   padding-bottom: 40px;
   background: #000;
-  min-height: calc(100vh - 68.4px);
+  min-height: calc(100vh);
 }
 .contact-content {
   display: flex;
@@ -1043,6 +1077,9 @@ nav.active-impor .model-menu-bar .bar {
 /* Contact Page */
 
 /* Services Page */
+.services-container {
+  padding-top: 70px;
+}
 .abse-row {
   display: flex;
   padding: 40px 0 100px;
@@ -1092,7 +1129,6 @@ nav.active-impor .model-menu-bar .bar {
     padding-left: 15px;
     padding-right: 15px;
   }
-
   /* Home */
   .video-text-middle {
     left: 20px;
@@ -1161,6 +1197,17 @@ nav.active-impor .model-menu-bar .bar {
 }
 
 @media (max-width: 767.98px) {
+  .header-page-bg-view {
+    min-height: 560px;
+    height: 100vh;
+  }
+  .header-page-text .title {
+    font-size: 32px;
+  }
+  .header-page-text .text {
+    font-size: 17px;
+  }
+
   /* Scroll Top */
   .home-scroll-top {
     justify-content: center;
@@ -1308,6 +1355,17 @@ nav.active-impor .model-menu-bar .bar {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .header-page-bg-view {
+    min-height: 570px;
+  }
+  .header-page-text .title {
+    font-size: 33px;
+  }
+  .header-page-text .text {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+
   /* Home */
   .homepage-collection {
     gap: 30px;
@@ -1364,9 +1422,16 @@ nav.active-impor .model-menu-bar .bar {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .container-fluid {
-    /* max-width: 960px; */
+  .header-page-text .title {
+    font-size: 3.4vw;
   }
+  .header-page-text .text {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

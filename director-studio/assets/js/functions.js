@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   // Add Padding To Main Wrapper
-  $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
+  // $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
 
   // Calc Min Height Main Container
   var minusHeight = $("#footer").innerHeight();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   $(window).on("resize", function () {
     // Add Paadding to Main Wrapper
-    $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
+    // $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
     // Wrapper Container
     // $("#wrapperContainer, .auth-container").css(
     //   "minHeight",
