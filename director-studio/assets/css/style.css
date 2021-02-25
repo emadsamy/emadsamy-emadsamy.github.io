@@ -924,6 +924,9 @@ nav.active-impor .model-menu-bar .bar {
 /* Contact Page */
 .contact-container {
   padding-top: 100px;
+  padding-bottom: 40px;
+  background: #000;
+  min-height: calc(100vh - 68.4px);
 }
 .contact-content {
   display: flex;
@@ -938,6 +941,8 @@ nav.active-impor .model-menu-bar .bar {
   font-size: 3.5vw;
   line-height: 3.9vw;
   font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
 }
 .contact-form-input * {
   display: block;
@@ -946,7 +951,9 @@ nav.active-impor .model-menu-bar .bar {
   background-color: #1d1d1d;
   border-top: 1px solid #1d1d1d;
   border-bottom: 1px solid #1d1d1d;
-  margin-bottom: 4px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 5px;
   border-radius: 0 !important;
   outline: none !important;
   box-shadow: none !important;
@@ -963,6 +970,72 @@ nav.active-impor .model-menu-bar .bar {
 }
 .contact-form-input textarea {
   height: 130px;
+}
+.contact-link-item a {
+  transition: opacity 0.2s ease;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 9px;
+  font-size: 21px;
+  line-height: 24px;
+}
+.contact-link-item a:hover {
+  opacity: 0.4;
+}
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+.form-checkbox input {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.form-checkbox label,
+.privacy-policy-btn {
+  color: #999;
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.privacy-policy-btn {
+  transition: opacity 0.2s ease;
+  display: inline-block;
+}
+.privacy-policy-btn:hover {
+  opacity: 0.4;
+  color: #999 !important;
+}
+.privacy-policy-btn:active {
+  opacity: 0.4;
+  color: #999 !important;
+}
+.privacy-policy-btn:focus {
+  opacity: 1;
+  color: #999 !important;
+}
+.contact-details-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-details-row > div {
+  width: 50%;
+}
+.contact-form-submit {
+  display: block;
+  width: 100%;
+  padding: 12px 30px;
+  background-color: grey;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contact-form-submit:hover {
+  background: #fff;
+  color: #000;
 }
 /* Contact Page */
 
@@ -1040,6 +1113,13 @@ nav.active-impor .model-menu-bar .bar {
     min-height: 250px;
   }
   /* Home */
+
+  /* Contact */
+  .contact-details-title {
+    font-size: 8vw !important;
+    line-height: 9.5vw !important;
+  }
+  /* Contact */
 }
 
 @media (max-width: 767.98px) {
@@ -1091,6 +1171,39 @@ nav.active-impor .model-menu-bar .bar {
     font-size: 17px !important;
   }
   /* Nav Links */
+
+  /* Contact */
+  .contact-details-title {
+    font-size: 4.8vw;
+    line-height: 4.7vw;
+  }
+  .contact-link-item a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+  /* Contact */
+}
+
+@media (max-width: 991.98px) {
+  /* Contact */
+  .contact-details-title {
+    font-size: 4.8vw;
+    line-height: 4.7vw;
+  }
+  .contact-content {
+    flex-wrap: wrap;
+  }
+  .contact-form {
+    padding: 0;
+  }
+  .contact-details-row {
+    margin-bottom: 40px;
+  }
+  .contact-content > div {
+    width: 100%;
+  }
+  /* Contact */
 }
 
 /* Small devices (landscape phones, 576px and up) */
