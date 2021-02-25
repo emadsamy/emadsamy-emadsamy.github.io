@@ -287,14 +287,13 @@ small {
 }
 .header-page-text {
   display: flex;
-  place-items: center;
-  justify-content: center;
+  place-items: flex-end;
   height: 100%;
   width: 100%;
-  padding: 0 15px;
+  padding: 40px;
 }
 .header-page-text .title {
-  font-size: 2.8vw;
+  font-size: 4.2vw;
   color: #fff;
   line-height: 1;
   word-wrap: break-word;
@@ -1123,12 +1122,34 @@ nav.active-impor .model-menu-bar .bar {
 }
 /* Services Page */
 
+/* About Page */
+.about-container {
+  background-color: #000;
+  color: #fff;
+}
+.about-container .h2-counter,
+.about-container .abse-specialization {
+  color: #fff;
+}
+.about-container .abse-title {
+  margin-bottom: 0;
+}
+.about-container .abse-row {
+  border: none;
+  padding: 40px 0 80px;
+}
+/* About Page */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header-page-text {
+    padding: 40px 15px;
+  }
+
   /* Home */
   .video-text-middle {
     left: 20px;
@@ -1432,6 +1453,9 @@ nav.active-impor .model-menu-bar .bar {
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header-page-text .title {
+    font-size: 4vw;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
