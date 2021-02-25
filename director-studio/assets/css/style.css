@@ -944,7 +944,8 @@ nav.active-impor .model-menu-bar .bar {
   color: #fff;
   margin-bottom: 30px;
 }
-.contact-form-input * {
+.contact-form-input *,
+.contact-form-input select {
   display: block;
   width: 100%;
   padding: 12px 15px !important;
