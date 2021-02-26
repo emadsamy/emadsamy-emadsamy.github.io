@@ -1278,11 +1278,16 @@ nav.active-impor .model-menu-bar .bar {
   .marquee-embed.w-embed {
     height: 240px;
   }
-  .marquee-embed-circle {
+  /* .marquee-embed-circle {
     width: 90px;
     height: 90px;
     font-size: 17px;
     line-height: 17px;
+    display: none;
+  } */
+  .marquee-embed-title {
+    font-size: 25px;
+    line-height: 36px;
   }
   /* Services */
 }
@@ -1381,17 +1386,11 @@ nav.active-impor .model-menu-bar .bar {
   }
   /* Contact */
 
-  /* Abse */
-  .marquee-embed.w-embed {
-    height: 300px;
-  }
+  /* Services */
   .marquee-embed-circle {
-    width: 110px;
-    height: 110px;
-    font-size: 19px;
-    line-height: 17px;
+    display: none;
   }
-  /* Abse */
+  /* Services */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1454,6 +1453,12 @@ nav.active-impor .model-menu-bar .bar {
     width: 100%;
   }
   /* Services */
+
+  /* Abse */
+  .marquee-embed.w-embed {
+    height: 300px;
+  }
+  /* Abse */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1518,6 +1523,12 @@ nav.active-impor .model-menu-bar .bar {
     line-height: 23px;
   }
   /* Services */
+
+  /* Abse */
+  .marquee-embed.w-embed {
+    height: 330px;
+  }
+  /* Abse */
 }
 
 @media (max-width: 991.98px) {
