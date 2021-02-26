@@ -1079,6 +1079,13 @@ nav.active-impor .model-menu-bar .bar {
 .services-container {
   padding-top: 70px;
 }
+.abse-lazy-slider {
+  overflow: hidden;
+}
+.abse-lazy-slider img {
+  max-height: 845px;
+  object-fit: cover;
+}
 .abse-row {
   display: flex;
   padding: 40px 0 100px;
@@ -1139,6 +1146,60 @@ nav.active-impor .model-menu-bar .bar {
   padding: 40px 0 80px;
 }
 /* About Page */
+
+.marquee-embed-circle {
+  width: 140px;
+  height: 140px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 23px;
+  line-height: 24px;
+  animation: 5s marqueeAbout infinite linear;
+}
+.marquee-embed-circle:hover,
+.marquee-embed-circle:active {
+  color: #fff !important;
+}
+
+@keyframes marqueeAbout {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
+.marquee-embed.w-embed {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.marquee-embed-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 2vw;
+  margin-bottom: 0;
+  font-size: 6.4vw;
+  line-height: 6vw;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+}
+.marquee-embed-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -1213,6 +1274,15 @@ nav.active-impor .model-menu-bar .bar {
   }
   .abse-list-row > div {
     width: 100%;
+  }
+  .marquee-embed.w-embed {
+    height: 240px;
+  }
+  .marquee-embed-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 17px;
+    line-height: 17px;
   }
   /* Services */
 }
@@ -1310,6 +1380,18 @@ nav.active-impor .model-menu-bar .bar {
     width: 100%;
   }
   /* Contact */
+
+  /* Abse */
+  .marquee-embed.w-embed {
+    height: 300px;
+  }
+  .marquee-embed-circle {
+    width: 110px;
+    height: 110px;
+    font-size: 19px;
+    line-height: 17px;
+  }
+  /* Abse */
 }
 
 /* Small devices (landscape phones, 576px and up) */
