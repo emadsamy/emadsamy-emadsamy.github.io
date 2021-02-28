@@ -281,6 +281,10 @@ small {
   background-size: cover;
   background-position: center;
 }
+.header-page-bg-view-design {
+  min-height: 450px;
+  height: 100vh;
+}
 .header-page-bg-view .overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -423,7 +427,7 @@ nav.active-impor .model-menu-bar .bar {
   width: 63px;
 }
 .transition-title {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s linear;
   /* width: 164.34px; */
   white-space: pre;
   opacity: 1;
@@ -758,13 +762,13 @@ nav.active-impor .model-menu-bar .bar {
   width: 100%;
   font-size: 115px;
   letter-spacing: -2px;
-  left: -7px;
+  left: -3px;
   font-weight: bold;
 }
 .video-text-middle h2 {
   font-size: 65px;
   margin: 0 auto;
-  left: 0;
+  left: 3px;
 }
 .homepage-collection-container {
   margin-bottom: 65px;
@@ -775,6 +779,11 @@ nav.active-impor .model-menu-bar .bar {
   grid-gap: 12.52rem;
   gap: 45px;
   padding-top: 45px;
+}
+.homepage-collection-bgtitle {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 28px;
 }
 .home-collection-item {
   height: 30vw;
@@ -1134,6 +1143,11 @@ nav.active-impor .model-menu-bar .bar {
   background-color: #000;
   color: #fff;
 }
+.about-main-container {
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .about-container .h2-counter,
 .about-container .abse-specialization {
   color: #fff;
@@ -1145,7 +1159,229 @@ nav.active-impor .model-menu-bar .bar {
   border: none;
   padding: 40px 0 80px;
 }
+.about-text-container {
+  padding: 100px;
+}
+.about-text-title {
+  font-weight: bold;
+  font-size: 67px;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0 0 0 -3px;
+  margin-bottom: 40px;
+}
+.about-text-body {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.section-about-grid-container {
+  background-color: #f8f5f3;
+  padding: 70px;
+  margin-bottom: 100px;
+}
+.section-about-grid-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 30px;
+}
+.section-about-grid-collection {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.about-grid-card {
+  margin-bottom: 30px;
+}
+
+.about-grid-card-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+.about-grid-card-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+.award-list {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.award-list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 16.66%;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5px;
+}
+.award-list-item .award-logo {
+  position: relative;
+  height: 75px;
+  width: 100%;
+  overflow: hidden;
+}
+.award-list-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
 /* About Page */
+
+/* Team Work */
+.teamwork-container {
+  margin-bottom: 70px;
+}
+.teamwork-header {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.teamwork-header {
+  margin-bottom: 30px;
+}
+.teamwork-title {
+  font-weight: bold;
+  font-size: 70px;
+  color: #000;
+  display: inline-block;
+  margin-right: 45px;
+}
+.teamwork-tabs {
+  display: inline-block;
+}
+.teamwork-tab-btn {
+  font-size: 17px;
+  color: #000;
+  display: inline-block;
+  line-height: 1;
+  padding-bottom: 2px;
+}
+.teamwork-tab-btn.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+.teamwork-tabs button ~ button {
+  margin-left: 20px;
+}
+.teamwork-order-office {
+  display: none;
+}
+.teamwork-order-office.active {
+  display: block !important;
+}
+.teamwork-office-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 20.5px;
+}
+.person-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 0.2s;
+  background-position: center;
+}
+.person-card.normal-person {
+  grid-row-end: span 10 !important;
+}
+.person-card.tall-person {
+  grid-row-end: span 12 !important;
+}
+.person-info {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+}
+.person-info-title {
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+.person-info-description,
+.person-info-location {
+  line-height: 1;
+}
+.person-card:hover {
+  opacity: 0.5;
+}
+.teamwork-cards-container {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+/* Team Work */
+
+/* View People */
+.view-people-container {
+  padding-top: 140px;
+  margin-bottom: 50px;
+}
+.view-people-back .icon {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.view-people-back a:hover {
+  opacity: 0.5;
+}
+.view-people-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.view-people-grid > div {
+  width: 50%;
+}
+.view-people-img img {
+  width: 100%;
+}
+.view-people-img {
+  padding-right: 80px;
+}
+.view-p-name {
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 30px;
+  margin: 0 0 39px;
+}
+.view-p-title,
+.view-p-location {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+.view-p-location {
+  margin: 0 0 19px;
+}
+.view-p-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+.view-p-socialmedia {
+  margin-top: 23px;
+}
+.view-p-socialmedia a {
+  color: #000;
+  text-decoration: underline !important;
+}
+/* View People */
 
 .marquee-embed-circle {
   width: 140px;
@@ -1200,6 +1436,168 @@ nav.active-impor .model-menu-bar .bar {
   height: 100%;
   z-index: 10;
 }
+
+/* Footer */
+.footer-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  justify-content: space-between;
+}
+.footer-content a,
+.footer-content .footer-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: #5f5f5f;
+}
+.footer-subscribe,
+.row-office,
+.row-links {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+footer a:hover {
+  text-decoration: underline !important;
+  color: #5f5f5f !important;
+}
+.row-office a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: #5f5f5f;
+  display: inline-block;
+}
+.row-office a,
+.row-socialmedia a {
+  margin-bottom: 13px;
+}
+.footer-links a:not(:last-of-type) {
+  margin-right: 15px;
+}
+.footer-socialmedia a:first-of-type {
+  margin-right: 0 !important;
+}
+.footer-socialmedia a:not(:first-of-type) {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.footer-subscribe {
+  min-width: 320px;
+}
+.footer-center {
+  margin-right: auto;
+}
+.footer-socialmedia > div {
+  padding: 0;
+}
+/* Footer */
+
+/* Office */
+.office-container {
+  /* padding-top: 170px; */
+}
+.office-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.office-header > div {
+  width: 50%;
+}
+.office-header-info {
+  padding-top: 140px;
+}
+.office-studio-title {
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 60px;
+  letter-spacing: -2px;
+}
+.office-studio-experience {
+  margin-top: 60px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: normal;
+  margin-bottom: 25px;
+}
+.office-studio-description {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 75px;
+}
+.os-text {
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 30px;
+  margin: 0;
+}
+.os-address {
+  margin-top: 30px;
+}
+.os-address a,
+.os-tel a {
+  font-size: 22px;
+  line-height: 30px;
+}
+.os-address a:hover,
+.os-tel a:hover {
+  text-decoration: underline !important;
+}
+.osp-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 27px;
+  padding-bottom: 5px;
+  margin: 0 0 20px;
+}
+.osp-dflex {
+  display: flex;
+}
+.osp-img img {
+  width: 170px;
+}
+.osp-info {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.osp-info a {
+  display: inline-block;
+}
+.osp-info-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.osp-info-position {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 3px;
+}
+.osp-info-mail {
+  font-size: 20px;
+}
+.osp-info-mail:hover {
+  text-decoration: underline !important;
+}
+.office-map {
+  padding: 70px 0;
+}
+.office-header-view {
+  background-size: cover;
+  background-position: center;
+  right: -45px;
+  position: relative;
+}
+/* Office */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -1278,23 +1676,75 @@ nav.active-impor .model-menu-bar .bar {
   .marquee-embed.w-embed {
     height: 240px;
   }
-  /* .marquee-embed-circle {
-    width: 90px;
-    height: 90px;
-    font-size: 17px;
-    line-height: 17px;
-    display: none;
-  } */
   .marquee-embed-title {
     font-size: 25px;
     line-height: 36px;
   }
   /* Services */
+
+  /* About */
+  .about-container .abse-row {
+    padding: 40px 0 20px;
+  }
+  .about-text-container,
+  .teamwork-header,
+  .teamwork-cards-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-text-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .about-text-body {
+    font-size: 19px;
+    line-height: 33px;
+  }
+  .about-grid-card-text {
+    font-size: 18px;
+  }
+  .section-about-grid-container {
+    padding: 40px 25px;
+  }
+  .section-about-grid-collection {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .about-grid-card-title {
+    font-size: 31px;
+    line-height: 1;
+    margin-bottom: 13px;
+  }
+  .teamwork-title {
+    font-size: 38px;
+    line-height: 38px;
+    margin-bottom: 18px;
+  }
+  .teamwork-tabs button ~ button {
+    margin-left: 13px;
+  }
+  .teamwork-office-grid {
+    grid-auto-rows: 15.5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* About */
+
+  /* OFFice */
+  .office-header-view {
+    min-height: 520px;
+    right: -15px;
+    left: -15px;
+    width: calc(100% + 30px) !important;
+  }
+  /* OFFice */
 }
 
 @media (max-width: 767.98px) {
   .header-page-bg-view {
     min-height: 560px;
+    height: 100vh;
+  }
+  .header-page-bg-view-design {
+    min-height: 400px;
     height: 100vh;
   }
   .header-page-text .title {
@@ -1364,6 +1814,64 @@ nav.active-impor .model-menu-bar .bar {
     margin-bottom: 3px;
   }
   /* Contact */
+
+  /* View People */
+  .view-people-grid > div {
+    width: 100%;
+  }
+  .view-people-img {
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+  /* View People */
+
+  /* OFFice */
+  .office-header {
+    flex-direction: column-reverse;
+  }
+  .office-header > div {
+    width: 100%;
+  }
+  .office-header-info {
+    padding-top: 70px;
+  }
+  .office-studio-title {
+    font-size: 40px;
+  }
+  .office-studio-experience {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .os-text {
+    font-size: 19px;
+  }
+  .os-address a,
+  .os-tel a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .osp-img img {
+    width: 120px;
+  }
+  .osp-info-name {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .osp-info-position {
+    font-size: 17px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .osp-info-mail {
+    font-size: 16px;
+    line-height: 1;
+  }
+  .osp-info {
+    padding-left: 12px;
+    padding-top: 7px;
+  }
+  /* OFFice */
 }
 
 @media (max-width: 991.98px) {
@@ -1391,6 +1899,35 @@ nav.active-impor .model-menu-bar .bar {
     display: none;
   }
   /* Services */
+
+  /* Footer */
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer-subscribe {
+    min-width: auto;
+  }
+  .footer-links a:not(:first-of-type) {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .footer-socialmedia {
+    text-align: left !important;
+  }
+  .footer-subscribe,
+  .row-office,
+  .row-links {
+    margin-bottom: 15px;
+  }
+  .row-office a,
+  .row-socialmedia a {
+    margin-bottom: 7px;
+  }
+  .footer-socialmedia .row-links:last-of-type {
+    margin: 0;
+  }
+  /* Footer */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1459,12 +1996,61 @@ nav.active-impor .model-menu-bar .bar {
     height: 300px;
   }
   /* Abse */
+
+  /* About */
+  .about-text-container {
+    padding: 100px 45px;
+  }
+  .about-text-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .about-text-body {
+    font-size: 19px;
+  }
+  .section-about-grid-container {
+    padding: 50px 30px;
+  }
+  .about-grid-card-title {
+    font-size: 32px;
+    margin-bottom: 9px;
+  }
+  .about-grid-card-text {
+    font-size: 18px;
+  }
+  .about-grid-card {
+    margin-bottom: 10px;
+  }
+  .about-container {
+    padding-bottom: 40px;
+  }
+  .about-container .abse-row {
+    border: none;
+    padding: 40px 0 15px;
+  }
+  .teamwork-office-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* About */
+
+  /* OFFice */
+  .office-header-view {
+    min-height: 580px;
+    right: -45px;
+    left: -45px;
+    width: calc(100% + 90px) !important;
+  }
+  /* OFFice */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header-page-bg-view {
     min-height: 570px;
+  }
+  .header-page-bg-view-design {
+    min-height: 100vh;
+    height: 100vh;
   }
   .header-page-text .title {
     font-size: 33px;
@@ -1529,6 +2115,81 @@ nav.active-impor .model-menu-bar .bar {
     height: 330px;
   }
   /* Abse */
+
+  /* View People */
+  .view-people-img {
+    padding-right: 25px;
+  }
+  /* View People */
+
+  /* About */
+  .about-text-container {
+    padding: 100px 45px;
+  }
+  .about-text-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .about-text-body {
+    font-size: 19px;
+  }
+  .section-about-grid-container {
+    padding: 50px 30px;
+  }
+  .about-grid-card-title {
+    font-size: 32px;
+    margin-bottom: 9px;
+  }
+  .about-grid-card-text {
+    font-size: 18px;
+  }
+  .about-grid-card {
+    margin-bottom: 10px;
+  }
+  .about-container {
+    padding-bottom: 40px;
+  }
+  .about-container .abse-row {
+    border: none;
+    padding: 40px 0 15px;
+  }
+  .teamwork-office-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* About */
+
+  /* OFFice */
+  .office-studio-title {
+    font-size: 50px;
+  }
+  .office-studio-experience {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .os-text {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  .os-address a,
+  .os-tel a {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .osp-info-position {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .osp-info-name {
+    font-size: 20px;
+  }
+  .osp-info {
+    padding-left: 25px;
+    padding-top: 4px;
+  }
+  .osp-info-mail {
+    font-size: 18px;
+  }
+  /* OFFice */
 }
 
 @media (max-width: 991.98px) {
@@ -1543,6 +2204,18 @@ nav.active-impor .model-menu-bar .bar {
     font-size: 18px;
     margin-top: 4px;
   }
+
+  /* About */
+  .teamwork-office-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-grid-card-title {
+    font-size: 43px;
+  }
+  .about-grid-card-text {
+    font-size: 19px;
+  }
+  /* About */
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {

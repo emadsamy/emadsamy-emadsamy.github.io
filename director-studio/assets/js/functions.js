@@ -7,13 +7,7 @@ $(document).ready(function () {
       $("body").css("overflow-y", "auto");
 
       // Check Scroll
-      var $el = $("#mainHeader");
-      var bottom = $el.position().top + $el.outerHeight(true);
-      if ($(window).scrollTop() >= bottom) {
-        $("#nav").addClass("active");
-      } else {
-        $("#nav").removeClass("active");
-      }
+      headerBottomScrollerChecker();
     } else {
       $("#navMenuLinks").addClass("active");
       $(this).addClass("active");
@@ -33,30 +27,14 @@ $(document).ready(function () {
     "minHeight",
     "calc(100vh - " + minusHeight + "px)"
   );
-
-  $(window).on("resize", function () {
-    // Add Paadding to Main Wrapper
-    // $("#wrapperContainer").css("paddingTop", $("#nav").innerHeight() + "px");
-    // Wrapper Container
-    // $("#wrapperContainer, .auth-container").css(
-    //   "minHeight",
-    //   "calc(100vh - " + minusHeight + "px)"
-    // );
-  });
 });
 
 $(document).ready(() => {
   // Scroll To Top
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0 && $("#mainHeader")[0]) {
       $(".transition-title").addClass("active");
-      var $el = $("#mainHeader");
-      var bottom = $el.position().top + $el.outerHeight(true);
-      if ($(window).scrollTop() >= bottom) {
-        $("#nav").addClass("active");
-      } else {
-        $("#nav").removeClass("active");
-      }
+      headerBottomScrollerChecker();
     } else {
       $(".transition-title").removeClass("active");
       $("#nav").removeClass("active");
@@ -64,8 +42,9 @@ $(document).ready(() => {
   });
   $(window).on("load", function () {
     if ($(window).scrollTop() > 0) {
+      // && $(window).scrollTop() >= mainHeaderBottom
       setTimeout(function () {
-        $(".transition-title").addClass("active");
+        $(".transition-title").removeClass("active");
       }, 200);
       $("#nav").addClass("active");
     }
@@ -116,3 +95,15 @@ $(document).ready(() => {
     }, 1200);
   });
 });
+
+// Callback IF Condition Header Bottom
+function headerBottomScrollerChecker() {
+  var mainHeaderBottom =
+    $("#mainHeader").position().top + $("#mainHeader").outerHeight(true);
+  if ($(window).scrollTop() >= mainHeaderBottom) {
+    $("#nav").addClass("active");
+    $(".transition-title").removeClass("active");
+  } else {
+    $("#nav").removeClass("active");
+  }
+}
