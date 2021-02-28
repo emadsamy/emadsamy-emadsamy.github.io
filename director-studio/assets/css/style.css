@@ -1211,26 +1211,19 @@ nav.active-impor .model-menu-bar .bar {
   margin: 0;
 }
 .award-list {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  flex-wrap: wrap;
-}
-.award-list-item {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  flex-basis: 16.66%;
-  flex-grow: 0;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 5px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 27px;
 }
 .award-list-item .award-logo {
   position: relative;
-  height: 75px;
-  width: 100%;
-  overflow: hidden;
+  text-align: center;
+}
+.award-logo img {
+  height: 70px;
+  margin: 17px auto;
+  display: block;
 }
 .award-list-item p {
   font-weight: 400;
@@ -1726,6 +1719,13 @@ footer a:hover {
     grid-auto-rows: 15.5px;
     grid-template-columns: repeat(1, 1fr);
   }
+  .award-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 27px;
+  }
+  .about-content {
+    padding-bottom: 30px;
+  }
   /* About */
 
   /* OFFice */
@@ -2031,6 +2031,10 @@ footer a:hover {
   .teamwork-office-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .award-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
   /* About */
 
   /* OFFice */
@@ -2156,6 +2160,10 @@ footer a:hover {
   .teamwork-office-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .award-list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+  }
   /* About */
 
   /* OFFice */
@@ -2214,6 +2222,10 @@ footer a:hover {
   }
   .about-grid-card-text {
     font-size: 19px;
+  }
+  .award-list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
   }
   /* About */
 }
