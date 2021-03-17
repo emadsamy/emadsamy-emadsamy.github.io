@@ -1,0 +1,224 @@
+.project-description-container {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+.project-description-wrapper {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-title {
+  margin-bottom: 2vh;
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+.project-description-cms {
+  display: block;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.06em;
+  margin-bottom: 60px;
+}
+.project-description-extra {
+  display: flex;
+}
+.project-extra-deliverables {
+  margin-right: 5vw;
+}
+.project-deliverables {
+  display: block;
+  margin-bottom: 7px;
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+.project-deliverables-list {
+  display: block;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.more-information {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.more-information,
+.more-information-text {
+  display: block;
+  font-weight: 300;
+  text-align: left;
+  opacity: 0.6;
+}
+.more-information-text {
+  direction: ltr;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+.more-information-text a {
+  font-size: 17px;
+  text-decoration: underline !important;
+}
+.project-image {
+  width: 100%;
+}
+.video-design-embed {
+  margin-bottom: -10px;
+}
+.similar-projects-container {
+  padding-top: 75px;
+  padding-bottom: 110px;
+}
+.similar-projects-content {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.similar-projects-text {
+  display: inline-block;
+  font-weight: 500;
+  color: #131313;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.similar-projects-collection {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 25px;
+  gap: 25px;
+}
+.similar-project-card {
+  position: relative;
+  display: block;
+}
+.similar-project-view {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+.similar-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+.similar-project-card:hover .similar-project-overlay {
+  opacity: 1;
+}
+.project-overlay-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.05em;
+  margin-right: 9%;
+  margin-left: 9%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .project-description-container {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .project-description-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .project-description-extra {
+    display: block;
+  }
+  .project-extra-deliverables {
+    margin-bottom: 4.4vh;
+  }
+  .similar-projects-content {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .similar-projects-text {
+    display: block;
+    text-align: center;
+  }
+  .similar-project-view {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .similar-projects-collection {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 479px) and (max-width: 767.98px) {
+  .similar-projects-content {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .similar-project-view {
+    height: 300px;
+  }
+  .similar-projects-text {
+    text-align: left;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .project-description-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project-description-wrapper {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .similar-project-view {
+    height: 200px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1920px) {
+  .similar-project-view {
+    height: 35vh;
+  }
+}
