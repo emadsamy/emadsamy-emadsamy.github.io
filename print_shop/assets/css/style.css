@@ -1435,10 +1435,22 @@ nav.active {
 }
 
 .product-view {
-  padding: 20px;
-  background-image: url("../img/products/card.png");
+  /* padding: 20px; */
+  /* background-image: url("../img/products/card.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* justify-content: center; */
+  position: relative;
+}
+.view-product-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -1449,7 +1461,8 @@ nav.active {
   width: calc(100% - 40px);
   max-width: 400px;
   bottom: 0;
-  margin: 20px auto;
+  margin: 20px !important;
+  border: 1px solid #fff;
 }
 
 .toolbar-item {
@@ -1458,23 +1471,23 @@ nav.active {
   width: 33.3333%;
 }
 .toolbar-item:nth-of-type(2) {
-  border-left: 1px solid #66666661;
-  border-right: 1px solid #66666661;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 .toolbar-item:hover .toolbar-item-icon,
 .toolbar-item:hover .toolbar-item-text {
-  color: #cd7d04;
+  color: #d3d3d3;
 }
 
 .toolbar-item-icon {
   width: 23px;
   font-size: 23px;
-  color: #808080;
+  color: #fff;
   margin-top: 1px;
 }
 
 .toolbar-item-text {
-  color: #808080;
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   margin-left: 5px;
@@ -2595,7 +2608,7 @@ nav.active {
   }
 
   .product-view {
-    height: 500px;
+    /* height: 500px; */
     background-position: center;
   }
 
@@ -2969,7 +2982,7 @@ nav.active {
   }
 
   .product-view {
-    height: 500px;
+    /* height: 500px; */
     background-position: center;
   }
 
@@ -3151,7 +3164,7 @@ nav.active {
 
   .product-view {
     width: 500px;
-    height: 700px;
+    /* height: 600px; */
     margin: auto;
     background-position: top center;
   }
@@ -3278,6 +3291,10 @@ nav.active {
     padding-right: 15px !important;
     margin-bottom: 20px;
   }
+  .view-product-img {
+    min-height: 100%;
+    object-fit: cover;
+  }
 
   .cart-follow-btns > a img {
     width: 22px;
@@ -3400,6 +3417,10 @@ nav.active {
   .product-view-row .col-lg-6 {
     flex: 0 0 40%;
     max-width: 40%;
+  }
+  .view-product-img {
+    min-height: 100%;
+    object-fit: cover;
   }
 }
 
