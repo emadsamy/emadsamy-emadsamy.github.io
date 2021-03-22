@@ -171,8 +171,11 @@
 
             <!-- Page Container -->
             <div class="container-fluid">
-                <div class="table-list mb-5">
-                    <div class="table">
+                <div id="tableList2" class="table-list-2">
+                    <div id="tableListScroll" class="table-list-scroll"></div>
+                </div>
+                <div id="mainTable" class="table-list mb-5">
+                    <div id="table" class="table">
                         <!-- Table Header -->
                         <div class="table-header">
                             <div>#</div>
@@ -664,6 +667,28 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Main Functions -->
     <script src="assets/js/functions.js"></script>
+    <!-- <script>
+        $(function () {
+            $("#mainTable").scrollLeft($("#tableList2").scrollLeft());
+            $("#tableList2").scrollLeft($("#mainTable").scrollLeft());
+
+            $(function () {
+                $("#mainTable").scroll(function () {
+                    $("#tableList2").scrollLeft($("#mainTable").scrollLeft());
+                });
+                $("#tableList2").scroll(function () {
+                    $("#mainTable").scrollLeft($("#tableList2").scrollLeft());
+                });
+            });
+        });
+
+        $(function () {
+            $("#tableListScroll").css('width', $('#table').width() + "px");
+            $(window).on('resize', function () {
+                $("#tableListScroll").css('width', $('#table').width() + "px");
+            });
+        });
+    </script> -->
 </body>
 
 </html>

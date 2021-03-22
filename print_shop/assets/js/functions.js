@@ -71,3 +71,25 @@ $(window).on("load", function () {
   $("#preloader").fadeOut(1000);
   // $('#preloader').css('display', 'none');
 });
+
+// Add Scroll to top
+$(function () {
+  $("#mainTable").scrollLeft($("#tableList2").scrollLeft());
+  $("#tableList2").scrollLeft($("#mainTable").scrollLeft());
+
+  $(function () {
+    $("#mainTable").scroll(function () {
+      $("#tableList2").scrollLeft($("#mainTable").scrollLeft());
+    });
+    $("#tableList2").scroll(function () {
+      $("#mainTable").scrollLeft($("#tableList2").scrollLeft());
+    });
+  });
+});
+
+$(function () {
+  $("#tableListScroll").css("width", $("#table").width() + "px");
+  $(window).on("resize", function () {
+    $("#tableListScroll").css("width", $("#table").width() + "px");
+  });
+});

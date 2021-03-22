@@ -178,17 +178,22 @@
 
 							<!-- Add Url -->
 							<div class="add-url d-flex main-border justify-content-center text-center">
-								<div class="url-icon text-right">
-									<img src="assets/img/icons/url.svg" alt="Upload File" class="pr-2 img-fluid" />
+								<div class="d-flex align-items-center justify-content-center">
+									<div class="url-icon">
+										<img src="assets/img/icons/url.svg" alt="Upload File"
+											class="pr-2 img-fluid upload-input" />
+									</div>
+									<input data-upurl-img=".upload-input" type="text" placeholder="ضع رابط الملف "
+										class="ul-input-keyup" />
 								</div>
-								<input type="text" placeholder="ضع رابط الملف " />
 							</div>
 
 							<!-- Upload Cover -->
 							<div class="upload-cover main-border d-flex justify-content-center text-center">
-								<input type="file" />
+								<input data-upurl-img=".link-input" type="file" class="ul-input-change" />
 								<div class="url-icon text-right">
-									<img src="assets/img/icons/upload.svg" alt="Upload File" class="pr-2 img-fluid" />
+									<img src="assets/img/icons/upload.svg" alt="Upload File"
+										class="pr-2 img-fluid link-input" />
 								</div>
 								<div class="upload-text pt-1">حمل الغلاف</div>
 							</div>
@@ -296,6 +301,29 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<!-- Main Functions -->
 	<script src="assets/js/functions.js"></script>
+	<script>
+		$(".ul-input-change").on('change', function () {
+			var input = $(this).val();
+			var img = $(this).attr("data-upurl-img");
+			if (input.length > 0) {
+				$(img).css('opacity', '0');
+				console.log("test");
+			} else {
+				$(img).css('opacity', '1');
+			}
+		});
+
+		$(".ul-input-keyup").on('keyup', function () {
+			var input = $(this).val();
+			var img = $(this).attr("data-upurl-img");
+			if (input.length > 0) {
+				$(img).css('opacity', '0');
+				console.log("test");
+			} else {
+				$(img).css('opacity', '1');
+			}
+		});
+	</script>
 </body>
 
 </html>
