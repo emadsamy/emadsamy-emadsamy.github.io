@@ -1622,7 +1622,7 @@ nav.active {
 .auth-content .btn {
   font-size: 20px;
   border: 1px solid #cd7d04;
-  color: #fff;
+  color: #000;
 }
 .auth-content .btn:hover {
   background-color: #a16203;
@@ -1787,11 +1787,11 @@ nav.active {
 }
 .order-tracking-data:hover {
   background: #cd7d04;
-  color: #fff;
+  color: #000;
 }
 .order-tracking-data:active {
   background: #be7506;
-  color: #fff;
+  color: #000;
 }
 .order-tracking-data span {
   font-size: 18px;
@@ -2087,7 +2087,7 @@ nav.active {
 
 .tracking-progres-item.active {
   background-color: #cd7d04;
-  color: #fff;
+  color: #000;
 }
 
 /* >>>>>> Tracking <<<<<< */
@@ -2566,7 +2566,7 @@ nav.active {
   }
 
   .products-header {
-    padding: 80px 0 20px;
+    padding: 170px 0 20px;
     margin-bottom: 0;
   }
 

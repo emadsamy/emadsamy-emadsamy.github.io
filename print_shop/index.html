@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<style>
 		.product-card {
-			display: none;
+			/* display: none; */
 		}
 	</style>
 </head>
@@ -254,19 +254,64 @@
 	<!-- Main Functions -->
 	<script src="assets/js/functions.js"></script>
 	<script>
-		var counter = 15;
-		$('.more-products-btn').on('click', function () {
-			counter += 5;
-			generateMore(counter);
-			console.log(counter);
+		var counter = 0;
+		if ($(window).width() < 576) {
+			counter = 6;
+		} else {
+			counter = 15;
+		}
+
+		$(window).on('resize', function () {
+			if ($(window).width() < 576) {
+				generateMore(6);
+			} else {
+				generateMore(15);
+			}
 		});
 
+		$('.more-products-btn').on('click', function () {
+			// winodwWidth();
+			if ($(window).width() < 576) {
+				counter = counter + 2;
+			} else {
+				counter += 5;
+			}
+			generateMore(counter);
+			console.log("items " + counter);
+		});
+
+
+
+		// function winodwWidth() {
+		// 	if ($(window).innerWidth() < 576) {
+		// 		counter = 6;
+		// 	} else {
+		// 		counter = 15;
+		// 	}
+		// 	return counter;
+		// }
+		// winodwWidth();
+		// $('.more-products-btn').on('click', function () {
+		// 	winodwWidth();
+		// 	if ($(window).innerWidth() < 576) {
+		// 		// counter = 6;
+		// 		counter = counter + 2;
+		// 	} else {
+		// 		// counter = 15;
+		// 		// counter += 5;
+		// 	}
+		// 	generateMore(counter);
+		// 	console.log("items " + counter);
+		// });
+
 		function generateMore(counter) {
+			// winodwWidth();
+			$(`.products-grid .product-card`).attr('style', 'display: none');
 			for (let x = 0; x <= counter; x++) {
-				$(`.products-grid .product-card:nth-of-type(${x})`).attr('style', 'display: block !important');
+				$(`.products-grid .product-card:nth-of-type(${x})`).attr('style', 'display: block');
 			}
 		}
-		generateMore(15);
+		generateMore(counter);
 	</script>
 </body>
 
