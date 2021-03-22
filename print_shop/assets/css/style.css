@@ -319,7 +319,7 @@ nav,
 .page-header,
 .page-header-bg {
   font-weight: 600;
-  color: #ffcc33;
+  color: #cd7d04;
   line-height: 1;
 }
 
@@ -356,7 +356,7 @@ nav,
 }
 
 .header-icon-bg {
-  width: 50px;
+  width: 42px;
 }
 
 .page-header-title,
@@ -541,7 +541,7 @@ small {
 }
 
 .main-border {
-  border: 1px solid #333333;
+  border: 1px solid #bababa;
 }
 
 .gradient-easing {
@@ -636,12 +636,12 @@ small {
 .main-btn,
 .main-btn-transparent {
   padding: 10px 15px;
-  border: 1px solid #333333;
+  border: 1px solid #bababa;
 }
 .main-btn:active,
 .main-btn-transparent:active {
-  background-color: #ddb227;
-  border: 1px solid #ddb227;
+  background-color: #a16203;
+  border: 1px solid #a16203;
 }
 .main-btn:focus,
 .main-btn-transparent:focus {
@@ -665,8 +665,8 @@ small {
   border: 1px solid #cd7d04;
 }
 .main-btn-transparent:active {
-  background-color: #ddb227;
-  border: 1px solid #ddb227;
+  background-color: #a16203;
+  border: 1px solid #a16203;
 }
 
 .btn {
@@ -804,14 +804,14 @@ html {
   z-index: -100;
   position: absolute;
   opacity: 0;
+  left: 0;
+  width: 100%;
 }
 .navbar-toggle.active {
   margin-top: 0 !important;
   /* height: auto; */
   z-index: 81;
   opacity: 1;
-  width: 100%;
-  left: 0;
 }
 
 .followus-text {
@@ -1013,6 +1013,9 @@ nav.active {
   top: 1px;
   color: #333333;
   margin-left: 23px;
+}
+.social-icon:last-of-type {
+  margin: 0;
 }
 .social-icon:hover i {
   color: #cd7d04;
@@ -1606,10 +1609,11 @@ nav.active {
 .auth-content .btn {
   font-size: 20px;
   border: 1px solid #cd7d04;
+  color: #fff;
 }
 .auth-content .btn:hover {
-  background-color: #ddb227;
-  border: 1px solid #ddb227;
+  background-color: #a16203;
+  border: 1px solid #a16203;
 }
 
 .back-to-home img {
@@ -1770,11 +1774,11 @@ nav.active {
 }
 .order-tracking-data:hover {
   background: #cd7d04;
-  color: #000;
+  color: #fff;
 }
 .order-tracking-data:active {
-  background: #ddb227;
-  color: #000;
+  background: #be7506;
+  color: #fff;
 }
 .order-tracking-data span {
   font-size: 18px;
@@ -2070,6 +2074,7 @@ nav.active {
 
 .tracking-progres-item.active {
   background-color: #cd7d04;
+  color: #fff;
 }
 
 /* >>>>>> Tracking <<<<<< */
@@ -2432,7 +2437,7 @@ nav.active {
   }
 
   .navbar-toggle-links a {
-    display: block;
+    display: block !important;
     padding: 0;
     margin: 0;
     margin-bottom: 17px;
@@ -3363,6 +3368,24 @@ nav.active {
   /* Products */
 }
 /** Media Queries **/
+
+@media (max-width: 992px) {
+  .navbar-toggle .container-fluid > div.d-flex {
+    display: block !important;
+  }
+  .navbar-toggle-socialmedia {
+    justify-content: center;
+    margin: 5px;
+  }
+  .navbar-toggle-links a {
+    display: block !important;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 17px;
+    border: none;
+    text-align: center;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .container-product-view,
