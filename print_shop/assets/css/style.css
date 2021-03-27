@@ -1693,7 +1693,7 @@ nav.active {
   width: 1419px;
   height: 15px;
 }
-.table-list-2::-webkit-scrollbar {
+/* .table-list-2::-webkit-scrollbar {
   width: 0.2em;
 }
 .table-list-2::-webkit-scrollbar-track {
@@ -1704,7 +1704,7 @@ nav.active {
 .table-list-2::-webkit-scrollbar-thumb {
   background-color: #ccc;
   /* outline: 1px solid slategrey; */
-}
+} */
 .table-no-border {
   border: none !important;
 }
