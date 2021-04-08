@@ -275,7 +275,8 @@ nav,
 .order-tracking-data,
 .instructions-list li,
 .bill-btn,
-.cancel-order .icon {
+.cancel-order .icon,
+.cart-follow-btns .icon {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -897,8 +898,8 @@ nav.active {
   color: #000;
 }
 .navbar-links .navbar-logo {
-  margin-top: 4px;
-  width: 170px;
+  margin-top: 0;
+  width: 190px;
   max-width: none;
   padding: 0 !important;
 }
@@ -1225,7 +1226,7 @@ nav.active {
 .products {
   background: #fff;
   background-image: url("../img/products.png");
-  background-size: 800px 510px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -1254,6 +1255,7 @@ nav.active {
   padding: 15px 5px;
   z-index: 30;
   overflow: hidden;
+  border-radius: 10px;
 }
 .product-card:before {
   content: "";
@@ -1324,7 +1326,8 @@ nav.active {
   color: #333333;
   font-weight: normal;
   font-size: 22px;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
+  margin-top: 1.7rem !important;
   font-weight: 600;
 }
 .product-description > div {
@@ -1568,6 +1571,18 @@ nav.active {
   align-items: center;
   justify-content: center;
 }
+.cart-follow-btns .icon {
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 7px;
+}
+.cart-follow-btns .icon-rot-z {
+  transform: rotateZ(90deg);
+  margin: 0;
+  margin-top: -5px;
+  margin-right: 5px;
+  font-size: 18px;
+}
 .cart-follow-btns > a img {
   width: 27px;
   margin-left: 0 !important;
@@ -1575,7 +1590,10 @@ nav.active {
 .cart-follow-btns > a:hover {
   background: #d92231;
   border: 1px solid #d92231;
-  color: #000;
+  color: #fff;
+}
+.cart-follow-btns > a:hover .icon {
+  color: #fff;
 }
 .cart-follow-btns > a:active {
   background: #ddb227;
@@ -2520,7 +2538,6 @@ nav.active {
   }
   .navbar-links .navbar-logo {
     width: 122px;
-    margin-top: 6px;
   }
   .navbar-links > a,
   .navbar-links > div {
