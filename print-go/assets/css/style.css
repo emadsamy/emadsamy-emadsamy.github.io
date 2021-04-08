@@ -863,8 +863,8 @@ nav.active {
 }
 .navbar .navbar-links > a,
 .navbar .navbar-links > div {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 7px;
   padding-right: 7px;
   display: inline-block;
@@ -1244,10 +1244,11 @@ nav.active {
   margin-bottom: 50px;
 }
 .products-header .title-bg {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   color: #d92231;
-  text-align: left !important;
   font-size: 35px;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .product-card {
@@ -1308,18 +1309,18 @@ nav.active {
   color: #666;
 }
 .all-products-btn .icon {
-  width: 25px;
-  height: 25px;
+  width: auto;
+  height: auto;
   line-height: 1;
   border-radius: 50%;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 .all-products-btn .text {
   top: 6px;
   margin-right: 5px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* >>>>>> Products <<<<<< */
@@ -2637,7 +2638,7 @@ nav.active {
 
   .products-header .title-bg,
   .products-header .description {
-    text-align: center !important;
+    text-align: right !important;
   }
 
   .carousel-arrow {
@@ -2901,11 +2902,7 @@ nav.active {
   }
   .products-header .title-bg,
   .products-header .description {
-    text-align: center !important;
-  }
-  .products-header .title-bg,
-  .products-header .description {
-    text-align: center !important;
+    text-align: right !important;
   }
 
   .page-header-filter {
@@ -3182,7 +3179,7 @@ nav.active {
   }
   .products-header .title-bg,
   .products-header .description {
-    text-align: center !important;
+    text-align: right !important;
   }
 
   /* Global */

@@ -29,23 +29,8 @@
 	<!-- Main Style -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<style>
-		.products-header div {
-			text-align: right !important;
-		}
-
-		.header-home-bg {
-			min-height: 470px;
-			height: 60vh;
-			background-size: cover;
-			background-position: top center;
-			display: flex;
-			align-items: center;
-			margin-bottom: 40px;
-		}
-
-		.products-header {
-			padding: 0;
-			margin: 0;
+		.product-card {
+			/* display: none; */
 		}
 	</style>
 </head>
@@ -121,26 +106,18 @@
 		</div>
 
 		<!-- Page Content -->
-		<div class="page-content">
-			<div class="header-home-bg" style="background-image: url('assets/img/products.png') ;">
-				<div class="container-fluid">
-					<div class="products-header">
-						<div class="title-bg">اطبع اللي انت عايزه <br /> من اى مكان</div>
-						<div class="description">عشرات المنتجات بلمسة واحدة في مكان واحد </div>
-					</div>
-				</div>
-			</div>
+		<div class="page-content products">
 			<!-- Page Container -->
 			<div class="container">
 				<!-- Products Head -->
-				<!-- <div class="row">
+				<div class="row">
 					<div class="col-lg-6 offset-lg-6">
 						<div class="products-header">
 							<div class="title-bg text-center">اطبع اللي انت عايزه من اى مكان</div>
 							<div class="description text-center">عشرات المنتجات بلمسة واحدة في مكان واحد </div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<!-- Products Slider -->
 				<div class="products-slider-container">
@@ -250,6 +227,19 @@
 						<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
 					</div>
 					<div class="footer-copyright text-right">كل الحقوق محفوظة &copy; Print Go 2021</div>
+					<!-- <div class="row">
+						<div class="col-lg-6 col-sm-6 col-md-6">
+							<div class="footer-socialmedia text-left">
+								<a class="facebook-icon social-icon" href="#"><i class="fab fa-twitter"></i></a>
+								<a class="linkedin-icon social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a class="youtube-icon social-icon" href="#"><i class="fab fa-youtube"></i></a>
+								<a class="facebook-icon social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-md-6">
+							<div class="footer-copyright text-right">كل الحقوق محفوظة &copy; Print Go 2021</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -275,8 +265,7 @@
 		if ($(window).width() < 576) {
 			counter = 6;
 		} else {
-			// counter = 15;
-			counter = 10;
+			counter = 15;
 		}
 
 		/* Stop */
