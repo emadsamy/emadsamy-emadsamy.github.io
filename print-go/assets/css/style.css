@@ -770,7 +770,7 @@ html {
 }
 
 .page-content {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .search-group {
@@ -1226,7 +1226,7 @@ nav.active {
 .products {
   background: #fff;
   background-image: url("../img/products.png");
-  background-size: cover;
+  background-size: 100% 65%;
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -1240,12 +1240,14 @@ nav.active {
   gap: 10px;
 }
 .products-header {
-  padding: 100px 0;
+  padding: 79px 0;
   margin-bottom: 50px;
 }
 .products-header .title-bg {
   margin-bottom: 35px;
   color: #d92231;
+  text-align: left !important;
+  font-size: 35px;
 }
 
 .product-card {
@@ -2605,7 +2607,7 @@ nav.active {
   /* Global Components */
   /* Products */
   .products {
-    background-size: 444px 296px;
+    background-size: 100% 227px;
     background-position: top right;
   }
   .products .page-content {
@@ -2629,8 +2631,13 @@ nav.active {
   }
 
   .products-header {
-    padding: 270px 0 20px;
+    padding: 250px 0 20px;
     margin-bottom: 0;
+  }
+
+  .products-header .title-bg,
+  .products-header .description {
+    text-align: center !important;
   }
 
   .carousel-arrow {
@@ -2645,6 +2652,7 @@ nav.active {
   }
   .all-products-btn {
     left: auto;
+    margin-bottom: 0.4rem !important;
   }
   .all-products-btn .text {
     margin-right: 0;
@@ -2891,6 +2899,14 @@ nav.active {
   .header-icon-bg {
     width: 35px;
   }
+  .products-header .title-bg,
+  .products-header .description {
+    text-align: center !important;
+  }
+  .products-header .title-bg,
+  .products-header .description {
+    text-align: center !important;
+  }
 
   .page-header-filter {
     width: 100%;
@@ -3003,8 +3019,8 @@ nav.active {
   }
 
   .products {
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 46%;
+    background-position: top right;
   }
 
   .owl-nav {
@@ -3163,6 +3179,10 @@ nav.active {
   }
   .page-header-filter .input-group {
     width: calc(100% - 120px);
+  }
+  .products-header .title-bg,
+  .products-header .description {
+    text-align: center !important;
   }
 
   /* Global */
