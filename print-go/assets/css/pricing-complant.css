@@ -1,0 +1,218 @@
+/* Pricing Complaint */
+.fluid-width {
+  width: 100%;
+}
+.pricing-complaint {
+  margin-bottom: 30px;
+}
+.pricing-complaint .title {
+  padding: 30px 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #d92231;
+}
+
+.pc-header-box {
+  background: #d92231;
+  padding: 45px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.pc-header-box:before {
+  position: absolute;
+  content: "";
+  top: 41px;
+  right: 45px;
+  width: 70px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.pc-header-details-box {
+  color: #fff;
+  font-size: 25px;
+}
+
+.pc-text {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  margin-top: 25px;
+  font-size: 23px;
+}
+
+.pc-options {
+  opacity: 0.9;
+  display: flex;
+}
+.pc-options span {
+  font-size: 18px;
+  display: inline-block;
+}
+.pc-options .pc-line {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.pc-header-img-box {
+  width: auto;
+  height: auto;
+}
+.pc-header-img-box img {
+  width: 120px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.communication-box {
+  padding: 45px 30px;
+  background: #efefef;
+}
+
+.communication-text,
+.communication-number {
+  font-size: 25px;
+  color: #4d4d4d;
+}
+
+.communication-number {
+  direction: ltr;
+  font-size: 30px;
+}
+
+.contactus-box .form-group {
+  border: 1px solid #666666;
+  border-radius: 0;
+}
+.contactus-box .product-drag {
+  border: none;
+  position: relative;
+  padding: 17px 15px 20px;
+}
+.contactus-box .main-btn-backdrop {
+  width: 100%;
+  border-radius: 0;
+}
+.contactus-box .form-control {
+  border: none;
+  overflow-y: auto;
+  border-radius: 0;
+  padding: 11px 10px;
+}
+.contactus-box textarea.form-control {
+  height: 200px;
+  resize: none;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+.contactus-box .form-control::placeholder {
+  color: #4d4d4d;
+}
+
+.upload-file-contact {
+  border: 1px solid #66666661;
+  padding: 10px;
+}
+
+.upload-img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.upload-text {
+  color: #4d4d4d;
+  font-size: 15px;
+}
+
+.upload-file-type img {
+  width: 21px;
+  height: 21px;
+  margin-top: -3px;
+}
+
+/* Pricing Complaint */
+.img-drag {
+  height: 60px;
+  margin-left: 10px;
+}
+.main-btn-backdrop {
+  background-color: #d92231;
+  border: 1px solid #d92231;
+  color: #fff !important;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+.main-btn-backdrop:hover {
+  background-color: #be101f;
+  border: 1px solid #be101f;
+  color: #fff;
+}
+.drag-note {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 575.98px) {
+  /* Complaint & Pricing */
+  .pricing-complaint .title {
+    text-align: center;
+  }
+
+  .pc-keywords {
+    text-align: center;
+  }
+
+  .pc-header-box {
+    flex-direction: column;
+    padding: 30px 17px;
+  }
+  .pc-header-box:before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .pc-header-details-box {
+    order: 2;
+    flex: 1;
+  }
+  .pc-header-details-box .pc-text {
+    text-align: center;
+  }
+
+  .pc-header-img-box {
+    order: 1;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pc-header-img-box img {
+    position: static !important;
+    transform: none;
+    margin-top: 50px;
+  }
+
+  .pc-options {
+    justify-content: center;
+  }
+
+  .communication-box {
+    margin-bottom: 20px;
+  }
+
+  .communication-text,
+  .communication-number {
+    text-align: center;
+  }
+
+  /* Complaint & Pricing */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .pc-box {
+    margin-bottom: 20px;
+  }
+}
