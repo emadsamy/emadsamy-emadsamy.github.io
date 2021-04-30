@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.517" height="48.534" viewBox="0 0 52.517 48.534">
+  <g id="store" transform="translate(0.375 0.375)">
+    <g id="Group_953" data-name="Group 953">
+      <path id="Path_1277" data-name="Path 1277" d="M2.8,61.494V85.162H14.269V70.245H22.58V85.162H48.969V61.494a7.815,7.815,0,0,0,2.8-5.994V48.464L44.9,37.378H7.074L0,48.451V55.5A7.815,7.815,0,0,0,2.8,61.494ZM15.126,41l-3.09,8.025V55.5a4.207,4.207,0,0,1-8.413,0V49.509L9.059,41h6.067Zm8.946,0V55.5a4.207,4.207,0,0,1-8.413,0V49.7L19.008,41Zm8.687,0,3.349,8.7v5.8a4.207,4.207,0,0,1-8.413,0V41Zm10.122,0L48.144,49.5v6a4.207,4.207,0,0,1-8.413,0V49.026L36.641,41h6.24ZM45.346,81.54H26.2V66.622H10.647V81.54H6.421V63.2a7.826,7.826,0,0,0,7.426-2.7,7.82,7.82,0,0,0,12.036,0,7.82,7.82,0,0,0,12.036,0,7.826,7.826,0,0,0,7.426,2.7V81.54Z" transform="translate(0 -37.378)" stroke="#fff" stroke-width="0.75"/>
+      <line id="Line_168" data-name="Line 168" y1="3.529" x2="1.412" transform="translate(14.301 2.703)" fill="none" stroke="#fff" stroke-width="0.75"/>
+      <line id="Line_166" data-name="Line 166" x2="35.997" transform="translate(7.948 1.997)" fill="none" stroke="#000" stroke-width="0.75"/>
+      <line id="Line_167" data-name="Line 167" y1="4.235" x2="1.412" transform="translate(15.712 2.703)" fill="none" stroke="#000" stroke-width="0.75"/>
+    </g>
+  </g>
+</svg>

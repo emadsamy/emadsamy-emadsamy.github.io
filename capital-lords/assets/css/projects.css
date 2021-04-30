@@ -1,0 +1,81 @@
+.projects-container {
+  padding-top: 40px;
+}
+.projects-grid-button .button-default > * {
+  padding: 15px 31px;
+  font-size: 18px;
+}
+.projects-grid-button .button-default .icon {
+  font-size: 14px;
+}
+.vacation-filter {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}
+.vacation-content {
+  /* padding: 10px 0; */
+}
+.vh-row > div {
+  width: 50%;
+}
+.vh-bg {
+  background-size: cover;
+  background-position: center;
+}
+.vh-data {
+  padding: 80px 55px;
+  background-repeat: no-repeat;
+  background-position-y: 74%;
+  background-position-x: 90%;
+  background-size: 120px;
+}
+.vh-title {
+  line-height: 1;
+  font-weight: 500;
+}
+.vh-icon .icon {
+  font-size: 47px;
+  color: #fff;
+  margin-right: 15px;
+}
+.selectric .label {
+  font-size: 19px;
+  font-weight: 500;
+}
+.search-filter-selectbox {
+  min-width: 200px;
+  padding-right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+.selectric-items li {
+  font-size: 17px;
+  font-weight: 500;
+}
+.ps-group .icon {
+  font-size: 21px;
+  margin-right: 10px;
+}
+.ps-group input {
+  font-size: 18px;
+  line-height: 1;
+  width: 100%;
+}
+.projects-search {
+  width: 100%;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+}
+.projects-filter-btn {
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+.projects-filter-btn .icon {
+  font-size: 21px;
+}
+.fil-txt {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 10px;
+}
