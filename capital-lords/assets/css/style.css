@@ -112,7 +112,8 @@ nav,
 .mbg-card,
 .dl-btn,
 .ms-icon,
-.ms-link {
+.ms-link,
+.project-action-btn {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -354,6 +355,18 @@ small {
   opacity: 0.6;
   background: #fff;
   color: #303030;
+}
+.read-more-btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+}
+.read-more-btn:hover {
+  opacity: 0.7;
+}
+.read-more-btn:active {
+  opacity: 0.4;
 }
 /** Buttons **/
 
@@ -1113,6 +1126,61 @@ footer {
   opacity: 0.4;
 }
 /* Footer */
+
+/* Projects Slider */
+.projects-slider {
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+.projects-slider-header {
+  border-top: 1px solid #000;
+  padding-top: 9px;
+  margin-bottom: 28px;
+}
+.ps-arrows button {
+  margin-left: 15px;
+}
+.ps-arrows .icon {
+  font-weight: bold;
+  font-size: 25px;
+}
+.product-card-view {
+  width: 100%;
+  height: 177px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.product-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00153c;
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 9px;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+.product-card-company {
+  display: flex;
+}
+.pcc-logo img {
+  width: 65px;
+  height: 65px;
+}
+.pcc-data {
+  padding: 10px 15px;
+}
+.pcc-title {
+  line-height: 1;
+  color: #838383;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.pcc-price {
+  line-height: 1;
+  font-size: 19px;
+  font-weight: 600;
+}
+/* Projects Slider */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

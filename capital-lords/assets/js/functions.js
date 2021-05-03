@@ -14,7 +14,6 @@ $(window).scroll(function () {
 });
 
 // Header Scroller
-// Scroll To Top
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 0 && $("#headerScroller")[0]) {
     $(".transition-title").addClass("active");
@@ -140,4 +139,33 @@ $(".checkAll").click(function () {
       .find(".multiple-checkbox-container input")
       .prop("checked", false);
   }
+});
+
+// Accordion Plus And Minus
+$(".collapse")
+  .on("shown.bs.collapse", function () {
+    $(this)
+      .parent()
+      .find(".icon-plus")
+      .removeClass("icon-plus")
+      .addClass("icon-minus");
+  })
+  .on("hidden.bs.collapse", function () {
+    $(this)
+      .parent()
+      .find(".icon-minus")
+      .removeClass("icon-minus")
+      .addClass("icon-plus");
+  });
+
+// Read More Function
+$(".read-more-btn").on("click", function () {
+  var content = $(this).parents(".read-more-parent").find(".read-more-content");
+  $(content).text($(content).text().substr(0, $(content).text().length));
+});
+
+$(".read-more-content").each(function () {
+  var length = $(this).attr("data-length");
+  var strToInt = parseInt(length);
+  $(this).text($(this).text().substr(0, strToInt));
 });
