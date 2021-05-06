@@ -49,6 +49,7 @@
 }
 .pbd-row {
   padding-right: 25px;
+  /* margin-bottom: 20px; */
 }
 .pbd-title {
   color: #747474;
@@ -57,9 +58,6 @@
   font-weight: 600;
   line-height: 1;
   margin-bottom: 8px;
-}
-.pbd-row {
-  margin-bottom: 20px;
 }
 .pbd-data {
   line-height: 1;
@@ -328,6 +326,7 @@
   font-size: 16px;
   resize: none;
   outline: none;
+  border-radius: 0 !important;
 }
 .cform-group textarea {
   border: none;
@@ -358,6 +357,54 @@
 }
 .checkbox-group {
   margin-top: 13px;
+}
+
+.modal-swiper-container {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000; */
+  background: #f8f9fb;
+  padding: 25px 25px;
+  padding-right: 0;
+  margin: 30px 0;
+}
+.modal-swiper-flexable {
+  display: flex;
+}
+.modal-swiper-sidebar {
+  width: 70px;
+}
+.mss-btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.mss-btn .icon {
+  font-weight: bold;
+  font-size: 23px;
+}
+.mss-btn .icon-sm {
+  font-size: 26px !important;
+}
+.modal-swiper-content {
+  width: calc(100% - 70px);
+}
+.modal-swiper-normal-main-image {
+  width: 75%;
+  height: 550px;
+  padding-right: 15px;
+}
+.modal-swiper-normal-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-swiper-normal-images {
+  width: 25%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

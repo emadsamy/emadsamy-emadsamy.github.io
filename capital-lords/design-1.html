@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/project-design.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
@@ -468,8 +468,44 @@
     </div>
     <!-- Menu -->
 
+    <!-- Modal Slider -->
+    <div class="modal-swiper">
+      <div class="container-fluid">
+        <div class="modal-swiper-container">
+          <div class="modal-swiper-flexable">
+            <div class="modal-swiper-content">
+              <div class="ds-modal-swiper-flexable d-flex">
+                <div class="modal-swiper-normal-main-image">
+                  <img src="assets/img/d2/d2-1.png" alt="" />
+                </div>
+                <div class="modal-swiper-normal-images">
+                  <!-- Slider main container -->
+                  <div id="modalSwiper" class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                      <div class="swiper-slide"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                      <div class="swiper-slide"><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-swiper-sidebar">
+              <button class="mss-btn mb-4"><span class="icon-cancel icon"></span></button>
+              <button class="mss-btn"><span class="icon-photo icon"></span></button>
+              <button class="mss-btn"><span class="icon-plan icon-sm icon"></span></button>
+              <button class="mss-btn"><span class="icon-video icon-sm icon"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Slider -->
+
     <!-- Content -->
-    <div class="wrapper-container">
+    <div class="wrapper-container" style="display: none;">
       <!-- Project Header Cover -->
       <div class="project-cover-container">
         <div class="project-cover">
@@ -812,7 +848,7 @@
               <button class="arrow-next"><span class="icon-arrow-right icon"></span></button>
             </div>
           </div>
-          <div class="swiper-container">
+          <div id="productsSwiper" class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -988,47 +1024,27 @@
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
-    // Swiper
-    const swiper = new Swiper('.swiper-container', {
+    const modalSwiper = new Swiper('#modalSwiper', {
       // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      slidesPerView: 4,
-      spaceBetween: 30,
-      autoplay: {
-        delay: 4000,
+      direction: 'vertical',
+      slidesPerView: 3,
+      spaceBetween: 0,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
       },
-      speed: 1000,
+
       // Navigation arrows
       navigation: {
-        nextEl: '.arrow-next',
-        prevEl: '.arrow-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-        // when window width is >= 480px
-        480: {
-          slidesPerView: 1.8,
-          spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30
-        }
-      }
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
     });
   </script>
 </body>

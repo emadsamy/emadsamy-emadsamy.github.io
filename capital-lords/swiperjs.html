@@ -28,7 +28,7 @@
   <!-- Jquery UI -->
   <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
   <!-- Main Style -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/contact.css" />
   <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
@@ -39,7 +39,7 @@
       object-fit: cover;
     }
 
-    .swiper-container {
+    /* .swiper-container {
       height: 90vh;
     }
 
@@ -69,69 +69,56 @@
       display: flex;
       align-items: flex-end;
 
-    }
+    } */
 
-    .item {
-      background-color: #080;
-      height: 200px;
+    .swiper-slide {
+      background: #080;
       color: #fff;
+      font-size: 40px;
+      transition: all 1s linear;
+      height: 300px;
     }
 
-    .owl-item {
-      width: 30vw !important;
+    .swiper-slide h1 {
+      transform: scale(0.6);
     }
 
-    .owl-item.active {
-      width: 70vw !important;
+    .swiper-slide.swiper-slide-active h1 {
+      transform: scale(1.4);
     }
+
+    /* .swiper-slide:not(.swiper-slide-active) {
+      transform: scale(0.4);
+    }
+
+    .swiper-slide.swiper-slide-active {
+      transform: scale(1.4);
+    } */
   </style>
 </head>
 
 <body>
 
-  <div class="owl-carousel">
-    <div class="item" style="width:100%">
-      <h4>1</h4>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <h1>test 1</h1>
+      </div>
+      <div class="swiper-slide">
+        <h1>test 1</h1>
+      </div>
+      <div class="swiper-slide">
+        <h1>test 1</h1>
+      </div>
     </div>
-    <div class="item" style="width:100%">
-      <h4>2</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>3</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>4</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>6</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>7</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>8</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>9</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>10</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>11</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>12</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>13</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>14</h4>
-    </div>
-    <div class="item" style="width:100%">
-      <h4>15</h4>
-    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
   </div>
 
 
@@ -151,19 +138,35 @@
   <!-- Selectbox -->
   <script src="assets/js/jquery.selectric.min.js"></script>
   <!-- Main Functions -->
-  <script src="assets/js/functions.js"></script>
+  <!-- <script src="assets/js/functions.js"></script> -->
   <script src="assets/owlcarousel/owl.carousel.js"></script>
   <script>
-    $('.owl-carousel').owlCarousel({
-      margin: 10,
-      loop: true,
-      autoWidth: true,
-      items: 2,
-      smartSpeed: 1000,
-      autoplaySpeed: 1000,
-      navSpeed: true,
-      dotsSpeed: 1000
-    })
+
+    const swiper7 = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      speed: 1000,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
   </script>
 </body>
 

@@ -73,6 +73,7 @@
   font-size: 18px;
   resize: none;
   outline: none;
+  border-radius: 0 !important;
 }
 .cform-group textarea {
   border: none;

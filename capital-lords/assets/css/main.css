@@ -477,6 +477,9 @@ small {
 }
 /* Checkbox */
 
+.modal {
+  z-index: 105000;
+}
 /* Global */
 
 /* Navbar */
@@ -767,9 +770,7 @@ nav.active-page {
 .home-grid-card-data .bg-title .icon {
   display: inline-block;
   font-size: 30px;
-  position: relative;
-  top: 3px;
-  left: 30px;
+  margin-left: 15px;
 }
 .projects-container {
   padding-bottom: 50px;
@@ -1090,6 +1091,7 @@ footer {
   font-weight: 600;
   border-right: 1px solid #fff;
   width: 100%;
+  border-radius: 0 !important;
 }
 .footer-contact-group .icon {
   font-size: 14px;
@@ -1248,15 +1250,19 @@ footer {
     padding-right: 15px;
   }
 
+  .search-filter-action .button-default > * {
+    padding: 15px 20px;
+  }
+
   /* Navbar */
   .nav-logo {
     width: 185px;
   }
   .nav-icon-btn {
-    padding: 0 7px;
+    padding: 0 8px;
   }
   .nav-icon-btn .icon {
-    font-size: 21px;
+    font-size: 23px;
   }
   .menu-bar {
     height: 25px;
@@ -1359,7 +1365,8 @@ footer {
     justify-content: space-between;
   }
   .home-grid-card-data .bg-title .icon {
-    left: 10px;
+    left: auto;
+    position: static;
   }
   /* Home */
 
@@ -1493,6 +1500,7 @@ footer {
   .footer-logo img {
     width: 236px;
   }
+
   /* Footer */
 
   /* Menu */
@@ -1622,6 +1630,9 @@ footer {
   /* Footer */
   .footer-top {
     gap: 16px;
+  }
+  .follow-line {
+    min-width: 16%;
   }
   /* Footer */
 }
