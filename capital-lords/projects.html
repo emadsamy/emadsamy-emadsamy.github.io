@@ -34,6 +34,284 @@
 
 <body>
 
+  <!-- Modal Search Filter -->
+  <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-s-top flex-center justify-content-between">
+            <button class="flex-center filter-title"><span class="icon-filter icon"></span>
+              <div class="title ml-3">Filters</div>
+            </button>
+            <button class="d-flex close-filter opacity-hover" data-dismiss="modal"><span
+                class="icon-cancel icon"></span></button>
+          </div>
+          <div class="modal-s-center">
+            <div class="modal-filter-grid-double">
+              <div class="modal-filter-dropdown">
+                <label class="modal-f-label">All Locations</label>
+                <select>
+                  <option value="1">Residential</option>
+                  <option value="2">Commercial </option>
+                  <option value="3">Administrative</option>
+                  <option value="4">Medical</option>
+                  <option value="4">Vacation</option>
+                </select>
+              </div>
+
+              <div class="modal-filter-dropdown">
+                <label class="modal-f-label">Property Type</label>
+                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">Residential
+                  <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalCheckboxContainer" class="modal-checkbox-container mt-4">
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <!-- if u want to check all inputs just add this class checkAll -->
+                  <div class="checkAll checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox1" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox1">Apartment
+                    </label>
+                  </div>
+
+                  <button class="checkbox-toggle-btn flex-center">
+                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                  </button>
+                </div>
+
+                <div class="multiple-checkbox-container">
+                  <div class="multiple-checkbox-grid">
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox2" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox2">Apartment
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox3" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox3">Duplex
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox4" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox4">Duplex
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox5" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox5">Penthouse
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox7" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox7">Twin House
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox8" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox8">Studio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <!-- if u want to check all inputs just add this class checkAll -->
+                  <div class="checkAll checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox9" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox9">Villa
+                    </label>
+                  </div>
+
+                  <button class="checkbox-toggle-btn flex-center">
+                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                  </button>
+                </div>
+
+                <div class="multiple-checkbox-container">
+                  <div class="multiple-checkbox-grid">
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox11" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox11">Villa
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox12" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox12">Stand Alone
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox13" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox13">TownHouse
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox14" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox14">I Villa
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox15" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox15">Palace
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox10" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox10">Twin
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <div class="checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox18" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox18">Chalet
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-price-range">
+              <div class="title mb-2">Price Range</div>
+              <input id="sliderPrice" type="text" />
+              <div class="modal-filter-grid-double">
+                <div class="mfgd-input">
+                  <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
+                </div>
+                <div class="mfgd-input">
+                  <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> EGP
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-price-range">
+              <div class="title mb-2">Area (m2)</div>
+              <input id="sliderArea" type="text" />
+              <div class="modal-filter-grid-double">
+                <div class="mfgd-input">
+                  <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
+                </div>
+                <div class="mfgd-input">
+                  <div id="mfgdInputValArea-2" class="mfgd-input-val"> </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-s-bottom">
+            <div class="modal-filter-grid-double mb-0">
+              <div class="button-default cancel-btn opacity-hover">
+                <a href="#" class="justify-content-center" data-dismiss="modal">Cancel</a>
+              </div>
+
+              <div class="button-default bt-black">
+                <a href="#" class="justify-content-center">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search Filter -->
+
   <div class="wrapper">
     <!-- Navbar -->
     <nav id="nav" class="nav">
@@ -215,10 +493,10 @@
                 </div>
               </div>
 
-              <div class="projects-filter-btn flex-center">
+              <button class="projects-filter-btn flex-center" data-toggle="modal" data-target="#modalSearchFilter">
                 <span class="icon-filter icon"></span>
                 <div class="fil-txt">Filters</div>
-              </div>
+              </button>
             </div>
           </div>
         </div>

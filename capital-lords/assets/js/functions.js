@@ -161,11 +161,27 @@ $(".collapse")
 // Read More Function
 $(".read-more-btn").on("click", function () {
   var content = $(this).parents(".read-more-parent").find(".read-more-content");
-  $(content).text($(content).text().substr(0, $(content).text().length));
+  content.text(content.attr("data-text"));
+  $(this).css("display", "none");
 });
 
 $(".read-more-content").each(function () {
   var length = $(this).attr("data-length");
   var strToInt = parseInt(length);
+  $(this).attr("data-text", $(this).text());
   $(this).text($(this).text().substr(0, strToInt));
+});
+
+// Toggle Height Container
+$("#toggleHeightSlide").on("click", function () {
+  $("#toggleHeightSlideContainer").slideDown(500);
+});
+$("#closeSlideContainer").on("click", function () {
+  $("#toggleHeightSlideContainer").slideUp(500);
+});
+
+// On Scroll
+$(window).on("resize", function () {
+  // Menu
+  menuBodyHandler();
 });

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Capital Lords</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Selectize -->
+  <link rel="stylesheet" href="assets/css/selectric.css">
+  <!-- Jquery UI -->
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
+  <style>
+    img {
+      width: 100%;
+      transition: all 2s linear;
+      object-fit: cover;
+    }
+
+    .swiper-container {
+      height: 90vh;
+    }
+
+    .swiper-slide {
+      transition: all 1s linear;
+    }
+
+    .swiper-slide.swiper-slide-active {
+      width: 70% !important;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .swiper-slide.swiper-slide-active+.swiper-slide:not(.swiper-slide-active) {
+      width: calc(30% - 30px) !important;
+    }
+
+    .swiper-slide.swiper-slide-active img {
+      height: 100% !important;
+    }
+
+    .swiper-slide:not(.swiper-slide-active) img {
+      height: 50%;
+    }
+
+    .swiper-slide:not(.swiper-slide-active) {
+      display: flex;
+      align-items: flex-end;
+
+    }
+
+    .item {
+      background-color: #080;
+      height: 200px;
+      color: #fff;
+    }
+
+    .owl-item {
+      width: 30vw !important;
+    }
+
+    .owl-item.active {
+      width: 70vw !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="owl-carousel">
+    <div class="item" style="width:100%">
+      <h4>1</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>2</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>3</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>4</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>6</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>7</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>8</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>9</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>10</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>11</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>12</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>13</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>14</h4>
+    </div>
+    <div class="item" style="width:100%">
+      <h4>15</h4>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Selectbox -->
+  <script src="assets/js/jquery.selectric.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/owlcarousel/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      margin: 10,
+      loop: true,
+      autoWidth: true,
+      items: 2,
+      smartSpeed: 1000,
+      autoplaySpeed: 1000,
+      navSpeed: true,
+      dotsSpeed: 1000
+    })
+  </script>
+</body>
+
+</html>

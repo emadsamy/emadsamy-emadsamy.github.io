@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.677" height="29.827" viewBox="0 0 32.677 29.827">
+  <g id="blueprint" transform="translate(0.125 0.125)">
+    <path id="Path_1244" data-name="Path 1244" d="M59.332,85.733H79.684v-5.4H88V59.953H59.332Zm1.9-23.88H86.1V78.429H77.784v5.4H61.232Zm0,0" transform="translate(-55.574 -56.156)" stroke="#fff" stroke-width="0.25"/>
+    <path id="Path_1245" data-name="Path 1245" d="M59.332,0H88V1.9H59.332Zm0,0" transform="translate(-55.574)" stroke="#fff" stroke-width="0.25"/>
+    <path id="Path_1246" data-name="Path 1246" d="M0,59.953H1.9v25.78H0Zm0,0" transform="translate(0 -56.156)" stroke="#fff" stroke-width="0.25"/>
+    <path id="Path_1247" data-name="Path 1247" d="M185.631,191.5l-1.828,3.071-1.877-3.071h-1.6v5.764h1.77v-2.536l1.252,2.017h.856l1.252-2.108.016,2.627h1.77l-.017-5.764Zm0,0" transform="translate(-168.907 -179.368)" stroke="#fff" stroke-width="0.25"/>
+    <path id="Path_1248" data-name="Path 1248" d="M300.326,186.912c.535-.469.659-.758.659-1.087,0-.667-.609-1.087-1.515-1.087a1.69,1.69,0,0,0-1.622.815l.955.453a.592.592,0,0,1,.552-.313c.231,0,.329.1.329.231,0,.107-.049.239-.3.445l-1.309,1.12v.749h3.014V187.3h-1.219Zm0,0" transform="translate(-278.984 -173.038)" stroke="#fff" stroke-width="0.25"/>
+  </g>
+</svg>

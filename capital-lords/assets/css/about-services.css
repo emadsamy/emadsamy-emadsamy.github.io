@@ -92,3 +92,156 @@
   width: 100%;
   object-fit: cover;
 }
+.text {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .about-flexable {
+    flex-wrap: wrap;
+  }
+  .about-flexable > div {
+    width: 100%;
+  }
+  .about-container {
+    padding: 40px 0 150px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+  .bg-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-text-container .text {
+    font-size: 18px;
+  }
+  .dl-btn {
+    display: inline-block;
+    width: auto;
+    padding: 16px 27px;
+    font-size: 19px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .title {
+    font-size: 29px;
+  }
+  .about-header img {
+    height: 370px;
+  }
+  .sg-card,
+  .sg-card:nth-of-type(even) {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .sg-card > div {
+    width: 100%;
+  }
+  .sg-card img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .person-card img {
+    min-height: auto;
+    height: 250px;
+  }
+  .about-sidebar {
+    width: 37%;
+  }
+  .about-data {
+    width: 60%;
+  }
+  .dl-btn {
+    padding: 13px 10px;
+    font-size: 16px;
+  }
+  .sub-title {
+    font-size: 19px;
+  }
+  .bg-title {
+    font-size: 31px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .about-header img {
+    height: 350px;
+  }
+  .about-container {
+    padding: 50px 0 150px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-data {
+    width: 56%;
+  }
+  .about-sidebar {
+    width: 40%;
+  }
+  .dl-btn {
+    padding: 16px;
+    font-size: 20px;
+  }
+  .sub-title {
+    font-size: 21px;
+  }
+  .bg-title {
+    font-size: 34px;
+    margin-bottom: 22px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .person-card img {
+    height: 250px;
+    min-height: auto;
+  }
+  .person-name {
+    font-size: 27px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .person-card img {
+    height: 250px;
+    min-height: auto;
+  }
+  .person-name {
+    font-size: 26px;
+  }
+  .person-position {
+    font-size: 19px;
+  }
+  .dl-btn {
+    padding: 16px;
+    font-size: 19px;
+  }
+  .title {
+    font-size: 27px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+}
