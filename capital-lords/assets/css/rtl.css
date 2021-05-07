@@ -8,7 +8,26 @@ body.rtl .search-filter-selectbox,
 body.rtl .footer-logo,
 body.rtl .footer-title,
 body.rtl .footer-contact .text,
-body.rtl .follow-text {
+body.rtl .follow-text,
+body.rtl .about-text-container,
+body.rtl .person-data,
+body.rtl .about-sidebar,
+body.rtl .contact-text-container,
+body.rtl .contact-text-address-tel,
+body.rtl .contact-directions,
+body.rtl .contact-form,
+body.rtl .text,
+body.rtl .ms-link,
+body.rtl .modal-f-label,
+body.rtl .selectric .label,
+body.rtl .filter-price-range .title,
+body.rtl .checkbox-text,
+body.rtl .pbd-row,
+body.rtl .tl-card,
+body.rtl .read-more-parent,
+body.rtl .product-card,
+body.rtl .acc-img-text,
+body.rtl .accl-row {
   text-align: right;
 }
 body.rtl .selectric .label {
@@ -38,6 +57,13 @@ body.rtl .button-default .icon-arrow-right {
   margin-right: 10px;
   margin-left: 0;
 }
+body.rtl .button-default .icon-plus {
+  margin-right: 9px;
+  margin-left: 0;
+}
+body.rtl .icon-telephone {
+  transform: rotate(-90deg);
+}
 /* Global */
 
 /* Navbar */
@@ -57,6 +83,22 @@ body.rtl .search-filter-selectbox {
 body.rtl .search-filter-advanced {
   text-align: left;
 }
+body.rtl .filter-title .title {
+  margin-left: 0 !important;
+  margin-right: 1rem !important;
+}
+body.rtl .mcb-title .icon {
+  right: auto;
+  left: 0;
+}
+body.rtl .multiple-checkbox-grid {
+  padding-right: 23px;
+  padding-left: 0;
+}
+body.rtl .mfgd-input-val {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
 /* Filter */
 
 /* Home */
@@ -66,6 +108,9 @@ body.rtl .service-card .sa-data {
 }
 body.rtl .swiper-arrows .arrow-icon {
   transform: rotateZ(90deg);
+}
+body.rtl .home-header .swiper-wrapper {
+  direction: ltr;
 }
 /* Home */
 
@@ -87,8 +132,118 @@ body.rtl .footer-b-links a {
 }
 /* Footer */
 
+/* Projects */
+body.rtl .fil-txt {
+  margin-right: 10px;
+  margin-left: 0;
+}
+body.rtl .ps-group .icon {
+  margin-left: 10px;
+  margin-right: 0;
+}
+body.rtl .vh-title {
+  text-align: right;
+}
+body.rtl .vh-icon .icon {
+  margin-left: 15px;
+  margin-right: 0;
+}
+body.rtl .vh-data {
+  background-position-x: 10%;
+}
+/* Projects */
+
+/* Contact */
+body.rtl .contact-text-address-tel > div:first-of-type {
+  padding-left: 60px;
+  padding-right: 0;
+}
+body.rtl .cform-selecbox {
+  margin-left: 13px;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-right: 0;
+  border-right: none;
+  border-left: 1px solid #898989;
+}
+/* Contact */
+
+/* Menu */
+body.rtl .ms-icon {
+  margin-right: 12px;
+  margin-left: 0;
+}
+body.rtl .ms-link:hover .ms-icon {
+  transform: translateX(-21px);
+}
+body.rtl .mbg-title {
+  padding-right: 13px;
+  padding-left: 0;
+  text-align: right;
+}
+/* Menu */
+
+/* View Project */
+body.rtl .pbd-row {
+  padding-left: 25px;
+  padding-right: 0;
+}
+body.rtl .pdb-date-row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+body.rtl .dev-widget-info {
+  border-left: none;
+  border-right: 1px solid #707070;
+}
+body.rtl .ps-arrows button {
+  margin-left: 0;
+  margin-right: 15px;
+}
+body.rtl .bc-ac-btn {
+  margin-left: 0;
+  margin-right: 17px;
+}
+body.rtl .breadcrumb-item::before {
+  /* transform: rotate(-50deg);
+  position: relative;
+  top: -2px; */
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+body.rtl .d2-arrow .icon {
+  transform: rotate(180deg);
+}
+body.rtl .design-2-avatar {
+  margin-right: 0;
+  margin-left: 23px;
+}
+body.rtl .acc-img-text {
+  padding-left: 0;
+  padding-right: 25px;
+}
+body.rtl .pbd-row {
+  margin-right: 0;
+}
+body.rtl .modal-tab-container {
+  padding-right: 25px;
+  padding-left: 0;
+}
+body.rtl .modal-tab-normal-main-image {
+  padding-left: 15px;
+  padding-right: 0;
+}
+/* View Project */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  body.rtl .modal-tab-container {
+    padding: 0;
+  }
+  body.rtl .mss-btn {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -103,10 +258,17 @@ body.rtl .footer-b-links a {
     padding-right: 15px;
     padding-left: 5px;
   }
+  body.rtl .msni-row {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  body.rtl .pbd-row {
+    margin-right: 0;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -114,14 +276,26 @@ body.rtl .footer-b-links a {
   body.rtl .button-default .icon {
     margin-left: 9px !important;
   }
+  body.rtl .contact-text-address-tel > div:first-of-type {
+    padding-left: 25px;
+  }
+  body.rtl .pbd-row {
+    margin-right: 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  body.rtl .pbd-row {
+    margin-right: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  body.rtl .pbd-row {
+    margin-right: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

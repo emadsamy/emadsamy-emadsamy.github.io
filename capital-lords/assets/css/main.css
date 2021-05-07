@@ -9,7 +9,7 @@
 body,
 html {
   height: 100%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -398,23 +398,27 @@ small {
 /* Range Slider */
 
 /* Scroller Bar */
-.selectric-items .selectric-scroll::-webkit-scrollbar {
+.selectric-items .selectric-scroll::-webkit-scrollbar,
+.modal-tab-overview::-webkit-scrollbar {
   width: 11px;
 }
 
 /* Track */
-.selectric-items .selectric-scroll::-webkit-scrollbar-track {
+.selectric-items .selectric-scroll::-webkit-scrollbar-track,
+.modal-tab-overview::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* Handle */
-.selectric-items .selectric-scroll::-webkit-scrollbar-thumb {
+.selectric-items .selectric-scroll::-webkit-scrollbar-thumb,
+.modal-tab-overview::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 50px;
 }
 
 /* Handle on hover */
-.selectric-items .selectric-scroll::-webkit-scrollbar-thumb:hover {
+.selectric-items .selectric-scroll::-webkit-scrollbar-thumb:hover,
+.modal-tab-overview::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
 /* Scroller Bar */
@@ -535,6 +539,30 @@ nav.active-page {
 .menu-bar span {
   width: 2.2px;
   background: #fff;
+}
+.nav-icon-btn .label {
+  color: #fff !important;
+  font-size: 15px !important;
+  margin-right: 22px !important;
+}
+.nav-icon-btn .select-chevron-div .icon {
+  font-size: 12px;
+}
+.nav-icon-btn .select-chevron-div {
+  right: 2px;
+}
+.nav-icon-btn .selectric-items {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px !important;
+}
+.nav-btn-select:hover,
+.nav-btn-select:active {
+  opacity: 1;
+}
+.nav-btn-select .selectric-items li {
+  padding: 9px;
+  font-size: 16px;
 }
 /* Navbar */
 
@@ -1512,7 +1540,7 @@ footer {
     font-size: 34px;
   }
   .mbg-title {
-    font-size: 32px;
+    font-size: 29px;
   }
   .mbg-card {
     padding: 21px 21px;
@@ -1525,6 +1553,9 @@ footer {
   }
   .menu-body-row > div {
     width: 47%;
+  }
+  .ms-text .title {
+    font-size: 26px;
   }
   /* Menu */
 }
@@ -1626,6 +1657,12 @@ footer {
     height: auto;
   }
   /* Projects */
+
+  /* Menu */
+  .mbg-title {
+    font-size: 31px;
+  }
+  /* Menu */
 
   /* Footer */
   .footer-top {

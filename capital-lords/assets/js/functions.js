@@ -228,3 +228,28 @@ new Swiper("#productsSwiper", {
     },
   },
 });
+
+// Change Lang
+$("select#changeLang option[value=" + localStorage.getItem("lang") + "]").attr(
+  "selected",
+  "selected"
+);
+$(function () {
+  $("#changeLang").on("change", function () {
+    var lang = $(this).val();
+    // Set Lang
+    localStorage.setItem("lang", lang);
+    // console.log($(this).val());
+    if (localStorage.getItem("lang") == "ar") {
+      $("body").addClass("rtl");
+    } else {
+      $("body").removeClass("rtl");
+    }
+  });
+
+  if (localStorage.getItem("lang") == "ar") {
+    $("body").addClass("rtl");
+  } else {
+    $("body").removeClass("rtl");
+  }
+});

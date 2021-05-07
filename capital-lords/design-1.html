@@ -28,11 +28,12 @@
   <!-- Jquery UI -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
   <!-- Main Style -->
-  <link rel="stylesheet" href="assets/css/project-design.css" />
+  <link rel="stylesheet" href="assets/css/view-project.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
-<body>
+<body class="rtl">
 
   <!-- Modal Search Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -469,34 +470,72 @@
     <!-- Menu -->
 
     <!-- Modal Slider -->
-    <div class="modal-swiper">
+    <div class="modal-tab">
       <div class="container-fluid">
-        <div class="modal-swiper-container">
-          <div class="modal-swiper-flexable">
-            <div class="modal-swiper-content">
-              <div class="ds-modal-swiper-flexable d-flex">
-                <div class="modal-swiper-normal-main-image">
-                  <img src="assets/img/d2/d2-1.png" alt="" />
-                </div>
-                <div class="modal-swiper-normal-images">
-                  <!-- Slider main container -->
-                  <div id="modalSwiper" class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
-                      <div class="swiper-slide"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
-                      <div class="swiper-slide"><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+        <div class="modal-tab-container">
+          <div class="modal-tab-flexable">
+            <div class="modal-tab-content">
+              <!-- Photos Tab -->
+              <div id="photosTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable d-flex">
+                  <div class="modal-tab-normal-main-image">
+                    <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" />
+                  </div>
+                  <div class="modal-tab-normal-images">
+                    <div class="modal-tab-overview">
+                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Plan Tab -->
+              <div id="planTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable d-flex">
+                  <div class="modal-tab-normal-main-image">
+                    <img id="bgImageModalViewPlan" src="assets/img/plan/plan-1.png" alt="" />
+                  </div>
+                  <div class="modal-tab-normal-images">
+                    <div class="modal-tab-overview">
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-1.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-2.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-3.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-4.png" class="img-fluid"
+                          alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Tab -->
+              <div id="videoTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable md-video-container d-flex">
+                  <video id="videoPlayer" src="assets/img/vid.mp4" class="modal-video-player"
+                    poster="assets/img/d2/d2-1.png"></video>
+                  <div class="vp-overlay active">
+                    <button id="toggleVpBtn"><img src="assets/img/icons/play.svg" class="img-fluid" alt="" /></button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-swiper-sidebar">
-              <button class="mss-btn mb-4"><span class="icon-cancel icon"></span></button>
-              <button class="mss-btn"><span class="icon-photo icon"></span></button>
-              <button class="mss-btn"><span class="icon-plan icon-sm icon"></span></button>
-              <button class="mss-btn"><span class="icon-video icon-sm icon"></span></button>
+
+            <div class="modal-tab-actions">
+              <button id="exitModalTabBtn" class="mss-btn mb-5"><span class="icon-cancel icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="photosTab"><span class="icon-photo icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="planTab"><span
+                  class="icon-plan icon-sm icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="videoTab"><span
+                  class="icon-video icon-sm icon"></span></button>
             </div>
           </div>
         </div>
@@ -505,7 +544,7 @@
     <!-- Modal Slider -->
 
     <!-- Content -->
-    <div class="wrapper-container" style="display: none;">
+    <div class="wrapper-container">
       <!-- Project Header Cover -->
       <div class="project-cover-container">
         <div class="project-cover">
@@ -555,7 +594,7 @@
               </div>
             </div>
             <div class="project-bar-actions">
-              <button class="project-action-btn">
+              <button class="project-action-btn md-tab-btn" data-tab="videoTab">
                 <span class="icon-video icon"></span>
                 <div class="title">Play Video</div>
               </button>
@@ -563,11 +602,11 @@
                 <span class="icon-pin icon"></span>
                 <div class="title">New Cairo</div>
               </button>
-              <button class="project-action-btn">
+              <button class="project-action-btn md-tab-btn" data-tab="planTab">
                 <span class="icon-plan icon"></span>
                 <div class="title">2D Plans</div>
               </button>
-              <button class="project-action-btn">
+              <button class="project-action-btn md-tab-btn" data-tab="photosTab">
                 <span class="icon-photo icon"></span>
                 <div class="title">Photo</div>
               </button>
@@ -1023,28 +1062,58 @@
   <script src="assets/js/jquery.selectric.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
+
   <script>
-    const modalSwiper = new Swiper('#modalSwiper', {
-      // Optional parameters
-      direction: 'vertical',
-      slidesPerView: 3,
-      spaceBetween: 0,
+    // Photos Modal
+    $(".msni-row-photo").on('click', function () {
+      $(".msni-row-photo").addClass('unactive');
+      $("#bgImageModalViewPhoto").attr('src', $(this).find('img').attr('src'));
+      $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+    });
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    // Photos Modal
+    $(".msni-row-plan").on('click', function () {
+      $(".msni-row-plan").addClass('unactive');
+      $("#bgImageModalViewPlan").attr('src', $(this).find('img').attr('src'));
+      $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+    });
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    $("#toggleVpBtn").on('click', function () {
+      var vid = $("#videoPlayer").get(0);
+      if (vid.paused) {
+        vid.play();
+        $('.vp-overlay').removeClass('active');
+        $(this).find('img').attr('src', 'assets/img/icons/pause.svg');
+      } else {
+        vid.pause();
+        $('.vp-overlay').addClass('active');
+        $(this).find('img').attr('src', 'assets/img/icons/play.svg');
+      }
+    });
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+    $("#videoPlayer").bind("ended", function () {
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+    });
+
+    $(".md-tab-btn").on('click', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+      var tab = $(this).attr('data-tab');
+      $('.modal-tab').addClass('active');
+      $('.wrapper-container').addClass('toggle-wrapper-active');
+      $("#" + tab).addClass('active').siblings().removeClass('active');
+      $("#videoPlayer").get(0).pause();
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+      window.scrollTo(0, 0);
+    });
+
+    $("#exitModalTabBtn").on('click', function () {
+      $('.modal-tab').removeClass('active');
+      $('.wrapper-container').removeClass('toggle-wrapper-active');
+      $("#videoPlayer").get(0).pause();
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
     });
   </script>
 </body>
