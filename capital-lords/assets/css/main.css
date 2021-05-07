@@ -1267,7 +1267,7 @@ footer {
     justify-content: space-between;
   }
   .modal-s-bottom .modal-filter-grid-double > div {
-    width: 50%;
+    width: 48%;
   }
   /* Filter Search */
 }
@@ -1284,10 +1284,10 @@ footer {
 
   /* Navbar */
   .nav-logo {
-    width: 185px;
+    width: 174px;
   }
   .nav-icon-btn {
-    padding: 0 8px;
+    padding: 0 6px;
   }
   .nav-icon-btn .icon {
     font-size: 23px;
