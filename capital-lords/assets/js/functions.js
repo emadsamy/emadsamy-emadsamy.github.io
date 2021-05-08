@@ -3,6 +3,27 @@ $(document).ready(function () {
   $("#openContainerCheckbox").on("click", function () {
     $("#modalCheckboxContainer").slideToggle();
   });
+
+  // Change Language
+  function checkLangDir() {
+    if (localStorage.getItem("lang") == "ar") {
+      $("body").addClass("rtl");
+    } else {
+      $("body").removeClass("rtl");
+    }
+  }
+  checkLangDir();
+
+  $(
+    "select#changeLang option[value=" + localStorage.getItem("lang") + "]"
+  ).attr("selected", "selected");
+  $("#changeLang").on("change", function () {
+    var lang = $(this).val();
+    // Set Lang
+    localStorage.setItem("lang", lang);
+    // console.log($(this).val());
+    checkLangDir();
+  });
 });
 
 $(window).scroll(function () {
@@ -89,11 +110,12 @@ $(function () {
 
 // Slider Range
 var sliderA = new Slider("#sliderPrice", {
-  id: "slider12b",
-  min: 10000,
-  max: 1000000,
-  range: true,
-  value: [250000, 750000],
+  // id: "slider12b",
+  min: 0,
+  max: 150000000,
+  step: 50000,
+  range: false,
+  value: [25000000, 75000000],
   formatter: function (value) {
     console.log(value);
     $("#mfgdInputValPrice-1").text(value[0]);
@@ -103,11 +125,11 @@ var sliderA = new Slider("#sliderPrice", {
 sliderA.refresh({ useCurrentValue: true });
 
 var sliderB = new Slider("#sliderArea", {
-  id: "slider12b",
-  min: 1,
-  max: 1500,
+  // id: "slider12b",
+  min: 0,
+  max: 5000,
   range: true,
-  value: [400, 800],
+  value: [2000, 4000],
   formatter: function (value) {
     console.log(value);
     $("#mfgdInputValArea-1").text(value[0]);
@@ -141,22 +163,33 @@ $(".checkAll").click(function () {
   }
 });
 
-// Accordion Plus And Minus
-$(".collapse")
-  .on("shown.bs.collapse", function () {
-    $(this)
-      .parent()
-      .find(".icon-plus")
-      .removeClass("icon-plus")
-      .addClass("icon-minus");
-  })
-  .on("hidden.bs.collapse", function () {
+$(document).ready(function () {
+  // Add minus icon for collapse element which is open by default
+  $(".collapse.show").each(function () {
     $(this)
       .parent()
       .find(".icon-minus")
       .removeClass("icon-minus")
       .addClass("icon-plus");
   });
+
+  // Toggle plus minus icon on show hide of collapse element
+  $(".collapse")
+    .on("show.bs.collapse", function () {
+      $(this)
+        .parent()
+        .find(".icon-plus")
+        .removeClass("icon-plus")
+        .addClass("icon-minus");
+    })
+    .on("hide.bs.collapse", function () {
+      $(this)
+        .parent()
+        .find(".icon-minus")
+        .removeClass("icon-minus")
+        .addClass("icon-plus");
+    });
+});
 
 // Read More Function
 $(".read-more-btn").on("click", function () {
@@ -230,26 +263,4 @@ new Swiper("#productsSwiper", {
 });
 
 // Change Lang
-$("select#changeLang option[value=" + localStorage.getItem("lang") + "]").attr(
-  "selected",
-  "selected"
-);
-$(function () {
-  $("#changeLang").on("change", function () {
-    var lang = $(this).val();
-    // Set Lang
-    localStorage.setItem("lang", lang);
-    // console.log($(this).val());
-    if (localStorage.getItem("lang") == "ar") {
-      $("body").addClass("rtl");
-    } else {
-      $("body").removeClass("rtl");
-    }
-  });
-
-  if (localStorage.getItem("lang") == "ar") {
-    $("body").addClass("rtl");
-  } else {
-    $("body").removeClass("rtl");
-  }
-});
+$(document).ready(function () {});

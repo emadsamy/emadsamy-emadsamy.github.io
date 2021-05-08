@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
-<body class="rtl">
+<body>
 
   <!-- Modal Search Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -323,8 +323,14 @@
           </div>
 
           <div class="nav-icons flex-center">
+            <div class="nav-icon-btn nav-btn-select">
+              <select id="changeLang">
+                <option value="ar">عربي</option>
+                <option value="en">English</option>
+              </select>
+            </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
-            <div class="nav-icon-btn"><span class="icon-user icon"></span></div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
                 <span></span>
@@ -479,11 +485,16 @@
               <div id="photosTab" class="modal-project-tab">
                 <div class="ds-modal-tab-flexable d-flex">
                   <div class="modal-tab-normal-main-image">
+
+                    <!-- Set first image -->
                     <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" />
                   </div>
-                  <div class="modal-tab-normal-images">
+                  <div id="modalPhotosContainer" class="modal-tab-normal-images">
                     <div class="modal-tab-overview">
-                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+
+                      <!-- Set active class to first row -->
+                      <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png" class="img-fluid"
+                          alt="" />
                       </div>
                       <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
                       </div>
@@ -536,6 +547,10 @@
                   class="icon-plan icon-sm icon"></span></button>
               <button class="mss-btn md-tab-btn" data-tab="videoTab"><span
                   class="icon-video icon-sm icon"></span></button>
+              <div class="modal-tab-arrows">
+                <button id="mssNextBtn" class="mss-btn"><span class="icon-arrow-right icon"></span></button>
+                <button id="mssPrevBtn" class="mss-btn"><span class="icon-arrow-left icon"></span></button>
+              </div>
             </div>
           </div>
         </div>
@@ -1066,9 +1081,10 @@
   <script>
     // Photos Modal
     $(".msni-row-photo").on('click', function () {
-      $(".msni-row-photo").addClass('unactive');
+      // $(".msni-row-photo").addClass('unactive');
       $("#bgImageModalViewPhoto").attr('src', $(this).find('img').attr('src'));
-      $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+      // $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+      $(this).addClass('active').siblings().removeClass('active');
     });
 
     // Photos Modal
@@ -1114,6 +1130,10 @@
       $("#videoPlayer").get(0).pause();
       $('.vp-overlay').addClass('active');
       $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+    });
+
+    $("#mssNextBtn").on('click', function () {
+      $('#modalPhotosContainer').find('.msni-row-photo').has('active').next().addClass('active');
     });
   </script>
 </body>

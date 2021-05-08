@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
-<body class="rtl">
+<body>
 
   <!-- Modal Search Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -324,8 +324,14 @@
           </div>
 
           <div class="nav-icons flex-center">
+            <div class="nav-icon-btn nav-btn-select">
+              <select id="changeLang">
+                <option value="ar">عربي</option>
+                <option value="en">English</option>
+              </select>
+            </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
-            <div class="nav-icon-btn"><span class="icon-user icon"></span></div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
                 <span></span>
@@ -500,42 +506,31 @@
           <div class="design-2-header">
             <div class="design-2-double-grid">
               <div class="design-2-slider position-relative">
-                <!-- Slider main container -->
-                <div class="swiper-container swiper-header-container">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide swiper-slide-design"><img src="assets/img/design-2-slider.png"
-                        class="img-fluid" alt="" />
-                    </div>
-                    <div class="swiper-slide swiper-slide-design"><img src="assets/img/design-2-slider.png"
-                        class="img-fluid" alt="" />
-                    </div>
-                    <div class="swiper-slide swiper-slide-design"><img src="assets/img/design-2-slider.png"
-                        class="img-fluid" alt="" />
-                    </div>
+                <div class="swiper-header-container height-fluid">
+                  <div class="shc-view height-fluid">
+                    <img id="shcView" src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
                   </div>
                 </div>
 
-                <div class="counter-arrows flex-center">
+                <!-- <div class="counter-arrows flex-center">
                   <button class="arrow-prev-header d2-arrow d-flex"><span
                       class="icon-chevron-left icon"></span></button>
                   <div class="swiper-counter"></div>
                   <button class="arrow-next-header d2-arrow d-flex"><span
                       class="icon-chevron-right icon"></span></button>
-                </div>
+                </div> -->
 
                 <button class="expand-btn d-flex">
                   <span class="icon-expand icon"></span>
                 </button>
               </div>
 
-              <div class="header-more-images d-flex flex-wrap align-content-between">
+              <div class="header-more-images d-flex flex-wrap">
                 <div class="d2-images-grid">
-                  <div class="d2-images-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
-                  <div class="d2-images-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
-                  <div class="d2-images-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
-                  <div class="d2-images-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
                 </div>
                 <div class="d2-actions-header">
                   <div class="d2-images-grid position-relative">
@@ -959,29 +954,16 @@
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
-    // Swiper
-    const swiper2 = new Swiper('.swiper-header-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      slidesPerView: 1,
-      spaceBetween: 0,
-      autoplay: {
-        delay: 4000,
-      },
-      speed: 1000,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.arrow-next-header',
-        prevEl: '.arrow-prev-header',
-      },
-      pagination: {
-        el: '.swiper-counter',
-        type: 'fraction',
-        renderBullet: function (index, className) {
-          return `<span class="dot swiper-pagination-bullet">${index}</span>`;
-        },
-      },
+    // Toggle Images View
+    $(".d2-image-view").on('click', function () {
+      var src = $(this).find('img').attr('src');
+      $('#shcView').fadeOut(200, function () {
+        $(this).attr('src', src);
+      }).fadeIn(200);
+      $(this).addClass('active').siblings().removeClass('active');
+
+      // $("#shcView").attr('src', $(this).find('img').attr('src'));
+      // $(this).addClass('active').siblings().removeClass('active');
     });
   </script>
 </body>

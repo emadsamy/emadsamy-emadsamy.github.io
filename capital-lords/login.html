@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Title -->
+    <title>Capital Lords</title>
+
+    <!-- Links -->
+    <!-- Project Shortcut Icon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap V 4.1.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!-- Icomoon Library -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Convert Images Svg To Icons -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <!-- Selectize -->
+    <link rel="stylesheet" href="assets/css/selectric.css">
+    <!-- Jquery UI -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/auth.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+
+<body>
+
+    <!-- Modal Filter -->
+    <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-s-top flex-center justify-content-between">
+                        <button class="flex-center filter-title"><span class="icon-filter icon"></span>
+                            <div class="title ml-3">Filters</div>
+                        </button>
+                        <button class="d-flex close-filter opacity-hover" data-dismiss="modal"><span
+                                class="icon-cancel icon"></span></button>
+                    </div>
+                    <div class="modal-s-center">
+                        <div class="modal-filter-grid-double">
+                            <div class="modal-filter-dropdown">
+                                <label class="modal-f-label">All Locations</label>
+                                <select>
+                                    <option value="1">Residential</option>
+                                    <option value="2">Commercial </option>
+                                    <option value="3">Administrative</option>
+                                    <option value="4">Medical</option>
+                                    <option value="4">Vacation</option>
+                                </select>
+                            </div>
+
+                            <div class="modal-filter-dropdown">
+                                <label class="modal-f-label">Property Type</label>
+                                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">
+                                    Residential
+                                    <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modalCheckboxContainer" class="modal-checkbox-container mt-4">
+
+                            <!-- Start Row -->
+                            <div class="modal-checkbox-row">
+                                <div class="checkbox-toggle-header flex-center-between">
+                                    <!-- if u want to check all inputs just add this class checkAll -->
+                                    <div class="checkAll checkbox-group flex-center">
+                                        <div class="fake-checkbox">
+                                            <input id="modalCheckbox1" type="checkbox" class="input-checkbox" />
+                                            <div class="fake-cb-child">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <label class="checkbox-text" for="modalCheckbox1">Apartment
+                                        </label>
+                                    </div>
+
+                                    <button class="checkbox-toggle-btn flex-center">
+                                        <div class="ml-2 mr-2">All Types</div> <span
+                                            class="icon-chevron-down icon"></span>
+                                    </button>
+                                </div>
+
+                                <div class="multiple-checkbox-container">
+                                    <div class="multiple-checkbox-grid">
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox2" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox2">Apartment
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox3" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox3">Duplex
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox4" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox4">Duplex
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox5" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox5">Penthouse
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox7" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox7">Twin House
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox8" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox8">Studio
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Row -->
+                            <div class="modal-checkbox-row">
+                                <div class="checkbox-toggle-header flex-center-between">
+                                    <!-- if u want to check all inputs just add this class checkAll -->
+                                    <div class="checkAll checkbox-group flex-center">
+                                        <div class="fake-checkbox">
+                                            <input id="modalCheckbox9" type="checkbox" class="input-checkbox" />
+                                            <div class="fake-cb-child">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <label class="checkbox-text" for="modalCheckbox9">Villa
+                                        </label>
+                                    </div>
+
+                                    <button class="checkbox-toggle-btn flex-center">
+                                        <div class="ml-2 mr-2">All Types</div> <span
+                                            class="icon-chevron-down icon"></span>
+                                    </button>
+                                </div>
+
+                                <div class="multiple-checkbox-container">
+                                    <div class="multiple-checkbox-grid">
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox11" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox11">Villa
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox12" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox12">Stand Alone
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox13" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox13">TownHouse
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox14" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox14">I Villa
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox15" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox15">Palace
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox-group flex-center">
+                                            <div class="fake-checkbox">
+                                                <input id="modalCheckbox10" type="checkbox" class="input-checkbox" />
+                                                <div class="fake-cb-child">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <label class="checkbox-text" for="modalCheckbox10">Twin
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Row -->
+                            <div class="modal-checkbox-row">
+                                <div class="checkbox-toggle-header flex-center-between">
+                                    <div class="checkbox-group flex-center">
+                                        <div class="fake-checkbox">
+                                            <input id="modalCheckbox18" type="checkbox" class="input-checkbox" />
+                                            <div class="fake-cb-child">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <label class="checkbox-text" for="modalCheckbox18">Chalet
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-price-range">
+                            <div class="title mb-2">Price Range</div>
+                            <input id="sliderPrice" type="text" />
+                            <div class="modal-filter-grid-double">
+                                <div class="mfgd-input">
+                                    <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
+                                </div>
+                                <div class="mfgd-input">
+                                    <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> EGP
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-price-range">
+                            <div class="title mb-2">Area (m2)</div>
+                            <input id="sliderArea" type="text" />
+                            <div class="modal-filter-grid-double">
+                                <div class="mfgd-input">
+                                    <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
+                                </div>
+                                <div class="mfgd-input">
+                                    <div id="mfgdInputValArea-2" class="mfgd-input-val"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-s-bottom">
+                        <div class="modal-filter-grid-double mb-0">
+                            <div class="button-default cancel-btn opacity-hover">
+                                <a href="#" class="justify-content-center" data-dismiss="modal">Cancel</a>
+                            </div>
+
+                            <div class="button-default bt-black">
+                                <a href="#" class="justify-content-center">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Filter -->
+
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav id="nav" class="nav">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+                    </div>
+
+                    <div class="nav-icons flex-center">
+                        <div class="nav-icon-btn nav-btn-select">
+                            <select id="changeLang">
+                                <option value="ar">عربي</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                        <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
+                        <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
+                        <div id="openMenu" class="nav-icon-btn">
+                            <div class="menu-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menu -->
+        <div id="menuContainer" class="menu-container">
+            <div class="menu-wrapper">
+                <div id="menuTop" class="menu-top">
+                    <nav class="nav">
+                        <div class="container-fluid">
+                            <div class="navbar">
+                                <div class="nav-logo">
+                                    <a href="index.html"><img src="assets/img/logo-black.svg" class="img-fluid"
+                                            alt="" /></a>
+                                </div>
+
+                                <div id="closeMenu" class="nav-icons flex-center">
+                                    <div class="nav-icon-btn"><span class="icon-cancel black-color icon"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="menuBody" class="menu-body">
+                    <div class="container-fluid">
+                        <div class="menu-body-row d-flex justify-content-between">
+                            <div class="menu-sidebar">
+                                <a href="about.html" class="ms-link flex-center">
+                                    <div class="ms-text">
+                                        <div class="ms-sub-title text-uppercase">About Us</div>
+                                        <div class="title">Who we are</div>
+                                    </div>
+                                    <div class="ms-icon">
+                                        <span class="icon-arrow-right icon"></span>
+                                    </div>
+                                </a>
+
+                                <a href="services.html" class="ms-link flex-center">
+                                    <div class="ms-text">
+                                        <div class="ms-sub-title text-uppercase">Our Services </div>
+                                        <div class="title">Properties Management</div>
+                                    </div>
+                                    <div class="ms-icon">
+                                        <span class="icon-arrow-right icon"></span>
+                                    </div>
+                                </a>
+
+                                <a href="contact.html" class="ms-link flex-center">
+                                    <div class="ms-text">
+                                        <div class="title">Contact us</div>
+                                    </div>
+                                    <div class="ms-icon">
+                                        <span class="icon-arrow-right icon"></span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="ms-link flex-center">
+                                    <div class="ms-text">
+                                        <div class="title">Careers</div>
+                                    </div>
+                                    <div class="ms-icon">
+                                        <span class="icon-arrow-right icon"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu-body-cards">
+                                <div class="menu-body-grid">
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-home icon"></span>
+                                        <div class="mbg-title">Residential</div>
+                                    </a>
+
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-hospital icon"></span>
+                                        <div class="mbg-title">Medical</div>
+                                    </a>
+
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-store icon"></span>
+                                        <div class="mbg-title">Commercial </div>
+                                    </a>
+
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-beach icon"></span>
+                                        <div class="mbg-title">Vacation Home</div>
+                                    </a>
+
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-resort icon"></span>
+                                        <div class="mbg-title">Administrative </div>
+                                    </a>
+
+                                    <a href="#" class="mbg-card flex-center">
+                                        <span class="icon-diamond icon"></span>
+                                        <div class="mbg-title">Exclusive Projects </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menuBottom" class="menu-bottom">
+                    <div class="container-fluid">
+                        <div class="footer-bottom flex-center justify-content-between">
+                            <div class="text black-color">Capital Lords 2021 © All rights reserved</div>
+                            <div class="footer-b-links">
+                                <a href="#">Cookies Policy</a>
+                                <a href="#">Legal Notice</a>
+                                <a href="#">Privacy Policy </a>
+                                <a href="#">Sit map</a>
+                            </div>
+                            <div class="menu-socialmedia flex-center">
+                                <div class="text ml-2 mr-2">Follow us on</div>
+                                <div class="menu-social">
+                                    <a href="#" target="_blank" class="social-icon opacity-hover">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon opacity-hover">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon opacity-hover">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon opacity-hover">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+
+        <!-- Content -->
+        <div class="wrapper-container">
+            <div class="auth-container auth center-vertically">
+                <div class="auth-content">
+                    <div class="title mb-3">Login</div>
+                    <div class="auth-box">
+                        <!-- <div class="alert alert-danger text-left">Error Here</div> -->
+                        <div class="input-group mb-4">
+                            <input type="email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="input-group mb-5">
+                            <input type="password" class="form-control" placeholder="Password" autocomplete="off" />
+                        </div>
+                        <button id="authBtnAction" class="btn main-bt-primary mb-2" type="button">
+                            <span>Login</span>
+                        </button>
+                        <div class="dont-have-text pt-2">
+                            <a href="forgot-password.html">Forgot you password ?</a>
+                        </div>
+                    </div>
+                    <div class="dont-have-text">
+                        Don't have an account?
+                        <a href="register.html">
+                            Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-content">
+                    <div class="footer-top">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-title">Capital Lords</div>
+                            <div class="footer-link"><a href="#">About</a></div>
+                            <div class="footer-link"><a href="#">Contact Us</a></div>
+                            <div class="footer-link"><a href="#">Careers</a></div>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-title">Services </div>
+                            <div class="footer-link"><a href="#">Properties Management</a></div>
+                            <div class="footer-link"><a href="#">Buy </a></div>
+                            <div class="footer-link"><a href="#">Sell</a></div>
+                            <div class="footer-link"><a href="#">Rent</a></div>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-title">Projects</div>
+                            <div class="footer-link"><a href="#">Residential</a></div>
+                            <div class="footer-link"><a href="#">Commercial </a></div>
+                            <div class="footer-link"><a href="#">Administrative </a></div>
+                            <div class="footer-link"><a href="#">Medical</a></div>
+                            <div class="footer-link"><a href="#">Vacation</a></div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-title">News & Offers</div>
+                            <div class="footer-contact-group mb-3">
+                                <input type="text" placeholder="Your Email here" />
+                                <div class="button-default bt-black">
+                                    <button>Subscribe <span class="icon-arrow-right icon"></span></button>
+                                </div>
+                            </div>
+                            <div class="text mb-4 white-color">
+                                Sign up to receive exclusive news and offers about the latest launches
+                            </div>
+                            <div class="socialmedia flex-center justify-content-between white-color">
+                                <div class="follow-text">Follow us on</div>
+                                <div class="follow-line"></div>
+                                <div class="social-icons">
+                                    <a href="#" target="_blank" class="social-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="social-icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom flex-center justify-content-between">
+                        <div class="text white-color">Capital Lords 2021 © All rights reserved</div>
+                        <div class="footer-b-links">
+                            <a href="#">Cookies Policy</a>
+                            <a href="#">Legal Notice</a>
+                            <a href="#">Privacy Policy </a>
+                            <a href="#">Sit map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Jquery V 3.3.1 -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+    <!-- Popper Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap V 4.3.1 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Selectbox -->
+    <script src="assets/js/jquery.selectric.min.js"></script>
+    <!-- Main Functions -->
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>

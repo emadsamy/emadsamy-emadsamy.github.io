@@ -27,7 +27,8 @@ body.rtl .tl-card,
 body.rtl .read-more-parent,
 body.rtl .product-card,
 body.rtl .acc-img-text,
-body.rtl .accl-row {
+body.rtl .accl-row,
+body.rtl .auth-content {
   text-align: right;
 }
 body.rtl .selectric .label {
@@ -118,7 +119,7 @@ body.rtl .service-card .sa-data {
 body.rtl .swiper-arrows .arrow-icon {
   transform: rotateZ(90deg);
 }
-body.rtl .home-header .swiper-wrapper {
+body.rtl .swiper-wrapper {
   direction: ltr;
 }
 /* Home */
@@ -260,6 +261,10 @@ body.rtl .modal-tab-normal-main-image {
     left: 3px;
     top: 15px;
   }
+  body.rtl .pd-data-text .pbd-row:first-of-type {
+    margin-right: 149px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -289,6 +294,10 @@ body.rtl .modal-tab-normal-main-image {
   body.rtl .pbd-row {
     margin-right: 0;
   }
+  body.rtl .pd-data-text .pbd-row:first-of-type {
+    margin-right: 150px;
+    margin-left: 0;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -301,6 +310,10 @@ body.rtl .modal-tab-normal-main-image {
   }
   body.rtl .pbd-row {
     margin-right: 0;
+  }
+  body.rtl .pd-data-text .pbd-row:first-of-type {
+    margin-left: 0;
+    margin-right: 180px;
   }
 }
 

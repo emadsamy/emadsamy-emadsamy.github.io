@@ -34,7 +34,7 @@
 
 <body>
 
-  <!-- Modal Search Filter -->
+  <!-- Modal Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -310,7 +310,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal Search Filter -->
+  <!-- Modal Filter -->
 
   <div class="wrapper">
     <!-- Navbar -->
@@ -329,7 +329,7 @@
               </select>
             </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
-            <div class="nav-icon-btn"><span class="icon-user icon"></span></div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
                 <span></span>
@@ -599,10 +599,10 @@
           <div class="projects-title bg-title text-center text-uppercase">Explore 300+ Real Estate Projects in
             Egypt</div>
           <div class="projects-grid">
-            <a href="design-1.html" class="project-card">
+            <a href="design-2.html" class="project-card">
               <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
             </a>
-            <a href="design-2.html" class="project-card">
+            <a href="design-1.html" class="project-card">
               <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
             </a>
             <a href="design-1.html" class="project-card">
@@ -781,7 +781,7 @@
   <script src="assets/js/functions.js"></script>
   <script>
     // Swiper
-    const swiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
@@ -808,24 +808,6 @@
       },
     });
   </script>
-  <!-- <script>
-    $(".checkbox-toggle-btn").on('click', function () {
-      $(this).parents('.checkbox-toggle-header').next('.multiple-checkbox-container').slideToggle(300);
-    });
-
-    $(".checkAll").click(function () {
-      if ($(this).find('.input-checkbox').prop('checked')) {
-        $(this).parents('.modal-checkbox-row').find('.multiple-checkbox-container input').prop('checked', true);
-        // $('#checkboxContainerAprtment input').prop('checked', true);
-      } else {
-        // $('#checkboxContainerAprtment input').prop('checked', false);
-        $(this).parents('.modal-checkbox-row').find('.multiple-checkbox-container input').prop('checked', false);
-      }
-    });
-    $("#openContainerCheckbox").on('click', function () {
-      $("#modalCheckboxContainer").slideToggle();
-    });
-  </script> -->
 </body>
 
 </html>

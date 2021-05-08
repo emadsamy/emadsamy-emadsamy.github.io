@@ -129,6 +129,7 @@
 }
 .d2-actions-header {
   border-bottom: 1px solid #ccc;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .accordion-list {
@@ -160,14 +161,60 @@
 .project-action-btn {
   flex-direction: column;
 }
+.shc-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.d2-image-view {
+  cursor: pointer;
+  height: 153px;
+  opacity: 0.7;
+}
+.d2-image-view img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.d2-image-view.active {
+  opacity: 1;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .design-2-actions-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
   }
   .design-2-slider .swiper-container {
     margin: 0 -15px;
+  }
+  .project-action-btn {
+    padding: 0;
+    border: none;
+  }
+  .project-action-btn * {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .project-action-btn .icon {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .project-action-btn .title {
+    text-align: center;
+    font-size: 11px;
+  }
+  .design-2-header {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .shc-view img {
+    height: 280px;
+  }
+  .design-2-double-grid,
+  .d2-images-grid {
+    gap: 6px !important;
   }
 }
 
@@ -181,10 +228,6 @@
   .swiper-slide-design img {
     height: 100%;
     object-fit: cover;
-  }
-  .expand-btn {
-    top: 15px;
-    right: 0;
   }
   .design-2-double-grid {
     gap: 15px;
@@ -232,6 +275,32 @@
   .acc-img-text {
     width: calc(100% - 100px);
     padding-left: 15px;
+  }
+  .design-2-actions-grid {
+    border-top: 1px solid #00153c;
+  }
+  .d2-image-view {
+    height: 66px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .d2-image-view {
+    display: inline-block;
+    max-width: 25%;
+    padding: 0;
+    border: 0;
+    flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .header-more-images .d2-images-grid {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
@@ -336,6 +405,9 @@
 
   .design-2-actions-grid {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .d2-image-view {
+    height: 100px;
   }
 }
 

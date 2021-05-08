@@ -25,17 +25,16 @@
   <link rel="stylesheet" href="assets/css/icomoon.css" />
   <!-- Selectize -->
   <link rel="stylesheet" href="assets/css/selectric.css">
-  <!-- Jquery UI -->
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
+  <!-- Bootstrap Slider Price -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/projects.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
-<body class="rtl">
+<body>
 
-  <!-- Modal Search Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -311,7 +310,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal Search Filter -->
+  <!-- Modal Filter -->
 
   <div class="wrapper">
     <!-- Navbar -->
@@ -323,8 +322,14 @@
           </div>
 
           <div class="nav-icons flex-center">
+            <div class="nav-icon-btn nav-btn-select">
+              <select id="changeLang">
+                <option value="ar">عربي</option>
+                <option value="en">English</option>
+              </select>
+            </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
-            <div class="nav-icon-btn"><span class="icon-user icon"></span></div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
                 <span></span>
@@ -684,7 +689,7 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
