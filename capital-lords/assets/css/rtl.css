@@ -161,6 +161,9 @@ body.rtl .vh-icon .icon {
 body.rtl .vh-data {
   background-position-x: 10%;
 }
+body.rtl .product-card-company {
+  flex-direction: row-reverse;
+}
 /* Projects */
 
 /* Contact */

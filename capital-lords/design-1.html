@@ -476,7 +476,7 @@
     <!-- Menu -->
 
     <!-- Modal Slider -->
-    <div class="modal-tab">
+    <div class="modal-tab d-block">
       <div class="container-fluid">
         <div class="modal-tab-container">
           <div class="modal-tab-flexable">
@@ -492,16 +492,44 @@
                   <div id="modalPhotosContainer" class="modal-tab-normal-images">
                     <div class="modal-tab-overview">
 
+                      <!-- Slider main container -->
+                      <div class="swiper-container swiper-tab-photos">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png"
+                                class="img-fluid" alt="" />
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid"
+                                alt="" />
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-3.png" class="img-fluid"
+                                alt="" />
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
                       <!-- Set active class to first row -->
-                      <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png" class="img-fluid"
+                      <!-- <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png" class="img-fluid"
                           alt="" />
                       </div>
                       <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
                       </div>
                       <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
                       </div>
-                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
-                      </div>
+                      <div class="msni-row msni-row-photo">
+                        <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                      </div> -->
+
                     </div>
                   </div>
                 </div>
@@ -559,7 +587,7 @@
     <!-- Modal Slider -->
 
     <!-- Content -->
-    <div class="wrapper-container">
+    <div class="wrapper-container d-none">
       <!-- Project Header Cover -->
       <div class="project-cover-container">
         <div class="project-cover">
@@ -1134,6 +1162,18 @@
 
     $("#mssNextBtn").on('click', function () {
       $('#modalPhotosContainer').find('.msni-row-photo').has('active').next().addClass('active');
+    });
+
+    const swiperPhotos = new Swiper('.swiper-tab-photos', {
+      // Optional parameters
+      direction: 'vertical',
+      slidesPerView: 3,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
 </body>

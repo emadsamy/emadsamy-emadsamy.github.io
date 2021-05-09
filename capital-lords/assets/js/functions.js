@@ -85,13 +85,14 @@ $(function () {
   });
 });
 
-// Check if header not exist
-$(function () {
+// Calc Nav height to set padding to body
+function calcNavHeight() {
   if ($("body").find("#headerScroller").length == 0) {
     $("body").css("paddingTop", $("#nav").innerHeight() + "px");
     $("#nav").addClass("active-page");
   }
-});
+}
+calcNavHeight();
 
 // Selectbox
 $(function () {
@@ -217,6 +218,9 @@ $("#closeSlideContainer").on("click", function () {
 $(window).on("resize", function () {
   // Menu
   menuBodyHandler();
+
+  // Calc Nav Height
+  calcNavHeight();
 });
 
 // Products Swiper
@@ -261,6 +265,3 @@ new Swiper("#productsSwiper", {
     },
   },
 });
-
-// Change Lang
-$(document).ready(function () {});

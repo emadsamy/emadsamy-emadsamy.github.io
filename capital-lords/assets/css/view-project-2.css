@@ -347,6 +347,12 @@
   .design-2-actions-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .design-2-header {
+    padding-top: 20px;
+  }
+  .shc-view img {
+    height: 250px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
