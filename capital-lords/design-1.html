@@ -31,6 +31,20 @@
   <link rel="stylesheet" href="assets/css/view-project.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
+  <style>
+    .swiper-wrapper-modal-tab {
+      height: 550px;
+    }
+
+    .swiper-wrapper-modal-tab-thumb img {
+      height: 550px;
+    }
+
+    .swiper-wrapper-modal-tab .swiper-slide img {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -487,48 +501,51 @@
                   <div class="modal-tab-normal-main-image">
 
                     <!-- Set first image -->
-                    <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" />
+                    <div class="swiper-container gallery-top swiper-wrapper-modal-tab-thumb">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" /> -->
                   </div>
                   <div id="modalPhotosContainer" class="modal-tab-normal-images">
                     <div class="modal-tab-overview">
 
-                      <!-- Slider main container -->
-                      <div class="swiper-container swiper-tab-photos">
-                        <!-- Additional required wrapper -->
+                      <div class="swiper-container gallery-thumbs swiper-wrapper-modal-tab">
                         <div class="swiper-wrapper">
-                          <!-- Slides -->
                           <div class="swiper-slide">
-                            <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png"
-                                class="img-fluid" alt="" />
-                            </div>
+                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
                           </div>
-
                           <div class="swiper-slide">
-                            <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid"
-                                alt="" />
-                            </div>
+                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
                           </div>
-
                           <div class="swiper-slide">
-                            <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-3.png" class="img-fluid"
-                                alt="" />
-                            </div>
+                            <img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" />
                           </div>
-
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                          </div>
                         </div>
                       </div>
-
-                      <!-- Set active class to first row -->
-                      <!-- <div class="msni-row msni-row-photo active"><img src="assets/img/d2/d2-1.png" class="img-fluid"
-                          alt="" />
-                      </div>
-                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
-                      </div>
-                      <div class="msni-row msni-row-photo"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
-                      </div>
-                      <div class="msni-row msni-row-photo">
-                        <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
-                      </div> -->
 
                     </div>
                   </div>
@@ -1099,20 +1116,76 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap V 4.3.1 -->
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <!-- Selectbox -->
   <script src="assets/js/jquery.selectric.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
 
   <script>
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 15,
+      // touchRatio: 0.2,
+      slideToClickedSlide: true,
+      loop: true,
+      direction: 'vertical',
+      touchRatio: 0.2,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: false,
+      // watchSlidesProgress: false,
+      observe: true,
+      // observeParents: true,
+      // freeMode: true,
+      // watchSlidesVisibility: true,
+      // loopedSlides: 4,
+    });
+
+    var galleryTop = new Swiper('.gallery-top', {
+      // spaceBetween: 15,
+      slidesPerView: 1,
+      observe: true,
+      observeParents: true,
+      // freeMode: true,
+      // watchSlidesVisibility: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      direction: 'horizontal',
+      loop: true,
+      freeMode: true,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+      // loopedSlides: 4
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+  </script>
+
+  <script>
+
+
+
+
     // Photos Modal
     $(".msni-row-photo").on('click', function () {
       // $(".msni-row-photo").addClass('unactive');
       $("#bgImageModalViewPhoto").attr('src', $(this).find('img').attr('src'));
       // $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
       $(this).addClass('active').siblings().removeClass('active');
+
+      if (!$('.msni-row-photo').first().hasClass('active')) {
+        // $(".modal-tab-overview").scrollTop($(".modal-tab-overview").scrollTop() - $(this).offset().top);
+        console.log($(this).length);
+      }
+      // $('.modal-tab-overview').animate({
+      //   scrollTop: $(".modal-tab-overview").scrollTop() - $(this).offset().top
+      // }, 200);
     });
 
     // Photos Modal
@@ -1160,27 +1233,16 @@
       $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
     });
 
-    const swiperPhotos = new Swiper('.swiper-tab-photos', {
-      // Optional parameters
-      direction: 'vertical',
-      slidesPerView: 1,
-      autoplay: {
-        delay: 1000
-      },
-      freeMode: true,
+    // $("#mssNextBtn").click(function (e) {
+    //   if ($(".msni-row-photo").last().hasClass('active')) {
+    //     $(this).attr('disabled', true);
+    //   }
+    //   $(".msni-row-photo.active").next().addClass('active').siblings().removeClass("active");
+    //   var src = $(".msni-row-photo.active").find('img').attr('src');
+    //   $("#bgImageModalViewPlan").attr('src', src);
+    // });
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '#mssNextBtn',
-        prevEl: '#mssPrevBtn',
-      },
-      on: {
-        slideChange: function () {
-          var src = $('.swiper-slide-active img').attr('src');
-          $("#bgImageModalViewPhoto").attr('src', src);
-        },
-      },
-    });
+
   </script>
 </body>
 

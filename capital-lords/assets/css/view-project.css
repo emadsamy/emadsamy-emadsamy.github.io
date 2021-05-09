@@ -415,6 +415,7 @@
 .modal-tab-overview {
   height: 550px;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 .msni-row {
   height: calc(33.3% - 10px);
