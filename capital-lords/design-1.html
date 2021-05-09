@@ -476,7 +476,7 @@
     <!-- Menu -->
 
     <!-- Modal Slider -->
-    <div class="modal-tab d-block">
+    <div class="modal-tab">
       <div class="container-fluid">
         <div class="modal-tab-container">
           <div class="modal-tab-flexable">
@@ -587,7 +587,7 @@
     <!-- Modal Slider -->
 
     <!-- Content -->
-    <div class="wrapper-container d-none">
+    <div class="wrapper-container">
       <!-- Project Header Cover -->
       <div class="project-cover-container">
         <div class="project-cover">
@@ -1160,19 +1160,25 @@
       $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
     });
 
-    $("#mssNextBtn").on('click', function () {
-      $('#modalPhotosContainer').find('.msni-row-photo').has('active').next().addClass('active');
-    });
-
     const swiperPhotos = new Swiper('.swiper-tab-photos', {
       // Optional parameters
       direction: 'vertical',
-      slidesPerView: 3,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 1000
+      },
+      freeMode: true,
 
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#mssNextBtn',
+        prevEl: '#mssPrevBtn',
+      },
+      on: {
+        slideChange: function () {
+          var src = $('.swiper-slide-active img').attr('src');
+          $("#bgImageModalViewPhoto").attr('src', src);
+        },
       },
     });
   </script>
