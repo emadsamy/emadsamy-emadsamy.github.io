@@ -359,14 +359,7 @@
 .checkbox-group {
   margin-top: 13px;
 }
-
 .modal-tab-container {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000000; */
   background: #f8f9fb;
   padding: 25px 25px;
   padding-right: 0;
@@ -378,6 +371,25 @@
 .modal-tab-actions {
   width: 70px;
   padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.modal-tab-tel {
+  margin: 25px 0;
+}
+.modal-tab-actions > div {
+  width: 100%;
+}
+.mss-btn-black {
+  background: #000 !important;
+  color: #fff;
+}
+.mss-btn-black:hover,
+.mss-btn-black:active,
+.mss-btn-black:focus {
+  background: #000 !important;
+  color: #fff;
 }
 .mss-btn {
   width: 100%;
@@ -413,7 +425,7 @@
   width: 25%;
 }
 .modal-tab-overview {
-  height: 550px;
+  /* height: 550px; */
   overflow-y: auto;
   scroll-behavior: smooth;
 }
@@ -486,8 +498,62 @@
   display: none !important;
 }
 .md-tab-btn.mss-btn.active {
-  background: #000;
-  color: #fff;
+  background: #000 !important;
+  color: #fff !important;
+}
+.modal-tab-arrows {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.mss-btn-arrow {
+  width: 100%;
+}
+.mss-btn-arrow:hover {
+  color: #666;
+}
+.mss-btn-arrow:active {
+  opacity: 0.5;
+}
+.mss-btn-arrow .icon {
+  font-size: 25px;
+  font-weight: bold;
+}
+.fraction-counter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.fraction-counter span {
+  width: 100%;
+  text-align: center;
+  padding: 11px 10px;
+  font-size: 20px;
+  line-height: 1;
+  background: #fff;
+}
+.fraction-counter span:first-of-type {
+  border-bottom: 1px solid #000;
+}
+.mtaf {
+  display: none;
+}
+.mtaf.active {
+  display: block !important;
+}
+.swiper-wrapper-modal-tab {
+  height: 550px;
+}
+
+.swiper-wrapper-modal-tab-thumb img {
+  height: 550px;
+}
+
+.swiper-wrapper-modal-tab .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -595,10 +661,26 @@
   .mss-btn {
     width: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding: 9px 7px;
     margin: 0 !important;
     margin-right: 10px !important;
+  }
+  .modal-tab-arrows-fraction {
+    display: none;
+  }
+  .modal-tab-actions > div {
+    width: auto !important;
+  }
+  .modal-top-actions,
+  .modal-tab-tel {
+    display: flex;
+  }
+  .mtaf {
+    display: none !important;
+  }
+  .modal-tab-tel {
+    margin: 0;
   }
 }
 
@@ -631,17 +713,14 @@
     padding: 0 !important;
   }
   .modal-tab-overview {
-    padding-top: 15px;
+    padding-top: 10px;
     height: auto;
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
   }
   .modal-tab-normal-images {
     overflow-x: auto;
+  }
+  .swiper-wrapper-modal-tab {
+    height: 80px;
   }
   .msni-row {
     margin-bottom: 0;
@@ -656,9 +735,6 @@
   }
   .msni-row:last-of-type {
     margin-right: 0;
-  }
-  .modal-tab-normal-main-image img {
-    object-fit: contain;
   }
   .modal-project-tab {
     height: 100%;
@@ -830,6 +906,20 @@
   }
   .project-bar-actions {
     padding: 20px 0 !important;
+  }
+  .modal-tab-normal-images {
+    width: 100%;
+  }
+  .modal-tab-normal-main-image {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .ds-modal-tab-flexable {
+    flex-wrap: wrap;
+  }
+  .swiper-wrapper-modal-tab {
+    height: 100px;
   }
 }
 

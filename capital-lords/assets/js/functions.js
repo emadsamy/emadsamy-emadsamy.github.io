@@ -265,3 +265,8 @@ new Swiper("#productsSwiper", {
     },
   },
 });
+
+// Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});

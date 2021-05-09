@@ -31,8 +31,34 @@
   <link rel="stylesheet" href="assets/css/view-project.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
-  <style>
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" />
+  <style>
+    .slick-slide img {
+      height: 300px !important;
+      min-height: 300px;
+    }
+
+    .slider-for .slick-slide {
+      width: 138px !important;
+      overflow: hidden;
+    }
+
+    .slider-for .slick-slide img {
+      width: 888px !important;
+    }
+
+    .slider-nav,
+    .slider-for {
+      /* max-width: 550px;
+      min-width: 550px; */
+    }
   </style>
 </head>
 
@@ -488,29 +514,25 @@
               <div id="photosTab" class="modal-project-tab">
                 <div class="ds-modal-tab-flexable d-flex">
                   <div class="modal-tab-normal-main-image">
-                    <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" />
+
+                    <div class="slider-for">
+                      <div><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                      <div><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+                      <div><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                      <div><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                    </div>
+
+
+                    <!-- <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" /> -->
                   </div>
                   <div id="modalPhotosContainer" class="modal-tab-normal-images">
                     <div class="modal-tab-overview">
 
-                      <div class="swiper-container swiper-thumb-photos swiper-wrapper-modal-tab">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
-                          </div>
-                        </div>
+                      <div class="slider-nav">
+                        <div><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                        <div><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+                        <div><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                        <div><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
                       </div>
 
                     </div>
@@ -524,29 +546,16 @@
                   <div class="modal-tab-normal-main-image">
                     <img id="bgImageModalViewPlan" src="assets/img/plan/plan-1.png" alt="" />
                   </div>
-                  <div id="modalPlanContainer" class="modal-tab-normal-images">
+                  <div class="modal-tab-normal-images">
                     <div class="modal-tab-overview">
-
-                      <div class="swiper-container swiper-thumb-plan swiper-wrapper-modal-tab">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="assets/img/plan/plan-1.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/plan/plan-2.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/plan/plan-3.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/plan/plan-4.png" class="img-fluid" alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/img/plan/plan-2.png" class="img-fluid" alt="" />
-                          </div>
-                        </div>
-                      </div>
-
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-1.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-2.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-3.png" class="img-fluid"
+                          alt="" /></div>
+                      <div class="msni-row msni-row-plan"><img src="assets/img/plan/plan-4.png" class="img-fluid"
+                          alt="" /></div>
                     </div>
                   </div>
                 </div>
@@ -565,43 +574,17 @@
             </div>
 
             <div class="modal-tab-actions">
-              <div class="modal-top-actions">
-                <button id="exitModalTabBtn" class="mss-btn mb-5"><span class="icon-cancel icon"></span></button>
-                <button class="mss-btn md-tab-btn" data-tab="photosTab"><span class="icon-photo icon"></span></button>
-                <button class="mss-btn md-tab-btn" data-tab="planTab"><span
-                    class="icon-plan icon-sm icon"></span></button>
-                <button class="mss-btn md-tab-btn" data-tab="videoTab"><span
-                    class="icon-video icon-sm icon"></span></button>
-              </div>
-
-              <div class="modal-tab-tel">
-                <a href="tel:01234567890" data-toggle="tooltip" data-placement="left" title="01234567890"
-                  class="mss-btn mss-btn-black md-tab-btn"><span class="icon-telephone icon"></span></a>
-              </div>
-
-              <div class="modal-tab-arrows-fraction">
-                <div class="mtaf mtaf-photos">
-                  <div class="photos-fraction-counter fraction-counter"></div>
-                  <div class="modal-tab-arrows">
-                    <button id="mssPrevPhotoBtn" class="mss-btn-arrow"><span
-                        class="icon-arrow-left icon"></span></button>
-                    <button id="mssNextPhotoBtn" class="mss-btn-arrow"><span
-                        class="icon-arrow-right icon"></span></button>
-                  </div>
-                </div>
-
-                <div class="mtaf mtaf-plan">
-                  <div class="plan-fraction-counter fraction-counter"></div>
-                  <div class="modal-tab-arrows">
-                    <button id="mssPrevPlanBtn" class="mss-btn-arrow"><span
-                        class="icon-arrow-left icon"></span></button>
-                    <button id="mssNextPlanBtn" class="mss-btn-arrow"><span
-                        class="icon-arrow-right icon"></span></button>
-                  </div>
-                </div>
+              <button id="exitModalTabBtn" class="mss-btn mb-5"><span class="icon-cancel icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="photosTab"><span class="icon-photo icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="planTab"><span
+                  class="icon-plan icon-sm icon"></span></button>
+              <button class="mss-btn md-tab-btn" data-tab="videoTab"><span
+                  class="icon-video icon-sm icon"></span></button>
+              <div class="modal-tab-arrows">
+                <button id="mssNextBtn" class="mss-btn"><span class="icon-arrow-right icon"></span></button>
+                <button id="mssPrevBtn" class="mss-btn"><span class="icon-arrow-left icon"></span></button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -1121,13 +1104,143 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap V 4.3.1 -->
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <!-- Selectbox -->
   <script src="assets/js/jquery.selectric.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
-  <script src="assets/js/view-project.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        mobileFirst: true,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        vertical: true,
+        dots: false,
+        adaptiveHeight: true,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]
+      });
+
+      $('.slider-nav').slick('setPosition');
+      $('.slider-for').slick('setPosition');
+    });
+
+
+
+
+  </script>
+
+  <script>
+
+
+
+
+    // Photos Modal
+    $(".msni-row-photo").on('click', function () {
+      // $(".msni-row-photo").addClass('unactive');
+      $("#bgImageModalViewPhoto").attr('src', $(this).find('img').attr('src'));
+      // $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+      $(this).addClass('active').siblings().removeClass('active');
+
+      if (!$('.msni-row-photo').first().hasClass('active')) {
+        // $(".modal-tab-overview").scrollTop($(".modal-tab-overview").scrollTop() - $(this).offset().top);
+        console.log($(this).length);
+      }
+      // $('.modal-tab-overview').animate({
+      //   scrollTop: $(".modal-tab-overview").scrollTop() - $(this).offset().top
+      // }, 200);
+    });
+
+    // Photos Modal
+    $(".msni-row-plan").on('click', function () {
+      $(".msni-row-plan").addClass('unactive');
+      $("#bgImageModalViewPlan").attr('src', $(this).find('img').attr('src'));
+      $(this).addClass('active').removeClass('unactive').siblings().removeClass('active');
+    });
+
+    $("#toggleVpBtn").on('click', function () {
+      var vid = $("#videoPlayer").get(0);
+      if (vid.paused) {
+        vid.play();
+        $('.vp-overlay').removeClass('active');
+        $(this).find('img').attr('src', 'assets/img/icons/pause.svg');
+      } else {
+        vid.pause();
+        $('.vp-overlay').addClass('active');
+        $(this).find('img').attr('src', 'assets/img/icons/play.svg');
+      }
+    });
+
+    $("#videoPlayer").bind("ended", function () {
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+    });
+
+    $(".md-tab-btn").on('click', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+      var tab = $(this).attr('data-tab');
+      $('.modal-tab').addClass('active');
+      $('.wrapper-container').addClass('toggle-wrapper-active');
+      $("#" + tab).addClass('active').siblings().removeClass('active');
+      $("#videoPlayer").get(0).pause();
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+      window.scrollTo(0, 0);
+    });
+
+    $("#exitModalTabBtn").on('click', function () {
+      $('.modal-tab').removeClass('active');
+      $('.wrapper-container').removeClass('toggle-wrapper-active');
+      $("#videoPlayer").get(0).pause();
+      $('.vp-overlay').addClass('active');
+      $('#toggleVpBtn').find('img').attr('src', 'assets/img/icons/play.svg');
+    });
+
+    // $("#mssNextBtn").click(function (e) {
+    //   if ($(".msni-row-photo").last().hasClass('active')) {
+    //     $(this).attr('disabled', true);
+    //   }
+    //   $(".msni-row-photo.active").next().addClass('active').siblings().removeClass("active");
+    //   var src = $(".msni-row-photo.active").find('img').attr('src');
+    //   $("#bgImageModalViewPlan").attr('src', src);
+    // });
+
+
+  </script>
 </body>
 
 </html>

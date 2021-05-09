@@ -269,6 +269,11 @@ small {
   line-height: 1;
   font-size: 37px;
 }
+select {
+  border: none !important;
+  background: none;
+  width: 100% !important;
+}
 
 /** Buttons **/
 .main-btn {
