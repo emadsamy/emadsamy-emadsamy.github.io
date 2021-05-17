@@ -24,7 +24,7 @@
     <!-- Convert Images Svg To Icons -->
     <link rel="stylesheet" href="assets/css/icomoon.css" />
     <!-- Selectize -->
-    <link rel="stylesheet" href="assets/css/selectric.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/auth.css" />
@@ -325,10 +325,12 @@
 
                     <div class="nav-icons flex-center">
                         <div class="nav-icon-btn nav-btn-select">
-                            <select id="changeLang">
-                                <option value="ar">عربي</option>
-                                <option value="en">ENG</option>
-                            </select>
+                            <div class="selectbox-slim selectbox-language">
+                                <select id="changeLang">
+                                    <option value="ar">عربي</option>
+                                    <option value="en">ENG</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
                             <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
@@ -587,6 +589,7 @@
     <!-- Scripts -->
     <!-- Jquery V 3.3.1 -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
     <!-- Popper Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

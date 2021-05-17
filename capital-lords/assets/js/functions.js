@@ -1,10 +1,21 @@
 $(document).ready(function () {
   // Open Main Container
-  $("#openContainerCheckbox").on("click", function () {
-    $("#modalCheckboxContainer").slideToggle();
+  $("#property-type-modal").on("change", function () {
+    $("#modalCheckboxContainer").slideDown();
   });
 
-  // Change Language
+  // Language
+  new SlimSelect({
+    select: "#changeLang",
+    showSearch: false,
+    selected: localStorage.getItem("lang"),
+    hideSelectedOption: false,
+    disabled: false,
+    onChange: (info) => {
+      console.log(info.value);
+    },
+  });
+
   function checkLangDir() {
     if (localStorage.getItem("lang") == "ar") {
       $("body").addClass("rtl");
@@ -143,19 +154,19 @@ function calcNavHeight() {
 calcNavHeight();
 
 // Selectbox
-$(function () {
-  $("select").selectric({
-    maxHeight: 110,
-    arrowButtonMarkup:
-      '<div class="select-chevron-div"><span class="icon-chevron-down select-chevron icon"></span></div>',
-    onOpen: function () {
-      $(".selectric-focus").find(".select-chevron").addClass("active");
-    },
-    onClose: function () {
-      $(".selectric-focus").find(".select-chevron").removeClass("active");
-    },
-  });
-});
+// $(function () {
+//   $("select").selectric({
+//     maxHeight: 110,
+//     arrowButtonMarkup:
+//       '<div class="select-chevron-div"><span class="icon-chevron-down select-chevron icon"></span></div>',
+//     onOpen: function () {
+//       $(".selectric-focus").find(".select-chevron").addClass("active");
+//     },
+//     onClose: function () {
+//       $(".selectric-focus").find(".select-chevron").removeClass("active");
+//     },
+//   });
+// });
 
 $(".js-range-slider-price").ionRangeSlider({
   onStart: function (data) {
@@ -349,3 +360,13 @@ $(".selectz-row").on("click", function () {
     .find(".icon-chevron-rotate")
     .removeClass("active");
 });
+
+/* Slim Select */
+new SlimSelect({
+  select: "#tel-keys",
+  showSearch: false,
+  onChange: (info) => {
+    console.log(info.value);
+  },
+});
+/* Slim Select */

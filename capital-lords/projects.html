@@ -24,7 +24,7 @@
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
   <!-- Selectize -->
-  <link rel="stylesheet" href="assets/css/selectric.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
   <!-- Range Slider -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
@@ -52,28 +52,27 @@
             <div class="modal-filter-grid-double">
               <div class="modal-filter-dropdown">
                 <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <label class="modal-f-label">All Locations</label>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="madient-nasr" class="selectz-row">Madient Nasr </div>
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="new-capital" class="selectz-row">New Capital </div>
-                    </div>
-                  </div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">All Locations</label>
+                  <select id="locations-modal">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
                 </div>
               </div>
 
               <div class="modal-filter-dropdown">
-                <label class="modal-f-label">Property Type</label>
-                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">Residential
-                  <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type-modal">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -281,8 +280,8 @@
 
             <div class="filter-price-range">
               <div class="title">Price Range</div>
-              <input type="text" data-drag-interval="false" class="js-range-slider-price" name="my_range" value=""
-                data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
+              <input type="text" dir="rtl" data-drag-interval="false" class="js-range-slider-price" name="my_range"
+                value="" data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
                 data-grid="false" data-step="50000" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
@@ -338,10 +337,12 @@
 
           <div class="nav-icons flex-center">
             <div class="nav-icon-btn nav-btn-select">
-              <select id="changeLang">
-                <option value="ar">عربي</option>
-                <option value="en">ENG</option>
-              </select>
+              <div class="selectbox-slim selectbox-language">
+                <select id="changeLang">
+                  <option value="ar">عربي</option>
+                  <option value="en">ENG</option>
+                </select>
+              </div>
             </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
               <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
@@ -735,6 +736,7 @@
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

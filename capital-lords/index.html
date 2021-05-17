@@ -28,6 +28,9 @@
   <!-- Range Slider -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
+
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
@@ -51,28 +54,27 @@
             <div class="modal-filter-grid-double">
               <div class="modal-filter-dropdown">
                 <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <label class="modal-f-label">All Locations</label>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input id="chooseType" class="selected-input" type="hidden" name="" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="madient-nasr" class="selectz-row">Madient Nasr </div>
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="new-capital" class="selectz-row">New Capital </div>
-                    </div>
-                  </div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">All Locations</label>
+                  <select id="locations-modal">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
                 </div>
               </div>
 
               <div class="modal-filter-dropdown">
-                <label class="modal-f-label">Property Type</label>
-                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">Residential
-                  <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type-modal">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -337,10 +339,12 @@
 
           <div class="nav-icons flex-center">
             <div class="nav-icon-btn nav-btn-select">
-              <select id="changeLang">
-                <option value="ar">عربي</option>
-                <option value="en">ENG</option>
-              </select>
+              <div class="selectbox-slim selectbox-language">
+                <select id="changeLang">
+                  <option value="ar">عربي</option>
+                  <option value="en">ENG</option>
+                </select>
+              </div>
             </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
               <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
@@ -538,111 +542,39 @@
           <div class="search-filter">
             <div class="search-filter-container">
               <div class="bg-title search-filter-header text-uppercase">Find your dream property.</div>
-              <!-- <div class="search-filter-dropdowns flex-center">
-
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th statement" class="selectz-row">5th</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">I want to</label>
-                  <select>
-                    <option value="1">Buy</option>
-                    <option value="2">Sell</option>
-                    <option value="3">Rent</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">Property Type</label>
-                  <select>
-                    <option value="1">Residential</option>
-                    <option value="2">Commercial </option>
-                    <option value="3">Administrative</option>
-                    <option value="4">Medical</option>
-                    <option value="4">Vacation</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">Locations</label>
-                  <select>
-                    <option value="1">New Cairo</option>
-                    <option value="2">6th Octoner</option>
-                    <option value="3">Sheikh Zayed</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-action">
-                  <div class="button-default bt-black flex-center-center width-fluid">
-                    <button class="text-center width-fluid flex-center-center"><span class="icon-search icon"></span>
-                      Search</button>
-                  </div>
-                </div>
-              </div> -->
 
               <div class="filter-slider-bar d-flex">
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">I Want To</div>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="want" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th-settlement" class="selectz-row">5th</div>
-                    </div>
-                  </div>
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">I Want To</label>
+                  <select id="i-want-to">
+                    <!-- id for Run Select Box -->
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                    <option value="rent">Rent</option>
+                  </select>
                 </div>
 
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">Property Type</div>
-                    <div class="selected-title">
-                      <div class="title">Commercial</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="property_type" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="commercial" class="selectz-row">Commercial</div>
-                      <div data-value="administrative" class="selectz-row">Administrative </div>
-                      <div data-value="medical" class="selectz-row">Medical</div>
-                      <div data-value="medical" class="selectz-row">Vacation</div>
-                    </div>
-                  </div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type">
+                    <!-- id for Run Select Box -->
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
                 </div>
 
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">Locations</div>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="locations" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th-settlement" class="selectz-row">5th</div>
-                    </div>
-                  </div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Locations</label>
+                  <select id="locations">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
                 </div>
 
                 <!-- Filter Action -->
@@ -870,6 +802,8 @@
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -909,8 +843,44 @@
       },
     });
 
-    $("#chooseType").on("input", function () {
-      console.log($(this).val());
+    new SlimSelect({
+      select: '#i-want-to',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#property-type',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#property-type-modal',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#locations',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#locations-modal',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
     });
 
   </script>

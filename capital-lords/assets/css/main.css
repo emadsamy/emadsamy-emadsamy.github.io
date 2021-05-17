@@ -222,7 +222,7 @@ input[type="file"] {
 .overlay {
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -362,20 +362,20 @@ select {
 /* Scroller Bar */
 .selectric-items .selectric-scroll::-webkit-scrollbar,
 .modal-tab-overview::-webkit-scrollbar,
-.selectz-list::-webkit-scrollbar {
+.ss-list::-webkit-scrollbar {
   width: 11px;
 }
 
 /* Track */
 .selectric-items .selectric-scroll::-webkit-scrollbar-track,
-.selectz-list::-webkit-scrollbar-track,
+.ss-list::-webkit-scrollbar-track,
 .modal-tab-overview::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* Handle */
 .selectric-items .selectric-scroll::-webkit-scrollbar-thumb,
-.selectz-list::-webkit-scrollbar-thumb,
+.ss-list::-webkit-scrollbar-thumb,
 .modal-tab-overview::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 50px;
@@ -383,7 +383,7 @@ select {
 
 /* Handle on hover */
 .selectric-items .selectric-scroll::-webkit-scrollbar-thumb:hover,
-.selectz-list::-webkit-scrollbar-thumb:hover,
+.ss-list::-webkit-scrollbar-thumb:hover,
 .modal-tab-overview::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
@@ -448,68 +448,101 @@ select {
 /* Checkbox */
 
 /* Selectz */
-.selectz-container {
-  background: #fff;
-  cursor: pointer;
-}
-.selectz-content {
-  position: relative;
-}
-.selectz-list {
-  position: absolute;
-  top: 102%;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  display: none;
-  max-height: 135px;
-  overflow-y: auto;
-  z-index: 20;
-  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
-}
-.selectz-row {
-  font-size: 16px;
-  font-weight: 600;
-  color: #000;
-  line-height: 1;
-  padding: 14px;
-  border-bottom: 1px solid #ccc;
-}
-.selectz-row:last-of-type {
-  border: none;
-}
-.selected-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.selected-title .title {
-  line-height: 1;
-  font-size: 18px;
-}
-.selected-title .icon {
-  font-weight: bold;
-  font-size: 14px;
-}
-.icon-chevron-rotate.active {
-  transform: rotateZ(180deg);
-}
 .filter-slider-bar > div {
   width: 25%;
   padding: 15px 20px;
   background: #fff;
 }
-.filter-slider-bar .selectz-list {
-  top: calc(100% + 17px);
+.filter-slider-bar .selectbox-slim {
+  border-right: 1px solid #ccc;
+}
+
+.selectbox-slim .ss-main,
+.selectbox-slim .ss-single-selected {
+  /* height: 100%; */
+  padding: 0;
+  border: none;
+}
+
+.selectbox-slim .ss-content {
   width: calc(100% + 40px);
   left: -20px;
+  top: calc(100% + 21px);
+  border: none;
+  box-shadow: 0 1px 2px #4d4d4d50;
 }
-.selectz-label {
-  color: #4d4d4d;
-  font-size: 15px;
-  font-weight: 500;
+
+.ss-option {
+  border-bottom: 1px solid #aaa;
+  padding: 8px 20px !important;
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+}
+
+.ss-main .ss-single-selected {
+  height: auto !important;
+}
+
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:hover {
+  background: #000;
+  color: #fff;
+}
+
+.ss-content .ss-list .ss-option.ss-disabled:hover {
+  background: none;
+  color: #dedede;
+}
+
+.ss-option:last-of-type {
+  border: none;
+}
+
+.ss-main .ss-single-selected .ss-arrow span {
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+}
+
+.ss-main .placeholder {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.ss-label {
+  line-height: 1;
   margin-bottom: 2px;
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 600;
+  opacity: 0.8;
+  width: 100%;
 }
+.ss-content .ss-list {
+  max-height: 125.39px;
+}
+
+/* Contact */
+.selectbox-tel-keys .placeholder {
+  font-size: 16px;
+}
+.selectbox-tel-keys .ss-main .ss-single-selected .ss-arrow span {
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+}
+.selectbox-tel-keys .ss-content {
+  width: 70px;
+  left: -8px;
+  top: calc(100% + 17px);
+}
+.selectbox-tel-keys .ss-option {
+  padding: 8px 12px !important;
+  text-align: center !important;
+  font-size: 15px;
+}
+/* Contact */
+
 /* Selectz */
 
 /* Modal */
@@ -611,6 +644,27 @@ nav.active-page {
 .nav-btn-select .selectric-items li {
   padding: 9px;
   font-size: 16px;
+}
+.selectbox-language .ss-single-selected {
+  background: none;
+  padding: 0;
+}
+.selectbox-language .placeholder {
+  font-size: 15px;
+  color: #fff;
+}
+.selectbox-language .ss-main .ss-single-selected .ss-arrow span {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+.selectbox-language .ss-option {
+  padding: 5px 10px !important;
+  font-size: 14px;
+  text-align: center !important;
+}
+.selectbox-language .ss-content {
+  width: 100%;
+  left: auto;
 }
 /* Navbar */
 
@@ -1072,20 +1126,18 @@ nav.active-page {
   display: block;
   margin-bottom: 4px;
 }
-.modal-filter-dropdown .selected-title .title {
-  font-size: 22px;
+.modal-filter-dropdown .ss-label {
+  margin-bottom: 5px;
 }
 .modal-filter-dropdown {
   border-bottom: 1px solid #656565;
   padding-bottom: 10px;
 }
-.modal-filter-dropdown .selectz-list {
-  top: 122%;
-}
-.modal-filter-dropdown .icon-chevron-rotate {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000;
+.modal-filter-dropdown .ss-content {
+  width: calc(100%);
+  left: 0;
+  top: calc(100% + 16px);
+  border: none;
 }
 .mfgd-input {
   display: flex;
@@ -1470,10 +1522,10 @@ footer {
     padding: 0 !important;
     background: none !important;
   }
-  .filter-slider-bar .selectz-list {
-    top: calc(100% + 12px);
+  .filter-slider-bar .selectbox-slim .ss-content {
     width: calc(100% + 30px);
     left: -15px;
+    top: calc(100% + 17px);
   }
   /* Search Filter */
 
@@ -1584,19 +1636,26 @@ footer {
   .swiper-pagination-arrows {
     display: none;
   }
+  .filter-slider-bar {
+    flex-wrap: wrap;
+  }
   .filter-slider-bar > div {
     padding: 11px 13px;
+    width: 50%;
+  }
+  .filter-slider-bar .selectbox-slim {
+    border-bottom: 1px solid #ccc;
+  }
+  .filter-slider-bar .selectbox-slim .ss-content {
+    width: calc(100% + 26px);
+    left: -13px;
+    top: calc(100% + 17px);
   }
   .selected-title .title {
     font-size: 17px;
   }
   .selectz-label {
     font-size: 13px;
-  }
-  .filter-slider-bar .selectz-list {
-    top: calc(100% + 13px);
-    width: calc(100% + 26px);
-    left: -13px;
   }
   .selected-title .icon {
     font-size: 12px;

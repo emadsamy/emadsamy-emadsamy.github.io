@@ -30,7 +30,9 @@ body.rtl .accl-row,
 body.rtl .auth-content,
 body.rtl .selectz-label,
 body.rtl .selectz-row,
-body.rtl .p2-info-row {
+body.rtl .p2-info-row,
+body.rtl .ss-label,
+body.rtl .ss-option {
   text-align: right;
 }
 body.rtl .selectric .label {
