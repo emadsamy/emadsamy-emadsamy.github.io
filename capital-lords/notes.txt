@@ -1,0 +1,16 @@
+1- filter in slider 
+	-less font-size in dropdown 
+	-make arrow rotate when opend or closed
+	-Make dropdown started from bottom of container and responsive
+2- Langauge make English To (ENG)
+3- Take video from emaarmisr.com and add it in first slide home =>>>>> Completed
+4- Projects in footer when i choose any page change page projects (to page i choosed it and change icon)
+5- telephone icon in navbar when i make hover visible number and responsive when i make hover visible it like dropdown =>>>>> Completed
+6- in home page responsive visible just 6 projects =>>>>> Completed
+7- in design 2 contact dont work well in responsive
+8- in design 2 in responsive make profile tall and titles same screen in Adboe XD
+9- in filter make input 50%
+10- less slider bold
+11- make price range same https://www.jamesedition.com/real_estate/french-and-swiss-alps?eur_price_cents_from=49000000&eur_price_cents_to=9976365300 no toggle
+12- change cancel in filter to clear all
+13- when i make share in design visible dropdown same here (https://www.jamesedition.com/real_estate/aix-en-provence-france/authentic-bastide-18th-century-10752171)

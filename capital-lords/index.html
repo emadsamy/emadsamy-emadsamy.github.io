@@ -49,14 +49,23 @@
           <div class="modal-s-center">
             <div class="modal-filter-grid-double">
               <div class="modal-filter-dropdown">
-                <label class="modal-f-label">All Locations</label>
-                <select>
-                  <option value="1">Residential</option>
-                  <option value="2">Commercial </option>
-                  <option value="3">Administrative</option>
-                  <option value="4">Medical</option>
-                  <option value="4">Vacation</option>
-                </select>
+                <!-- Selectbox -->
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <label class="modal-f-label">All Locations</label>
+                    <div class="selected-title">
+                      <div class="title">New Cairo</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="october" class="selectz-row">October</div>
+                      <div data-value="madient-nasr" class="selectz-row">Madient Nasr </div>
+                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
+                      <div data-value="new-capital" class="selectz-row">New Capital </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="modal-filter-dropdown">
@@ -298,7 +307,7 @@
           <div class="modal-s-bottom">
             <div class="modal-filter-grid-double mb-0">
               <div class="button-default cancel-btn opacity-hover">
-                <a href="#" class="justify-content-center" data-dismiss="modal">Cancel</a>
+                <a href="#" class="justify-content-center" data-dismiss="modal">Clear All</a>
               </div>
 
               <div class="button-default bt-black">
@@ -325,10 +334,12 @@
             <div class="nav-icon-btn nav-btn-select">
               <select id="changeLang">
                 <option value="ar">عربي</option>
-                <option value="en">English</option>
+                <option value="en">ENG</option>
               </select>
             </div>
-            <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
+            <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
+              <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
+            </div>
             <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
@@ -484,7 +495,14 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
+              <div class="slide-home-card">
+                <div class="slide-home-video">
+                  <video autoplay loop muted>
+                    <source src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4"
+                      type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div class="overlay"></div>
               </div>
             </div>
@@ -515,8 +533,24 @@
           <div class="search-filter">
             <div class="search-filter-container">
               <div class="bg-title search-filter-header text-uppercase">Find your dream property.</div>
-              <div class="search-filter-dropdowns flex-center">
-                <div class="search-filter-selectbox">
+              <!-- <div class="search-filter-dropdowns flex-center">
+
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <div class="selected-title">
+                      <div class="title">New Cairo</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
+                      <div data-value="october" class="selectz-row">October</div>
+                      <div data-value="5th statement" class="selectz-row">5th</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-filter-selectbox sfs-idx">
                   <label class="search-filter-label text-uppercase">I want to</label>
                   <select>
                     <option value="1">Buy</option>
@@ -525,7 +559,7 @@
                   </select>
                 </div>
 
-                <div class="search-filter-selectbox">
+                <div class="search-filter-selectbox sfs-idx">
                   <label class="search-filter-label text-uppercase">Property Type</label>
                   <select>
                     <option value="1">Residential</option>
@@ -536,7 +570,7 @@
                   </select>
                 </div>
 
-                <div class="search-filter-selectbox">
+                <div class="search-filter-selectbox sfs-idx">
                   <label class="search-filter-label text-uppercase">Locations</label>
                   <select>
                     <option value="1">New Cairo</option>
@@ -551,7 +585,70 @@
                       Search</button>
                   </div>
                 </div>
+              </div> -->
+
+              <div class="filter-slider-bar d-flex">
+                <!-- Selectbox -->
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <div class="selectz-label text-uppercase">I Want To</div>
+                    <div class="selected-title">
+                      <div class="title">New Cairo</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input selected-input-nn" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
+                      <div data-value="october" class="selectz-row">October</div>
+                      <div data-value="5th statement" class="selectz-row">5th</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Selectbox -->
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <div class="selectz-label text-uppercase">Property Type</div>
+                    <div class="selected-title">
+                      <div class="title">Commercial</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="commercial" class="selectz-row">Commercial</div>
+                      <div data-value="administrative" class="selectz-row">Administrative </div>
+                      <div data-value="medical" class="selectz-row">Medical</div>
+                      <div data-value="medical" class="selectz-row">Vacation</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Selectbox -->
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <div class="selectz-label text-uppercase">Locations</div>
+                    <div class="selected-title">
+                      <div class="title">New Cairo</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
+                      <div data-value="october" class="selectz-row">October</div>
+                      <div data-value="5th statement" class="selectz-row">5th</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Filter Action -->
+                <div class="filter-bar-action flex-center">
+                  <div class="button-default bt-black flex-center-center width-fluid">
+                    <button class="text-center width-fluid flex-center-center"><span class="icon-search icon"></span>
+                      Search</button>
+                  </div>
+                </div>
               </div>
+
               <div class="search-filter-advanced">
                 <div class="d-inline-block">
                   <button data-toggle="modal" data-target="#modalSearchFilter"
@@ -655,7 +752,7 @@
           <div class="sa-card service-card">
             <div class="sa-data">
               <div class="width-fluid">
-                <div class="sa-sub-title flex-center text-uppercase">Our Services
+                <div class="sa-sub-title flex-center text-uppercase">Our News
                   <div class="sub-title-vline"></div>
                 </div>
                 <div class="bg-title mb-4 text-uppercase">Manage Your<br /> Property with<br /> Capital Lords </div>
@@ -797,15 +894,17 @@
         nextEl: '.arrow-next',
         prevEl: '.arrow-prev',
       },
-      autoplay: {
-        delay: 4000
-      },
+      autoplay: false,
       speed: 700,
 
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+    });
+
+    $(".selected-input-nn").on('change', function () {
+      console.log($(this).val());
     });
   </script>
 </body>

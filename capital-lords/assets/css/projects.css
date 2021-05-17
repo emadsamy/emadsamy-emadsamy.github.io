@@ -1,3 +1,10 @@
+.selected-item-icon {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .projects-container {
   padding-top: 40px;
 }
@@ -12,9 +19,6 @@
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
 }
-.vacation-content {
-  padding: 10px 0;
-}
 .vh-row > div {
   width: 50%;
 }
@@ -24,19 +28,29 @@
 }
 .vh-data {
   padding: 80px 55px;
-  background-repeat: no-repeat;
-  background-position-y: 74%;
-  background-position-x: 90%;
-  background-size: 120px;
+  position: relative;
 }
 .vh-title {
   line-height: 1;
   font-weight: 500;
 }
+.vh-icon {
+  position: relative;
+  z-index: 15;
+}
 .vh-icon .icon {
-  font-size: 47px;
-  color: #fff;
   margin-right: 15px;
+  filter: brightness(0) invert(1);
+  width: 50px;
+}
+.ph-view-overlay {
+  position: absolute;
+  bottom: 19%;
+  right: 7%;
+  z-index: 10;
+  width: 90px;
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
 }
 .selectric .label {
   font-size: 19px;
@@ -64,8 +78,6 @@
 }
 .projects-search {
   width: 100%;
-  border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
 }
 .projects-filter-btn {
   padding: 0 1.5rem;
@@ -79,13 +91,68 @@
   font-weight: 600;
   margin-left: 10px;
 }
-.vacation-row {
-  align-items: center;
+.projects-row-bar > div {
+  border-left: 1px solid #cecece;
+}
+.selected-item {
+  width: 100%;
+}
+.selected-item-logo,
+.dropdown-item-logo {
+  width: 28px;
+}
+.dropdown-shapes-container {
+  min-width: 230px;
+  position: relative;
+}
+.selected-item-header {
+  cursor: pointer;
+}
+.selected-item-title,
+.dropdown-shape-row .title {
+  font-size: 19px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+.selected-item-icon {
+  font-weight: bold;
+  font-size: 15px;
+}
+.selected-item-icon.active {
+  transform: rotate(180deg);
+}
+.selected-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dropdown-shapes-list {
+  position: absolute;
+  top: 101%;
+  left: -1px;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  border: 1px solid #cecece;
+  display: none;
+}
+.projects-row-bar > div {
+  padding: 10px 0;
+}
+.dropdown-shape-row {
+  padding: 10px 15px;
+  line-height: 1;
+  border-bottom: 1px solid #cecece;
+}
+.dropdown-shape-row:last-of-type {
+  border: none;
+}
+.dropdown-shape-row:hover {
+  background: #eee;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .vacation-row {
+  .projects-row-bar {
     flex-wrap: wrap;
   }
   .vacation-content {
@@ -104,9 +171,6 @@
     border: none;
     border-bottom: 1px solid #cecece;
   }
-  .ps-group {
-    padding: 7px 9px !important;
-  }
   .projects-filter-btn {
     padding: 10px 0;
   }
@@ -120,14 +184,33 @@
     padding: 30px 23px;
   }
   .vh-icon .icon {
-    font-size: 38px;
+    width: 37px;
   }
   .vh-title {
-    font-size: 24px;
+    font-size: 21px;
+  }
+  .ph-view-overlay {
+    bottom: 17%;
+    right: 7%;
+    width: 60px;
   }
   .projects-grid-button .button-default > * {
     padding: 13px 23px;
     font-size: 17px;
+  }
+  .projects-row-bar > div {
+    border-bottom: 1px solid #cecece;
+    border-left: none;
+  }
+  .dropdown-shapes-container {
+    min-width: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+  .ps-group,
+  .projects-filter-btn,
+  .selected-item {
+    padding: 0 !important;
   }
 }
 
@@ -157,6 +240,38 @@
   }
   .vh-title {
     font-size: 19px;
+  }
+  .selected-item-logo,
+  .dropdown-item-logo {
+    width: 22px;
+  }
+  .selected-item-title,
+  .dropdown-shape-row .title {
+    font-size: 17px;
+  }
+  .selected-item-icon {
+    font-size: 12px;
+  }
+  .dropdown-shapes-container {
+    min-width: 200px;
+  }
+  .ps-group {
+    padding: 0 0.8rem !important;
+  }
+  .ps-group .icon {
+    font-size: 19px;
+  }
+  .ps-group input {
+    font-size: 16px;
+  }
+  .projects-filter-btn .icon {
+    font-size: 17px;
+  }
+  .fil-txt {
+    font-size: 18px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

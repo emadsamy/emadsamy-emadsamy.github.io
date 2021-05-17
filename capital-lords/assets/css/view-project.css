@@ -88,7 +88,6 @@
   font-size: 26px;
   margin-bottom: 10px;
   display: inline-block;
-  font-weight: 600;
   width: 100%;
 }
 .project-action-btn .title {
@@ -188,6 +187,7 @@
 }
 .dc-btn .icon {
   margin: 0 8px;
+  font-size: 23px;
 }
 .ask-btn,
 .register-btn {
@@ -245,7 +245,7 @@
 }
 .project-contact-form {
   position: absolute;
-  bottom: 0;
+  bottom: -21px;
   left: 0;
   width: 100%;
   z-index: 40;
@@ -768,6 +768,9 @@
     width: 49%;
     position: static !important;
   }
+  .project-contact-form {
+    bottom: 15px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1010,6 +1013,9 @@
   }
   .project-bar-actions {
     padding: 20px 0 !important;
+  }
+  .project-contact-form {
+    bottom: 0;
   }
 }
 

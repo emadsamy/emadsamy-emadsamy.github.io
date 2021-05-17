@@ -28,7 +28,9 @@ body.rtl .read-more-parent,
 body.rtl .product-card,
 body.rtl .acc-img-text,
 body.rtl .accl-row,
-body.rtl .auth-content {
+body.rtl .auth-content,
+body.rtl .selectz-label,
+body.rtl .selectz-row {
   text-align: right;
 }
 body.rtl .selectric .label {
@@ -67,6 +69,14 @@ body.rtl .icon-telephone {
 }
 body.rtl .button-default .icon-search {
   margin-left: 10px !important;
+}
+body.rtl .ph-view-overlay {
+  left: 7%;
+  right: auto;
+}
+body.rtl .projects-row-bar > div {
+  border-left: none;
+  border-right: 1px solid #cecece;
 }
 /* Global **/
 
@@ -137,8 +147,8 @@ body.rtl .footer-contact-group input {
   border-left: 1px solid #fff;
 }
 body.rtl .footer-b-links a {
-  margin-right: 0;
-  margin-left: 15px;
+  margin-right: 15px;
+  margin-left: 0;
 }
 /* Footer */
 
@@ -267,6 +277,10 @@ body.rtl .modal-tab-normal-main-image {
   body.rtl .pd-data-text .pbd-row:first-of-type {
     margin-right: 149px;
     margin-left: 0;
+  }
+  body.rtl .projects-row-bar > div {
+    border-left: none;
+    border-right: none;
   }
 }
 

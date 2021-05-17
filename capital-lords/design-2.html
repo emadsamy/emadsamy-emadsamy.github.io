@@ -36,283 +36,43 @@
 
 <body>
 
-  <!-- Modal Search Filter -->
-  <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal Share -->
+  <div class="modal fade" id="modalShare" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
-          <div class="modal-s-top flex-center justify-content-between">
-            <button class="flex-center filter-title"><span class="icon-filter icon"></span>
-              <div class="title ml-3">Filters</div>
+          <div class="ms-header flex-center-between">
+            <button data-dismiss="modal"><span class="icon-cancel icon"></span></button>
+            <div class="title">Share</div>
+            <div></div>
+          </div>
+
+          <div class="ms-body">
+            <button class="ms-row copyboard flex-center-between" data-text="copy capital lords link">
+              <div class="ms-row-title">Copy Link</div> <span class="icon-copy icon"></span>
             </button>
-            <button class="d-flex close-filter opacity-hover" data-dismiss="modal"><span
-                class="icon-cancel icon"></span></button>
-          </div>
-          <div class="modal-s-center">
-            <div class="modal-filter-grid-double">
-              <div class="modal-filter-dropdown">
-                <label class="modal-f-label">All Locations</label>
-                <select>
-                  <option value="1">Residential</option>
-                  <option value="2">Commercial </option>
-                  <option value="3">Administrative</option>
-                  <option value="4">Medical</option>
-                  <option value="4">Vacation</option>
-                </select>
-              </div>
-
-              <div class="modal-filter-dropdown">
-                <label class="modal-f-label">Property Type</label>
-                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">Residential
-                  <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="modalCheckboxContainer" class="modal-checkbox-container mt-4">
-
-              <!-- Start Row -->
-              <div class="modal-checkbox-row">
-                <div class="checkbox-toggle-header flex-center-between">
-                  <!-- if u want to check all inputs just add this class checkAll -->
-                  <div class="checkAll checkbox-group flex-center">
-                    <div class="fake-checkbox">
-                      <input id="modalCheckbox1" type="checkbox" class="input-checkbox" />
-                      <div class="fake-cb-child">
-                        <span></span>
-                      </div>
-                    </div>
-                    <label class="checkbox-text" for="modalCheckbox1">Apartment
-                    </label>
-                  </div>
-
-                  <button class="checkbox-toggle-btn flex-center">
-                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
-                  </button>
-                </div>
-
-                <div class="multiple-checkbox-container">
-                  <div class="multiple-checkbox-grid">
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox2" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox2">Apartment
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox3" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox3">Duplex
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox4" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox4">Duplex
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox5" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox5">Penthouse
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox7" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox7">Twin House
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox8" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox8">Studio
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Start Row -->
-              <div class="modal-checkbox-row">
-                <div class="checkbox-toggle-header flex-center-between">
-                  <!-- if u want to check all inputs just add this class checkAll -->
-                  <div class="checkAll checkbox-group flex-center">
-                    <div class="fake-checkbox">
-                      <input id="modalCheckbox9" type="checkbox" class="input-checkbox" />
-                      <div class="fake-cb-child">
-                        <span></span>
-                      </div>
-                    </div>
-                    <label class="checkbox-text" for="modalCheckbox9">Villa
-                    </label>
-                  </div>
-
-                  <button class="checkbox-toggle-btn flex-center">
-                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
-                  </button>
-                </div>
-
-                <div class="multiple-checkbox-container">
-                  <div class="multiple-checkbox-grid">
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox11" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox11">Villa
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox12" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox12">Stand Alone
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox13" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox13">TownHouse
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox14" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox14">I Villa
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox15" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox15">Palace
-                      </label>
-                    </div>
-
-                    <div class="checkbox-group flex-center">
-                      <div class="fake-checkbox">
-                        <input id="modalCheckbox10" type="checkbox" class="input-checkbox" />
-                        <div class="fake-cb-child">
-                          <span></span>
-                        </div>
-                      </div>
-                      <label class="checkbox-text" for="modalCheckbox10">Twin
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Start Row -->
-              <div class="modal-checkbox-row">
-                <div class="checkbox-toggle-header flex-center-between">
-                  <div class="checkbox-group flex-center">
-                    <div class="fake-checkbox">
-                      <input id="modalCheckbox18" type="checkbox" class="input-checkbox" />
-                      <div class="fake-cb-child">
-                        <span></span>
-                      </div>
-                    </div>
-                    <label class="checkbox-text" for="modalCheckbox18">Chalet
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="filter-price-range">
-              <div class="title mb-2">Price Range</div>
-              <input id="sliderPrice" type="text" />
-              <div class="modal-filter-grid-double">
-                <div class="mfgd-input">
-                  <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
-                </div>
-                <div class="mfgd-input">
-                  <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> EGP
-                </div>
-              </div>
-            </div>
-
-            <div class="filter-price-range">
-              <div class="title mb-2">Area (m2)</div>
-              <input id="sliderArea" type="text" />
-              <div class="modal-filter-grid-double">
-                <div class="mfgd-input">
-                  <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
-                </div>
-                <div class="mfgd-input">
-                  <div id="mfgdInputValArea-2" class="mfgd-input-val"> </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="modal-s-bottom">
-            <div class="modal-filter-grid-double mb-0">
-              <div class="button-default cancel-btn opacity-hover">
-                <a href="#" class="justify-content-center" data-dismiss="modal">Cancel</a>
-              </div>
-
-              <div class="button-default bt-black">
-                <a href="#" class="justify-content-center">Search</a>
-              </div>
-            </div>
+            <button class="ms-row flex-center-between">
+              <div class="ms-row-title">Email</div> <span class="icon-envelope icon"></span>
+            </button>
+            <button class="ms-row flex-center-between">
+              <div class="ms-row-title">WhatsApp</div> <span class="icon-whatsapp icon"></span>
+            </button>
+            <button class="ms-row flex-center-between">
+              <div class="ms-row-title">Messenger</div> <span class="icon-messenger icon"></span>
+            </button>
+            <button class="ms-row flex-center-between">
+              <div class="ms-row-title">Facebook</div> <span class="icon-facebook icon"></span>
+            </button>
+            <button class="ms-row flex-center-between">
+              <div class="ms-row-title">Twitter</div> <span class="icon-twitter icon"></span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal Search Filter -->
+  </div>
+  <!-- Modal Share -->
 
   <div class="wrapper">
     <!-- Navbar -->
@@ -496,7 +256,7 @@
                 <span class="icon-heart icon"></span>
                 Save
               </button>
-              <button class="bc-ac-btn opacity-hover flex-center">
+              <button class="bc-ac-btn opacity-hover flex-center" data-toggle="modal" data-target="#modalShare">
                 <span class="icon-upload icon"></span>
                 Share
               </button>
@@ -511,18 +271,6 @@
                     <img id="shcView" src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
                   </div>
                 </div>
-
-                <!-- <div class="counter-arrows flex-center">
-                  <button class="arrow-prev-header d2-arrow d-flex"><span
-                      class="icon-chevron-left icon"></span></button>
-                  <div class="swiper-counter"></div>
-                  <button class="arrow-next-header d2-arrow d-flex"><span
-                      class="icon-chevron-right icon"></span></button>
-                </div> -->
-
-                <button class="expand-btn d-flex">
-                  <span class="icon-expand icon"></span>
-                </button>
               </div>
 
               <div class="header-more-images d-flex flex-wrap">
@@ -535,73 +283,72 @@
                 <div class="d2-actions-header">
                   <div class="d2-images-grid position-relative">
                     <a href="https://wa.me/201282113051?text=This is Capital Lords" target="_blank"
-                      class="dc-btn ask-btn mb-0 align-center-center"><span class="icon-telephone icon"></span> ASK
+                      class="dc-btn ask-btn mb-0 align-center-center"><span class="icon-whatsapp icon"></span>
+                      ASK
                       NOW</a>
-                    <div class="dc-contact-container align-center-center">
-                      <button id="toggleHeightSlide" class="dc-btn mb-0 register-btn"><span
-                          class="icon-user icon"></span> REGISTER INTEREST</button>
-                      <div id="toggleHeightSlideContainer" class="contact-form project-contact-form">
-                        <div class="cform-title flex-center-between">
-                          <div class="title">Register Interest</div>
-                          <button id="closeSlideContainer" class="close-contact opacity-hover"><span
-                              class="icon-cancel icon"></span></button>
-                        </div>
-                        <form class="form-row">
-                          <div class="col-lg-12">
-                            <div class="cform-group">
-                              <input type="text" placeholder="Full Name" />
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12">
-                            <div class="cform-group">
-                              <input type="email" placeholder="Email" />
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12">
-                            <div class="cform-group d-flex">
-                              <div class="cform-selecbox">
-                                <select>
-                                  <option value="1">+02</option>
-                                  <option value="2">+03</option>
-                                  <option value="3">+04</option>
-                                </select>
-                              </div>
-                              <input type="tel" placeholder="Phone (Optional)" />
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12">
-                            <div class="cform-group">
-                              <textarea rows="3" placeholder="I’m interested in Sale - Apartment New Cairo."></textarea>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12">
-                            <div class="cform-action">
-                              <div class="button-default width-fluid bt-black">
-                                <button>Send Now</button>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12">
-                            <div class="checkbox-group flex-center">
-                              <div class="fake-checkbox">
-                                <input id="agreeTermsConditions" type="checkbox" class="input-checkbox" />
-                                <div class="fake-cb-child">
-                                  <span></span>
-                                </div>
-                              </div>
-                              <label class="checkbox-text" for="agreeTermsConditions">I agree to Terms of use and
-                                Privacy
-                                Policy
-                              </label>
-                            </div>
-                          </div>
-                        </form>
+                    <button id="toggleContact" class="dc-btn mb-0 register-btn"><span class="icon-user icon"></span>
+                      REGISTER INTEREST</button>
+                    <div id="toggleContactContainer" class="contact-form project-contact-form">
+                      <div class="cform-title flex-center-between">
+                        <div class="title">Register Interest</div>
+                        <button id="closeContactContainer" class="close-contact opacity-hover"><span
+                            class="icon-cancel icon"></span></button>
                       </div>
+                      <form class="form-row">
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <input type="text" placeholder="Full Name" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <input type="email" placeholder="Email" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group d-flex">
+                            <div class="cform-selecbox">
+                              <select>
+                                <option value="1">+02</option>
+                                <option value="2">+03</option>
+                                <option value="3">+04</option>
+                              </select>
+                            </div>
+                            <input type="tel" placeholder="Phone (Optional)" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <textarea rows="3" placeholder="I’m interested in Sale - Apartment New Cairo."></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-action">
+                            <div class="button-default width-fluid bt-black">
+                              <button>Send Now</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="checkbox-group flex-center">
+                            <div class="fake-checkbox">
+                              <input id="agreeTermsConditions" type="checkbox" class="input-checkbox" />
+                              <div class="fake-cb-child">
+                                <span></span>
+                              </div>
+                            </div>
+                            <label class="checkbox-text" for="agreeTermsConditions">I agree to Terms of use and
+                              Privacy
+                              Policy
+                            </label>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -610,24 +357,26 @@
           </div>
 
           <div class="design-2-double-grid mb-3">
-            <div class="design-2-profile-info d-flex flex-wrap">
+            <div class="design-2-profile-info d-flex">
               <div class="design-2-avatar">
                 <img src="assets/img/brands/marassi.png" class="img-fluid" alt="" />
               </div>
-              <div class="pbd-row">
-                <div class="pbd-title">Project Name</div>
-                <div class="pbd-data">The Village</div>
-              </div>
+              <div class="d2-pbp-rows d-flex flex-wrap">
+                <div class="pbd-row">
+                  <div class="pbd-title">Project Name</div>
+                  <div class="pbd-data">The Village</div>
+                </div>
 
-              <div class="pbd-row">
-                <div class="pbd-title">Starting Price</div>
-                <div class="pbd-data">2,100,000 EGP</div>
-                <div class="small-text mt-1">Last Updated 28 Oct 2020</div>
-              </div>
+                <div class="pbd-row">
+                  <div class="pbd-title">Starting Price</div>
+                  <div class="pbd-data">2,100,000 EGP</div>
+                  <div class="small-text mt-1">Last Updated 28 Oct 2020</div>
+                </div>
 
-              <div class="pbd-row">
-                <div class="pbd-title">Property type </div>
-                <div class="pbd-data">Apartment</div>
+                <div class="pbd-row">
+                  <div class="pbd-title">Property type </div>
+                  <div class="pbd-data">Apartment</div>
+                </div>
               </div>
             </div>
 
@@ -651,11 +400,6 @@
                 <span class="icon-rooms icon"></span>
                 <div class="title">4 Bed Rooms</div>
               </button>
-
-              <button class="project-action-btn">
-                <span class="icon-bathrooms icon"></span>
-                <div class="title">2 Bathrooms</div>
-              </button>
             </div>
           </div>
 
@@ -673,9 +417,12 @@
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
                 <div class="card-body">
                   <div class="text accordion-text">
-                    Because we understand the paradox that results from desiring a simpler life yet wanting so much
-                    more out of it, we have created an environment that brings the best of all worlds and offers you
-                    an unrivaled lifestyle, all designed with you in mind. Because we understand the paradox that
+                    Because we understand the paradox that results from desiring a simpler life yet wanting so
+                    much
+                    more out of it, we have created an environment that brings the best of all worlds and offers
+                    you
+                    an unrivaled lifestyle, all designed with you in mind. Because we understand the paradox
+                    that
                     results from desiring a simpler life yet wanting so offers you an unrivaled lifestyle, all
                     designed with you in mind.
                   </div>
@@ -731,9 +478,11 @@
                       <img src="assets/img/brands/midtown.png" class="img-fluid" alt="" />
                     </div>
                     <div class="acc-img-text">
-                      <div class="accordion-text">Because we understand the paradox that results from desiring a simpler
+                      <div class="accordion-text">Because we understand the paradox that results from desiring a
+                        simpler
                         life yet wanting so much
-                        more out of it, we have created an environment that brings the best of all worlds and offers you
+                        more out of it, we have created an environment that brings the best of all worlds and
+                        offers you
                         an unrivaled lifestyle,</div>
                       <div class="accordion-text mt-2">www.midtown.com</div>
                     </div>
