@@ -43,14 +43,14 @@
   margin-bottom: 23px;
 }
 .person-name {
-  font-size: 31px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
   color: #000;
 }
 .person-position {
-  font-size: 21px;
+  font-size: 19px;
 }
 .dl-btn {
   display: block;
@@ -181,6 +181,9 @@
   .about-container {
     padding: 50px 0 150px;
   }
+  .person-name {
+    font-size: 26px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -199,8 +202,8 @@
     font-size: 21px;
   }
   .bg-title {
-    font-size: 34px;
-    margin-bottom: 22px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
   .title {
     font-size: 26px;
@@ -213,7 +216,7 @@
     min-height: auto;
   }
   .person-name {
-    font-size: 27px;
+    font-size: 23px;
   }
 }
 

@@ -25,8 +25,9 @@
   <link rel="stylesheet" href="assets/css/icomoon.css" />
   <!-- Selectize -->
   <link rel="stylesheet" href="assets/css/selectric.css">
-  <!-- Bootstrap Slider Price -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/projects.css" />
@@ -35,6 +36,7 @@
 
 <body>
 
+  <!-- Modal Filter -->
   <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -49,14 +51,23 @@
           <div class="modal-s-center">
             <div class="modal-filter-grid-double">
               <div class="modal-filter-dropdown">
-                <label class="modal-f-label">All Locations</label>
-                <select>
-                  <option value="1">Residential</option>
-                  <option value="2">Commercial </option>
-                  <option value="3">Administrative</option>
-                  <option value="4">Medical</option>
-                  <option value="4">Vacation</option>
-                </select>
+                <!-- Selectbox -->
+                <div class="selectz-container">
+                  <div class="selectz-content">
+                    <label class="modal-f-label">All Locations</label>
+                    <div class="selected-title">
+                      <div class="title">New Cairo</div>
+                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
+                      <input class="selected-input" type="hidden" name="" />
+                    </div>
+                    <div class="selectz-list">
+                      <div data-value="october" class="selectz-row">October</div>
+                      <div data-value="madient-nasr" class="selectz-row">Madient Nasr </div>
+                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
+                      <div data-value="new-capital" class="selectz-row">New Capital </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="modal-filter-dropdown">
@@ -269,8 +280,10 @@
             </div>
 
             <div class="filter-price-range">
-              <div class="title mb-2">Price Range</div>
-              <input id="sliderPrice" type="text" />
+              <div class="title">Price Range</div>
+              <input type="text" data-drag-interval="false" class="js-range-slider-price" name="my_range" value=""
+                data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
+                data-grid="false" data-step="50000" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
                   <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
@@ -282,8 +295,10 @@
             </div>
 
             <div class="filter-price-range">
-              <div class="title mb-2">Area (m2)</div>
-              <input id="sliderArea" type="text" />
+              <div class="title">Area (m2)</div>
+              <input type="text" data-drag-interval="false" class="js-range-slider-meter" name="my_range" value=""
+                data-type="double" data-min="0" data-max="5000" data-from="1000" data-to="4000" data-grid="false"
+                data-step="50" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
                   <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
@@ -298,11 +313,11 @@
           <div class="modal-s-bottom">
             <div class="modal-filter-grid-double mb-0">
               <div class="button-default cancel-btn opacity-hover">
-                <a href="#" class="justify-content-center" data-dismiss="modal">Cancel</a>
+                <button id="clearAll" class="justify-content-center width-fluid">Clear All</button>
               </div>
 
               <div class="button-default bt-black">
-                <a href="#" class="justify-content-center">Search</a>
+                <button class="justify-content-center width-fluid">Search</button>
               </div>
             </div>
           </div>
@@ -325,10 +340,12 @@
             <div class="nav-icon-btn nav-btn-select">
               <select id="changeLang">
                 <option value="ar">عربي</option>
-                <option value="en">English</option>
+                <option value="en">ENG</option>
               </select>
             </div>
-            <div class="nav-icon-btn"><span class="icon-telephone icon"></span></div>
+            <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
+              <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
+            </div>
             <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
             <div id="openMenu" class="nav-icon-btn">
               <div class="menu-bar">
@@ -650,8 +667,8 @@
             </div>
             <div class="footer-links">
               <div class="footer-title">Capital Lords</div>
-              <div class="footer-link"><a href="#">About</a></div>
-              <div class="footer-link"><a href="#">Contact Us</a></div>
+              <div class="footer-link"><a href="about.html">About</a></div>
+              <div class="footer-link"><a href="contact.html">Contact Us</a></div>
               <div class="footer-link"><a href="#">Careers</a></div>
             </div>
             <div class="footer-links">
@@ -663,11 +680,11 @@
             </div>
             <div class="footer-links">
               <div class="footer-title">Projects</div>
-              <div class="footer-link"><a href="#">Residential</a></div>
-              <div class="footer-link"><a href="#">Commercial </a></div>
-              <div class="footer-link"><a href="#">Administrative </a></div>
-              <div class="footer-link"><a href="#">Medical</a></div>
-              <div class="footer-link"><a href="#">Vacation</a></div>
+              <div class="footer-link"><a href="projects.html#residential">Residential</a></div>
+              <div class="footer-link"><a href="projects.html#commercial">Commercial </a></div>
+              <div class="footer-link"><a href="projects.html#administrative">Administrative </a></div>
+              <div class="footer-link"><a href="projects.html#medical">Medical</a></div>
+              <div class="footer-link"><a href="projects.html#vacation">Vacation</a></div>
             </div>
             <div class="footer-contact">
               <div class="footer-title">News & Offers</div>
@@ -717,7 +734,7 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

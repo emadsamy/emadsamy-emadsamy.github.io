@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Design 2</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Selectize -->
+  <link rel="stylesheet" href="assets/css/selectric.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/project-1.css" />
+  <link rel="stylesheet" href="assets/css/project-2.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+
+<body>
+
+  <!-- Modal Share -->
+  <div class="modal fade" id="modalShare" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="ms-header flex-center-between">
+            <button data-dismiss="modal"><span class="icon-cancel icon"></span></button>
+            <div class="title">Share</div>
+            <div></div>
+          </div>
+
+          <div class="ms-body">
+            <button class="ms-row copyboard flex-center-between" data-text="copy capital lords link">
+              <div class="ms-row-title">Copy Link</div> <span class="icon-copy icon"></span>
+            </button>
+            <a href="mailto:admin@admin.com" class="ms-row flex-center-between">
+              <div class="ms-row-title">Email</div> <span class="icon-envelope icon"></span>
+            </a>
+            <a target="_blank" href="https://wa.me/201282113051?text=This is Capital Lords"
+              class="ms-row flex-center-between">
+              <div class="ms-row-title">WhatsApp</div> <span class="icon-whatsapp icon"></span>
+            </a>
+            <a target="_blank" href="https://www.messenger.com" class="ms-row flex-center-between">
+              <div class="ms-row-title">Messenger</div> <span class="icon-messenger icon"></span>
+            </a>
+            <a target="_blank" href="https://www.facebook.com" class="ms-row flex-center-between">
+              <div class="ms-row-title">Facebook</div> <span class="icon-facebook icon"></span>
+            </a>
+            <a target="_blank" href="https://www.twitter.com" class="ms-row flex-center-between">
+              <div class="ms-row-title">Twitter</div> <span class="icon-twitter icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modal Share -->
+
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav id="nav" class="nav">
+      <div class="container-fluid">
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+          </div>
+
+          <div class="nav-icons flex-center">
+            <div class="nav-icon-btn nav-btn-select">
+              <select id="changeLang">
+                <option value="ar">عربي</option>
+                <option value="en">ENG</option>
+              </select>
+            </div>
+            <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
+              <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
+            </div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
+            <div id="openMenu" class="nav-icon-btn">
+              <div class="menu-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <div id="menuContainer" class="menu-container">
+      <div class="menu-wrapper">
+        <div id="menuTop" class="menu-top">
+          <nav class="nav">
+            <div class="container-fluid">
+              <div class="navbar">
+                <div class="nav-logo">
+                  <a href="index.html"><img src="assets/img/logo-black.svg" class="img-fluid" alt="" /></a>
+                </div>
+
+                <div id="closeMenu" class="nav-icons flex-center">
+                  <div class="nav-icon-btn"><span class="icon-cancel black-color icon"></span></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div id="menuBody" class="menu-body">
+          <div class="container-fluid">
+            <div class="menu-body-row d-flex justify-content-between">
+              <div class="menu-sidebar">
+                <a href="about.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="ms-sub-title text-uppercase">About Us</div>
+                    <div class="title">Who we are</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="services.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="ms-sub-title text-uppercase">Our Services </div>
+                    <div class="title">Properties Management</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="contact.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="title">Contact us</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="#" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="title">Careers</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-body-cards">
+                <div class="menu-body-grid">
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-home icon"></span>
+                    <div class="mbg-title">Residential</div>
+                  </a>
+
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-hospital icon"></span>
+                    <div class="mbg-title">Medical</div>
+                  </a>
+
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-store icon"></span>
+                    <div class="mbg-title">Commercial </div>
+                  </a>
+
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-beach icon"></span>
+                    <div class="mbg-title">Vacation Home</div>
+                  </a>
+
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-resort icon"></span>
+                    <div class="mbg-title">Administrative </div>
+                  </a>
+
+                  <a href="#" class="mbg-card flex-center">
+                    <span class="icon-diamond icon"></span>
+                    <div class="mbg-title">Exclusive Projects </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="menuBottom" class="menu-bottom">
+          <div class="container-fluid">
+            <div class="footer-bottom flex-center justify-content-between">
+              <div class="text black-color">Capital Lords 2021 © All rights reserved</div>
+              <div class="footer-b-links">
+                <a href="#">Cookies Policy</a>
+                <a href="#">Legal Notice</a>
+                <a href="#">Privacy Policy </a>
+                <a href="#">Sit map</a>
+              </div>
+              <div class="menu-socialmedia flex-center">
+                <div class="text ml-2 mr-2">Follow us on</div>
+                <div class="menu-social">
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+
+    <!-- Content -->
+    <div class="wrapper-container">
+
+      <div class="project-design-2">
+        <div class="container-fluid">
+          <div class="breadcrumb-container flex-center-between">
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Vacation Compounds </a></li>
+                <li class="breadcrumb-item"><a href="#">North Coast </a></li>
+                <li class="breadcrumb-item"><a href="#">Marassi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">The Village</li>
+              </ol>
+            </div>
+
+            <div class="breadcrumb-actions d-flex">
+              <button class="bc-ac-btn opacity-hover flex-center">
+                <span class="icon-heart icon"></span>
+                Save
+              </button>
+              <button class="bc-ac-btn opacity-hover flex-center" data-toggle="modal" data-target="#modalShare">
+                <span class="icon-upload icon"></span>
+                Share
+              </button>
+            </div>
+          </div>
+
+          <div class="design-2-header">
+            <div class="design-2-double-grid">
+              <div class="design-2-slider position-relative">
+                <div class="swiper-header-container height-fluid">
+                  <div class="shc-view height-fluid">
+                    <img id="shcView" src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="header-more-images d-flex flex-wrap">
+                <div class="d2-images-grid">
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
+                  <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                </div>
+                <div class="d2-actions-header">
+                  <div class="d2-images-grid position-relative">
+                    <a href="https://wa.me/201282113051?text=This is Capital Lords" target="_blank"
+                      class="dc-btn ask-btn mb-0 align-center-center"><span class="icon-whatsapp icon"></span>
+                      ASK
+                      NOW</a>
+                    <button id="toggleContact" class="dc-btn mb-0 register-btn"><span class="icon-user icon"></span>
+                      REGISTER INTEREST</button>
+                    <div id="toggleContactContainer" class="contact-form project-contact-form">
+                      <div class="cform-title flex-center-between">
+                        <div class="title">Register Interest</div>
+                        <button id="closeContactContainer" class="close-contact opacity-hover"><span
+                            class="icon-cancel icon"></span></button>
+                      </div>
+                      <form class="form-row">
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <input type="text" placeholder="Full Name" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <input type="email" placeholder="Email" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group d-flex">
+                            <div class="cform-selecbox">
+                              <select>
+                                <option value="1">+02</option>
+                                <option value="2">+03</option>
+                                <option value="3">+04</option>
+                              </select>
+                            </div>
+                            <input type="tel" placeholder="Phone (Optional)" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-group">
+                            <textarea rows="3" placeholder="I’m interested in Sale - Apartment New Cairo."></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="cform-action">
+                            <div class="button-default width-fluid bt-black">
+                              <button>Send Now</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="checkbox-group flex-center">
+                            <div class="fake-checkbox">
+                              <input id="agreeTermsConditions" type="checkbox" class="input-checkbox" />
+                              <div class="fake-cb-child">
+                                <span></span>
+                              </div>
+                            </div>
+                            <label class="checkbox-text" for="agreeTermsConditions">I agree to Terms of use and
+                              Privacy
+                              Policy
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="design-2-double-grid mb-3">
+            <div class="design-2-profile-info d-flex">
+              <div class="design-2-avatar">
+                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="" />
+              </div>
+              <div class="d2-pbp-rows d-flex flex-wrap">
+                <div class="pbd-row">
+                  <div class="pbd-title">Project Name</div>
+                  <div class="pbd-data">The Village</div>
+                </div>
+
+                <div class="pbd-row">
+                  <div class="pbd-title">Starting Price</div>
+                  <div class="pbd-data">2,100,000 EGP</div>
+                  <div class="small-text mt-1">Last Updated 28 Oct 2020</div>
+                </div>
+
+                <div class="pbd-row">
+                  <div class="pbd-title">Property type </div>
+                  <div class="pbd-data">Apartment</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="design-2-actions-grid">
+              <button class="project-action-btn">
+                <span class="icon-rooms icon"></span>
+                <div class="title">4 Bed Rooms</div>
+              </button>
+
+              <button class="project-action-btn">
+                <span class="icon-bathrooms icon"></span>
+                <div class="title">2 Bathrooms</div>
+              </button>
+
+              <button class="project-action-btn">
+                <span class="icon-blueprint icon"></span>
+                <div class="title">Area 480m</div>
+              </button>
+
+              <button class="project-action-btn">
+                <span class="icon-rooms icon"></span>
+                <div class="title">4 Bed Rooms</div>
+              </button>
+            </div>
+          </div>
+
+          <div id="accordionExample" class="design-2-accordion accordion d-flex justify-content-between flex-wrap">
+            <div class="card">
+              <div class="card-header accordion-card-header" id="headingOne">
+                <button class="toggle-accordion-btn flex-center-between" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="title">Description</div>
+                  <span class="icon-plus icon"></span>
+                </button>
+              </div>
+
+              <!-- multipleOPened if u want to open one only -->
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                <div class="card-body">
+                  <div class="text accordion-text">
+                    Because we understand the paradox that results from desiring a simpler life yet wanting so
+                    much
+                    more out of it, we have created an environment that brings the best of all worlds and offers
+                    you
+                    an unrivaled lifestyle, all designed with you in mind. Because we understand the paradox
+                    that
+                    results from desiring a simpler life yet wanting so offers you an unrivaled lifestyle, all
+                    designed with you in mind.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header accordion-card-header" id="headingTwo">
+                <button class="toggle-accordion-btn flex-center-between" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <div class="title">Amenities</div>
+                  <span class="icon-plus icon"></span>
+                </button>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <div class="accordion-list">
+                    <div class="accl-row">
+                      <div class="accl-title">Lot</div>
+                      <div class="accl-info">Panoramic / Scenic View</div>
+                    </div>
+                    <div class="accl-row">
+                      <div class="accl-title">Indoor</div>
+                      <div class="accl-info">Fitness Center / Gym</div>
+                      <div class="accl-info">Sauna</div>
+                      <div class="accl-info">Fireplace</div>
+                    </div>
+                    <div class="accl-row">
+                      <div class="accl-title">Outdoor</div>
+                      <div class="accl-info">Pool</div>
+                      <div class="accl-info">Garage</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header accordion-card-header" id="headingThree">
+                <button class="toggle-accordion-btn flex-center-between" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <div class="title">About Developer</div>
+                  <span class="icon-plus icon"></span>
+                </button>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <a href="#" class="accordion-img-text-widget d-flex">
+                    <div class="acc-img">
+                      <img src="assets/img/brands/midtown.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="acc-img-text">
+                      <div class="accordion-text">Because we understand the paradox that results from desiring a
+                        simpler
+                        life yet wanting so much
+                        more out of it, we have created an environment that brings the best of all worlds and
+                        offers you
+                        an unrivaled lifestyle,</div>
+                      <div class="accordion-text mt-2">www.midtown.com</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header accordion-card-header" id="headingFour">
+                <button class="toggle-accordion-btn flex-center-between" type="button" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <div class="title">Location</div>
+                  <span class="icon-plus icon"></span>
+                </button>
+              </div>
+
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                <div class="card-body">
+
+                  <div class="accordion-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.6316251259145!2d31.430008885043343!3d29.990014981902167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d78ef6456c5%3A0x88ee08751b68b96f!2sCapital%20Lords!5e0!3m2!1sar!2seg!4v1620061571828!5m2!1sar!2seg"
+                      width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project Details -->
+      <div class="projects-slider">
+        <!-- Project Slider -->
+        <div class="container-fluid">
+          <div class="projects-slider-header flex-center-between">
+            <div class="title">You may also like</div>
+            <div class="ps-arrows">
+              <button class="arrow-prev"><span class="icon-arrow-left icon"></span></button>
+              <button class="arrow-next"><span class="icon-arrow-right icon"></span></button>
+            </div>
+          </div>
+          <div id="productsSwiper" class="swiper-container swiper-similar-products">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="assets/img/product.png" class="product-card-view img-fluid" alt="" />
+                  <div class="product-card-title">New Cairo</div>
+                  <div class="product-card-company">
+                    <div class="pcc-logo">
+                      <img src="assets/img/company-logo.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="pcc-data">
+                      <div class="pcc-title">Starting Price</div>
+                      <div class="pcc-price">2,100,000 EGP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="assets/img/product.png" class="product-card-view img-fluid" alt="" />
+                  <div class="product-card-title">New Cairo</div>
+                  <div class="product-card-company">
+                    <div class="pcc-logo">
+                      <img src="assets/img/company-logo.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="pcc-data">
+                      <div class="pcc-title">Starting Price</div>
+                      <div class="pcc-price">2,100,000 EGP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="assets/img/product.png" class="product-card-view img-fluid" alt="" />
+                  <div class="product-card-title">New Cairo</div>
+                  <div class="product-card-company">
+                    <div class="pcc-logo">
+                      <img src="assets/img/company-logo.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="pcc-data">
+                      <div class="pcc-title">Starting Price</div>
+                      <div class="pcc-price">2,100,000 EGP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="assets/img/product.png" class="product-card-view img-fluid" alt="" />
+                  <div class="product-card-title">New Cairo</div>
+                  <div class="product-card-company">
+                    <div class="pcc-logo">
+                      <img src="assets/img/company-logo.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="pcc-data">
+                      <div class="pcc-title">Starting Price</div>
+                      <div class="pcc-price">2,100,000 EGP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="assets/img/product.png" class="product-card-view img-fluid" alt="" />
+                  <div class="product-card-title">New Cairo</div>
+                  <div class="product-card-company">
+                    <div class="pcc-logo">
+                      <img src="assets/img/company-logo.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="pcc-data">
+                      <div class="pcc-title">Starting Price</div>
+                      <div class="pcc-price">2,100,000 EGP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Capital Lords</div>
+              <div class="footer-link"><a href="#">About</a></div>
+              <div class="footer-link"><a href="#">Contact Us</a></div>
+              <div class="footer-link"><a href="#">Careers</a></div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Services </div>
+              <div class="footer-link"><a href="#">Properties Management</a></div>
+              <div class="footer-link"><a href="#">Buy </a></div>
+              <div class="footer-link"><a href="#">Sell</a></div>
+              <div class="footer-link"><a href="#">Rent</a></div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Projects</div>
+              <div class="footer-link"><a href="#">Residential</a></div>
+              <div class="footer-link"><a href="#">Commercial </a></div>
+              <div class="footer-link"><a href="#">Administrative </a></div>
+              <div class="footer-link"><a href="#">Medical</a></div>
+              <div class="footer-link"><a href="#">Vacation</a></div>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-title">News & Offers</div>
+              <div class="footer-contact-group mb-3">
+                <input type="text" placeholder="Your Email here" />
+                <div class="button-default bt-black">
+                  <button>Subscribe <span class="icon-arrow-right icon"></span></button>
+                </div>
+              </div>
+              <div class="text mb-4 white-color">
+                Sign up to receive exclusive news and offers about the latest launches
+              </div>
+              <div class="socialmedia flex-center justify-content-between white-color">
+                <div class="follow-text">Follow us on</div>
+                <div class="follow-line"></div>
+                <div class="social-icons">
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom flex-center justify-content-between">
+            <div class="text white-color">Capital Lords 2021 © All rights reserved</div>
+            <div class="footer-b-links">
+              <a href="#">Cookies Policy</a>
+              <a href="#">Legal Notice</a>
+              <a href="#">Privacy Policy </a>
+              <a href="#">Sit map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Selectbox -->
+  <script src="assets/js/jquery.selectric.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    // Toggle Images View
+    $(".d2-image-view").on('click', function () {
+      var src = $(this).find('img').attr('src');
+      $('#shcView').fadeOut(200, function () {
+        $(this).attr('src', src);
+      }).fadeIn(200);
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+  </script>
+</body>
+
+</html>
