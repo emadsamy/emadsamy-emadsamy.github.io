@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hfnhaj');
-  src:  url('fonts/icomoon.eot?hfnhaj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hfnhaj') format('truetype'),
-    url('fonts/icomoon.woff?hfnhaj') format('woff'),
-    url('fonts/icomoon.svg?hfnhaj#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?2tt5z4");
+  src: url("fonts/icomoon.eot?2tt5z4#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?2tt5z4") format("truetype"),
+    url("fonts/icomoon.woff?2tt5z4") format("woff"),
+    url("fonts/icomoon.svg?2tt5z4#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user:before {
+  content: "\e905";
+}
 .icon-whatsapp:before {
   content: "\e91c";
 }
@@ -123,7 +127,4 @@
 }
 .icon-search:before {
   content: "\e904";
-}
-.icon-user:before {
-  content: "\e905";
 }

@@ -26,8 +26,7 @@
   <!-- Selectize -->
   <link rel="stylesheet" href="assets/css/selectric.css">
   <!-- Jquery UI -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css">
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
@@ -279,10 +278,8 @@
             </div>
 
             <div class="filter-price-range">
-              <div class="title">Price Range</div>
-              <input type="text" dir="rtl" data-drag-interval="false" class="js-range-slider-price" name="my_range"
-                value="" data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
-                data-grid="false" data-step="50000" />
+              <div class="title mb-2">Price Range</div>
+              <input id="sliderPrice" type="text" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
                   <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
@@ -294,10 +291,8 @@
             </div>
 
             <div class="filter-price-range">
-              <div class="title">Area (m2)</div>
-              <input type="text" data-drag-interval="false" class="js-range-slider-meter" name="my_range" value=""
-                data-type="double" data-min="0" data-max="5000" data-from="1000" data-to="4000" data-grid="false"
-                data-step="50" />
+              <div class="title mb-2">Area (m2)</div>
+              <input id="sliderArea" type="text" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
                   <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
@@ -312,11 +307,11 @@
           <div class="modal-s-bottom">
             <div class="modal-filter-grid-double mb-0">
               <div class="button-default cancel-btn opacity-hover">
-                <button id="clearAll" class="justify-content-center width-fluid">Clear All</button>
+                <a href="#" class="justify-content-center" data-dismiss="modal">Clear All</a>
               </div>
 
               <div class="button-default bt-black">
-                <button class="justify-content-center width-fluid">Search</button>
+                <a href="#" class="justify-content-center">Search</a>
               </div>
             </div>
           </div>
@@ -869,7 +864,7 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -908,7 +903,6 @@
         el: '.swiper-scrollbar',
       },
     });
-
   </script>
 </body>
 

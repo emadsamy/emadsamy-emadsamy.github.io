@@ -1,26 +1,3 @@
-// Clipboard
-// function copyToClipboard(text) {
-//   var textArea = document.createElement("textarea");
-//   textArea.value = text;
-//   document.body.appendChild(textArea);
-//   textArea.select();
-
-//   try {
-//     var successful = document.execCommand("copy");
-//     var msg = successful ? "successful" : "unsuccessful";
-//     console.log("Copying text command was " + msg);
-//   } catch (err) {
-//     console.log("Oops, unable to copy", err);
-//   }
-//   document.body.removeChild(textArea);
-// }
-
-// $(".copyboard").click(function () {
-//   var clipboardText = "";
-//   clipboardText = $(this).data("text");
-//   copyToClipboard(clipboardText);
-// });
-
 $(document).ready(function () {
   // Open Main Container
   $("#openContainerCheckbox").on("click", function () {
@@ -76,6 +53,24 @@ $(document).ready(function () {
       }
     }
     generateMore(counter);
+  });
+});
+
+$(function () {
+  // Read More Function
+  $(".read-more-btn").on("click", function () {
+    var content = $(this)
+      .parents(".read-more-parent")
+      .find(".read-more-content");
+    content.text(content.attr("data-text"));
+    $(this).css("display", "none");
+  });
+
+  $(".read-more-content").each(function () {
+    var length = $(this).attr("data-length");
+    var strToInt = parseInt(length);
+    $(this).attr("data-text", $(this).text());
+    $(this).text($(this).text().substr(0, strToInt));
   });
 });
 
@@ -162,35 +157,45 @@ $(function () {
   });
 });
 
-// Slider Range
-var sliderA = new Slider("#sliderPrice", {
-  // id: "slider12b",
-  min: 0,
-  max: 150000000,
-  step: 50000,
-  range: false,
-  value: [25000000, 75000000],
-  formatter: function (value) {
-    console.log(value);
-    $("#mfgdInputValPrice-1").text(value[0]);
-    $("#mfgdInputValPrice-2").text(value[1]);
+$(".js-range-slider-price").ionRangeSlider({
+  onStart: function (data) {
+    $("#mfgdInputValPrice-1").text(data.from);
+    $("#mfgdInputValPrice-2").text(data.to);
+  },
+  onChange: function (data) {
+    $("#mfgdInputValPrice-1").text(data.from);
+    $("#mfgdInputValPrice-2").text(data.to);
+  },
+  onUpdate: function (data) {
+    $("#mfgdInputValPrice-1").text(data.from);
+    $("#mfgdInputValPrice-2").text(data.to);
   },
 });
-sliderA.refresh({ useCurrentValue: true });
 
-var sliderB = new Slider("#sliderArea", {
-  // id: "slider12b",
-  min: 0,
-  max: 5000,
-  range: true,
-  value: [2000, 4000],
-  formatter: function (value) {
-    console.log(value);
-    $("#mfgdInputValArea-1").text(value[0]);
-    $("#mfgdInputValArea-2").text(value[1]);
+$(".js-range-slider-meter").ionRangeSlider({
+  onStart: function (data) {
+    $("#mfgdInputValArea-1").text(data.from);
+    $("#mfgdInputValArea-2").text(data.to);
+  },
+  onChange: function (data) {
+    $("#mfgdInputValArea-1").text(data.from);
+    $("#mfgdInputValArea-2").text(data.to);
+  },
+  onUpdate: function (data) {
+    $("#mfgdInputValArea-1").text(data.from);
+    $("#mfgdInputValArea-2").text(data.to);
   },
 });
-sliderB.refresh({ useCurrentValue: true });
+
+$("#clearAll").on("click", function () {
+  let rangePrice = $(".js-range-slider-price").data("ionRangeSlider");
+  let rangeMeter = $(".js-range-slider-meter").data("ionRangeSlider");
+  rangePrice.reset();
+  rangeMeter.reset();
+  $("#modalCheckboxContainer").slideUp(300);
+  $(".multiple-checkbox-container").slideUp(300);
+  $(".input-checkbox").prop("checked", false);
+});
 
 // Open Multiple Checkbox Container In Modal
 $(".checkbox-toggle-btn").on("click", function () {
@@ -243,20 +248,6 @@ $(document).ready(function () {
         .removeClass("icon-minus")
         .addClass("icon-plus");
     });
-});
-
-// Read More Function
-$(".read-more-btn").on("click", function () {
-  var content = $(this).parents(".read-more-parent").find(".read-more-content");
-  content.text(content.attr("data-text"));
-  $(this).css("display", "none");
-});
-
-$(".read-more-content").each(function () {
-  var length = $(this).attr("data-length");
-  var strToInt = parseInt(length);
-  $(this).attr("data-text", $(this).text());
-  $(this).text($(this).text().substr(0, strToInt));
 });
 
 // Toggle Height Container
