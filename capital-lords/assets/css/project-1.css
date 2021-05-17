@@ -245,7 +245,7 @@
 }
 .project-contact-form {
   position: absolute;
-  bottom: -21px;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 40;
@@ -562,8 +562,8 @@
     height: 250px;
   }
   .project-profile-outer {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     top: -65px;
   }
   .project-design-structure {
@@ -576,7 +576,7 @@
     display: none;
   }
   .pd-data-text .pbd-row:first-of-type {
-    margin-left: 149px;
+    margin-left: 160px;
   }
   .project-bar-details {
     width: 100% !important;
@@ -624,7 +624,7 @@
     display: none;
   }
   .pbd-row {
-    margin-bottom: 19px;
+    margin-bottom: 25px;
   }
   .project-bar-details {
     flex-wrap: wrap;
@@ -752,13 +752,16 @@
     left: 0;
     z-index: 100;
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
   }
   .ask-btn {
     margin: 0;
-    width: 49%;
   }
   .dc-btn {
     margin: 0;
@@ -768,13 +771,18 @@
     width: 49%;
     position: static !important;
   }
-  .project-contact-form {
+  /* .project-contact-form {
     bottom: 15px;
-  }
+  } */
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .design-contact {
+    max-width: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .dc-btn {
     margin: 0;
     font-size: 17px;
@@ -851,6 +859,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .design-contact {
+    max-width: 710px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .dc-btn {
     margin: 0;
     font-size: 17px;
@@ -979,6 +992,9 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .design-contact {
+    position: relative;
+  }
   .project-bar-actions {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
@@ -1021,4 +1037,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
+  .design-contact {
+    position: relative;
+  }
 }

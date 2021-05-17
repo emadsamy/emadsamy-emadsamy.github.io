@@ -57,7 +57,7 @@
                     <div class="selected-title">
                       <div class="title">New Cairo</div>
                       <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="" />
+                      <input id="chooseType" class="selected-input" type="hidden" name="" />
                     </div>
                     <div class="selectz-list">
                       <div data-value="october" class="selectz-row">October</div>
@@ -702,8 +702,8 @@
           <div class="projects-title bg-title text-center text-uppercase">Explore 300+ Real Estate Projects in
             Egypt</div>
           <div class="projects-grid">
-            <a href="project-2.html" class="project-card">
-              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
             </a>
             <a href="project-2.html" class="project-card">
               <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
@@ -907,6 +907,10 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+    });
+
+    $("#chooseType").on("input", function () {
+      console.log($(this).val());
     });
 
   </script>
