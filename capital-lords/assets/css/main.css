@@ -1023,7 +1023,7 @@ nav.active-page {
 #modalSearchFilter .modal-dialog-centered {
   height: calc(100% - 6rem) !important;
   min-height: auto !important;
-  margin: 3rem auto !important;
+  margin: 3rem auto;
 }
 #modalSearchFilter .modal-content {
   height: 100%;
@@ -1327,6 +1327,7 @@ footer {
   }
   #modalSearchFilter .modal-dialog-centered {
     height: calc(100% - 1rem) !important;
+    margin: 0.5rem;
   }
   .modal-f-label {
     font-size: 15px;
