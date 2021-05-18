@@ -28,7 +28,7 @@ $(document).ready(function () {
     select: "#changeLang",
     showSearch: false,
     // selected: localStorage.getItem("lang"),
-    // hideSelectedOption: false,
+    hideSelectedOption: true,
     // disabled: false,
     // selected: false,
     // allowDeselectOption: false,
