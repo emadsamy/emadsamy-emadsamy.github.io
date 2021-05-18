@@ -5,17 +5,6 @@ $(document).ready(function () {
   });
 
   // Language
-  new SlimSelect({
-    select: "#changeLang",
-    showSearch: false,
-    selected: localStorage.getItem("lang"),
-    hideSelectedOption: false,
-    disabled: false,
-    onChange: (info) => {
-      console.log(info.value);
-    },
-  });
-
   function checkLangDir() {
     if (localStorage.getItem("lang") == "ar") {
       $("body").addClass("rtl");
@@ -34,6 +23,19 @@ $(document).ready(function () {
     localStorage.setItem("lang", lang);
     // console.log($(this).val());
     checkLangDir();
+  });
+  new SlimSelect({
+    select: "#changeLang",
+    showSearch: false,
+    // selected: localStorage.getItem("lang"),
+    // hideSelectedOption: false,
+    // disabled: false,
+    // selected: false,
+    // allowDeselectOption: false,
+    // hideSelectedOption: true,
+    onChange: (info) => {
+      console.log(info.value);
+    },
   });
 
   // Calculate Cards
