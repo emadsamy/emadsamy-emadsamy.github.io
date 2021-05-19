@@ -103,7 +103,6 @@ ul {
 .btn,
 nav,
 .icon-arrow-right:before,
-.nav-icon-btn,
 .opacity-hover,
 .button-default,
 .mbg-card,
@@ -695,7 +694,7 @@ nav.active-page {
   margin-bottom: 27px;
 }
 .ms-link:hover {
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 .ms-link:hover .ms-icon {
   transform: translateX(21px);

@@ -423,32 +423,37 @@
               </div>
               <div class="menu-body-cards">
                 <div class="menu-body-grid">
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html?title=residential&color=4EC4E2&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
                     <span class="icon-home icon"></span>
                     <div class="mbg-title">Residential</div>
                   </a>
 
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html?title=medical&color=e74c3c&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
                     <span class="icon-hospital icon"></span>
                     <div class="mbg-title">Medical</div>
                   </a>
 
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html?title=commercial&color=8e44ad&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
                     <span class="icon-store icon"></span>
                     <div class="mbg-title">Commercial </div>
                   </a>
 
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html?title=vacation&color=27ae60&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
                     <span class="icon-beach icon"></span>
                     <div class="mbg-title">Vacation Home</div>
                   </a>
 
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html?title=administrative&color=1abc9c&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
                     <span class="icon-resort icon"></span>
                     <div class="mbg-title">Administrative </div>
                   </a>
 
-                  <a href="#" class="mbg-card flex-center">
+                  <a href="projects.html" class="mbg-card flex-center">
                     <span class="icon-diamond icon"></span>
                     <div class="mbg-title">Exclusive Projects </div>
                   </a>
@@ -509,23 +514,28 @@
                   <span class="icon-chevron-down selected-item-icon"></span>
                 </div>
                 <div class="dropdown-shapes-list">
-                  <a href="#residential" class="dropdown-shape-row flex-center" data-text="Residential">
+                  <a href="projects.html?title=residential&color=4EC4E2&image=assets/img/projects.png"
+                    class="dropdown-shape-row flex-center" data-text="Residential">
                     <img src="assets/img/icons/residential.svg" class="img-fluid dropdown-item-logo" alt="" />
                     <div class="title text-capitalize">Residential</div>
                   </a>
-                  <a href="#commercial" class="dropdown-shape-row flex-center" data-text="Commercial">
+                  <a href="projects.html?title=commercial&color=8e44ad&image=assets/img/projects.png"
+                    class="dropdown-shape-row flex-center" data-text="Commercial">
                     <img src="assets/img/icons/commercial.svg" class="img-fluid dropdown-item-logo" alt="" />
                     <div class="title text-capitalize">Commercial</div>
                   </a>
-                  <a href="#administrative" class="dropdown-shape-row flex-center" data-text="Administrative">
+                  <a href="projects.html?title=administrative&color=1abc9c&image=assets/img/projects.png"
+                    class="dropdown-shape-row flex-center" data-text="Administrative">
                     <img src="assets/img/icons/administrative.svg" class="img-fluid dropdown-item-logo" alt="" />
                     <div class="title text-capitalize">Administrative </div>
                   </a>
-                  <a href="#medical" class="dropdown-shape-row flex-center" data-text="Medical">
+                  <a href="projects.html?title=medical&color=e74c3c&image=assets/img/projects.png"
+                    class="dropdown-shape-row flex-center" data-text="Medical">
                     <img src="assets/img/icons/medical.svg" class="img-fluid dropdown-item-logo" alt="" />
                     <div class="title text-capitalize">Medical</div>
                   </a>
-                  <a href="#vacation" class="dropdown-shape-row flex-center" data-text="Vacation">
+                  <a href="projects.html?title=vacation&color=27ae60&image=assets/img/projects.png"
+                    class="dropdown-shape-row flex-center" data-text="Vacation">
                     <img src="assets/img/icons/vacation.svg" class="img-fluid dropdown-item-logo" alt="" />
                     <div class="title text-capitalize">Vacation</div>
                   </a>
@@ -681,11 +691,18 @@
             </div>
             <div class="footer-links">
               <div class="footer-title">Projects</div>
-              <div class="footer-link"><a href="projects.html#residential">Residential</a></div>
-              <div class="footer-link"><a href="projects.html#commercial">Commercial </a></div>
-              <div class="footer-link"><a href="projects.html#administrative">Administrative </a></div>
-              <div class="footer-link"><a href="projects.html#medical">Medical</a></div>
-              <div class="footer-link"><a href="projects.html#vacation">Vacation</a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=residential&color=4EC4E2&image=assets/img/projects.png">Residential</a>
+              </div>
+              <div class="footer-link"><a
+                  href="projects.html?title=commercial&color=8e44ad&image=assets/img/projects.png">Commercial </a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=administrative&color=1abc9c&image=assets/img/projects.png">Administrative
+                </a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=medical&color=e74c3c&image=assets/img/projects.png">Medical</a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=vacation&color=27ae60&image=assets/img/projects.png">Vacation</a></div>
             </div>
             <div class="footer-contact">
               <div class="footer-title">News & Offers</div>
@@ -768,36 +785,51 @@
       }
     });
 
-    $(document).ready(function () {
-      var hash = '';
-      var src = '';
-      if (window.location.hash) {
-        hash = window.location.hash.substr(1);
-        src = `assets/img/icons/${hash}.svg`;
-      } else {
-        hash = 'vacation';
-        var src = `assets/img/icons/vacation.svg`;
-      }
-      $(".selected-item-logo").attr('src', src);
-      $('.selected-item-title').text(hash);
-      $('#ph-view').attr('src', src);
-      $("#ph-view-overlay").attr('src', src);
-      $(".ph-name").text(hash);
-    });
+    // $(document).ready(function () {
+    //   var hash = '';
+    //   var src = '';
+    //   if (window.location.hash) {
+    //     hash = window.location.hash.substr(1);
+    //     src = `assets/img/icons/${hash}.svg`;
+    //   } else {
+    //     hash = 'vacation';
+    //     var src = `assets/img/icons/vacation.svg`;
+    //   }
+    //   $(".selected-item-logo").attr('src', src);
+    //   $('.selected-item-title').text(hash);
+    //   $('#ph-view').attr('src', src);
+    //   $("#ph-view-overlay").attr('src', src);
+    //   $(".ph-name").text(hash);
+    // });
 
-    $('.dropdown-shape-row').on('click', function () {
-      var src = $(this).find('img').attr('src');
-      var title = $(this).find('.title').text();
-      var text = $(this).attr('data-text');
-      $(this).parents('.dropdown-shapes-container').find('.selected-item-icon').removeClass('active');
-      $(this).parent().slideUp();
-      $(".selected-item-logo").attr('src', src);
-      $('.selected-item-title').text(title);
-      $('#ph-view').attr('src', src);
-      $("#ph-view-overlay").attr('src', src);
-      $(".ph-name").text(text);
-    });
+    // $('.dropdown-shape-row').on('click', function () {
+    //   var src = $(this).find('img').attr('src');
+    //   var title = $(this).find('.title').text();
+    //   var text = $(this).attr('data-text');
+    //   $(this).parents('.dropdown-shapes-container').find('.selected-item-icon').removeClass('active');
+    //   $(this).parent().slideUp();
+    //   $(".selected-item-logo").attr('src', src);
+    //   $('.selected-item-title').text(title);
+    //   $('#ph-view').attr('src', src);
+    //   $("#ph-view-overlay").attr('src', src);
+    //   $(".ph-name").text(text);
+    // });
 
+  </script>
+
+  <script>
+    let params = (new URL(document.location)).searchParams;
+    $(".selected-item-logo").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    $('.selected-item-title').text(params.getAll("title")[0]);
+    $('#ph-view').attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    $("#ph-view-overlay").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    $(".ph-name").text(params.getAll("title")[0]);
+    $(".vh-data").css('backgroundColor', `#${params.getAll("color")[0]}`)
+
+    // console.log(params.getAll("title")[0]);
+    // console.log(params.getAll("desc")[0]);
+    // console.log(params.getAll("color")[0]);
+    // console.log(params.getAll("image")[0]);
   </script>
 
 </body>

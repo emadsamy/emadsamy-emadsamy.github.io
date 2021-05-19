@@ -147,8 +147,11 @@ body.rtl .service-card .sa-data {
 body.rtl .swiper-arrows .arrow-icon {
   transform: rotateZ(90deg);
 }
-body.rtl .swiper-wrapper {
+/* body.rtl .swiper-wrapper {
   direction: ltr;
+} */
+body.rtl .product-card-company {
+  /* flex-direction: row-reverse; */
 }
 /* Home */
 
@@ -189,9 +192,7 @@ body.rtl .vh-icon .icon {
 body.rtl .vh-data {
   background-position-x: 10%;
 }
-body.rtl .product-card-company {
-  flex-direction: row-reverse;
-}
+
 /* Projects */
 
 /* Contact */

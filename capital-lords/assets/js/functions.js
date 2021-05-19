@@ -7,43 +7,40 @@ $(document).ready(function () {
   // Language
   $(function () {
     // Get Page Name
-    var href = document.location.href;
-    var lastPathSegment = href.substr(href.lastIndexOf("/") + 1);
+    // var href = document.location.href;
+    // var lastPathSegment = href.substr(href.lastIndexOf("/") + 1);
 
-    // Get Page Lang ar
-    var index = document.location.href.lastIndexOf("/") + 1;
-    var filenameWithExtension = document.location.href.substr(index);
-    var filename = filenameWithExtension.split(".")[0]; // Get File Name Without Extension
-    var checkPageLang = filename.substr(filename.length - 2);
-    var removeLatestAr = filename.substring(0, filename.length - 3);
+    // // Get Page Lang ar
+    // var index = document.location.href.lastIndexOf("/") + 1;
+    // var filenameWithExtension = document.location.href.substr(index);
+    // var filename = filenameWithExtension.split(".")[0]; // Get File Name Without Extension
+    // var checkPageLang = filename.substr(filename.length - 2);
+    // var removeLatestAr = filename.substring(0, filename.length - 3);
 
-    function checkPageUrlLang() {
-      if (localStorage.getItem("lang") == "en" && checkPageLang == "ar") {
-        window.location.href = "index.html";
-      }
-
-      // if (localStorage.getItem("lang")) {
-      //   window.location.href = "index.html";
-      // }
-    }
-    checkPageUrlLang();
+    // function checkPageUrlLang() {
+    //   if (localStorage.getItem("lang") == "en" && checkPageLang == "ar") {
+    //     window.location.href = "index.html";
+    //   }
+    // }
+    // checkPageUrlLang();
 
     function checkLangDir() {
-      if (localStorage.getItem("lang") == "ar") {
-        $("body").addClass("rtl");
-      } else {
-        $("body").removeClass("rtl");
-      }
+      // if (localStorage.getItem("lang") == "ar") {
+      //   $("body").addClass("rtl");
+      // } else {
+      //   $("body").removeClass("rtl");
+      // }
     }
+
     checkLangDir();
 
-    function redirectToPageLang() {
-      if (localStorage.getItem("lang") == "ar") {
-        window.location.href = `${filename}_ar.html`;
-      } else {
-        window.location.href = `${removeLatestAr}.html`;
-      }
-    }
+    // function redirectToPageLang() {
+    //   if (localStorage.getItem("lang") == "ar") {
+    //     window.location.href = `${filename}_ar.html`;
+    //   } else {
+    //     window.location.href = `${removeLatestAr}.html`;
+    //   }
+    // }
 
     $(
       "select#changeLang option[value=" + localStorage.getItem("lang") + "]"
@@ -52,7 +49,7 @@ $(document).ready(function () {
       var lang = $(this).val();
       // Set Lang
       localStorage.setItem("lang", lang);
-      redirectToPageLang();
+      // redirectToPageLang();
       checkLangDir();
     });
     new SlimSelect({
