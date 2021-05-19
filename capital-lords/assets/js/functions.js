@@ -5,37 +5,69 @@ $(document).ready(function () {
   });
 
   // Language
-  function checkLangDir() {
-    if (localStorage.getItem("lang") == "ar") {
-      $("body").addClass("rtl");
-    } else {
-      $("body").removeClass("rtl");
-    }
-  }
-  checkLangDir();
+  $(function () {
+    // Get Page Name
+    var href = document.location.href;
+    var lastPathSegment = href.substr(href.lastIndexOf("/") + 1);
 
-  $(
-    "select#changeLang option[value=" + localStorage.getItem("lang") + "]"
-  ).attr("selected", "selected");
-  $("#changeLang").on("change", function () {
-    var lang = $(this).val();
-    // Set Lang
-    localStorage.setItem("lang", lang);
-    // console.log($(this).val());
+    // Get Page Lang ar
+    var index = document.location.href.lastIndexOf("/") + 1;
+    var filenameWithExtension = document.location.href.substr(index);
+    var filename = filenameWithExtension.split(".")[0]; // Get File Name Without Extension
+    var checkPageLang = filename.substr(filename.length - 2);
+    var removeLatestAr = filename.substring(0, filename.length - 3);
+
+    function checkPageUrlLang() {
+      if (localStorage.getItem("lang") == "en" && checkPageLang == "ar") {
+        window.location.href = "index.html";
+      }
+
+      // if (localStorage.getItem("lang")) {
+      //   window.location.href = "index.html";
+      // }
+    }
+    checkPageUrlLang();
+
+    function checkLangDir() {
+      if (localStorage.getItem("lang") == "ar") {
+        $("body").addClass("rtl");
+      } else {
+        $("body").removeClass("rtl");
+      }
+    }
     checkLangDir();
-  });
-  new SlimSelect({
-    select: "#changeLang",
-    showSearch: false,
-    // selected: localStorage.getItem("lang"),
-    hideSelectedOption: true,
-    // disabled: false,
-    // selected: false,
-    // allowDeselectOption: false,
-    // hideSelectedOption: true,
-    onChange: (info) => {
-      console.log(info.value);
-    },
+
+    function redirectToPageLang() {
+      if (localStorage.getItem("lang") == "ar") {
+        window.location.href = `${filename}_ar.html`;
+      } else {
+        window.location.href = `${removeLatestAr}.html`;
+      }
+    }
+
+    $(
+      "select#changeLang option[value=" + localStorage.getItem("lang") + "]"
+    ).attr("selected", "selected");
+    $("#changeLang").on("change", function () {
+      var lang = $(this).val();
+      // Set Lang
+      localStorage.setItem("lang", lang);
+      redirectToPageLang();
+      checkLangDir();
+    });
+    new SlimSelect({
+      select: "#changeLang",
+      showSearch: false,
+      hideSelectedOption: true,
+      // selected: localStorage.getItem("lang"),
+      // disabled: false,
+      // selected: false,
+      // allowDeselectOption: false,
+      // hideSelectedOption: true,
+      onChange: (info) => {
+        console.log(info.value);
+      },
+    });
   });
 
   // Calculate Cards
@@ -364,6 +396,7 @@ $(".selectz-row").on("click", function () {
 });
 
 /* Slim Select */
+// Contact Telephone Keys
 new SlimSelect({
   select: "#tel-keys",
   showSearch: false,
@@ -371,4 +404,22 @@ new SlimSelect({
     console.log(info.value);
   },
 });
+
+// Modal
+new SlimSelect({
+  select: "#locations-modal",
+  showSearch: false,
+  onChange: (info) => {
+    console.log(info.value);
+  },
+});
+
+new SlimSelect({
+  select: "#property-type-modal",
+  showSearch: false,
+  onChange: (info) => {
+    console.log(info.value);
+  },
+});
+
 /* Slim Select */

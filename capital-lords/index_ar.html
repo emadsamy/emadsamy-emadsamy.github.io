@@ -7,7 +7,7 @@
   <meta name="description" content="#" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Title -->
-  <title>Capital Lords</title>
+  <title>كابيتال لوردز</title>
 
   <!-- Links -->
   <!-- Project Shortcut Icon -->
@@ -24,13 +24,14 @@
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
   <!-- Selectize -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/selectric.css">
   <!-- Range Slider -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/projects.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
@@ -43,7 +44,7 @@
         <div class="modal-body">
           <div class="modal-s-top flex-center justify-content-between">
             <button class="flex-center filter-title"><span class="icon-filter icon"></span>
-              <div class="title ml-3">Filters</div>
+              <div class="title ml-3">المرشحات</div>
             </button>
             <button class="d-flex close-filter opacity-hover" data-dismiss="modal"><span
                 class="icon-cancel icon"></span></button>
@@ -53,25 +54,25 @@
               <div class="modal-filter-dropdown">
                 <!-- Selectbox -->
                 <div class="selectbox-slim">
-                  <label class="ss-label text-uppercase">All Locations</label>
+                  <label class="ss-label text-uppercase">جميع المواقع</label>
                   <select id="locations-modal">
                     <!-- id for Run Select Box -->
-                    <option value="new-cairo">New Cairo</option>
-                    <option value="6-october">6 October</option>
-                    <option value="new-capital">New Capital</option>
+                    <option value="new-cairo">القاهرة الجديدة</option>
+                    <option value="6-october">6 اكتوبر</option>
+                    <option value="new-capital">العاصمة الادارية الجديدة</option>
                   </select>
                 </div>
               </div>
 
               <div class="modal-filter-dropdown">
                 <div class="selectbox-slim">
-                  <label class="ss-label text-uppercase">Property Type</label>
+                  <label class="ss-label text-uppercase">نوع الملكية</label>
                   <select id="property-type-modal">
-                    <option value="residential">Residential</option>
-                    <option value="commercial">Commercial</option>
-                    <option value="administrative">Administrative</option>
-                    <option value="medical">Medical</option>
-                    <option value="vacation">Vacation</option>
+                    <option value="residential">سكني</option>
+                    <option value="commercial">تجاري</option>
+                    <option value="administrative">إداري</option>
+                    <option value="medical">طبي</option>
+                    <option value="vacation">عطلة</option>
                   </select>
                 </div>
               </div>
@@ -90,12 +91,12 @@
                         <span></span>
                       </div>
                     </div>
-                    <label class="checkbox-text" for="modalCheckbox1">Apartment
+                    <label class="checkbox-text" for="modalCheckbox1">شقة
                     </label>
                   </div>
 
                   <button class="checkbox-toggle-btn flex-center">
-                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                    <div class="ml-2 mr-2">كل الانواع</div> <span class="icon-chevron-down icon"></span>
                   </button>
                 </div>
 
@@ -108,7 +109,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox2">Apartment
+                      <label class="checkbox-text" for="modalCheckbox2">شقة
                       </label>
                     </div>
 
@@ -119,7 +120,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox3">Duplex
+                      <label class="checkbox-text" for="modalCheckbox3">دوبلكس
                       </label>
                     </div>
 
@@ -130,7 +131,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox4">Duplex
+                      <label class="checkbox-text" for="modalCheckbox4">دوبلكس
                       </label>
                     </div>
 
@@ -141,7 +142,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox5">Penthouse
+                      <label class="checkbox-text" for="modalCheckbox5">كنة
                       </label>
                     </div>
 
@@ -152,7 +153,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox7">Twin House
+                      <label class="checkbox-text" for="modalCheckbox7">توين هاوس
                       </label>
                     </div>
 
@@ -163,7 +164,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox8">Studio
+                      <label class="checkbox-text" for="modalCheckbox8">ستوديو
                       </label>
                     </div>
                   </div>
@@ -181,12 +182,12 @@
                         <span></span>
                       </div>
                     </div>
-                    <label class="checkbox-text" for="modalCheckbox9">Villa
+                    <label class="checkbox-text" for="modalCheckbox9">فيلا
                     </label>
                   </div>
 
                   <button class="checkbox-toggle-btn flex-center">
-                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                    <div class="ml-2 mr-2">كل الانواع</div> <span class="icon-chevron-down icon"></span>
                   </button>
                 </div>
 
@@ -199,7 +200,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox11">Villa
+                      <label class="checkbox-text" for="modalCheckbox11">فيلا
                       </label>
                     </div>
 
@@ -210,7 +211,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox12">Stand Alone
+                      <label class="checkbox-text" for="modalCheckbox12">يقف وحده
                       </label>
                     </div>
 
@@ -221,7 +222,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox13">TownHouse
+                      <label class="checkbox-text" for="modalCheckbox13">تاون هاوس
                       </label>
                     </div>
 
@@ -232,7 +233,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox14">I Villa
+                      <label class="checkbox-text" for="modalCheckbox14">فيلا
                       </label>
                     </div>
 
@@ -243,7 +244,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox15">Palace
+                      <label class="checkbox-text" for="modalCheckbox15">قصر
                       </label>
                     </div>
 
@@ -254,7 +255,7 @@
                           <span></span>
                         </div>
                       </div>
-                      <label class="checkbox-text" for="modalCheckbox10">Twin
+                      <label class="checkbox-text" for="modalCheckbox10">التوأم
                       </label>
                     </div>
                   </div>
@@ -271,7 +272,7 @@
                         <span></span>
                       </div>
                     </div>
-                    <label class="checkbox-text" for="modalCheckbox18">Chalet
+                    <label class="checkbox-text" for="modalCheckbox18">شاليه
                     </label>
                   </div>
                 </div>
@@ -279,22 +280,22 @@
             </div>
 
             <div class="filter-price-range">
-              <div class="title">Price Range</div>
+              <div class="title">نطاق السعر</div>
               <input type="text" dir="rtl" data-drag-interval="false" class="js-range-slider-price" name="my_range"
                 value="" data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
                 data-grid="false" data-step="50000" />
               <div class="modal-filter-grid-double">
                 <div class="mfgd-input">
-                  <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
+                  <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> جنيه
                 </div>
                 <div class="mfgd-input">
-                  <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> EGP
+                  <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> جنيه
                 </div>
               </div>
             </div>
 
             <div class="filter-price-range">
-              <div class="title">Area (m2)</div>
+              <div class="title">المساحة (م 2)</div>
               <input type="text" data-drag-interval="false" class="js-range-slider-meter" name="my_range" value=""
                 data-type="double" data-min="0" data-max="5000" data-from="1000" data-to="4000" data-grid="false"
                 data-step="50" />
@@ -312,11 +313,11 @@
           <div class="modal-s-bottom">
             <div class="modal-filter-grid-double mb-0">
               <div class="button-default cancel-btn opacity-hover">
-                <button id="clearAll" class="justify-content-center width-fluid">Clear All</button>
+                <button id="clearAll" class="justify-content-center width-fluid">امسح الكل</button>
               </div>
 
               <div class="button-default bt-black">
-                <button class="justify-content-center width-fluid">Search</button>
+                <button class="justify-content-center width-fluid">يبحث</button>
               </div>
             </div>
           </div>
@@ -385,8 +386,8 @@
               <div class="menu-sidebar">
                 <a href="about.html" class="ms-link flex-center">
                   <div class="ms-text">
-                    <div class="ms-sub-title text-uppercase">About Us</div>
-                    <div class="title">Who we are</div>
+                    <div class="ms-sub-title text-uppercase">معلومات عنا</div>
+                    <div class="title">من نحن</div>
                   </div>
                   <div class="ms-icon">
                     <span class="icon-arrow-right icon"></span>
@@ -395,8 +396,8 @@
 
                 <a href="services.html" class="ms-link flex-center">
                   <div class="ms-text">
-                    <div class="ms-sub-title text-uppercase">Our Services </div>
-                    <div class="title">Properties Management</div>
+                    <div class="ms-sub-title text-uppercase">خدماتنا </div>
+                    <div class="title">إدارة الممتلكات</div>
                   </div>
                   <div class="ms-icon">
                     <span class="icon-arrow-right icon"></span>
@@ -405,7 +406,7 @@
 
                 <a href="contact.html" class="ms-link flex-center">
                   <div class="ms-text">
-                    <div class="title">Contact us</div>
+                    <div class="title">اتصل بنا</div>
                   </div>
                   <div class="ms-icon">
                     <span class="icon-arrow-right icon"></span>
@@ -414,7 +415,7 @@
 
                 <a href="#" class="ms-link flex-center">
                   <div class="ms-text">
-                    <div class="title">Careers</div>
+                    <div class="title">وظائف</div>
                   </div>
                   <div class="ms-icon">
                     <span class="icon-arrow-right icon"></span>
@@ -425,32 +426,32 @@
                 <div class="menu-body-grid">
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-home icon"></span>
-                    <div class="mbg-title">Residential</div>
+                    <div class="mbg-title">سكني</div>
                   </a>
 
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-hospital icon"></span>
-                    <div class="mbg-title">Medical</div>
+                    <div class="mbg-title">طبي</div>
                   </a>
 
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-store icon"></span>
-                    <div class="mbg-title">Commercial </div>
+                    <div class="mbg-title">تجاري </div>
                   </a>
 
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-beach icon"></span>
-                    <div class="mbg-title">Vacation Home</div>
+                    <div class="mbg-title">منزل الأجازة</div>
                   </a>
 
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-resort icon"></span>
-                    <div class="mbg-title">Administrative </div>
+                    <div class="mbg-title">إداري </div>
                   </a>
 
                   <a href="#" class="mbg-card flex-center">
                     <span class="icon-diamond icon"></span>
-                    <div class="mbg-title">Exclusive Projects </div>
+                    <div class="mbg-title">مشاريع حصرية </div>
                   </a>
                 </div>
               </div>
@@ -461,15 +462,15 @@
         <div id="menuBottom" class="menu-bottom">
           <div class="container-fluid">
             <div class="footer-bottom flex-center justify-content-between">
-              <div class="text black-color">Capital Lords 2021 © All rights reserved</div>
+              <div class="text black-color">Capital Lords 2021 © جميع الحقوق محفوظة</div>
               <div class="footer-b-links">
-                <a href="#">Cookies Policy</a>
-                <a href="#">Legal Notice</a>
-                <a href="#">Privacy Policy </a>
-                <a href="#">Sit map</a>
+                <a href="#">اتفاقية ملفات تعريف الارتباط</a>
+                <a href="#">إشعار قانوني</a>
+                <a href="#">سياسة الخصوصية </a>
+                <a href="#">اجلس الخريطة</a>
               </div>
               <div class="menu-socialmedia flex-center">
-                <div class="text ml-2 mr-2">Follow us on</div>
+                <div class="text ml-2 mr-2">اتبعنا</div>
                 <div class="menu-social">
                   <a href="#" target="_blank" class="social-icon opacity-hover">
                     <i class="fab fa-instagram"></i>
@@ -494,76 +495,134 @@
 
     <!-- Content -->
     <div class="wrapper-container">
+      <!-- Slider main container -->
+      <div id="headerScroller" class="home-header">
+        <div class="swiper-container home-swiper-container">
 
-      <!-- Vacation Filter -->
-      <div class="vacation-filter">
-        <div class="container-fluid">
-          <div class="vacation-content">
-            <div class="projects-row-bar d-flex">
-              <div class="dropdown-shapes-container flex-center">
-                <div class="selected-item flex-center-between">
-                  <div class="selected-item-header flex-center">
-                    <img src="assets/img/icons/beach.svg" class="img-fluid selected-item-logo" alt="" />
-                    <div class="selected-item-title text-capitalize">Vacation</div>
-                  </div>
-                  <span class="icon-chevron-down selected-item-icon"></span>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-home-card">
+                <div class="slide-home-video">
+                  <video autoplay loop muted>
+                    <source src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4"
+                      type="video/mp4">
+                    متصفحك الحالي لا يدعم تشغيل الفيديو.
+                  </video>
                 </div>
-                <div class="dropdown-shapes-list">
-                  <a href="#residential" class="dropdown-shape-row flex-center" data-text="Residential">
-                    <img src="assets/img/icons/residential.svg" class="img-fluid dropdown-item-logo" alt="" />
-                    <div class="title text-capitalize">Residential</div>
-                  </a>
-                  <a href="#commercial" class="dropdown-shape-row flex-center" data-text="Commercial">
-                    <img src="assets/img/icons/commercial.svg" class="img-fluid dropdown-item-logo" alt="" />
-                    <div class="title text-capitalize">Commercial</div>
-                  </a>
-                  <a href="#administrative" class="dropdown-shape-row flex-center" data-text="Administrative">
-                    <img src="assets/img/icons/administrative.svg" class="img-fluid dropdown-item-logo" alt="" />
-                    <div class="title text-capitalize">Administrative </div>
-                  </a>
-                  <a href="#medical" class="dropdown-shape-row flex-center" data-text="Medical">
-                    <img src="assets/img/icons/medical.svg" class="img-fluid dropdown-item-logo" alt="" />
-                    <div class="title text-capitalize">Medical</div>
-                  </a>
-                  <a href="#vacation" class="dropdown-shape-row flex-center" data-text="Vacation">
-                    <img src="assets/img/icons/vacation.svg" class="img-fluid dropdown-item-logo" alt="" />
-                    <div class="title text-capitalize">Vacation</div>
-                  </a>
-                </div>
+                <div class="overlay"></div>
               </div>
-
-              <div class="projects-search">
-                <div class="ps-group flex-center height-fluid pl-3 pr-3">
-                  <span class="icon-search icon"></span>
-                  <input type="text" placeholder="Search for Projects" />
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
+                <div class="overlay"></div>
               </div>
-
-              <div>
-                <button class="projects-filter-btn flex-center" data-toggle="modal" data-target="#modalSearchFilter">
-                  <span class="icon-filter icon"></span>
-                  <div class="fil-txt">Filters</div>
-                </button>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
+                <div class="overlay"></div>
               </div>
             </div>
           </div>
+
+          <!-- Swiper Pagination And Arrows -->
+          <div class="container-fluid position-relative">
+            <div class="swiper-pagination-arrows">
+              <div class="swiper-arrows">
+                <button class="arrow-icon arrow-next"><span class="icon-arrow-right icon"></span></button>
+                <button class="arrow-icon arrow-prev"><span class="icon-arrow-left icon"></span></button>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- Search Filter -->
+          <div class="search-filter">
+            <div class="search-filter-container">
+              <div class="bg-title search-filter-header text-uppercase">ابحث عن عقار أحلامك.</div>
+
+              <div class="filter-slider-bar d-flex">
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">أريد أن</label>
+                  <select id="i-want-to">
+                    <!-- id for Run Select Box -->
+                    <option value="buy">يشتري</option>
+                    <option value="sell">يبيع</option>
+                    <option value="rent">تأجير</option>
+                  </select>
+                </div>
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">نوع الملكية</label>
+                  <select id="property-type">
+                    <!-- id for Run Select Box -->
+                    <option value="residential">سكني</option>
+                    <option value="commercial">تجاري</option>
+                    <option value="administrative">إداري</option>
+                    <option value="medical">طبي</option>
+                    <option value="vacation">عطلة</option>
+                  </select>
+                </div>
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">المواقع</label>
+                  <select id="locations">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">القاهرة الجديدة</option>
+                    <option value="6-october">6 اكتوبر</option>
+                    <option value="new-capital">العاصمة الادارية الجديدة</option>
+                  </select>
+                </div>
+
+                <!-- Filter Action -->
+                <div class="filter-bar-action flex-center">
+                  <div class="button-default bt-black flex-center-center width-fluid">
+                    <button id="actionTest" class="text-center width-fluid flex-center-center"><span
+                        class="icon-search icon"></span>
+                      يبحث</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-filter-advanced">
+                <div class="d-inline-block">
+                  <button data-toggle="modal" data-target="#modalSearchFilter"
+                    class="advanced-search-link opacity-hover flex-center">
+                    <span class="asl-text text-uppercase">البحث المتقدم</span>
+                    <span class="icon-arrow-right icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Vacation Header -->
-      <div class="vacation-header">
+      <!-- Home Grid -->
+      <div class="home-grid-container">
         <div class="container-fluid">
-          <div class="vh-row d-flex flex-wrap">
-            <div id="project-bg" class="vh-bg" style="background-image: url('assets/img/projects.png');"></div>
-            <div class="vh-data" style="background-color: #4EC4E2">
-              <div class="vh-icon flex-center">
-                <img id="ph-view" src="assets/img/icons/vacation.svg" class="img-fluid icon" alt="" />
-                <div id="ph-title" class="vh-title text-uppercase title white-color">Find your <br /> <span
-                    class="ph-name">Vacation</span> Home
+          <div class="home-grid-double">
+            <a href="services.html" class="home-grid-card">
+              <img src="assets/img/home/card-1.png" class="img-fluid" alt="" />
+              <div class="home-grid-card-data gradient-easing">
+                <div class="bg-title text-uppercase">
+                  إدارة الممتلكات الخاصة بك<br /> مع كابيتال لوردز
+                  <span class="icon-arrow-right icon"></span>
                 </div>
               </div>
-              <img id="ph-view-overlay" class="ph-view-overlay" src="" alt="" />
-            </div>
+            </a>
+            <a href="projects.html" class="home-grid-card">
+              <img src="assets/img/home/card-2.png" class="img-fluid" alt="" />
+              <div class="home-grid-card-data gradient-easing">
+                <div class="bg-title text-uppercase">
+                  تجد الخاص بك<br /> منزل الأجازة
+                  <span class="icon-arrow-right icon"></span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -571,89 +630,95 @@
       <!-- Home Projects -->
       <div class="projects-container">
         <div class="container-fluid">
-          <div class="projects-cards-container">
-            <div id="" class="projects-grid">
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-              </div>
-              <div class="project-card">
-                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-              </div>
-            </div>
+          <div class="projects-title bg-title text-center text-uppercase">استكشف أكثر من 300 مشروع عقاري في
+            مصر</div>
+          <div class="projects-grid">
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+            </a>
+            <a href="design-3.html" class="project-card">
+              <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+            </a>
           </div>
           <div class="projects-grid-button text-center">
             <div class="d-inline-block">
+              <a href="projects.html" class="nl-btn flex-center-center">يستكشف <span
+                  class="icon-arrow-right icon"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Services & About Cards -->
+    <div class="services-about-container">
+      <div class="container-fluid">
+        <div class="sa-grid">
+
+          <div class="sa-card service-card">
+            <div class="sa-data">
+              <div class="width-fluid">
+                <div class="sa-sub-title flex-center text-uppercase">Our News
+                  <div class="sub-title-vline"></div>
+                </div>
+                <div class="bg-title mb-4 text-uppercase">إدارة حسابك<br /> الملكية مع<br /> كابيتال لوردز </div>
+              </div>
               <div class="button-default bt-black">
-                <button id="moreProjects">Load More <span class="icon-plus icon"></span></button>
+                <a href="#">يستكشف <span class="icon-arrow-right icon"></span></a>
+              </div>
+            </div>
+            <div class="sa-img">
+              <img src="assets/img/home/service.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="sa-card about-card">
+            <div class="sa-data">
+              <div class="width-fluid">
+                <div class="sa-sub-title flex-center text-uppercase">معلومات عنا
+                  <div class="sub-title-vline"></div>
+                </div>
+                <div class="bg-title white-color mb-4 text-uppercase">
+                  كل ما تحتاج إلى معرفته عندما تتطلع إلى الشراء أو الإيجار أو البيع - كل ذلك في مكان واحد.
+                </div>
+              </div>
+              <div class="button-default bt-white">
+                <a href="about.html">يستكشف <span class="icon-arrow-right icon"></span></a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -667,39 +732,39 @@
               <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
             </div>
             <div class="footer-links">
-              <div class="footer-title">Capital Lords</div>
-              <div class="footer-link"><a href="about.html">About</a></div>
-              <div class="footer-link"><a href="contact.html">Contact Us</a></div>
-              <div class="footer-link"><a href="#">Careers</a></div>
+              <div class="footer-title">كابيتال لوردز</div>
+              <div class="footer-link"><a href="about.html">حول</a></div>
+              <div class="footer-link"><a href="contact.html">اتصل بنا</a></div>
+              <div class="footer-link"><a href="#">وظائف</a></div>
             </div>
             <div class="footer-links">
-              <div class="footer-title">Services </div>
-              <div class="footer-link"><a href="#">Properties Management</a></div>
-              <div class="footer-link"><a href="#">Buy </a></div>
-              <div class="footer-link"><a href="#">Sell</a></div>
-              <div class="footer-link"><a href="#">Rent</a></div>
+              <div class="footer-title">خدمات </div>
+              <div class="footer-link"><a href="#">إدارة الممتلكات</a></div>
+              <div class="footer-link"><a href="#">يشتري </a></div>
+              <div class="footer-link"><a href="#">يبيع</a></div>
+              <div class="footer-link"><a href="#">تأجير</a></div>
             </div>
             <div class="footer-links">
-              <div class="footer-title">Projects</div>
-              <div class="footer-link"><a href="projects.html#residential">Residential</a></div>
-              <div class="footer-link"><a href="projects.html#commercial">Commercial </a></div>
-              <div class="footer-link"><a href="projects.html#administrative">Administrative </a></div>
-              <div class="footer-link"><a href="projects.html#medical">Medical</a></div>
-              <div class="footer-link"><a href="projects.html#vacation">Vacation</a></div>
+              <div class="footer-title">المشاريع</div>
+              <div class="footer-link"><a href="projects.html#residential">سكني</a></div>
+              <div class="footer-link"><a href="projects.html#commercial">تجاري</a></div>
+              <div class="footer-link"><a href="projects.html#administrative">إداري </a></div>
+              <div class="footer-link"><a href="projects.html#medical">طبي</a></div>
+              <div class="footer-link"><a href="projects.html#vacation">عطلة</a></div>
             </div>
             <div class="footer-contact">
-              <div class="footer-title">News & Offers</div>
+              <div class="footer-title">الأخبار والعروض</div>
               <div class="footer-contact-group mb-3">
                 <input type="text" placeholder="Your Email here" />
                 <div class="button-default bt-black">
-                  <button>Subscribe <span class="icon-arrow-right icon"></span></button>
+                  <button>الإشتراك <span class="icon-arrow-right icon"></span></button>
                 </div>
               </div>
               <div class="text mb-4 white-color">
-                Sign up to receive exclusive news and offers about the latest launches
+                اشترك لتلقي أخبار وعروض حصرية حول أحدث الإصدارات
               </div>
               <div class="socialmedia flex-center justify-content-between white-color">
-                <div class="follow-text">Follow us on</div>
+                <div class="follow-text">اتبعنا</div>
                 <div class="follow-line"></div>
                 <div class="social-icons">
                   <a href="#" target="_blank" class="social-icon">
@@ -719,12 +784,12 @@
             </div>
           </div>
           <div class="footer-bottom flex-center justify-content-between">
-            <div class="text white-color">Capital Lords 2021 © All rights reserved</div>
+            <div class="text white-color">Capital Lords 2021 © جميع الحقوق محفوظة</div>
             <div class="footer-b-links">
-              <a href="#">Cookies Policy</a>
-              <a href="#">Legal Notice</a>
-              <a href="#">Privacy Policy </a>
-              <a href="#">Sit map</a>
+              <a href="#">ملفات الارتباط</a>
+              <a href="#">إشعار قانوني</a>
+              <a href="#">سياسة الخصوصية </a>
+              <a href="#">اجلس الخريطة</a>
             </div>
           </div>
         </div>
@@ -737,6 +802,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -750,56 +816,57 @@
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
-    $(".selected-item").on('click', function () {
-      if ($(this).next('.dropdown-shapes-list').css('display') != 'block') {
-        $(this).find('.selected-item-icon').addClass('active');
-        $(this).next('.dropdown-shapes-list').slideDown(400);
-      } else {
-        $(this).find('.selected-item-icon').removeClass('active');
-        $(this).next('.dropdown-shapes-list').slideUp(400);
+    // Swiper
+    new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.arrow-next',
+        prevEl: '.arrow-prev',
+      },
+      autoplay: false,
+      speed: 700,
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+    new SlimSelect({
+      select: '#i-want-to',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
       }
     });
 
-    $(document).click(function (e) {
-      var container = $(".dropdown-shapes-container");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $(".dropdown-shapes-list").slideUp();
-        container.find('.selected-item-icon').removeClass('active');
+    new SlimSelect({
+      select: '#property-type',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
       }
     });
 
-    $(document).ready(function () {
-      var hash = '';
-      var src = '';
-      if (window.location.hash) {
-        hash = window.location.hash.substr(1);
-        src = `assets/img/icons/${hash}.svg`;
-      } else {
-        hash = 'vacation';
-        var src = `assets/img/icons/vacation.svg`;
+    new SlimSelect({
+      select: '#locations',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
       }
-      $(".selected-item-logo").attr('src', src);
-      $('.selected-item-title').text(hash);
-      $('#ph-view').attr('src', src);
-      $("#ph-view-overlay").attr('src', src);
-      $(".ph-name").text(hash);
-    });
-
-    $('.dropdown-shape-row').on('click', function () {
-      var src = $(this).find('img').attr('src');
-      var title = $(this).find('.title').text();
-      var text = $(this).attr('data-text');
-      $(this).parents('.dropdown-shapes-container').find('.selected-item-icon').removeClass('active');
-      $(this).parent().slideUp();
-      $(".selected-item-logo").attr('src', src);
-      $('.selected-item-title').text(title);
-      $('#ph-view').attr('src', src);
-      $("#ph-view-overlay").attr('src', src);
-      $(".ph-name").text(text);
     });
 
   </script>
-
 </body>
 
 </html>

@@ -24,12 +24,13 @@
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
   <!-- Selectize -->
-  <link rel="stylesheet" href="assets/css/selectric.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
   <!-- Range Slider -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
@@ -51,28 +52,27 @@
             <div class="modal-filter-grid-double">
               <div class="modal-filter-dropdown">
                 <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <label class="modal-f-label">All Locations</label>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input id="chooseType" class="selected-input" type="hidden" name="" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="madient-nasr" class="selectz-row">Madient Nasr </div>
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="new-capital" class="selectz-row">New Capital </div>
-                    </div>
-                  </div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">All Locations</label>
+                  <select id="locations-modal">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
                 </div>
               </div>
 
               <div class="modal-filter-dropdown">
-                <label class="modal-f-label">Property Type</label>
-                <div id="openContainerCheckbox" class="mcb-title position-relative flex-center-between">Residential
-                  <div class="position-relative"><span class="icon-chevron-down icon"></span></div>
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type-modal">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -337,10 +337,12 @@
 
           <div class="nav-icons flex-center">
             <div class="nav-icon-btn nav-btn-select">
-              <select id="changeLang">
-                <option value="ar">عربي</option>
-                <option value="en">ENG</option>
-              </select>
+              <div class="selectbox-slim selectbox-language">
+                <select id="changeLang">
+                  <option value="en">ENG</option>
+                  <option value="ar">عربي</option>
+                </select>
+              </div>
             </div>
             <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
               <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
@@ -492,206 +494,76 @@
 
     <!-- Content -->
     <div class="wrapper-container">
-      <!-- Slider main container -->
-      <div id="headerScroller" class="home-header">
-        <div class="swiper-container home-swiper-container">
 
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="slide-home-card">
-                <div class="slide-home-video">
-                  <video autoplay loop muted>
-                    <source src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4"
-                      type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
-                <div class="overlay"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
-                <div class="overlay"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Swiper Pagination And Arrows -->
-          <div class="container-fluid position-relative">
-            <div class="swiper-pagination-arrows">
-              <div class="swiper-arrows">
-                <button class="arrow-icon arrow-next"><span class="icon-arrow-right icon"></span></button>
-                <button class="arrow-icon arrow-prev"><span class="icon-arrow-left icon"></span></button>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <!-- Search Filter -->
-          <div class="search-filter">
-            <div class="search-filter-container">
-              <div class="bg-title search-filter-header text-uppercase">Find your dream property.</div>
-              <!-- <div class="search-filter-dropdowns flex-center">
-
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th statement" class="selectz-row">5th</div>
-                    </div>
+      <!-- Vacation Filter -->
+      <div class="vacation-filter">
+        <div class="container-fluid">
+          <div class="vacation-content">
+            <div class="projects-row-bar d-flex">
+              <div class="dropdown-shapes-container flex-center">
+                <div class="selected-item flex-center-between">
+                  <div class="selected-item-header flex-center">
+                    <img src="assets/img/icons/beach.svg" class="img-fluid selected-item-logo" alt="" />
+                    <div class="selected-item-title text-capitalize">Vacation</div>
                   </div>
+                  <span class="icon-chevron-down selected-item-icon"></span>
                 </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">I want to</label>
-                  <select>
-                    <option value="1">Buy</option>
-                    <option value="2">Sell</option>
-                    <option value="3">Rent</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">Property Type</label>
-                  <select>
-                    <option value="1">Residential</option>
-                    <option value="2">Commercial </option>
-                    <option value="3">Administrative</option>
-                    <option value="4">Medical</option>
-                    <option value="4">Vacation</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-selectbox sfs-idx">
-                  <label class="search-filter-label text-uppercase">Locations</label>
-                  <select>
-                    <option value="1">New Cairo</option>
-                    <option value="2">6th Octoner</option>
-                    <option value="3">Sheikh Zayed</option>
-                  </select>
-                </div>
-
-                <div class="search-filter-action">
-                  <div class="button-default bt-black flex-center-center width-fluid">
-                    <button class="text-center width-fluid flex-center-center"><span class="icon-search icon"></span>
-                      Search</button>
-                  </div>
-                </div>
-              </div> -->
-
-              <div class="filter-slider-bar d-flex">
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">I Want To</div>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="want" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th-settlement" class="selectz-row">5th</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">Property Type</div>
-                    <div class="selected-title">
-                      <div class="title">Commercial</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="property_type" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="commercial" class="selectz-row">Commercial</div>
-                      <div data-value="administrative" class="selectz-row">Administrative </div>
-                      <div data-value="medical" class="selectz-row">Medical</div>
-                      <div data-value="medical" class="selectz-row">Vacation</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Selectbox -->
-                <div class="selectz-container">
-                  <div class="selectz-content">
-                    <div class="selectz-label text-uppercase">Locations</div>
-                    <div class="selected-title">
-                      <div class="title">New Cairo</div>
-                      <span class="icon-chevron-down icon-chevron-rotate icon"></span>
-                      <input class="selected-input" type="hidden" name="locations" />
-                    </div>
-                    <div class="selectz-list">
-                      <div data-value="new-cairo" class="selectz-row">New Cairo</div>
-                      <div data-value="october" class="selectz-row">October</div>
-                      <div data-value="5th-settlement" class="selectz-row">5th</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Filter Action -->
-                <div class="filter-bar-action flex-center">
-                  <div class="button-default bt-black flex-center-center width-fluid">
-                    <button id="actionTest" class="text-center width-fluid flex-center-center"><span
-                        class="icon-search icon"></span>
-                      Search</button>
-                  </div>
+                <div class="dropdown-shapes-list">
+                  <a href="#residential" class="dropdown-shape-row flex-center" data-text="Residential">
+                    <img src="assets/img/icons/residential.svg" class="img-fluid dropdown-item-logo" alt="" />
+                    <div class="title text-capitalize">Residential</div>
+                  </a>
+                  <a href="#commercial" class="dropdown-shape-row flex-center" data-text="Commercial">
+                    <img src="assets/img/icons/commercial.svg" class="img-fluid dropdown-item-logo" alt="" />
+                    <div class="title text-capitalize">Commercial</div>
+                  </a>
+                  <a href="#administrative" class="dropdown-shape-row flex-center" data-text="Administrative">
+                    <img src="assets/img/icons/administrative.svg" class="img-fluid dropdown-item-logo" alt="" />
+                    <div class="title text-capitalize">Administrative </div>
+                  </a>
+                  <a href="#medical" class="dropdown-shape-row flex-center" data-text="Medical">
+                    <img src="assets/img/icons/medical.svg" class="img-fluid dropdown-item-logo" alt="" />
+                    <div class="title text-capitalize">Medical</div>
+                  </a>
+                  <a href="#vacation" class="dropdown-shape-row flex-center" data-text="Vacation">
+                    <img src="assets/img/icons/vacation.svg" class="img-fluid dropdown-item-logo" alt="" />
+                    <div class="title text-capitalize">Vacation</div>
+                  </a>
                 </div>
               </div>
 
-              <div class="search-filter-advanced">
-                <div class="d-inline-block">
-                  <button data-toggle="modal" data-target="#modalSearchFilter"
-                    class="advanced-search-link opacity-hover flex-center">
-                    <span class="asl-text text-uppercase">Advanced Search</span>
-                    <span class="icon-arrow-right icon"></span>
-                  </button>
+              <div class="projects-search">
+                <div class="ps-group flex-center height-fluid pl-3 pr-3">
+                  <span class="icon-search icon"></span>
+                  <input type="text" placeholder="Search for Projects" />
                 </div>
+              </div>
+
+              <div>
+                <button class="projects-filter-btn flex-center" data-toggle="modal" data-target="#modalSearchFilter">
+                  <span class="icon-filter icon"></span>
+                  <div class="fil-txt">Filters</div>
+                </button>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
-      <!-- Home Grid -->
-      <div class="home-grid-container">
+      <!-- Vacation Header -->
+      <div class="vacation-header">
         <div class="container-fluid">
-          <div class="home-grid-double">
-            <a href="services.html" class="home-grid-card">
-              <img src="assets/img/home/card-1.png" class="img-fluid" alt="" />
-              <div class="home-grid-card-data gradient-easing">
-                <div class="bg-title text-uppercase">
-                  Manage Your Property<br /> with Capital Lords
-                  <span class="icon-arrow-right icon"></span>
+          <div class="vh-row d-flex flex-wrap">
+            <div id="project-bg" class="vh-bg" style="background-image: url('assets/img/projects.png');"></div>
+            <div class="vh-data" style="background-color: #4EC4E2">
+              <div class="vh-icon flex-center">
+                <img id="ph-view" src="assets/img/icons/vacation.svg" class="img-fluid icon" alt="" />
+                <div id="ph-title" class="vh-title text-uppercase title white-color">Find your <br /> <span
+                    class="ph-name">Vacation</span> Home
                 </div>
               </div>
-            </a>
-            <a href="projects.html" class="home-grid-card">
-              <img src="assets/img/home/card-2.png" class="img-fluid" alt="" />
-              <div class="home-grid-card-data gradient-easing">
-                <div class="bg-title text-uppercase">
-                  Find Your<br /> Vacation Home
-                  <span class="icon-arrow-right icon"></span>
-                </div>
-              </div>
-            </a>
+              <img id="ph-view-overlay" class="ph-view-overlay" src="" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -699,95 +571,89 @@
       <!-- Home Projects -->
       <div class="projects-container">
         <div class="container-fluid">
-          <div class="projects-title bg-title text-center text-uppercase">Explore 300+ Real Estate Projects in
-            Egypt</div>
-          <div class="projects-grid">
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-2.html" class="project-card">
-              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-            </a>
-            <a href="design-3.html" class="project-card">
-              <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-2.html" class="project-card">
-              <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-2.html" class="project-card">
-              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-1.html" class="project-card">
-              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
-            </a>
-            <a href="project-2.html" class="project-card">
-              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
-            </a>
+          <div class="projects-cards-container">
+            <div id="" class="projects-grid">
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+              </div>
+              <div class="project-card">
+                <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+              </div>
+            </div>
           </div>
           <div class="projects-grid-button text-center">
             <div class="d-inline-block">
-              <a href="projects.html" class="nl-btn flex-center-center">Explore <span
-                  class="icon-arrow-right icon"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Services & About Cards -->
-    <div class="services-about-container">
-      <div class="container-fluid">
-        <div class="sa-grid">
-
-          <div class="sa-card service-card">
-            <div class="sa-data">
-              <div class="width-fluid">
-                <div class="sa-sub-title flex-center text-uppercase">Our News
-                  <div class="sub-title-vline"></div>
-                </div>
-                <div class="bg-title mb-4 text-uppercase">Manage Your<br /> Property with<br /> Capital Lords </div>
-              </div>
               <div class="button-default bt-black">
-                <a href="#">Explore <span class="icon-arrow-right icon"></span></a>
-              </div>
-            </div>
-            <div class="sa-img">
-              <img src="assets/img/home/service.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-
-          <div class="sa-card about-card">
-            <div class="sa-data">
-              <div class="width-fluid">
-                <div class="sa-sub-title flex-center text-uppercase">About us
-                  <div class="sub-title-vline"></div>
-                </div>
-                <div class="bg-title white-color mb-4 text-uppercase">
-                  Everything you need to know when you’re looking to buy, rent, or sell - all in one place.
-                </div>
-              </div>
-              <div class="button-default bt-white">
-                <a href="about.html">Explore <span class="icon-arrow-right icon"></span></a>
+                <button id="moreProjects">Load More <span class="icon-plus icon"></span></button>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -870,6 +736,7 @@
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -883,37 +750,56 @@
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
-    // Swiper
-    new Swiper('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.arrow-next',
-        prevEl: '.arrow-prev',
-      },
-      autoplay: false,
-      speed: 700,
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+    $(".selected-item").on('click', function () {
+      if ($(this).next('.dropdown-shapes-list').css('display') != 'block') {
+        $(this).find('.selected-item-icon').addClass('active');
+        $(this).next('.dropdown-shapes-list').slideDown(400);
+      } else {
+        $(this).find('.selected-item-icon').removeClass('active');
+        $(this).next('.dropdown-shapes-list').slideUp(400);
+      }
     });
 
-    $("#chooseType").on("input", function () {
-      console.log($(this).val());
+    $(document).click(function (e) {
+      var container = $(".dropdown-shapes-container");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $(".dropdown-shapes-list").slideUp();
+        container.find('.selected-item-icon').removeClass('active');
+      }
+    });
+
+    $(document).ready(function () {
+      var hash = '';
+      var src = '';
+      if (window.location.hash) {
+        hash = window.location.hash.substr(1);
+        src = `assets/img/icons/${hash}.svg`;
+      } else {
+        hash = 'vacation';
+        var src = `assets/img/icons/vacation.svg`;
+      }
+      $(".selected-item-logo").attr('src', src);
+      $('.selected-item-title').text(hash);
+      $('#ph-view').attr('src', src);
+      $("#ph-view-overlay").attr('src', src);
+      $(".ph-name").text(hash);
+    });
+
+    $('.dropdown-shape-row').on('click', function () {
+      var src = $(this).find('img').attr('src');
+      var title = $(this).find('.title').text();
+      var text = $(this).attr('data-text');
+      $(this).parents('.dropdown-shapes-container').find('.selected-item-icon').removeClass('active');
+      $(this).parent().slideUp();
+      $(".selected-item-logo").attr('src', src);
+      $('.selected-item-title').text(title);
+      $('#ph-view').attr('src', src);
+      $("#ph-view-overlay").attr('src', src);
+      $(".ph-name").text(text);
     });
 
   </script>
+
 </body>
 
 </html>
