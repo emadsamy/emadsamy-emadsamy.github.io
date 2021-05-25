@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Timeline</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.svg" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/old-interaction.css" />
+</head>
+
+<body>
+
+  <!-- Home Page -->
+  <div class="wrapper">
+    <div class="homepage">
+      <nav id="nav">
+        <div class="container-fluid">
+          <div class="navbar">
+            <div class="nav-title text-uppercase"></div>
+            <a href="index.html" class="nav-logo">
+              <img src="assets/img/logo.svg" class="img-fluid" alt="" />
+              <span class="taller-line"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="timeline-container">
+        <div class="container-fluid">
+          <div class="main-title text-uppercase">Advanced and integrated mobility</div>
+
+          <!-- Slider -->
+          <div class="swiper-timeline-wrapper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <!-- First Slide -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-card">
+                    <div class="slide-info">
+                      <div class="ss-header-wi d-flex align-items-center">
+                        <span class="icon-pen icon"></span>
+                        <div class="title">infrastructure</div>
+                      </div>
+
+                      <div class="ss-body-text">
+                        <div class="ss-body-title"><span class="icon-play icon"></span> Airports</div>
+                        <div class="ss-body-title"><span class="icon-play icon"></span> Piers</div>
+                      </div>
+                    </div>
+                    <div class="slide-view">
+                      <div class="slide-view-outer d-inline-block">
+                        <img src="assets/img/locations/main-location.svg" class="img-fluid" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide-card">
+                    <div class="slide-info">
+                      <div class="ss-header-wi d-flex align-items-center">
+                        <span class="icon-pen icon"></span>
+                        <div class="title">infrastructure</div>
+                      </div>
+
+                      <div class="ss-body-text">
+                        <div class="ss-body-title"><span class="icon-play icon"></span> Airports</div>
+                        <div class="ss-body-title"><span class="icon-play icon"></span> Piers</div>
+                      </div>
+                    </div>
+                    <div class="slide-view">
+                      <div class="slide-view-outer d-inline-block">
+                        <img src="assets/img/locations/main-location.svg" class="img-fluid" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-arrows d-flex">
+              <a href="index.html" class="swiper-btn swiper-home-btn">
+                <img src="assets/img/icons/home.svg" class="icon-home img-fluid" alt="">
+              </a>
+              <button class="swiper-arrow-prev swiper-btn">
+                <img src="assets/img/icons/left-arrow.svg" class="img-fluid" alt="">
+              </button>
+              <button class="swiper-arrow-next swiper-btn">
+                <img src="assets/img/icons/right-arrow.svg" class="img-fluid" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="container-fluid height-fluid">
+          <div class="footer-content height-fluid d-flex align-items-start">
+            <div class="fc-left">Saudi Aramco Mobility Center</div>
+            <div class="fc-right"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Home Page -->
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script>
+    const mySwiper = new Swiper(`.swiper-container`, {
+      // Optional parameters
+      direction: 'horizontal',
+      // init: true,
+      // loop: true,
+      speed: 700,
+      // effect: "fade",
+      // autoplayDisableOnInteraction: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: false,
+      slidesPerGroup: 1,
+      allowTouchMove: false,
+      // slideToClickedSlide: true,
+      // observer: true,
+      // observeParents: true,
+      // parallax: true,
+      watchSlidesVisibility: true,
+      observer: true,
+      freeModeMomentum: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: `.swiper-arrow-next`,
+        prevEl: `.swiper-arrow-prev`,
+      },
+      on: {
+        init: function () {
+          console.log('iniiiiit' + year);
+          // var desc = $(`#swiper-container-${year}`).find('.swiper-slide-active').attr('data-desc');
+          // console.log(desc);
+        },
+      },
+      on: {
+        slideChange: function (swiper) {
+          var index = swiper.activeIndex + 1;
+          var desc = $(`#swiper-container-${year} .swiper-slide:nth-of-type(${index})`).attr('data-desc');
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>

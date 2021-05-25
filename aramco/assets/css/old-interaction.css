@@ -1,0 +1,93 @@
+.timeline-container {
+  min-height: calc(100vh - 215px);
+}
+.swiper-timeline-wrapper {
+  min-height: calc(100vh - 247px);
+  padding-top: 45px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.swiper-timeline-wrapper > .swiper-container {
+  width: 100%;
+}
+.swiper-arrows button {
+  cursor: pointer;
+}
+.swiper-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(51, 51, 51, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+.swiper-btn img {
+  width: 10px;
+}
+.swiper-btn:hover {
+  background: rgba(51, 51, 51, 0.8);
+}
+.swiper-btn:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+.timeline-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+
+.swiper-slide-card {
+  display: flex;
+}
+
+.slide-info {
+  width: 33%;
+  padding-right: 30px;
+}
+
+.slide-view {
+  width: 67%;
+  text-align: center;
+}
+.swiper-home-btn .icon-home {
+  width: 18px;
+}
+.ss-header-wi .icon {
+  font-size: 18px;
+  border: 1px solid #897a5b;
+  color: #897a5b;
+  padding: 4px 3px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.ss-header-wi .title {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+.ss-body-text {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.ss-body-title {
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.ss-body-title .icon {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.ss-body-title.active {
+  color: #897a5b;
+}
