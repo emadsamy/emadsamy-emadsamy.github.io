@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
-  <!-- Selectize -->
+  <!-- Slim Select-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
   <!-- Range Slider -->
   <link rel="stylesheet"
@@ -508,7 +508,7 @@
               <div class="dropdown-shapes-container flex-center">
                 <div class="selected-item flex-center-between">
                   <div class="selected-item-header flex-center">
-                    <img src="assets/img/icons/beach.svg" class="img-fluid selected-item-logo" alt="" />
+                    <img src="assets/img/icons/vacation.svg" class="img-fluid selected-item-logo" alt="" />
                     <div class="selected-item-title text-capitalize">Vacation</div>
                   </div>
                   <span class="icon-chevron-down selected-item-icon"></span>
@@ -762,8 +762,6 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Selectbox -->
-  <script src="assets/js/jquery.selectric.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
@@ -784,6 +782,17 @@
         container.find('.selected-item-icon').removeClass('active');
       }
     });
+
+    // Fetch Data from params
+    let params = (new URL(document.location)).searchParams;
+    if (params.getAll("title")[0]) {
+      $(".selected-item-logo").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    }
+    $('.selected-item-title').text(params.getAll("title")[0]);
+    $('#ph-view').attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    $("#ph-view-overlay").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
+    $(".ph-name").text(params.getAll("title")[0]);
+    $(".vh-data").css('backgroundColor', `#${params.getAll("color")[0]}`);
 
     // $(document).ready(function () {
     //   var hash = '';
@@ -815,21 +824,6 @@
     //   $(".ph-name").text(text);
     // });
 
-  </script>
-
-  <script>
-    let params = (new URL(document.location)).searchParams;
-    $(".selected-item-logo").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
-    $('.selected-item-title').text(params.getAll("title")[0]);
-    $('#ph-view').attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
-    $("#ph-view-overlay").attr('src', `assets/img/icons/${params.getAll("title")[0]}.svg`);
-    $(".ph-name").text(params.getAll("title")[0]);
-    $(".vh-data").css('backgroundColor', `#${params.getAll("color")[0]}`)
-
-    // console.log(params.getAll("title")[0]);
-    // console.log(params.getAll("desc")[0]);
-    // console.log(params.getAll("color")[0]);
-    // console.log(params.getAll("image")[0]);
   </script>
 
 </body>

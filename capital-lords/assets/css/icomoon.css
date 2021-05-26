@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?2tt5z4");
-  src: url("fonts/icomoon.eot?2tt5z4#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?2tt5z4") format("truetype"),
-    url("fonts/icomoon.woff?2tt5z4") format("woff"),
-    url("fonts/icomoon.svg?2tt5z4#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?m5g9n8");
+  src: url("fonts/icomoon.eot?m5g9n8#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?m5g9n8") format("truetype"),
+    url("fonts/icomoon.woff?m5g9n8") format("woff"),
+    url("fonts/icomoon.svg?m5g9n8#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -85,6 +85,9 @@
 }
 .icon-telephone:before {
   content: "\e906";
+}
+.icon-printer:before {
+  content: "\e922";
 }
 .icon-twitter:before {
   content: "\e91d";

@@ -344,13 +344,6 @@
   padding-right: 5px;
   border-right: 1px solid #898989;
 }
-.selectric .label {
-  font-size: 16px !important;
-}
-.selectric-items li {
-  font-size: 15px !important;
-  padding: 9px 10px;
-}
 .checkbox-text {
   font-size: 13px !important;
   line-height: 1.3;

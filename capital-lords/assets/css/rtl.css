@@ -18,7 +18,6 @@ body.rtl .contact-form,
 body.rtl .text,
 body.rtl .ms-link,
 body.rtl .modal-f-label,
-body.rtl .selectric .label,
 body.rtl .filter-price-range .title,
 body.rtl .checkbox-text,
 body.rtl .pbd-row,
@@ -32,11 +31,9 @@ body.rtl .selectz-label,
 body.rtl .selectz-row,
 body.rtl .p2-info-row,
 body.rtl .ss-label,
-body.rtl .ss-option {
+body.rtl .ss-option,
+body.rtl .news-wrapper {
   text-align: right;
-}
-body.rtl .selectric .label {
-  margin: 0 0 0 38px;
 }
 body.rtl .select-chevron-div {
   right: auto;
@@ -147,11 +144,8 @@ body.rtl .service-card .sa-data {
 body.rtl .swiper-arrows .arrow-icon {
   transform: rotateZ(90deg);
 }
-/* body.rtl .swiper-wrapper {
+body.rtl .swiper-wrapper {
   direction: ltr;
-} */
-body.rtl .product-card-company {
-  /* flex-direction: row-reverse; */
 }
 /* Home */
 
@@ -192,7 +186,9 @@ body.rtl .vh-icon .icon {
 body.rtl .vh-data {
   background-position-x: 10%;
 }
-
+body.rtl .product-card-company {
+  flex-direction: row-reverse;
+}
 /* Projects */
 
 /* Contact */
@@ -273,6 +269,17 @@ body.rtl .modal-tab-normal-main-image {
   padding-right: 0;
 }
 /* View Project */
+
+/* Articles */
+body.rtl .news-social-icon .icon {
+  margin-right: 0;
+  margin-left: 13px;
+}
+body.rtl .article-img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+/* Articles */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

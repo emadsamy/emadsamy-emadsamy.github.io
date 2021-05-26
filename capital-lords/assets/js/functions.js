@@ -31,7 +31,6 @@ $(document).ready(function () {
       //   $("body").removeClass("rtl");
       // }
     }
-
     checkLangDir();
 
     // function redirectToPageLang() {
@@ -183,21 +182,6 @@ function calcNavHeight() {
   }
 }
 calcNavHeight();
-
-// Selectbox
-// $(function () {
-//   $("select").selectric({
-//     maxHeight: 110,
-//     arrowButtonMarkup:
-//       '<div class="select-chevron-div"><span class="icon-chevron-down select-chevron icon"></span></div>',
-//     onOpen: function () {
-//       $(".selectric-focus").find(".select-chevron").addClass("active");
-//     },
-//     onClose: function () {
-//       $(".selectric-focus").find(".select-chevron").removeClass("active");
-//     },
-//   });
-// });
 
 $(".js-range-slider-price").ionRangeSlider({
   onStart: function (data) {
@@ -393,14 +377,6 @@ $(".selectz-row").on("click", function () {
 });
 
 /* Slim Select */
-// Contact Telephone Keys
-new SlimSelect({
-  select: "#tel-keys",
-  showSearch: false,
-  onChange: (info) => {
-    console.log(info.value);
-  },
-});
 
 // Modal
 new SlimSelect({
@@ -413,6 +389,15 @@ new SlimSelect({
 
 new SlimSelect({
   select: "#property-type-modal",
+  showSearch: false,
+  onChange: (info) => {
+    console.log(info.value);
+  },
+});
+
+// Contact Telephone Keys
+new SlimSelect({
+  select: "#tel-keys",
   showSearch: false,
   onChange: (info) => {
     console.log(info.value);
