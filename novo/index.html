@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Novo Nordisk</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo-blue.svg" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo-blue.svg" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav id="nav" class="nav">
+      <div class="container-fluid">
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+          </div>
+
+          <div class="nav-icons flex-center">
+            <div class="nav-icon-btn">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="wrapper-container">
+      <div class="homepage-container">
+        <div class="homepage-view">
+          <div class="homepage-view-outer">
+            <img src="assets/img/Ryzodeg.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="homepage-details">
+          <div class="sub-title">Starting Patients On</div>
+          <div class="badge mb-3">
+            <img src="assets/img/Rayalaogo-badge.png" class="img-fluid" alt="" />
+          </div>
+          <div class="bg-title">
+            DOSING AND<br /> TITRATION GUIDE FOR<br /> TYPE 2 DIABETES
+          </div>
+          <div class="mini-title mt-2 mb-2">A SIMPLER WAY to BE SMART ABOUT BASAL and BOLUS</div>
+          <div class="home-line mb-3"></div>
+          <div class="text">
+            Ryzodeg® FIRST Co-Formulation Of A Basal Insulin With An Ultra-Long Duration And A Mealtime Insulin In One
+            Pen 1-3
+          </div>
+          <div class="auth-container">
+            <div class="auth-view">
+              <div class="auth-shape-border auth-view-card active">
+                <div class="auth-shape">
+                  <img src="assets/img/flextouch.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+
+              <div class="auth-form">
+                <div class="auth-login auth-view-card">
+                  <div class="auth-form-input">
+                    <input type="text" placeholder="Enter Email..." />
+                  </div>
+                  <div class="checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox2" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox2">Remember Me
+                    </label>
+                  </div>
+                </div>
+
+                <div class="auth-activation auth-view-card">
+                  <div class="auth-form-input">
+                    <input type="text" placeholder="Activation Code" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="auth-action">
+              <button id="loginBtn" class="auth-btn-container">
+                <div class="auth-btn">Log In</div>
+                <img src="assets/img/icons/circle-finger.svg" class="auth-icon-circle img-fluid" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    var steps = 1;
+    $("#loginBtn").on('click', function () {
+      if (steps == 1) {
+        steps = 2;
+        $(".auth-view-card").removeClass('active');
+        $(".auth-login").addClass('active');
+      } else if (steps == 2) {
+        steps = 3;
+        $(".auth-view-card").removeClass('active');
+        $(".auth-activation").addClass('active');
+      } else {
+        window.location.href = 'home.html';
+      }
+    });
+  </script>
+</body>
+
+</html>

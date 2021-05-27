@@ -1,0 +1,335 @@
+.home-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  min-height: 100vh;
+}
+.home-wrapper > div {
+  width: 50%;
+  /* flex-grow: 1; */
+  padding: 140px 50px 50px;
+}
+.home-right {
+  background: linear-gradient(90deg, #3286c4 0%, #010a72 100%);
+  overflow-y: auto;
+}
+.home-left {
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.home-badge {
+  width: 239px;
+}
+.tab-row {
+  width: auto;
+  margin-bottom: 27px;
+  position: relative;
+}
+.tab-row.active {
+  padding-bottom: 120px;
+}
+.tab-row.active:last-of-type {
+  padding-bottom: 0;
+  padding-top: 120px;
+}
+.tab-row-container {
+  display: inline-block;
+  position: relative;
+}
+.tab-shape-container {
+  position: absolute;
+  left: 106%;
+  top: 10px;
+}
+.tab-row-wrapper {
+  display: flex;
+  position: relative;
+}
+.tab-card {
+  padding: 20px 13px 15px;
+  border: 5px solid #fff;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  position: relative;
+  width: 237px;
+}
+.tab-card:after {
+  content: "";
+  height: 27px;
+  width: 27px;
+  border: 5px solid #fff;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  bottom: -5px;
+  right: -13px;
+  border-bottom-right-radius: 12px;
+}
+
+.tab-card-title {
+  text-transform: uppercase;
+  border-bottom: 7px solid #00e2ff;
+  color: #fff;
+  font-weight: bold;
+  line-height: 0.9;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.tab-card-icons {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 100%;
+}
+.tab-card-icons > div {
+  height: 50%;
+}
+.tci-logo {
+  position: relative;
+}
+.tci-logo:after {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tci-plus {
+  position: relative;
+  bottom: -21px;
+  right: -15px;
+}
+.tci-plus .icon {
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+}
+.tab-row.active .tci-plus .icon {
+  transform: rotateZ(45deg);
+}
+
+.main-outer-border {
+  border: 15px solid #3d5173;
+}
+.main-center-border {
+  border: 7px solid #a8b9d9;
+}
+.shape-circle-border {
+  width: 313px;
+  height: 313px;
+  border: 5px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+}
+.shape-circle-border-outer,
+.shape-circle-border-center,
+.shape-circle-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.shape-circle-content {
+  padding: 33px 20px;
+  background: #728fc2;
+  /* border: 1px solid #fff; */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.sc-main-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.sc-line {
+  width: 100%;
+  height: 4px;
+  background: #00c5de;
+  border-radius: 50px;
+  margin: 8px 0;
+}
+.sc-main-sub-title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+.sc-icon {
+  padding-top: 5px;
+}
+.shape-circle-border-logo {
+  position: absolute;
+  /* top: -16px; */
+  /* left: 15px; */
+  top: -13px;
+  left: 13px;
+}
+.tab-shape-circle-container {
+  padding: 0;
+  display: none;
+}
+.tab-row.active .tab-shape-circle-container {
+  display: block !important;
+}
+.shape-circle-rectangle-card {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+}
+.scr-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  line-height: 1;
+}
+.scrc-tab-1 {
+  width: 49%;
+  height: 92%;
+  background: #54afde;
+  top: -18px;
+  left: 0;
+  transform: rotateZ(33deg);
+}
+.scrc-tab-1 .scr-title {
+  top: 100px;
+  transform: rotateZ(-98deg);
+}
+.scrc-tab-2 {
+  width: 75%;
+  height: 100%;
+  background: #6d84bb;
+  top: -55px;
+  right: -56px;
+  transform: rotateZ(4deg);
+}
+.scrc-tab-2 .scr-title {
+  top: 120px;
+  transform: rotateZ(54deg);
+  left: 15px;
+}
+
+.scrc-tab-3 {
+  width: 85%;
+  height: 75%;
+  background: #1e2d5d;
+  bottom: -150px;
+  left: 50%;
+  transform: rotateZ(37deg) translateX(-50%);
+}
+.scrc-tab-3 .scr-title {
+  transform: rotate(-37deg);
+  top: 54px;
+  left: 29px;
+}
+.shape-circle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 26px;
+  color: #0079c2;
+  text-align: center;
+  line-height: 1;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.tab-child-card-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: #728fc2;
+  padding: 20px;
+  border-radius: 50%;
+  display: none;
+}
+.tab-child-card-wrapper.active {
+  display: block !important;
+}
+.tab-child-card-wrapper .title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.tab-child-card-wrapper .title sup {
+  line-height: 1;
+  display: inline-block;
+  font-size: 17px;
+}
+.circle-convertor-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  position: relative;
+}
+.circle-convertor {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px 4px;
+  position: relative;
+  z-index: 4;
+}
+.circle-convertor input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 17px;
+  /* font-weight: 600; */
+}
+.circle-convertor-center {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.arrow-curve {
+  position: absolute;
+  height: 61px;
+  left: 37px;
+  top: -4px;
+  z-index: 2;
+}
+.shape-circle-tab-title {
+  position: absolute;
+  bottom: 90%;
+  left: calc(100% - 60px);
+  border-bottom: 3.5px solid #fff;
+  line-height: 1;
+  color: #fff;
+  padding: 3px 0;
+  display: none;
+  min-width: 110px;
+  max-width: 110px;
+  width: auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.shape-circle-tab-title.active {
+  display: block !important;
+}
