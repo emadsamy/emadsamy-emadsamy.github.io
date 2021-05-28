@@ -48,7 +48,7 @@
               <div class="nav-icon-title">Home</div>
             </a>
 
-            <a href="#" class="nav-icon-btn">
+            <a href="flextouch.html" class="nav-icon-btn">
               <img src="assets/img/icons/play.svg" class="icon img-fluid" alt="" />
               <div class="nav-icon-title">How to use FlexTouch®</div>
             </a>
@@ -73,47 +73,51 @@
         </div>
 
         <div class="home-right">
-          <div class="main-tabs">
 
-            <!-- Row -->
-            <div class="tab-row">
-              <div class="tab-row-container">
-                <div class="tab-row-wrapper">
-                  <div class="tab-card">
-                    <div class="tab-card-title">
-                      New to
-                      <br />
-                      Insulin
-                    </div>
-                  </div>
-                  <div class="tab-card-icons">
-                    <div class="tci-logo">
-                      <img src="assets/img/icons/flag.svg" class="img-fluid icon" alt="" />
-                    </div>
+          <div class="home-right-body">
 
-                    <button class="tci-plus">
-                      <span class="icon-plus icon"></span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="tab-shape-container">
-                  <div class="tab-shape-circle-container">
-                    <div class="shape-circle-border">
-                      <div class="shape-circle-border-logo">
-                        <button class="shape-circle-btn"><img src="assets/img/icons/retouch.svg" class="img-fluid"
-                            alt="" /></button>
+            <!-- Main Tabs -->
+            <div class="main-tabs">
+              <!-- Row -->
+              <div class="tab-row">
+                <div class="tab-row-container">
+                  <div class="tab-row-wrapper">
+                    <div class="tab-card">
+                      <div class="tab-card-title">
+                        New to
+                        <br />
+                        Insulin
                       </div>
-                      <div class="shape-circle-border-outer main-outer-border">
-                        <div class="shape-circle-border-center main-center-border">
-                          <div class="shape-circle-content">
-                            <div class="sc-main-title">INITIATION IN <br /> TYPE 2 DIABETES <br /> FROM OADs</div>
-                            <div class="sc-line"></div>
-                            <div class="sc-main-sub-title">Total daily starting dose is<br /> 10 units with main
-                              meal(s)1,4 </div>
-                            <div class="sc-line"></div>
-                            <div class="sc-icon">
-                              <img src="assets/img/icons/dish.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="tab-card-icons">
+                      <div class="tci-logo">
+                        <img src="assets/img/icons/flag.svg" class="img-fluid icon" alt="" />
+                      </div>
+
+                      <button class="tci-plus">
+                        <span class="icon-plus icon"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="tab-shape-container">
+                    <div class="tab-shape-circle-container">
+                      <div class="shape-circle-border">
+                        <div class="shape-circle-border-logo">
+                          <button class="shape-circle-btn"><img src="assets/img/icons/retouch.svg" class="img-fluid"
+                              alt="" /></button>
+                        </div>
+                        <div class="shape-circle-border-outer main-outer-border">
+                          <div class="shape-circle-border-center main-center-border">
+                            <div class="shape-circle-content">
+                              <div class="sc-main-title">INITIATION IN <br /> TYPE 2 DIABETES <br /> FROM OADs</div>
+                              <div class="sc-line"></div>
+                              <div class="sc-main-sub-title">Total daily starting dose is<br /> 10 units with main
+                                meal(s)1,4 </div>
+                              <div class="sc-line"></div>
+                              <div class="sc-icon">
+                                <img src="assets/img/icons/dish.svg" class="img-fluid" alt="" />
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -122,182 +126,297 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Row -->
-            <div class="tab-row">
-              <div class="tab-row-container">
-                <div class="tab-row-wrapper">
-                  <div class="tab-card">
-                    <div class="tab-card-title">
-                      Already on
-                      <br />
-                      Insulin
+              <!-- Row -->
+              <div class="tab-row">
+                <div class="tab-row-container">
+                  <div class="tab-row-wrapper">
+                    <div class="tab-card">
+                      <div class="tab-card-title">
+                        Already on
+                        <br />
+                        Insulin
+                      </div>
+                    </div>
+                    <div class="tab-card-icons">
+                      <div class="tci-logo">
+                        <img src="assets/img/icons/hand.svg" class="img-fluid icon" alt="" />
+                      </div>
+
+                      <button class="tci-plus">
+                        <span class="icon-plus icon"></span>
+                      </button>
                     </div>
                   </div>
-                  <div class="tab-card-icons">
-                    <div class="tci-logo">
-                      <img src="assets/img/icons/hand.svg" class="img-fluid icon" alt="" />
-                    </div>
 
-                    <button class="tci-plus">
-                      <span class="icon-plus icon"></span>
-                    </button>
+                  <div class="tab-shape-container">
+                    <div class="tab-shape-circle-container">
+                      <div class="shape-circle-border">
+
+                        <div class="shape-circle-border-logo">
+                          <button id="shape-circle-retouch" class="shape-circle-btn">
+                            <img src="assets/img/icons/retouch.svg" class="img-fluid" alt="" />
+                          </button>
+                        </div>
+
+                        <div class="shape-circle-border-outer main-outer-border">
+                          <div id="circleTabTitle" class="shape-circle-tab-title"></div>
+                          <div class="shape-circle-border-center main-center-border">
+                            <div class="shape-circle-content">
+                              <div class="tabs-childs-btns">
+                                <button data-child-tab="#baseOnly" data-child-title="Basal Only"
+                                  class="shape-circle-rectangle-card scrc-tab-1">
+                                  <div class="scr-bg"></div>
+                                  <div class="scr-title">Basal Only</div>
+                                </button>
+                                <button data-child-tab="#baseBolus" data-child-title="FROM BASAL<br /> AND BOLUS"
+                                  class="shape-circle-rectangle-card scrc-tab-2">
+                                  <div class="scr-bg"></div>
+                                  <div class="scr-title">Basal and<br /> bolus</div>
+                                </button>
+                                <button data-child-tab="#premix" data-child-title="FROM PREMIX"
+                                  class="shape-circle-rectangle-card scrc-tab-3">
+                                  <div class="scr-bg"></div>
+                                  <div class="scr-title">Premix</div>
+                                </button>
+                                <div class="shape-circle-center">Switch<br /> from</div>
+                              </div>
+
+                              <div class="tabs-childs-cards">
+                                <div id="baseOnly" class="tab-child-card-wrapper tab-child-card-wrapper-base-only">
+                                  <div class="title">
+                                    Convert
+                                    <br />
+                                    unit-to-unit
+                                    <br />
+                                    the same total
+                                    <br />
+                                    insulin dose <sup>1,4</sup>
+                                    <br />
+                                  </div>
+                                  <div class="sc-line"></div>
+                                  <div class="circle-convertor-container">
+                                    <div
+                                      class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
+                                      <div class="arrow-curve">
+                                        <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
+                                      </div>
+                                      <div class="circle-convertor circle-convertor-left">
+                                        <input type="text" />
+                                      </div>
+                                      <div class="circle-convertor-center">1:1</div>
+                                      <div class="circle-convertor circle-convertor-right">
+                                        <input type="text" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div id="baseBolus" class="tab-child-card-wrapper tab-child-card-wrapper-base-bolus">
+                                  <div class="title">
+                                    Switch on
+                                    <br />
+                                    the same number
+                                    <br />
+                                    of basal units1,4
+                                    <br />
+                                  </div>
+                                  <div class="sc-line"></div>
+                                  <div class="circle-convertor-container">
+                                    <div
+                                      class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
+                                      <div class="arrow-curve">
+                                        <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
+                                      </div>
+                                      <div class="circle-convertor circle-convertor-left">
+                                        <input type="text" />
+                                      </div>
+                                      <div class="circle-convertor-center">1:1</div>
+                                      <div class="circle-convertor circle-convertor-right">
+                                        <input type="text" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div id="premix" class="tab-child-card-wrapper tab-child-card-wrapper-premix">
+                                  <div class="title">
+                                    Convert
+                                    <br />
+                                    unit-to-unit
+                                    <br />
+                                    the same total
+                                    <br />
+                                    insulin dose <sup>1,4</sup>
+                                    <br />
+                                  </div>
+                                  <div class="sc-line"></div>
+                                  <div class="circle-convertor-container">
+                                    <div
+                                      class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
+                                      <div class="arrow-curve">
+                                        <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
+                                      </div>
+                                      <div class="circle-convertor circle-convertor-left">
+                                        <input type="text" />
+                                      </div>
+                                      <div class="circle-convertor-center">1:1</div>
+                                      <div class="circle-convertor circle-convertor-right">
+                                        <input type="text" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="tab-shape-container">
-                  <div class="tab-shape-circle-container">
-                    <div class="shape-circle-border">
+              <!-- Row -->
+              <div class="tab-row">
+                <div class="tab-row-container">
+                  <div class="tab-row-wrapper">
+                    <div class="tab-card">
+                      <div class="tab-card-title">
+                        Dose
+                        <br />
+                        Calculator
+                      </div>
+                    </div>
+                    <div class="tab-card-icons">
+                      <div class="tci-logo">
+                        <img src="assets/img/icons/counter.svg" class="img-fluid icon" alt="" />
+                      </div>
 
-                      <div class="shape-circle-border-logo">
-                        <button id="shape-circle-retouch" class="shape-circle-btn">
-                          <img src="assets/img/icons/retouch.svg" class="img-fluid" alt="" />
+                      <button class="tci-plus">
+                        <span class="icon-plus icon"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="tab-shape-container">
+                    <div class="tab-shape-circle-container">
+                      <!-- Circle Head -->
+                      <div class="circle-head"></div>
+                      <!-- Circle Footer -->
+                      <div class="circle-footer">
+                        <div class="circle-line-retouch">
+                          <img src="assets/img/icons/retouch-2.svg" class="img-fluid" alt="" />
+                        </div>
+                      </div>
+                      <!-- Circle Line Right -->
+                      <div class="circle-line-right"></div>
+                      <!-- Circle Line Right -->
+                      <div class="circle-line-left">
+                        <div class="circle-line-dart">
+                          <img src="assets/img/icons/dart.svg" class="img-fluid" alt="" />
+                        </div>
+                      </div>
+                      <!-- Circle Line Right -->
+                      <div class="circle-insert-curve"></div>
+
+                      <!-- Progress Bar 1 -->
+                      <div class="circle-progress-bar-container progressbar-container-1">
+                        <button class="circle-progress-insert-btn">Insert</button>
+                        <button class="circle-progress-enter-btn">
+                          <div class="ent-title">Enter</div>
+                          <span>the dosage</span>
                         </button>
-                      </div>
-
-                      <div id="circleTabTitle" class="shape-circle-tab-title"></div>
-
-                      <div class="shape-circle-border-outer main-outer-border">
-                        <div class="shape-circle-border-center main-center-border">
-                          <div class="shape-circle-content">
-                            <div class="tabs-childs-btns">
-                              <button data-child-tab="#baseOnly" data-child-title="Basal Only"
-                                class="shape-circle-rectangle-card scrc-tab-1">
-                                <div class="scr-bg"></div>
-                                <div class="scr-title">Basal Only</div>
-                              </button>
-                              <button data-child-tab="#baseBolus" data-child-title="FROM BASAL<br /> AND BOLUS"
-                                class="shape-circle-rectangle-card scrc-tab-2">
-                                <div class="scr-bg"></div>
-                                <div class="scr-title">Basal and<br /> bolus</div>
-                              </button>
-                              <button data-child-tab="#premix" data-child-title="FROM PREMIX"
-                                class="shape-circle-rectangle-card scrc-tab-3">
-                                <div class="scr-bg"></div>
-                                <div class="scr-title">Premix</div>
-                              </button>
-                              <div class="shape-circle-center">Switch<br /> from</div>
-                            </div>
-
-                            <div class="tabs-childs-cards">
-                              <div id="baseOnly" class="tab-child-card-wrapper tab-child-card-wrapper-base-only">
-                                <div class="title">
-                                  Convert
-                                  <br />
-                                  unit-to-unit
-                                  <br />
-                                  the same total
-                                  <br />
-                                  insulin dose <sup>1,4</sup>
-                                  <br />
-                                </div>
-                                <div class="sc-line"></div>
-                                <div class="circle-convertor-container">
-                                  <div class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
-                                    <div class="arrow-curve">
-                                      <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
-                                    </div>
-                                    <div class="circle-convertor circle-convertor-left">
-                                      <input type="text" />
-                                    </div>
-                                    <div class="circle-convertor-center">1:1</div>
-                                    <div class="circle-convertor circle-convertor-right">
-                                      <input type="text" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div id="baseBolus" class="tab-child-card-wrapper tab-child-card-wrapper-base-bolus">
-                                <div class="title">
-                                  Switch on
-                                  <br />
-                                  the same number
-                                  <br />
-                                  of basal units1,4
-                                  <br />
-                                </div>
-                                <div class="sc-line"></div>
-                                <div class="circle-convertor-container">
-                                  <div class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
-                                    <div class="arrow-curve">
-                                      <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
-                                    </div>
-                                    <div class="circle-convertor circle-convertor-left">
-                                      <input type="text" />
-                                    </div>
-                                    <div class="circle-convertor-center">1:1</div>
-                                    <div class="circle-convertor circle-convertor-right">
-                                      <input type="text" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div id="premix" class="tab-child-card-wrapper tab-child-card-wrapper-premix">
-                                <div class="title">
-                                  Convert
-                                  <br />
-                                  unit-to-unit
-                                  <br />
-                                  the same total
-                                  <br />
-                                  insulin dose <sup>1,4</sup>
-                                  <br />
-                                </div>
-                                <div class="sc-line"></div>
-                                <div class="circle-convertor-container">
-                                  <div class="circle-convertor-wrapper d-flex justify-content-between align-items-end">
-                                    <div class="arrow-curve">
-                                      <img src="assets/img/icons/arrow-curve.svg" class="img-fluid" alt="" />
-                                    </div>
-                                    <div class="circle-convertor circle-convertor-left">
-                                      <input type="text" />
-                                    </div>
-                                    <div class="circle-convertor-center">1:1</div>
-                                    <div class="circle-convertor circle-convertor-right">
-                                      <input type="text" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
+                        <div class="circle-progress-bar-wrapper">
+                          <div class="circle-progress-bar-center">
+                            <input type="text" maxlength="4" value="45" />
+                          </div>
+                          <div class="progress-bar progress-bar-1">
+                            <div class="progress-steps">
+                              <div class="progress-step progress-step-0"></div>
+                              <div class="progress-step progress-step-10"></div>
+                              <div class="progress-step progress-step-20"></div>
+                              <div class="progress-step progress-step-30"></div>
+                              <div class="progress-step progress-step-40"></div>
+                              <div class="progress-step progress-step-50"></div>
+                              <div class="progress-step progress-step-60"></div>
+                              <div class="progress-step progress-step-70"></div>
+                              <div class="progress-step progress-step-80"></div>
+                              <div class="progress-step progress-step-90"></div>
                             </div>
                           </div>
                         </div>
+                        <div class="title">Ryzodeg</div>
                       </div>
+                      <!-- Progress Bar 1 -->
+
+                      <!-- Progress Bar 2 -->
+                      <div class="circle-progress-bar-container progressbar-container-2">
+                        <div class="circle-progress-bar-wrapper">
+                          <div class="circle-progress-bar-center">
+                            <input type="text" maxlength="4" value="13.5" />
+                          </div>
+                          <div class="progress-bar progress-bar-2">
+                            <div class="progress-steps">
+                              <div class="progress-step progress-step-0"></div>
+                              <div class="progress-step progress-step-10"></div>
+                              <div class="progress-step progress-step-20"></div>
+                              <div class="progress-step progress-step-30"></div>
+                              <div class="progress-step progress-step-40"></div>
+                              <div class="progress-step progress-step-50"></div>
+                              <div class="progress-step progress-step-60"></div>
+                              <div class="progress-step progress-step-70"></div>
+                              <div class="progress-step progress-step-80"></div>
+                              <div class="progress-step progress-step-90"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title">Aspart</div>
+                      </div>
+                      <!-- Progress Bar 2 -->
+
+                      <!-- Progress Bar 3 -->
+                      <div class="circle-progress-bar-container progressbar-container-3">
+                        <div class="circle-progress-bar-wrapper">
+                          <div class="circle-progress-bar-center">
+                            <input type="text" maxlength="4" value="31.5" />
+                          </div>
+                          <div class="progress-bar progress-bar-3">
+                            <div class="progress-steps">
+                              <div class="progress-step progress-step-0"></div>
+                              <div class="progress-step progress-step-10"></div>
+                              <div class="progress-step progress-step-20"></div>
+                              <div class="progress-step progress-step-30"></div>
+                              <div class="progress-step progress-step-40"></div>
+                              <div class="progress-step progress-step-50"></div>
+                              <div class="progress-step progress-step-60"></div>
+                              <div class="progress-step progress-step-70"></div>
+                              <div class="progress-step progress-step-80"></div>
+                              <div class="progress-step progress-step-90"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title">Degludeg</div>
+                      </div>
+                      <!-- Progress Bar 3 -->
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Row -->
-            <div class="tab-row">
-              <div class="tab-row-container">
-                <div class="tab-row-wrapper">
-                  <div class="tab-card">
-                    <div class="tab-card-title">
-                      Dose
-                      <br />
-                      Calculator
-                    </div>
-                  </div>
-                  <div class="tab-card-icons">
-                    <div class="tci-logo">
-                      <img src="assets/img/icons/counter.svg" class="img-fluid icon" alt="" />
-                    </div>
-
-                    <button class="tci-plus">
-                      <span class="icon-plus icon"></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- Main Tabs -->
 
           </div>
+
+          <footer>
+            <img src="assets/img/icons/group.svg" class="footer-shape img-fluid" alt="" />
+            <div class="footer-content">
+              <a href="references.html" class="footer-link">Reference</a>
+            </div>
+          </footer>
+
         </div>
       </div>
     </div>
@@ -306,8 +425,6 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
 
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -315,16 +432,21 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap V 4.3.1 -->
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/circle-progress.js"></script>
   <script>
     // Main Tabs
     $(".tci-plus").on('click', function () {
       var parentOfThis = $(this).parents('.tab-row');
-      $('.tab-row').removeClass('active');
-      parentOfThis.addClass('active');
+      if (parentOfThis.hasClass('active')) {
+        $('.tab-row').removeClass('active');
+        $(".tab-row-container").removeClass('none-center');
+      } else {
+        $('.tab-row').removeClass('active');
+        parentOfThis.addClass('active');
+        $(".tab-row-container").addClass('none-center');
+      }
     });
 
     // Switch Tabs Inside Circle
@@ -336,6 +458,45 @@
       $("#circleTabTitle").addClass('active');
       $("#circleTabTitle").append(title);
     });
+  </script>
+
+  <script>
+    // Progress 1
+    const circleProgress1 = new CircleProgress('.progress-bar-1', {
+      max: 100,
+      // value: 60,
+      textFormat: 'percent',
+      clockwise: false // Change Direction
+    });
+
+    circleProgress1
+      // .attr('max', 100)
+      .attr('value', 10);
+
+
+    // Progress 2
+    const circleProgress2 = new CircleProgress('.progress-bar-2', {
+      max: 100,
+      // value: 60,
+      textFormat: 'percent',
+      clockwise: false // Change Direction
+    });
+
+    circleProgress2
+      // .attr('max', 100)
+      .attr('value', 13.5);
+
+    // Progress 3
+    const circleProgress3 = new CircleProgress('.progress-bar-3', {
+      max: 100,
+      // value: 60,
+      textFormat: 'percent',
+      clockwise: false // Change Direction
+    });
+
+    circleProgress3
+      // .attr('max', 100)
+      .attr('value', 31.5);
   </script>
 </body>
 

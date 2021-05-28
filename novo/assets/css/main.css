@@ -231,7 +231,7 @@ small {
   font-size: 37px;
 }
 .sub-title {
-  color: #ffff;
+  color: #07197c;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -342,6 +342,9 @@ nav {
   color: #fff;
   line-height: 1;
   margin: 0 20px;
+}
+.nav-icon-btn:last-of-type {
+  margin-right: 0;
 }
 .nav-icon-btn .icon {
   font-size: 26px;
@@ -499,6 +502,35 @@ nav {
   display: block !important;
 }
 /* Home */
+
+/* Footer */
+footer {
+  border-top: 1px solid #fff;
+  padding: 5px 20px 5px 50px;
+  position: relative;
+}
+.footer-shape {
+  position: absolute;
+  bottom: 95%;
+  right: 50px;
+}
+.footer-link {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+}
+.footer-link:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+.footer-link:active {
+  color: #fff;
+  opacity: 0.4;
+}
+.footer-link:focus {
+  color: #fff;
+}
+/* Footer */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
