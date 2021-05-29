@@ -635,26 +635,45 @@
     min-height: auto;
   }
   .tab-card-title {
-    font-size: 24px;
+    font-size: 21px;
+    border-bottom: 5px solid #00e2ff;
   }
   .tab-card {
-    padding: 14px 13px 13px;
+    padding: 11px 13px 8px;
+    width: 200px;
+  }
+  .tab-row {
+    text-align: center;
+  }
+  .tab-row-container {
+    left: auto;
+    position: static;
+    transform: none;
   }
   .tci-logo img {
     margin-top: -2px;
+  }
+  .tci-logo {
+    display: none;
   }
   footer {
     display: none;
   }
   .tab-row {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   .shape-circle-border {
-    width: 250px;
-    height: 250px;
+    width: 233px;
+    height: 233px;
+  }
+  .main-outer-border {
+    border: 10px solid #3d5173;
+  }
+  .shape-circle-border {
+    padding: 8px;
   }
   .shape-circle-content {
-    padding: 19px 20px;
+    padding: 19px 15px;
   }
   .sc-main-title {
     font-size: 13px;
@@ -675,11 +694,11 @@
   }
   .shape-circle-border-logo {
     position: absolute;
-    top: -23px;
-    left: 4px;
+    top: -24px;
+    left: -1px;
   }
   .tab-row.active {
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
   .shape-circle-center {
     width: 50px;
@@ -687,31 +706,38 @@
     font-size: 11px;
     font-weight: bold;
   }
+  .scrc-tab-1 {
+    top: -17px;
+    left: -7px;
+    transform: rotateZ(20deg);
+    height: 104%;
+  }
   .scrc-tab-3 {
-    bottom: -111px;
+    bottom: -98px;
     left: 50%;
     transform: rotateZ(37deg) translateX(-50%);
   }
   .scrc-tab-2 {
-    top: -32px;
-    right: -47px;
-    transform: rotateZ(0deg);
+    top: -23px;
+    right: -43px;
+    transform: rotateZ(1deg);
   }
   .scr-title {
-    font-size: 15px;
+    font-size: 14px;
   }
   .scrc-tab-2 .scr-title {
-    top: 86px;
-    transform: rotateZ(60deg);
-    left: 3px;
+    top: 67px;
+    transform: rotateZ(58deg);
+    left: 6px;
   }
   .scrc-tab-3 .scr-title {
-    top: 42px;
-    left: 19px;
+    top: 47px;
+    left: 25px;
   }
   .scrc-tab-1 .scr-title {
-    top: 81px;
-    transform: rotateZ(-100deg);
+    top: 76px;
+    transform: rotateZ(-87deg);
+    left: 3px;
   }
   .tab-row.active-res {
     display: none;
@@ -720,10 +746,10 @@
     display: block !important;
   }
   .shape-circle-tab-title {
-    left: calc(100% - 22px);
+    left: calc(100% - 27px);
     font-size: 15px;
     min-width: 92px;
-    bottom: 100%;
+    bottom: 98%;
   }
   .tab-child-card-wrapper .title {
     font-size: 15px;
@@ -738,6 +764,78 @@
   }
   .tab-child-card-wrapper .title sup {
     font-size: 10px;
+  }
+  .circle-progress-bar-wrapper {
+    width: 112px;
+    height: 112px;
+  }
+  .tab-row.active.active-res:last-of-type .tab-row-wrapper {
+    display: none;
+  }
+  .circle-progress-bar-center input {
+    margin-top: -5px;
+    font-size: 21px;
+  }
+  .circle-head {
+    top: -14px;
+    width: 140px;
+    height: 72px;
+  }
+  .circle-progress-insert-btn:after {
+    top: -8px;
+    left: 21px;
+    width: 46px;
+    height: 38px;
+  }
+  .circle-progress-enter-btn {
+    font-size: 11px;
+    top: 65px;
+    left: -48px;
+  }
+  .ent-title {
+    font-size: 11px;
+  }
+  .circle-progress-enter-btn:after {
+    height: 38px;
+    left: -17px;
+    top: -7px;
+  }
+  .circle-line-left {
+    left: -14.1px;
+    top: 94px;
+  }
+  .circle-line-retouch {
+    top: -25px;
+    left: -50px;
+  }
+  .circle-progress-insert-btn {
+    top: 63px;
+    right: -50px;
+  }
+  .circle-footer {
+    width: 140px;
+    height: 72px;
+  }
+  .circle-line-right {
+    height: 67%;
+    right: -13.8px;
+    bottom: 43px;
+  }
+  .tab-row:last-of-type .tab-shape-circle-container {
+    padding-top: 0;
+  }
+  .circle-progress-bar-container .title {
+    font-size: 13px;
+  }
+  .circle-progress-circle {
+    stroke-width: 23px;
+  }
+  .circle-progress-value {
+    stroke-width: 23px;
+  }
+  .circle-progress-bar-center {
+    width: 62%;
+    height: 62%;
   }
 }
 
