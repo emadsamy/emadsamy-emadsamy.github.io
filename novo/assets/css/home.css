@@ -898,11 +898,11 @@
   }
   .close-circle-res-btn {
     position: absolute;
-    bottom: -29px;
+    bottom: -16px;
     left: -1px;
   }
   .close-circle-res-btn img {
-    width: 35px;
+    width: 31px;
   }
 }
 
