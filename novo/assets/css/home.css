@@ -195,6 +195,28 @@
   top: -13px;
   left: 12px;
 }
+
+/* .shape-circle-border-logo {
+  transform: rotate(-72deg);
+  position: absolute;
+  top: -22px;
+  left: 2px;
+  width: 65px;
+  height: 65px;
+  border: 4px solid #fff;
+  border-radius: 50% 50% 50% 50%;
+  border-left: 5px solid transparent;
+}
+.shape-circle-btn img {
+  width: 35px;
+  transform: rotate(71deg);
+  position: relative;
+  right: -13px;
+  top: 10px;
+} */
+.close-circle-res-btn {
+  display: none;
+}
 .tab-shape-circle-container {
   padding: 0;
   display: none;
@@ -706,7 +728,7 @@
   .shape-circle-border-logo {
     position: absolute;
     top: -24px;
-    left: -1px;
+    left: 1px;
   }
   .tab-row.active {
     padding-bottom: 0;
@@ -793,7 +815,7 @@
     height: 58px;
   }
   .circle-progress-insert-btn:after {
-    top: -8px;
+    top: -8.5px;
     left: 20.5px;
     width: 36px;
     height: 35px;
@@ -823,7 +845,7 @@
     left: -50px;
   }
   .circle-progress-insert-btn {
-    top: 54px;
+    top: 53px;
     right: -37px;
     font-size: 13px;
     font-weight: 600;
@@ -837,7 +859,7 @@
   .circle-line-right {
     height: 65%;
     right: -11.8px;
-    bottom: 40px;
+    bottom: 37px;
   }
   .tab-row:last-of-type .tab-shape-circle-container {
     padding-top: 0;
@@ -870,6 +892,17 @@
   }
   .tic-circle-shape img {
     width: 76%;
+  }
+  .tab-row.active.active-res .close-circle-res-btn {
+    display: block;
+  }
+  .close-circle-res-btn {
+    position: absolute;
+    bottom: -29px;
+    left: -1px;
+  }
+  .close-circle-res-btn img {
+    width: 35px;
   }
 }
 

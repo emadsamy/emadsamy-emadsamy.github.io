@@ -143,6 +143,10 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Close Tab -->
+                  <div class="close-circle-res-btn">
+                    <img src="assets/img/icons/arrow-left.svg" class="img-fluid" alt="" />
+                  </div>
                 </div>
               </div>
 
@@ -294,6 +298,11 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Close Tab -->
+                  <div class="close-circle-res-btn">
+                    <img src="assets/img/icons/arrow-left.svg" class="img-fluid" alt="" />
+                  </div>
                 </div>
               </div>
 
@@ -422,6 +431,11 @@
 
                     </div>
                   </div>
+
+                  <!-- Close Tab -->
+                  <div class="close-circle-res-btn">
+                    <img src="assets/img/icons/arrow-left.svg" class="img-fluid" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -456,7 +470,7 @@
   <script src="assets/js/circle-progress.js"></script>
   <script>
     // Main Tabs
-    $(".tci-plus").on('click', function () {
+    $(".tci-plus, .close-circle-res-btn").on('click', function () {
       var parentOfThis = $(this).parents('.tab-row');
       if (parentOfThis.hasClass('active')) {
         $('.tab-row').removeClass('active');
