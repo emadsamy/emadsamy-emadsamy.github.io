@@ -56,11 +56,10 @@ $(".checkAll").click(function () {
       .prop("checked", false);
   }
 });
-// On Scroll
-// $(window).on("resize", function () {
-//   // Menu
-//   menuBodyHandler();
 
-//   // Calc Nav Height
-//   calcNavHeight();
-// });
+$(".menu-btn").on("click", function () {
+  $("#nav").addClass("active");
+});
+$(".menu-close").on("click", function () {
+  $("#nav").removeClass("active");
+});

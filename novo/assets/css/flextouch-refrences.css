@@ -1,0 +1,226 @@
+.flextouch-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  min-height: 100vh;
+}
+.flextouch-wrapper > div {
+  width: 50%;
+  flex-grow: 1;
+}
+.flextouch-left {
+  background: #e9f3fd;
+}
+.flextouch-right-body {
+  min-height: calc(100vh - 35px);
+  width: 100%;
+  padding: 100px 50px 100px;
+  place-items: center;
+  display: flex;
+}
+.flextouch-logo img {
+  width: 45px;
+}
+.flextouch-title {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.flextouch-input-group {
+  min-width: auto;
+  max-width: 430px;
+}
+.flextouch-input-group input {
+  background: #fff;
+  width: 100%;
+  padding: 8px 17px;
+  border-radius: 6px;
+  color: #000;
+  font-size: 20px;
+  margin-right: 10px;
+  width: 100%;
+}
+.send-btn {
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  line-height: 1;
+  padding: 7px 29px;
+  background: #04b4dd;
+}
+.send-btn:hover {
+  background: #07a4c8;
+}
+.send-btn:hover:active {
+  opacity: 0.7;
+}
+.alert-text {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 12px;
+}
+.flextouch-right-center {
+  width: 100%;
+}
+
+/* Refrences */
+.ref-bg-title,
+.ref-sub-title,
+.ref-text {
+  color: #fff;
+  line-height: 1;
+}
+.ref-bg-title {
+  font-size: 37px;
+  font-weight: bold;
+}
+.ref-sub-title {
+  font-size: 20px;
+  margin: 22px 0;
+}
+.ref-text {
+  opacity: 0.9;
+  font-size: 13px;
+  line-height: 1.2;
+  overflow-y: auto;
+  height: 83%;
+  padding-right: 25px;
+  position: relative;
+}
+.ref-text .text {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.ref-center {
+  height: 65vh;
+  position: relative;
+}
+.ref-serial {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  line-height: 1;
+  color: #fff;
+  font-size: 14px;
+}
+/* Refrences */
+
+.ref-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Extra small devices (portrait phones, less than 767px) */
+@media (max-width: 767.98px) {
+  .flextouch-wrapper {
+    display: block;
+    padding-top: 80px;
+  }
+  .flextouch-wrapper > div {
+    width: 100%;
+  }
+  .flextouch-left {
+    height: 200px;
+  }
+  .flextouch-right {
+    min-height: calc(100vh - 280px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .flextouch-right-body {
+    padding: 50px 15px;
+    flex-grow: 1;
+    min-height: auto;
+  }
+  .flextouch-title {
+    font-size: 30px;
+  }
+  .flextouch-input-group {
+    min-width: auto;
+  }
+  .flextouch-logo img {
+    width: 34px;
+  }
+  .flextouch-input-group input {
+    padding: 8px 17px;
+    font-size: 18px;
+  }
+  .ref-center {
+    height: 44vh;
+  }
+  .ref-text {
+    height: 68%;
+  }
+  .ref-body {
+    padding: 20px 15px;
+  }
+  .ref-bg-title {
+    font-size: 33px;
+  }
+  .ref-sub-title {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  .ref-serial {
+    font-size: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .flextouch-right-body {
+    padding: 100px 30px 100px;
+  }
+  .flextouch-input-group input {
+    font-size: 18px;
+  }
+  .flextouch-right-center {
+    width: 100%;
+  }
+  .flextouch-input-group {
+    min-width: 100%;
+  }
+  .ref-center {
+    height: 59vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ref-center {
+    height: 61vh;
+  }
+  .ref-text {
+    height: 74%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .ref-text {
+    height: 75%;
+  }
+  .ref-center {
+    height: 63vh;
+  }
+}
+@media (min-width: 1400px) {
+  .flextouch-input-group {
+    max-width: 530px;
+  }
+}
