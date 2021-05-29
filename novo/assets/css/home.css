@@ -727,8 +727,8 @@
   }
   .shape-circle-border-logo {
     position: absolute;
-    top: -25px;
-    left: 1px;
+    top: -24px;
+    left: 0px;
   }
   .tab-row.active {
     padding-bottom: 0;
