@@ -566,6 +566,10 @@ nav {
 .auth-view-card.active {
   display: block !important;
 }
+.idx-header-res {
+  display: none;
+  padding: 0 15px;
+}
 /* Home */
 
 /* Footer */
@@ -693,17 +697,17 @@ footer {
     min-height: 277px;
     height: 300px;
     padding: 2px 2px 2px 0;
-    width: 360px !important;
+    /* width: 360px !important; */
     max-width: calc(100% - 20px);
   }
   .homepage-details {
     padding: 30px 15px;
   }
   .sub-title {
-    font-size: 17px;
+    font-size: 15px;
   }
   .badge {
-    width: 186px;
+    width: 162px;
     padding: 0;
   }
   .homepage-details .bg-title {
@@ -733,6 +737,12 @@ footer {
   }
   .homepage-details .text {
     font-size: 15px;
+  }
+  .idx-header-res {
+    display: block;
+  }
+  .idx-header {
+    display: none;
   }
   /* Index */
 

@@ -2,6 +2,7 @@
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
+  flex-wrap: wrap;
   min-height: 100vh;
 }
 .flextouch-wrapper > div {
@@ -10,6 +11,10 @@
 }
 .flextouch-left {
   background: #e9f3fd;
+  background-image: url("../img/video.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .flextouch-right-body {
   min-height: calc(100vh - 35px);
@@ -121,7 +126,7 @@
 /* Extra small devices (portrait phones, less than 767px) */
 @media (max-width: 767.98px) {
   .flextouch-wrapper {
-    display: block;
+    /* display: block; */
     padding-top: 61px;
   }
   .flextouch-wrapper > div {

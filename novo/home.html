@@ -26,6 +26,13 @@
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/home.css" />
+  <style>
+    @media (max-width: 767px) {
+      footer {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -178,7 +185,7 @@
 
                         <div class="shape-circle-border-logo">
                           <button id="shape-circle-retouch" class="shape-circle-btn">
-                            <img src="assets/img/icons/back-circle.svg" class="img-fluid" alt="" />
+                            <img src="assets/img/icons/retouch.svg" class="img-fluid" alt="" />
                           </button>
                         </div>
 
@@ -491,7 +498,12 @@
       $('.tab-child-card-wrapper').removeClass('active');
       $(tab).addClass('active');
       $("#circleTabTitle").addClass('active');
-      $("#circleTabTitle").append(title);
+      $("#circleTabTitle").html(title);
+    });
+
+    $("#shape-circle-retouch").on('click', function () {
+      $('.tab-child-card-wrapper').removeClass('active');
+      $("#circleTabTitle").removeClass('active');
     });
   </script>
 
