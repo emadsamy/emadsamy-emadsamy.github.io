@@ -617,10 +617,10 @@ footer {
 
   /* Navbar */
   nav {
-    padding: 17px 0;
+    padding: 12px 0;
   }
   .nav-logo img {
-    height: 40px;
+    height: 34px;
     filter: brightness(0) invert(1);
   }
   .menu-btn {
@@ -740,7 +740,7 @@ footer {
 
   /* Footer */
   footer {
-    padding: 9px 15px 9px 15px;
+    padding: 15px;
   }
   .footer-link {
     display: none;

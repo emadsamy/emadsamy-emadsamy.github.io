@@ -600,3 +600,161 @@
   text-align: center;
   margin-top: 5px;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Extra small devices (portrait phones, less than 767px) */
+@media (max-width: 767.98px) {
+  .home-wrapper {
+    display: block;
+  }
+  .home-wrapper > div {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .home-badge {
+    width: 130px;
+  }
+  .home-left .sub-title {
+    font-size: 12px;
+  }
+  .home-left {
+    position: static;
+    padding: 140px 50px 50px;
+    height: 180px;
+    background-size: cover;
+    background-position-y: -77px;
+  }
+  .home-wrapper {
+    padding-top: 61px;
+  }
+  .home-right-body {
+    padding: 30px 50px 10px;
+    min-height: auto;
+  }
+  .tab-card-title {
+    font-size: 24px;
+  }
+  .tab-card {
+    padding: 14px 13px 13px;
+  }
+  .tci-logo img {
+    margin-top: -2px;
+  }
+  footer {
+    display: none;
+  }
+  .tab-row {
+    margin-bottom: 20px;
+  }
+  .shape-circle-border {
+    width: 250px;
+    height: 250px;
+  }
+  .shape-circle-content {
+    padding: 19px 20px;
+  }
+  .sc-main-title {
+    font-size: 13px;
+    line-height: 1.1;
+  }
+  .sc-line {
+    height: 3px;
+    margin: 5px 0;
+  }
+  .sc-main-sub-title {
+    font-size: 11px;
+  }
+  .tab-shape-container {
+    position: static;
+  }
+  .tab-shape-circle-container {
+    padding-top: 40px;
+  }
+  .shape-circle-border-logo {
+    position: absolute;
+    top: -23px;
+    left: 4px;
+  }
+  .tab-row.active {
+    padding-bottom: 20px;
+  }
+  .shape-circle-center {
+    width: 50px;
+    height: 50px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .scrc-tab-3 {
+    bottom: -111px;
+    left: 50%;
+    transform: rotateZ(37deg) translateX(-50%);
+  }
+  .scrc-tab-2 {
+    top: -32px;
+    right: -47px;
+    transform: rotateZ(0deg);
+  }
+  .scr-title {
+    font-size: 15px;
+  }
+  .scrc-tab-2 .scr-title {
+    top: 86px;
+    transform: rotateZ(60deg);
+    left: 3px;
+  }
+  .scrc-tab-3 .scr-title {
+    top: 42px;
+    left: 19px;
+  }
+  .scrc-tab-1 .scr-title {
+    top: 81px;
+    transform: rotateZ(-100deg);
+  }
+  .tab-row.active-res {
+    display: none;
+  }
+  .tab-row.active.active-res {
+    display: block !important;
+  }
+  .shape-circle-tab-title {
+    left: calc(100% - 22px);
+    font-size: 15px;
+    min-width: 92px;
+    bottom: 100%;
+  }
+  .tab-child-card-wrapper .title {
+    font-size: 15px;
+  }
+  .circle-convertor-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .arrow-curve {
+    height: 31px;
+    left: 9px;
+  }
+  .tab-child-card-wrapper .title sup {
+    font-size: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+@media (min-width: 1400px) {
+}

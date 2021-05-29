@@ -463,10 +463,12 @@
       var parentOfThis = $(this).parents('.tab-row');
       if (parentOfThis.hasClass('active')) {
         $('.tab-row').removeClass('active');
+        $('.tab-row').removeClass('active-res');
         $(".tab-row-container").removeClass('none-center');
       } else {
         $('.tab-row').removeClass('active');
         parentOfThis.addClass('active');
+        $('.tab-row').addClass('active-res');
         $(".tab-row-container").addClass('none-center');
       }
     });

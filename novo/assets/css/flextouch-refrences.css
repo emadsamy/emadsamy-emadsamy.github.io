@@ -122,7 +122,7 @@
 @media (max-width: 767.98px) {
   .flextouch-wrapper {
     display: block;
-    padding-top: 80px;
+    padding-top: 61px;
   }
   .flextouch-wrapper > div {
     width: 100%;
@@ -156,7 +156,7 @@
     font-size: 18px;
   }
   .ref-center {
-    height: 44vh;
+    height: 42vh;
   }
   .ref-text {
     height: 68%;
