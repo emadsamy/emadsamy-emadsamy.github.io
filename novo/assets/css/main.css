@@ -553,7 +553,7 @@ nav {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 10px 18px;
   border-radius: 6px;
   color: #000;
   font-size: 20px;
@@ -566,6 +566,9 @@ nav {
 }
 .auth-view-card.active {
   display: block !important;
+}
+.auth-login input {
+  text-align: left;
 }
 .idx-header-res {
   display: none;
@@ -581,7 +584,7 @@ footer {
 }
 .footer-shape {
   position: absolute;
-  bottom: 95%;
+  bottom: 99%;
   right: 50px;
 }
 .footer-link {
@@ -928,4 +931,32 @@ footer {
     max-width: 1552px;
     margin: auto;
   } */
+
+  .homepage-details .bg-title {
+    font-size: 3vw;
+  }
+  .mini-title {
+    font-size: 1.2vw;
+  }
+  .homepage-details .text {
+    font-size: 1.1vw;
+  }
+  .homepage-view {
+    min-height: auto;
+    height: 31vw;
+    border-radius: 0 1000px 1000px 0;
+  }
+  .homepage-view-outer {
+    border-radius: 0 1000px 1000px 0;
+  }
+  .homepage-view-outer img {
+    object-fit: cover;
+    object-position: initial;
+  }
+  .auth-shape img {
+    height: 4vw;
+  }
+  .auth-view {
+    height: 4vw;
+  }
 }

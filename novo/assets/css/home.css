@@ -453,8 +453,8 @@
 }
 .shape-circle-tab-title {
   position: absolute;
-  bottom: 98%;
-  left: calc(100% - 36px);
+  bottom: 90%;
+  left: calc(100% - 60px);
   border-bottom: 3.5px solid #fff;
   line-height: 1;
   color: #fff;
@@ -781,10 +781,11 @@
     display: block !important;
   }
   .shape-circle-tab-title {
-    left: calc(100% - 27px);
+    left: calc(100% - 46px);
     font-size: 13px;
     min-width: 92px;
-    bottom: 98%;
+    bottom: 90%;
+    text-align: left;
   }
   .tab-child-card-wrapper .title {
     font-size: 15px;
@@ -1336,8 +1337,8 @@
     z-index: 10;
   }
   .shape-circle-tab-title {
-    bottom: 319px;
-    left: calc(100% - 51px);
+    bottom: 89%;
+    left: calc(100% - 71px);
     min-width: 102px;
     font-size: 17px;
   }
@@ -1407,7 +1408,7 @@
   }
   .shape-circle-border-logo {
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 39px;
   }
   .scrc-tab-3 {
@@ -1440,68 +1441,81 @@
     left: 53px;
   }
   .tab-child-card-wrapper .title {
-    font-size: 30px;
+    font-size: 34px;
   }
   .sc-line {
     margin: 13px 0;
   }
   .circle-convertor {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
   .circle-convertor-center {
-    font-size: 24px;
+    font-size: 31px;
   }
   .arrow-curve {
-    left: 50px;
+    left: 75px;
+  }
+  .tab-child-card-wrapper {
+    padding: 34px 20px;
   }
   .arrow-curve img {
-    width: 160px;
+    width: 163px;
   }
   .tab-shape-container {
     z-index: 10;
   }
   .shape-circle-tab-title {
-    bottom: 319px;
-    left: calc(100% - 51px);
-    min-width: 102px;
-    font-size: 17px;
+    bottom: 90%;
+    left: 80.2%;
+    min-width: 130px;
+    font-size: 19px;
   }
   .circle-progress-bar-wrapper {
-    width: 183px;
-    height: 183px;
+    width: 210px;
+    height: 210px;
   }
   .tab-row.active:last-of-type .tab-shape-container {
     left: 140%;
-    bottom: -253px;
+    bottom: -306px;
   }
   .circle-progress-bar-center input {
-    margin: 0;
-    font-size: 36px;
+    margin-top: -10px;
+    font-size: 46px;
   }
   .circle-head {
-    width: 212px;
-    height: 106px;
+    width: 256px;
+    height: 128px;
+    top: -29px;
+    border-radius: 138px 138px 0 0;
   }
   .circle-footer {
-    width: 212px;
-    height: 106px;
+    width: 256px;
+    height: 128px;
+    border-radius: 0 0 138px 138px;
   }
   .circle-line-right {
-    right: -14.2px;
-    bottom: 81px;
+    right: -22.2px;
+    bottom: 95px;
+    height: 66.7%;
   }
   .circle-progress-insert-btn {
-    top: 93px;
-    right: -47px;
+    top: 109px;
+    right: -61px;
+    font-size: 17px;
   }
   .circle-progress-enter-btn {
-    top: 94px;
-    left: -58px;
+    top: 104px;
+    left: -83px;
   }
   .circle-line-left {
-    left: -14.1px;
-    top: 127px;
+    left: -24.1px;
+    top: 141px;
+    height: 255px;
+  }
+  .circle-line-dart {
+    left: -47px;
+    top: 231px;
   }
   .tci-plus {
     bottom: -27px;
@@ -1518,5 +1532,193 @@
     height: 120px;
     font-size: 22px;
     line-height: 1;
+  }
+  .circle-convertor input {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .circle-progress-enter-btn .ent-title {
+    font-size: 17px;
+  }
+  .circle-progress-enter-btn {
+    font-size: 16px;
+  }
+  .circle-progress-enter-btn:after {
+    top: -7px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .tab-card {
+    width: 380px;
+  }
+  .tab-card-title {
+    font-size: 43px;
+  }
+  .shape-circle-border {
+    width: 440px;
+    height: 440px;
+  }
+  .sc-main-title {
+    font-size: 27px;
+  }
+  .sc-line {
+    height: 6px;
+  }
+  .sc-main-sub-title {
+    font-size: 23px;
+  }
+  .sc-icon {
+    padding-top: 11px;
+  }
+  .sc-icon img {
+    width: 98px;
+  }
+  .shape-circle-border-logo {
+    position: absolute;
+    top: -2px;
+    left: 39px;
+  }
+  .scrc-tab-3 {
+    bottom: -225px;
+  }
+  .scrc-tab-2 {
+    transform: rotateZ(-2deg);
+    right: -79px;
+  }
+  .scrc-tab-1 {
+    top: -18px;
+    left: 2px;
+    transform: rotateZ(12deg);
+  }
+  .scr-title {
+    font-size: 28px;
+  }
+  .scrc-tab-1 .scr-title {
+    top: 144px;
+    transform: rotateZ(-76deg);
+  }
+  .scrc-tab-2 .scr-title {
+    top: 155px;
+    transform: rotateZ(62deg);
+    left: 31px;
+  }
+  .scrc-tab-3 .scr-title {
+    transform: rotate(-37deg);
+    top: 87px;
+    left: 53px;
+  }
+  .tab-child-card-wrapper .title {
+    font-size: 34px;
+  }
+  .sc-line {
+    margin: 13px 0;
+  }
+  .circle-convertor {
+    width: 90px;
+    height: 90px;
+  }
+  .circle-convertor-center {
+    font-size: 31px;
+  }
+  .arrow-curve {
+    left: 75px;
+  }
+  .tab-child-card-wrapper {
+    padding: 34px 20px;
+  }
+  .arrow-curve img {
+    width: 163px;
+  }
+  .tab-shape-container {
+    z-index: 10;
+  }
+  .shape-circle-tab-title {
+    bottom: 90%;
+    left: 80.2%;
+    min-width: 130px;
+    font-size: 19px;
+  }
+  .circle-progress-bar-wrapper {
+    width: 230px;
+    height: 230px;
+  }
+  .tab-row.active:last-of-type .tab-shape-container {
+    left: 140%;
+    bottom: -370px;
+  }
+  .circle-progress-bar-center input {
+    margin-top: -10px;
+    font-size: 46px;
+  }
+  .circle-head {
+    width: 267px;
+    height: 141px;
+    top: -21px;
+    border-radius: 138px 138px 0 0;
+  }
+  .circle-footer {
+    width: 267px;
+    height: 141px;
+    border-radius: 0 0 138px 138px;
+  }
+  .circle-line-right {
+    right: -18.2px;
+    bottom: 104px;
+    height: 66.7%;
+  }
+  .circle-progress-insert-btn {
+    top: 129px;
+    right: -58px;
+    font-size: 17px;
+  }
+  .circle-progress-enter-btn {
+    top: 125px;
+    left: -77px;
+  }
+  .circle-line-left {
+    left: -18.1px;
+    top: 162px;
+    height: 307px;
+  }
+  .circle-line-dart {
+    left: -47px;
+    top: 286px;
+  }
+  .tci-plus {
+    bottom: -27px;
+  }
+  .tci-plus .icon {
+    font-size: 30px;
+  }
+  .tic-circle-shape {
+    width: 74px;
+    height: 74px !important;
+  }
+  .shape-circle-center {
+    width: 120px;
+    height: 120px;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .circle-convertor input {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .circle-progress-enter-btn .ent-title {
+    font-size: 17px;
+  }
+  .circle-progress-enter-btn {
+    font-size: 16px;
+  }
+  .circle-progress-enter-btn:after {
+    top: -7px;
+  }
+  .circle-progress-bar-container .title {
+    font-size: 21px;
+    margin-top: 6px;
+  }
+  .circle-progress-bar-container {
+    margin-bottom: 16px;
   }
 }
