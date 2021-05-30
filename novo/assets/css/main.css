@@ -477,6 +477,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: right;
   /* transform: scaleY(0.9); */
 }
 .badge {
@@ -919,4 +920,12 @@ footer {
   .container-fluid {
     /* max-width: 1400px; */
   }
+  /* .wrapper {
+    max-width: 1600px;
+    margin: auto;
+  }
+  .navbar {
+    max-width: 1552px;
+    margin: auto;
+  } */
 }
