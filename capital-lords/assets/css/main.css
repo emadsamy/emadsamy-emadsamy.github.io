@@ -1251,6 +1251,28 @@ footer {
 }
 /* Projects Slider */
 
+/* Search No Results */
+.search-no-results {
+  background: #fff;
+  padding: 15px 23px;
+}
+.snr-title {
+  margin-bottom: 5px;
+}
+.snr-title img {
+  width: 27px;
+}
+.snr-title span {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #000;
+}
+.snr-text {
+  font-size: 17px;
+}
+/* Search No Results */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* Home */

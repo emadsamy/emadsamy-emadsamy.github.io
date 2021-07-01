@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Capital Lords</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+
+<body>
+
+  <!-- Modal Filter -->
+  <div class="modal fade" id="modalSearchFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-s-top flex-center justify-content-between">
+            <button class="flex-center filter-title"><span class="icon-filter icon"></span>
+              <div class="title ml-3">Filters</div>
+            </button>
+            <button class="d-flex close-filter opacity-hover" data-dismiss="modal"><span
+                class="icon-cancel icon"></span></button>
+          </div>
+          <div class="modal-s-center">
+            <div class="modal-filter-grid-double">
+              <div class="modal-filter-dropdown">
+                <!-- Selectbox -->
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">All Locations</label>
+                  <select id="locations-modal">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="modal-filter-dropdown">
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type-modal">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalCheckboxContainer" class="modal-checkbox-container mt-4">
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <!-- if u want to check all inputs just add this class checkAll -->
+                  <div class="checkAll checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox1" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox1">Apartment
+                    </label>
+                  </div>
+
+                  <button class="checkbox-toggle-btn flex-center">
+                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                  </button>
+                </div>
+
+                <div class="multiple-checkbox-container">
+                  <div class="multiple-checkbox-grid">
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox2" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox2">Apartment
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox3" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox3">Duplex
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox4" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox4">Duplex
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox5" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox5">Penthouse
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox7" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox7">Twin House
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox8" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox8">Studio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <!-- if u want to check all inputs just add this class checkAll -->
+                  <div class="checkAll checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox9" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox9">Villa
+                    </label>
+                  </div>
+
+                  <button class="checkbox-toggle-btn flex-center">
+                    <div class="ml-2 mr-2">All Types</div> <span class="icon-chevron-down icon"></span>
+                  </button>
+                </div>
+
+                <div class="multiple-checkbox-container">
+                  <div class="multiple-checkbox-grid">
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox11" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox11">Villa
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox12" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox12">Stand Alone
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox13" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox13">TownHouse
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox14" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox14">I Villa
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox15" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox15">Palace
+                      </label>
+                    </div>
+
+                    <div class="checkbox-group flex-center">
+                      <div class="fake-checkbox">
+                        <input id="modalCheckbox10" type="checkbox" class="input-checkbox" />
+                        <div class="fake-cb-child">
+                          <span></span>
+                        </div>
+                      </div>
+                      <label class="checkbox-text" for="modalCheckbox10">Twin
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start Row -->
+              <div class="modal-checkbox-row">
+                <div class="checkbox-toggle-header flex-center-between">
+                  <div class="checkbox-group flex-center">
+                    <div class="fake-checkbox">
+                      <input id="modalCheckbox18" type="checkbox" class="input-checkbox" />
+                      <div class="fake-cb-child">
+                        <span></span>
+                      </div>
+                    </div>
+                    <label class="checkbox-text" for="modalCheckbox18">Chalet
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-price-range">
+              <div class="title">Price Range</div>
+              <input type="text" dir="rtl" data-drag-interval="false" class="js-range-slider-price" name="my_range"
+                value="" data-type="double" data-min="0" data-max="150000000" data-from="40000000" data-to="100000000"
+                data-grid="false" data-step="50000" />
+              <div class="modal-filter-grid-double">
+                <div class="mfgd-input">
+                  <div id="mfgdInputValPrice-1" class="mfgd-input-val mr-2"> </div> EGP
+                </div>
+                <div class="mfgd-input">
+                  <div id="mfgdInputValPrice-2" class="mfgd-input-val mr-2"> </div> EGP
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-price-range">
+              <div class="title">Area (m2)</div>
+              <input type="text" data-drag-interval="false" class="js-range-slider-meter" name="my_range" value=""
+                data-type="double" data-min="0" data-max="5000" data-from="1000" data-to="4000" data-grid="false"
+                data-step="50" />
+              <div class="modal-filter-grid-double">
+                <div class="mfgd-input">
+                  <div id="mfgdInputValArea-1" class="mfgd-input-val"> </div>
+                </div>
+                <div class="mfgd-input">
+                  <div id="mfgdInputValArea-2" class="mfgd-input-val"> </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-s-bottom">
+            <div class="modal-filter-grid-double mb-0">
+              <div class="button-default cancel-btn opacity-hover">
+                <button id="clearAll" class="justify-content-center width-fluid">Clear All</button>
+              </div>
+
+              <div class="button-default bt-black">
+                <button class="justify-content-center width-fluid">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Filter -->
+
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav id="nav" class="nav">
+      <div class="container-fluid">
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+          </div>
+
+          <div class="nav-icons flex-center">
+            <div class="nav-icon-btn nav-btn-select">
+              <div class="selectbox-slim selectbox-language">
+                <select id="changeLang">
+                  <option value="en">ENG</option>
+                  <option value="ar">عربي</option>
+                </select>
+              </div>
+            </div>
+            <div class="nav-icon-btn"><span class="icon-telephone icon"></span>
+              <a href="tel:01234567890" class="tel-dropdown">01234567890</a>
+            </div>
+            <div class="nav-icon-btn"><a href="login.html"><span class="icon-user icon"></span></a></div>
+            <div id="openMenu" class="nav-icon-btn">
+              <div class="menu-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <div id="menuContainer" class="menu-container">
+      <div class="menu-wrapper">
+        <div id="menuTop" class="menu-top">
+          <nav class="nav">
+            <div class="container-fluid">
+              <div class="navbar">
+                <div class="nav-logo">
+                  <a href="index.html"><img src="assets/img/logo-black.svg" class="img-fluid" alt="" /></a>
+                </div>
+
+                <div id="closeMenu" class="nav-icons flex-center">
+                  <div class="nav-icon-btn"><span class="icon-cancel black-color icon"></span></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div id="menuBody" class="menu-body">
+          <div class="container-fluid">
+            <div class="menu-body-row d-flex justify-content-between">
+              <div class="menu-sidebar">
+                <a href="about.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="ms-sub-title text-uppercase">About Us</div>
+                    <div class="title">Who we are</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="services.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="ms-sub-title text-uppercase">Our Services </div>
+                    <div class="title">Properties Management</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="contact.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="title">Contact us</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+
+                <a href="careers.html" class="ms-link flex-center">
+                  <div class="ms-text">
+                    <div class="title">Careers</div>
+                  </div>
+                  <div class="ms-icon">
+                    <span class="icon-arrow-right icon"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-body-cards">
+                <div class="menu-body-grid">
+                  <a href="projects.html?title=residential&desc=FIND YOUR <br /> VACATION HOME&color=4EC4E2&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
+                    <span class="icon-home icon"></span>
+                    <div class="mbg-title">Residential</div>
+                  </a>
+
+                  <a href="projects.html?title=medical&desc=FIND YOUR <br /> Medical HOME&color=e74c3c&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
+                    <span class="icon-hospital icon"></span>
+                    <div class="mbg-title">Medical</div>
+                  </a>
+
+                  <a href="projects.html?title=commercial&desc=FIND YOUR <br /> Commercial HOME&color=8e44ad&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
+                    <span class="icon-store icon"></span>
+                    <div class="mbg-title">Commercial </div>
+                  </a>
+
+                  <a href="projects.html?title=vacation&desc=FIND YOUR <br /> Vacation HOME&color=27ae60&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
+                    <span class="icon-beach icon"></span>
+                    <div class="mbg-title">Vacation Home</div>
+                  </a>
+
+                  <a href="projects.html?title=administrative&desc=FIND YOUR <br /> Administrative HOME&color=1abc9c&image=assets/img/projects.png"
+                    class="mbg-card flex-center">
+                    <span class="icon-resort icon"></span>
+                    <div class="mbg-title">Administrative </div>
+                  </a>
+
+                  <a href="projects.html" class="mbg-card flex-center">
+                    <span class="icon-diamond icon"></span>
+                    <div class="mbg-title">Exclusive Projects </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="menuBottom" class="menu-bottom">
+          <div class="container-fluid">
+            <div class="footer-bottom flex-center justify-content-between">
+              <div class="text black-color">Capital Lords 2021 © All rights reserved</div>
+              <div class="footer-b-links">
+                <a href="#">Cookies Policy</a>
+                <a href="#">Legal Notice</a>
+                <a href="#">Privacy Policy </a>
+                <a href="#">Sit map</a>
+              </div>
+              <div class="menu-socialmedia flex-center">
+                <div class="text ml-2 mr-2">Follow us on</div>
+                <div class="menu-social">
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon opacity-hover">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+
+    <!-- Content -->
+    <div class="wrapper-container">
+      <!-- Slider main container -->
+      <div id="headerScroller" class="home-header">
+        <div class="swiper-container home-swiper-container">
+
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-home-card">
+                <div class="slide-home-video">
+                  <video autoplay loop muted>
+                    <source src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4"
+                      type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="overlay"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
+                <div class="overlay"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-home-card" style="background-image: url('assets/img/home/slider-1.png');">
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Pagination And Arrows -->
+          <div class="container-fluid position-relative">
+            <div class="swiper-pagination-arrows">
+              <div class="swiper-arrows">
+                <button class="arrow-icon arrow-next"><span class="icon-arrow-right icon"></span></button>
+                <button class="arrow-icon arrow-prev"><span class="icon-arrow-left icon"></span></button>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- Search Filter -->
+          <div class="search-filter">
+            <div class="search-filter-container">
+              <div class="bg-title search-filter-header text-uppercase">Find your dream property.</div>
+
+              <div class="filter-slider-bar d-flex" style="display: none !important;">
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">I Want To</label>
+                  <select id="i-want-to">
+                    <!-- id for Run Select Box -->
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                    <option value="rent">Rent</option>
+                  </select>
+                </div>
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Property Type</label>
+                  <select id="property-type">
+                    <!-- id for Run Select Box -->
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="medical">Medical</option>
+                    <option value="vacation">Vacation</option>
+                  </select>
+                </div>
+
+                <div class="selectbox-slim">
+                  <label class="ss-label text-uppercase">Locations</label>
+                  <select id="locations">
+                    <!-- id for Run Select Box -->
+                    <option value="new-cairo">New Cairo</option>
+                    <option value="6-october">6 October</option>
+                    <option value="new-capital">New Capital</option>
+                  </select>
+                </div>
+
+                <!-- Filter Action -->
+                <div class="filter-bar-action flex-center">
+                  <div class="button-default bt-black flex-center-center width-fluid">
+                    <button id="actionTest" class="text-center width-fluid flex-center-center"><span
+                        class="icon-search icon"></span>
+                      Search</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-no-results">
+                <div class="snr-title flex-center">
+                  <img src="assets/img/icons/search-no-results.svg" class="img-fluid" alt="" />
+                  <span>No Results</span>
+                </div>
+                <div class="snr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quasi tempora odio
+                  ex voluptatibus. Sed rerum at eius nihil laudantium voluptatum molestias! Fugit magnam reprehenderit
+                  enim exercitationem eum dolorem officiis.</div>
+              </div>
+
+              <div class="search-filter-advanced">
+                <div class="d-inline-block">
+                  <button data-toggle="modal" data-target="#modalSearchFilter"
+                    class="advanced-search-link opacity-hover flex-center">
+                    <span class="asl-text text-uppercase">Advanced Search</span>
+                    <span class="icon-arrow-right icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Home Grid -->
+      <div class="home-grid-container">
+        <div class="container-fluid">
+          <div class="home-grid-double">
+            <a href="services.html" class="home-grid-card">
+              <img src="assets/img/home/card-1.png" class="img-fluid" alt="" />
+              <div class="home-grid-card-data gradient-easing">
+                <div class="bg-title text-uppercase">
+                  Manage Your Property<br /> with Capital Lords
+                  <span class="icon-arrow-right icon"></span>
+                </div>
+              </div>
+            </a>
+            <a href="projects.html" class="home-grid-card">
+              <img src="assets/img/home/card-2.png" class="img-fluid" alt="" />
+              <div class="home-grid-card-data gradient-easing">
+                <div class="bg-title text-uppercase">
+                  Find Your<br /> Vacation Home
+                  <span class="icon-arrow-right icon"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Projects -->
+      <div class="projects-container">
+        <div class="container-fluid">
+          <div class="projects-title bg-title text-center text-uppercase">Explore 300+ Real Estate Projects in
+            Egypt</div>
+          <div class="projects-grid">
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+            </a>
+            <a href="design-3.html" class="project-card">
+              <img src="assets/img/brands/midtown.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/madient-nasr.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/sodic.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/zed.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/mountain-view.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/hyde-prak.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-1.html" class="project-card">
+              <img src="assets/img/brands/marassi.png" class="img-fluid" alt="">
+            </a>
+            <a href="project-2.html" class="project-card">
+              <img src="assets/img/brands/palm-hills.png" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="projects-grid-button text-center">
+            <div class="d-inline-block">
+              <a href="projects.html" class="nl-btn flex-center-center">Explore <span
+                  class="icon-arrow-right icon"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Services & About Cards -->
+    <div class="services-about-container">
+      <div class="container-fluid">
+        <div class="sa-grid">
+
+          <div class="sa-card service-card">
+            <div class="sa-data">
+              <div class="width-fluid">
+                <div class="sa-sub-title flex-center text-uppercase">Our News
+                  <div class="sub-title-vline"></div>
+                </div>
+                <div class="bg-title mb-4 text-uppercase">Manage Your<br /> Property with<br /> Capital Lords </div>
+              </div>
+              <div class="button-default bt-black">
+                <a href="articles.html">Explore <span class="icon-arrow-right icon"></span></a>
+              </div>
+            </div>
+            <div class="sa-img">
+              <img src="assets/img/home/service.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="sa-card about-card">
+            <div class="sa-data">
+              <div class="width-fluid">
+                <div class="sa-sub-title flex-center text-uppercase">About us
+                  <div class="sub-title-vline"></div>
+                </div>
+                <div class="bg-title white-color mb-4 text-uppercase">
+                  Everything you need to know when you’re looking to buy, rent, or sell - all in one place.
+                </div>
+              </div>
+              <div class="button-default bt-white">
+                <a href="about.html">Explore <span class="icon-arrow-right icon"></span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Capital Lords</div>
+              <div class="footer-link"><a href="about.html">About</a></div>
+              <div class="footer-link"><a href="contact.html">Contact Us</a></div>
+              <div class="footer-link"><a href="careers.html">Careers</a></div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Services </div>
+              <div class="footer-link"><a href="#">Properties Management</a></div>
+              <div class="footer-link"><a href="#">Buy </a></div>
+              <div class="footer-link"><a href="#">Sell</a></div>
+              <div class="footer-link"><a href="#">Rent</a></div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-title">Projects</div>
+              <div class="footer-link"><a
+                  href="projects.html?title=residential&color=4EC4E2&image=assets/img/projects.png">Residential</a>
+              </div>
+              <div class="footer-link"><a
+                  href="projects.html?title=commercial&color=8e44ad&image=assets/img/projects.png">Commercial </a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=administrative&color=1abc9c&image=assets/img/projects.png">Administrative
+                </a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=medical&color=e74c3c&image=assets/img/projects.png">Medical</a></div>
+              <div class="footer-link"><a
+                  href="projects.html?title=vacation&color=27ae60&image=assets/img/projects.png">Vacation</a></div>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-title">News & Offers</div>
+              <div class="footer-contact-group mb-3">
+                <input type="text" placeholder="Your Email here" />
+                <div class="button-default bt-black">
+                  <button>Subscribe <span class="icon-arrow-right icon"></span></button>
+                </div>
+              </div>
+              <div class="text mb-4 white-color">
+                Sign up to receive exclusive news and offers about the latest launches
+              </div>
+              <div class="socialmedia flex-center justify-content-between white-color">
+                <div class="follow-text">Follow us on</div>
+                <div class="follow-line"></div>
+                <div class="social-icons">
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom flex-center justify-content-between">
+            <div class="text white-color">Capital Lords 2021 © All rights reserved</div>
+            <div class="footer-b-links">
+              <a href="#">Cookies Policy</a>
+              <a href="#">Legal Notice</a>
+              <a href="#">Privacy Policy </a>
+              <a href="#">Sit map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    // Swiper
+    new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.arrow-next',
+        prevEl: '.arrow-prev',
+      },
+      autoplay: false,
+      speed: 700,
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+
+    // Selectbox in swiper slider
+    new SlimSelect({
+      select: '#i-want-to',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#property-type',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#property-type-modal',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#locations',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+    new SlimSelect({
+      select: '#locations-modal',
+      showSearch: false,
+      onChange: (info) => {
+        console.log(info.value)
+      }
+    });
+
+  </script>
+</body>
+
+</html>
