@@ -1252,6 +1252,9 @@ footer {
 /* Projects Slider */
 
 /* Search No Results */
+#modalSearchFilter .search-no-results {
+  height: calc(100% - 187px);
+}
 .search-no-results {
   background: #fff;
   padding: 15px 23px;
