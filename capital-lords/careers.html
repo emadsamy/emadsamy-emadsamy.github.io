@@ -23,11 +23,14 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
-  <!-- Slim Select-->
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/about-services.css" />
+  <link rel="stylesheet" href="assets/css/careers.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
@@ -206,124 +209,158 @@
 
     <!-- Content -->
     <div class="wrapper-container">
-
-      <!-- About Header -->
-      <div class="about-header">
-        <img src="assets/img/about.png" class="img-fluid" alt="" />
+      <!-- Slider main container -->
+      <div id="headerScroller" class="home-header">
+        <div class="careers-header">
+          <div class="overlay"></div>
+          <div class="careers-data text-center">
+            <div class="bg-title">
+              We enable the world's most valuable <br /> personal transactions
+            </div>
+            <div class="careers-action mb-3">
+              <a href="connect.html" class="career-btn">Connect</a>
+              <button class="career-btn arrow-target" data-target="#job-openings" data-target-height="50">Job
+                openings</button>
+            </div>
+            <div class="d-inline-block">
+              <button data-target="#introduction" data-target-height="199"
+                class="career-down arrow-target flex-center-center"><span
+                  class="icon-chevron-down icon"></span></button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- About Header -->
 
-      <!-- About Container -->
-      <div class="about-container">
+      <div class="careers">
         <div class="container-fluid">
-          <div class="about-content">
-            <div class="about-flexable d-flex justify-content-between">
-              <div class="about-data">
-                <div class="about-text-container">
-                  <div class="sub-title">About Capital Lords</div>
-                  <div class="bg-title text-uppercase">Who we are </div>
-                  <div class="text">Capital Lords is a commercial real estate brokerage company, specializing in the
-                    sale and leasing of office, retail, industrial and the other unique commercial properties throughout
-                    Greater Cairo. We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.</div>
-                </div>
+          <div class="careers-content">
+            <div class="careers-st-container">
 
-                <div class="about-text-container">
-                  <div class="bg-title text-uppercase">What Makes Us Different?</div>
-                  <div class="text">Capital Lords is a commercial real estate brokerage company, specializing in the
-                    sale and leasing of office, retail, industrial and the other unique commercial properties throughout
-                    Greater Cairo. We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.
-                    We believe that an informed buyer or seller is an empowered one. We offer as much information online
-                    as posible, and our agents can fill in the gaps that data can’t provide by offering insights you can
-                    use throughout the home buying or selling process in Cairo.
-                  </div>
+              <div class="careers-socialmedia text-center">
+                <a href="#" target="_blank" class="social-icon linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>Linkedin</span>
+                </a>
+
+                <a href="#" target="_blank" class="social-icon instagram">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+
+                <a href="#" target="_blank" class="social-icon facebook">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+
+                <a href="#" target="_blank" class="social-icon youtube">
+                  <i class="fab fa-youtube"></i>
+                  <span>Youtube</span>
+                </a>
+              </div>
+
+              <div id="introduction" class="careers-text text-center">
+                <div class="bg-title">Join the JamesEdition family </div>
+                <div class="text text-left">JamesEdition is the World's Largest Luxury Marketplace, serving the needs of
+                  High-Net-Worth Individuals (HNWIs) in life's most valuable personal transactions.
+                  <br />
+                  <br />
+
+                  Every month one million people from the US, UK, Germany, France, Spain and many other countries from
+                  around the globe come to our site in the pursuit of luxury real estate and super cars, private jets,
+                  yachts, watches, extraordinary items and experiences in a catalog of more than 200,000 of the best
+                  listings from thousands of sellers worldwide.
+                  <br />
+                  <br />
+
+                  Our goal is to bring buyers and sellers together regardless of where they are in the world, enabling
+                  great deals to be made.
                 </div>
               </div>
 
-              <div class="about-sidebar">
-                <div class="download-btn mb-5">
-                  <a href="#" class="dl-btn text-center">Download Our Profile</a>
-                </div>
-
-                <div class="about-text-container">
-                  <div class="title text-uppercase">Vision & Mission</div>
-                  <div class="text">We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div class="about-team">
-              <div class="bg-title text-uppercase">Meet Our Team</div>
-              <div class="team-grid">
-                <div class="person-card">
-                  <img src="assets/img/team/person-1.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda </div>
-                    <div class="person-position">Chief Executive Officer</div>
+            <div id="job-openings" class="career-cards">
+              <div class="careers-grid">
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Mohamed Reda </div>
-                    <div class="person-position">General Manager </div>
+                </a>
+
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-3.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Ahmed El Zayat </div>
-                    <div class="person-position">Chief Executive Officer</div>
+                </a>
+
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-4.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Sales Manager </div>
+                </a>
+
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hany El Gohary </div>
-                    <div class="person-position">Sales Manager </div>
+                </a>
+
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-3.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Sales Manager </div>
+                </a>
+
+                <a href="view-job.html" class="career-card">
+                  <img
+                    src="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_800-v5/image_uploads/9860a561-35f4-484f-8ee0-125c60f70738/original.jpg"
+                    class="career-card-img img-fluid" />
+                  <div class="career-card-data">
+                    <div>
+                      <div class="career-card-data-position">(Junior) Business analyst</div>
+                      <div class="career-card-data-desc">Possibility to work fully remote</div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-1.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Chief Executive Officer</div>
-                  </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hany El Gohary </div>
-                    <div class="person-position">Sales Manager </div>
-                  </div>
-                </div>
+                </a>
+              </div>
+
+              <div class="career-grid-action pt-5 pb-4 text-center">
+                <a href="careers-current-jobs.html" class="career-btn">All Jobs</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- About Container -->
-
     </div>
 
     <!-- Footer -->
@@ -410,7 +447,9 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -421,6 +460,27 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
+  <script>
+    // Target Sections
+    $(".arrow-target").on("click", function () {
+      var target = $(this).attr("data-target");
+      var targetHeight = $(this).attr("data-target-height");
+      var spaceOfContainer = 0;
+      if (targetHeight) {
+        spaceOfContainer = targetHeight;
+      } else {
+        spaceOfContainer = 0;
+      }
+      $("html, body").animate(
+        {
+          // scrollTop: $("#" + target).top,
+          scrollTop: $(target).offset().top - spaceOfContainer,
+        },
+        "slow"
+      );
+    });
+
+  </script>
 </body>
 
 </html>

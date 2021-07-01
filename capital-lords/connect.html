@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Capital Lords</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Icomoon Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/connect.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Content -->
+    <div class="wrapper-container">
+      <div class="wrapper-connect">
+
+        <div class="connect-left">
+          <div class="connect-content">
+            <div class="connect-nav">
+              <a class="back-to-careers" href="careers.html"><span class="icon-home icon"></span></a>
+            </div>
+            <div class="connect-body">
+              <div class="connect-container register-connect text-center active">
+                <div class="connect-title mb-3">Connect with us </div>
+                <div class="connect-text mb-4">
+                  I have read the Privacy Policy and confirm that JamesEdition store my personal details to be able to
+                  contact me for job opportunities.
+                </div>
+                <form class="connect-form">
+                  <div class="connect-form-group mb-4">
+                    <input type="text" placeholder="Enter email" />
+                  </div>
+                  <button class="connect-form-btn">Connect</button>
+                </form>
+              </div>
+
+              <div class="connect-container login-connect text-center">
+                <div class="connect-title mb-3">Sign in </div>
+                <div class="connect-text mb-4">
+                  I have read the Privacy Policy and confirm that JamesEdition store my personal details to be able to
+                  contact me for job opportunities.
+                </div>
+                <form class="connect-form">
+                  <div class="connect-form-group mb-4">
+                    <input type="text" placeholder="Enter email" />
+                  </div>
+                  <button class="connect-form-btn">Sign In</button>
+                </form>
+              </div>
+            </div>
+            <div class="connect-footer text-center">
+              <div class="connect-foot-text"><span class="cft-msg">Already connected?</span> <button
+                  class="toggle-connect-btn">Sign
+                  in.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connect-right">
+          <div class="connect-benefits">
+
+            <div class="con-benefit-row">
+              <img src="assets/img/icons/love.svg" class="cbr-img img-fluid" alt="" />
+              <div>
+                <div class="cbr-title">
+                  Stand out from the crowd
+                </div>
+                <div class="cbr-text">
+                  Help us match your profile by telling us a bit more about yourself.
+                </div>
+              </div>
+            </div>
+
+            <div class="con-benefit-row">
+              <img src="assets/img/icons/bell.svg" class="cbr-img img-fluid" alt="" />
+              <div>
+                <div class="cbr-title">
+                  Job subscriptions
+                </div>
+                <div class="cbr-text">
+                  Be the first to know about our job openings
+                </div>
+              </div>
+            </div>
+
+            <div class="con-benefit-row">
+              <img src="assets/img/icons/comment.svg" class="cbr-img img-fluid" alt="" />
+              <div>
+                <div class="cbr-title">
+                  Add recommendations
+                </div>
+                <div class="cbr-text">
+                  Add people who can recommend you as a colleague.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle-connect-btn").on('click', function () {
+        $(".connect-container").toggleClass('active');
+        if ($(".login-connect").hasClass("active")) {
+          $(this).text('Connect with us.');
+          $('.cft-msg').text('No account?');
+        } else {
+          $(this).text('Sign in.');
+          $('.cft-msg').text('Already connected?');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -160,7 +160,7 @@
                   </div>
                 </a>
 
-                <a href="#" class="ms-link flex-center">
+                <a href="careers.html" class="ms-link flex-center">
                   <div class="ms-text">
                     <div class="title">Careers</div>
                   </div>
@@ -245,6 +245,137 @@
     </div>
     <!-- Menu -->
 
+    <!-- Modal Slider -->
+    <div class="modal-tab">
+      <div class="container-fluid">
+        <div class="modal-tab-container">
+          <div class="modal-tab-flexable">
+            <div class="modal-tab-content">
+              <!-- Photos Tab -->
+              <div id="photosTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable d-flex">
+                  <div class="modal-tab-normal-main-image">
+                    <img id="bgImageModalViewPhoto" src="assets/img/d2/d2-1.png" alt="" />
+                  </div>
+                  <div id="modalPhotosContainer" class="modal-tab-normal-images">
+                    <div class="modal-tab-overview">
+
+                      <div class="swiper-container swiper-thumb-photos swiper-wrapper-modal-tab">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" />
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Plan Tab -->
+              <div id="planTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable d-flex">
+                  <div class="modal-tab-normal-main-image">
+                    <img id="bgImageModalViewPlan" src="assets/img/plan/plan-1.png" alt="" />
+                  </div>
+                  <div id="modalPlanContainer" class="modal-tab-normal-images">
+                    <div class="modal-tab-overview">
+
+                      <div class="swiper-container swiper-thumb-plan swiper-wrapper-modal-tab">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/img/plan/plan-1.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/plan/plan-2.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/plan/plan-3.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/plan/plan-4.png" class="img-fluid" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/plan/plan-2.png" class="img-fluid" alt="" />
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Tab -->
+              <div id="videoTab" class="modal-project-tab">
+                <div class="ds-modal-tab-flexable md-video-container d-flex">
+                  <video id="videoPlayer"
+                    src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4"
+                    class="modal-video-player" poster="assets/img/d2/d2-1.png"></video>
+                  <div class="vp-overlay active">
+                    <button id="toggleVpBtn"><img src="assets/img/icons/play.svg" class="img-fluid" alt="" /></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-tab-actions">
+              <div class="modal-top-actions">
+                <button id="exitModalTabBtn" class="mss-btn mb-5"><span class="icon-cancel icon"></span></button>
+                <button class="mss-btn md-tab-btn" data-tab="photosTab"><span class="icon-photo icon"></span></button>
+                <button class="mss-btn md-tab-btn" data-tab="planTab"><span
+                    class="icon-plan icon-sm icon"></span></button>
+                <button class="mss-btn md-tab-btn" data-tab="videoTab"><span
+                    class="icon-video icon-sm icon"></span></button>
+              </div>
+
+              <div class="modal-tab-tel">
+                <a href="tel:01234567890" data-toggle="tooltip" data-placement="left" title="01234567890"
+                  class="mss-btn mss-btn-black md-tab-btn"><span class="icon-telephone icon"></span></a>
+              </div>
+
+              <div class="modal-tab-arrows-fraction">
+                <div class="mtaf mtaf-photos">
+                  <div class="photos-fraction-counter fraction-counter"></div>
+                  <div class="modal-tab-arrows">
+                    <button id="mssPrevPhotoBtn" class="mss-btn-arrow"><span
+                        class="icon-arrow-left icon"></span></button>
+                    <button id="mssNextPhotoBtn" class="mss-btn-arrow"><span
+                        class="icon-arrow-right icon"></span></button>
+                  </div>
+                </div>
+
+                <div class="mtaf mtaf-plan">
+                  <div class="plan-fraction-counter fraction-counter"></div>
+                  <div class="modal-tab-arrows">
+                    <button id="mssPrevPlanBtn" class="mss-btn-arrow"><span
+                        class="icon-arrow-left icon"></span></button>
+                    <button id="mssNextPlanBtn" class="mss-btn-arrow"><span
+                        class="icon-arrow-right icon"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Slider -->
+
     <!-- Content -->
     <div class="wrapper-container">
       <div class="p2-container">
@@ -285,7 +416,10 @@
                 <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
                 <div class="d2-image-view"><img src="assets/img/d2/d2-2.png" class="img-fluid" alt="" /></div>
                 <div class="d2-image-view"><img src="assets/img/d2/d2-3.png" class="img-fluid" alt="" /></div>
-                <div class="d2-image-view"><img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" /></div>
+                <div class="d2-image-view-mi d2-image-view">
+                  <img src="assets/img/d2/d2-1.png" class="img-fluid" alt="" />
+                  <button data-tab="photosTab" class="md-tab-btn more-imgs flex-center-center">+5</button>
+                </div>
               </div>
 
               <div class="p2-actions">
@@ -651,7 +785,7 @@
               <div class="footer-title">Capital Lords</div>
               <div class="footer-link"><a href="#">About</a></div>
               <div class="footer-link"><a href="#">Contact Us</a></div>
-              <div class="footer-link"><a href="#">Careers</a></div>
+              <div class="footer-link"><a href="careers.html">Careers</a></div>
             </div>
             <div class="footer-links">
               <div class="footer-title">Services </div>
@@ -728,6 +862,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/projects.js"></script>
   <script>
     // Toggle Images View
     $(".d2-image-view").on('click', function () {

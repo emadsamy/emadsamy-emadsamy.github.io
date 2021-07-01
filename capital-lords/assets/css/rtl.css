@@ -32,7 +32,10 @@ body.rtl .selectz-row,
 body.rtl .p2-info-row,
 body.rtl .ss-label,
 body.rtl .ss-option,
-body.rtl .news-wrapper {
+body.rtl .news-wrapper,
+body.rtl .application-title,
+body.rtl .connect-nav,
+body.rtl .con-benefit-row {
   text-align: right;
 }
 body.rtl .select-chevron-div {
@@ -281,6 +284,45 @@ body.rtl .article-img {
 }
 /* Articles */
 
+/* Careers */
+body.rtl .careers-text,
+/* body.rtl .careers-text .text, */
+body.rtl .career-text-card,
+body.rtl .career-text-card .bg-title,
+body.rtl .career-list-card .bg-title {
+  text-align: right !important;
+}
+body.rtl .careers-socialmedia .social-icon i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+body.rtl .social-icon span {
+  text-align: right;
+}
+body.rtl .career-list {
+  padding-left: 0 !important;
+  padding-right: 1.5rem !important;
+}
+body.rtl .application-checkbox {
+  display: flex;
+}
+body.rtl .app-checkbox-card {
+  margin-right: 0;
+  margin-left: 5px;
+}
+body.rtl .app-fake-checkbox {
+  left: auto;
+  right: 19px;
+}
+body.rtl .iti.iti--allow-dropdown {
+  display: flex;
+}
+.cbr-img {
+  margin-right: 0;
+  margin-left: 15px;
+}
+/* Careers */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   body.rtl .modal-tab-container {
@@ -332,6 +374,10 @@ body.rtl .article-img {
   }
   body.rtl .p2-avatar {
     margin-left: 15px;
+  }
+  body.rtl .careers-socialmedia .social-icon i {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

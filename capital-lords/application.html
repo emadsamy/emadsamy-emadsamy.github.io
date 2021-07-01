@@ -23,11 +23,16 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Convert Images Svg To Icons -->
   <link rel="stylesheet" href="assets/css/icomoon.css" />
-  <!-- Slim Select-->
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/about-services.css" />
+  <link rel="stylesheet" href="assets/css/careers.css" />
+  <link rel="stylesheet" href="assets/css/application.css" />
+  <link rel="stylesheet" href="assets/css/intlTelInput.css" />
   <link rel="stylesheet" href="assets/css/rtl.css" />
 </head>
 
@@ -206,124 +211,187 @@
 
     <!-- Content -->
     <div class="wrapper-container">
-
-      <!-- About Header -->
-      <div class="about-header">
-        <img src="assets/img/about.png" class="img-fluid" alt="" />
-      </div>
-      <!-- About Header -->
-
-      <!-- About Container -->
-      <div class="about-container">
-        <div class="container-fluid">
-          <div class="about-content">
-            <div class="about-flexable d-flex justify-content-between">
-              <div class="about-data">
-                <div class="about-text-container">
-                  <div class="sub-title">About Capital Lords</div>
-                  <div class="bg-title text-uppercase">Who we are </div>
-                  <div class="text">Capital Lords is a commercial real estate brokerage company, specializing in the
-                    sale and leasing of office, retail, industrial and the other unique commercial properties throughout
-                    Greater Cairo. We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.</div>
-                </div>
-
-                <div class="about-text-container">
-                  <div class="bg-title text-uppercase">What Makes Us Different?</div>
-                  <div class="text">Capital Lords is a commercial real estate brokerage company, specializing in the
-                    sale and leasing of office, retail, industrial and the other unique commercial properties throughout
-                    Greater Cairo. We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.
-                    We believe that an informed buyer or seller is an empowered one. We offer as much information online
-                    as posible, and our agents can fill in the gaps that data can’t provide by offering insights you can
-                    use throughout the home buying or selling process in Cairo.
-                  </div>
-                </div>
-              </div>
-
-              <div class="about-sidebar">
-                <div class="download-btn mb-5">
-                  <a href="#" class="dl-btn text-center">Download Our Profile</a>
-                </div>
-
-                <div class="about-text-container">
-                  <div class="title text-uppercase">Vision & Mission</div>
-                  <div class="text">We believe that an informed buyer or seller is an empowered one. We offer as much
-                    information online as posible, and our agents can fill in the gaps that data can’t provide by
-                    offering insights you can use throughout the home buying or selling process in Cairo.
-                  </div>
-                </div>
-              </div>
+      <!-- Slider main container -->
+      <div id="headerScroller" class="home-header">
+        <div class="careers-header">
+          <div class="overlay"></div>
+          <div class="careers-data text-center">
+            <div class="sub-title mb-3">Apply for</div>
+            <div class="bg-title">
+              Business Intelligence Engineer
             </div>
+            <div class="sub-title"> Fully Remote </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="about-team">
-              <div class="bg-title text-uppercase">Meet Our Team</div>
-              <div class="team-grid">
-                <div class="person-card">
-                  <img src="assets/img/team/person-1.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda </div>
-                    <div class="person-position">Chief Executive Officer</div>
+      <div class="careers">
+        <div class="container-fluid">
+          <div class="careers-content">
+            <div class="careers-st-container">
+
+              <div class="application-container">
+                <form>
+                  <div class="application-row">
+                    <div class="application-title mb-2">How would you rate your SQL skills from 1 to 10, with 10 being
+                      an expert?*
+                    </div>
+                    <div class="application-range text-center">
+                      <div class="application-range-count">-</div>
+                      <div class="application-range-dash">-</div>
+                      <input type="text" dir="rtl" data-drag-interval="false" class="js-range-slider-skills"
+                        name="my_range" value="" data-type="single" data-min="1" data-max="10" data-from="1"
+                        data-grid="false" data-step="1" />
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Mohamed Reda </div>
-                    <div class="person-position">General Manager </div>
+
+                  <div class="application-row">
+                    <div class="application-title mb-2">Have you - at least to some extent - worked with a UNIX/Linux
+                      system?*
+                    </div>
+                    <div class="application-checkbox">
+                      <div class="app-checkbox-card">
+                        <label for="unix-yes">
+                          <input id="unix-yes" type="radio" name="unix" />
+                          <span class="app-fake-checkbox"></span>
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="app-checkbox-card">
+                        <label for="unix-no">
+                          <input id="unix-no" type="radio" name="unix" />
+                          <span class="app-fake-checkbox"></span>
+                          No
+                        </label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-3.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Ahmed El Zayat </div>
-                    <div class="person-position">Chief Executive Officer</div>
+
+                  <div class="application-row">
+                    <div class="application-title mb-2">Do you have knowledge in Python?*
+                    </div>
+                    <div class="application-checkbox">
+                      <div class="app-checkbox-card">
+                        <label for="python-yes">
+                          <input id="python-yes" type="radio" name="python" />
+                          <span class="app-fake-checkbox"></span>
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="app-checkbox-card">
+                        <label for="python-no">
+                          <input id="python-no" type="radio" name="python" />
+                          <span class="app-fake-checkbox"></span>
+                          No
+                        </label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-4.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Sales Manager </div>
+
+                  <div class="application-row">
+                    <div class="application-title mb-2">Do you have experience with Airflow?*
+                    </div>
+                    <div class="application-checkbox">
+                      <div class="app-checkbox-card">
+                        <label for="airflow-yes">
+                          <input id="airflow-yes" type="radio" name="airflow" />
+                          <span class="app-fake-checkbox"></span>
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="app-checkbox-card">
+                        <label for="airflow-no">
+                          <input id="airflow-no" type="radio" name="airflow" />
+                          <span class="app-fake-checkbox"></span>
+                          No
+                        </label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hany El Gohary </div>
-                    <div class="person-position">Sales Manager </div>
+
+                  <div class="form-fields">
+                    <div class="form-row">
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="application-title mb-2">First name*
+                        </div>
+                        <div class="form-group-row">
+                          <input type="text" class="form-group-input" placeholder="Jane" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="application-title mb-2">Last name*
+                        </div>
+                        <div class="form-group-row">
+                          <input type="text" class="form-group-input" placeholder="Doe" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="application-title mb-2">Email*
+                        </div>
+                        <div class="form-group-row">
+                          <input type="text" class="form-group-input" placeholder="jane@example.com" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="application-title mb-2">Phone
+                        </div>
+                        <div class="form-group-row">
+                          <input type="tel" id="telephone" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 mb-4">
+                        <div class="application-title mb-2">Upload CV
+                        </div>
+                        <div class="form-group-row form-group-row-file">
+                          <input class="input-file" type="file" />
+                          <div class="upload-file-card">
+                            <span>Drop your file or <u>Upload</u></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 mb-4">
+                        <div class="application-title mb-2">Additional files
+                        </div>
+                        <div class="form-group-row form-group-row-file">
+                          <input class="input-file" type="file" />
+                          <div class="upload-file-card">
+                            <span>Drop your file or <u>Upload</u></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 mb-4">
+                        <div class="application-title mb-2">Cover letter
+
+                        </div>
+                        <div class="form-group-row">
+                          <textarea type="text" rows="3" class="form-group-input"
+                            placeholder="Write your letter…"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 mb-4">
+                        <div class="form-group-row-submit mt-5 text-center">
+                          <button class="application-submit">Submit application</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-3.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Sales Manager </div>
-                  </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-1.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hossam Reda</div>
-                    <div class="person-position">Chief Executive Officer</div>
-                  </div>
-                </div>
-                <div class="person-card">
-                  <img src="assets/img/team/person-2.png" class="img-fluid" alt="" />
-                  <div class="person-data">
-                    <div class="person-name">Hany El Gohary </div>
-                    <div class="person-position">Sales Manager </div>
-                  </div>
-                </div>
+                </form>
               </div>
+
             </div>
           </div>
         </div>
       </div>
-      <!-- About Container -->
-
     </div>
 
     <!-- Footer -->
@@ -410,7 +478,9 @@
   <!-- Scripts -->
   <!-- Jquery V 3.3.1 -->
   <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+
   <!-- Popper Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -419,8 +489,39 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Intl Tel Flags -->
+  <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+  <script src="assets/js/intlTelInput-jquery.min.js"></script>
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
+  <script>
+    // Telephone
+    $(document).ready(function () {
+      // jQuery 
+      $("#telephone").intlTelInput({
+        allowDropdown: true,
+        // if there is just a dial code in the input: remove it on blur, and re-add it on focus
+        autoHideDialCode: true,
+        initialCountry: "eg", //change according to your own country.      
+        utilsScript: "assets/js/utils.js",
+        autoPlaceholder: "polite",
+      });
+    });
+
+    // Range 
+    $(".js-range-slider-skills").ionRangeSlider({
+      onStart: function (data) {
+        $(".application-range-count").text(data.from);
+      },
+      onChange: function (data) {
+        $(".application-range-count").text(data.from);
+      },
+      onUpdate: function (data) {
+        $(".application-range-count").text(data.from);
+      },
+    });
+
+  </script>
 </body>
 
 </html>
