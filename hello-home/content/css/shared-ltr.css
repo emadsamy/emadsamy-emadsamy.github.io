@@ -6144,6 +6144,41 @@ div.multiselect-dropdown {
 .view-adv-brand img {
   height: auto;
 }
+.home-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 20px;
+}
+.offers-home-header {
+  margin-bottom: 25px !important;
+}
+.hfg-card {
+  display: flex;
+  align-items: center;
+}
+.hfg-card img {
+  width: 27px;
+  margin-right: 10px;
+}
+.hfg-title,
+.hfg-show-all button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+.hfg-show-all {
+  margin-top: 15px;
+}
+.hfg-show-all button {
+  border: 1px solid #777;
+  background: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+.hfg-show-all img {
+  margin-right: 10px;
+}
 /* Areas */
 
 /*------------ end search  ------------*/
@@ -6450,6 +6485,43 @@ footer nav .navbar-nav .nav-link:hover {
     gap: 20px;
   }
   /* Areas */
+
+  /* View Products (Details) */
+  .details .slider-for-contint .details-larg-button .Register-but {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .Ask-but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Ask-but svg {
+    width: 22px;
+    height: 20px;
+  }
+  .bed.col-auto svg,
+  .bathrom.col-auto svg,
+  .area.col-auto svg {
+    width: 22px;
+  }
+  .details .offers-home .offers-home-header {
+    margin-top: 50px !important;
+  }
+  .hfg-title, .hfg-show-all button {
+    font-size: 11px;
+  }
+  .hfg-card img {
+    width: 19px;
+    margin-right: 6px;
+  }
+  .home-features-grid {
+    gap: 13px;
+  }
+  .hfg-card {
+    margin-bottom: 14px;
+  }
+  /* View Products (Details) */
   
 }
 @media screen and (max-width: 992px) {
@@ -6927,6 +6999,9 @@ footer nav .navbar-nav .nav-link:hover {
   .areas-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
+  }
+  .offers-home-header {
+    margin-top: 33px !important;
   }
   /* Areas */
 
