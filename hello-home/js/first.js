@@ -103,8 +103,8 @@ var prev = document.getElementById("preve");
 var next = document.getElementById("nexte");
 var close = document.getElementById("closee");
 var currentImgInx = 0;
-var tottal= myImages2.length
- document.getElementById("tottal").innerHTML= tottal
+var tottal= myImages2.length;
+document.getElementById("tottal").innerHTML= tottal;
 for (var i = 0; i < myImages2.length; i++) {
 
     myImages2[i].addEventListener("click", showLightBox)
