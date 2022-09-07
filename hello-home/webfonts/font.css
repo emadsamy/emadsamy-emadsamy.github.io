@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'NeoSansArabic-Bold';
+  src: url('NeoSansArabic-Bold.svg#NeoSansArabic-Bold') format('svg'),
+       url('NeoSansArabic-Bold.ttf') format('truetype'),
+       url('NeoSansArabic-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSansArabicBold';
+  src: url('NeoSansArabicBold.eot');
+  src: url('NeoSansArabicBold.eot?#iefix') format('embedded-opentype'),
+       url('NeoSansArabicBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
