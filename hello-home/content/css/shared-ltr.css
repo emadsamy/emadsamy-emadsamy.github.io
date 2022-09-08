@@ -4773,6 +4773,9 @@ body {
   width: 24px !important;
   left: -6px;
 }
+.hlm-btn {
+  border-radius: 10px;
+}
 
 .filter-section .form-select:focus {
   border: none;
@@ -5022,6 +5025,18 @@ body {
   height: 116px !important;
   border: 1px solid #D4D4D4;
   border-radius: 15px;
+}
+.soi-container .slick-slide.slick-current.slick-active > div:first-of-type img {
+  border-radius: 18px 18px 0 18px !important ;
+}
+.soi-container .slick-slide.slick-current.slick-active > div:last-of-type img {
+  border-radius: 18px 0 18px  18px !important ;
+}
+.soi-container .slick-slide.slick-active > div:first-of-type img {
+  border-radius: 18px 18px 18px 0 !important ;
+}
+.soi-container .slick-slide.slick-active > div:last-of-type img {
+  border-radius: 0 18px 18px 18px  !important ;
 }
 .our-home .regular .slick-prev,
 .our-home .regular .slick-next {
@@ -6510,9 +6525,6 @@ footer nav .navbar-nav .nav-link:hover {
     overflow: hidden;
     border-radius: 20px;
   }
-  .Guests-go span {
-    display: none;
-  }
   .our-home .Guests-section .Guests-go::after {
     right: 5px;
     top: 3px;
@@ -6603,7 +6615,7 @@ footer nav .navbar-nav .nav-link:hover {
     font-size: 11px;
   }
   .hfg-card img {
-    width: 19px;
+    width: 22px;
     margin-right: 6px;
   }
   .home-features-grid {
@@ -6611,6 +6623,9 @@ footer nav .navbar-nav .nav-link:hover {
   }
   .hfg-card {
     margin-bottom: 14px;
+  }
+  .loc-video {
+    margin-top: 15px;
   }
   /* View Products (Details) */
   
@@ -6935,7 +6950,7 @@ footer nav .navbar-nav .nav-link:hover {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-gap: 12.52rem;
-    gap: 25px;
+    gap: 15px;
   }
   .bc-pss {
     display: none !important;
@@ -6943,20 +6958,41 @@ footer nav .navbar-nav .nav-link:hover {
   .proto {
     font-weight: 600;
     font-size: 9px;
+    padding-top: 5px;
+  }
+  .apartment-d {
+    margin-bottom: 10px;
   }
   .proto-name-app {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 13px;
+  }
+  .details .about-dev img {
+    width: 80px;
+    border-radius: 10px;
+  }
+  .about-dev-img {
+    margin-right: 10px;
+  }
+  .details .about-dev h3 {
+    margin-bottom: 2px !important;
+  }
+  .details .about-dev p {
+    font-size: 12px;
+  }
+  .about-dev-url {
+    font-size: 14px;
   }
   .bed.col-auto svg, .bathrom.col-auto svg, .area.col-auto svg {
     width: 17px;
-    margin-right: 2px !important;
+    margin-right: 7px !important;
   }
   .ad-card {
     margin-right: 5px;
   }
   .area-details {
     padding-bottom: 0;
+    margin-bottom: 20px;
   }
   .offers-home {
     margin-top: 20px;
@@ -6970,6 +7006,13 @@ footer nav .navbar-nav .nav-link:hover {
   }
   .details .offers-home .offers-home-header {
     margin-top: 0 !important;
+  }
+  .reg-ask-btns .Ask-but,
+  .reg-ask-btns .Register-but {
+    height: 42px;
+  }
+  .reg-ask-btns button img {
+    width: 19px;
   }
   /* View Product */
 }
