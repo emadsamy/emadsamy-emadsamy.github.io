@@ -6965,7 +6965,7 @@ footer nav .navbar-nav .nav-link:hover {
   }
   .proto-name-app {
     font-size: 14px;
-    margin-right: 13px;
+    margin-right: 6px;
   }
   .details .about-dev img {
     width: 80px;
@@ -6984,15 +6984,19 @@ footer nav .navbar-nav .nav-link:hover {
     font-size: 14px;
   }
   .bed.col-auto svg, .bathrom.col-auto svg, .area.col-auto svg {
-    width: 17px;
-    margin-right: 7px !important;
+    width: 14px;
+    margin-right: 2px !important;
   }
   .ad-card {
     margin-right: 5px;
+    font-size: 10px;
   }
   .area-details {
     padding-bottom: 0;
     margin-bottom: 20px;
+  }
+  .vp-video .head {
+    font-size: 17px;
   }
   .offers-home {
     margin-top: 20px;
@@ -7189,7 +7193,7 @@ footer nav .navbar-nav .nav-link:hover {
     width: 18px !important;
   }
   .proto-name-app {
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 10px;
     width: 100%;
   }
