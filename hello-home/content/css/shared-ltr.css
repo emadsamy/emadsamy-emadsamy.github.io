@@ -5398,6 +5398,9 @@ div.multiselect-dropdown {
   overflow: hidden;
   border-radius: 15px;
 }
+.serv-sub-title {
+  color: #afafaf !important;
+}
 .servce .our-mission .smallQus {
   font-family: "Dubai-Medium";
   font-size: 2rem;
@@ -6847,7 +6850,21 @@ footer nav .navbar-nav .nav-link:hover {
   .servce .mainbuton .mainOwner-but, .servce .mainbuton a {
     font-size: 2.5rem;
   }
+  .servce .experince-sec h3,
+  .aue-para {
+    text-align: center;
+  }
+  .aue-text {
+    font-size: 23px !important;
+  }
   /* Services */
+
+  /* Contact */
+  .contact h2.title {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+  }
+  /* Contact */
 
   /* Filters */
   .filters-selectbox-container {
@@ -7028,7 +7045,7 @@ footer nav .navbar-nav .nav-link:hover {
     left: -30px;
   }
   .details .lightbox-contaner #nexte {
-    right: -30px !important;
+    right: -30px !important ;
   }
   /* View Product */
 }
