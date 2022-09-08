@@ -7018,6 +7018,18 @@ footer nav .navbar-nav .nav-link:hover {
   .reg-ask-btns button img {
     width: 19px;
   }
+  .details .lightbox-contaner .lightbox-item {
+    width: 90% !important;
+  }
+  .details .lightbox-contaner #closee {
+    left: 0 !important;
+  }
+  .details .lightbox-contaner #preve {
+    left: -30px;
+  }
+  .details .lightbox-contaner #nexte {
+    right: -30px !important;
+  }
   /* View Product */
 }
 
