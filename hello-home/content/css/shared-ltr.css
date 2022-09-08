@@ -5802,9 +5802,6 @@ div.multiselect-dropdown {
 .details .details-slider .slick-next:before {
   content: url(../../App_Images/right-arrow.png) !important;
 }
-.details .apartment-d {
-  border-bottom: 1px solid #D4D4D4 !important;
-}
 .details .optian-details .total-salary {
   font-family: "Dubai-Regular";
   font-size: 1.2rem;
@@ -5958,7 +5955,7 @@ div.multiselect-dropdown {
 }
 .details .offers-home .offers-home-header {
   font-family: "Dubai-Medium";
-  font-size: 1.26rem;
+  font-size: 21px;
   line-height: 1.3rem;
   overflow: visible;
   color: #000;
@@ -6105,7 +6102,7 @@ div.multiselect-dropdown {
 }
 .details .about-dev p {
   font-family: "DubaiW23-Light";
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.2em;
   overflow: visible;
   color: #000;
@@ -6117,6 +6114,100 @@ div.multiselect-dropdown {
   overflow: visible;
   color: #000;
 }
+
+/* View Product */
+.apartment-d {
+  margin-bottom: 45px;
+}
+.reg-ask-btns {
+  width: 100%;
+}
+.reg-ask-btns > a {
+  width: 48.5%;
+}
+.reg-ask-btns button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reg-ask-btns button img {
+  width: 23px;
+  margin-right: 10px;
+}
+.slider.slider-nav {
+  padding: 0 3px !important;
+}
+.vp-grid,
+.pd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 25px;
+}
+.reg-ask-btns .Register-but {
+background-color: #000;
+font-family: "Dubai-Regular";
+font-size: 1.2rem;
+line-height: 1rem;
+overflow: visible;
+color: #fff;
+height: 53px;
+}
+.reg-ask-btns .Ask-but {
+background-color: #52BA64;
+font-family: "Dubai-Regular";
+font-size: 1.2rem;
+line-height: 1rem;
+overflow: visible;
+color: #fff;
+height: 53px;
+}
+.slick-slide.slick-current.slick-active div,
+.slick-slide.slick-current.slick-active div + .slick-slide.slick-active div {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.slider.slider-nav {
+  padding: 0 !important;
+}
+.soi-container img {
+  height: 165px;    
+}
+.vp-slider img {
+  height: 414px
+}
+.details .offers-home .Similar {
+  margin-top: 50px;
+}
+.proto {
+  font-weight: 600;
+  font-size: 13px;
+}
+.proto-name-app {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.about-dev-img {
+  margin-right: 15px;
+}
+.about-dev-details h3 {
+  font-weight: bold;
+}
+.area-details {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc
+}
+.about-dev-url {
+  color: #555;
+  font-size: 17px;
+}
+.about-dev-url:hover {
+  color: #000;
+}
+/* View Product */
 
 /* Areas */
 .areas-grid {
@@ -6837,6 +6928,50 @@ footer nav .navbar-nav .nav-link:hover {
     display: block !important;
   }
   /* Navbar */
+
+  /* View Product */
+  .vp-grid,
+  .pd-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 12.52rem;
+    gap: 25px;
+  }
+  .bc-pss {
+    display: none !important;
+  }
+  .proto {
+    font-weight: 600;
+    font-size: 9px;
+  }
+  .proto-name-app {
+    font-size: 12px;
+    margin-right: 13px;
+  }
+  .bed.col-auto svg, .bathrom.col-auto svg, .area.col-auto svg {
+    width: 17px;
+    margin-right: 2px !important;
+  }
+  .ad-card {
+    margin-right: 5px;
+  }
+  .area-details {
+    padding-bottom: 0;
+  }
+  .offers-home {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .reg-ask-btns > a {
+    height: 42px;
+  }
+  .vp-video {
+    margin-top: 20px;
+  }
+  .details .offers-home .offers-home-header {
+    margin-top: 0 !important;
+  }
+  /* View Product */
 }
 
 @media screen and (max-width: 992px) {
@@ -6995,15 +7130,34 @@ footer nav .navbar-nav .nav-link:hover {
   }
   /* Brands */
 
-  /* Areas */
+  /* View Product */
   .areas-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
   }
   .offers-home-header {
-    margin-top: 33px !important;
+    margin-top: 0 !important;
   }
-  /* Areas */
+  .reg-ask-btns .Register-but,
+  .reg-ask-btns .Ask-but {
+    font-size: 14px !important;
+  }
+  .reg-ask-btns button img {
+    width: 18px !important;
+  }
+  .proto-name-app {
+    font-size: 14px;
+    margin-right: 10px;
+    width: 100%;
+  }
+  .ad-card svg {
+    width: 18px;
+    margin-right: 5px !important;
+  }
+  .area-details {
+    flex-wrap: wrap;
+  }
+  /* View Product */
 
 }
 
@@ -7079,6 +7233,13 @@ footer nav .navbar-nav .nav-link:hover {
   .areas-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+  }
+  .proto-name-app {
+    margin-right: 10px;
+  }
+  .ad-card svg {
+    margin-right: 6px !important;
+    width: 20px;
   }
   /* Areas */
   
