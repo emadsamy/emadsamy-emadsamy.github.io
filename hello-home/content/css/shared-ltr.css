@@ -43,19 +43,19 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #fff;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #52BA64;
 }
 
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: #F09337;
 }
 
@@ -5083,6 +5083,47 @@ body {
 .our-home .regular .slick-next:before {
   content: url(../../App_Images/right-arrow.png) !important;
 }
+.single-selectbox {
+  border: none;
+  margin: 0 0.9rem !important;
+  width: calc(100% - 1.8rem);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.ss-main .ss-single-selected {
+  height: auto;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.ss-single-selected .placeholder {
+  color: #000;
+  font-size: 14px;
+  overflow: auto !important;
+  text-overflow: unset !important;
+  flex: auto !important;
+  cursor: pointer !important;
+  background: none !important;
+  opacity: 1 !important;
+  line-height: 2 !important;
+}
+.single-selectbox .ss-main .ss-single-selected.ss-open-below {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ss-content .ss-list .ss-option {
+  border-bottom: 1px solid #dcdee2;
+}
+.ss-content .ss-list .ss-option:last-of-type {
+  border-bottom: none
+}
+.single-selectbox .ss-content {
+  margin: 3px 0 0;
+}
+.ss-content .ss-list .ss-option.ss-highlighted, .ss-content .ss-list .ss-option:hover {
+  background-color: #545454;
+}
 
 /* Start New Filters */
 .filters-container {
@@ -6769,6 +6810,18 @@ footer nav .navbar-nav .nav-link:hover {
   .details .lightbox-contaner #preve, .details .lightbox-contaner #nexte {
     border: 0;
   }
+  /* Home */
+  .ss-single-selected .placeholder,
+  .ss-single-selected .ss-arrow {
+    padding: 0 !important;
+  }
+  .ss-single-selected .placeholder {
+    font-size: 13px;
+  }
+  .ss-content .ss-list .ss-option {
+    font-size: 12px;
+  }
+  /* Home */
 
   /* About */
   .about .about-mainimg img {
@@ -6881,6 +6934,7 @@ footer nav .navbar-nav .nav-link:hover {
   }
   .filter-card span {
     padding: 0 10px;
+    font-size: 13px;
   }
   .multiselect-dropdown-list input {
     height: 1em !important;
