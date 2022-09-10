@@ -11,6 +11,29 @@ $('.navbar-close-btn').on('click', function () {
   $('.navbar-burger-btn').addClass('active');
 });
 
+$(function () {
+  // Read More Function
+  $(".read-more-btn").on("click", function () {
+    var content = $(this)
+      .parents(".read-more-parent")
+      .find(".read-more-content");
+    content.text(content.attr("data-text"));
+    $(this).css("display", "none");
+  });
+
+  $(".read-more-content").each(function () {
+    var length = $(this).attr("data-length");
+    var strToInt = parseInt(length);
+    $(this).attr("data-text", $(this).text());
+    $(this).text($(this).text().substr(0, strToInt));
+  });
+});
+
+// Hideen Preloader After Page Loadded
+$(window).on('load', function() {
+  $('body, html').css('overflow', 'visible');
+  $('#preloader').fadeOut(1000);
+});
 
 
 var myImages = Array.from(document.querySelectorAll(".slider-for img"));

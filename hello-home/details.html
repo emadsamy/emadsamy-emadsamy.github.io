@@ -57,6 +57,14 @@
 
 <body class="bg-white">
 
+    <!-- PreLoader -->
+    <div id="preloader" class="preloader">
+        <div class="overlay">
+                <img  src="App_Images/loader.svg" class="preloader-icon img-fluid" />
+        </div>
+    </div>
+    <!-- PreLoader -->
+
     <div class="navabr-container">
         <div class="container">
             <div class="navbar-flexable d-flex justify-content-between align-items-center">
@@ -159,15 +167,12 @@
 
             <div class="lightbox-contaner  justify-content-center align-items-center">
                 <div class="lightbox-item d-flex align-items-center justify-content-between">
-                    <i id="closee" class="fas fa-times border-0"> close</i>
-                    <i id="preve" class=" m-3 fas fa-arrow-left"></i>
-                    <i id="nexte" class="m-3 fas fa-arrow-right"></i>
-                    <p class="counters"><span id="curentt">-</span>/ <span id="tottal">tottal</span></p>
-
+                    <i id="closee" class="fas fa-times border-0"> <span>Close</span></i>
+                    <i id="preve" class="icon-chevron m-3 fas fa-chevron-left"></i>
+                    <i id="nexte" class="icon-chevron m-3 fas fa-chevron-right"></i>
+                    <p class="counters"><span id="curentt">-</span> / <span id="tottal">tottal</span></p>
                 </div>
             </div>
-
-
 
 
             <div class="view-product-container">
@@ -202,6 +207,7 @@
                             <h3><img class="img-fluid rounded-12" style="width: 100%;" src="App_Images/detilsmal4.png" alt="">
                             </h3>
                         </div>
+                        
                     </div>
 
                     <!-- Slider Other Images View -->
@@ -335,10 +341,14 @@
                                 <h3>
                                     About Developer
                                 </h3>
-                                <p class="">Marassi is the unrivaled coastal destination of Egypt’s north coast; extending
-                                    over 6.5
-                                    million sqm of impeccably-planned seaside indulgence. Featuring 5 beaches, 23 residential
-                                    villages,</p>
+                                <div class="read-more-parent">
+                                    <span class="read-more-content" data-length="200">Marassi is the unrivaled coastal destination of Egypt’s north coast; extending
+                                        over 6.5
+                                        million sqm of impeccably-planned seaside indulgence. Featuring 5 beaches, 23 residential
+                                        villages
+                                    </span>
+                                    <button class="read-more-btn"> ...Read More</button> 
+                                </div>
                                 <a class="about-dev-url" href="https://www.emaarmisr.com" target="_blank">www.emaarmisr.com</a>
                             </div>
                         </div>
@@ -397,12 +407,14 @@
                     <div class="justify-content-between loc-video">
                         <div class="">
                             <p class="head mb-3">Where you’ll be</p>
-                            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=cairo,egypt&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedmapgenerator.com/">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                            <div class="mapouter"><div class="gmap_canvas">
+                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=cairo,egypt&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedmapgenerator.com/">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+                            </div>
                         </div>
                     </div>
 
                     <div class="vp-video">
-                        <div class="d-flex mb-3 align-items-center">
+                        <div class="wat-vid-title d-flex mb-3 align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30.294" height="19.089" viewBox="0 0 30.294 19.089">
                                 <path id="video-camera" d="M29.98,1.7a.642.642,0,0,0-.635-.012l-6.951,3.8V3.209A3.213,3.213,0,0,0,19.184,0H3.209A3.213,3.213,0,0,0,0,3.209V15.88a3.213,3.213,0,0,0,3.209,3.209H19.184a3.213,3.213,0,0,0,3.209-3.209V13.644l6.951,3.8a.642.642,0,0,0,.949-.563V2.254A.642.642,0,0,0,29.98,1.7ZM21.109,15.88a1.927,1.927,0,0,1-1.925,1.925H3.209A1.928,1.928,0,0,1,1.284,15.88V3.209A1.928,1.928,0,0,1,3.209,1.284H19.184A1.928,1.928,0,0,1,21.11,3.209Zm7.9-.086-6.617-3.613V6.949L29.01,3.336Zm0,0" fill="#707070"/>
                               </svg>
@@ -410,8 +422,13 @@
                             <p class="head mb-0 ms-2">
                                 Watch the video</p>
                         </div>
-                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-                        </iframe>
+                        <!-- <iframe class="embed-iframe-vid" width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe> -->
+                        <div class="vp-static-video">
+                            <video autoplay="" loop="" muted="">
+                                <source src="https://cdn.emaarmisr.com/wp-content/uploads/2021/04/Belle-Vie-TEXT-TOP.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
 
 
@@ -984,6 +1001,9 @@
     </footer>
 
     <script async>
+
+
+
         document.addEventListener("DOMContentLoaded", function () {
             const lazyLoad = function () {
                 let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
