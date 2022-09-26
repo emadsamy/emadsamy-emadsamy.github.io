@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>View Profile</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Font (Poppins) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Swiper Js Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Slim Select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css"></link>
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/view-profile.css" />
+</head>
+
+<body>
+
+  <!-- Add Services / Task Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content navbar-modal">
+        <div class="nbm-title text-center">Listing a service or task?</div>
+        <div class="nbm-grid">
+          <a href="#" class="nbm-card text-center">
+            <span class="icon-service icon"></span>
+            <div class="nbm-card-title">List a service</div>
+            <div class="nbm-card-text text">If you are a service provider and want to show your services to the customers.</div>
+          </a>
+
+          <a href="#" class="nbm-card text-center">
+            <span class="icon-task icon"></span>
+            <div class="nbm-card-title">List a task</div>
+            <div class="nbm-card-text text">If your are a customer and looking for someone to do a task for you.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Services / Task Modal -->
+
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav id="nav" class="nav">
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-left">
+            <a href="index.html"><div class="logo-text">Good @</div></a>
+          </div>
+
+          <div class="nav-right">
+            <button class="button-default" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa-reguler fa-plus icon"></i> Add Service / Task
+            </button>
+            <div class="nav-noti"> <!-- Notification -->
+              <div class="dropdown noti-container">
+                <button class="btn dropdown-toggle nnc-btn" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-noti-box">
+                    <span class="icon-notification icon">
+                      <span class="noti-circle"></span>
+                    </span>
+                  </div>
+                </button>
+                <div class="dropdown-menu noti-dropdown">
+                  <!-- Notifications Date -->
+                  <div class="noti-dp-date">Today</div>
+                  <div class="noti-users">
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-1.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-2.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid more-noti" src="assets/img/icons/other-notification.svg" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">5 New Service Around! <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Check the latest Electric work services Around you.</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+                  </div>
+
+                  <!-- Notifications Date -->
+                  <div class="noti-dp-date">Yesterday</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-user-menu"> <!-- User Menu -->
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-user-box d-flex align-items-center">
+                    <img class="img-fluid circle" src="assets/img/user.jpg" alt="" />
+                    <div class="nav-user-name">Chris Bailey</div>
+                    <span class="icon-arrow-bottom icon"></span>
+                  </div>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item num-row" href="profile.html"> <span class="icon-user icon"></span> <span class="num-title">My Account</span></a>
+                  <a class="dropdown-item num-row" href="services.html"> <span class="icon-services icon"></span> <span class="num-title">My Services</span></a>
+                  <a class="dropdown-item num-row" href="favorites.html"> <span class="icon-heart-empty icon"></span> <span class="num-title">My Favorites</span></a>
+                  <a class="dropdown-item num-row" href="logout.html"> <span class="icon-logout icon"></span> <span class="num-title">Logout</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="wrapper-container wrapper-with-top">
+      <div class="view-profile-container">
+        <div class="container">
+          <div class="view-profile-wrraper">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb-container flex-between-vh mb-4">
+              <div aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="view-profile.html">Service Providers</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Alan Hayes</li>
+                </ol>
+              </div>
+
+              <div class="share-btn ">
+                <button class="btn btn-gray flex-center-vh"><span class="icon-share icon mr-2"></span> Share</button>
+              </div>
+            </div>
+            <!-- Breadcrumb -->
+
+            <!-- View Profile -->
+            <div class="view-profile-flexable flex-between-h">
+              <!-- User Card -->
+              <div class="view-profile-user-card text-center">
+                <div class="vpuc-body">
+                  <button class="ns-like">
+                    <span class="icon-heart-empty icon-unlike icon"></span>
+                    <span class="icon-heart-full icon-like icon"></span>
+                  </button>
+                  <div class="pro-user-view">
+                    <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                  </div>
+                  <div class="pro-name title mb-2">Craig McDonald</div>
+                  <div class="rating-container mb-2 justify-content-center">
+                    <span class="icon-star-empty icon gold"></span>
+                    <span class="icon-star-empty icon gold"></span>
+                    <span class="icon-star-empty icon gold"></span>
+                    <span class="icon-star-empty icon gold"></span>
+                    <span class="icon-star-empty icon"></span>
+                    <span class="rating-count">(4.0)</span>
+                  </div>
+                  <div class="pro-date">based on 8 ratings</div>
+                  <div class="pro-type">Plumbing, Gardening</div>
+                  <div class="vpuc-action mt-5">
+                    <a href="tel:201212345745" class="btn btn-bg"><span class="icon-call icon mr-2"></span> Contact Provider</a>
+                  </div>
+                </div>
+              </div>
+              <!-- User Card -->
+
+              <!-- User Services -->
+              <div class="view-profile-services">
+                <div class="title">Available Services</div>
+                <div class="vpuc-tabs mt-3 mb-3">
+                  <button class="btn vpuc-tab-btn ptab-btn active">All</button>
+                  <button class="btn vpuc-tab-btn ptab-btn">Plumbing</button>
+                  <button class="btn vpuc-tab-btn ptab-btn">Gardening</button>
+                </div>
+
+                <!-- Services Container -->
+                <div class="vps-container mb-5">
+                  <!-- Row -->
+                  <div class="vps-row">
+                    <div class="vps-view">
+                      <div class="swiper vps-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-4.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-2.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-3.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-1.png" alt="" />
+                          </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="vps-pagination flex-center-vh"></div>
+                      </div>
+                    </div>
+
+                    <div class="vps-details">
+                      <button class="ns-like">
+                        <span class="icon-heart-empty icon-unlike icon"></span>
+                        <span class="icon-heart-full icon-like icon"></span>
+                      </button>
+                      <div class="title mb-2">Consectetur neque lobortis</div>
+                      <div class="vps-price">Start From $10</div>
+                      <div class="vps-type mb-2">Gardening</div>
+                      <div class="vps-location flex-center-v">
+                        <span class="icon-location icon mr-1"></span>
+                        8km away
+                      </div>
+                      <div class="vps-action text-right pt-2">
+                        <a href="view-product.html" class="btn btn-gray">View Services</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="vps-row">
+                    <div class="vps-view">
+                      <div class="swiper vps-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-1.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-3.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-2.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-4.png" alt="" />
+                          </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="vps-pagination flex-center-vh"></div>
+                      </div>
+                    </div>
+
+                    <div class="vps-details">
+                      <button class="ns-like">
+                        <span class="icon-heart-empty icon-unlike icon"></span>
+                        <span class="icon-heart-full icon-like icon"></span>
+                      </button>
+                      <div class="title mb-2">Consectetur neque lobortis</div>
+                      <div class="vps-price">Start From $10</div>
+                      <div class="vps-type mb-2">Gardening</div>
+                      <div class="vps-location flex-center-v">
+                        <span class="icon-location icon mr-1"></span>
+                        8km away
+                      </div>
+                      <div class="vps-action text-right pt-2">
+                        <a href="view-product.html" class="btn btn-gray">View Services</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="vps-row">
+                    <div class="vps-view">
+                      <div class="swiper vps-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-3.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-4.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-1.png" alt="" />
+                          </div>
+                          <div class="swiper-slide vps-slide">
+                            <img class="img-fluid vps-slide-view" src="assets/img/products/product-2.png" alt="" />
+                          </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="vps-pagination flex-center-vh"></div>
+                      </div>
+                    </div>
+
+                    <div class="vps-details">
+                      <button class="ns-like">
+                        <span class="icon-heart-empty icon-unlike icon"></span>
+                        <span class="icon-heart-full icon-like icon"></span>
+                      </button>
+                      <div class="title mb-2">Consectetur neque lobortis</div>
+                      <div class="vps-price">Start From $10</div>
+                      <div class="vps-type mb-2">Gardening</div>
+                      <div class="vps-location flex-center-v">
+                        <span class="icon-location icon mr-1"></span>
+                        8km away
+                      </div>
+                      <div class="vps-action text-right pt-2">
+                        <a href="view-product.html" class="btn btn-gray">View Services</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+                </div>
+                <!-- Services Container -->
+
+                <!-- Reviews Container -->
+                <div class="vpr-container">
+
+                  <!-- Profile Reviews -->
+                  <div class="view-product-reviews">
+                    <div class="title mb-3">Reviews</div>
+                    <div class="vpr-grid">
+                      <!-- Reviews Rate & Progress Bar -->
+                      <div class="vpr-badge">
+                        <div class="vpr-sub-badge flex-center-v">
+                          <div class="vpr-counter">
+                            <div class="vpr-counter-cricle flex-center-vh mb-3">
+                              <div class="text-center">
+                                <div class="vpr-rate-count d-block">4.0</div>
+                                <div class="vpr-users-count d-block">34 Reviews</div>
+                              </div>
+                            </div>
+
+                            <div class="vpr-rate">
+                              <div class="rating-container flex-center-vh mb-3">
+                                <span class="icon-star-empty icon gold"></span>
+                                <span class="icon-star-empty icon gold"></span>
+                                <span class="icon-star-empty icon gold"></span>
+                                <span class="icon-star-empty icon gold"></span>
+                                <span class="icon-star-empty icon"></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Progress Bar -->
+                          <div class="vpr-progressbars">
+                            <!-- Progress Bar Row -->
+                            <div class="progress-bar-row">
+                              <div class="pbr-title title">Service Quality</div>
+                              <div class="flex-progress flex-between-vh">
+                                <div class="progress width-fluid">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress-count-rate ml-3">4.0</div>
+                              </div>
+                            </div>
+                            <!-- Progress Bar Row -->
+
+                            <!-- Progress Bar Row -->
+                            <div class="progress-bar-row">
+                              <div class="pbr-title title">Service Time</div>
+                              <div class="flex-progress flex-between-vh">
+                                <div class="progress width-fluid">
+                                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress-count-rate ml-3">4.0</div>
+                              </div>
+                            </div>
+                            <!-- Progress Bar Row -->
+
+                            <!-- Progress Bar Row -->
+                            <div class="progress-bar-row">
+                              <div class="pbr-title title">Accuracy</div>
+                              <div class="flex-progress flex-between-vh">
+                                <div class="progress width-fluid">
+                                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress-count-rate ml-3">4.0</div>
+                              </div>
+                            </div>
+                            <!-- Progress Bar Row -->
+
+                            <!-- Progress Bar Row -->
+                            <div class="progress-bar-row">
+                              <div class="pbr-title title">Communication</div>
+                              <div class="flex-progress flex-between-vh">
+                                <div class="progress width-fluid">
+                                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress-count-rate ml-3">4.0</div>
+                              </div>
+                            </div>
+                            <!-- Progress Bar Row -->
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Reviews Rate & Progress Bar -->
+
+                      <!-- Reviews Comments -->
+                      <div class="vpr-comments-container">
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper. Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper. Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper. Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue  porta risus id neque  porta risus id neque  porta risus id neque  porta risus id neque  porta risus id neque
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- Comment Row -->
+                        <div class="vpr-comment-row">
+                          <a href="view-profile.html" class="vprc-user flex-center-v mb-3">
+                            <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                            <div class="vprcu-details">
+                              <div class="vprcu-title title">Kathryn Mendoza</div>
+                              <div class="vprcu-date text">February 2021</div>
+                            </div>
+                          </a>
+
+                          <div class="rating-container mb-3">
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon gold"></span>
+                            <span class="icon-star-empty icon"></span>
+                            <span class="rating-count">(4.0)</span>
+                          </div>
+
+                          <div class="read-more-parent">
+                            <span class="vprc-text text read-more-content" data-length="300">
+                              Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.
+                            </span>
+                            <button class="read-more-btn"> ...Show More</button>
+                          </div>
+                        </div>
+                        <!-- Comment Row -->
+
+                        <!-- View More Action -->
+                        <div class="view-more-comments text-center">
+                          <button id="viewMoreBtn" class="btn btn-simple">View More</button>
+                        </div>
+                        <!-- View More Action -->
+                        
+                      </div>
+                      <!-- Reviews Comments -->
+
+                    </div>
+                  </div>
+                  <!-- Profile Reviews -->
+
+                </div>
+                <!-- Reviews Container -->
+              </div>
+              <!-- User Services -->
+            </div>
+            <!-- View Profile -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="index.html"><div class="logo-text">Good at</div></a>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-title">Services</div>
+              <div class="footer-link"><a href="#">House Work</a></div>
+              <div class="footer-link"><a href="#">Home Caring</a></div>
+              <div class="footer-link"><a href="#">Artistic</a></div>
+              <div class="footer-link"><a href="#">Cooking / Baking</a></div>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-title">Support</div>
+              <div class="footer-link"><a href="contact.html">Contact Us</a></div>
+              <div class="footer-link"><a href="about.html">About Us</a></div>
+              <div class="footer-link"><a href="#">How Good At Works</a></div>
+              <div class="footer-link"><a href="privacy.html">Privacy Policy</a></div>
+            </div>
+
+            <div class="footer-contact">
+              <div class="footer-title">Follow us</div>
+              <div class="socialmedia">
+                <div class="social-icons d-flex">
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="choose-country">
+                  <div class="cc-title">Select Country</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-actions">
+              <button class="btn btn-bg">Became A Provider</button>
+            </div>
+
+          </div>
+
+          <div class="footer-bottom">
+            <div class="fb-text">&copy; 2021 Good at, All Rights Received.</div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.js"></script>
+
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/fontawesome.js"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    // Main Profile Tabs
+    $(function () {
+      $(".ptab-btn").on('click', function () {
+        var id = $(this).attr("id");
+        $(this).addClass('active').siblings().removeClass("active");
+        $(`.pc-tab[data-tab-profile="#${id}"]`).addClass("active").siblings().removeClass("active");
+      });
+    });
+
+
+    $(function () {
+        const swiper = new Swiper('.vps-swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          spaceBetween: 15,
+
+          // If we need pagination
+          pagination: {
+            el: '.vps-pagination',
+            clickable: true
+          },
+        });
+      });
+  </script>
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >= 80) {
+        $('.vpuc-body').addClass('active-fixed');
+      } else {
+        $('.vpuc-body').removeClass('active-fixed');
+      }
+    });
+    $(window).on("load", function () {
+      if ($(window).scrollTop() >= 80) {
+        $('.vpuc-body').addClass('active-fixed');
+      } else {
+        $('.vpuc-body').removeClass('active-fixed');
+      }
+    });
+  </script>
+</body>
+
+</html>

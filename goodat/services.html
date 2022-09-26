@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="description" content="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Title -->
+  <title>Services</title>
+
+  <!-- Links -->
+  <!-- Project Shortcut Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Font (Poppins) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <!-- Bootstrap V 4.1.3 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <!-- Swiper Js Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- Convert Images Svg To Icons -->
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <!-- Slim Select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css"></link>
+  <!-- Range Slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
+  </link>
+  <!-- Toast -->
+  <link rel="stylesheet" href="assets/css/toast.css" />
+  <!-- Map -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!-- Wizard Steps -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.css">
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/services.css" />
+</head>
+
+<body>
+
+  <!-- Add Services / Task Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content navbar-modal">
+        <div class="nbm-title text-center">Listing a service or task?</div>
+        <div class="nbm-grid">
+          <a href="#" class="nbm-card text-center">
+            <span class="icon-service icon"></span>
+            <div class="nbm-card-title">List a service</div>
+            <div class="nbm-card-text text">If you are a service provider and want to show your services to the customers.</div>
+          </a>
+
+          <a href="#" class="nbm-card text-center">
+            <span class="icon-task icon"></span>
+            <div class="nbm-card-title">List a task</div>
+            <div class="nbm-card-text text">If your are a customer and looking for someone to do a task for you.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Services / Task Modal -->
+
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav id="nav" class="nav">
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-left">
+            <a href="index.html"><div class="logo-text">Good @</div></a>
+          </div>
+
+          <div class="nav-right">
+            <button class="button-default" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa-reguler fa-plus icon"></i> Add Service / Task
+            </button>
+            <div class="nav-noti"> <!-- Notification -->
+              <div class="dropdown noti-container">
+                <button class="btn dropdown-toggle nnc-btn" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-noti-box">
+                    <span class="icon-notification icon">
+                      <span class="noti-circle"></span>
+                    </span>
+                  </div>
+                </button>
+                <div class="dropdown-menu noti-dropdown">
+                  <!-- Notifications Date -->
+                  <div class="noti-dp-date">Today</div>
+                  <div class="noti-users">
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-1.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-2.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid" src="assets/img/users/user-3.png" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">Tyler Hart <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Added a new Gardening service check it now!</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+
+                    <!-- User Notification Row -->
+                    <div class="noti-user-row flex-center-vh">
+                      <img class="img-fluid more-noti" src="assets/img/icons/other-notification.svg" alt="" />
+                      <div class="nsr-details">
+                        <div class="nsr-title flex-between-vh">5 New Service Around! <span class="nsr-date">12:30 PM</span></div>
+                        <div class="nsr-text">Check the latest Electric work services Around you.</div>
+                      </div>
+                    </div>
+                    <!-- User Notification Row -->
+                  </div>
+
+                  <!-- Notifications Date -->
+                  <div class="noti-dp-date">Yesterday</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-user-menu"> <!-- User Menu -->
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-user-box d-flex align-items-center">
+                    <img class="img-fluid circle" src="assets/img/user.jpg" alt="" />
+                    <div class="nav-user-name">Chris Bailey</div>
+                    <span class="icon-arrow-bottom icon"></span>
+                  </div>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item num-row" href="profile.html"> <span class="icon-user icon"></span> <span class="num-title">My Account</span></a>
+                  <a class="dropdown-item num-row" href="services.html"> <span class="icon-services icon"></span> <span class="num-title">My Services</span></a>
+                  <a class="dropdown-item num-row" href="favorites.html"> <span class="icon-heart-empty icon"></span> <span class="num-title">My Favorites</span></a>
+                  <a class="dropdown-item num-row" href="logout.html"> <span class="icon-logout icon"></span> <span class="num-title">Logout</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="wrapper-container wrapper-without-top">
+      <div class="services-container">
+        <div class="container">
+          <div class="services-header flex-center-v mb-3">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb-container">
+              <div aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Requesting A Task</li>
+                </ol>
+              </div>
+            </div>
+            <!-- Breadcrumb -->
+          </div>
+
+          <!-- Services Content -->
+          <div class="services-content">
+            <div id="demo" class="services-flexable d-flex">
+              <div class="ser-steps text-center flex-center-vh">
+                <div class="steps-cards">
+                  <button data-step-target="step1" class="step-card-btn active">
+                    <div class="step-logo flex-center-vh"><span class="icon-form icon"></span></div>
+                    <div class="step-center-line"></div>
+                    <div class="step-title">Informations</div>
+                    <div class="step-after-line"></div>
+                  </button>
+
+                  <button data-step-target="step2" class="step-card-btn">
+                    <div class="step-logo flex-center-vh"><span class="icon-pics icon"></span></div>
+                    <div class="step-center-line"></div>
+                    <div class="step-title">Pictures</div>
+                    <div class="step-after-line"></div>
+                  </button>
+
+                  <button data-step-target="step3" class="step-card-btn">
+                    <div class="step-logo flex-center-vh"><span class="icon-location-3 icon"></span></div>
+                    <div class="step-center-line"></div>
+                    <div class="step-title">Location</div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Steps Container -->
+              <div class="ser-steps-container">
+                <!-- Information -->
+                <div data-step="step1" class="step-container step-info" >
+                  <div class="sc mb-5">
+                    <div class="step-main-title title text-uppercase">ADD A NEW REQUESTING TASK</div>
+                    <div class="step-sub-title">Add your task informations</div>
+                  </div>
+
+                  <div class="sc-form">
+                    <div class="sc-double flex-between-vh mb-4">
+                      <div class="form-group-row">
+                        <label class="fgr-label">Password</label>
+                        <input class="fgr-input info-input" type="password" name="password" placeholder="Enter Your Password" />
+                      </div>
+
+                      <div class="form-group-row">
+                        <label class="fgr-label">Task Category</label>
+                        <select class="sc-selectbox info-input" id="category">
+                          <option value="value 1">Value 1</option>
+                          <option value="value 2">Gardening</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="sc-single mb-4">
+                      <div class="form-group-row">
+                        <label class="fgr-label">Task Description</label>
+                        <textarea class="fgr-input info-input fgr-textarea" name="description" placeholder="Write Your Service Description"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="sc-double flex-between-vh mb-4">
+                      <div class="form-group-row mb-3">
+                        <label class="fgr-label">Price Range ( USD )</label>
+                        <input class="fgr-input info-input" type="text" name="price_from" placeholder="FROM" />
+                      </div>
+
+                      <div class="form-group-row mb-3">
+                        <label class="fgr-label opacity-0">Task Category</label>
+                        <input class="fgr-input info-input" type="text" name="price_to" placeholder="TO" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pictures -->
+                <div data-step="step2" class="step-container step-pictures" >
+                  <div class="sc mb-5 pb-2">
+                    <div class="step-main-title title text-uppercase">ADD A NEW REQUESTING TASK</div>
+                    <div class="step-sub-title">Add your task pictures</div>
+                  </div>
+
+                  <div class="sc-form">
+                    <!-- Main Image -->
+                    <div class="sc-main-img mb-4">
+                      <div class="sc-img-main-title mb-2">Main Picture</div>
+                      <div class="sc-img-card d-inline-block">
+                        <div class="sc-img sc-img-bg">
+                          <!-- <div class="image-view">
+                            <img class="img-fluid img-view-src" src="assets/img/products/product-1.png" alt="" />
+                            <button class="btn"><span class="icon-plus icon-close"></span></button>
+                          </div> -->
+                          <div class="sc-it text-center">
+                            <span class="icon-pic icon"></span>
+                            <div class="sc-img-title">Add Picture</div>
+                          </div>
+                          <input class="input-file-reader" type="file" accept="image/*" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Other Images -->
+                    <div class="sc-other-img mb-3">
+                      <div class="sc-img-main-title mb-2">Other Pictures</div>
+                      <!-- Collection -->
+                      <div class="sc-collection">
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+
+                        <div class="other-img-card d-inline-block">
+                          <div class="sc-img sc-img-sm">
+                            <div class="sc-it text-center">
+                              <span class="icon-pic icon"></span>
+                              <div class="sc-img-title">Add Picture</div>
+                            </div>
+                            <input class="input-file-reader" type="file" accept="image/*" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sc-alert flex-center-v pt-2 pb-4">
+                      <span class="icon-exclamation icon mr-2"></span>
+                      If you have a picture to clear the task for the provider please include it.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div data-step="step3" class="step-container step-location" >
+                  <div class="sc mb-5">
+                    <div class="step-main-title title text-uppercase">ADD A NEW REQUESTING TASK</div>
+                    <div class="step-sub-title">Add where your task will be done.</div>
+                  </div>
+
+                  <div class="sc-location">
+                    <div class="sc-places">
+                      <div class="sc-img-main-title mb-2">Service Location</div>
+                      <div class="places-search flex-between-vh mb-4">
+                        <div class="ps-input width-fluid flex-center-v mr-3">
+                          <span class="icon-search icon mr-2"></span>
+                          <input id="pac-input" placeholder="Search Location" type="text" />
+                        </div>
+
+                        <button class="btn btn-gray geo-location" id="getLocation">
+                          <span class="icon-current-location icon mr-2"></span> Get Location
+                        </button>
+                      </div>
+                    </div>
+                    <div id="map" data-lat="30.015003" data-lng="31.43135"></div>
+                  </div>
+
+                  <div class="sc-alert flex-center-v pt-2 pb-4">
+                    <span class="icon-exclamation icon mr-2"></span>
+                    Move the pin point to the location or click on current location icon .
+                  </div>
+                </div>
+
+                <!-- Steps Actions Btns -->
+                <div class="steps-actions d-flex pt-3">
+                  <button data-step-action="next" class="btn btn-bg">Continue</button>
+                  <button data-step-action="finish" class="btn btn-bg ml-4">Submit Service</button>
+                  <button data-step-action="prev" class="btn btn-simple ml-4">Previous</button>
+                </div>
+
+                <!-- <div class="step-footer">
+                  <button data-step-action="prev" class="step-btn">Previous</button>
+                  <button data-step-action="next" class="step-btn">Next</button>
+                  <button data-step-action="finish" class="step-btn">Finish</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- Services Content -->
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="index.html"><div class="logo-text">Good at</div></a>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-title">Services</div>
+              <div class="footer-link"><a href="#">House Work</a></div>
+              <div class="footer-link"><a href="#">Home Caring</a></div>
+              <div class="footer-link"><a href="#">Artistic</a></div>
+              <div class="footer-link"><a href="#">Cooking / Baking</a></div>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-title">Support</div>
+              <div class="footer-link"><a href="contact.html">Contact Us</a></div>
+              <div class="footer-link"><a href="about.html">About Us</a></div>
+              <div class="footer-link"><a href="#">How Good At Works</a></div>
+              <div class="footer-link"><a href="privacy.html">Privacy Policy</a></div>
+            </div>
+
+            <div class="footer-contact">
+              <div class="footer-title">Follow us</div>
+              <div class="socialmedia">
+                <div class="social-icons d-flex">
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="choose-country">
+                  <div class="cc-title">Select Country</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-actions">
+              <button class="btn btn-bg">Became A Provider</button>
+            </div>
+
+          </div>
+
+          <div class="footer-bottom">
+            <div class="fb-text">&copy; 2021 Good at, All Rights Received.</div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Jquery V 3.3.1 -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.js"></script>
+
+  <!-- Popper Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/fontawesome.js"></script>
+  <!-- Bootstrap V 4.3.1 -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Toast -->
+  <script src="assets/js/toast.js"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn_HgrPw1nlEQr3tyYsdAL0yfbbRIGeGc&callback=initMap&v=weekly"
+  defer></script>
+  <!-- Step https://oguzhanoya.github.io/jquery-steps/#events Lightweight -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.js"></script>
+
+  <!-- Main Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+        const tagData = document.getElementById("map");
+        console.log(tagData.getAttribute("data-lat"));
+        // The location of Uluru
+        const uluru = { lat: parseFloat(tagData.getAttribute("data-lat")), lng: parseFloat(tagData.getAttribute("data-lng")) };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: uluru
+        });
+
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            // title:"Hello World!",
+            icon: {
+                url: "https://res.cloudinary.com/aramco-sa/image/upload/v1663800552/mappin-ic_1_aofwrm.svg",
+                scale: 12,
+                fillColor: "#080",
+                fillOpacity: 0.4,
+                strokeWeight: 0.4
+            },
+        });
+    }
+    window.initMap = initMap;
+
+    // Get Location
+    $("#getLocation").on('click', function () {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        alert('Geolocation is not supported by this browser.');
+      }
+    });
+    function showPosition(position) {
+      $('#map').attr('data-lat', position.coords.latitude);
+      $('#map').attr('data-lng', position.coords.latitude);
+      initMap();
+    }
+
+  </script>
+  <script>
+    // Select Order
+    $(function () {
+      new SlimSelect({
+        select: '#category',
+        showSearch: false,
+        showContent: 'down'
+      })
+    });
+
+    // View Image
+    $('.input-file-reader').on('change', function (event) {
+      var output = document.querySelector('.img-view-src');
+      output.src = URL.createObjectURL(event.target.files[0]);
+      output.onload = function() {
+        URL.revokeObjectURL(output.src); // free memory
+      }
+    });
+  </script>
+
+  <script>
+    // https://oguzhanoya.github.io/jquery-steps/#events
+    $('#demo').steps({
+      startAt: 0,
+      showBackButton: true,
+      showFooterButtons: true,
+      stepSelector: '.steps-cards',
+      contentSelector: '.ser-steps-container',
+      footerSelector: '.steps-actions',
+      validate:true,
+      onFinish: function () { alert('complete'); },
+    });
+  </script>
+  
+</body>
+
+</html>

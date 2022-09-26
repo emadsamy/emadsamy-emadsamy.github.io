@@ -1,0 +1,146 @@
+.membership-container {
+    padding: 70px 0 90px;
+    background: #FFE03D;
+}
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 12.52rem;
+    gap: 33px;
+}
+.memgrid-title {
+   font-size: 51px;
+}
+.memgrid-text {
+    font-size: 23px;    
+}
+.memgrid-text span {
+    font-size: 20px;
+}
+.memgrid-view {
+    padding: 50px 0 15px;
+}
+.membership-form-container {
+    padding: 60px 100px 30px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 5px 30px #5C5C5C1A;
+}
+.membership-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 70px;
+}
+.membership-connect-card {
+    border-radius: 11px;
+    padding: 11px;
+}
+.mcc-title {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+.google-connect {
+    background: #fff;
+    box-shadow: 0px 3px 30px #8D8D8D1A;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+.google-connect img {
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+}
+.facebook-connect {
+    background: #4267B2;
+}
+.membership-connect-card .icon {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 500;
+}
+.mcc-title {
+    font-weight: 500;
+}
+.phone-connect {
+    background: #333333;
+}
+.title-line {
+    position: relative;
+    color: #A1A1A1;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 32px 0;
+    line-height: 1;
+}
+.title-line:after,
+.title-line:before {
+    position: absolute;
+    content: "";
+    width: 37px;
+    height: 1px;
+    background: #E6E6E6;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title-line:before {
+    left: 0;
+}
+.title-line:after {
+    right: 0;
+}
+.ask-account {
+    color: #6E6E6E;
+    font-size: 15px;
+    font-weight: 600;
+}
+.forgot-password-link {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+.membership-center {
+    width: 538.5px;
+    max-width: 100%;
+    margin: auto;
+}
+.terms-conditions-text {
+    color: #A1A1A1;
+    font-size: 13px;
+}
+.terms-conditions-text .btn-simple {
+    padding: 0;
+    text-decoration: underline !important;
+    font-size: 13px;
+}
+.toggle-switch-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+.membership-bg {
+    background-image: url("../img/jobs-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.membership-text {
+    color: #8f8f8f;
+    font-weight: 600;
+    font-size: 15px;
+}
+.number-phone-card {
+    background: #FBFBFB;
+    display: inline-block;
+    padding: 14px 27px;
+    line-height: 1;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.wn-btn {
+    color: #6E6E6E;
+    font-weight: 600;
+    font-size: 14px;
+}
