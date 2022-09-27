@@ -1,20 +1,25 @@
+
+
 $(document).ready(function () {
 
   // International Telephone Validation
   $(function () {
     
-    var input = document.querySelector("#phoneNumber");
-    window.intlTelInput(input, {
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
-      initialCountry: "ie",
-      placeholderNumberType: "MOBILE",
-    });
+    function intlTelInputFunc() {
+      var input = document.querySelector("#phoneNumber");
+      window.intlTelInput(input, {
+        separateDialCode: true,
+        initialCountry: "ie",
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
+      });
+    }
+
+    intlTelInputFunc();
 
     function changeCountryFlag() {
       data.forEach((el, i) => {
-        $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg); background-position: center;
-        background-size: cover;`);
+        $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg) !important; background-position: center !important;
+        background-size: cover !important;`);
       });
     }
     changeCountryFlag();
@@ -27,7 +32,7 @@ $(document).ready(function () {
       // var dial = $(this).attr('data-dial-code');
       var key = $(this).attr('data-country-code');
       // $(".iti__selected-dial-code").text('+' + dial);
-      $(".iti__selected-flag .iti__flag").attr('style', `background-image: url(assets/img/flags/${key}.svg); background-position: center;background-size: cover;`);
+      $(".iti__selected-flag .iti__flag").attr('style', `background-image: url(assets/img/flags/${key}.svg) !important; background-position: center !important;background-size: cover !important;`);
     });
   });
 
