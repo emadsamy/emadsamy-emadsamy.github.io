@@ -164,9 +164,9 @@
 }
 .pstc-grid-cols {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 12.52rem;
-  gap: 25px; 
+  gap: 17px; 
 }
 .pstc-row {
   padding: 23px;
@@ -259,6 +259,9 @@
 .sp-features-grid .sp-feat-row:last-of-type {
   margin-bottom: 0;
 }
+.profile-title-res {
+  display: none;
+}
 
 /* Good@ */
 .sub-package-good-at .sp-content {background: #18B2770D;}
@@ -300,6 +303,58 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .profile-title-res {
+    display: block;
+  }
+  .profile-flexable {
+    display: block;
+  }
+  .profile-sidebar,
+  .profile-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-sidebar-body {
+    all: unset;
+  }
+  .psb-row-btn {
+    box-shadow: 0px 5px 30px #5C5C5C14;
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: none
+  }
+  .psb-row-btn:hover, .psb-row-btn.ptab-btn.active {
+    background: #000;
+    color: #fff;
+    border: none;
+  }
+  .psb-row-btn.ptab-btn.active .icon:before, .psb-row-btn:hover .icon, .psb-row-btn:hover .icon:before {
+    color: #fff;
+  }
+  .pct-bg {
+    padding: 25px 22px;
+  }
+  .pc-title {
+    font-size: 22px;
+  }
+  .pc-sub-title {
+    font-size: 14px;
+  }
+  .pca-img {
+    width: 75px;
+    height: 75px;
+  }
+  .upload-avatar {
+    font-size: 15px;
+  }
+  .pc-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .pc-grid .form-group-row {
+    margin-bottom: 0 !important;
+  }
   
 }
 

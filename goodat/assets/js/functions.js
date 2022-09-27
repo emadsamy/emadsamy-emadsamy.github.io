@@ -1,26 +1,33 @@
 $(document).ready(function () {
-    
 
   // International Telephone Validation
   $(function () {
+    
     var input = document.querySelector("#phoneNumber");
     window.intlTelInput(input, {
       separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
+      // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
       initialCountry: "ie",
+      placeholderNumberType: "MOBILE",
     });
 
-    data.forEach((el, i) => {
-      $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg); background-position: center;
-      background-size: cover;`);
-    });
+    function changeCountryFlag() {
+      data.forEach((el, i) => {
+        $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg); background-position: center;
+        background-size: cover;`);
+      });
+    }
+    changeCountryFlag();
 
-    $(".iti__country").on('click', function () {
-      var dial = $(this).attr('data-dial-code');
+    window.onload = function(e){ 
+      changeCountryFlag();
+    }
+
+    $(document).on('click', ".iti__country", function () {
+      // var dial = $(this).attr('data-dial-code');
       var key = $(this).attr('data-country-code');
-      $(".iti__selected-dial-code").text('+' + dial);
+      // $(".iti__selected-dial-code").text('+' + dial);
       $(".iti__selected-flag .iti__flag").attr('style', `background-image: url(assets/img/flags/${key}.svg); background-position: center;background-size: cover;`);
-      
     });
   });
 
