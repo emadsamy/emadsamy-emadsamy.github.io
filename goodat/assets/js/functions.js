@@ -6,7 +6,7 @@ $(document).ready(function () {
     var input = document.querySelector("#phoneNumber");
     window.intlTelInput(input, {
       separateDialCode: true,
-      // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
       initialCountry: "ie",
       placeholderNumberType: "MOBILE",
     });
