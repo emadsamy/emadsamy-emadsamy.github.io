@@ -40,7 +40,7 @@
 <body>
 
   <!-- Add Services / Task Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="servicesTasksModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content navbar-modal">
         <div class="nbm-title text-center">Listing a service or task?</div>
@@ -72,7 +72,7 @@
           </div>
 
           <div class="nav-right">
-            <button class="button-default" data-toggle="modal" data-target="#exampleModal">
+            <button class="button-default hidden-sm" data-toggle="modal" data-target="#servicesTasksModal">
               <i class="fa-reguler fa-plus icon"></i> Add Service / Task
             </button>
             <div class="nav-noti"> <!-- Notification -->
@@ -135,7 +135,7 @@
               </div>
             </div>
 
-            <div class="nav-user-menu"> <!-- User Menu -->
+            <div class="nav-user-menu hidden-sm"> <!-- User Menu -->
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                   <div class="nav-user-box d-flex align-items-center">
@@ -153,16 +153,40 @@
               </div>
             </div>
           </div>
+
+          <!-- Navbar Mobile -->
+          <div class="nav-mob">
+            <div class="nav-mob-flexable flex-between-vh">
+              <a class="btn active" href="index.html">
+                <span class="icon-home icon"></span>
+                <div class="nmf-title">Home</div>
+              </a>
+              <a class="btn" href="search.html">
+                <span class="icon-search icon"></span>
+                <div class="nmf-title">Search</div>
+              </a>
+              <a class="btn" href="services.html">
+                <span class="icon-services icon"></span>
+                <div class="nmf-title">Services</div>
+              </a>
+              <a class="btn" href="search.html">
+                <span class="icon-user-circle icon"></span>
+                <div class="nmf-title">Profile</div>
+              </a>
+            </div>
+          </div>
+          <!-- Navbar Mobile -->
         </div>
       </div>
     </nav>
+    <!-- Navbar -->
 
     <!-- Content -->
     <div class="wrapper-container wrapper-with-top">
       <div class="view-product-container">
         <div class="container">
           <div class="view-product-wrraper">
-            <div class="breadcrumb-container flex-between-vh mb-4">
+            <div class="breadcrumb-container flex-between-vh mb-3">
               <div aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -747,6 +771,35 @@
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 4,
+          spaceBetween: 13
+        },
+        // when window width is >= 480px
+        480: {
+          // slidesPerView: 1.6,
+          spaceBetween: 13
+        },
+        // when window width is >= 640px
+        576: {
+          slidesPerView: 5,
+          spaceBetween: 13
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 13
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 13
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 17
+        }
+      }
     });
     var galleryTop = new Swiper('.vps-top', {
       spaceBetween: 10,
