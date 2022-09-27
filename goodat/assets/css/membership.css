@@ -127,7 +127,6 @@
 }
 .membership-text {
     color: #8f8f8f;
-    font-weight: 600;
     font-size: 15px;
 }
 .number-phone-card {
@@ -143,4 +142,176 @@
     color: #6E6E6E;
     font-weight: 600;
     font-size: 14px;
+}
+.mem-sm-title {
+    display: none;
+    font-size: 23px;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .membership-grid {
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .keeped-forgot {
+        display: block;
+        margin-bottom: 35px !important;
+    }
+    .forgot-password-link {
+        margin-top: 30px;
+        display: inline-block;
+    }
+    .form-verify .code-input {
+        width: 40px;
+        height: 55px;
+        font-size: 23px;
+      }
+      .form-verify > div > .code-input:not(:last-child) {
+        margin-right: 5px;
+        }
+}
+
+@media (max-width: 767.98px) {
+    .membership-grid,
+    .membership-center {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 0;
+        padding: 60px 25px;
+        background: #fff;
+        border-radius: 28px;
+        box-shadow: 0px 5px 30px #5c5c5c1a;
+      }
+      .membership-container {
+        background: none;
+        padding: 30px 0 50px
+      }
+      .mem-card-details {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .memgrid-title {
+        font-size: 30px;
+      } 
+        .memgrid-text {
+            font-size: 17px;
+            line-height: 2.3;
+        }
+      .memgrid-view  {
+        display: none;
+      }
+      .membership-form-container {
+        all: unset;
+      }
+      .membership-title {
+        display: none;
+      }
+      .memgrid-text span {
+        padding: 6px 10px;
+        font-size: 16px;
+      }
+      .title-line {
+        font-size: 12px;
+      }
+      .mem-sm-title {
+        display: block;
+      }
+      
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .form-verify .code-input {
+        width: 40px;
+        height: 74px;
+        font-size: 23px;
+      }
+      .form-verify > div > .code-input:not(:last-child) {
+        margin-right: 10px;
+        }
+        .membership-grid,
+        .membership-center {
+            padding: 60px 80px;
+        }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .memgrid-title {
+        font-size: 28px;
+    }
+    .memgrid-text {
+        font-size: 17px;
+    }
+    .memgrid-text span {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .membership-form-container {
+        padding: 50px 30px;
+    }
+    .membership-title {
+        margin-bottom: 40px;
+    }
+    .phone-connect {
+        margin-bottom: 20px !important;
+    }
+    .keeped-forgot {
+        display: block;
+        margin-bottom: 35px !important;
+    }
+    .forgot-password-link {
+        margin-top: 30px;
+        display: inline-block;
+    }
+    .form-verify .code-input {
+        width: 40px;
+        height: 70px;
+        font-size: 23px;
+      }
+      .form-verify > div > .code-input:not(:last-child) {
+        margin-right: 13px;
+        }
+        .membership-center .membership-form-container {
+            padding: 60px 80px;
+        }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .memgrid-title {
+        font-size: 42px;
+    }
+    .membership-form-container {
+        padding: 60px 50px 30px;
+    } 
+    .memgrid-text {
+        font-size: 20px;
+    }
+    .memgrid-text span {
+        font-size: 17px;
+    }
+    .form-verify .code-input {
+        width: 40px;
+        height: 70px;
+        font-size: 23px;
+      }
+      .form-verify > div > .code-input:not(:last-child) {
+        margin-right: 10px;
+        }
+        .membership-center .membership-form-container {
+            padding: 60px 80px;
+        }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+
+@media (min-width: 1400px) {
+  
 }

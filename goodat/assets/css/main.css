@@ -1975,12 +1975,14 @@ footer {
   }
   .footer-logo {
     padding: 0;
+    margin-bottom: 10px;
   }
   .footer-links {
     order: 3;
   }
   .footer-actions {
-    order: 2
+    order: 2;
+    margin-bottom: 22px;
   }
   .footer-contact {
     order: 5
