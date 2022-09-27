@@ -429,7 +429,8 @@ select {
   border: 2px solid #E6E6E6;
   top: 48px;
   z-index: 20;
-  margin: 0 0 0 -2px;
+  margin: 0;
+  border-radius: 7px;
 }
 /* Form */
 

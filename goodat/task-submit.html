@@ -37,7 +37,9 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!-- Wizard Steps -->
   <link href="https://unpkg.com/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
-
+  <!-- Selectize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.legacy.css" />
+  <link rel="stylesheet" href="assets/css/flags.css" />
 
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -245,7 +247,8 @@
                 </div>
 
                 <div class="choose-country">
-                  <div class="cc-title">Select Country</div>
+                  <div class="cc-title mb-2">Select Country</div>
+                  <select id="country-selectize" name="country-selectize" placeholder="Select a Country"></select>
                 </div>
               </div>
             </div>
@@ -279,6 +282,8 @@
   <!-- Bootstrap V 4.3.1 -->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.js"></script>
+  <script src="assets/js/countries-keys.js"></script>
   <!-- Toast -->
   <script src="assets/js/toast.js"></script>
 

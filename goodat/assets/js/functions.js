@@ -3,12 +3,6 @@ $(document).ready(function () {
 
   // International Telephone Validation
   $(function () {
-    // data.forEach((el, i) => {
-    //   $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg); background-position: 0;
-    //   background-size: cover;`);
-    // });
-
-    
     var input = document.querySelector("#phoneNumber");
     window.intlTelInput(input, {
       separateDialCode: true,
@@ -16,11 +10,16 @@ $(document).ready(function () {
       initialCountry: "ie",
     });
 
+    data.forEach((el, i) => {
+      $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg); background-position: center;
+      background-size: cover;`);
+    });
+
     $(".iti__country").on('click', function () {
       var dial = $(this).attr('data-dial-code');
       var key = $(this).attr('data-country-code');
-      // $(".iti__selected-dial-code").text('+' + dial);
-      // $(".iti__selected-flag .iti__flag").attr('style', `background-image: url(assets/img/flags/${key}.svg); background-position: 0;background-size: cover;`);
+      $(".iti__selected-dial-code").text('+' + dial);
+      $(".iti__selected-flag .iti__flag").attr('style', `background-image: url(assets/img/flags/${key}.svg); background-position: center;background-size: cover;`);
       
     });
   });
