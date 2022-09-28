@@ -903,9 +903,17 @@ select {
 }
 .btn-bg .icon {
   font-size: 14px;
+  color: #fff;
+}
+.btn-bg .icon::before { /* Remove This */
+  color: #fff;
 }
 .btn-bg:hover {
   background: #575656;
+  color: #fff;
+}
+.btn-bg:hover .icon,/* Remove This */
+.btn-bg:hover .icon::before { /* Remove This */
   color: #fff;
 }
 .btn-bg:active {
