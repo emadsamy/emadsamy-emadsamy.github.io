@@ -239,7 +239,7 @@
 .sub-package .sp-payment {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2px;
   font-size: 17px;
   color: #fff;
   line-height: 1;
@@ -324,6 +324,13 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  
+  
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) {
+
   .profile-title-res {
     display: block;
   }
@@ -381,9 +388,6 @@
   .pc-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .pc-grid .form-group-row {
-    margin-bottom: 0 !important;
-  }
   .pc-main-tabs-actions {
     margin-left: auto;
     margin-right: auto;
@@ -413,19 +417,122 @@
   
 }
 
-/* Extra small devices (portrait phones, less than 768px) */
-@media (max-width: 767.98px) {
-  
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   
 }
 
+@media (max-width: 991.98px) {
+  .pro-empty-el {
+    display: none;
+  }
+  .pc-grid .form-group-row {
+    margin-bottom: 0 !important;
+  }
+
+  .sub-package {
+    display: block;
+  }
+  .sp-avatar,
+  .sp-content {
+    width: 100%;
+    border-radius: 0;
+  }
+  .sp-avatar {
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 17px;
+  }
+  .sp-avatar img {
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+  }
+  .sp-content {
+    padding: 20px 22px;
+  }
+  .sub-package .sp-payment {
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    padding: 8px 18px;
+    font-weight: 600;
+  }
+  .sp-features-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .sp-action .button-default {
+    padding: 8px 22px;
+    font-size: 13px;
+  }
+  .sp-action {
+    margin-top: 20px !important;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .profile-sidebar {
+    width: 200px;
+  }
+  .profile-content {
+    width: calc(100% - 210px);
+  }
+  .psb-row-btn {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .psb-row-btn .icon {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  .pc-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .pfc-grid-cols,
+  .pstc-grid-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .pfc-row,
+  .pstc-row {
+    padding: 25px 15px
+  }
+  .ns-user-view img,
+  .tasks-user-view img {
+    height: 140px;
+  }
+  .ns-price {
+    padding-left: 15px;
+    margin-left: -15px;
+  }
+  .pfcr-title,
+  .pstc-row .title {
+    font-size: 16px;
+  }
+  .pro-user-view {
+    width: 80px;
+    height: 80px;
+  }
+  .pro-name {
+    font-size: 16px;
+  }
+  .pct-bg {
+    padding: 20px 25px;
+  }
+  .pc-title {
+    font-size: 21px;
+  }
+  .pc-sub-title {
+    font-size: 14px;
+  }
+  .pcmta-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .pct-bg .btn {
+    padding: 11px 10px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
