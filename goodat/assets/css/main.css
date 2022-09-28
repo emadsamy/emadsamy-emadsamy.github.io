@@ -367,14 +367,16 @@ select {
 }
 .tabs-titles,
 .sub-tab-container,
-.vpuc-tabs {
+.vpuc-tabs,
+.pfc-sub-tabs {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
 .tt-btn,
 .stc-btn,
-.vpuc-tab-btn {
+.vpuc-tab-btn,
+.pfcs-btn {
   display: inline-block;
   vertical-align: super;
 }
@@ -2002,9 +2004,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-top: 50px;
   }
   .footer-logo {
     padding: 0;
+    margin-bottom: 10px;
   }
   .footer-links {
     order: 3;
@@ -2050,6 +2054,16 @@ footer {
   .tasks-slider .slider-arrow-circle.swiper-button-disabled {
     border: none;
     color: #fff;
+  }
+  .page-link {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 3px;
+    width: 28px;
+    height: 28px;
+  }
+  .page-link .icon {
+    font-size: 17px;
   }
   /* Global */
 

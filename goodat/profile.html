@@ -188,11 +188,11 @@
       <div class="profile-container">
         <div class="container">
           <div class="profile-wrapper">
-            <!-- Appear In Small Responsive Only -->
-            <div class="profile-title-res ns-title cos-title"><span>Welcome back, Chris.</span></div>
             <div class="profile-flexable flex-between-h">
               <!-- Sidebar -->
               <div class="profile-sidebar">
+                <!-- Appear In Small Responsive Only -->
+                <div class="profile-title-res ns-title cos-title"><span>Welcome back, Chris.</span></div>
                 <div class="profile-sidebar-body pr-4">
                   <button id="info" class="btn psb-row-btn ptab-btn active"><span class="icon-user icon"></span> My Account</button>
                   <button id="changePassword" class="btn psb-row-btn ptab-btn"><span class="icon-lock icon"></span> Change Password</button>
@@ -205,6 +205,12 @@
 
               <!-- Content -->
               <div class="profile-content">
+                <!-- Back To Sidebar In Responsive -->
+                <div class="sidebar-back-btn">
+                  <button id="backToSidebar" class="btn btn-simple flex-center-v">
+                    <span class="icon-arrow-left-2 icon"></span> Back
+                  </button>
+                </div>
                 <!-- Information -->
                 <div data-tab-profile="#info" class="pc-tab pct-bg active">
                   <div class="pc-title title">MY ACCOUNT</div>
@@ -279,13 +285,13 @@
                     <div class="pc-title title">MY FAVORITES</div>
                     <div class="pc-sub-title mb-3">You have total 34 Favorites Services.</div>
                     <div class="pc-main-tabs-actions d-inline-block">
-                      <button id="favServices" class="pcmta-btn ptab-btn active mr-2">Services</button>
-                      <button id="favProviders" class="pcmta-btn ptab-btn">Providers</button>
+                      <button id="favServices" class="pcmta-btn active mr-2">Services</button>
+                      <button id="favProviders" class="pcmta-btn">Providers</button>
                     </div>
                   </div>
 
                   <!-- Services Container -->
-                  <div data-tab-profile="#favServices" class="pcf-container pc-tab active">
+                  <div data-tab-profile="#favServices" class="pcf-container active">
                     <div class="pfc-sub-tabs">
                       <button class="pfcs-btn active">All</button>
                       <button class="pfcs-btn">Plumbing</button>
@@ -509,7 +515,7 @@
                   <!-- Services Container -->
 
                   <!-- Providers Container -->
-                  <div data-tab-profile="#favProviders" class="pcf-container pc-tab">
+                  <div data-tab-profile="#favProviders" class="pcf-container">
                     <div class="pfc-sub-tabs">
                       <button class="pfcs-btn active">All</button>
                       <button class="pfcs-btn">Plumbing</button>
@@ -746,16 +752,16 @@
                         <div class="pc-sub-title mb-3">You have total 4 Services.</div>
                       </div>
                       <div>
-                        <a href="services-tasks.html" class="btn btn-bg"><span class="icon-plus icon pl-2 pr-2"></span></a>
+                        <a href="services.html" class="btn btn-bg"><span class="icon-plus icon pl-2 pr-2"></span></a>
                       </div>
                     </div>
                     <div class="pc-main-tabs-actions d-inline-block">
-                      <button id="stServices" class="pcmta-btn ptab-btn active mr-2">Services</button>
-                      <button id="stTasks" class="pcmta-btn ptab-btn">Tasks</button>
+                      <button id="stServices" class="pcmta-btn active mr-2">Services</button>
+                      <button id="stTasks" class="pcmta-btn">Tasks</button>
                     </div>
                   </div>
 
-                  <div data-tab-profile="#stServices" class="pcf-container pc-tab active">
+                  <div data-tab-profile="#stServices" class="pcf-container active">
                     <div class="pfc-sub-tabs">
                       <button class="pfcs-btn active">All</button>
                       <button class="pfcs-btn">Plumbing</button>
@@ -1038,23 +1044,41 @@
   <!-- Main Functions -->
   <script src="assets/js/functions.js"></script>
   <script>
-    // Main Profile Tabs
+    // Main Tabs
     $(function () {
       $(window).on('hashchange', function (e) {
         var hash = window.location.hash;
         if (window.location.hash) {
-          $(".ptab-btn").siblings().removeClass("active");
-          $(`${hash}.ptab-btn`).addClass("active");
-          $(`.pc-tab[data-tab-profile]`).siblings().removeClass("active");
-          $(`.pc-tab[data-tab-profile="${hash}"]`).addClass("active");
+          $(".ptab-btn").siblings().removeClass("active active-res");
+          $(`${hash}.ptab-btn`).addClass("active active-res");
+          $(`.pc-tab[data-tab-profile]`).siblings().removeClass("active active-res");
+          $(`.pc-tab[data-tab-profile="${hash}"]`).addClass("active active-res");
           window.location.hash = '';
         }
       });
 
       $(".ptab-btn").on('click', function () {
+        $(".profile-sidebar").addClass('active-res');
+        $(".profile-content").addClass('active-res');
         var id = $(this).attr("id");
-        $(this).addClass('active').siblings().removeClass("active");
-        $(`.pc-tab[data-tab-profile="#${id}"]`).addClass("active").siblings().removeClass("active");
+        $(this).addClass('active active-res').siblings().removeClass("active active-res");
+        $(`.pc-tab[data-tab-profile="#${id}"]`).addClass("active active-res").siblings().removeClass("active active-res");
+      });
+
+      $('#backToSidebar').on('click', function () {
+        $(".profile-sidebar").removeClass('active-res active');
+        $(".profile-content").removeClass('active-res active');
+        $(".ptab-btn").removeClass('active-res active');
+        $(`.pc-tab[data-tab-profile]`).removeClass("active active-res");
+      });
+    });
+
+    // Sub Tabs Tabs
+    $(function () {
+      $(".pcmta-btn").on('click', function () {
+        var id = $(this).attr("id");
+        $(this).addClass('active active-res').siblings().removeClass("active active-res");
+        $(`.pcf-container[data-tab-profile="#${id}"]`).addClass("active active-res").siblings().removeClass("active active-res");
       });
     });
   </script>
