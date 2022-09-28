@@ -58,15 +58,49 @@
 .pgc-total-price > div {
   font-weight: bold;
 }
+.inputs-double .form-group-row {
+  width: 46%;
+}
 
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
+  .payments-header {
+    display: none;
+  }
 }
 
 @media (max-width: 767.98px) {
-  
+  .pays-sub-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px !important;
+  }
+  .pays-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pgc-body {
+    border-radius: 10px;
+    padding: 20px 25px;
+  }
+  .pgc-title {
+    font-size: 16px;
+  }
+  .pgc-pack-price {
+    font-size: 15px;
+  }
+  .pgc-pack-name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .pgc-total-price {
+    font-size: 18px;
+  }
+  .payments-actions {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -76,12 +110,27 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .pgc-body {
+    border-radius: 14px;
+    padding: 30px 25px;
+  }
+  .pgc-title {
+    font-size: 17px;
+  }
+  .pgc-price {
+    font-size: 15px;
+  }
+  .pgc-pack-price {
+    font-size: 17px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .pgc-body {
+    border-radius: 20px;
+    padding: 40px 35px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

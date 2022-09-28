@@ -153,26 +153,84 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
+  .subs-header {
+    display: none;
+  }
+  .sub-main-title {
+    font-size: 21px;
+  }
+  .subs-packs-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+    padding-top: 30px;
+    max-width: 360px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 767.98px) {
-  
+  .subscribed-card {
+    border-radius: 10px;
+  }
+  .subsed-title {
+    font-size: 27px;
+  }
+  .subsed-sub-title {
+    font-size: 16px;
+  }
+  .subsed-actions {
+    flex-direction: column-reverse;
+  }
+  .subsed-actions .btn-simple {
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  .sub-s-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  
+  .subscriptions-container {
+    padding: 40px 0 70px 0;
+  }
+  .subs-packs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    padding-top: 30px;
+  }
+  .spc-payment {
+    padding: 14px 10px;
+    font-size: 18px;
+  }
+  .spc-feat {
+    font-size: 15px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .subs-packs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .subs-packs-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .spc-payment {
+    padding: 15px 10px;
+    font-size: 17px;
+  }
+  .spc-feat {
+    font-size: 14px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
