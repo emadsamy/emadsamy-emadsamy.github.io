@@ -537,7 +537,46 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .pfc-grid-cols,
+  .pstc-grid-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sp-avatar {
+    padding: 15px 20px;
+    width: 145px;
+  }
+  .sp-content {
+    width: calc(100% - 145px);
+    padding: 30px 20px 20px 20px;
+  }
+  .sp-feat-row {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .sub-package .sp-payment {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 17px;
+  }
+  .sp-action {
+    margin-top: 18px !important;
+  }
+  .button-default {
+    padding: 7px 21px;
+    font-size: 13px;
+  }
+  .sp-avatar-title {
+    font-size: 14px;
+  }
+  .profile-sidebar {
+    width: 250px;
+  }
+  .profile-content {
+    width: calc(100% - 270px);
+  }
+  .psb-row-btn {
+    padding-left: 25px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
