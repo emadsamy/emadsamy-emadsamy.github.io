@@ -73,7 +73,8 @@ nav,
 .button-default,
 .logo-text,
 .stc-btn,
-.sub-pack-card {
+.sub-pack-card,
+#searchSidebar {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -368,7 +369,8 @@ select {
 .tabs-titles,
 .sub-tab-container,
 .vpuc-tabs,
-.pfc-sub-tabs {
+.pfc-sub-tabs,
+.search-tabs {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -376,7 +378,8 @@ select {
 .tt-btn,
 .stc-btn,
 .vpuc-tab-btn,
-.pfcs-btn {
+.pfcs-btn,
+.st-btn {
   display: inline-block;
   vertical-align: super;
 }
@@ -2065,6 +2068,15 @@ footer {
   .page-link .icon {
     font-size: 17px;
   }
+  .ss-main .ss-single-selected .placeholder, .ss-content .ss-list .ss-option {
+    font-size: 13px;
+  }
+  .ss-main .ss-single-selected .ss-arrow span {
+    padding: 2px;
+  }
+  .sfs-order .ss-single-selected {
+    min-width: 143px;
+  }
   /* Global */
 
   /* Home */
@@ -2308,6 +2320,15 @@ footer {
   .tasks-slider .slider-arrow-circle.swiper-button-disabled {
     border: none;
     /* color: #333; */
+  }
+  .page-link {
+    font-size: 17px;
+    margin: 0 4px;
+    width: 33px;
+    height: 33px;
+  }
+  .page-link .icon {
+    font-size: 17px;
   }
   /* Global */
 

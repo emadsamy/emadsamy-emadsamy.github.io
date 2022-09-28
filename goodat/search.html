@@ -43,7 +43,7 @@
 <body>
 
   <!-- Add Services / Task Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="servicesTasksModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content navbar-modal">
         <div class="nbm-title text-center">Listing a service or task?</div>
@@ -75,7 +75,7 @@
           </div>
 
           <div class="nav-right">
-            <button class="button-default" data-toggle="modal" data-target="#exampleModal">
+            <button class="button-default hidden-sm" data-toggle="modal" data-target="#servicesTasksModal">
               <i class="fa-reguler fa-plus icon"></i> Add Service / Task
             </button>
             <div class="nav-noti"> <!-- Notification -->
@@ -88,6 +88,7 @@
                   </div>
                 </button>
                 <div class="dropdown-menu noti-dropdown">
+                  <div class="ns-title cos-title"><span>Updates</span></div>
                   <!-- Notifications Date -->
                   <div class="noti-dp-date">Today</div>
                   <div class="noti-users">
@@ -138,7 +139,7 @@
               </div>
             </div>
 
-            <div class="nav-user-menu"> <!-- User Menu -->
+            <div class="nav-user-menu hidden-sm"> <!-- User Menu -->
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                   <div class="nav-user-box d-flex align-items-center">
@@ -156,9 +157,33 @@
               </div>
             </div>
           </div>
+
+          <!-- Navbar Mobile -->
+          <div class="nav-mob">
+            <div class="nav-mob-flexable flex-between-vh">
+              <a class="btn" href="index.html">
+                <span class="icon-home icon"></span>
+                <div class="nmf-title">Home</div>
+              </a>
+              <a class="btn active" href="search.html">
+                <span class="icon-search icon"></span>
+                <div class="nmf-title">Search</div>
+              </a>
+              <a class="btn" href="services.html">
+                <span class="icon-services icon"></span>
+                <div class="nmf-title">Services</div>
+              </a>
+              <a class="btn" href="profile.html">
+                <span class="icon-user-circle icon"></span>
+                <div class="nmf-title">Profile</div>
+              </a>
+            </div>
+          </div>
+          <!-- Navbar Mobile -->
         </div>
       </div>
     </nav>
+    <!-- Navbar -->
 
     <!-- Content -->
     <div class="wrapper-container wrapper-with-top">
@@ -168,7 +193,14 @@
             <div class="search-flexable">
 
               <!-- Search Sidebar -->
-              <div class="search-sidebar">
+              <div id="searchSidebar" class="search-sidebar">
+                <!-- Appear In Responsive Only -->
+                <div class="search-cos-title">
+                  <div class="sct-flexable flex-between-vh">
+                    <div class="ns-title cos-title"><span>Search</span></div>
+                    <button id="closeSearchSidebar" class="btn"><span class="icon-cancel icon"></span></button>
+                  </div>
+                </div>
                 <div class="ssb-title title mb-3">Services</div>
                 <!-- Accordion -->
                 <div class="search-accordion">
@@ -437,15 +469,19 @@
                 <div class="search-content-bar d-inline-block mb-4">
                   <div class="scb-flexable flex-center">
                     <div class="ld-input-group ld-search-group d-flex align-items-center">
+                      <span class="icon-search icon"></span>
                       <input type="search" placeholder="Gardening" name="" />
                     </div>
       
-                    <div class="ld-input-group d-flex align-items-center">
+                    <div class="ld-input-group ld-location-group d-flex align-items-center">
                       <span class="icon-location icon"></span>
                       <input type="search" placeholder="City" name="" />
                     </div>
       
-                    <button class="btn btn-bg sb-action"><span class="icon-search icon"></span></button>
+                    <div class="search-action flex-center-v">
+                      <button id="filterBtn" class="btn btn-filter"><span class="icon-filter icon"></span></button>
+                      <button class="btn btn-bg sb-action"><span class="icon-search icon"></span></button>
+                    </div>
                   </div>
                 </div>
                 <!-- Bar -->
@@ -476,6 +512,11 @@
 
                   <!-- Product Row -->
                   <div class="search-product-row">
+                    <button class="ns-like">
+                      <span class="icon-heart-empty icon-unlike icon"></span>
+                      <span class="icon-heart-full icon-like icon"></span>
+                    </button>
+                    
                     <div class="sp-view">
                       <div class="swiper sp-swiper">
                         <!-- Additional required wrapper -->
@@ -500,10 +541,6 @@
                     </div>
 
                     <div class="sp-details">
-                      <button class="ns-like">
-                        <span class="icon-heart-empty icon-unlike icon"></span>
-                        <span class="icon-heart-full icon-like icon"></span>
-                      </button>
                       <div class="sp-type mb-1">Gardening</div>
                       <div class="title mb-2">Consectetur neque lobortis</div>
                       <div class="rating-container mb-3">
@@ -537,6 +574,10 @@
 
                   <!-- Product Row -->
                   <div class="search-product-row">
+                    <button class="ns-like">
+                      <span class="icon-heart-empty icon-unlike icon"></span>
+                      <span class="icon-heart-full icon-like icon"></span>
+                    </button>
                     <div class="sp-view">
                       <div class="swiper sp-swiper">
                         <!-- Additional required wrapper -->
@@ -561,10 +602,6 @@
                     </div>
 
                     <div class="sp-details">
-                      <button class="ns-like">
-                        <span class="icon-heart-empty icon-unlike icon"></span>
-                        <span class="icon-heart-full icon-like icon"></span>
-                      </button>
                       <div class="sp-type mb-1">Gardening</div>
                       <div class="title mb-2">Consectetur neque lobortis</div>
                       <div class="rating-container mb-3">
@@ -598,6 +635,10 @@
 
                   <!-- Product Row -->
                   <div class="search-product-row">
+                    <button class="ns-like">
+                      <span class="icon-heart-empty icon-unlike icon"></span>
+                      <span class="icon-heart-full icon-like icon"></span>
+                    </button>
                     <div class="sp-view">
                       <div class="swiper sp-swiper">
                         <!-- Additional required wrapper -->
@@ -622,10 +663,6 @@
                     </div>
 
                     <div class="sp-details">
-                      <button class="ns-like">
-                        <span class="icon-heart-empty icon-unlike icon"></span>
-                        <span class="icon-heart-full icon-like icon"></span>
-                      </button>
                       <div class="sp-type mb-1">Gardening</div>
                       <div class="title mb-2">Consectetur neque lobortis</div>
                       <div class="rating-container mb-3">
@@ -659,6 +696,10 @@
 
                   <!-- Product Row -->
                   <div class="search-product-row">
+                    <button class="ns-like">
+                      <span class="icon-heart-empty icon-unlike icon"></span>
+                      <span class="icon-heart-full icon-like icon"></span>
+                    </button>
                     <div class="sp-view">
                       <div class="swiper sp-swiper">
                         <!-- Additional required wrapper -->
@@ -683,10 +724,6 @@
                     </div>
 
                     <div class="sp-details">
-                      <button class="ns-like">
-                        <span class="icon-heart-empty icon-unlike icon"></span>
-                        <span class="icon-heart-full icon-like icon"></span>
-                      </button>
                       <div class="sp-type mb-1">Gardening</div>
                       <div class="title mb-2">Consectetur neque lobortis</div>
                       <div class="rating-container mb-3">
@@ -720,6 +757,10 @@
 
                   <!-- Product Row -->
                   <div class="search-product-row">
+                    <button class="ns-like">
+                      <span class="icon-heart-empty icon-unlike icon"></span>
+                      <span class="icon-heart-full icon-like icon"></span>
+                    </button>
                     <div class="sp-view">
                       <div class="swiper sp-swiper">
                         <!-- Additional required wrapper -->
@@ -744,10 +785,6 @@
                     </div>
 
                     <div class="sp-details">
-                      <button class="ns-like">
-                        <span class="icon-heart-empty icon-unlike icon"></span>
-                        <span class="icon-heart-full icon-like icon"></span>
-                      </button>
                       <div class="sp-type mb-1">Gardening</div>
                       <div class="title mb-2">Consectetur neque lobortis</div>
                       <div class="rating-container mb-3">
@@ -944,7 +981,15 @@
       $(".input-checkbox").prop("checked", false);
       $("#citySearch option:first-of-type").attr("checked", true);
       $("#theSelect option:selected").attr('disabled', 'disabled');
+    });
 
+    // Toggle Search Sidebar
+    $("#filterBtn").on('click', function () {
+      $("#searchSidebar").addClass("active");
+    });
+
+    $("#closeSearchSidebar").on('click', function () {
+      $("#searchSidebar").removeClass("active");
     });
   </script>
 </body>
