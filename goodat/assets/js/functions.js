@@ -5,23 +5,20 @@ $(document).ready(function () {
   // International Telephone Validation
   $(function () {
     
-    function intlTelInputFunc() {
-      var input = document.querySelector("#phoneNumber");
+    var input = document.querySelector("#phoneNumber");
       window.intlTelInput(input, {
         separateDialCode: true,
         initialCountry: "ie",
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
+        // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
       });
-    }
-
-    intlTelInputFunc();
-
+      
     function changeCountryFlag() {
       data.forEach((el, i) => {
         $(`.iti__flag.iti__${el.code}`).attr('style', `background-image: url(assets/img/flags/${el.code}.svg) !important; background-position: center !important;
         background-size: cover !important;`);
       });
     }
+
     changeCountryFlag();
 
     window.onload = function(e){ 

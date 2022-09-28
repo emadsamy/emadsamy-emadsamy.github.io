@@ -60,6 +60,9 @@
     line-height: 1;
     font-weight: 500;
 }
+.membership-connect-card .icon::before {
+    color: #fff;
+}
 .mcc-title {
     font-weight: 500;
 }

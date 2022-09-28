@@ -184,6 +184,10 @@
   font-size: 14px;
   padding: 9px 23px;
 }
+.get-loc-span {
+  font-size: 14px;
+  font-weight: 600;
+}
 .geo-location .icon {
   font-size: 13px
 }
@@ -241,14 +245,148 @@
 .steps-cards > button.done .step-center-line {
   background: #333;
 }
+.sht-res {
+  display: none;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
+  .subscribed-card {
+    border-radius: 10px;
+  }
+  .subsed-title {
+    font-size: 27px;
+  }
+  .subsed-sub-title {
+    font-size: 16px;
+  }
+  .subsed-actions {
+    flex-direction: column-reverse;
+  }
+  .subsed-actions .btn-simple {
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  .sub-s-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 767.98px) {
-  
+  .services-container {
+    padding: 30px 0 70px;
+  }
+  .breadcrumb-container {
+    display: none;
+  }
+  .sht-res {
+    display: block;
+  }
+  .services-flexable {
+    display: block !important;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .services-flexable > div {
+    width: 100%;
+  }
+  .ser-steps {
+    all: unset;
+  }
+  .ser-steps-container {
+    box-shadow: 0px 5px 30px #5c5c5c0d;
+    border-radius: 12px;
+    padding: 25px 20px;
+  }
+  .steps-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .step-card-btn {
+    margin: 0;
+    position: relative;
+  }
+  .step-center-line {
+    display: none;
+  }
+  .step-after-line {
+    position: absolute;
+    display: none;
+  }
+  .step-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  .step-logo .icon {
+    font-size: 23px;
+  }
+  .step-title {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .sc {
+    display: none;
+  }
+  .sc-double-text {
+    display: block;
+  }
+  .sc-double-text > div {
+    width: 100%;
+    margin-bottom: 1.5rem !important;
+  }
+  .sc-img-bg {
+    width: 100%;
+  }
+  .sc-img-card {
+    width: 100%;
+  }
+  .other-img-card {
+    margin: 0;
+  }
+  .sc-collection {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 12.52rem;
+    gap: 15px;
+  }
+  .sc-img-sm {
+    width: 100%  !important;
+  }
+  .get-loc-span {
+    display: none;
+  }
+  .geo-location {
+    font-size: 14px;
+    padding: 8px 13px;
+  }
+  .geo-location .icon {
+    font-size: 15px;
+    margin: 0 !important;
+  }
+  .places-search {
+    padding: 6px 14px;
+  }
+  .task-submit-message {
+    min-height: auto;
+    border-radius: 10px;
+  }
+  .tsm-title {
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .tsm-actions {
+    flex-direction: column;
+  }
+  .tsm-actions .btn-bg {
+    margin-bottom: 25px;
+    display: inline-block;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -258,12 +396,69 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .ser-steps {
+    width: 200px;
+    padding: 40px;
+  }
+  .ser-steps-container {
+    width: calc(100% - 200px);
+    padding: 30px;
+  }
+  .step-logo {
+    width: 49px;
+    height: 49px;
+  }
+  .step-logo .icon {
+    font-size: 24px;
+  }
+  .step-title {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  .step-after-line {
+    height: 45px;
+  }
+  .sc-double > div {
+    width: 49%;
+  }
+  .sc-collection {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 12.52rem;
+    gap: 15px;
+  }
+  .sc-img-sm {
+    height: 98px !important;
+    width: 100% !important;
+  }
+  .other-img-card {
+    margin: 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .ser-steps {
+    width: 260px;
+    padding: 40px;
+  }
+  .ser-steps-container {
+    width: calc(100% - 260px);
+    padding: 30px;
+  }
+  .sc-collection {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 12.52rem;
+    gap: 15px;
+  }
+  .sc-img-sm {
+    height: 110px !important;
+    width: 100% !important;
+  }
+  .other-img-card {
+    margin: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

@@ -49,7 +49,7 @@
 <body>
 
   <!-- Add Services / Task Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="servicesTasksModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content navbar-modal">
         <div class="nbm-title text-center">Listing a service or task?</div>
@@ -81,7 +81,7 @@
           </div>
 
           <div class="nav-right">
-            <button class="button-default" data-toggle="modal" data-target="#exampleModal">
+            <button class="button-default hidden-sm" data-toggle="modal" data-target="#servicesTasksModal">
               <i class="fa-reguler fa-plus icon"></i> Add Service / Task
             </button>
             <div class="nav-noti"> <!-- Notification -->
@@ -94,6 +94,7 @@
                   </div>
                 </button>
                 <div class="dropdown-menu noti-dropdown">
+                  <div class="ns-title cos-title"><span>Updates</span></div>
                   <!-- Notifications Date -->
                   <div class="noti-dp-date">Today</div>
                   <div class="noti-users">
@@ -144,7 +145,7 @@
               </div>
             </div>
 
-            <div class="nav-user-menu"> <!-- User Menu -->
+            <div class="nav-user-menu hidden-sm"> <!-- User Menu -->
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                   <div class="nav-user-box d-flex align-items-center">
@@ -162,9 +163,33 @@
               </div>
             </div>
           </div>
+
+          <!-- Navbar Mobile -->
+          <div class="nav-mob">
+            <div class="nav-mob-flexable flex-between-vh">
+              <a class="btn" href="index.html">
+                <span class="icon-home icon"></span>
+                <div class="nmf-title">Home</div>
+              </a>
+              <a class="btn" href="search.html">
+                <span class="icon-search icon"></span>
+                <div class="nmf-title">Search</div>
+              </a>
+              <a class="btn active" href="services.html">
+                <span class="icon-services icon"></span>
+                <div class="nmf-title">Services</div>
+              </a>
+              <a class="btn" href="profile.html">
+                <span class="icon-user-circle icon"></span>
+                <div class="nmf-title">Profile</div>
+              </a>
+            </div>
+          </div>
+          <!-- Navbar Mobile -->
         </div>
       </div>
     </nav>
+    <!-- Navbar -->
 
     <!-- Content -->
     <div class="wrapper-container wrapper-without-top">
@@ -190,10 +215,10 @@
                 <div class="tsm-logo flex-center-vh">
                   <span class="icon-correct icon"></span>
                 </div>
-                <div class="tsm-title title">TASK SUBMITTED SUCCESSFULLY</div>
-                <div class="tsm-sub-title">Your Task will be published after reviewing in about 24 Hours!</div>
+                <div class="tsm-title title">SERVICE SUBMITTED SUCCESSFULLY</div>
+                <div class="tsm-sub-title">Your Service will be published after reviewing in about 24 Hours!</div>
                 <div class="tsm-actions flex-center-vh mt-5">
-                  <a href="#" class="btn btn-bg">View Your Tasks</a>
+                  <a href="#" class="btn btn-bg">View Your Services</a>
                   <a href="#" class="btn btn-simple">Back Home</a>
                 </div>
               </div>
