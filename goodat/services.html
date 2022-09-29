@@ -300,11 +300,11 @@
                     <div class="sc-main-img mb-4">
                       <div class="sc-img-main-title mb-2">Main Picture</div>
                       <div class="sc-img-card d-inline-block">
-                        <div class="sc-img sc-img-bg">
-                          <!-- <div class="image-view">
-                            <img class="img-fluid img-view-src" src="assets/img/products/product-1.png" alt="" />
-                            <button class="btn"><span class="icon-plus icon-close"></span></button>
-                          </div> -->
+                        <div class="sc-img sc-img-bg inputfr-parent">
+                          <div class="image-view imgfr-parent">
+                            <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                            <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                          </div>
                           <div class="sc-it text-center">
                             <span class="icon-pic icon"></span>
                             <div class="sc-img-title">Add Picture</div>
@@ -320,7 +320,11 @@
                       <!-- Collection -->
                       <div class="sc-collection">
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -330,7 +334,11 @@
                         </div>
 
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -340,7 +348,11 @@
                         </div>
 
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -350,7 +362,11 @@
                         </div>
 
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -360,7 +376,11 @@
                         </div>
 
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -370,7 +390,11 @@
                         </div>
 
                         <div class="other-img-card d-inline-block">
-                          <div class="sc-img sc-img-sm">
+                          <div class="sc-img sc-img-sm inputfr-parent">
+                            <div class="image-view imgfr-parent">
+                              <img class="img-fluid img-view-src img-file-reader" src="" alt="" />
+                              <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                            </div>
                             <div class="sc-it text-center">
                               <span class="icon-pic icon"></span>
                               <div class="sc-img-title">Add Picture</div>
@@ -579,15 +603,6 @@
         showSearch: false,
         showContent: 'down'
       })
-    });
-
-    // View Image
-    $('.input-file-reader').on('change', function (event) {
-      var output = document.querySelector('.img-view-src');
-      output.src = URL.createObjectURL(event.target.files[0]);
-      output.onload = function() {
-        URL.revokeObjectURL(output.src); // free memory
-      }
     });
   </script>
 

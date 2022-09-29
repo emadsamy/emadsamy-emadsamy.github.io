@@ -72,6 +72,9 @@
 .pca-img {
   width: 90px;
   height: 90px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .pca-img img {
   width: 100%;
@@ -282,6 +285,13 @@
 }
 .pcf-container.active {
   display: block !important;
+}
+.close-img-reader {
+  transform: translateX(-50%);
+  left: 50%;
+  right: auto !important;
+  bottom: 7px;
+  top: auto !important;
 }
 
 /* Good@ */

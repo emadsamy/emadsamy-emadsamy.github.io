@@ -197,6 +197,29 @@ $(document).ready(function () {
 
   });
 
+  // Upload And Close Image View
+  $(function () {
+    // View Image
+    $('.input-file-reader').on('change', function (event) {
+      var output = $(this).parents('.inputfr-parent').find('.img-file-reader');
+      var showImage = $(this).parents('.inputfr-parent').find('.imgfr-parent');
+      output.attr('src', URL.createObjectURL(event.target.files[0]));
+      output.onload = function() {
+        URL.revokeObjectURL(output.attr('src')); // free memory
+      }
+      showImage.addClass('active');
+    });
+
+    // Remove Image View
+    $('.close-img-reader').on('click', function (event) {
+      var input = $(this).parents('.inputfr-parent').find('.input-file-reader');
+      $(this).parents('.imgfr-parent').removeClass('active');
+      $(this).parents('.imgfr-parent').find('.img-file-reader').attr('src', '');
+      input.val(null);
+      console.log(input.val());
+    });
+  });
+
 });
 
 

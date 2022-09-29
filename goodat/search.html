@@ -972,15 +972,20 @@
       });
     });
 
-    // Reset Search Tools
+    // Reset Search
     $("#clearAll").on("click", function () {
       let rangePrice = $(".js-range-slider-price").data("ionRangeSlider");
       rangePrice.reset();
       $("#modalCheckboxContainer").slideUp(300);
       $(".multiple-checkbox-container").slideUp(300);
       $(".input-checkbox").prop("checked", false);
-      $("#citySearch option:first-of-type").attr("checked", true);
-      $("#theSelect option:selected").attr('disabled', 'disabled');
+      $("#citySearch option:first-of-type").attr('selected','selected');
+      var val = $("#citySearch option:first-of-type").text();
+      $(".ss-single-selected .placeholder").text(val);
+      $(".ss-option").removeClass("ss-disabled ss-option-selected");
+      $(".ss-option:first-of-type").addClass("ss-disabled ss-option-selected");
+      console.log($("#citySearch").val());
+      $('.collapse').collapse('hide');
     });
 
     // Toggle Search Sidebar

@@ -957,6 +957,53 @@ select {
 }
 /** Buttons **/
 
+/* Upload Image */
+.imgfr-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+}
+.imgfr-parent .close-img-reader {
+  display: inline-block;
+  color: #fff;
+  background: #00000087;
+  padding: 4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-img-reader .icon {
+  font-size: 11px !important;
+  font-weight: 900;
+  margin-top: 1px;
+  display: inline-block;
+}
+.imgfr-parent .img-file-reader {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inputfr-parent {
+  position: relative;
+}
+.imgfr-parent {
+  display: none;
+  background: #fff;
+}
+.imgfr-parent.active {
+  display: block !important;
+}
+/* Upload Image */
+
 /* Range Slider */
 .irs-min,
 .irs-max,

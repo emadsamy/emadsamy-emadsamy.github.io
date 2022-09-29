@@ -215,13 +215,17 @@
                 <div data-tab-profile="#info" class="pc-tab pct-bg active">
                   <div class="pc-title title">MY ACCOUNT</div>
                   <div class="pc-sub-title">You can edit your account information.</div>
-                  <div class="pc-avatar d-inline-block mt-5">
+                  <div class="pc-avatar inputfr-parent d-inline-block mt-5">
                     <label class="fgr-label mb-3">Account Picture</label>
                     <div class="pca-img mb-2">
-                      <img class="img-fluid" src="assets/img/users/user-2.png" alt="Avatar" />
+                      <div class="imgfr-parent">
+                        <img class="img-fluid img-file-reader" src="" alt="" />
+                        <button class="btn close-img-reader"><span class="icon-cancel icon"></span></button>
+                      </div>
+                      <img class="img-fluid" src="assets/img/default.png" alt="Avatar" />
                     </div>
                     <div class="upload-avatar flex-center-v">
-                      <input type="file" name="avatar" />
+                      <input class="input-file-reader" type="file" accept="image/*" />
                       <span class="icon-upload icon mr-2"></span> Change
                     </div>
                   </div>
