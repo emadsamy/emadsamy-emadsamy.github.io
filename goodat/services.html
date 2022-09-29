@@ -620,7 +620,10 @@
       contentSelector: '.ser-steps-container',
       footerSelector: '.steps-actions',
       validate:true,
-      onFinish: function () { alert('complete'); },
+      onFinish: function () {
+         alert('Services completed added! redirect to Congts Page'); 
+         window.location.href = 'service-added.html';
+      },
     });
   </script>
   

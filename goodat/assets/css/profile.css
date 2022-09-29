@@ -293,6 +293,9 @@
   bottom: 7px;
   top: auto !important;
 }
+.ast-text {
+  display: none;
+}
 
 /* Good@ */
 .sub-package-good-at .sp-content {background: #18B2770D;}
@@ -335,6 +338,28 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   
+  .pc-info-form .btn {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ast-text {
+    display: block;
+  }
+
+  .add-service-task {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -19px;
+  }
+  .add-service-task .btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 15px 10px 10px !important;
+  }
   
 }
 
@@ -381,9 +406,10 @@
   }
   .pct-bg {
     padding: 25px 22px;
+    position: relative;
   }
   .pc-title {
-    font-size: 22px;
+    font-size: 21px;
   }
   .pc-sub-title {
     font-size: 14px;

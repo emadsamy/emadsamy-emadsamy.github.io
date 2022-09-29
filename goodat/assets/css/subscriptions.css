@@ -189,6 +189,9 @@
     font-size: 14px;
     font-weight: 500;
   }
+  .sub-pack-card {
+    border-radius: 10px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
