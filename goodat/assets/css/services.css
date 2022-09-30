@@ -246,6 +246,17 @@
     font-size: 14px;
     font-weight: 500;
   }
+  .step-after-line {
+    position: absolute;
+    height: 4px;
+    width: 44vw;
+    left: 33px;
+    top: 23px;
+  }
+  .step-card-btn:nth-of-type(2) .step-after-line {
+    left: 19px;
+    width: 39vw;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -289,14 +300,6 @@
     z-index: 10;
   }
   .step-center-line {
-    display: none;
-  }
-  .step-after-line {
-    position: absolute;
-    height: 4px;
-    width: 140px;
-    left: 32px;
-    top: 23px;
     display: none;
   }
   .step-logo {
@@ -377,7 +380,17 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  
+  .step-after-line {
+    position: absolute;
+    height: 4px;
+    width: 244px;
+    left: 37px;
+    top: 23px;
+  }
+  .step-card-btn:nth-of-type(2) .step-after-line {
+    left: 26px;
+    width: 228px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
