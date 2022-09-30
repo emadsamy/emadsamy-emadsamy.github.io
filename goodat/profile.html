@@ -835,7 +835,7 @@
                     <!-- Pagination -->
                   </div>
 
-                  <div data-tab-profile="#stTasks" class="pcf-container pc-tab ">
+                  <div data-tab-profile="#stTasks" class="pcf-container">
                     <div class="pfc-sub-tabs">
                       <button class="pfcs-btn active">Alls</button>
                       <button class="pfcs-btn">Plumbing</button>
@@ -1053,16 +1053,14 @@
   <script>
     // Main Tabs
     $(function () {
-      $(window).on('hashchange', function (e) {
-        var hash = window.location.hash;
+      var hash = window.location.hash;
         if (window.location.hash) {
           $(".ptab-btn").siblings().removeClass("active active-res");
           $(`${hash}.ptab-btn`).addClass("active active-res");
           $(`.pc-tab[data-tab-profile]`).siblings().removeClass("active active-res");
           $(`.pc-tab[data-tab-profile="${hash}"]`).addClass("active active-res");
-          window.location.hash = '';
+          // window.location.hash = '';
         }
-      });
 
       $(".ptab-btn").on('click', function () {
         $(".profile-sidebar").addClass('active-res');
