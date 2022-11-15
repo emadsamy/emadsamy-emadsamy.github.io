@@ -800,7 +800,7 @@ select {
   display: inline-block;
 }
 .navbar-links-box a:hover {
-  color: #dbd7d7;
+  color: #000e34;
 }
 .navbar-toggle-btn {
   width: 30px;
@@ -1198,6 +1198,7 @@ footer {
     font-size: 45px;
   }
   .wrapper-container {
+    padding-top: 62.2px;
     padding-bottom: 150px;
   }
   .button-default {
