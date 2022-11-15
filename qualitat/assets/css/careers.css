@@ -1,0 +1,77 @@
+.careers-details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.cd-container .title {
+  font-size: 35px;
+}
+.features {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.features-container .title {
+  font-weight: normal;
+  font-size: 37px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 50px;
+}
+.feature-card {
+  padding: 35px;
+  border: 2px solid #3c3c3c45
+}
+.feat-action .btn-bg {
+  background: #00b4ff;
+  display: inline-flex;
+  font-size: 18px;
+  padding: 12px 33px;
+}
+.feat-action .btn-bg:hover {
+  background: #03a3e5;
+}
+.feat-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+}
+.feat-job {
+  font-size: 19px;
+  font-weight: 500;
+  color: #000E34;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+
+@media (min-width: 1400px) {
+  
+}

@@ -1,0 +1,89 @@
+.page-header {
+  position: relative;
+  height: 65vh;
+  min-height: 400px;
+}
+.page-title {
+  bottom: 90px
+}
+.page-title .title {
+  font-size: 45px;
+}
+.contact-details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.ca-container .text {
+  color: #000000;
+}
+.contact-flexable {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-flexable > div {
+  width: 48%;
+}
+.form-title .title {
+  font-size: 18px;
+  color: #000000;
+}
+.form-title .title span {
+  font-size: 17px;
+  color: #000;
+}
+.form-row-double {
+  display: flex;
+  justify-content: space-between;
+}
+.form-row-double > div {
+  width: calc(50% - 0.5rem);
+}
+.contact-address {
+  display: flex;
+  justify-content: space-between;
+}
+.ca-left {
+  width: 55%;
+}
+.ca-right {
+  width: 38%;
+}
+.contact-address .text {
+  color: #343434;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+
+@media (min-width: 1400px) {
+  
+}

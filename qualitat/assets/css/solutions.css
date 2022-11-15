@@ -1,0 +1,252 @@
+.solutions-header {
+  position: relative;
+  height: 75vh;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solutions-title {
+  position: relative;
+  z-index: 20;
+}
+.solutions-title .title {
+  font-size: 60px;
+}
+.solutions-details {
+  padding-top: 70px ;
+  padding-bottom: 100px ;
+}
+.digital-solutions {
+  padding-bottom: 120px;
+}
+.title-bg {
+  font-weight: bold;
+  font-size: 38px;
+  color: #777777;
+  line-height: 1.1;
+}
+.ds-flexable {
+  position: relative;
+}
+.ds-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 30px;
+  z-index: 20;
+}
+.title-bg-color {
+  background: #00B4FF;
+  color: #fff;
+  line-height: 1;
+  font-size: 38px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+.sol-title {
+  color: #777777;
+  font-weight: bold;
+  font-size: 35px;
+}
+.sol-text {
+  color: #4D4D4D;
+  font-size: 24px;
+  line-height: 1.3;
+}
+.solutions-widget {
+  padding-bottom: 140px;
+}
+.sw-card > div {
+  width: 50%;
+}
+.swc-details {
+  background: #00B4FF;
+  padding: 80px 53px 120px 53px;
+}
+.swc-details .title {
+  font-size: 49px;
+}
+.swc-view img {
+  height: 100%;
+  object-fit: cover;
+}
+.sd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 30px;
+}
+.sm-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1F1F1F;
+  line-height: 1;
+}
+.sm-text {
+  font-size: 21px;
+  line-height: 1.4;
+  color: #4D4D4D;
+}
+.sc-details {
+  position: relative;
+  min-height: 450px;
+}
+.scd-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.scd-text {
+  position: relative;
+  z-index: 20;
+  padding: 120px 70px 80px;
+}
+.scd-text .title {
+  font-size: 45px;
+  line-height: 1.15;
+}
+.scd-text .text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.3;
+}
+.rsic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 50px;
+}
+.rsic-grid img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+.rsic-grid .sol-title {
+  color: #4D4D4D;
+}
+.rsic-grid .sol-text {
+  color: #4D4D4D;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 1.5;
+}
+.rsicd-row {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #4D4D4D;
+}
+.rsicd-row .icon {
+  margin-right: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+.features-solutions {
+  padding-top: 120px;
+  padding-bottom: 170px;
+}
+.fs-container .sol-title {
+  color: #4D4D4D;
+  font-size: 38px;
+  margin-bottom: 65px;
+}
+.bespoke-solution {
+  background: #F7F7F7;
+}
+.bs-flexable > div {
+  width: 50%;
+}
+.bs-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bs-details {
+  padding: 30px 60px 120px 60px;
+}
+.bs-details .sub-title {
+  color: #696969;
+  font-size: 22px;
+}
+.bs-details img {
+  width: 340px;
+}
+.bs-details .title-bg {
+  color: #000E34;
+  font-size: 48px;
+  font-weight: 600;
+}
+.bs-details .title {
+  color: #000E34;
+  font-size: 25px;
+  font-weight: 600;
+}
+.solomon-text {
+  padding-top: 82px;
+}
+.st-title {
+  color: #4D4D4D;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+.st-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 5rem;
+  gap: 17px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.st-row {
+  display: flex;
+  word-break: break-all;
+  color: #3C3C3C;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.st-row span {
+  margin-right: 10px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+
+@media (min-width: 1400px) {
+  
+}
