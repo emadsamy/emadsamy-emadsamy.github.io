@@ -39,35 +39,38 @@
                       <a href="index.html"><img src="assets/img/logo.svg" class="img-fluid" alt="" /></a>
                   </div>
                   <div class="navbar-links d-flex">
-                      <a href="tel:01234567891" class="navbar-toggle-btn navbar-call-btn"><img class="img-fluid" src="assets/img/phone.svg'" alt="Hamburger" /></a>
-                      <button class="navbar-toggle-btn navbar-burger-btn active"><img class="img-fluid" src="assets/img/hamburger.png" alt="Hamburger" /></button>
-                      <button class="navbar-toggle-btn navbar-close-btn"><img class="img-fluid" src="assets/img/close.png" alt="Close" /></button>
+                      <a href="tel:01234567891" class="navbar-toggle-btn navbar-call-btn"><img class="img-fluid" src="assets/img/icons/phone.svg" alt="01234567891" /></a>
+                      <button class="navbar-toggle-btn navbar-burger-btn active"><img class="img-fluid" src="assets/img/icons/menu.svg" alt="Hamburger" /></button>
+                      <button class="navbar-toggle-btn navbar-close-btn"><img class="img-fluid" src="assets/img/icons/close.svg" alt="Close" /></button>
                       <div class="navbar-links-content">
                           <div class="navbar-links-box">
-                              <a href="index.html">Home <img class="nav-arrow-icon" src="assets/img/green-arrowright.png" alt="" /></a>
-                              <a href="about.html">About <img class="nav-arrow-icon" src="assets/img/green-arrowright.png" alt="" /></a>
-                              <a href="solutions.html">Solutions <img class="nav-arrow-icon" src="assets/img/green-arrowright.png" alt="" /></a>
-                              <a href="careers.html">Careers <img class="nav-arrow-icon" src="assets/img/green-arrowright.png" alt="" /></a>
-                              <a href="contact.html">Contact Us <img class="nav-arrow-icon" src="assets/img/green-arrowright.png" alt="" /></a>
+                              <a href="index.html">Home <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                              <a href="about.html">About <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                              <a href="solutions.html">Solutions <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                              <a href="careers.html">Careers <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                              <a href="contact.html">Contact Us <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
                           </div>
                           <div class="navbar-footer">
                               <div class="nf-title">News & Offers</div>
-                              <div class="nf-subscribe">
+                              <form>
+                                <div class="nf-subscribe">
                                   <input type="text" class="form-control border-0 bg-transparent pb-2"
                                         placeholder="Your email here" aria-label="Recipient's username"
                                         aria-describedby="button-addon2">
                                   <button class="btn foot-btn-subscribe btn-outline-secondary border-0 bg-transparent"type="button" id="button-addon2">
                                       <span>Subscribe</span>
                                   </button>
-                              </div>
+                                </div>
+                              </form>
                               <div class="nf-text">Sign up to receive exclusive news and offers about the latest launches</div>
                               <div class="nf-socialmedida d-flex justify-content-between align-items-center">
                                   <div class="nfs-title">Follow Us On</div>
                                   <div class="nfs-social">
-                                      <a class="foot-social-link" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                      <a class="foot-social-link" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                                      <a class="foot-social-link" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                      <a class="foot-social-link" href="https://www.linkedinin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a class="foot-social-link" href="https://www.linkedinin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a class="foot-social-link" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    <a class="foot-social-link" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                    <a class="foot-social-link" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="foot-social-link" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                   </div>
                               </div>
                               <div class="nf-copyright">
@@ -228,7 +231,7 @@
                 <a class="foot-link" href="index.html">Home</a>
                 <a class="foot-link" href="about.html">About</a>
                 <a class="foot-link" href="solutions.html">Solutions</a>
-                <a class="foot-link" href="career.html">Career</a>
+                <a class="foot-link" href="careers.html">Careers</a>
                 <a class="foot-link" href="contact.html">Contact</a>
               </div>
               <div class="foot-form">
@@ -236,11 +239,12 @@
                   <div class="title">News & Offers</div>
                   <div class="text">Sign up to receive exclusive news and offers about the latest launches</div>
                 </div>
-                <form>
+                <form class="form-newsletter">
                   <div class="input-newsletter">
                     <input type="email" name="newsletter" placeholder="Your email here" required />
                     <button class="btn d-flex align-items-center">Subscribe  <i class="fa-solid fa-arrow-right ml-2 icon"></i></button>
                   </div>
+                  <div class="text d-none">Sign up to receive exclusive news and offers about the latest launches</div>
                 </form>
               </div>
             </div>
@@ -283,17 +287,17 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- Main Functions -->
-  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>
     const swiper = new Swiper('.swiper-home-bg', {
       direction: 'horizontal',
       loop: false,
       slidesPerView: 1,
       spaceBetween: 10,
-      speed: 800,
-      autoplay: {
-        delay: 3000
-      },
+      // speed: 800,
+      // autoplay: {
+      //   delay: 3000
+      // },
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
