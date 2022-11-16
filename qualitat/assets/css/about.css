@@ -227,11 +227,23 @@
   .digital {
     padding: 40px 0;
   }
+  .aw-title {
+    font-size: 32px;
+  }
+  .aw-text {
+    font-size: 21px;
+  }
+  .about-widget {
+    padding-top: 75px;
+  }
+  .aw-notice {
+    font-size: 29px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

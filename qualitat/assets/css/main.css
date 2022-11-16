@@ -800,7 +800,7 @@ select {
   display: inline-block;
 }
 .navbar-links-box a:hover {
-  color: #000e34;
+  color: #bebebe;
 }
 .navbar-toggle-btn {
   width: 30px;
@@ -1190,6 +1190,9 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .navbar-links-box a:hover {
+    color: #000e34;
+  }
   .page-title {
     bottom: 100px;
   }
