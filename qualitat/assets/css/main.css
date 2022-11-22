@@ -1122,6 +1122,7 @@ footer {
   display: inline-block;
   font-size: 22px;
   margin-left: 8px;
+  line-height: 1;
 }
 .social-link:hover {
   color: #ccc;
@@ -1167,7 +1168,7 @@ footer {
 }
 .input-newsletter .btn:hover {
   background: #fff;
-  color: #000;
+  color: #000e34;
 }
 .input-newsletter .btn:active {
   opacity: 0.7;
@@ -1491,7 +1492,7 @@ footer {
   }
   .foot-socialmedia {
     border-top: 1px solid #fff;
-    padding: 5px 0;
+    padding: 9px 0;
   }
   .input-newsletter input {
     padding: 7px 13px;
@@ -1499,6 +1500,11 @@ footer {
   .input-newsletter .btn {
     font-size: 15px;
     padding: 3px 15px;
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+    line-height: 1;
   }
   /* Footer */
 }
