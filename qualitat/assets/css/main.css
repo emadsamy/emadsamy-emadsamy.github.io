@@ -825,54 +825,65 @@ select {
 }
 .nf-title {
   font-weight: 600;
-  font-size: 17px;
-  color: #666;
+  font-size: 16px;
+  color: #fff;
   margin-bottom: 9px;
 }
 .nf-subscribe {
   display: flex;
   justify-content: space-between;
-  border-radius: 8px;
-  border: 1px solid #666;
-  margin-bottom: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 3px;
   overflow: hidden;
 }
 .foot-btn-subscribe {
   padding: 5px 20px;
-  border-left: 1px solid #666 !important;
+  border-left: 1px solid #fff !important;
   border-radius: 0;
 }
-.nf-subscribe input {
-  font-size: 14px;
-  padding: 9px 14px !important;
+.foot-btn-subscribe:focus,
+.foot-btn-subscribe:active {
   outline: none;
+  box-shadow: none;
+}
+.nf-subscribe input {
+  font-size: 13px;
+  padding: 9px 11px !important;
+  outline: none;
+  color: #fff;
+}
+.nf-subscribe input::placeholder {
+  color: #fff;
 }
 .foot-btn-subscribe span {
   font-size: 14px;
   font-weight: 600;
-}
-.foot-btn-subscribe:hover {
-  background-color: #000e34 !important;
   color: #fff;
 }
+.foot-btn-subscribe:hover {
+  background-color: #fff !important;
+}
+.foot-btn-subscribe:hover span {
+  color: #000e34;
+}
 .nf-text {
-  font-size: 12px;
-  color: #666;
+  font-size: 13px;
+  color: #fff;
   margin-bottom: 15px;
 }
 .nf-socialmedida {
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-  padding: 5px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
 }
 .nfs-title {
   font-size: 14px;
   font-weight: 600;
-  color: #666;
+  color: #fff;
 }
 .nfs-social i {
   display: inline-block;
-  color: #666;
+  color: #fff;
   font-size: 18px;
   margin-left: 18px;
 }
@@ -885,28 +896,27 @@ select {
   justify-content: space-between;
 }
 .nf-copyright .foot-des-link {
-  color: #666;
+  color: #fff;
   font-weight: 600;
 }
 .nf-copyright div {
   padding: 8px 0;
   padding: 8px 0;
   font-weight: 600;
-  color: #666;
+  color: #fff;
   font-size: 14px;
 }
 .nf-copyright div a {
-  color: #666;
+  color: #fff;
 }
 .navbar-logo img {
-  width: 170px !important;
-  transform: scale(1.15);
-  margin-left: 9px;
+  width: 141px !important;
+  transform: scale(1.10);
 }
 .nf-bottom {
   width: 100%;
   text-align: center;
-  border-top: 1px solid #666;
+  border-top: 1px solid #fff;
 }
 .nav-arrow-icon {
   display: none;
@@ -1038,12 +1048,15 @@ select {
   gap: 25px;
 }
 .customer-card {
-  padding: 15px;
+  padding: 10px;
   border: 2px solid #EBEBEB;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.customer-card img {
+  height: 95px;
 }
 /* Customers */
 
@@ -1063,7 +1076,7 @@ footer {
   width: 276px;
 }
 .footer-logo img {
-  width: 220px !important;
+  width: 180px !important;
   margin-top: -12px;
 }
 .foot-link {
@@ -1199,7 +1212,7 @@ footer {
 
 @media (max-width: 767.98px) {
   .navbar-links-box a:hover {
-    color: #000e34;
+    color: #ddd;
   }
   .page-title {
     bottom: 100px;
@@ -1244,26 +1257,30 @@ footer {
     background: #fff !important;
   }
   .btn-bg {
-    padding: 12px 38px;
+    padding: 10px 32px;
+    font-size: 17px;
   }
 
   /* Navbar */
   .navbar-logo img {
     transform: none;
     margin-left: 0;
-    width: 160px !important;
   }
   .navbar-links-content {
     display: none;
     position: fixed;
-    top: 62.2px;
+    top: 64.7px;
     left: 0;
     width: 100%;
-    min-height: calc(100% - 62.2px);
-    padding: 15px 20px 3px;
-    background: #fff;
+    min-height: calc(100% - 64.7px);
+    padding: 0 20px;
     z-index: 96034;
     overflow-y: auto;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #000e34;
+    border-top: 1px solid #fff;
   }
   .navabr-container {
     padding: 11px 0;
@@ -1278,35 +1295,28 @@ footer {
     position: relative;
     margin-left: 0;
     display: block;
-    border: 1px solid #666;
-    border-radius: 10px;
-    padding: 10px 15px 24px;
+    border-bottom: 1px solid #fff;
+    padding: 15px 0;
     line-height: 1;
-    margin-bottom: 10px;
+    font-size: 27px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #2d2d2d;
+    color: #fff;
   }
   .navbar-links-box a:last-of-type {
     margin-bottom: 20px;
-  }
-  .navbar-links-box a:after {
-    content: "";
-    border-bottom: 1px solid #666;
-    width: 100%;
-    position: absolute;
-    height: 1px;
-    left: 0;
-    bottom: 13px;
   }
   .nf-title {
     line-height: 1;
   }
   .foot-social-link {
-    font-size: 20px;
-    color: #555;
+    font-size: 19px;
+    color: #fff;
     margin-left: 10px;
+  }
+  .foot-social-link:hover {
+    color: #ddd;
   }
   .nfs-title {
     font-size: 16px;
@@ -1315,11 +1325,6 @@ footer {
     display: flex;
     align-items: center;
     line-height: 1;
-  }
-  .navbar-links-content {
-    flex: 1;
-    flex-direction: column;
-    overflow-y: auto;
   }
   .navbar-links-box {
     flex: 1;
@@ -1332,6 +1337,8 @@ footer {
   }
   .nav-arrow-icon {
     display: block;
+    filter: invert(1);
+    height: 28px;
   }
   .navbar-call-btn {
     display: block !important;
@@ -1355,7 +1362,7 @@ footer {
   }
   .swiper-home-bg {
     min-height: 400px;
-    height: calc(100vh - 150.6px);
+    height: calc(100vh - 64.7px);
   }
   .shb-slide {
     padding-bottom: 70px;
@@ -1371,13 +1378,14 @@ footer {
     font-size: 19px;
   }
   .home-widget {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin: 0 -15px;
   }
   .home-widget > div {
     width: 100%
   }
   .hd-details {
-    padding: 30px 20px 20px;
+    padding: 50px 30px 35px;
   }
   .hd-details .title {
     font-size: 34px;
@@ -1403,14 +1411,14 @@ footer {
     gap: 8px;
   }
   .customer-card img {
-    height: 70px;
+    height: 85px;
   }
   /* Home */
 
   /* Footer */
   .footer-content {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
   .footer-logo img {
     width: 180px !important;
@@ -1421,8 +1429,8 @@ footer {
     display: block;
   }
   .foot-link {
-    font-size: 17px;
-    margin-right: 12px;
+    font-size: 20px;
+    margin-right: 17px;
   }
   .footer-links {
     margin-bottom: 27px !important;
@@ -1439,6 +1447,7 @@ footer {
   }
   .input-newsletter {
     margin-bottom: 8px;
+    border-radius: 0;
   }
   .form-newsletter {
     margin-bottom: 20px;
@@ -1460,6 +1469,13 @@ footer {
   }
   .fb-text:last-of-type {
     order: 2;
+  }
+  .social-line {
+    display: none;
+  }
+  .foot-socialmedia {
+    border-top: 1px solid #fff;
+    padding: 5px 0;
   }
   /* Footer */
 }
