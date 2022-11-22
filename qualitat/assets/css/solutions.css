@@ -299,6 +299,7 @@
   .rsic-grid .sol-title {
     height: auto !important;
     margin-bottom: 10px !important;
+    line-height: 1.2;
   }
   .rsic-grid .sol-text {
     font-size: 20px;

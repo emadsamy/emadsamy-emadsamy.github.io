@@ -825,7 +825,7 @@ select {
 }
 .nf-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
   margin-bottom: 9px;
 }
@@ -837,14 +837,16 @@ select {
   overflow: hidden;
 }
 .foot-btn-subscribe {
-  padding: 5px 20px;
+  padding: 5px 15px;
+  font-size: 15px;
   border-left: 1px solid #fff !important;
   border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.foot-btn-subscribe:focus,
-.foot-btn-subscribe:active {
-  outline: none;
-  box-shadow: none;
+.foot-btn-subscribe .icon {
+  color: #fff;
 }
 .nf-subscribe input {
   font-size: 13px;
@@ -856,15 +858,24 @@ select {
   color: #fff;
 }
 .foot-btn-subscribe span {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
 }
 .foot-btn-subscribe:hover {
   background-color: #fff !important;
 }
-.foot-btn-subscribe:hover span {
+.foot-btn-subscribe:hover span,
+.foot-btn-subscribe:hover .icon {
   color: #000e34;
+}
+.foot-btn-subscribe:focus,
+.foot-btn-subscribe:active {
+  outline: none;
+  box-shadow: none;
+}
+.foot-btn-subscribe:active {
+  opacity: 0.7;
 }
 .nf-text {
   font-size: 13px;
@@ -1222,7 +1233,7 @@ footer {
     font-size: 45px;
   }
   .wrapper-container {
-    padding-top: 62.2px;
+    padding-top: 61.19px;
     padding-bottom: 150px;
   }
   .button-default {
@@ -1265,14 +1276,15 @@ footer {
   .navbar-logo img {
     transform: none;
     margin-left: 0;
+    width: 136px !important;
   }
   .navbar-links-content {
     display: none;
     position: fixed;
-    top: 64.7px;
+    top: 61.19px;
     left: 0;
     width: 100%;
-    min-height: calc(100% - 64.7px);
+    min-height: calc(100% - 61.19px);
     padding: 0 20px;
     z-index: 96034;
     overflow-y: auto;
@@ -1283,7 +1295,7 @@ footer {
     border-top: 1px solid #fff;
   }
   .navabr-container {
-    padding: 11px 0;
+    padding: 10px 0;
   }
   .navbar-links-content.active {
     display: flex;
@@ -1350,19 +1362,20 @@ footer {
     padding: 20px 30px;
   }
   .shb-sub-title {
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 9px;
   }
   .shb-title {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
   .shb-description {
     font-size: 17px;
   }
   .swiper-home-bg {
     min-height: 400px;
-    height: calc(100vh - 64.7px);
+    height: calc(100vh - 61.19px);
   }
   .shb-slide {
     padding-bottom: 70px;
@@ -1371,11 +1384,11 @@ footer {
     padding: 70px 0;
   }
   .hsd-container .title {
-    font-size: 26px;
+    font-size: 27px;
     margin-bottom: 15px;
   }
   .hsd-container .text {
-    font-size: 19px;
+    font-size: 17px;
   }
   .home-widget {
     flex-direction: column;
@@ -1389,7 +1402,8 @@ footer {
   }
   .hd-details .title {
     font-size: 34px;
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
+    line-height: 1.1; 
   }
   .hd-details .text {
     font-size: 18px;
@@ -1398,13 +1412,15 @@ footer {
     margin-top: 32px !important;
   }
   .customers {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   .customers .title {
-    font-size: 35px;
+    font-size: 31px;
+    margin-bottom: 1rem !important;
   }
   .customers .text {
-    font-size: 21px;
+    font-size: 17px;
+    margin-bottom: 2rem !important;
   }
   .customers-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1421,7 +1437,7 @@ footer {
     padding-bottom: 0;
   }
   .footer-logo img {
-    width: 180px !important;
+    width: 155px !important;
     margin-top: 0;
     margin-bottom: 15px;
   }
@@ -1437,7 +1453,7 @@ footer {
   }
   .foot-form-text {
     display: block !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 9px !important;
   }
   .foot-form-text .text {
     display: none;
@@ -1446,7 +1462,7 @@ footer {
     font-size: 17px;
   }
   .input-newsletter {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     border-radius: 0;
   }
   .form-newsletter {
@@ -1476,6 +1492,13 @@ footer {
   .foot-socialmedia {
     border-top: 1px solid #fff;
     padding: 5px 0;
+  }
+  .input-newsletter input {
+    padding: 7px 13px;
+  }
+  .input-newsletter .btn {
+    font-size: 15px;
+    padding: 3px 15px;
   }
   /* Footer */
 }
