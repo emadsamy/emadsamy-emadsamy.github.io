@@ -80,11 +80,10 @@
   width: 50%;
   margin-bottom: 40px;
   position: relative;
+  padding-right: 100px;
 }
 .partner-card img {
-  padding-left: 0;
-  padding-right: 100px;
-  height: 150px;
+  width: 350px;
 }
 
 .partner-card:nth-of-type(even) {
@@ -98,7 +97,7 @@
   height: 70%;
   background: #333;
 }
-.partner-card:nth-of-type(even) img {
+.partner-card:nth-of-type(even) {
   padding-right: 0;
   padding-left: 100px;
 }
@@ -213,6 +212,15 @@
     padding-top: 80px;
     padding-bottom: 0;
   }
+  .partner-card {
+    padding-right: 20px;
+  }
+  .partner-card img {
+    width: 270px;
+  }
+  .partner-card:nth-of-type(even) {
+    padding-left: 20px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -240,11 +248,22 @@
   .aw-notice {
     font-size: 29px;
   }
+  .partner-card {
+    padding-right: 50px;
+  }
+  .partner-card:nth-of-type(even) {
+    padding-left: 50px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+  .partner-card {
+    padding-right: 60px;
+  }
+  .partner-card:nth-of-type(even) {
+    padding-left: 60px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
