@@ -1,0 +1,141 @@
+.blog {
+  padding-bottom: 100px;
+}
+.blog-main-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-auto-flow: dense; */
+  gap: 40px;
+}
+.blog-card:nth-child(1),
+.blog-card:nth-child(2) {
+  grid-column: span 2;
+}
+.blog-card:nth-child(3) {
+  grid-column: span 3;
+}
+.blog-card:nth-child(4) {
+  grid-column: span 1;
+}
+.blog-card:nth-child(5) {
+  grid-column: span 1;
+}
+.blog-card:nth-child(6) {
+  grid-column: span 3;
+}
+.blog-card:nth-child(7),
+.blog-card:nth-child(8),
+.blog-card:nth-child(9),
+.blog-card:nth-child(10) {
+  grid-column: span 1;
+}
+.blog-card:nth-child(11) {
+  grid-column: span 4;
+}
+.blog-card {
+  position: relative;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  border-radius: 16px;
+}
+.bc-img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.bc-details {
+  display: inline-block;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px 30px;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+.bc-details .title {
+  font-size: 25px;
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1;
+}
+.blog-pagination {
+  padding-top: 80px;
+}
+.vbh-img {
+  height: 470px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  margin-bottom: 60px;
+}
+.view-blog-container {
+  padding-bottom: 100px;
+}
+.view-blog-container .title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.view-blog-container .text {
+  color: #555;
+  font-size: 17px;
+  line-height: 2.3;
+}
+.vb-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.vb-action .btn {
+  margin: 0 50px;
+}
+.vb-back .btn {
+  border-radius: 50px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1760px) {
+}

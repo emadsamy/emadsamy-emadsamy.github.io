@@ -1,0 +1,139 @@
+.cd-title-bg,
+.cd-title-border {
+  background: #58bbbd;
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  display: inline-block;
+  padding: 3px 30px;
+  border-radius: 50px;
+}
+.cd-text {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.9;
+  color: #666;
+}
+.corporate-deals {
+  margin-bottom: 80px;
+}
+.psd-flexable {
+  margin-bottom: 70px;
+}
+.psd-flexable > div {
+  width: 48%;
+}
+.packs-details .cd-title-bg {
+  background: #e51f86;
+}
+.cd-sub-title {
+  color: #e51f86;
+  font-weight: 900;
+  font-size: 36px;
+}
+.cd-title-border {
+  color: #e51f86;
+  background: none;
+  border: 2px solid #e67e22;
+}
+.mini-title,
+.mini-title-between * {
+  color: #e51f86;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.mini-title-between {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-psd-big {
+  margin-bottom: 10px;
+}
+.btn-psd-big .btn {
+  display: inline-block;
+  width: 550px;
+  max-width: 100%;
+  padding: 14px 42px;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.1;
+  border-radius: 16px;
+
+  letter-spacing: 1px;
+}
+.btn-psd-big .btn div {
+  font-weight: 900;
+  font-size: 35px;
+}
+.btn-psd-sm {
+  width: 550px;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 10px;
+}
+.btn-psd-sm .btn {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 29px;
+}
+.btn-psd-sm .btn div {
+  font-weight: 900;
+  font-size: 18px;
+}
+.psd-actions {
+  margin-bottom: 80px;
+}
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 20px;
+}
+.client-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1760px) {
+}

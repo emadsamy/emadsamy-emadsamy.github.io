@@ -1,0 +1,112 @@
+.ah-view {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.about-description {
+  margin-bottom: 70px;
+}
+.ad-big-title {
+  display: inline-block;
+  background: #fff;
+  border-radius: 14px;
+  margin-top: -80px;
+  margin-bottom: 2rem !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 25px 90px;
+  font-weight: 900;
+  font-size: 55px;
+  color: #555;
+  line-height: 1.4;
+}
+.sm-big-title {
+  font-size: 23px;
+  font-weight: 900;
+}
+.ad-text {
+  font-size: 18px;
+  line-height: 2.1;
+}
+.ab-flexable > div {
+  width: 48.5%;
+}
+.ab-view img {
+  height: 340px;
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ab-action .btn {
+  display: inline-block;
+  padding: 14px 42px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+  border-radius: 14px;
+  letter-spacing: 1px;
+}
+.ab-action .btn div {
+  font-weight: 900;
+  font-size: 20px;
+}
+.ab-action {
+  margin-bottom: 4.3rem;
+}
+.af-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 50px;
+}
+.af-card img {
+  height: 90px;
+  margin-bottom: 30px;
+}
+.af-card .title {
+  color: #58bbbd;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.about-features {
+  background: #eeeeee;
+  padding: 80px 0;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1760px) {
+}

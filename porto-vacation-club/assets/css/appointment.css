@@ -1,0 +1,217 @@
+.appointment {
+  padding: 100px 0;
+}
+.appointment-form {
+  width: 500px;
+  max-width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: -60vh auto 0;
+  position: relative;
+  z-index: 15;
+}
+.af-input-group,
+.af-select-group {
+  border: 2px solid #58bbbd;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 15px 23px;
+  /* margin-bottom: 20px; */
+}
+.af-input-group .icon {
+  font-size: 23px;
+  color: #58bbbd;
+  margin-right: 19px;
+}
+.af-input {
+  width: 100%;
+  font-size: 20px;
+  color: #58bbbd;
+  font-weight: 900;
+}
+.af-input::placeholder {
+  font-weight: 500;
+}
+.selectize-input {
+  padding: 0;
+}
+.selectize-box {
+  width: 100%;
+}
+.selectize-row {
+  display: flex;
+  align-items: center;
+}
+input#selectLocation-selectized {
+  display: none !important;
+}
+.ss-main {
+  padding: 0 23px !important;
+  border: none !important;
+}
+.ss-main:focus {
+  box-shadow: none;
+}
+.ss-row {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #58bbbd;
+  text-transform: capitalize;
+  line-height: 1;
+}
+.ss-row .sr-icon {
+  font-size: 23px;
+  color: #58bbbd;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+.ss-main .ss-arrow path {
+  stroke: #58bbbd;
+}
+.ss-main .ss-arrow {
+  width: 15px;
+  height: 15px;
+}
+.ss-selected,
+.ss-option:hover {
+  background: #58bbbd !important;
+  color: #fff;
+}
+.ss-selected .ss-row,
+.ss-selected .ss-row .sr-icon,
+.ss-option:hover .ss-row,
+.ss-option:hover .ss-row .sr-icon {
+  color: #fff;
+}
+.ss-content .ss-list {
+  max-height: 231.39px;
+}
+.ss-content.ss-open-below {
+  top: 725.45px !important;
+}
+.af-select-group {
+  padding: 15px 0;
+}
+.appointment-datepicker {
+  background: #e51f86;
+  padding: 70px 0;
+}
+.booking-date-swiper {
+  padding: 90px 0;
+}
+.bds-swiper {
+  padding: 10px;
+  margin: 0 -10px;
+}
+.bds-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.bds-header {
+  background: #ec008c;
+  color: #fff;
+  font-size: 35px;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+.bds-body {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #666;
+}
+.bds-footer .btn {
+  border-radius: 0;
+  font-size: 34px;
+}
+.app-confirm-message {
+  padding: 80px 0;
+  background: #eee;
+}
+.acm-card {
+  padding: 100px 60px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.acm-confirmation {
+  background: #2ecc71;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  margin: auto;
+  margin-bottom: 35px;
+  font-weight: 900;
+}
+.acm-info-row {
+  display: flex;
+  margin-bottom: 30px;
+}
+.acm-info-row:last-of-type {
+  margin: 0;
+}
+.acm-info-key {
+  min-width: 200px;
+  font-weight: 900;
+  font-size: 27px;
+}
+.acm-info-value {
+  font-weight: 900;
+  font-size: 23px;
+  color: #666;
+}
+.acmiv-sm {
+  font-size: 19px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1760px) {
+}

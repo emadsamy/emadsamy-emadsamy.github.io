@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Title -->
+    <title>Appoitment</title>
+
+    <!-- Links -->
+    <!-- Project Shortcut Icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!-- Font (Poppins) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <!-- Bootstrap V 5.2.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!-- Swiper Js Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Convert Images Svg To Icons -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <!-- Slim Select -->
+    <link rel="stylesheet" href="https://unpkg.com/slim-select@latest/dist/slimselect.css" />
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/appointment.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav id="navbarContainer" class="nav">
+        <div class="container">
+          <!-- Navbar Upper -->
+          <div class="navbar-upper">
+            <div class="upper-left"></div>
+            <div class="upper-right">
+              <a href="https://www.facebook.com" target="_blank" class="upper-icon">
+                <i class="fa-brands fa-facebook-f icon"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="upper-icon">
+                <i class="fa-brands fa-twitter icon"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="upper-icon">
+                <i class="fa-brands fa-instagram icon"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" class="upper-icon">
+                <i class="fa-brands fa-linkedin-in icon"></i>
+              </a>
+              <a href="https://www.youtube.com" target="_blank" class="upper-icon">
+                <i class="fa-brands fa-youtube icon"></i>
+              </a>
+
+              <a href="tel:16780" class="upper-call">
+                <i class="fa-brands fa-youtube icon"></i> <span class="uct">16780</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Main Navbar -->
+          <div class="main-navbar flex-between-vh">
+            <div class="nav-left">
+              <a class="nav-logo" href="index.html"
+                ><img class="img-fluid" src="assets/img/logo.png" alt="Porto vacation Club"
+              /></a>
+            </div>
+
+            <div class="nav-center">
+              <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="packages.html">Packages</a>
+                <a class="nav-link" href="about.html">About us</a>
+                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+
+            <div class="nav-right flex-center-h justify-content-end">
+              <div class="user-menu flex-between-vh">
+                <div class="um-avatar"><img class="img-fluid" src="assets/img/user.jpg" alt="" /></div>
+                <div class="um-wel-name">
+                  <span class="um-wel main-color">Welcome, </span><span class="um-name">Username</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Content (Appoitment) -->
+      <div class="wrapper-container">
+        <!-- Main Header -->
+        <div
+          id="headerExist"
+          class="main-header"
+          style="
+            background-image: url('http://api.directorstudio.me/uploads/projects/2021-07-14-05-35-17-060ef2055daacb-original.jpeg');
+          "
+        >
+          <div class="gradient-white"></div>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="appointment">
+          <div class="container">
+            <div class="appointment-container">
+              <div class="appointment-form">
+                <form action="#">
+                  <div class="af-input-group mb-3">
+                    <i class="fa-regular fa-user icon"></i>
+                    <input class="af-input" type="text" placeholder="Name" required />
+                  </div>
+
+                  <div class="af-input-group mb-3">
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <input class="af-input" type="email" placeholder="Email Address" required />
+                  </div>
+
+                  <div class="af-input-group mb-3">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <input class="af-input" type="text" placeholder="Phone Number" />
+                  </div>
+
+                  <div class="af-select-group mb-3">
+                    <select id="selectLocation"></select>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Datepicker -->
+        <div class="appointment-datepicker">
+          <div class="container">
+            <div class="a-dp-container">
+              <div class="a-select-datepicker text-center">
+                <form action="#">
+                  <div class="select-datepicker" id="datepicker" data-div></div>
+                  <!-- input is mandatory -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking Date Slider -->
+        <div class="booking-date-swiper">
+          <div class="container">
+            <div class="bds-container">
+              <div class="swiper bds-swiper">
+                <div class="swiper-wrapper">
+                  <!-- Row -->
+                  <div class="swiper-slide">
+                    <div class="bds-card">
+                      <div class="bds-header">Sat 6 / 01</div>
+                      <div class="bds-body">6 PM - 7 PM</div>
+                      <div class="bds-footer">
+                        <a class="btn btn-turquoise w-100" href="#">BOOK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="swiper-slide">
+                    <div class="bds-card">
+                      <div class="bds-header">Sat 6 / 01</div>
+                      <div class="bds-body">6 PM - 7 PM</div>
+                      <div class="bds-footer">
+                        <a class="btn btn-turquoise w-100" href="#">BOOK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="swiper-slide">
+                    <div class="bds-card">
+                      <div class="bds-header">Sat 6 / 01</div>
+                      <div class="bds-body">6 PM - 7 PM</div>
+                      <div class="bds-footer">
+                        <a class="btn btn-turquoise w-100" href="#">BOOK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="swiper-slide">
+                    <div class="bds-card">
+                      <div class="bds-header">Sat 6 / 01</div>
+                      <div class="bds-body">6 PM - 7 PM</div>
+                      <div class="bds-footer">
+                        <a class="btn btn-turquoise w-100" href="#">BOOK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="swiper-slide">
+                    <div class="bds-card">
+                      <div class="bds-header">Sat 6 / 01</div>
+                      <div class="bds-body">6 PM - 7 PM</div>
+                      <div class="bds-footer">
+                        <a class="btn btn-turquoise w-100" href="#">BOOK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="swiper-arrows">
+                <div class="swiper-arrow arrow-prev"><span class="icon-chevron-left icon"></span></div>
+                <div class="swiper-arrow arrow-next"><span class="icon-chevron-right icon"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Confirmation -->
+        <div class="app-confirm-message">
+          <div class="container">
+            <div class="acm-container">
+              <div class="acm-card">
+                <div class="acm-confirmation"><span class="icon-correct icon"></span></div>
+                <div class="big-title main-color text-center mb-5">YOUR APPOINTMENT HAS BEEN CONFIRMED</div>
+                <div class="acm-info">
+                  <!-- Row -->
+                  <div class="acm-info-row">
+                    <div class="acm-info-key title main-color">LOCATION</div>
+                    <div class="acm-info-value">
+                      Mohandesen
+                      <div class="acmiv-sm">5 Mohamed Hafez St. Cairo, Egypt</div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="acm-info-row">
+                    <div class="acm-info-key title main-color">DATE</div>
+                    <div class="acm-info-value">Saturday 6 / 01</div>
+                  </div>
+                  <!-- Row -->
+
+                  <!-- Row -->
+                  <div class="acm-info-row">
+                    <div class="acm-info-key title main-color">TIME</div>
+                    <div class="acm-info-value">From 7 PM - 8 PM</div>
+                  </div>
+                  <!-- Row -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content (Appoitment) -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-upper">
+              <!-- Footer Left -->
+              <div class="footer-upper-left">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img class="img-fluid" src="assets/img/logo.png" alt="Porto vacation Club" />
+                  </a>
+                </div>
+                <div class="footer-dirs pt-sm-4">
+                  <div class="mb-3">
+                    <a
+                      href="https://www.google.com/maps/place/%D8%B9%D8%A7%D9%85%D8%B1+%D8%AC%D8%B1%D9%88%D8%A8+%D8%B4%D9%8A%D8%B1%D8%A7%D8%AA%D9%88%D9%86+%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%E2%80%AD/@30.1037461,31.3804641,17z/data=!3m1!4b1!4m5!3m4!1s0x14581641ec7d1265:0xe9be2c99165e7e49!8m2!3d30.1037461!4d31.3782754"
+                      target="_blank"
+                      class="footer-dir main-color"
+                    >
+                      <i class="fa-solid fa-location-dot icon"></i>
+                      <span class="fd-text">Address details 234 street name Area, Gov, Country. </span>
+                    </a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="mailto:info@amer-group.com" class="footer-dir main-color">
+                      <i class="fa-solid fa-envelope icon"></i>
+                      <span class="fd-text">info@amer-group.com</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer Left -->
+
+              <!-- Footer Center -->
+              <div class="footer-upper-center">
+                <div class="footer-locations">
+                  <div class="">
+                    <a class="title main-color mb-3" href="locations.html"
+                      ><i class="fa-solid fa-location-dot icon"></i> VIEW ALL LOCATIONS</a
+                    >
+                  </div>
+                  <div class="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.666155479076!2d31.378275399999996!3d30.1037461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581641ec7d1265%3A0xe9be2c99165e7e49!2z2LnYp9mF2LEg2KzYsdmI2Kgg2LTZitix2KfYqtmI2YYg2KfZhNmF2LfYp9ix!5e0!3m2!1sar!2seg!4v1670290845273!5m2!1sar!2seg"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer Center -->
+
+              <!-- Footer Right -->
+              <div class="footer-upper-right">
+                <div class="footer-contact">
+                  <div class="newsletter mb-5">
+                    <div class="fc-big-title big-title main-color mb-3">SUBSCRIBE TO GET OUR LATEST OFFERS</div>
+                    <form action="#">
+                      <div class="footer-form-group flex-between-vh">
+                        <input class="ffg-input" type="email" placeholder="Enter your email address..." required />
+                        <button class="ffg-btn" type="submit">SUBMIT NOW</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="footer-social-tel text-center flex-between-h">
+                    <div class="footer-social text-center">
+                      <div class="fc-big-title big-title main-color mb-3">FOLLOW US</div>
+                      <div class="footer-social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="fsl-icon">
+                          <i class="fa-brands fa-facebook-f icon"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="fsl-icon">
+                          <i class="fa-brands fa-twitter icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="fsl-icon">
+                          <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="fsl-icon">
+                          <i class="fa-brands fa-linkedin-in icon"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="fsl-icon">
+                          <i class="fa-brands fa-youtube icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="footer-tel">
+                      <div class="title mb-1 mt-2 main-color">FOR MORE INFORMATION</div>
+                      <a class="ft-number" href="tel:16780">
+                        <i class="fa-solid fa-phone icon"></i>
+                        16780
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer Right -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="fb-flexable flex-between-vh">
+              <div class="copyright">&copy;2022 portovacation. All rights reserved.</div>
+              <div class="footer-links">
+                <a href="#" class="footer-link">Contact Us</a> | <a href="privacy.html" class="footer-link">Privacy</a> |
+                <a href="#" class="footer-link">Terms & Conditions</a> |
+                <a href="#" class="footer-link">Careers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Jquery V 3.3.1 -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Slim Select Box -->
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+
+    <!-- Popper Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome V6 -->
+    <script src="assets/js/fontawesome.js"></script>
+
+    <!-- Bootstrap V 5.2.3 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Main Functions -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Select
+      var selectLocation = new SlimSelect({
+        select: "#selectLocation",
+        search: false,
+        data: [
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>sheraton</div>",
+            text: "sheraton",
+            value: 1,
+          },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Heliopolis</div>",
+            text: "Heliopolis",
+            value: 2,
+          },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>6th of October</div>",
+            text: "6th of October",
+            value: 3,
+          },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Mohandesen</div>",
+            text: "Mohandesen",
+            value: 4,
+          },
+          { html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Maadi</div>", text: "Maadi", value: 5 },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Alexandria</div>",
+            text: "Alexandria",
+            value: 6,
+          },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Porto Marina Resort, North Coast, Egypt</div>",
+            text: "Porto Marina Resort, North Coast, Egypt",
+            value: 7,
+          },
+          {
+            html: "<div class='ss-row'><i class='fa-solid fa-location-dot sr-icon'></i>Porto South Beach Resort, Ain Sokhna, Egypt</div>",
+            text: "Porto South Beach Resort, Ain Sokhna, Egypt",
+            value: 8,
+          },
+        ],
+      });
+
+      // Selected Value
+      $("#selectLocation").change(function () {
+        var option_selected = $("option:selected", this).attr("value");
+        console.log(option_selected);
+      });
+
+      // Datepicker (Flatpicker)
+      $("#datepicker").flatpickr({
+        mode: "range",
+        minDate: "today",
+        altInput: true,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        inline: true,
+        ariaDateFormat: "m-y",
+        onChange: function (selectedDates, dateStr, instance) {
+          console.log("From Date " + selectedDates[0]);
+          console.log("To Date " + selectedDates[1]);
+        },
+        // disable: [
+        //   function (date) {
+        //     // disable every multiple of 8
+        //     return !(date.getDate() % 8);
+        //   },
+        // ],
+      });
+
+      const dateSwiper = new Swiper(".bds-swiper", {
+        direction: "horizontal",
+        // loop: false,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        draggable: true,
+        autoplay: {
+          delay: 5000,
+        },
+        speed: 800,
+        navigation: {
+          nextEl: ".arrow-next",
+          prevEl: ".arrow-prev",
+        },
+        // pagination: {
+        //   el: ".features-pagination",
+        //   type: "bullets",
+        //   clickable: true,
+        // },
+      });
+    </script>
+  </body>
+</html>
