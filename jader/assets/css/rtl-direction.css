@@ -1,0 +1,115 @@
+.body-rtl {
+  font-family: "Almarai", sans-serif;
+  direction: rtl;
+}
+/* .body-rtl */
+.body-rtl .lp-header {
+  background-position: left center;
+}
+.body-rtl .lp-block {
+  background-position: left center;
+}
+.body-rtl .focus {
+  right: 3px;
+  left: auto;
+}
+.body-rtl .cmd-details .title {
+  margin-top: -130px;
+}
+.body-rtl .cmd-details .title,
+.body-rtl .cmd-details .title * {
+  font-size: 55px;
+}
+.body-rtl .cmd {
+  background-position: right center;
+}
+.body-rtl .skills-block .title {
+  font-size: 50px;
+}
+.body-rtl .skill-card-title {
+  font-weight: 600;
+}
+.body-rtl .skill-card-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+.body-rtl .skill-card:nth-of-type(1) {
+  border-radius: 0 80px 80px 0;
+}
+.body-rtl .skill-card:nth-of-type(3) {
+  border-radius: 80px 0 0 80px;
+}
+.body-rtl .skills {
+  background-position: left center;
+}
+.body-rtl .benefit-row:nth-of-type(even) {
+  margin-right: 120px;
+  margin-left: 0;
+}
+.body-rtl .ap-copy-img-1 {
+  left: auto;
+  right: -15px;
+  transform: scaleX(-1);
+}
+.body-rtl .ap-copy-img-2 {
+  left: 20px;
+  right: auto;
+  transform: scaleX(-1);
+}
+.body-rtl .nav-action {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.body-rtl .nav-center {
+  margin-left: auto;
+  margin-right: 0;
+}
+.body-rtl .nav-list {
+  margin-right: 50px;
+  margin-left: 0;
+}
+.body-rtl .auth-view img {
+  transform: none;
+}
+.body-rtl .demo-li .icon {
+  margin-left: 5px;
+  margin-right: 0;
+}
+.body-rtl .footer-logo-text .text {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.body-rtl .social-link {
+  margin-left: 6px;
+  margin-right: 0;
+}
+.body-rtl .nav-action-dropdown .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}

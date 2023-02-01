@@ -19,7 +19,7 @@
 .privacy-agree,
 .privacy-agree * {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
 }
 .privacy-url {
   color: #6a549d !important;
@@ -38,14 +38,39 @@
 .demo {
   padding: 50px 0;
 }
+.demo-desc-row {
+  margin-bottom: 35px;
+}
 .demo-desc-row .title {
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 26px;
+  color: #6b549e;
+  margin-bottom: 20px;
 }
 .demo-desc-row .text {
   font-size: 20px;
   font-weight: 400;
-  color: #363463;
+  color: #3f3e6a;
+  line-height: 1.8;
+}
+.auth-view {
+  height: 445px;
+}
+.auth-view img {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(-1);
+}
+.demo-li {
+  font-weight: 400;
+  font-size: 19px;
+  color: #3f3e6a;
+  margin-bottom: 13px;
+  display: flex;
+}
+.demo-li .icon {
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -53,6 +78,35 @@
 }
 
 @media (max-width: 767.98px) {
+  .btn-purple-empty {
+    padding: 13px 18px;
+    font-size: 14px;
+  }
+
+  .auth-block {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 20px 20px;
+  }
+  .auth-view {
+    display: none;
+  }
+  .auth-form-double {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0;
+  }
+  .privacy-agree,
+  .privacy-agree * {
+    font-size: 15px;
+  }
+  .demo-desc-row .title {
+    font-size: 24px;
+  }
+  .demo-desc-row .text {
+    font-size: 16px;
+  }
+  .demo-li {
+    font-size: 16px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -61,10 +115,30 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .auth-block {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+  .auth-form-double {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0;
+  }
+  .privacy-agree,
+  .privacy-agree * {
+    font-size: 15px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .auth-block {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+  .auth-form-double {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
