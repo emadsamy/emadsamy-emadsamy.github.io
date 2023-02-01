@@ -6,7 +6,7 @@
     <meta name="description" content="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Title -->
-    <title>Jader</title>
+    <title>Jadeer</title>
 
     <!-- Links -->
     <!-- Project Shortcut Icon -->
@@ -42,13 +42,38 @@
               <a class="nav-logo" href="index.html"><img src="assets/img/logo.svg" alt="Jadeer" /></a>
             </div>
 
+            <div class="nav-center">
+              <div class="nav-list">
+                <a href="#" class="nav-url active">About</a>
+                <a href="#" class="nav-url">Courses</a>
+                <a href="#" class="nav-url">Plans</a>
+              </div>
+            </div>
+
             <div class="nav-right">
-              <div class="nav-items flex-center-v">
-                <div class="nav-item">
-                  <a href="javascript:void(0)" class="btn btn-light">Sign Up</a>
-                </div>
-                <div class="nav-item">
+              <div class="nav-actions flex-center-v">
+                <div class="nav-action">
                   <a href="javascript:void(0)" class="btn btn-purple">Demo Page</a>
+                </div>
+                <div class="nav-action">
+                  <a href="signup.html" class="btn btn-light">Sign Up</a>
+                </div>
+                <div class="nav-action">
+                  <div class="nav-action-dropdown dropdown">
+                    <a
+                      class="btn btn-secondary dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img class="lang-icon img-fluid" src="assets/img/icons/globe.svg" alt="Language" /> Ar
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">En</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -236,18 +261,22 @@
 
           <!-- Future -->
           <div class="future-dev">
-            <div class="container">
-              <div class="future-dev-block text-center">
-                <div class="title mb-4">
-                  Invest in the future of your<br />
-                  organization and
-                  <span class="title-focus"><span class="keyword">grow your team</span><span class="focus"></span> </span>
-                </div>
-                <div class="lp-action">
-                  <button class="btn btn-primary">Start Now</button>
+            <div class="future-dev-inside">
+              <div class="container">
+                <div class="future-dev-block text-center">
+                  <div class="title mb-4">
+                    Invest in the future of your<br />
+                    organization and
+                    <span class="title-focus"><span class="keyword">grow your team</span><span class="focus"></span> </span>
+                  </div>
+                  <div class="lp-action">
+                    <button class="btn btn-primary">Start Now</button>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="particles" id="particles-js"></div>
           </div>
           <!-- Future -->
         </div>
@@ -270,8 +299,8 @@
 
     <!-- Popper Js -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
 
@@ -279,9 +308,19 @@
     <script src="assets/js/fontawesome.js"></script>
 
     <!-- Bootstrap v5 -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <!-- Particle -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Particle -->
 
     <!-- Main Functions -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/particlesjs-config.json"></script>
+    <script>
+      particlesJS.load("#particles-js", "assets/js/particlesjs-config.json", function () {});
+    </script>
   </body>
 </html>
