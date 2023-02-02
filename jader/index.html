@@ -22,6 +22,9 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     />
 
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <!-- Bootstrap v5 -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
 
@@ -53,7 +56,7 @@
 
             <div class="nav-right">
               <div class="nav-actions flex-center-v">
-                <div class="nav-action">
+                <div class="nav-action nav-action-demo">
                   <a href="javascript:void(0)" class="btn btn-purple">Demo Page</a>
                 </div>
                 <div class="nav-action">
@@ -75,6 +78,9 @@
                       <li><a class="dropdown-item" href="#">Ar</a></li>
                     </ul>
                   </div>
+                </div>
+                <div class="nav-action nav-action-burger">
+                  <button class="burger nav-burger"><span></span></button>
                 </div>
               </div>
             </div>
@@ -131,7 +137,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="cmd-view">
+                <div
+                  class="cmd-view"
+                  data-aos-once="true"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1200"
+                >
                   <img class="img-fluid" src="assets/img/development.png" alt="Development" />
                 </div>
               </div>
@@ -149,7 +161,14 @@
                   requirements. Invest in the future of your organization and develop your team.
                 </div>
                 <div class="skills-grid">
-                  <div class="skill-card">
+                  <div
+                    class="skill-card"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000"
+                    data-aos-delay="50"
+                    data-aos-once="true"
+                  >
                     <div class="skill-card-title">Team within the organization</div>
                     <img class="skill-card-icon img-fluid" src="assets/img/icons/training.svg" alt="Skills" />
                     <div class="skill-card-text">
@@ -158,7 +177,14 @@
                     </div>
                   </div>
 
-                  <div class="skill-card">
+                  <div
+                    class="skill-card"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="3800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                  >
                     <div class="skill-card-title">Attract and retain talent</div>
                     <img class="skill-card-icon img-fluid" src="assets/img/icons/attraction.svg" alt="Skills" />
                     <div class="skill-card-text">
@@ -167,7 +193,15 @@
                     </div>
                   </div>
 
-                  <div class="skill-card">
+                  <div
+                    class="skill-card"
+                    class="skill-card"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="5000"
+                    data-aos-delay="150"
+                    data-aos-once="true"
+                  >
                     <div class="skill-card-title">Professional skills</div>
                     <img class="skill-card-icon img-fluid" src="assets/img/icons/skills.svg" alt="Skills" />
                     <div class="skill-card-text">
@@ -192,7 +226,7 @@
 
                 <div class="benefits-grid">
                   <!-- Row -->
-                  <div class="benefit-row">
+                  <div class="benefit-row" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                     <div class="benefit-row-view">
                       <img class="brv-img img-fluid" src="assets/img/benefits/benefit-1.png" alt="Collection included" />
                     </div>
@@ -207,7 +241,7 @@
                   <!-- Row -->
 
                   <!-- Row -->
-                  <div class="benefit-row">
+                  <div class="benefit-row" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                     <div class="benefit-row-view">
                       <img class="brv-img img-fluid" src="assets/img/benefits/benefit-2.png" alt="Collection included" />
                     </div>
@@ -222,7 +256,7 @@
                   <!-- Row -->
 
                   <!-- Row -->
-                  <div class="benefit-row">
+                  <div class="benefit-row" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                     <div class="benefit-row-view">
                       <img class="brv-img img-fluid" src="assets/img/benefits/benefit-3.png" alt="Collection included" />
                     </div>
@@ -313,7 +347,9 @@
 
     <!-- Particle -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- Particle -->
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Main Functions -->
     <script src="assets/js/main.js"></script>
@@ -322,6 +358,7 @@
     <script src="assets/js/particlesjs-config.json"></script>
     <script>
       particlesJS.load("#particles-js", "assets/js/particlesjs-config.json", function () {});
+      AOS.init();
     </script>
   </body>
 </html>

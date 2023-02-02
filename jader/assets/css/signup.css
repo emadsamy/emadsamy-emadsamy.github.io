@@ -127,6 +127,16 @@
   .privacy-agree * {
     font-size: 15px;
   }
+  .demo-desc-row .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .demo-desc-row .text {
+    font-size: 17px;
+  }
+  .demo-li {
+    font-size: 17px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */

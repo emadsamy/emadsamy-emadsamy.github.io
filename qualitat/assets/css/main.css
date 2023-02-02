@@ -776,7 +776,7 @@ select {
 /* Modal */
 
 .wrapper-container {
-  padding-top: 62.71px;
+  padding-top: 66.2px;
   padding-bottom: 250px;
 }
 /* Global */
@@ -939,7 +939,7 @@ select {
 /* Home */
 .swiper-home-bg {
   min-height: 600px;
-  height: calc(100vh - 62.71px);
+  height: calc(100vh - 66.2px);
 }
 .shb-slide {
   background-size: cover;
@@ -1231,7 +1231,7 @@ footer {
     font-size: 45px;
   }
   .wrapper-container {
-    padding-top: 61.19px;
+    padding-top: 64.93px;
     padding-bottom: 150px;
   }
   .button-default {
@@ -1279,10 +1279,10 @@ footer {
   .navbar-links-content {
     display: none;
     position: fixed;
-    top: 61.19px;
+    top: 64.93px;
     left: 0;
     width: 100%;
-    min-height: calc(100% - 61.19px);
+    min-height: calc(100% - 64.93px);
     padding: 0 20px;
     z-index: 96034;
     overflow-y: auto;
@@ -1373,7 +1373,7 @@ footer {
   }
   .swiper-home-bg {
     min-height: 400px;
-    height: calc(100vh - 61.19px);
+    height: calc(100vh - 64.93px);
   }
   .shb-slide {
     padding-bottom: 70px;
@@ -1537,7 +1537,7 @@ footer {
     font-size: 19px;
   }
   .wrapper-container {
-    padding-top: 62.71px;
+    padding-top: 66.2px;
     padding-bottom: 150px;
   }
   /* Navbar */
@@ -1548,7 +1548,7 @@ footer {
   /* Navbar */
   .swiper-home-bg {
     min-height: 400px;
-    height: calc(100vh - 62.71px);
+    height: calc(100vh - 66.2px);
   }
   .shb-slide {
     padding-bottom: 70px;

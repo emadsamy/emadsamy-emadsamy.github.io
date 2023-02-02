@@ -90,9 +90,60 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .body-rtl .nav-action {
+    margin-right: 7px;
+    margin-left: 0;
+  }
+  .body-rtl .cmd {
+    padding: 70px 0 70px;
+  }
+  .body-rtl .cmd-details .title,
+  .body-rtl .cmd-details .title * {
+    font-size: 38px;
+  }
+  .body-rtl .cmd-details .title {
+    margin-top: -96px;
+  }
+  .body-rtl .skills-block .title {
+    font-size: 36px;
+  }
+  .body-rtl .benefits-title {
+    font-size: 28px;
+  }
+  .body-rtl .footer-logo-text .text {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .body-rtl .nav-list {
+    margin: 0;
+    padding: 5px 0;
+  }
+  .body-rtl .nav-url {
+    padding: 0;
+    margin: 0 0 5px 0;
+    display: block;
+    border: none;
+    border-right: 4px solid transparent;
+    padding: 10px 14px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .body-rtl .nav-url:last-of-type {
+    margin-bottom: 0;
+  }
+  .body-rtl .nav-url.active,
+  .body-rtl .nav-url:hover {
+    border: none;
+    border-right: 4px solid #6a549d;
+    color: #6a549d;
+    padding-right: 28px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -101,10 +152,24 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .body-rtl .aphorism-block .text {
+    font-size: 29px;
+  }
+  .body-rtl .demo-desc-row .title {
+    font-size: 22px;
+  }
+  .body-rtl .footer-logo-text .text {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .body-rtl .footer-logo-text .text {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

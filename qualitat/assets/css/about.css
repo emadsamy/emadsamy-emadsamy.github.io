@@ -50,6 +50,7 @@
 }
 .aw-view iframe {
   max-width: 100%;
+  width: 100%;
 }
 .aw-notice {
   color: #123a68;
