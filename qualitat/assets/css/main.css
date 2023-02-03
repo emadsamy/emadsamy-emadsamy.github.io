@@ -1060,13 +1060,73 @@ select {
 .customer-card {
   padding: 10px;
   border: 2px solid #ebebeb;
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .customer-card img {
   height: 95px;
+}
+.tab-view-block {
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.tab-view-img {
+  width: 250px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+.tab-view-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.tab-view-details {
+  width: calc(100% - 250px);
+  background: #f7f7f7;
+  padding: 30px;
+}
+.tab-view-details .text {
+  text-align: left;
+  color: #696969;
+  font-size: 17px;
+  line-height: 1.5;
+  word-break: break-all;
+}
+.close-tab-view-btn {
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  color: #999;
+  font-size: 22px;
+  z-index: 20;
+}
+.close-tab-view-btn:hover {
+  color: #000;
+}
+.close-tab-view-btn:active {
+  opacity: 0.5;
+}
+.customers-view {
+  margin-top: 40px;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+  /* display: none; */
+}
+.customers-view.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+.customer-card-btn.active {
+  opacity: 0.45;
 }
 /* Customers */
 
@@ -1427,6 +1487,44 @@ footer {
   .customer-card img {
     height: 85px;
   }
+  .tab-view-block {
+    display: block !important;
+  }
+  .tab-view-img {
+    width: 100%;
+  }
+  .tab-view-details {
+    width: 100%;
+  }
+  .tab-view-img img {
+    width: 180px;
+    height: auto;
+    margin: auto;
+  }
+  .close-tab-view-btn {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333 !important;
+    color: #fff !important;
+    font-weight: 100;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+    top: 12px;
+    right: 12px;
+  }
+  .close-tab-view-btn:hover {
+    background: #000 !important;
+    color: #fff !important;
+  }
+  .close-tab-view-btn:active {
+    background: #000 !important;
+    color: #fff !important;
+    opacity: 0.5;
+  }
   /* Home */
 
   /* Footer */
@@ -1605,6 +1703,19 @@ footer {
   .customers-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
+  }
+  .tab-view-img img {
+    width: auto;
+  }
+  .tab-view-img {
+    width: 180px;
+  }
+  .tab-view-details {
+    width: calc(100% - 180px);
+    padding: 20px;
+  }
+  .tab-view-details .text {
+    font-size: 17px;
   }
   /* Home */
 }
