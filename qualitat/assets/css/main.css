@@ -1068,6 +1068,7 @@ select {
 }
 .customer-card img {
   height: 95px;
+  object-fit: contain;
 }
 .tab-view-block {
   border: 2px solid #e5e5e5;
@@ -1082,9 +1083,10 @@ select {
   align-items: center;
 }
 .tab-view-img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 178px !important;
   margin: auto;
+  object-fit: contain;
 }
 .tab-view-details {
   width: calc(100% - 250px);
@@ -1100,8 +1102,8 @@ select {
 }
 .close-tab-view-btn {
   position: absolute;
-  top: 6px;
-  right: 17px;
+  top: 4px;
+  right: 15px;
   color: #999;
   font-size: 22px;
   z-index: 20;
