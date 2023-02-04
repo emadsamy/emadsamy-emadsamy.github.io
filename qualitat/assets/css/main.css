@@ -511,26 +511,30 @@ select {
 
 /* Scroller Bar */
 .ss-list::-webkit-scrollbar,
-.scroller::-webkit-scrollbar {
+.scroller::-webkit-scrollbar,
+#tabViewText::-webkit-scrollbar {
   width: 8px;
 }
 
 /* Track */
 .ss-list::-webkit-scrollbar-track,
-.scroller::-webkit-scrollbar-track {
+.scroller::-webkit-scrollbar-track,
+#tabViewText::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* Handle */
 .ss-list::-webkit-scrollbar-thumb,
-.scroller::-webkit-scrollbar-thumb {
+.scroller::-webkit-scrollbar-thumb,
+#tabViewText::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 50px;
 }
 
 /* Handle on hover */
 .ss-list::-webkit-scrollbar-thumb:hover,
-.scroller::-webkit-scrollbar-thumb:hover {
+.scroller::-webkit-scrollbar-thumb:hover,
+#tabViewText::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
 /* Scroller Bar */
@@ -914,7 +918,7 @@ select {
   padding: 8px 0;
   font-weight: 600;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 .nf-copyright div a {
   color: #fff;
@@ -1129,6 +1133,10 @@ select {
 }
 .customer-card-btn.active {
   opacity: 0.45;
+}
+#tabViewText {
+  height: 158px;
+  overflow-y: auto;
 }
 /* Customers */
 
@@ -1482,6 +1490,9 @@ footer {
     font-size: 17px;
     margin-bottom: 2rem !important;
   }
+  #tabViewText {
+    margin-bottom: 0 !important;
+  }
   .customers-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
@@ -1499,8 +1510,7 @@ footer {
     width: 100%;
   }
   .tab-view-img img {
-    width: 180px;
-    height: auto;
+    height: 150px !important;
     margin: auto;
   }
   .close-tab-view-btn {
