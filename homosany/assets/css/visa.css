@@ -1,0 +1,125 @@
+.page-header {
+  height: 75vh;
+  min-height: 450px;
+}
+.page-title {
+  bottom: 80px;
+}
+.visa-details-block,
+.verification-container {
+  padding: 62px 0 76px;
+}
+.visa-details-block .title {
+  color: #000E34;
+  font-size: 28px;
+}
+.visa-search {
+  padding-top: 73px;
+}
+.vs-group {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 50px;
+}
+.vsg-input {
+  /* border: 2px solid #E0E0E0; */
+  /* border-right: none; */
+  border-radius: 50px 0 0 50px;
+  font-size: 18px;
+  padding: 14px 28px;
+  width: 650px;
+  max-width: 100%;
+}
+.vsg-btn {
+  background: #00632A;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 0 50px 50px 0;
+  font-size: 19px;
+}
+.vsg-btn span {
+  margin: 0 7px;
+}
+.vsg-btn .icon {
+  font-size: 25px;
+}
+.visa-grid {
+  display: grid;
+  grid-template-columns: 1.36fr 0.64fr;
+  grid-gap: 12.52rem;
+  gap: 80px;
+}
+
+/* Verification */
+.verification-header {
+  height: 250px;
+  min-height: auto;
+}
+.verification-header .ph-view {
+  object-position: top;
+}
+.verification-header .page-title .title {
+  font-size: 40px;
+}
+.verification-header .page-title {
+  bottom: 47px;
+}
+.verification-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  grid-gap: 12.52rem;
+  gap: 80px;
+}
+.vfd-row {
+  padding: 17px 0;
+  border-bottom: 2px solid #A1A1A1;
+  display: flex;
+  align-items: center;
+}
+.vfd-row:last-of-type {
+  border: none
+}
+.vfd-title {
+  font-weight: bold;
+  font-size: 22px;
+  color: #555;
+}
+.vfd-key,
+.vfd-value {
+  font-weight: 600;
+  font-size: 21px;
+  color: #555;
+}
+.back-action .btn .icon {
+  margin-left: 0;
+}
+/* Verification */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}

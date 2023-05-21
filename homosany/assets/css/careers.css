@@ -1,0 +1,347 @@
+.careers-details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.cd-container .title {
+  font-size: 27px;
+}
+.features-container .title {
+  font-size: 31px;
+  font-weight: 500;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 50px;
+}
+.feature-card {
+  padding: 27px 35px;
+  border: 2px solid #3c3c3c45;
+}
+.feat-action .btn-bg {
+  background: #00632A;
+  color: #fff;
+  display: inline-flex;
+  font-size: 15px;
+  padding: 12px 33px;
+}
+.feat-action .btn-bg:hover {
+  background: #014527;
+  color: #fff;
+}
+.feat-action .btn-bg:active {
+  background: #014527;
+  color: #fff;
+  opacity: 0.5;
+}
+.feat-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: #006621;
+  margin-bottom: 6px;
+}
+.feat-sub-title {
+  font-weight: 500;
+  color: #05822d;
+  font-size: 19px;
+  line-height: 1.2;
+}
+.feat-job {
+  font-size: 16px;
+  font-weight: 500;
+  color: #05822d;
+  margin: 15px 0;
+}
+.vcdetails-job-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 20px;
+  padding-bottom: 27px;
+}
+.mjg-row {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #000e34;
+}
+.mjg-row .icon {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 11px;
+  margin-top: -2px;
+  width: 22px;
+  background: #000e34;
+  width: 17px;
+  height: 17px;
+  padding: 7px;
+  border-radius: 6px;
+}
+.vcdetails-job-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+.vcdetails-job-details,
+.vcdetails-job-text {
+  font-size: 18px;
+  color: #444;
+}
+.vcdetails-title {
+  margin-bottom: 2.5rem;
+  background: #000e34;
+  color: #fff;
+  padding: 13px 30px;
+  display: inline-block;
+  font-size: 33px;
+}
+.form-group-upload {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+.upload-icon {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+.ui-icon {
+  line-height: 1;
+  color: #999;
+}
+.btn-bg,
+.btn-secondary {
+  padding: 16px 25px;
+}
+.vcdetails-title {
+  font-weight: bold;
+  font-size: 28px
+}
+.vc-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  grid-gap: 12.52rem;
+  gap: 60px;
+}
+.view-career {
+  padding-top: 80px;
+}
+.form-row-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12.52rem;
+  gap: 1rem;
+}
+.pdf-preview-container {
+  position: absolute;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.pdf-preview-container.active {
+  display: block !important;
+}
+.pdf-preview {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.pdf-icon {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.pdf-icon img {
+  width: 50px;
+}
+.pdf-details {
+  background: #eee;
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.pdf-flex {
+  width: 100%;
+}
+.pdf-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.pdf-text {
+  font-weight: 500;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .careers-details {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .cd-container .title {
+    font-size: 25px;
+  }
+  .cd-container .text {
+    font-size: 18px;
+  }
+  .features {
+    padding-top: 10px;
+  }
+  .cd-container .text br {
+    content: "";
+  }
+  .features-container .title {
+    font-size: 25px;
+    margin-bottom: 20px !important;
+  }
+  .features-grid,
+  .vc-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 18px;
+  }
+  .feat-title {
+    font-size: 20px;
+  }
+  .feat-job {
+    font-size: 17px;
+    margin-top: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .feat-sub-title {
+    font-size: 17px;
+  }
+  .feat-job span {
+    display: block;
+    margin-left: 0 !important;
+    line-height: 1;
+  }
+  .feat-action .btn-bg {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+  .view-career {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .vcdetails-title {
+    margin-bottom: 1.7rem;
+  }
+  .vcdetails-title {
+    font-size: 24px;
+  }
+  .mjg-row {
+    font-size: 18px;
+  }
+  .vcdetails-job-title {
+    font-size: 19px;
+  }
+  .vcdetails-job-details, .vcdetails-job-text {
+    font-size: 17px;
+  }
+  .vcdetails-job-list {
+    padding-left: 2rem !important;
+    padding-top: 8px;
+  }
+  .vc-grid {
+    gap: 70px;
+  }
+  .form-row-double {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cd-container .title {
+    font-size: 31px;
+  }
+  .text {
+    font-size: 22px;
+  }
+  .features-container .title {
+    font-size: 33px;
+  }
+  .features-grid {
+    gap: 15px;
+  }
+  .feature-card {
+    padding: 25px;
+  }
+  .feat-title {
+    font-size: 26px;
+  }
+  .feat-job {
+    font-size: 18px;
+  }
+  .vc-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /*gap: 20px;*/
+  }
+  .view-career {
+    padding-top: 60px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cd-container .title {
+    font-size: 34px;
+  }
+  .text {
+    font-size: 23px;
+  }
+  .features-grid {
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 25px;
+  }
+  .vc-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 30px;
+  }
+  .vcdetails-title {
+    font-size: 25px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
