@@ -416,6 +416,7 @@
     margin-left: -15px;
     margin-right: -15px;
     width: calc(100% + 30px) !important;
+    margin-bottom: 20px;
   }
   .text {
     font-size: 15px !important;
@@ -466,7 +467,7 @@
     margin-bottom: 11px;
   }
   .bps-info .sub-title {
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 15px !important;
   }
   .mini-title {
@@ -593,6 +594,9 @@
   }
   .sol-data {
     order: 3;
+  }
+  .ttc-arrow-btn .icon {
+    font-size: 26px
   }
 }
 

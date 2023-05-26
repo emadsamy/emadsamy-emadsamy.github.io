@@ -750,7 +750,10 @@
         watchSlidesProgress: true,
         on: {
           init(e) {
-            $("#tabs-main-title").text($(".tth-slide:first-of-type").text());
+            $("#tabs-main-title").text($(".tth-slide:first-of-type").data('title'));
+          },
+          slideChange: function (sw) {
+            
           }
         },
         breakpoints: {
@@ -801,8 +804,12 @@
         },
         on: {
           init(e) {
-            console.log(e)
+            
           },
+          slideChange: function (e) {
+            var title = $(".tth-slide.swiper-slide-thumb-active").data('title');
+            $("#tabs-main-title").text(title);
+          }
         },
       });
     </script>

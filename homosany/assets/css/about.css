@@ -49,7 +49,7 @@
   margin-bottom: 0;
 }
 .our-values {
-  padding: 60px 0;
+  padding: 50px 0;
   background: #f9f9f9;
 }
 .aw-view img {
@@ -342,6 +342,14 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .cmc-block,
+  .teamwork-header {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
+  .cmc-details {
+    padding: 25px 23px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -377,24 +385,37 @@
   }
   .aw-view {
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aw-view > * {
+    width: 100%;
+  }
+  .aw-view img {
+    order: 3
   }
   .aw-title {
     font-size: 21px;
     margin-bottom: 13px !important;
     line-height: 1.3;
   }
+  .aw-notice {
+    margin-top: -3px !important;
+    margin-bottom: 13px !important;
+    font-size: 17px;
+  }
   .aw-sub-title {
     line-height: 1.5;
     margin-bottom: 17px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
   .aw-text {
-    font-size: 16px;
+    font-size: 15px;
   }
   .aw-details-child {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
   .partners {
     padding: 45px 0 30px;
@@ -450,7 +471,7 @@
     padding-top: 130px;
   }
   .our-values {
-    padding: 28px 0;
+    padding: 17px 0 30px;
   }
   .aw-benefit-row {
     font-size: 16px;
@@ -473,12 +494,16 @@
   .cmc-description {
     margin-top: 15px !important;
   }
+  .cmc-divider {
+    height: 7px;
+  }
   .cmc-details {
     padding: 25px 30px;
   }
   .cmc-comma {
-    font-size: 115px;
+    font-size: 100px;
     height: 37px;
+    margin-left: -2px;
   }
   .cmc-title {
     font-size: 31px;
@@ -553,7 +578,7 @@
     padding-bottom: 0;
   }
   .cmc-page .cmc-title {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.1;
   }
   .cmc-page .cmc-comma {
@@ -614,8 +639,12 @@
     padding-top: 75px;
   }
   .aw-notice {
-    font-size: 23px;
+    font-size: 17px;
     line-height: 1.4;
+    margin-top: 15px !important;
+  }
+  .aw-benefit-row {
+    font-size: 18px;
   }
   .partner-card {
     padding-right: 50px;
@@ -675,8 +704,20 @@
     font-size: 15px;
   }
   .teamwork-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .twg-card {
+    margin-bottom: 10px;
+  }
+  .twg-img {
+    height: 210px;
+  }
+  .twg-title {
+    font-size: 15px;
+  }
+  .twg-description {
+    font-size: 13px;
   }
 
   /* CEO */
@@ -733,10 +774,16 @@
   .tmhb-title {
     font-size: 23px;
   }
+  .twg-img {
+    height: 300px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .twg-img {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1400px) {

@@ -954,8 +954,9 @@ select {
   white-space: nowrap;
 }
 .navbar-links-box .nlb-item:hover,
-.nlb-item-child:hover {
-  color: #005F35;
+.nlb-item-child:hover,
+.nlb-item-child.active {
+  color: #27ae60;
 }
 .nlb-item:hover .nav-dropdown-list {
   display: block;
@@ -1792,6 +1793,9 @@ footer {
     margin-right: 0;
     margin-left: 0;
   }
+  .nlb-item:hover .nav-dropdown-list {
+    display: none;
+  }
   /* Navbar */
 
   /* Home */
@@ -2253,6 +2257,11 @@ footer {
   .button-default .icon {
     font-size: 20px;
   }
+  .btn-pry {
+    padding: 10px 36px;
+    font-size: 17px;
+    font-weight: 600;
+  }
 
   /* Navbar */
   .navbar-links-box .nlb-item {
@@ -2279,6 +2288,22 @@ footer {
   }
   .shb-description {
     font-size: 15px;
+  }
+  .hsd-container {
+    padding-top: 65px
+  }
+  .hsd-container .title {
+    font-size: 35px;
+  }
+  .bnp-details {
+    width: 50%;
+    padding: 40px 43px 50px 43px;
+  }
+  .bnp-view {
+    width: 50%;
+  }
+  .customers {
+    padding-top: 55px;
   }
   .customers-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));

@@ -1,0 +1,151 @@
+.news {
+  padding: 50px 0;
+}
+.news-main-title {
+  color: #231b18;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+  font-size: 2.5em;
+  position: relative;
+}
+.article-line {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 37px;
+  background: #b8b8b8;
+  left: 0;
+  margin-bottom: 0.5em;
+}
+.news-socialmedia {
+  padding: 18px 0 10px;
+}
+.news-social-icon {
+  display: inline-block;
+}
+.news-social-icon .icon {
+  font-size: 17px;
+  margin-right: 13px;
+}
+.news-social-icon .fa-instagram {
+  color: #8a3ab9;
+}
+.news-social-icon .fa-facebook-f {
+  color: #006cb7;
+}
+.news-social-icon .fa-youtube {
+  color: #ff0000;
+}
+.news-social-icon .fa-linkedin-in {
+  color: #2867b2;
+}
+.news-main-text {
+  color: #231b18;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  line-height: 1.85;
+}
+.article-row {
+  display: flex;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.article-row:last-of-type {
+  border: none;
+}
+.article-img {
+  width: 180px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.article-details {
+  width: calc(100% - 200px);
+}
+.article-title {
+  color: #231b18;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+.article-text {
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.article-date {
+  font-size: 16px;
+  color: #727272;
+}
+.articles-pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 50px;
+}
+.page-link {
+  border: none;
+  color: #4f7690;
+  padding: 5px 0.5em;
+  margin: 0 0.5em !important;
+  font-size: 18px;
+}
+.page-link.active {
+  border-bottom: 2px solid #000;
+  color: #fff;
+  border-radius: 0;
+}
+.page-item {
+  border-radius: 0;
+}
+.page-item-arrow .page-link {
+  width: auto;
+  border-radius: 6px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.view-article-header img {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .news-main-title {
+    font-size: 2em;
+  }
+  .news {
+    padding-top: 20px;
+  }
+  .article-row {
+    display: block;
+  }
+  .article-img {
+    margin-bottom: 22px;
+  }
+  .article-img,
+  .article-details {
+    width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .news-main-title {
+    font-size: 2em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
