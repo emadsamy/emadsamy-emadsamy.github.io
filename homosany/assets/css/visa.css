@@ -19,6 +19,8 @@
 .vs-group {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 50px;
+  width: 800px;
+  max-width: 100%;
 }
 .vsg-input {
   /* border: 2px solid #E0E0E0; */
@@ -26,8 +28,7 @@
   border-radius: 50px 0 0 50px;
   font-size: 18px;
   padding: 14px 28px;
-  width: 650px;
-  max-width: 100%;
+  width: 100%;
 }
 .vsg-btn {
   background: #00632A;
@@ -89,9 +90,6 @@
   font-size: 21px;
   color: #555;
 }
-.back-action .btn .icon {
-  margin-left: 0;
-}
 /* Verification */
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -100,7 +98,87 @@
 }
 
 @media (max-width: 767.98px) {
-  
+  .page-header {
+    height: 46vh;
+    min-height: 320px;
+  }
+  .page-title {
+    bottom: 30px;
+  }
+  .page-title .title {
+    color: #fff;
+    font-size: 27px;
+  }
+  .visa-details-block, .verification-container {
+    padding: 30px 0 65px;
+  }
+  .visa-details-block .title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px !important;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .vsg-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 21px
+  }
+  .vsg-btn {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .vsg-btn .icon {
+    font-size: 18px;
+  }
+  .vsg-btn span {
+    margin: 0 4px;
+  }
+  .visa-search {
+    padding-top: 40px;
+  }
+  .visa-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .vsg-content-card {
+    order: 2
+  }
+
+  /* Verification */
+  .verification-header {
+    height: 182px;
+    min-height: auto;
+  }
+  .verification-header .page-title .title {
+    font-size: 25px;
+  }
+  .verification-header .page-title {
+    bottom: 20px;
+  }
+  .verification-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .back-action {
+    margin: 0 !important;
+  }
+  .vfd-row {
+    padding: 12px 0;
+  }
+  .vfd-title {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .vfd-key, .vfd-value {
+    font-size: 16px;
+  }
+  .btn-bg {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+  /* Verification */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -109,12 +187,80 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .visa-details-block .title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 18px !important;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .visa-details-block, .verification-container {
+    padding: 51px 0 76px;
+  }
+  .vs-group {
+    width: 600px;
+  }
+  .vsg-input {
+    font-size: 16px;
+  }
+  .vsg-btn {
+    font-size: 17px;
+  }
+  .vsg-btn .icon {
+    font-size: 21px;
+  }
+  .visa-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+  }
+
+  /* Verification */
+  .verification-header .page-title .title {
+    font-size: 30px;
+  }
+  .verification-grid {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 20px;
+  }
+  .vfd-row {
+    padding: 14px 0;
+  }
+  .vfd-title {
+    font-size: 20px
+  }
+  .vfd-key, .vfd-value {
+    font-size: 18px;
+  }
+  .btn-bg {
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+  /* Verification */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+  .visa-details-block .title {
+    font-size: 26px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .vs-group {
+    width: 700px;
+  }
+  .visa-grid {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 30px;
+  }
+  .verification-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 50px;
+  }
+  .btn-bg {
+    padding: 16px 33px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

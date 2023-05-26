@@ -4,10 +4,12 @@
 }
 .cd-container .title {
   font-size: 27px;
+  color: #000e34;
 }
 .features-container .title {
   font-size: 31px;
   font-weight: 500;
+  color: #000e34;
 }
 .features-grid {
   display: grid;
@@ -39,19 +41,19 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1;
-  color: #006621;
-  margin-bottom: 6px;
+  color: #000e34;
+  margin-bottom: 10px;
 }
 .feat-sub-title {
   font-weight: 500;
-  color: #05822d;
+  color: #000e34;
   font-size: 19px;
   line-height: 1.2;
 }
 .feat-job {
   font-size: 16px;
   font-weight: 500;
-  color: #05822d;
+  color: #000e34;
   margin: 15px 0;
 }
 .vcdetails-job-grid {
@@ -201,24 +203,30 @@
 
 @media (max-width: 767.98px) {
   .careers-details {
-    padding-top: 50px;
+    padding-top: 33px;
     padding-bottom: 50px;
   }
   .cd-container .title {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 1.5;
   }
   .cd-container .text {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .cd-container .text br {
+    content: ""
   }
   .features {
     padding-top: 10px;
+    padding-bottom: 100px;
   }
   .cd-container .text br {
     content: "";
   }
   .features-container .title {
-    font-size: 25px;
-    margin-bottom: 20px !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px !important;
   }
   .features-grid,
   .vc-grid {
@@ -229,12 +237,14 @@
     padding: 18px;
   }
   .feat-title {
-    font-size: 20px;
+    font-size: 19px;
+    margin-bottom: 10px;
+
   }
   .feat-job {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 0.7rem !important;
-    margin-bottom: 0.7rem !important;
+    margin-bottom: 1.1rem !important;
   }
   .feat-sub-title {
     font-size: 17px;
@@ -245,8 +255,8 @@
     line-height: 1;
   }
   .feat-action .btn-bg {
-    font-size: 16px;
-    padding: 8px 20px;
+    font-size: 15px;
+    padding: 10px 20px;
   }
   .view-career {
     padding-top: 50px;
@@ -287,25 +297,39 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .cd-container .title {
-    font-size: 31px;
+    font-size: 26px;
   }
   .text {
-    font-size: 22px;
+    font-size: 17px;
+  }
+  .text br {
+    content: ""
   }
   .features-container .title {
-    font-size: 33px;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 33px !important;
   }
   .features-grid {
     gap: 15px;
   }
   .feature-card {
-    padding: 25px;
+    padding: 20px;
   }
   .feat-title {
-    font-size: 26px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .feat-sub-title {
+    font-size: 17px;
   }
   .feat-job {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .feat-job span {
+    display: block;
+    margin: 0 !important;
   }
   .vc-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -314,15 +338,21 @@
   .view-career {
     padding-top: 60px;
   }
+  .careers-details {
+    padding-top: 56px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .cd-container .title {
-    font-size: 34px;
+    font-size: 28px;
   }
   .text {
-    font-size: 23px;
+    font-size: 18px;
+  }
+  .text br {
+    content: ""
   }
   .features-grid {
     gap: 20px;
@@ -335,12 +365,31 @@
     gap: 30px;
   }
   .vcdetails-title {
-    font-size: 25px;
+    font-size: 23px;
+  }
+  .careers-details {
+    padding-top: 70px;
+  }
+  .features-container .title {
+    font-size: 30px;
+    margin-bottom: 33px !important;
+  }
+  .feat-title {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .feat-sub-title {
+    font-size: 16px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .careers-details {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
 @media (min-width: 1400px) {

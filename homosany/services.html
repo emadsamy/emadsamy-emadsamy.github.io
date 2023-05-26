@@ -40,24 +40,21 @@
                 <a href="index.html"><img src="assets/img/logo.png" class="img-fluid" alt="" /></a>
               </div>
               <div class="navbar-links d-flex ml-auto">
-                <a href="tel:01234567891" class="navbar-toggle-btn navbar-call-btn"
-                  ><img class="img-fluid" src="assets/img/icons/phone.svg" alt="01234567891"
-                /></a>
-                <button class="navbar-toggle-btn navbar-burger-btn active">
-                  <img class="img-fluid" src="assets/img/icons/menu.svg" alt="Hamburger" />
-                </button>
-                <button class="navbar-toggle-btn navbar-close-btn">
-                  <img class="img-fluid" src="assets/img/icons/close.svg" alt="Close" />
-                </button>
+                <!-- <a href="tel:01234567891" class="navbar-toggle-btn navbar-call-btn">
+                  <span class="icon-call icon"></span>
+                </a> -->
                 <div class="navbar-links-content">
                   <div class="navbar-links-box">
-                    <a class="nlb-item" href="index.html">Home <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                    <div class="nlb-item">
+                      <a class="nlb-item-child" href="index.html">Home <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                    </div>
+                    <!-- <a class="nlb-item" href="index.html">Home <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a> -->
                     <div class="nlb-item">
                       <a class="nlb-item-child" href="about.html">About <span class="icon-arrow-bottom icon"></span> <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
                       <div class="nav-dropdown-list">
-                        <div class="ndl-item"><a href="about.html">Who We Are</a></div>
-                        <div class="ndl-item"><a href="chairman.html">Message From CEO</a></div>
+                        <div class="ndl-item"><a href="about.html#who-we-are">Who We Are</a></div>
                         <div class="ndl-item"><a href="about.html#our-people">Our People</a></div>
+                        <div class="ndl-item"><a href="chairman.html">Message From CEO</a></div>
                       </div>
                     </div>
                     <div class="nlb-item">
@@ -69,12 +66,12 @@
                         <div class="ndl-item"><a href="visa.html">Visa Purpose Valuation</a></div>
                       </div>
                     </div>
-                    <a class="nlb-item" href="careers.html"
-                      >Careers <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt=""
-                    /></a>
-                    <a class="nlb-item" href="contact.html"
-                      >Contact Us <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt=""
-                    /></a>
+                    <div class="nlb-item">
+                      <a class="nlb-item-child" href="careers.html">Careers <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                    </div>
+                    <div class="nlb-item">
+                      <a class="nlb-item-child" href="contact.html">Contact Us <img class="nav-arrow-icon" src="assets/img/icons/arrow-right.svg" alt="" /></a>
+                    </div>
                   </div>
                   <div class="navbar-footer">
                     <div class="nf-title">News & Offers</div>
@@ -102,24 +99,24 @@
                       <div class="nfs-title">Follow Us On</div>
                       <div class="nfs-social">
                         <a class="foot-social-link" href="https://www.linkedinin.com" target="_blank"
-                          ><i class="fa-brands fa-linkedin-in"></i
+                          ><i class="fa-brands fa-linkedin-in icon"></i
                         ></a>
                         <a class="foot-social-link" href="https://www.youtube.com" target="_blank"
-                          ><i class="fa-brands fa-youtube"></i
+                          ><i class="fa-brands fa-youtube icon"></i
                         ></a>
                         <a class="foot-social-link" href="https://www.twitter.com" target="_blank"
-                          ><i class="fa-brands fa-twitter"></i
+                          ><i class="fa-brands fa-twitter icon"></i
                         ></a>
                         <a class="foot-social-link" href="https://www.facebook.com" target="_blank"
-                          ><i class="fa-brands fa-facebook-f"></i
+                          ><i class="fa-brands fa-facebook-f icon"></i
                         ></a>
                         <a class="foot-social-link" href="https://www.instagram.com" target="_blank"
-                          ><i class="fa-brands fa-instagram"></i
+                          ><i class="fa-brands fa-instagram icon"></i
                         ></a>
                       </div>
                     </div>
                     <div class="nf-copyright">
-                      <div class="nf-left">Homosany 2023 &copy; All Rights Reserved</div>
+                      <div class="nf-left">Homosany <span class="full_year"></span> &copy; All Rights Reserved</div>
                       <div class="nf-right"><a class="foot-des-link" href="#" target="_blank">Privacy Policy</a></div>
                       <div class="nf-bottom">
                         Designed by <a class="foot-des-link" href="https://directorstudio.me/" target="_blank">Director Studio</a>
@@ -145,6 +142,13 @@
                     </ul>
                 </div>
               </div>
+
+              <button class="navbar-toggle-btn navbar-burger-btn active">
+                <span class="icon-menu icon"></span>
+              </button>
+              <button class="navbar-toggle-btn navbar-close-btn">
+                <span class="icon-close icon"></span>
+              </button>
 
             </div>
           </div>
@@ -186,7 +190,7 @@
                     <img class="ps-view-img img-fluid" src="assets/img/services/ps-1.png" />
                   </div>
                   <div class="ps-details" style="background: #006036">
-                    <div class="title" style="color: #fff">VALUATION & ADVISORY</div>
+                    <div class="title max-1-line" style="color: #fff">VALUATION & ADVISORY</div>
                     <div class="ps-action mt-2">
                       <a href="visa.html" class="btn btn-normal btn-normal-white">Explore <i class="fa-solid fa-arrow-right icon"></i></a>
                     </div>
@@ -200,7 +204,7 @@
                     <img class="ps-view-img img-fluid" src="assets/img/services/ps-2.png" />
                   </div>
                   <div class="ps-details" style="background: #FBF3E0">
-                    <div class="title" style="color: #006036">Business Planning</div>
+                    <div class="title max-1-line" style="color: #006036">Business Planning</div>
                     <div class="ps-action mt-2">
                       <a class="btn btn-normal">Explore <i class="fa-solid fa-arrow-right icon"></i></a>
                     </div>
@@ -214,7 +218,7 @@
                     <img class="ps-view-img img-fluid" src="assets/img/services/ps-3.png" />
                   </div>
                   <div class="ps-details" style="background: #006036">
-                    <div class="title" style="color: #fff">Auctions</div>
+                    <div class="title max-1-line" style="color: #fff">Auctions</div>
                     <div class="ps-action mt-2">
                       <a class="btn btn-normal btn-normal-white">Explore <i class="fa-solid fa-arrow-right icon"></i></a>
                     </div>
@@ -256,12 +260,12 @@
               <div class="services-types-tabs">
                 <div class="swiper types-tabs-header">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide tth-slide">Residential</div>
-                    <div class="swiper-slide tth-slide">Commerical</div>
-                    <div class="swiper-slide tth-slide">Industrial</div>
-                    <div class="swiper-slide tth-slide">Healthcare</div>
-                    <div class="swiper-slide tth-slide">Hotel</div>
-                    <div class="swiper-slide tth-slide">Office</div>
+                    <div class="swiper-slide tth-slide" data-title="Residential">Residential</div>
+                    <div class="swiper-slide tth-slide" data-title="Commerical">Commerical</div>
+                    <div class="swiper-slide tth-slide" data-title="Industrial">Industrial</div>
+                    <div class="swiper-slide tth-slide" data-title="Healthcare">Healthcare</div>
+                    <div class="swiper-slide tth-slide" data-title="Hotel">Hotel</div>
+                    <div class="swiper-slide tth-slide" data-title="Office">Office</div>
                   </div>
                 </div>
               </div>
@@ -269,16 +273,20 @@
 
               <!-- Content -->
               <div class="services-types-content">
+                <div class="ttc-header d-flex justify-content-between align-items-center">
+                  <div id="tabs-main-title" class="title main-color"></div>
+                  <div class="ttc-arrows d-flex justify-content-between align-items-center">
+                    <div class="ttc-arrow-btn ttc-arrow-prev"><span class="icon-arrow-prev icon"></span></div>
+                    <div class="ttc-arrow-btn ttc-arrow-next"><span class="icon-arrow-next icon"></span></div>
+                  </div>
+                </div>
+
                 <div class="swiper types-tabs-content">
                   <div class="swiper-wrapper">
-
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/residential.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/residential.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -316,11 +324,8 @@
 
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/commerical.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/commerical.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -358,11 +363,8 @@
 
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/residential.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/residential.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -400,11 +402,8 @@
 
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/commerical.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/commerical.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -442,11 +441,8 @@
 
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/residential.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/residential.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -484,11 +480,8 @@
 
                     <!-- Row -->
                     <div class="swiper-slide ttc-slide">
-                      <div class="ttc-header">
-                        <div class="title main-color">Residential Valuation</div>
-                      </div>
                       <div class="ttc-view">
-                        <img class="val-adv-img img-fluid w-100" src="assets/img/services/commerical.png" />
+                        <img class="ttc-view-img img-fluid w-100 h-100" src="assets/img/services/commerical.png" />
                       </div>
                       <div class="ttc-grid">
                         <div class="ttcg-card">
@@ -583,13 +576,13 @@
 
                   <div class="bpsig-card">
                     <div class="bpsig-list">
-                      <div class="bpsig-li">- Set out trading milestones</div>
-                      <div class="bpsig-li">- Project your income and expenditure</div>
-                      <div class="bpsig-li">- Maximise tax efficiency</div>
-                      <div class="bpsig-li">- Work out your personal financial </div>
-                      <div class="bpsig-li">- Check your progress </div>
-                      <div class="bpsig-li">- Forecast next steps</div>
-                      <div class="bpsig-li">- Adjust plans as needed</div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Set out trading milestones</div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Project your income and expenditure</div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Maximise tax efficiency</div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Work out your personal financial </div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Check your progress </div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Forecast next steps</div>
+                      <div class="bpsig-li"><span class="bpsig-dash">-</span> Adjust plans as needed</div>
                     </div>
                   </div>
                 </div>
@@ -597,7 +590,7 @@
               <!-- Details -->
 
               <!-- Widget -->
-              <div class="bps-widget d-flex mb-5">
+              <div class="bps-widget bps-widget-ebn d-flex mb-5">
                 <div class="bps-view">
                   <img class="img-fluid bnp-view-img" src="assets/img/services/needs-plan.png">
                 </div>
@@ -673,9 +666,9 @@
                 <div class="footer-links mb-5">
                   <a class="foot-link" href="index.html">Home</a>
                   <a class="foot-link" href="about.html">About</a>
-                  <a class="foot-link" href="services.html">services</a>
+                  <a class="foot-link" href="services.html">Services</a>
                   <a class="foot-link" href="careers.html">Careers</a>
-                  <a class="foot-link" href="contact.html">Contact</a>
+                  <a class="foot-link" href="contact.html">Contact Us</a>
                 </div>
                 <div class="foot-form">
                   <div class="foot-form-text mb-3 d-flex align-items-center">
@@ -722,7 +715,7 @@
           </div>
 
           <div class="footer-bottom d-flex align-items-center justify-content-between">
-            <div class="fb-text">Qualität Energie 2023 © All rights reserved</div>
+            <div class="fb-text">Homosany <span class="full_year"></span> © All rights reserved</div>
             <div class="fb-text">Designed by <a target="_blank" href="https://www.directorstudio.me">Director Studio</a></div>
             <div class="fb-text"><a href="privacy.html">Privacy Policy</a></div>
           </div>
@@ -748,13 +741,43 @@
     <script>
       var galleryThumbs = new Swiper('.types-tabs-header', {
         spaceBetween: 0,
-        slidesPerView: 6,
+        slidesPerView: 3,
         slideToClickedSlide: true,
         loop: false,
         freeMode: true,
         // loopedSlides: 5,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        on: {
+          init(e) {
+            $("#tabs-main-title").text($(".tth-slide:first-of-type").text());
+          }
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          575: {
+            slidesPerView: 3,
+            spaceBetween: 0
+          },
+          // when window width is >= 480px
+          576: {
+            slidesPerView: 4,
+            spaceBetween: 0
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 0
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 0
+          }
+        }
+      });
+
+      $(".tth-slide").on('click', function (e) {
+          var title = $(this).data('title');
+          $("#tabs-main-title").text(title);
       });
 
       var galleryTop = new Swiper('.types-tabs-content', {
@@ -765,8 +788,8 @@
         spaceBetween: 10,
         slidesPerView: 1,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.ttc-arrow-next',
+          prevEl: '.ttc-arrow-prev',
         },
         loop: false,
         thumbs: {
@@ -775,6 +798,11 @@
         pagination: {
           el: '.tabs-pagination',
           clickable: true,
+        },
+        on: {
+          init(e) {
+            console.log(e)
+          },
         },
       });
     </script>

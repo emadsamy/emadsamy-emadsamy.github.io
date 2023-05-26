@@ -32,5 +32,5 @@ $(".close-tab-view-btn").on("click", function () {
 
 $(document).ready(function () {
   // Copyrights Year
-  $('#full_year').text(new Date().getFullYear())
+  $('.full_year').text(new Date().getFullYear())
 });

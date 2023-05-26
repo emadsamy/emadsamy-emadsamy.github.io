@@ -3,7 +3,7 @@
   padding: 60px 0;
 }
 .digital .title {
-  font-size: 33px;
+  font-size: 35px;
 }
 .digital-flexable .btn-bg {
   background: #00632A;
@@ -31,7 +31,7 @@
   width: 47%;
 }
 .aw-title {
-  font-size: 27px;
+  font-size: 29px;
   font-weight: 600;
   margin-bottom: 17px;
   line-height: 1;
@@ -67,10 +67,10 @@
 .aw-benefit-row {
   display: flex;
   align-items: center;
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 9px;
   color: #3c3c3c;
-  font-weight: 600;
+  font-weight: 500;
 }
 .aw-benefit-row .icon {
   margin-right: 15px;
@@ -197,13 +197,13 @@
   font-weight: 500;
   color: #B77C09;
   line-height: 0.8;
-  font-size: 140px;
-  height: 52px;
-  margin-left: -2px;
+  font-size: 199px;
+  height: 74px;
+  margin-left: -4px;
 }
 .cmc-title {
-  font-size: 37px;
-  line-height: 0.9;
+  font-size: 42px;
+  line-height: 1;
   font-weight: 700;
 }
 .cmc-divider {
@@ -215,7 +215,7 @@
   font-weight: 600;
   line-height: 1.77;
   color: #303030;
-  font-size: 16px;
+  font-size: 18px;
 }
 .teamwork-container {
   padding-top: 100px;
@@ -245,7 +245,7 @@
 }
 .tmhb-description {
   color: #f1f1f1;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -271,7 +271,7 @@
   gap: 35px;
 }
 .twg-view {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .twg-img {
   height: 365px;
@@ -283,7 +283,7 @@
 .twg-title {
   font-weight: 700;
   font-size: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 .twg-description {
   font-weight: 500;
@@ -298,11 +298,16 @@
 }
 .cmc-page .cmc-details {
   background: none;
-  padding-top: 160px;
-  padding-bottom: 100px;
   padding-left: 0;
   padding-right: 0;
+  padding: 0;
   width: 40%;
+  display: flex;
+  align-items: flex-end;
+  min-height: 560px;
+}
+.cmc-center {
+  padding-bottom: 100px;
 }
 .note-bg {
   background: #F8F8F8;
@@ -313,9 +318,12 @@
 .note-title {
   font-weight: 700;
   color: #999;
-  font-size: 23px;
+  font-size: 28px;
   font-style: italic;
   line-height: 1.4;
+}
+.note-text {
+  display: none;
 }
 .msg-block {
   padding: 60px 0;
@@ -325,6 +333,9 @@
 .msg-block .text {
   font-size: 20px;
   line-height: 1.7;
+}
+.note-back-action {
+  display: none;
 }
 /* Chairman Page */
 
@@ -348,8 +359,8 @@
   .digital-flexable .btn-bg {
     width: auto !important;
     display: inline-block;
-    padding: 10px 22px;
-    font-size: 17px;
+    padding: 14px 22px;
+    font-size: 15px;
   }
   .about-widget {
     padding-top: 70px;
@@ -369,11 +380,18 @@
     margin-bottom: 20px;
   }
   .aw-title {
-    font-size: 24px;
-    margin-bottom: 14px !important;
+    font-size: 21px;
+    margin-bottom: 13px !important;
+    line-height: 1.3;
+  }
+  .aw-sub-title {
+    line-height: 1.5;
+    margin-bottom: 17px;
+    font-size: 18px;
+    font-weight: 600;
   }
   .aw-text {
-    font-size: 18px;
+    font-size: 16px;
   }
   .aw-details-child {
     margin-bottom: 55px;
@@ -432,10 +450,11 @@
     padding-top: 130px;
   }
   .our-values {
-    padding: 36px 0;
+    padding: 28px 0;
   }
   .aw-benefit-row {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
   }
   .aw-benefit-row .icon {
     font-size: 14px;
@@ -444,6 +463,133 @@
     font-size: 22px;
     line-height: 1.4;
   }
+  .cmc-block {
+    display: block;
+  }
+  .cmc-block > div {
+    width: 100%;
+  }
+  .cmc-divider,
+  .cmc-description {
+    margin-top: 15px !important;
+  }
+  .cmc-details {
+    padding: 25px 30px;
+  }
+  .cmc-comma {
+    font-size: 115px;
+    height: 37px;
+  }
+  .cmc-title {
+    font-size: 31px;
+  }
+  .cmc-description {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .cmc-action {
+    margin-top: 20px !important;
+  }
+  .teamwork-container {
+    padding-top: 30px;
+  }
+  .teamwork-header {
+    margin-bottom: 50px;
+  }
+  .tmht-title {
+    padding: 25px 24px;
+    font-size: 29px;
+  }
+  .tmh-body {
+    padding: 25px 24px;
+  }
+  .tmhb-block {
+    display: block;
+  }
+  .tmhb-details,
+  .tmhb-view {
+    width: 100%;
+  }
+  .tmhb-title {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+  .tmhb-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .tmhb-view {
+    margin-top: 10px;
+  }
+  .tmhb-img {
+    height: 50px;
+  }
+  .teamwork-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding-bottom: 70px;
+  }
+  .twg-img {
+    height: 200px;
+  }
+  .twg-title {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+  .twg-description {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  /* CEO */
+  .cmc-page .cmc-details {
+    min-height: 480px;
+    width: 60%;
+    align-items: flex-start;
+  }
+  .cmc-center {
+    padding-top: 130px;
+    padding-bottom: 0;
+  }
+  .cmc-page .cmc-title {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  .cmc-page .cmc-comma {
+    font-size: 80px;
+    height: 33px;
+  }
+  .cmc-page .cmc-divider {
+    width: 45px;
+    height: 5px;
+  }
+  .cmc-page .cmc-description {
+    display: none;
+  }
+  .note-text {
+    display: block;
+    color: #000;
+    margin-bottom: 18px;
+    font-size: 15px;
+  }
+  .note-block {
+    padding: 22px 0;
+  }
+  .note-title {
+    font-size: 17px;
+  }
+  .note-back-action {
+    display: block;
+  }
+  .msg-block {
+    padding: 45px 0;
+    width: 100%;
+  }
+  .msg-block .text {
+    font-size: 16px;
+  }
+  /* CEO */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -453,22 +599,23 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .digital .title {
-    font-size: 29px;
+    font-size: 24px;
   }
   .digital {
     padding: 40px 0;
   }
   .aw-title {
-    font-size: 32px;
+    font-size: 26px;
   }
   .aw-text {
-    font-size: 21px;
+    font-size: 17px;
   }
   .about-widget {
     padding-top: 75px;
   }
   .aw-notice {
-    font-size: 29px;
+    font-size: 23px;
+    line-height: 1.4;
   }
   .partner-card {
     padding-right: 50px;
@@ -482,6 +629,71 @@
   .vi-block {
     padding: 35px 40px;
   }
+  .digital-flexable .btn-bg {
+    padding: 14px 20px;
+  }
+  .aw-sub-title {
+    font-size: 17px;
+  }
+  .aw-flexable > div {
+    width: 48%;
+  }
+  .cmc-details {
+    padding: 40px 30px;
+  }
+  .cmc-comma {
+    font-size: 111px;
+    height: 42px;
+  }
+  .cmc-title {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+  .cmc-description {
+    font-size: 14px;
+  }
+  .tmht-title {
+    padding: 24px 27px;
+    font-size: 32px;
+  }
+  .tmh-body {
+    padding: 24px 27px;
+  }
+  .tmhb-details {
+    width: calc(100% - 75px);
+  }
+  .tmhb-view {
+    width: 75px;
+  }
+  .tmhb-img {
+    height: 60px;
+  }
+  .tmhb-title {
+    font-size: 20px;
+  }
+  .tmhb-description {
+    font-size: 15px;
+  }
+  .teamwork-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  /* CEO */
+  .note-block {
+    padding: 31px 0;
+  }
+  .note-title {
+    font-size: 21px;
+  }
+  .msg-block {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .msg-block .text {
+    font-size: 17px;
+  }
+  /* CEO */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -491,6 +703,35 @@
   }
   .partner-card:nth-of-type(even) {
     padding-left: 60px;
+  }
+  .digital {
+    padding: 47px 0;
+  }
+  .digital .title {
+    font-size: 31px;
+  }
+  .cmc-details {
+    background: #FEF3DD;
+    padding: 58px 55px;
+  }
+  .tmht-title {
+    font-size: 33px;
+  }
+  .tmhb-img {
+    height: 80px;
+  }
+  .tmhb-view {
+    width: 120px
+  }
+  .tmhb-details {
+    width: calc(100% - 120px);
+  }
+  .teamwork-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 27px;
+  }
+  .tmhb-title {
+    font-size: 23px;
   }
 }
 
