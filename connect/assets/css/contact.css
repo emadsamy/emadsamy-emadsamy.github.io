@@ -1,0 +1,233 @@
+.page-header {
+  position: relative;
+  height: 65vh;
+  min-height: 400px;
+}
+.page-title {
+  bottom: 90px;
+}
+.page-title .title {
+  font-size: 45px;
+}
+.contact-details {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.ca-container .text {
+  color: #000000;
+  font-weight: 600;
+}
+.contact-flexable {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-flexable > div {
+  width: 48%;
+}
+.form-title .title {
+  font-size: 15px;
+  color: #000000;
+}
+.form-title .title span {
+  font-size: 14px;
+  color: #000;
+}
+.form-row-double {
+  display: flex;
+  justify-content: space-between;
+}
+.form-row-double > div {
+  width: calc(50% - 0.5rem);
+}
+.ca-left {
+  width: 55%;
+}
+.ca-right {
+  width: 38%;
+}
+.contact-address .text {
+  font-weight: 600;
+  color: #343434;
+  font-size: 17px;
+  line-height: 1.9;
+}
+.text-phone-number {
+    letter-spacing: 2px;
+}
+.addresses-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 35px;
+}
+.address-card {
+  display: flex;
+  justify-content: space-between;
+}
+.form-col .btn {
+  font-size: 18px;
+}
+.address-card .btn {
+  font-size: 18px;
+}
+.address-card .icon {
+  font-size: 18px;
+}
+.btn-danger {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    padding-bottom: 40px;
+  }
+  .btn-danger {
+    padding: 15px 32px;
+    font-size: 19px;
+  }
+  .contact-flexable {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .contact-flexable > div {
+    width: 100%;
+  }
+  .contact-address {
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+  }
+  .form-title {
+    margin-bottom: 1rem !important;
+  }
+  .contact-address > div {
+    width: 100%;
+  }
+  .contact-address .text {
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #222;
+  }
+  .ca-direction {
+    margin: 10px 0;
+  }
+  .address-card .btn {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .address-card {
+    display: block;
+  }
+  .form-title .title span {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .form-row-double {
+    flex-wrap: wrap;
+  }
+  .form-row-double > div {
+    width: 100%;
+  }
+  .form-title .title {
+    font-size: 15px;
+  }
+  .page-title {
+    bottom: 30px;
+  }
+  .page-title .title {
+    font-size: 30px;
+  }
+  .page-header {
+    height: 47vh;
+    min-height: 280px;
+  }
+  .contact-details {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .ca-container .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+  .ca-container .text br {
+    content: "";
+  }
+  .address-card > div {
+    width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-address .text {
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  .address-card {
+    display: block;
+  }
+  .contact-details {
+    padding-top: 60px;
+  }
+  .ca-container .text br {
+    content: ""
+  }
+  .address-card > div {
+    width: 100%;
+  }
+  .ca-direction {
+    margin: 10px 0;
+  }
+  .contact-flexable .contact-form {
+    width: 56%;
+  }
+  .contact-flexable .contact-address {
+    width: 40%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-address .text {
+    margin-bottom: 0 !important;
+  }
+  .address-card {
+    display: block;
+  }
+  .address-card > div {
+    width: 100%;
+  }
+  .ca-direction {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .form-title .title span {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}

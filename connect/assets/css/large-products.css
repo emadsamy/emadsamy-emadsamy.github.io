@@ -1,0 +1,95 @@
+.page-header {
+  position: relative;
+  height: 75vh;
+  min-height: 570px;
+}
+.page-header:after {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+  height: 23px;
+  background: transparent linear-gradient(270deg, #D02B1E 0%, #7B160D 100%) 0% 0% no-repeat padding-box;
+}
+.large-products-details {
+  padding: 90px 0;
+}
+.lpd-block .text {
+  line-height: 1.9;
+}
+.nav-tabs {
+  justify-content: center;
+  border: none;
+}
+.tab-btn {
+  border-bottom: 3px solid transparent;
+  padding: 10px 0; 
+  font-weight: 600;
+  font-size: 23px;
+  margin: 0 18px;
+  color: #666;
+}
+.tab-btn.active {
+  border-bottom: 3px solid var(--main-color-dark);
+  color: var(--main-color-dark);
+}
+.tab-view-grid {
+  padding: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 20px;
+}
+.product-large-card {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.product-large-card:hover .plc-img {
+  transform: scale(1.2);
+}
+.plc-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-large-card .gradient-easing {
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+.product-large-card .title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+
+@media (min-width: 1400px) {
+}

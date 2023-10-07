@@ -1,0 +1,334 @@
+
+/* Global */
+body.rtl-dir {
+  direction: rtl;
+  font-family: 'Almarai', sans-serif;
+}
+body.rtl-dir .nav-dropdown-list,
+body.rtl-dir .tab-view-details .text,
+body.rtl-dir .footer-logo,
+body.rtl-dir .footer-links,
+body.rtl-dir .foot-form,
+body.rtl-dir .page-title,
+body.rtl-dir .aw-details,
+body.rtl-dir .our-values,
+body.rtl-dir .cmc-details,
+body.rtl-dir .teamwork-header,
+body.rtl-dir .twg-card,
+body.rtl-dir .feature-card,
+body.rtl-dir .note-bg,
+body.rtl-dir .msg-block,
+body.rtl-dir .form-title .title,
+body.rtl-dir .address-card,
+body.rtl-dir .news-main-title,
+body.rtl-dir .news-socialmedia,
+body.rtl-dir .news-main-text,
+body.rtl-dir .article-details,
+body.rtl-dir .view-article-date-name,
+body.rtl-dir .vsg-content-card,
+body.rtl-dir .back-action,
+body.rtl-dir .ps-details,
+body.rtl-dir .ttc-grid,
+body.rtl-dir .bps-details,
+body.rtl-dir .bpsig-bg,
+body.rtl-dir .shb-slide-widget,
+body.rtl-dir .navbar-footer,
+body.rtl-dir .notify-content,
+body.rtl-dir .vcdetails-header,
+body.rtl-dir .vcdetails-body,
+body.rtl-dir #viewCareerForm {
+  text-align: right !important;
+}
+body.rtl-dir .notify__title {
+    padding-right: 0 !important;
+}
+body.rtl-dir .notify__icon {
+    margin-left: 12px;
+    margin-right: 0;
+}
+body.rtl-dir .notify__close {
+    left: 12px !important;
+    right: auto !important;
+}
+body.rtl-dir .btn-normal .icon {
+  transform: scale(-1);
+}
+body.rtl-dir .btn-normal:hover .icon {
+  transform: translateX(-15px) scale(-1);
+}
+body.rtl-dir .back-action .btn .icon {
+  margin-right: 0 !important;
+  margin-left: 7px !important;
+}
+body.rtl-dir .btn-outline-danger .icon {
+  padding-right: 10px;
+  padding-left: 0;
+}
+body.rtl-dir .btn-light .icon {
+  padding-right: 10px;
+  padding-left: 0;
+}
+body.rtl-dir .btn-gradient-white .icon {
+  padding-left: 7px;
+  padding-right: 0;
+}
+/* Global */
+
+/* Navbar */
+body.rtl-dir .navbar-links {
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+body.rtl-dir .navbar-lang .dropdown-menu a img {
+  margin-left: 7px;
+  margin-right: 0;
+}
+body.rtl-dir .navbar-lang {
+  margin-right: 20px;
+  margin-left: 0;
+}
+body.rtl-dir .navbar-toggle-btn {
+  margin-right: 10px;
+  margin-left: 0;
+}
+body.rtl-dir .foot-btn-subscribe {
+  border-right: 1px solid #777 !important;
+  border-left: none !important;
+}
+body.rtl-dir .foot-btn-subscribe .icon {
+  transform: scale(-1);
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+/* Navbar */
+
+/* Home */
+body.rtl-dir .swiper-pagination {
+  left: 50px !important;
+  right: auto !important;
+}
+body.rtl-dir .gradient-container {
+  right: 0;
+  left: auto;
+}
+body.rtl-dir .close-tab-view-btn {
+  left: 15px;
+  right: auto;
+}
+body.rtl-dir .btn-arrow {
+  margin-right: 8px;
+  margin-left: 0;
+}
+/* Home */
+
+/* Footer */
+body.rtl-dir .foot-form-text .title {
+  margin-left: 16px;
+  margin-right: 0;
+}
+body.rtl-dir .input-newsletter .btn {
+  border-right: 1px solid #fff;
+  border-left: none;
+}
+body.rtl-dir .input-newsletter .btn .icon {
+  transform: scale(-1);
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+body.rtl-dir .social-link {
+  margin-right: 14px;
+  margin-left: 0;
+}
+/* Footer */
+
+/* Careers Page */
+body.rtl-dir .feat-job span {
+  margin-right: 1.5rem !important;
+  margin-left: 0 !important;
+}
+body.rtl-dir .mjg-row .icon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+/* Careers Page */
+
+/* Contact Page */
+body.rtl-dir .form-title .title span {
+  margin-right: 1.5rem !important;
+  margin-left: 0 !important;
+}
+body.rtl-dir .select-group-div {
+  border-left: 1px solid #898989 !important;
+  border-right: none !important;
+}
+body.rtl-dir .address-card .icon {
+  transform: scale(-1);
+  margin-right: 9px;
+  margin-left: 0;
+}
+/* Contact Page */
+
+/* News Page */
+body.rtl-dir .article-img {
+  margin-left: 20px;
+  margin-right: 0;
+}
+body.rtl-dir .news-social-icon .icon {
+  margin-left: 13px;
+  margin-right: 0;
+}
+/* News Page */
+
+/* Visa Page */
+body.rtl-dir .vsg-btn {
+  border-radius: 50px 0 0 50px;
+}
+body.rtl-dir .vsg-btn .icon {
+  transform: rotateZ(90deg);
+}
+body.rtl-dir #pdf-canvas {
+    direction: ltr !important;
+}
+/* Visa Page */
+
+/* Services Page */
+body.rtl-dir .ttc-arrow-btn {
+  transform: scale(-1);
+  margin-right: 18px;
+  margin-left: 0;
+}
+body.rtl-dir .bpsig-dash {
+  margin-left: 8px;
+  margin-right: 0;
+}
+/* Services Page */
+
+/* About Page */
+body.rtl-dir .cmc-block {
+    justify-content: flex-end;
+}
+body.rtl-dir .cmc-page .cmc-details {
+    width: 31%;
+}
+body.rtl-dir .cmc-title {
+    line-height: 1.3;
+}
+body.rtl-dir .cmc-comma {
+    transform: scaleX(-1);
+    text-align: left;
+    margin-right: -4px;
+    margin-left: 0;
+}
+/* About Page */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Home Page */
+  body.rtl-dir .shb-details-card {
+    margin-right: -15px;
+    margin-left: 0;
+  }
+  /* Home Page */
+
+  /* About Page */
+  body.rtl-dir .cmc-block,
+  body.rtl-dir .teamwork-header {
+    margin-right: -15px;
+    margin-left: 0;
+  }
+  /* About Page */
+
+  /* Services */
+  body.rtl-dir .bps-widget {
+    width: calc(100% + 30px);
+    margin-right: -15px;
+    margin-left: 0;
+  }
+  /* Services */
+}
+
+@media (max-width: 767.98px) {
+
+  /* Navbar */
+  body.rtl-dir .navbar-lang {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  body.rtl-dir .nav-arrow-icon {
+    transform: scale(-1);
+  }
+  body.rtl-dir .foot-social-link {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  /* Navbar */
+
+  /* Careers Page */
+  body.rtl-dir .feat-job span {
+    margin: 0 !important;
+  }
+  /* Careers Page */
+
+  /* Contact Page */
+  body.rtl-dir .form-title .title span {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Contact Page */
+
+    /* About Page */
+    body.rtl-dir .cmc-page .cmc-details {
+        width: 55%;
+    }
+    /* About Page */
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Careers Page */
+  body.rtl-dir .feat-job span {
+    margin: 0 !important;
+  }
+  /* Careers Page */
+
+  /* Contact Page */
+  body.rtl-dir .form-title .title span {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Contact Page */
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Contact Page */
+  body.rtl-dir .form-title .title span {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Contact Page */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Contact Page */
+  body.rtl-dir .form-title .title span {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Contact Page */
+}
+
+@media (min-width: 1400px) {
+
+}
