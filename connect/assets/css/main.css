@@ -1120,7 +1120,7 @@ select {
 .navbar-links-box .nlb-item:hover,
 .nlb-item-child:hover,
 .nlb-item-child.active {
-  color: #27ae60;
+  color: var(--main-color-dark);
 }
 .nlb-item:hover .nav-dropdown-list {
   display: block;

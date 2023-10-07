@@ -171,6 +171,7 @@
   margin-bottom: 15px;
   width: 100%;
   object-fit: contain;
+  object-position: center;
   height: 183px;
   background: #F2F2F2;
 }
@@ -202,7 +203,7 @@
   text-align: center;
 }
 .spm-card img {
-  min-height: 100vh;
+  height: 100vh;
   width: auto !important;
   max-width: auto !important;
 }
