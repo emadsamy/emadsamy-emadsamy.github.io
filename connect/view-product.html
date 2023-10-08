@@ -447,10 +447,6 @@
               </div>
             </div>
           </div>
-
-          <div class="spm-bottom">
-            <div class="spm-counter">10/20</div>
-          </div>
         </div>
       </div>
       <!-- Slider Preview -->
@@ -492,30 +488,112 @@
               <div class="vp-block">
 
                 <div class="vp-grid">
+
                   <!-- Details -->
                   <div class="vp-details">
-                    <div class="vpd-title title main-color">Ventilation System</div>
-                    <div class="vpd-text">Digester (Combined with cooking and Drying process)
-                      Digester realize the easy handling of odor process result, which is the upgrade
-                      of Batch Cooker and combined cooking and drying in one equipment. Clients
-                      are easy to operate the Odor System, and processing is more stable.
-                      <br />
-                      <br />
-                      The working process is same as batch cooker for cooking stage, after cooking,
-                      the meal dried in same machine, no need discharge it and drying in dryer. The
-                      cooking time is about 1.5hours, and the drying time is about 2.5 hours. Water
-                      contains is around 10% after drying.</div>
-
-                      <div class="vpd-actions">
-                        <button class="btn btn-danger">Request information</button>
+                    <div id="product-info" class="vp-details-info">
+                      <div class="vpd-title title main-color">Ventilation System</div>
+                      <div class="vpd-text">Digester (Combined with cooking and Drying process)
+                        Digester realize the easy handling of odor process result, which is the upgrade
+                        of Batch Cooker and combined cooking and drying in one equipment. Clients
+                        are easy to operate the Odor System, and processing is more stable.
                         <br />
                         <br />
-                        <br />
-                        <a href="assets/img/download.docx" download="true" class="btn btn-gradient-white">
-                          <span class="icon-pdf icon"></span> Download
-                        </a>
-                        <button class="btn btn-gradient-white"> <span class="icon-play-circle icon"></span> Watch Video</button>
+                        The working process is same as batch cooker for cooking stage, after cooking,
+                        the meal dried in same machine, no need discharge it and drying in dryer. The
+                        cooking time is about 1.5hours, and the drying time is about 2.5 hours. Water
+                        contains is around 10% after drying.
                       </div>
+                    </div>
+                    <!-- Details -->
+
+                    <!-- Contact -->
+                    <div id="product-contact" class="vp-contact-form">
+                      <button id="closeDetailsContact" class="btn btn-close-contact"><span class="icon-close icon"></span></button>
+                      <div class="contact-form">
+                        <!-- Form -->
+                        <form>
+                          <div class="form-title mb-3 d-flex align-items-center">
+                            <div class="title">Contact us to request information </div>
+                          </div>
+      
+                          <!-- Fields -->
+                          <div class="form-row-fields">
+                            <div class="form-row-double">
+                              <div class="form-col">
+                                <div class="form-group">
+                                  <input name="name" class="form-control" type="text" placeholder="Full Name" />
+                                </div>
+                              </div>
+                            </div>
+      
+                            <div class="form-row-single">
+                              <div class="form-col">
+                                <div class="form-group">
+                                  <input name="email" class="form-control" type="email" placeholder="Email" />
+                                </div>
+                              </div>
+      
+                              <div class="form-col">
+                                <div class="form-group">
+                                  <div class="select-group-div">
+                                    <select name="country_code" class="form-control">
+                                      <option value="02">+02</option>
+                                      <option value="03">+03</option>
+                                      <option value="04">+04</option>
+                                      <option value="05">+05</option>
+                                      <option value="06">+06</option>
+                                      <option value="07">+07</option>
+                                    </select>
+                                  </div>
+                                  <input name="phone" class="form-control" type="text" placeholder="Phone (optional)" />
+                                </div>
+                              </div>
+      
+                              <div class="form-col">
+                                <div class="form-group">
+                                  <textarea name="message" class="form-control" type="text" placeholder="Write your message"></textarea>
+                                </div>
+                              </div>
+      
+                              <!-- Submit Action -->
+                              <div class="form-col">
+                                <button id="display-success-msg" type="button" class="btn btn-danger mt-2 w-100">Send Now</button>
+                              </div>
+
+                              <div class="form-col form-col-checkbox">
+                                <input id="termsConditions" type="checkbox" name="terms_conditions" /> 
+                                <label for="termsConditions" class="fcc-title">I agree to Terms of use and Privacy </label>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Fields -->
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Contact -->
+
+                    <!-- Contact Success Message -->
+                    <div id="product-success-msg" class="vp-success-msg">
+                      <button id="hidden-success-msg" class="btn btn-close-contact"><span class="icon-close icon"></span></button>
+                      <div class="success-msg-alert">
+                        <div class="sma-block">
+                          <span class="icon-correct icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Contact Success Message -->
+
+                    <div class="vpd-actions">
+                      <button id="openContact" class="btn btn-danger">Request information</button>
+                      <br />
+                      <br />
+                      <br />
+                      <a href="assets/img/download.docx" download="true" class="btn btn-gradient-white">
+                        <span class="icon-pdf icon"></span> Download
+                      </a>
+                      <button class="btn btn-gradient-white"> <span class="icon-play-circle icon"></span> Watch Video</button>
+                    </div>
                   </div>
 
                   <!-- Slider View -->
@@ -963,6 +1041,32 @@
         $("#btnCloseModal").on('click', function () {
           $('#sliderPreviewModal').removeClass('active');
           $("body").css('overflow', 'auto');
+        });
+      });
+
+      $(function () {
+        // Open Contact Form
+        $("#openContact").on('click', function () {
+          $("#product-contact").addClass('active');
+          $("#product-info").addClass('active');
+        });
+
+        // Close Contact
+        $("#closeDetailsContact").on('click', function () {
+          $("#product-contact").removeClass('active');
+          $("#product-info").removeClass('active');
+        });
+
+        // Display success msg
+        $("#display-success-msg").on('click', function () {
+          $("#product-success-msg").addClass('active');
+          $("#product-contact").removeClass('active');
+        });
+
+        // Hidden success msg
+        $("#hidden-success-msg").on('click', function () {
+          $("#product-success-msg").removeClass('active');
+          $("#product-info").removeClass('active');
         });
       });
       

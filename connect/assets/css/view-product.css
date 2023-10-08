@@ -63,6 +63,54 @@
 .vp-view-block {
   position: relative;
 }
+.vp-contact-form {
+  border: 1px solid #3E3E3E;
+  padding: 20px 35px;
+  display: none;
+  position: relative;
+}
+.btn-close-contact {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.vp-details-info.active {
+  display: none !important;
+}
+.vp-success-msg {
+  position: relative;
+  display: none;
+  border: 1px solid #3E3E3E;
+}
+.sma-block {
+  height: 388px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sma-block .icon {
+  background: #61C79C;
+  width: 90px;
+  height: 90px;
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+}
+.vp-contact-form.active,
+.vp-success-msg.active {
+  display: block !important;
+}
+.vp-contact-form .form-title .title {
+  font-size: 20px;
+  color: #000;
+}
 .vpv-img {
   height: 388px;
   width: 100%;
