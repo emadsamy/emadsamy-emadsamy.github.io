@@ -34,3 +34,15 @@ $(document).ready(function () {
   // Copyrights Year
   $('.full_year').text(new Date().getFullYear())
 });
+
+$(function () {
+  $("#toggleSearchContainer").on('click', function () {
+    if ($('#searchContainer').hasClass('active')) {
+      $("#searchContainer").removeClass('active');
+      $(this).removeClass('active');
+    } else {
+      $("#searchContainer").addClass('active');
+      $(this).addClass('active');
+    }
+  });
+});

@@ -6,10 +6,10 @@
 .page-header:after {
   content: "";
   position: absolute;
-  bottom: -23px;
+  bottom: -18px;
   left: 0;
   width: 100%;
-  height: 23px;
+  height: 18px;
   background: transparent linear-gradient(270deg, #D02B1E 0%, #7B160D 100%) 0% 0% no-repeat padding-box;
 }
 .large-products-details {
@@ -29,6 +29,7 @@
   font-size: 23px;
   margin: 0 18px;
   color: #666;
+  font-weight: bold;
 }
 .tab-btn.active {
   border-bottom: 3px solid var(--main-color-dark);

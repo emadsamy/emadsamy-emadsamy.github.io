@@ -39,7 +39,7 @@
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 17px;
-  line-height: 1.2;
+  line-height: 1.13;
 }
 .aw-text {
   color: #585858;
@@ -183,7 +183,7 @@
   font-weight: bold;
 }
 .statistics-container {
-  padding: 70px 0 100px;
+  padding: 53px 0 100px;
 }
 .stats-flag-img {
   width: 45px;
@@ -200,15 +200,22 @@
 .stat-card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.stat-card:nth-child(3n + 2) {
-  border-left: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
+.stat-card:nth-child(3n + 2):after,
+.stat-card:nth-child(3n + 3):after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: -30px;
+  height: 60%;
+  background: var(--border-color);
+  width: 2px;
 }
 .stat-sub-title {
   font-size: 23px;
   line-height: 1.4;
-  color: #555;
+  color: #777;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -256,7 +263,7 @@
 }
 .gpcd-row {
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.1;
 }
@@ -299,6 +306,12 @@
 .cr-img {
   height: 95px;
   object-fit: contain;
+}
+.our-factories-container {
+  padding-bottom: 50px;
+}
+.ofb-title {
+  font-size: 40px;
 }
 .factory-slide {
   position: relative;
