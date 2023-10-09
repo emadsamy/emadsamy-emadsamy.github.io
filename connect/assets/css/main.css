@@ -900,10 +900,12 @@ select {
   font-size: 15px;
   padding: 12px 33px;
   border-radius: 0;
+  border: none;
 }
 .btn-danger:hover {
   background: var(--background-color) !important;
   color: #fff !important;
+  border: none;
 }
 .btn-danger:active {
   opacity: 0.7;
@@ -911,6 +913,7 @@ select {
   color: #fff !important;
   outline: none !important;
   box-shadow: none !important;
+  border: none;
 }
 .btn-gradient-white {
   border: 1px solid var(--border-color);
@@ -1998,6 +2001,13 @@ footer {
   .btn-light .icon {
     font-size: 14px;
   }
+  .swiper-arrows-container {
+    padding: 0 10px;
+  }
+  .btn-arrow-large {
+    width: 40px;
+    height: 40px;
+  }
 
   /* Events */
   .event-card-body {
@@ -2032,8 +2042,8 @@ footer {
     display: block !important;
   }
   .download-file {
-    text-align: center;
-    padding: 19px 0;
+    text-align: unset;
+    padding: 25px 0;
   }
   .download-file .title {
     font-size: 22px;
@@ -2042,8 +2052,8 @@ footer {
   .download-file-flexable .btn-danger {
     width: auto !important;
     display: inline-block;
-    padding: 14px 22px;
-    font-size: 15px;
+    padding: 11px 17px;
+    font-size: 14px;
   }
   /* Download File Widget */
 
@@ -2539,7 +2549,7 @@ footer {
     font-size: 24px;
   }
   .download-file {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .download-file-flexable .btn-danger {
     padding: 14px 20px;
