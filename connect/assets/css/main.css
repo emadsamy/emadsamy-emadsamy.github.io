@@ -1312,13 +1312,13 @@ select {
 }
 .nf-text {
   margin-top: 8px;
-  font-size: 10px;
+  font-size: 13px;
   color: #777;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .nf-socialmedida {
-  border-top: 1px solid #777;
-  border-bottom: 1px solid #777;
+  border-top: 1px solid #52525250;
+  border-bottom: 1px solid #52525250;
   padding: 10px 0;
 }
 .foot-social-newsletter-column {
@@ -1365,7 +1365,7 @@ select {
 .nf-bottom {
   width: 100%;
   text-align: center;
-  border-top: 1px solid #777;
+  border-top: 1px solid #52525250;
 }
 .nav-arrow-icon {
   display: none;
@@ -1790,7 +1790,7 @@ footer {
 }
 .input-newsletter .btn {
   color: #343434;
-  border-left: 1px solid #343434;
+  border-left: 1px solid #525252;
   border-radius: 0;
   font-weight: 500;
   font-size: 14px;
@@ -2304,9 +2304,11 @@ footer {
     padding-top: 2px;
   }
   .input-newsletter {
-    margin-bottom: 5px;
-    border-radius: 0;
+    margin-bottom: 0;
+    border-radius: 12px;
     min-width: auto;
+    background: #FFFFFF7E;
+    border: 1px solid #52525250;
   }
   .form-newsletter .text {
     display: block !important;
@@ -2338,7 +2340,7 @@ footer {
     padding: 7px 13px;
   }
   .input-newsletter .btn {
-    font-size: 13px;
+    font-size: 14px;
     padding: 3px 15px;
   }
   .social-icons {
@@ -2352,7 +2354,8 @@ footer {
     color: #575757;
   }
   .social-text {
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 16px;
     color: #6f6f6f;
   }
   /* .footer-links .footer-links-title {
@@ -2375,9 +2378,12 @@ footer {
     display: none;
   }
   .foot-form {
-    margin-top: 10px !important;
+    margin-top: 6px !important;
     border-top: 1px solid var(--border-color);
-    padding-top: 12px;
+    padding-top: 9px;
+  }
+  .footer-bottom {
+    border-top-width: 1px;
   }
   /* Footer */
 }
@@ -2427,8 +2433,8 @@ footer {
     font-size: 19px;
   }
   .wrapper-container {
-    padding-top: 66.2px;
-    padding-bottom: 150px;
+    padding-top: 58.1px;
+    padding-bottom: 100px;
   }
   .btn-pry {
     padding: 13px 35px !important;
@@ -2439,18 +2445,19 @@ footer {
   }
   /* Navbar */
   .navabr-container {
-    padding: 14.55px 0;
+    padding: 17px 0;
   }
   .navbar-logo img {
     transform: none;
     margin-left: 0;
-    width: 155px !important;
+    width: 90px !important;
   }
   .navbar-links-box .nlb-item, .nlb-item-child {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
   }
   .navbar-links-box .nlb-item {
-    margin: 0 7px 0;
+    margin: 0 5px 0;
   }
   .nlb-item-child .icon {
     font-size: 11px;
@@ -2460,7 +2467,7 @@ footer {
     margin-left: 10px;
   }
   .nav-lang-img, .dm-lang-img {
-    height: 12px;
+    height: 10px;
   }
   .lang-text {
     font-size: 13px;
@@ -2468,10 +2475,21 @@ footer {
   .navbar-lang .btn .icon {
     font-size: 11px;
   }
+  .btn-search-action {
+    height: 23px;
+    width: 23px;
+    font-size: 15px;
+  }
+  .navbar-lang .dropdown-item {
+    padding: 5px 5px;
+  }
+  .navbar-lang .dropdown-menu a span {
+    font-size: 10px;
+  }
   /* Navbar */
   .shb-slide-bg {
     min-height: 400px;
-    height: calc(100vh - 66.2px);
+    height: calc(100vh - 58.1px);
   }
   .shb-details-card {
     padding: 24px 30px;
@@ -2504,6 +2522,16 @@ footer {
   .hsd-container .text br {
     content: ""
   }
+  .swb-bg-title {
+    font-size: 46px;
+  }
+  .services-widget-block {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .swb-text {
+    font-size: 24px;
+  }
   /* Home */
 
   /* Download File Widget */
@@ -2523,12 +2551,18 @@ footer {
   /* Footer */
   .footer-grid {
     flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .foot-links-column:nth-child(1) {
+    grid-column: 3/3;
+  }
+  .foot-links-address {
+    grid-column: 1/3;
   }
   .footer-logo img {
     margin-top: 0;
   }
   .footer-content {
-    padding-top: 20px;
     padding-bottom: 30px;
   }
   .foot-left {
@@ -2580,7 +2614,10 @@ footer {
 
   /* Navbar */
   .navbar-links-box .nlb-item {
-    margin: 0 13px 0;
+    margin: 0 8px 0;
+  }
+  .nlb-item-child {
+    font-size: 18px;
   }
   /* Navbar */
 
@@ -2609,6 +2646,15 @@ footer {
   }
   .hsd-container .title {
     font-size: 35px;
+  }
+  .services-widget-block {
+    padding: 25px 35px 35px;
+  }
+  .swb-bg-title {
+    font-size: 50px;
+  }
+  .swb-text {
+    font-size: 25px;
   }
   /* Home */
 }
