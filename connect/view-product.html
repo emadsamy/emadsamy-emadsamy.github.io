@@ -31,6 +31,24 @@
   </head>
 
   <body>
+    <!-- Modal Youtube Popup -->
+    <div class="modal fade" id="youtubePopup" tabindex="-1" aria-labelledby="youtubePopupLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-youtube-popup">
+        <div class="modal-content">
+          <iframe
+            id="embedYoutubePopup"
+            class="embed-youtube-popup"
+            src="https://www.youtube.com/embed/yaNhV4wdJ9Y?si=ySd_Z_tK-rH05fgp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Youtube Popup -->
+
     <div class="wrapper">
       <!-- Navbar -->
       <nav id="nav" class="nav">
@@ -603,12 +621,15 @@
                       <a href="assets/img/download.docx" download="true" class="btn btn-gradient-white">
                         <span class="icon-pdf icon"></span> Download
                       </a>
-                      <button class="btn btn-gradient-white"> <span class="icon-play-circle icon"></span> Watch Video</button>
+                      <button class="btn media-play-btn btn-gradient-white" data-toggle="modal" data-target="#youtubePopup"> 
+                        <span class="icon-play-circle icon"></span> Watch Video
+                      </button>
                     </div>
                   </div>
 
                   <!-- Slider View -->
                   <div class="vp-view">
+                    <div class="vpv-title title main-color">Ventilation System</div>
                     <div class="vp-view-block">
                       <div class="swiper swiper-product">
                         <div class="swiper-wrapper">
@@ -1041,6 +1062,35 @@
           nextEl: ".arrow-play-next",
           prevEl: ".arrow-play-prev",
         },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 13
+          },
+          // when window width is >= 480px
+          480: {
+              slidesPerView: 1.5,
+              spaceBetween: 13
+          },
+          // when window width is >= 640px
+          576: {
+              slidesPerView: 2,
+              spaceBetween: 13
+          },
+          768: {
+              slidesPerView: 2.5,
+              spaceBetween: 8
+          },
+          992: {
+              slidesPerView: 3,
+              spaceBetween: 13
+          },
+          1200: {
+              slidesPerView: 4,
+              spaceBetween: 13
+          }
+        }
       });
 
       $(document).ready(function () {
@@ -1079,6 +1129,21 @@
           $("#product-success-msg").removeClass('active');
           $("#product-info").removeClass('active');
         });
+      });
+
+      // add video iframe
+      $(".media-play-btn").on("click", function () {
+        let videoUrl = $(this).data("video-url");
+        if (videoUrl) {
+          $("#embedYoutubePopup").attr("src", videoUrl);
+        }
+      });
+
+      // Stop youtube video
+      $("#youtubePopup").on("hidden.bs.modal", function (e) {
+        var ysrc = document.getElementById("embedYoutubePopup").src;
+        var newsrc = ysrc.replace("&autoplay=1", "");
+        document.getElementById("embedYoutubePopup").src = newsrc;
       });
       
     </script>

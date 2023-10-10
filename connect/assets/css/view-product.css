@@ -51,9 +51,13 @@
   grid-gap: 12.52rem;
   gap: 50px;
 }
-.vpd-title {
+.vpd-title,
+.vpv-title {
   margin-bottom: 25px;
   font-size: 39px;
+}
+.vpv-title {
+  display: none;
 }
 .vpd-text {
   font-size: 18px;
@@ -147,17 +151,18 @@
   padding: 33px 0 40px;
 }
 .tfc-accordion-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12.52rem;
+  gap: 10px;  
 }
 .tfc-accordion-grid > div {
-  width: 49.5%;
+  /* width: 49.5%;
   display: inline-block;
-  margin-bottom: 1%;
+  margin-bottom: 1%; */
 }
 .tfc-accordion-grid > div:nth-child(2n + 1) {
-  margin-right: 1%;
+  /* margin-right: 1%; */
 }
 .tfc-title {
   color: #5C5C5C;
@@ -249,6 +254,9 @@
 .spm-card {
   min-height: 100vh;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .spm-card img {
   height: 100vh;
@@ -283,22 +291,200 @@
 .btn-arrow-spm.btn-arrow-next {
   right: 30px;
 }
+.modal-youtube-popup {
+  max-width: 70vw !important;
+}
+.embed-youtube-popup {
+  height: 80vh !important;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .modal-youtube-popup {
+    max-width: 100% !important;
+  }
+  .embed-youtube-popup {
+    height: 310px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
-  
+  .vph-title-bg {
+    padding: 10px 15px;
+  }
+  .view-product-header .gradient-easing {
+    padding-bottom: 30px;
+  }
+  .vph-category {
+    font-size: 14px;
+  }
+  .vph-title {
+    font-size: 20px;
+  }
+  .breadcrumb-container {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+  }
+  .breadcrumb-item a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .tfc-bg {
+    padding: 20px 0 23px;
+  }
+  .tfc-title {
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+  .tfc-accordion-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 9px;  
+  }
+  .accordion .card-body {
+    padding: 0 15px 15px 15px;
+    font-size: 16px;
+  }
+  .accordion .card-header {
+    border-top: 2px solid var(--border-color);
+    padding: 15px 15px;
+  }
+  .btn-accordion .title {
+    font-size: 17px;
+  }
+  .btn-accordion .icon {
+    font-size: 12px;
+  }
+  .rpcc-title {
+    font-size: 17px;
+  }
+  .vp-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .vp-details {
+    order: 2;
+  }
+  .vpd-title {
+    display: none;
+  } 
+  .vpv-title {
+    display: block;
+  }
+  .vpd-title, .vpv-title {
+    font-size: 24px;
+    margin-bottom: 11px;
+  }
+  .view-product-container {
+    padding-top: 12px;
+  }
+  .vpv-img {
+    height: 300px;
+  }
+  .vpd-text {
+    font-size: 17px;
+  }
+  .preview-slider-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .vp-contact-form {
+    padding: 37px 20px 20px;
+  }
+  .spm-card img {
+    height: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .btn-close {
+    top: 15px;
+    right: 15px;
+    font-size: 16px;
+  }
+  .btn-arrow-spm.btn-arrow-next {
+    right: 15px;
+  }
+  .btn-arrow-spm.btn-arrow-prev {
+    left: 15px;
+  }
+  .swiper-pagination {
+    right: 15px !important;
+    display: flex;
+  }
+  .related-products-container {
+    padding-top: 10px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .modal-youtube-popup {
+    max-width: 85vw !important;
+  }
+  .embed-youtube-popup {
+    height: 50vh !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .modal-youtube-popup {
+    max-width: 89vw !important;
+  }
+  .rpcc-title {
+    font-size: 17px;
+  }
+  .rpcc-img {
+    margin-bottom: 12px;
+  }
+  .tfc-bg {
+    padding: 28px 0 28px;
+  }
+  .tfc-title {
+    font-size: 24px;
+  }
+  .accordion .card-header {
+    padding: 17px 15px;
+  }
+  .btn-accordion .title {
+    font-size: 19px;
+  }
+  .accordion .card-body {
+    font-size: 16px;
+    padding: 0 15px 15px 15px;
+  }
+  .vph-title-bg {
+    padding: 12px 20px;
+  }
+  .vph-title {
+    font-size: 24px;
+  }
+  .view-product-container {
+    padding-top: 30px;
+  }
+  .vpd-title, .vpv-title {
+    font-size: 26px;
+    margin-bottom: 19px;
+  }
+  .vp-grid {
+    gap: 25px
+  }
+  .vpd-text {
+    font-size: 16px;
+  }
+  .vpd-text br {
+    content: ""
+  }
+  .vpv-img {
+    height: 340px;
+  }
+  .vp-contact-form {
+    padding: 40px 20px 20px;
+  }
+  .spm-card img {
+    height: auto;
+    width: 100% !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
