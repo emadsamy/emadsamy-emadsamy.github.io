@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mput3j');
-  src:  url('fonts/icomoon.eot?mput3j#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mput3j') format('truetype'),
-    url('fonts/icomoon.woff?mput3j') format('woff'),
-    url('fonts/icomoon.svg?mput3j#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?dps05h');
+  src:  url('fonts/icomoon.eot?dps05h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dps05h') format('truetype'),
+    url('fonts/icomoon.woff?dps05h') format('woff'),
+    url('fonts/icomoon.svg?dps05h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-feed-mill-equipment:before {
+  content: "\e934";
+}
 .icon-evisceration:before {
   content: "\e933";
 }
@@ -63,9 +66,6 @@
 }
 .icon-eggs:before {
   content: "\e932";
-}
-.icon-feed-mill-equipment:before {
-  content: "\e934";
 }
 .icon-floor-system:before {
   content: "\e935";

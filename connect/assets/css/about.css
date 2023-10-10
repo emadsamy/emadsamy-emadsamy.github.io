@@ -26,7 +26,7 @@
   object-fit: cover;
 }
 .about-widget {
-  padding: 100px 0 120px;
+  padding: 65px 0 70px;
 }
 .aw-flexable {
   display: flex;
@@ -36,8 +36,8 @@
   width: 47%;
 }
 .aw-title {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 27px;
+  font-weight: 600;
   margin-bottom: 17px;
   line-height: 1.13;
 }
@@ -54,7 +54,7 @@
   margin-bottom: 0;
 }
 .our-values {
-  padding: 50px 0;
+  padding: 40px 0;
   background: #f9f9f9;
 }
 .aw-view img {
@@ -231,7 +231,7 @@
 }
 .stat-bg-title {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 37px;
   line-height: 1;
   color: #666;
 }
@@ -335,13 +335,13 @@
   padding: 40px;
 }
 .factory-slide-details .title {
-  font-size: 38px;
+  font-size: 32px;
   margin-bottom: 7px;
 }
 .factory-slide-details .text {
   width: 60%;
   max-width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.1;
 }
 

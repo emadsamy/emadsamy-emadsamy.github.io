@@ -18,7 +18,7 @@
 .vph-title-bg {
   background: #fff;
   display: inline-block;
-  padding: 12px 28px;
+  padding: 12px 20px;
 }
 .vph-category {
   font-weight: 600;
@@ -145,6 +145,11 @@
 }
 .vpd-actions {
   padding-top: 40px;
+}
+.open-contact-btn.active {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
 }
 .tfc-bg {
   background: #F4F4F4;

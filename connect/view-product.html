@@ -344,7 +344,7 @@
                       </div>
                     </div>
                     <div class="navbar-footer">
-                      <div class="nf-title">News & Offers</div>
+                      <div class="nf-title">Newsletter</div>
                       <form>
                         <div class="nf-subscribe">
                           <input
@@ -606,15 +606,18 @@
                     <div id="product-success-msg" class="vp-success-msg">
                       <button id="hidden-success-msg" class="btn btn-close-contact"><span class="icon-close icon"></span></button>
                       <div class="success-msg-alert">
-                        <div class="sma-block">
-                          <span class="icon-correct icon"></span>
+                        <div class="sma-block text-center">
+                          <div class="text-center">
+                            <span class="icon-correct icon m-auto"></span>
+                            <div class="success-msg-text text mt-3">Your message was sent successfully</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <!-- Contact Success Message -->
 
                     <div class="vpd-actions">
-                      <button id="openContact" class="btn btn-danger">Request information</button>
+                      <button id="openContact" class="btn btn-danger open-contact-btn">Request information</button>
                       <br />
                       <br />
                       <br />
@@ -979,13 +982,15 @@
           freeMode: false,
           watchSlidesVisibility: true,
           watchSlidesProgress: true,
-          on: {
-          slideChange: function(){
-              var offer = document.querySelector('#numberSlides');
-              offer.innerHTML = (this.activeIndex +  1) + '/' + slides_count.length + 'Offers';
-              console.log((this.activeIndex +  1) + '/' + slides_count.length + 'Offers');
-          }
-        }
+          speed: 800,
+          autoplay: false,
+          // on: {
+          //   slideChange: function(){
+          //       var offer = document.querySelector('#numberSlides');
+          //       offer.innerHTML = (this.activeIndex +  1) + '/' + slides_count.length + 'Offers';
+          //       console.log((this.activeIndex +  1) + '/' + slides_count.length + 'Offers');
+          //   }
+          // }
           // breakpoints: {
           //     // when window width is >= 320px
           //     320: {
@@ -1110,12 +1115,14 @@
         $("#openContact").on('click', function () {
           $("#product-contact").addClass('active');
           $("#product-info").addClass('active');
+          $("#openContact").addClass('active');
         });
 
         // Close Contact
         $("#closeDetailsContact").on('click', function () {
           $("#product-contact").removeClass('active');
           $("#product-info").removeClass('active');
+          $("#openContact").removeClass('active');
         });
 
         // Display success msg
@@ -1128,6 +1135,7 @@
         $("#hidden-success-msg").on('click', function () {
           $("#product-success-msg").removeClass('active');
           $("#product-info").removeClass('active');
+          $("#openContact").removeClass('active');
         });
       });
 
