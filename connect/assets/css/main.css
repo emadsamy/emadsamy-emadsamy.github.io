@@ -2352,6 +2352,7 @@ footer {
   .input-newsletter .btn {
     font-size: 14px;
     padding: 3px 15px;
+    border-left: 1px solid #52525250;
   }
   .social-icons {
     display: flex;
@@ -2615,7 +2616,7 @@ footer {
 
   /* Download File Widget */
   .download-file {
-    padding: 47px 0;
+    padding: 35px 0;
   }
   .download-file .title {
     font-size: 31px;

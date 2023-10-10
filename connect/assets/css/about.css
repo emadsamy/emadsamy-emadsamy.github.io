@@ -195,7 +195,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 12.52rem;
-  gap: 60px;
+  gap: 30px;
 }
 .stat-card {
   display: flex;
@@ -207,7 +207,7 @@
   content: "";
   position: absolute;
   bottom: 7px;
-  left: -30px;
+  left: -15px;
   height: 60%;
   background: var(--border-color);
   width: 2px;
@@ -662,8 +662,14 @@
     width: 48%;
   }
   .aph-view {
-    width: 100%;
+    width: 600px;
     min-height: 400px;
+  }
+  .aph-bg-title {
+    width: calc(100% - 600px);
+  }
+  .page-title .title {
+    font-size: 27px;
   }
   .statistics-container {
     padding-top: 45px;
@@ -744,12 +750,91 @@
   .partner-card:nth-of-type(even) {
     padding-left: 60px;
   }
-  
+  .aph-view {
+    width: 600px;
+  }
+  .aph-bg-title {
+    width: calc(100% - 600px);
+  }
+  .page-title .sub-title {
+    font-size: 22px;
+  }
+  .page-title .title {
+    font-size: 37px;
+  }
+  .stats-flag-img {
+    width: 40px;
+    height: 40px;
+  }
+  .stats-block .title {
+    font-size: 34px;
+  }
+  .stat-sub-title {
+    font-size: 21px;
+  }
+  .stat-counter {
+    font-size: 95px;
+  }
+  .stat-bg-title {
+    font-size: 35px;
+  }
+  .gpcd-bg-title {
+    font-size: 50px;
+  }
+  .gpc-grid {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 7px;
+  }
+  .gpcd-row {
+    font-size: 16px;
+  }
+  .gpc-details {
+    padding-top: 55px;
+  }
+  .customers-block .sub-title {
+    font-size: 26px;
+    margin-bottom: 7px;
+  }
+  .customers-block .title {
+    font-size: 35px;
+  }
+  .customers-block .text {
+    font-size: 21px;
+  }
+  .customers-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+  }
+  .ofb-title {
+    font-size: 36px;
+  }
+  .factory-slide-details .title {
+    font-size: 32px;
+  }
+  .factory-slide-details .text {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .about-widget {
+    padding: 70px 0 100px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  
+  .aph-bg-title {
+    width: calc(100% - 750px);
+  } 
+  .aph-view {
+    width: 750px;
+  }
+  .page-title .sub-title {
+    font-size: 21px;
+  }
+  .page-title .title {
+    font-size: 45px;
+  }
 }
 
 @media (min-width: 1400px) {

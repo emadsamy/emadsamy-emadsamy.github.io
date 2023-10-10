@@ -27,7 +27,7 @@
   padding: 10px 0; 
   font-weight: 600;
   font-size: 23px;
-  margin: 0 18px;
+  margin-right: 18px;
   color: #666;
   font-weight: bold;
 }
@@ -70,7 +70,50 @@
 }
 
 @media (max-width: 767.98px) {
-  
+  .page-header {
+    height: 67vh;
+    min-height: 400px;
+  }
+  .large-products-details {
+    padding: 50px 0 35px;
+    background: #F7F7F798;
+  }
+  .product-large-card .gradient-easing {
+    padding: 16px;
+  }
+  .lpd-block .title {
+    font-size: 23px;
+    line-height: 1.15;
+    margin-bottom: 0.8rem !important;
+  }
+  .lpd-block .text br {
+    content: "";
+  }
+  .lpd-block .text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .large-products-container {
+    padding: 35px 0;
+  }
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: unset;
+    /* white-space: nowrap; */
+  }
+  .tab-view-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-top: 27px;
+  }
+  .product-large-card .title {
+    font-size: 20px;
+  }
+  .tab-btn {
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 7px 0;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -79,12 +122,46 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+  .page-header {
+    height: 70vh;
+    min-height: 470px;
+  }
+  .large-products-details {
+    padding: 75px 0;
+  }
+  .lpd-block .title {
+    font-size: 30px;
+    margin-bottom: 1rem !important;
+  }
+  .lpd-block .text br {
+    content: ""
+  }
+  .lpd-block .text {
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .tab-btn {
+    font-size: 22px;
+  }
+  .tab-view-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .lpd-block .text br {
+    content: ""
+  }
+  .tab-view-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+  .page-header {
+    height: 52vh;
+    min-height: 470px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
