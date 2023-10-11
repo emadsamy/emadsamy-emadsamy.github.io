@@ -150,6 +150,10 @@ body.rtl-dir .swiper-pagination {
   left: 50px !important;
   right: auto !important;
 }
+body.rtl-dir .services-bannerper-pagination {
+  left: 50px !important;
+  right: auto !important;
+}
 body.rtl-dir .gradient-container {
   right: 0;
   left: auto;
@@ -168,6 +172,10 @@ body.rtl-dir .btn-arrow-sm {
 }
 body.rtl-dir .btn-arrow-sm .icon {
   transform: scale(-1);
+}
+body.rtl-dir .services-banner-action {
+  right: 59px;
+  left: auto;
 }
 /* Home */
 
@@ -291,7 +299,7 @@ body.rtl-dir .btn-arrow-spm.btn-arrow-next {
 /* About Page */
 
 /* View Prodcut Page */
-body.rtl-dir .vp-view-block .swiper-pagination {
+body.rtl-dir .vp-view-block .services-bannerper-pagination {
   left: 25px !important;
   right: auto !important;
 }
@@ -358,6 +366,13 @@ body.rtl-dir .btn-close-contact {
   }
   /* Navbar */
 
+  /* Home Page */
+  body.rtl-dir .services-banner-action {
+    right: 27px;
+    left: auto;
+  }
+  /* Home Page */
+
   /* Careers Page */
   body.rtl-dir .feat-job span {
     margin: 0 !important;
@@ -401,6 +416,13 @@ body.rtl-dir .btn-close-contact {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* Home Page */
+  body.rtl-dir .services-banner-action {
+    right: 34px;
+    left: auto;
+  }
+  /* Home Page */
+
   /* Careers Page */
   body.rtl-dir .feat-job span {
     margin: 0 !important;
@@ -421,6 +443,13 @@ body.rtl-dir .btn-close-contact {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Home Page */
+  body.rtl-dir .services-banner-action {
+    right: 45px;
+    left: auto;
+  }
+  /* Home Page */
+
   /* Contact Page */
   body.rtl-dir .form-title .title span {
     margin-left: 0 !important;
