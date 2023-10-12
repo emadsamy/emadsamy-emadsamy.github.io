@@ -43,6 +43,13 @@ $(function () {
     } else {
       $("#searchContainer").addClass('active');
       $(this).addClass('active');
+      $(".search-backdrop").addClass('active');
     }
+  });
+
+  $(".btn-close-search-res, .search-backdrop").on('click', function () {
+    $("#searchContainer").removeClass('active');
+    $("#toggleSearchContainer").removeClass('active');
+    $(".search-backdrop").removeClass('active');
   });
 });
