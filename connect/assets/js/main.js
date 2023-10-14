@@ -9,6 +9,33 @@ $(".navbar-close-btn").on("click", function () {
   $(this).removeClass("active");
   $(".navbar-links-content").removeClass("active");
   $(".navbar-burger-btn").addClass("active");
+  $(".nlb-item").removeClass('active');
+});
+
+// Responsive Navbar
+$(".nlb-item").on('click', function () {
+  if ($(window).width() < 768) {
+    if ($(this).find('.nav-dropdown-list').length) {
+      $(this).addClass('active');
+    }
+  }
+});
+
+// Back In Responsive Navbar
+$(".btn-dropdown-back").on('click', function () {
+  // $(".nlb-item").removeClass('active');
+  $(this).parents('.nlb-item').addClass('active');
+  // console.log("test");
+});
+
+// Responsive Navbar
+$(".category-row-title").on('click', function () {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+  } else {
+    $(".category-row-title").removeClass('active');
+    $(this).addClass('active');
+  }
 });
 
 // Customers Tab View
