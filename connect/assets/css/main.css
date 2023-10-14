@@ -2317,18 +2317,17 @@ footer {
     display: block;
   }
   .category-list {
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s ease-in-out 300ms, opacity 300ms;
-    padding: 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* transition: visibility 0s ease-in-out 300ms, opacity 300ms; */
+    display: none;
+    padding: 8px 26px 0;
   }
   .category-row-title:hover + .category-list {
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s ease-in-out 0s, opacity 300ms;
-    padding: 8px 26px 0;
+    /* visibility: visible; */
+    /* opacity: 1; */
+    /* transition: visibility 0s ease-in-out 0s, opacity 300ms; */
+    display: block;
   }
   .category-row-title {
     padding: 17px 18px;
