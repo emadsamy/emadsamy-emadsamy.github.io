@@ -156,7 +156,8 @@ nav,
 .btn-normal .icon,
 .plc-img,
 .category-card,
-.icon-arrow-rotate {
+.icon-arrow-rotate,
+.nav-dropdown-list {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -1160,6 +1161,9 @@ select {
   grid-gap: 12.52rem;
   gap: 0;
 }
+.hidden-large {
+  display: none;
+}
 .ndb-column:not(:last-of-type) {
   border-right: 1px solid #E2DFDF;
 }
@@ -1199,7 +1203,7 @@ select {
   margin-left: auto;
 }
 .category-list {
-  margin-top: 13px;
+  padding-top: 13px;
 }
 .category-row-title {
   font-size: 17px;
@@ -2213,12 +2217,6 @@ footer {
     margin-right: 0;
     margin-left: 0;
   }
-  .nlb-item:hover .nav-dropdown-list {
-    display: block;
-    z-index: 20;
-    top: 102%;
-    width: 100%;
-  }
   .btn-search-action {
     background: none;
     color: var(--main-color);
@@ -2293,6 +2291,71 @@ footer {
   .btn-close-search-res:hover {
     color: #888;
   }
+
+  .nav-dropdown-list {
+    display: block !important;
+    width: 100%;
+    height: calc(100vh - 56.4px);
+    z-index: 500;
+    transform: translateX(100%);
+    position: fixed;
+    top: 56.4px;
+    left: 0;
+  }
+  .nlb-item:hover .nav-dropdown-list {
+    transform: translate(0, 0);
+    top: 56.4px;
+    left: 0;
+  }
+  .ndb-column {
+    border: none !important
+  }
+  .nav-dropdown-block {
+    display: block;
+  }
+  .hidden-large {
+    display: block;
+  }
+  .category-list {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in-out 300ms, opacity 300ms;
+    padding: 0;
+  }
+  .category-row-title:hover + .category-list {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s ease-in-out 0s, opacity 300ms;
+    padding: 8px 26px 0;
+  }
+  .category-row-title {
+    padding: 17px 18px;
+    border-bottom: 1px solid #efefef;
+  }
+  .ndb-link {
+    display: inline-flex;
+    width: auto;
+    margin-bottom: 7px;
+  }
+  .category-row {
+    padding: 0;
+    background: #fbfbfb;
+  }
+  .category-row-title .icon {
+    font-size: 23px;
+    width: 35px;
+    text-align: center;
+  }
+  .large-category-row {
+    padding: 0;
+  }
+  .large-category-list {
+    position: unset;
+  }
+
+
   /* Navbar */
 
   /* Home */
@@ -2506,6 +2569,12 @@ footer {
     width: 510px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .nav-dropdown-list {
+    top: 0;
+  }
+  .nlb-item:hover .nav-dropdown-list {
+    top: 0;
   }
   /* Navbar */
 

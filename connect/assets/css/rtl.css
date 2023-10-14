@@ -312,7 +312,7 @@ body.rtl-dir .btn-close-contact {
   left: 13px;
   right: auto;
 }
-.btn-close {
+body.rtl-dir .btn-close {
   left: 30px;
   right: auto;
 }
@@ -363,6 +363,9 @@ body.rtl-dir .btn-close-contact {
   body.rtl-dir .foot-social-link {
     margin-right: 10px;
     margin-left: 0;
+  }
+  body.rtl-dir .nav-dropdown-list {
+    transform: translateX(-100%);
   }
   /* Navbar */
 
