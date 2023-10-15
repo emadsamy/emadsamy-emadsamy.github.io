@@ -2341,10 +2341,16 @@ footer {
     padding: 0;
     background: #fbfbfb;
   }
+  .category-row-border {
+    border: none
+  }
   .category-row-title .icon {
     font-size: 23px;
     width: 35px;
     text-align: center;
+  }
+  .category-row-title.active .icon-arrow-rotate {
+    transform: rotateZ(180deg);
   }
   .large-category-row {
     padding: 0;

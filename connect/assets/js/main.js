@@ -22,9 +22,17 @@ $(".nlb-item").on('click', function () {
 });
 
 // Back In Responsive Navbar
-$(".btn-dropdown-back").on('click', function () {
+$(".btn-dropdown-back").on('click', function (event) {
   // $(".nlb-item").removeClass('active');
-  $(this).parents('.nlb-item').addClass('active');
+  // $(this).parents('.nlb-item').removeClass('active');
+  event.stopPropagation();
+  // console.log('event on parent or childs!', event.target.closest('.nlb-item').class)
+  // event.target.closest('.nlb-item').removeClass('active')
+  if (event.target != event.target.closest('.nlb-item')) {
+    $(this).parents('.nlb-item').removeClass('active');
+    // $('.category-row-title').removeClass('active');
+  }
+  console.log(event.target);
   // console.log("test");
 });
 
